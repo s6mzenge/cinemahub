@@ -436,16 +436,20 @@ export default function App() {
                                   <a href={sess.bookingUrl} target="_blank" rel="noopener"
                                     onClick={(e) => e.stopPropagation()}
                                     className="book-btn"
+                                    title="Book tickets"
                                     style={{
-                                      display:"flex", alignItems:"center", gap:3,
-                                      padding:"3px 10px", borderRadius:4,
-                                      background:"rgba(255,255,255,0.2)", border:"1px solid rgba(255,255,255,0.3)",
-                                      color:"#fff", fontSize:10, fontWeight:700, letterSpacing:0.5,
-                                      textDecoration:"none", textTransform:"uppercase", flexShrink:0,
+                                      display:"flex", alignItems:"center", justifyContent:"center",
+                                      padding:"4px 8px", borderRadius:4,
+                                      background:"rgba(255,255,255,0.18)", border:"1px solid rgba(255,255,255,0.25)",
+                                      textDecoration:"none", flexShrink:0,
                                       cursor:"pointer", transition:"background 0.15s",
-                                      backdropFilter:"blur(4px)", whiteSpace:"nowrap",
                                     }}>
-                                    BOOK
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                      <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
+                                      <path d="M13 5v2"/>
+                                      <path d="M13 17v2"/>
+                                      <path d="M13 11v2"/>
+                                    </svg>
                                   </a>
                                 )}
                               </div>
