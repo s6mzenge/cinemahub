@@ -606,7 +606,7 @@ export default function App() {
             </div>
 
             <div style={{ overflowX:"auto", borderRadius:10, border:"1px solid #1a1a24" }}>
-              <table style={{ width:"100%", borderCollapse:"collapse", minWidth:600 }}>
+              <table style={{ width:"100%", borderCollapse:"separate", borderSpacing:0, minWidth:600 }}>
                 <thead>
                   <tr>
                     <th style={{ padding:"10px 12px", textAlign:"left", fontSize:11, color:"#555", fontWeight:600, borderBottom:"1px solid #1a1a24", position:"sticky", left:0, background:"#0c0c14", zIndex:5, minWidth:140, boxShadow:"4px 0 8px rgba(0,0,0,0.5)" }}>Film</th>
