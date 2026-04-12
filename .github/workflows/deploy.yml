@@ -22,10 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 20
 
@@ -35,6 +35,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Note: upload-pages-artifact@v3 internally uses upload-artifact@v4
+      # which still targets Node 20. This warning will resolve when GitHub
+      # releases an updated version. Nothing to do on our end.
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
