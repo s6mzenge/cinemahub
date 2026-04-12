@@ -706,14 +706,6 @@ export default function App() {
 
         {/* Legend */}
         <div style={{ marginTop:20, padding:"14px 16px", borderRadius:10, background:"rgba(255,255,255,0.015)", border:"1px solid #151520" }}>
-          <div style={{ display:"flex", gap:12, flexWrap:"wrap", marginBottom:8 }}>
-            {films.filter(f => allDates.some(d => f.showtimes[d])).map(f => (
-              <div key={f.id} style={{ display:"flex", alignItems:"center", gap:5 }}>
-                <div style={{ width:10, height:10, borderRadius:3, background:f.color }} />
-                <span style={{ fontSize:10, color:"#777" }}>{f.title}</span>
-              </div>
-            ))}
-          </div>
           {!isMobile && (
             <div style={{ display:"flex", gap:16, flexWrap:"wrap", fontSize:10, color:"#555" }}>
               <div style={{ display:"flex", alignItems:"center", gap:4 }}>
