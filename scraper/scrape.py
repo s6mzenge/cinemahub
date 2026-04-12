@@ -265,23 +265,80 @@ def parse_date_text(text: str) -> str | None:
     return None
 
 
-def scrape_screen_from_veezi(booking_url: str) -> str | None:
-    """Scrape the Veezi booking page to get the screen number."""
-    if not booking_url or "veezi.com" not in booking_url:
-        return None
+async def scrape_screens_playwright(booking_urls: list[str]) -> dict[str, str | None]:
+    """Scrape screen numbers from Veezi using Playwright to bypass Cloudflare.
 
-    soup = fetch(booking_url)
-    if not soup:
-        return None
+    Launches a single browser, reuses the session for all URLs.
+    Returns a dict mapping booking_url -> screen name (or None).
+    """
+    from playwright.async_api import async_playwright
 
-    # Look for screen info: <label>Screen</label> <text>Screen 2</text>
-    for info_div in soup.select(".showtime-info"):
-        label = info_div.select_one("label")
-        if label and "screen" in label.get_text(strip=True).lower():
-            text_el = info_div.select_one("text")
-            if text_el:
-                return text_el.get_text(strip=True)
-    return None
+    results: dict[str, str | None] = {}
+    if not booking_urls:
+        return results
+
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(
+            headless=True,
+            args=["--disable-blink-features=AutomationControlled"],
+        )
+        context = await browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+            viewport={"width": 1280, "height": 800},
+            locale="en-GB",
+        )
+        page = await context.new_page()
+
+        for i, url in enumerate(booking_urls):
+            if not url or "veezi.com" not in url:
+                continue
+
+            log.info(f"  Veezi [{i+1}/{len(booking_urls)}]: {url[:70]}...")
+            try:
+                await page.goto(url, wait_until="domcontentloaded", timeout=20000)
+
+                # Wait for Cloudflare to resolve (poll up to 15s)
+                screen = None
+                for tick in range(8):
+                    await page.wait_for_timeout(2000)
+                    try:
+                        title = await page.title()
+                    except Exception:
+                        continue
+
+                    # Still on Cloudflare challenge page
+                    if "moment" in title.lower():
+                        continue
+
+                    # Session unavailable (past showtime)
+                    if "unavailable" in title.lower() or "error" in title.lower():
+                        log.info(f"    Session unavailable (past showtime)")
+                        break
+
+                    # We're through — extract screen
+                    infos = await page.query_selector_all(".showtime-info")
+                    for info in infos:
+                        label_el = await info.query_selector("label")
+                        text_el = await info.query_selector("text")
+                        if label_el and text_el:
+                            label_text = (await label_el.inner_text()).strip().lower()
+                            if "screen" in label_text:
+                                screen = (await text_el.inner_text()).strip()
+                                break
+                    break
+
+                results[url] = screen
+                if screen:
+                    log.info(f"    → {screen}")
+
+            except Exception as e:
+                log.warning(f"    Failed: {e}")
+                results[url] = None
+
+        await context.close()
+        await browser.close()
+
+    return results
 
 
 def assign_colors(films: list[dict]) -> None:
@@ -313,11 +370,17 @@ def assign_colors(films: list[dict]) -> None:
 
 
 def main():
-    output_path = Path(__file__).parent.parent / "public" / "data" / "films.json"
+    import argparse
+    parser = argparse.ArgumentParser(description="Scrape Peckhamplex timetable")
+    parser.add_argument("-o", "--output", type=str, default=None,
+                        help="Output path for films.json")
+    parser.add_argument("--no-screens", action="store_true",
+                        help="Skip scraping Veezi for screen numbers (faster)")
+    args = parser.parse_args()
 
-    # Allow overriding output path via CLI arg
-    if len(sys.argv) > 1:
-        output_path = Path(sys.argv[1])
+    output_path = Path(args.output) if args.output else (
+        Path(__file__).parent.parent / "public" / "data" / "films.json"
+    )
 
     log.info("=== Peckhamplex Scraper Starting ===")
 
@@ -344,31 +407,38 @@ def main():
 
     log.info(f"Scraped details for {len(films)} films with showtimes")
 
-    # Step 3: Scrape screen numbers from Veezi (only first session per film to be polite)
-    # We batch unique booking URLs to avoid duplicate requests
-    url_to_screen: dict[str, str | None] = {}
-    unique_booking_urls = set()
+    # Step 3: Scrape screen numbers from Veezi via Playwright
+    # Veezi uses Cloudflare Turnstile, so we need a real browser.
+    # Requires: pip install playwright && playwright install chromium
+    if not args.no_screens:
+        log.info("Scraping Veezi for screen numbers...")
+        unique_booking_urls = []
+        seen_urls = set()
 
-    for film in films:
-        for date_str, sessions in film["showtimes"].items():
-            for sess in sessions:
-                if sess["booking_url"]:
-                    unique_booking_urls.add(sess["booking_url"])
+        for film in films:
+            for date_str, sessions in film["showtimes"].items():
+                for sess in sessions:
+                    if sess["booking_url"] and sess["booking_url"] not in seen_urls:
+                        unique_booking_urls.append(sess["booking_url"])
+                        seen_urls.add(sess["booking_url"])
 
-    log.info(f"Found {len(unique_booking_urls)} unique booking URLs to check for screens")
+        log.info(f"Found {len(unique_booking_urls)} unique booking URLs to check")
 
-    for url in unique_booking_urls:
-        screen = scrape_screen_from_veezi(url)
-        url_to_screen[url] = screen
-        if screen:
-            log.info(f"  Screen: {screen} for {url[:80]}...")
+        import asyncio
+        url_to_screen = asyncio.run(scrape_screens_playwright(unique_booking_urls))
 
-    # Apply screen info back to sessions
-    for film in films:
-        for date_str, sessions in film["showtimes"].items():
-            for sess in sessions:
-                if sess["booking_url"] in url_to_screen:
-                    sess["screen"] = url_to_screen[sess["booking_url"]]
+        # Apply screen info back to sessions
+        screens_found = 0
+        for film in films:
+            for date_str, sessions in film["showtimes"].items():
+                for sess in sessions:
+                    if sess["booking_url"] in url_to_screen and url_to_screen[sess["booking_url"]]:
+                        sess["screen"] = url_to_screen[sess["booking_url"]]
+                        screens_found += 1
+
+        log.info(f"Found screen info for {screens_found} sessions")
+    else:
+        log.info("Skipping Veezi screen scraping (--no-screens)")
 
     # Step 4: Assign colors
     assign_colors(films)
