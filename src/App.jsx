@@ -366,6 +366,41 @@ export default function App() {
         .view-btn:hover { border-color:${T.accent} !important; color:${T.accent} !important; }
         .book-btn:hover { background:${T.barBookHover} !important; }
         .book-btn:active { opacity:0.7; transform:scale(0.95); }
+
+        /* ── Ticket notches: timeline bars ── */
+        .tkt-bar { position:relative; }
+        .tkt-bar::before, .tkt-bar::after {
+          content:''; position:absolute; width:10px; height:10px;
+          border-radius:50%; top:50%; transform:translateY(-50%); z-index:15;
+          background: var(--tkt-bg, ${T.bg});
+          box-shadow: inset 0 0 2px rgba(0,0,0,0.15);
+        }
+        .tkt-bar::before { left:-5px; }
+        .tkt-bar::after { right:-5px; }
+
+        /* ── Ticket notches: mobile cards ── */
+        .tkt-card { position:relative; overflow:visible !important; }
+        .tkt-card::before, .tkt-card::after {
+          content:''; position:absolute; width:12px; height:12px;
+          border-radius:50%; z-index:5;
+          background: var(--tkt-bg, ${T.bg});
+          box-shadow: inset 0 0 2px rgba(0,0,0,0.12);
+        }
+        .tkt-card::before { left:-6px; top:50%; transform:translateY(-50%); }
+        .tkt-card::after { right:-6px; top:50%; transform:translateY(-50%); }
+
+        /* ── Ticket notches: grid pills ── */
+        .tkt-pill { position:relative; overflow:visible !important; }
+        .tkt-pill::before, .tkt-pill::after {
+          content:''; position:absolute; width:7px; height:7px;
+          border-radius:50%; top:50%; transform:translateY(-50%); z-index:1;
+          background: var(--tkt-bg, ${T.bg});
+        }
+        .tkt-pill::before { left:-3.5px; }
+        .tkt-pill::after { right:-3.5px; }
+
+        /* Pill parent cell needs overflow visible */
+        .tkt-cell { overflow:visible !important; }
       `}</style>
 
       <div style={{ position:"relative", zIndex:1 }}>
@@ -509,13 +544,14 @@ export default function App() {
                             {group.sessions.map((sess, si) => {
                               const film = sess.film;
                               return (
-                                <div key={`${film.id}-${si}`} style={{
+                                <div key={`${film.id}-${si}`} className="tkt-card" style={{
+                                  "--tkt-bg": T.bg,
                                   display:"flex", alignItems:"center", gap:0,
-                                  borderRadius:10, overflow:"hidden",
+                                  borderRadius:12, overflow:"visible",
                                   border:`1px solid ${T.cardBorder(film.color)}`,
                                   background:T.cardBg(film.color),
                                 }}>
-                                  <div style={{ width:4, alignSelf:"stretch", background:`linear-gradient(180deg, ${film.color}, ${film.color}66)`, flexShrink:0 }} />
+                                  <div style={{ width:4, alignSelf:"stretch", background:`linear-gradient(180deg, ${film.color}, ${film.color}66)`, flexShrink:0, borderRadius:"12px 0 0 12px" }} />
                                   <div style={{ flex:1, padding:"11px 14px" }}>
                                     <div style={{ fontSize:14, fontWeight:700, color:T.text, lineHeight:1.25, fontFamily:T.serif }}>
                                       {film.film_url ? (
@@ -533,19 +569,25 @@ export default function App() {
                                       {sess.isHoh && <span style={{ fontSize:9, color:T.textMuted, fontFamily:T.mono, padding:"1px 4px", borderRadius:3, background:T.ccBg, border:`1px solid ${T.ccBorder}` }}>CC</span>}
                                     </div>
                                   </div>
-                                  {sess.bookingUrl && (
+                                  {sess.bookingUrl && (<>
+                                    {/* Perforated divider */}
+                                    <div style={{
+                                      width:6, alignSelf:"stretch", flexShrink:0,
+                                      background:`radial-gradient(circle 2px at center, ${T.bg} 1.5px, ${film.color}22 2px) center top / 4px 7px repeat-y`,
+                                    }} />
                                     <a href={sess.bookingUrl} target="_blank" rel="noopener" className="book-btn" style={{
                                       display:"flex", alignItems:"center", justifyContent:"center",
                                       padding:"0 14px", alignSelf:"stretch",
-                                      background:`${film.color}10`, borderLeft:`1px solid ${film.color}22`,
+                                      background:`${film.color}10`,
                                       textDecoration:"none", cursor:"pointer", transition:"background 0.2s",
+                                      borderRadius:"0 12px 12px 0",
                                     }}>
                                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={film.accent} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
                                         <path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/>
                                       </svg>
                                     </a>
-                                  )}
+                                  </>)}
                                 </div>
                               );
                             })}
@@ -628,19 +670,20 @@ export default function App() {
 
                           return (
                             <div key={si}
+                              className="tkt-bar"
                               onMouseEnter={() => setHovBar(bKey)}
                               onMouseLeave={() => setHovBar(null)}
                               style={{
+                                "--tkt-bg": T.bg,
                                 position:"absolute",
                                 left:`${barLeft}%`,
                                 width:`${totalWidth}%`,
                                 top:"50%",
-                                /* ── Proper height growth instead of scaleY ── */
                                 height: isHov ? 54 : 36,
                                 transform:"translateY(-50%)",
                                 display:"flex",
                                 borderRadius:5,
-                                overflow:"hidden",
+                                overflow:"visible",
                                 zIndex: isHov ? 10 : 2,
                                 transition:"height 0.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s cubic-bezier(0.4,0,0.2,1)",
                                 boxShadow: isHov
@@ -654,18 +697,22 @@ export default function App() {
                                 width:`${(adsWidth / totalWidth) * 100}%`,
                                 background:`repeating-linear-gradient(120deg, ${film.color}30, ${film.color}30 3px, ${film.color}18 3px, ${film.color}18 6px)`,
                                 display:"flex", alignItems:"center", justifyContent:"center",
-                                borderRight:`1px dashed ${film.color}55`,
-                                flexShrink:0,
+                                flexShrink:0, borderRadius:"5px 0 0 5px", overflow:"hidden",
                               }}>
                                 <span style={{ fontSize:7, fontWeight:700, color:film.accent, letterSpacing:1, textTransform:"uppercase", opacity:0.6, fontFamily:T.mono }}>ADS</span>
                               </div>
+                              {/* Perforated divider */}
+                              <div style={{
+                                width:8, flexShrink:0, position:"relative", zIndex:3,
+                                background:`radial-gradient(circle 2.5px at center, ${T.bg} 2px, ${film.color}55 2.5px) center top / 5px 8px repeat-y`,
+                              }} />
                               {/* Film portion */}
                               <div style={{
                                 flex:1,
                                 background:`linear-gradient(135deg, ${film.color}bb 0%, ${film.color}88 100%)`,
                                 padding:"4px 10px",
                                 display:"flex", alignItems:"center", gap:6,
-                                minWidth:0,
+                                minWidth:0, borderRadius:"0 5px 5px 0", overflow:"hidden",
                               }}>
                                 <div style={{ flex:1, minWidth:0 }}>
                                   <div style={{
@@ -798,20 +845,22 @@ export default function App() {
                         const times = film.showtimes[d];
                         const isToday = d === today;
                         return (
-                          <td key={d} style={{
-                            padding:"6px 4px", textAlign:"center",
+                          <td key={d} className="tkt-cell" style={{
+                            padding:"6px 6px", textAlign:"center",
                             borderBottom:`1px solid ${T.gridCellBorder}`,
                             borderLeft:`1px solid ${T.gridCellBorder}`,
                             background: isToday ? T.accentSoft : "transparent",
+                            overflow:"visible",
                           }}>
                             {times ? (
-                              <div style={{ display:"flex", flexDirection:"column", gap:3, alignItems:"center" }}>
+                              <div style={{ display:"flex", flexDirection:"column", gap:5, alignItems:"center" }}>
                                 {times.map((t,i) => {
                                   const isHoh = film.hoh?.[d]?.includes(t);
                                   const bookingUrl = film.bookingUrls?.[d]?.[t];
                                   const pill = (
-                                    <span key={i} style={{
-                                      fontSize:11, fontWeight:600, padding:"3px 8px", borderRadius:4,
+                                    <span key={i} className="tkt-pill" style={{
+                                      "--tkt-bg": isToday ? (isDark ? "#0b0a10" : "#f3efe8") : (fi%2===0 ? T.gridStickyBg1 : T.surface),
+                                      fontSize:11, fontWeight:600, padding:"4px 12px", borderRadius:4,
                                       background:`${film.color}${T.pillBgAlpha}`, border:`1px solid ${film.color}${T.pillBorderAlpha}`,
                                       color: isDark ? film.accent : film.color, fontFamily:T.mono,
                                       whiteSpace:"nowrap", transition:"all 0.2s",
