@@ -99,6 +99,13 @@ export default function App() {
   const [hovBar, setHovBar] = useState(null);
   const [view, setView] = useState("day");
   const tlRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth < 640);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
 
   // Fetch data
   useEffect(() => {
@@ -226,6 +233,7 @@ export default function App() {
         .booking-link { text-decoration:none; color:inherit; }
         .booking-link:hover { filter:brightness(1.2); }
         .book-btn:hover { background:rgba(255,255,255,0.4) !important; }
+        .book-btn:active { opacity:0.7; transform:scale(0.95); }
       `}</style>
 
       {/* Header */}
@@ -251,7 +259,7 @@ export default function App() {
 
         {/* View toggle */}
         <div style={{ display:"flex", gap:6, marginBottom:16 }}>
-          {[["day","Timeline View"],["grid","Week Overview"]].map(([v,label]) => (
+          {[["day", isMobile ? "Today" : "Timeline View"],["grid","Week Overview"]].map(([v,label]) => (
             <button key={v} className="view-btn" onClick={() => setView(v)} style={{
               padding:"7px 16px", borderRadius:8, fontSize:12, fontWeight:600, cursor:"pointer",
               fontFamily:"'Outfit',sans-serif",
@@ -268,7 +276,7 @@ export default function App() {
           {Object.entries(dateGroups).map(([monthLabel, dates]) => (
             <div key={monthLabel} style={{ marginBottom:10 }}>
               <div style={{ fontSize:10, color:"#444", fontWeight:600, letterSpacing:1.5, textTransform:"uppercase", marginBottom:6, fontFamily:"'JetBrains Mono',monospace" }}>{monthLabel}</div>
-              <div style={{ display:"flex", gap:5, flexWrap:"wrap" }}>
+              <div style={{ display:"flex", gap:5, overflowX:isMobile?"auto":"visible", flexWrap:isMobile?"nowrap":"wrap", paddingBottom:isMobile?6:0 }}>
                 {dates.map(d => {
                   const info = formatDayTab(d);
                   const active = d === selDate;
@@ -276,7 +284,7 @@ export default function App() {
                   return (
                     <button key={d} className="day-btn" onClick={() => setSelDate(d)} style={{
                       display:"flex", flexDirection:"column", alignItems:"center",
-                      padding:"6px 10px", borderRadius:10, minWidth:48, cursor:"pointer",
+                      padding:"6px 10px", borderRadius:10, minWidth:48, cursor:"pointer", flexShrink:0,
                       border: active ? "1.5px solid #f918ac" : isToday ? "1.5px solid #444" : "1.5px solid #1a1a24",
                       background: active ? "rgba(249,24,172,0.12)" : "rgba(255,255,255,0.015)",
                       color: active ? "#f918ac" : "#aaa",
@@ -294,7 +302,7 @@ export default function App() {
         </div>
 
         {view === "day" ? (
-          /* ==================== TIMELINE VIEW ==================== */
+          /* ==================== DAY VIEW ==================== */
           <>
             <div style={{ fontSize:16, fontWeight:700, marginBottom:14, color:"#ddd" }}>
               {selDayInfo.day} {selDayInfo.num} {selDayInfo.mon}
@@ -306,6 +314,83 @@ export default function App() {
             {dayFilms.length === 0 ? (
               <div style={{ textAlign:"center", padding:"50px 20px", color:"#444" }}>
                 <p style={{ fontSize:15 }}>No screenings on this day.</p>
+              </div>
+            ) : isMobile ? (
+              /* ========== MOBILE CARD VIEW ========== */
+              <div style={{ display:"flex", flexDirection:"column", gap:10 }}>
+                {dayFilms.map(film => (
+                  <div key={film.id} style={{
+                    borderRadius:12, overflow:"hidden",
+                    border:`1px solid ${film.color}33`,
+                    background:"rgba(255,255,255,0.015)",
+                  }}>
+                    {/* Film header */}
+                    <div style={{
+                      padding:"12px 14px",
+                      background:`linear-gradient(135deg, ${film.color}18 0%, transparent 100%)`,
+                      borderBottom:`1px solid ${film.color}22`,
+                      display:"flex", alignItems:"center", gap:10,
+                    }}>
+                      <div style={{ width:4, height:36, borderRadius:2, background:film.color, flexShrink:0 }} />
+                      <div style={{ flex:1 }}>
+                        <div style={{ fontSize:15, fontWeight:700, color:"#eee", lineHeight:1.2 }}>
+                          {film.film_url ? (
+                            <a href={film.film_url} target="_blank" rel="noopener" style={{ color:"#eee", textDecoration:"none" }}>{film.title}</a>
+                          ) : film.title}
+                        </div>
+                        <div style={{ display:"flex", gap:6, marginTop:5, alignItems:"center" }}>
+                          <span style={{
+                            fontSize:10, padding:"2px 6px", borderRadius:3, fontWeight:700,
+                            background:rBg[film.rating]||"#555", color:"#fff",
+                          }}>{film.rating}</span>
+                          <span style={{ fontSize:11, color:"#666" }}>{film.runtime} min</span>
+                          <span style={{ fontSize:11, color:"#555" }}>{film.genre}</span>
+                        </div>
+                      </div>
+                    </div>
+                    {/* Showtimes */}
+                    <div style={{ padding:"10px 14px", display:"flex", flexDirection:"column", gap:8 }}>
+                      {film.sessions.map((sess, si) => (
+                        <div key={si} style={{
+                          display:"flex", alignItems:"center", gap:10,
+                          padding:"10px 12px", borderRadius:8,
+                          background:`${film.color}15`,
+                          border:`1px solid ${film.color}25`,
+                        }}>
+                          <div style={{ flex:1 }}>
+                            <div style={{ fontSize:16, fontWeight:700, color:"#eee", fontFamily:"'JetBrains Mono',monospace" }}>
+                              {sess.time}
+                            </div>
+                            <div style={{ fontSize:11, color:"#777", marginTop:2 }}>
+                              Ends {minToTime(sess.startMin + film.runtime)}
+                              {sess.screen ? ` · ${sess.screen}` : ""}
+                              {sess.isHoh ? " · 🔊 HoH" : ""}
+                            </div>
+                          </div>
+                          {sess.bookingUrl && (
+                            <a href={sess.bookingUrl} target="_blank" rel="noopener"
+                              className="book-btn"
+                              title="Book tickets"
+                              style={{
+                                display:"flex", alignItems:"center", justifyContent:"center",
+                                padding:"8px 14px", borderRadius:8,
+                                background:film.color, border:"none",
+                                textDecoration:"none", flexShrink:0,
+                                cursor:"pointer", transition:"opacity 0.15s",
+                              }}>
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
+                                <path d="M13 5v2"/>
+                                <path d="M13 17v2"/>
+                                <path d="M13 11v2"/>
+                              </svg>
+                            </a>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
             ) : (
               <div style={{ position:"relative" }}>
@@ -604,14 +689,26 @@ export default function App() {
               </div>
             ))}
           </div>
-          <div style={{ display:"flex", gap:16, flexWrap:"wrap", fontSize:10, color:"#555" }}>
-            <div style={{ display:"flex", alignItems:"center", gap:4 }}>
-              <div style={{ width:20, height:10, borderRadius:2, background:"repeating-linear-gradient(120deg, #f918ac40, #f918ac40 3px, #f918ac25 3px, #f918ac25 6px)" }} />
-              <span>= ~{ADS_MIN}min ads/trailers</span>
+          {!isMobile && (
+            <div style={{ display:"flex", gap:16, flexWrap:"wrap", fontSize:10, color:"#555" }}>
+              <div style={{ display:"flex", alignItems:"center", gap:4 }}>
+                <div style={{ width:20, height:10, borderRadius:2, background:"repeating-linear-gradient(120deg, #f918ac40, #f918ac40 3px, #f918ac25 3px, #f918ac25 6px)" }} />
+                <span>= ~{ADS_MIN}min ads/trailers</span>
+              </div>
+              <span style={{ display:"flex", alignItems:"center", gap:3 }}>🔊 = Subtitled (Hard of Hearing)</span>
+              <span style={{ display:"flex", alignItems:"center", gap:3 }}>📍 = Screen number</span>
+              <span>Bar length = full session (ads + film)</span>
             </div>
-            <span style={{ display:"flex", alignItems:"center", gap:3 }}>🔊 = Subtitled (Hard of Hearing)</span>
-            <span style={{ display:"flex", alignItems:"center", gap:3 }}>📍 = Screen number</span>
-            <span>Bar length = full session (ads + film)</span>
+          )}
+          <div style={{ display:"flex", gap:12, flexWrap:"wrap", fontSize:10, color:"#555", marginTop: isMobile ? 0 : undefined }}>
+            {isMobile && <span style={{ display:"flex", alignItems:"center", gap:3 }}>🔊 = Hard of Hearing</span>}
+            <span style={{ display:"flex", alignItems:"center", gap:3 }}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#777" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
+                <path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/>
+              </svg>
+              = Book tickets
+            </span>
           </div>
           {scrapedAt && (
             <p style={{ fontSize:9, color:"#333", marginTop:6 }}>
