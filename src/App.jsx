@@ -316,82 +316,163 @@ export default function App() {
                 <p style={{ fontSize:15 }}>No screenings on this day.</p>
               </div>
             ) : isMobile ? (
-              /* ========== MOBILE CARD VIEW ========== */
-              <div style={{ display:"flex", flexDirection:"column", gap:10 }}>
-                {dayFilms.map(film => (
-                  <div key={film.id} style={{
-                    borderRadius:12, overflow:"hidden",
-                    border:`1px solid ${film.color}33`,
-                    background:"rgba(255,255,255,0.015)",
-                  }}>
-                    {/* Film header */}
-                    <div style={{
-                      padding:"12px 14px",
-                      background:`linear-gradient(135deg, ${film.color}18 0%, transparent 100%)`,
-                      borderBottom:`1px solid ${film.color}22`,
-                      display:"flex", alignItems:"center", gap:10,
-                    }}>
-                      <div style={{ width:4, height:36, borderRadius:2, background:film.color, flexShrink:0 }} />
-                      <div style={{ flex:1 }}>
-                        <div style={{ fontSize:15, fontWeight:700, color:"#eee", lineHeight:1.2 }}>
-                          {film.film_url ? (
-                            <a href={film.film_url} target="_blank" rel="noopener" style={{ color:"#eee", textDecoration:"none" }}>{film.title}</a>
-                          ) : film.title}
-                        </div>
-                        <div style={{ display:"flex", gap:6, marginTop:5, alignItems:"center" }}>
-                          <span style={{
-                            fontSize:10, padding:"2px 6px", borderRadius:3, fontWeight:700,
-                            background:rBg[film.rating]||"#555", color:"#fff",
-                          }}>{film.rating}</span>
-                          <span style={{ fontSize:11, color:"#666" }}>{film.runtime} min</span>
-                          <span style={{ fontSize:11, color:"#555" }}>{film.genre}</span>
-                        </div>
-                      </div>
-                    </div>
-                    {/* Showtimes */}
-                    <div style={{ padding:"10px 14px", display:"flex", flexDirection:"column", gap:8 }}>
-                      {film.sessions.map((sess, si) => (
-                        <div key={si} style={{
-                          display:"flex", alignItems:"center", gap:10,
-                          padding:"10px 12px", borderRadius:8,
-                          background:`${film.color}15`,
-                          border:`1px solid ${film.color}25`,
-                        }}>
-                          <div style={{ flex:1 }}>
-                            <div style={{ fontSize:16, fontWeight:700, color:"#eee", fontFamily:"'JetBrains Mono',monospace" }}>
-                              {sess.time}
-                            </div>
-                            <div style={{ fontSize:11, color:"#777", marginTop:2 }}>
-                              Ends {minToTime(sess.startMin + film.runtime)}
-                              {sess.screen ? ` · ${sess.screen}` : ""}
-                              {sess.isHoh ? " · 🔊 HoH" : ""}
-                            </div>
-                          </div>
-                          {sess.bookingUrl && (
-                            <a href={sess.bookingUrl} target="_blank" rel="noopener"
-                              className="book-btn"
-                              title="Book tickets"
-                              style={{
-                                display:"flex", alignItems:"center", justifyContent:"center",
-                                padding:"8px 14px", borderRadius:8,
-                                background:film.color, border:"none",
-                                textDecoration:"none", flexShrink:0,
-                                cursor:"pointer", transition:"opacity 0.15s",
-                              }}>
-                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
-                                <path d="M13 5v2"/>
-                                <path d="M13 17v2"/>
-                                <path d="M13 11v2"/>
-                              </svg>
-                            </a>
-                          )}
-                        </div>
+              /* ========== MOBILE VERTICAL TIMELINE ========== */
+              (() => {
+                const HOUR_H = 80;
+                const LEFT_W = 48;
+                // Collect all sessions with film info
+                const allSessions = [];
+                dayFilms.forEach(film => {
+                  film.sessions.forEach(sess => {
+                    allSessions.push({ ...sess, film });
+                  });
+                });
+                allSessions.sort((a, b) => a.startMin - b.startMin);
+
+                // Assign columns for overlapping sessions
+                const colEnds = [];
+                const colAssign = allSessions.map(sess => {
+                  for (let c = 0; c < colEnds.length; c++) {
+                    if (colEnds[c] <= sess.startMin) {
+                      colEnds[c] = sess.filmEnd;
+                      return c;
+                    }
+                  }
+                  colEnds.push(sess.filmEnd);
+                  return colEnds.length - 1;
+                });
+                const numCols = colEnds.length || 1;
+
+                const totalH = ((axisEnd - axisStart) / 60) * HOUR_H;
+                const yFor = (min) => ((min - axisStart) / 60) * HOUR_H;
+                const hFor = (dur) => (dur / 60) * HOUR_H;
+                const nowMin = selDate === today ? getNowMin() : null;
+
+                return (
+                  <div style={{ display:"flex", position:"relative", height:totalH }}>
+                    {/* Hour labels column */}
+                    <div style={{ width:LEFT_W, flexShrink:0, position:"relative" }}>
+                      {hourMarks.map(m => (
+                        <div key={m} style={{
+                          position:"absolute", top:yFor(m), right:8,
+                          fontSize:11, fontFamily:"'JetBrains Mono',monospace", color:"#555", fontWeight:500,
+                          transform:"translateY(-7px)",
+                        }}>{minToTime(m)}</div>
                       ))}
                     </div>
+
+                    {/* Timeline content area */}
+                    <div style={{ flex:1, position:"relative" }}>
+                      {/* Hour grid lines */}
+                      {hourMarks.map(m => (
+                        <div key={m} style={{
+                          position:"absolute", top:yFor(m), left:0, right:0,
+                          height:1, background:"#1a1a24",
+                        }} />
+                      ))}
+                      {halfMarks.map(m => (
+                        <div key={m} style={{
+                          position:"absolute", top:yFor(m), left:0, right:0,
+                          height:1, background:"#111118",
+                        }} />
+                      ))}
+
+                      {/* Session blocks */}
+                      {allSessions.map((sess, i) => {
+                        const film = sess.film;
+                        const col = colAssign[i];
+                        const colPct = 100 / numCols;
+                        const blockTop = yFor(sess.startMin);
+                        const blockH = hFor(sess.filmEnd - sess.startMin);
+                        const adsH = hFor(ADS_MIN);
+
+                        return (
+                          <div key={`${film.id}-${sess.time}`} style={{
+                            position:"absolute",
+                            top: blockTop,
+                            left: `${col * colPct}%`,
+                            width: `calc(${colPct}% - 3px)`,
+                            height: blockH,
+                            borderRadius:8,
+                            overflow:"hidden",
+                            display:"flex", flexDirection:"column",
+                            boxShadow:`0 2px 8px ${film.color}30`,
+                            border:`1px solid ${film.color}44`,
+                            zIndex:3,
+                          }}>
+                            {/* Ads sliver */}
+                            <div style={{
+                              height: adsH, flexShrink:0,
+                              background:`repeating-linear-gradient(180deg, ${film.color}35, ${film.color}35 3px, ${film.color}20 3px, ${film.color}20 6px)`,
+                              display:"flex", alignItems:"center", justifyContent:"center",
+                              borderBottom:`1px dashed ${film.color}55`,
+                            }}>
+                              {adsH > 14 && <span style={{ fontSize:7, fontWeight:700, color:film.accent, opacity:0.7, letterSpacing:0.5 }}>ADS</span>}
+                            </div>
+                            {/* Film content */}
+                            <div style={{
+                              flex:1, padding:"6px 8px",
+                              background:`linear-gradient(180deg, ${film.color}cc 0%, ${film.color}99 100%)`,
+                              display:"flex", flexDirection:"column", justifyContent:"space-between",
+                              minHeight:0, overflow:"hidden",
+                            }}>
+                              <div>
+                                <div style={{
+                                  fontSize:12, fontWeight:700, color:"#fff", lineHeight:1.2,
+                                  textShadow:"0 1px 3px rgba(0,0,0,0.4)",
+                                  overflow:"hidden", display:"-webkit-box", WebkitLineClamp:2, WebkitBoxOrient:"vertical",
+                                }}>
+                                  {film.title}
+                                </div>
+                                <div style={{ fontSize:10, color:"rgba(255,255,255,0.75)", marginTop:3 }}>
+                                  {sess.time} – {minToTime(sess.startMin + film.runtime)}
+                                </div>
+                                {sess.screen && (
+                                  <div style={{ fontSize:9, color:"rgba(255,255,255,0.6)", marginTop:1 }}>
+                                    {sess.screen}{sess.isHoh ? " · 🔊" : ""}
+                                  </div>
+                                )}
+                              </div>
+                              {/* Book button */}
+                              {sess.bookingUrl && (
+                                <a href={sess.bookingUrl} target="_blank" rel="noopener"
+                                  className="book-btn"
+                                  style={{
+                                    alignSelf:"flex-end", marginTop:4,
+                                    display:"flex", alignItems:"center", justifyContent:"center",
+                                    padding:"5px 10px", borderRadius:5,
+                                    background:"rgba(255,255,255,0.2)", border:"1px solid rgba(255,255,255,0.3)",
+                                    textDecoration:"none", cursor:"pointer",
+                                  }}>
+                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
+                                    <path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/>
+                                  </svg>
+                                </a>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })}
+
+                      {/* Now line */}
+                      {nowMin !== null && nowMin >= axisStart && nowMin <= axisEnd && (
+                        <div style={{
+                          position:"absolute", top:yFor(nowMin), left:-6, right:0,
+                          height:2, background:"#f918ac", zIndex:20,
+                          boxShadow:"0 0 6px #f918ac88",
+                        }}>
+                          <div style={{
+                            position:"absolute", left:0, top:-4,
+                            width:10, height:10, borderRadius:"50%",
+                            background:"#f918ac",
+                          }} />
+                        </div>
+                      )}
+                    </div>
                   </div>
-                ))}
-              </div>
+                );
+              })()
             ) : (
               <div style={{ position:"relative" }}>
                 {/* Time axis header */}
