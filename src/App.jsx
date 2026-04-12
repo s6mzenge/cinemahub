@@ -98,6 +98,7 @@ export default function App() {
   const [selDate, setSelDate] = useState(today);
   const [hovBar, setHovBar] = useState(null);
   const [view, setView] = useState("day");
+  const [selWeekStart, setSelWeekStart] = useState(null);
   const tlRef = useRef(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
 
@@ -147,6 +148,69 @@ export default function App() {
     });
     return groups;
   }, [allDates]);
+
+  // Week grouping for grid view
+  const weeks = useMemo(() => {
+    if (!allDates.length) return [];
+    const wks = [];
+    const seen = new Set();
+    allDates.forEach(d => {
+      const dt = new Date(d+"T12:00:00");
+      // Get Monday of this week
+      const day = dt.getDay();
+      const diff = day === 0 ? -6 : 1 - day;
+      const mon = new Date(dt);
+      mon.setDate(mon.getDate() + diff);
+      const monStr = `${mon.getFullYear()}-${String(mon.getMonth()+1).padStart(2,"0")}-${String(mon.getDate()).padStart(2,"0")}`;
+      if (!seen.has(monStr)) {
+        seen.add(monStr);
+        // Get Sunday
+        const sun = new Date(mon);
+        sun.setDate(sun.getDate() + 6);
+        wks.push({
+          monStr,
+          monDate: mon,
+          sunDate: sun,
+          dates: allDates.filter(ad => {
+            const adt = new Date(ad+"T12:00:00");
+            return adt >= mon && adt <= sun;
+          }),
+          label: `${mon.getDate()} ${MONTHS[mon.getMonth()]} – ${sun.getDate()} ${MONTHS[sun.getMonth()]}`,
+        });
+      }
+    });
+    return wks;
+  }, [allDates]);
+
+  // Initialize selWeekStart
+  useEffect(() => {
+    if (weeks.length && !selWeekStart) {
+      // Find the week containing today or selDate
+      const target = allDates.includes(today) ? today : selDate;
+      const wk = weeks.find(w => w.dates.includes(target)) || weeks[0];
+      setSelWeekStart(wk.monStr);
+    }
+  }, [weeks]);
+
+  const selWeekIdx = weeks.findIndex(w => w.monStr === selWeekStart);
+  const selWeek = weeks[selWeekIdx] || weeks[0];
+
+  // Day navigation helpers
+  const selDateIdx = allDates.indexOf(selDate);
+  const canPrevDay = selDateIdx > 0;
+  const canNextDay = selDateIdx < allDates.length - 1;
+  const goDay = (dir) => {
+    const ni = selDateIdx + dir;
+    if (ni >= 0 && ni < allDates.length) setSelDate(allDates[ni]);
+  };
+
+  // Week navigation helpers
+  const canPrevWeek = selWeekIdx > 0;
+  const canNextWeek = selWeekIdx < weeks.length - 1;
+  const goWeek = (dir) => {
+    const ni = selWeekIdx + dir;
+    if (ni >= 0 && ni < weeks.length) setSelWeekStart(weeks[ni].monStr);
+  };
 
   // Films showing on selected date
   const dayFilms = useMemo(() => {
@@ -257,60 +321,70 @@ export default function App() {
 
       <div style={{ maxWidth:1000, margin:"0 auto", padding:"16px 16px 32px" }}>
 
-        {/* View toggle */}
-        <div style={{ display:"flex", gap:6, marginBottom:16 }}>
-          {[["day", isMobile ? "Today" : "Timeline View"],["grid","Week Overview"]].map(([v,label]) => (
-            <button key={v} className="view-btn" onClick={() => setView(v)} style={{
-              padding:"7px 16px", borderRadius:8, fontSize:12, fontWeight:600, cursor:"pointer",
-              fontFamily:"'Outfit',sans-serif",
-              border: view===v ? "1.5px solid #f918ac" : "1.5px solid #222",
-              background: view===v ? "rgba(249,24,172,0.1)" : "transparent",
-              color: view===v ? "#f918ac" : "#666",
-              transition:"all 0.2s",
-            }}>{label}</button>
-          ))}
-        </div>
+        {/* View toggle + Navigation */}
+        <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", gap:8, marginBottom:16, flexWrap:"wrap" }}>
+          <div style={{ display:"flex", gap:6 }}>
+            {[["day", isMobile ? "Day" : "Timeline"],["grid","Week"]].map(([v,label]) => (
+              <button key={v} className="view-btn" onClick={() => setView(v)} style={{
+                padding:"7px 16px", borderRadius:8, fontSize:12, fontWeight:600, cursor:"pointer",
+                fontFamily:"'Outfit',sans-serif",
+                border: view===v ? "1.5px solid #f918ac" : "1.5px solid #222",
+                background: view===v ? "rgba(249,24,172,0.1)" : "transparent",
+                color: view===v ? "#f918ac" : "#666",
+                transition:"all 0.2s",
+              }}>{label}</button>
+            ))}
+          </div>
 
-        {/* Day selector */}
-        <div style={{ marginBottom:20 }}>
-          {Object.entries(dateGroups).map(([monthLabel, dates]) => (
-            <div key={monthLabel} style={{ marginBottom:10 }}>
-              <div style={{ fontSize:10, color:"#444", fontWeight:600, letterSpacing:1.5, textTransform:"uppercase", marginBottom:6, fontFamily:"'JetBrains Mono',monospace" }}>{monthLabel}</div>
-              <div style={{ display:"flex", gap:5, overflowX:isMobile?"auto":"visible", flexWrap:isMobile?"nowrap":"wrap", paddingBottom:isMobile?6:0 }}>
-                {dates.map(d => {
-                  const info = formatDayTab(d);
-                  const active = d === selDate;
-                  const isToday = d === today;
-                  return (
-                    <button key={d} className="day-btn" onClick={() => setSelDate(d)} style={{
-                      display:"flex", flexDirection:"column", alignItems:"center",
-                      padding:"6px 10px", borderRadius:10, minWidth:48, cursor:"pointer", flexShrink:0,
-                      border: active ? "1.5px solid #f918ac" : isToday ? "1.5px solid #444" : "1.5px solid #1a1a24",
-                      background: active ? "rgba(249,24,172,0.12)" : "rgba(255,255,255,0.015)",
-                      color: active ? "#f918ac" : "#aaa",
-                      transition:"all 0.2s", fontFamily:"'Outfit',sans-serif",
-                    }}>
-                      <span style={{ fontSize:9, fontWeight:600, color:active?"#f918ac":"#555", textTransform:"uppercase" }}>{info.day}</span>
-                      <span style={{ fontSize:18, fontWeight:700, lineHeight:1.1 }}>{info.num}</span>
-                      {isToday && <span style={{ fontSize:7, color:"#f918ac", fontWeight:700, marginTop:1 }}>TODAY</span>}
-                    </button>
-                  );
-                })}
+          {/* Arrow navigation */}
+          {view === "day" ? (
+            <div style={{ display:"flex", alignItems:"center", gap:8 }}>
+              <button onClick={() => goDay(-1)} disabled={!canPrevDay} className="view-btn" style={{
+                padding:"6px 10px", borderRadius:8, fontSize:16, cursor:canPrevDay?"pointer":"default",
+                border:"1.5px solid #222", background:"transparent", color:canPrevDay?"#ccc":"#333",
+                fontFamily:"'Outfit',sans-serif", fontWeight:600, transition:"all 0.2s", lineHeight:1,
+              }}>‹</button>
+              <div style={{ textAlign:"center", minWidth:130 }}>
+                <div style={{ fontSize:15, fontWeight:700, color:"#eee" }}>
+                  {selDayInfo.day} {selDayInfo.num} {selDayInfo.mon}
+                </div>
+                <div style={{ fontSize:10, color:"#555" }}>
+                  {selDate === today ? "Today · " : ""}{dayFilms.length} film{dayFilms.length !== 1 ? "s" : ""}
+                </div>
               </div>
+              <button onClick={() => goDay(1)} disabled={!canNextDay} className="view-btn" style={{
+                padding:"6px 10px", borderRadius:8, fontSize:16, cursor:canNextDay?"pointer":"default",
+                border:"1.5px solid #222", background:"transparent", color:canNextDay?"#ccc":"#333",
+                fontFamily:"'Outfit',sans-serif", fontWeight:600, transition:"all 0.2s", lineHeight:1,
+              }}>›</button>
             </div>
-          ))}
+          ) : selWeek ? (
+            <div style={{ display:"flex", alignItems:"center", gap:8 }}>
+              <button onClick={() => goWeek(-1)} disabled={!canPrevWeek} className="view-btn" style={{
+                padding:"6px 10px", borderRadius:8, fontSize:16, cursor:canPrevWeek?"pointer":"default",
+                border:"1.5px solid #222", background:"transparent", color:canPrevWeek?"#ccc":"#333",
+                fontFamily:"'Outfit',sans-serif", fontWeight:600, transition:"all 0.2s", lineHeight:1,
+              }}>‹</button>
+              <div style={{ textAlign:"center", minWidth:160 }}>
+                <div style={{ fontSize:15, fontWeight:700, color:"#eee" }}>
+                  {selWeek.label}
+                </div>
+                <div style={{ fontSize:10, color:"#555" }}>
+                  {selWeek.dates.length} screening day{selWeek.dates.length !== 1 ? "s" : ""}
+                </div>
+              </div>
+              <button onClick={() => goWeek(1)} disabled={!canNextWeek} className="view-btn" style={{
+                padding:"6px 10px", borderRadius:8, fontSize:16, cursor:canNextWeek?"pointer":"default",
+                border:"1.5px solid #222", background:"transparent", color:canNextWeek?"#ccc":"#333",
+                fontFamily:"'Outfit',sans-serif", fontWeight:600, transition:"all 0.2s", lineHeight:1,
+              }}>›</button>
+            </div>
+          ) : null}
         </div>
 
         {view === "day" ? (
           /* ==================== DAY VIEW ==================== */
           <>
-            <div style={{ fontSize:16, fontWeight:700, marginBottom:14, color:"#ddd" }}>
-              {selDayInfo.day} {selDayInfo.num} {selDayInfo.mon}
-              <span style={{ fontSize:12, fontWeight:400, color:"#555", marginLeft:8 }}>
-                {dayFilms.length} film{dayFilms.length !== 1 ? "s" : ""} screening
-              </span>
-            </div>
-
             {dayFilms.length === 0 ? (
               <div style={{ textAlign:"center", padding:"50px 20px", color:"#444" }}>
                 <p style={{ fontSize:15 }}>No screenings on this day.</p>
@@ -598,27 +672,19 @@ export default function App() {
         ) : (
           /* ==================== GRID OVERVIEW ==================== */
           <>
-            <div style={{ fontSize:16, fontWeight:700, marginBottom:14, color:"#ddd" }}>
-              Full Schedule Overview
-              <span style={{ fontSize:12, fontWeight:400, color:"#555", marginLeft:8 }}>
-                All upcoming screenings
-              </span>
-            </div>
-
             <div style={{ overflowX:"auto", borderRadius:10, border:"1px solid #1a1a24" }}>
-              <table style={{ width:"100%", borderCollapse:"separate", borderSpacing:0, minWidth:600 }}>
+              <table style={{ width:"100%", borderCollapse:"separate", borderSpacing:0, minWidth:400 }}>
                 <thead>
                   <tr>
                     <th style={{ padding:"10px 12px", textAlign:"left", fontSize:11, color:"#555", fontWeight:600, borderBottom:"1px solid #1a1a24", position:"sticky", left:0, background:"#0c0c14", zIndex:5, minWidth:140, boxShadow:"4px 0 8px rgba(0,0,0,0.5)" }}>Film</th>
-                    {allDates.map(d => {
+                    {(selWeek ? selWeek.dates : allDates).map(d => {
                       const info = formatDayTab(d);
                       const isT = d === today;
-                      const isSel = d === selDate;
                       return (
                         <th key={d} onClick={() => { setSelDate(d); setView("day"); }} style={{
                           padding:"8px 6px", textAlign:"center", fontSize:10, fontWeight:600,
                           borderBottom:"1px solid #1a1a24", cursor:"pointer",
-                          color: isT ? "#f918ac" : isSel ? "#f918ac" : "#666",
+                          color: isT ? "#f918ac" : "#666",
                           background: isT ? "rgba(249,24,172,0.05)" : "transparent",
                           borderBottomColor: isT ? "#f918ac" : "#1a1a24",
                           minWidth:70, transition:"color 0.15s",
@@ -632,7 +698,7 @@ export default function App() {
                   </tr>
                 </thead>
                 <tbody>
-                  {films.filter(f => allDates.some(d => f.showtimes[d])).map((film, fi) => (
+                  {(() => { const weekDates = selWeek ? selWeek.dates : allDates; return films.filter(f => weekDates.some(d => f.showtimes[d])).map((film, fi) => (
                     <tr key={film.id} style={{ background: fi%2===0 ? "rgba(255,255,255,0.01)" : "transparent" }}>
                       <td style={{
                         padding:"8px 10px", borderBottom:"1px solid #111118",
@@ -653,7 +719,7 @@ export default function App() {
                           </div>
                         </div>
                       </td>
-                      {allDates.map(d => {
+                      {weekDates.map(d => {
                         const times = film.showtimes[d];
                         const isT = d === today;
                         return (
@@ -696,11 +762,11 @@ export default function App() {
                         );
                       })}
                     </tr>
-                  ))}
+                  )); })()}
                 </tbody>
               </table>
             </div>
-            <p style={{ fontSize:10, color:"#444", marginTop:8 }}>Click any time to book directly. Click a date header to switch to Timeline View.</p>
+            <p style={{ fontSize:10, color:"#444", marginTop:8 }}>Click any time to book directly. Click a date header to switch to day view.</p>
           </>
         )}
 
