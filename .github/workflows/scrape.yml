@@ -1,11 +1,7 @@
 name: Scrape Peckhamplex Timetable
 
 on:
-  schedule:
-    # Run at 10:00 and 16:00 UTC every day
-    - cron: "0 10 * * *"
-    - cron: "0 16 * * *"
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch: # Triggered externally via cron-job.org
 
 permissions:
   contents: write
