@@ -379,7 +379,8 @@ export default function App() {
         .tkt-bar::before, .tkt-bar::after {
           content:''; position:absolute; width:10px; height:10px;
           border-radius:50%; top:50%; transform:translateY(-50%); z-index:15;
-          background:var(--tkt-bg,${T.bg}); box-shadow:inset 0 0 2px rgba(0,0,0,0.15);
+          background:var(--tkt-bg,${T.bg});
+          box-shadow:inset 0 1px 4px rgba(0,0,0,${isDark?"0.5":"0.15"}), 0 0 0 1px ${isDark?"rgba(255,255,255,0.06)":"rgba(0,0,0,0.06)"};
         }
         .tkt-bar::before { left:-5px; }
         .tkt-bar::after { right:-5px; }
@@ -388,19 +389,22 @@ export default function App() {
         .tkt-card::before, .tkt-card::after {
           content:''; position:absolute; width:12px; height:12px;
           border-radius:50%; z-index:5;
-          background:var(--tkt-bg,${T.bg}); box-shadow:inset 0 0 2px rgba(0,0,0,0.12);
+          background:var(--tkt-bg,${T.bg});
+          box-shadow:inset 0 1px 4px rgba(0,0,0,${isDark?"0.5":"0.15"}), 0 0 0 1px ${isDark?"rgba(255,255,255,0.06)":"rgba(0,0,0,0.06)"};
         }
         .tkt-card::before { left:-6px; top:50%; transform:translateY(-50%); }
         .tkt-card::after { right:-6px; top:50%; transform:translateY(-50%); }
 
         .tkt-pill { position:relative; overflow:visible !important; }
         .tkt-pill::before, .tkt-pill::after {
-          content:''; position:absolute; width:7px; height:7px;
-          border-radius:50%; top:50%; transform:translateY(-50%); z-index:1;
+          content:''; position:absolute; width:8px; height:8px;
+          border-radius:50%; top:50%; transform:translateY(-50%); z-index:2;
           background:var(--tkt-bg,${T.bg});
+          border:1.5px solid var(--tkt-notch-border,${T.border});
+          box-shadow:inset 0 1px 3px rgba(0,0,0,${isDark?"0.4":"0.12"});
         }
-        .tkt-pill::before { left:-3.5px; }
-        .tkt-pill::after { right:-3.5px; }
+        .tkt-pill::before { left:-5px; }
+        .tkt-pill::after { right:-5px; }
         .tkt-cell { overflow:visible !important; }
       `}</style>
 
@@ -649,7 +653,7 @@ export default function App() {
                                 <div style={{ display:"flex", flexDirection:"column", gap:5, alignItems:"center" }}>
                                   {times.map((t,i) => {
                                     const isHoh=film.hoh?.[d]?.includes(t), bookingUrl=film.bookingUrls?.[d]?.[t];
-                                    const pill = <span key={i} className="tkt-pill" style={{ "--tkt-bg":isToday?(isDark?"#0b0a10":"#f3efe8"):(fi%2===0?T.gridStickyBg1:T.surface), fontSize:11, fontWeight:600, padding:"4px 12px", borderRadius:4, background:`${film.color}${T.pillBgAlpha}`, border:`1px solid ${film.color}${T.pillBorderAlpha}`, color:isDark?film.accent:film.color, fontFamily:T.mono, whiteSpace:"nowrap", transition:"all 0.2s", cursor:bookingUrl?"pointer":"default", display:"inline-flex", alignItems:"center", gap:3 }} title={film.screens?.[d]?.[t]?`${film.screens[d][t]}${isHoh?" · HoH":""}`:(isHoh?"Hard of Hearing":"")}>{t}{isHoh?" CC":""}</span>;
+                                    const pill = <span key={i} className="tkt-pill" style={{ "--tkt-bg":isToday?(isDark?"#0b0a10":"#f3efe8"):(fi%2===0?T.gridStickyBg1:T.surface), "--tkt-notch-border":`${film.color}${T.pillBorderAlpha}`, fontSize:11, fontWeight:600, padding:"4px 12px", borderRadius:4, background:`${film.color}${T.pillBgAlpha}`, border:`1.5px solid ${film.color}${T.pillBorderAlpha}`, color:isDark?film.accent:film.color, fontFamily:T.mono, whiteSpace:"nowrap", transition:"all 0.2s", cursor:bookingUrl?"pointer":"default", display:"inline-flex", alignItems:"center", gap:3 }} title={film.screens?.[d]?.[t]?`${film.screens[d][t]}${isHoh?" · HoH":""}`:(isHoh?"Hard of Hearing":"")}>{t}{isHoh?" CC":""}</span>;
                                     return bookingUrl ? <a key={i} href={bookingUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}>{pill}</a> : pill;
                                   })}
                                 </div>
