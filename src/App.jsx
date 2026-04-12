@@ -225,6 +225,7 @@ export default function App() {
         .view-btn:hover { border-color:#f918ac !important; color:#f918ac !important; }
         .booking-link { text-decoration:none; color:inherit; }
         .booking-link:hover { filter:brightness(1.2); }
+        .book-btn:hover { background:rgba(255,255,255,0.4) !important; }
       `}</style>
 
       {/* Header */}
@@ -376,17 +377,16 @@ export default function App() {
                           const totalWidth = pct(sess.filmEnd) - barLeft;
                           const bKey = `${film.id}-${si}`;
                           const isHov = hovBar === bKey;
-                          const row = si;
 
-                          const barContent = (
-                            <div
+                          return (
+                            <div key={si}
                               onMouseEnter={() => setHovBar(bKey)}
                               onMouseLeave={() => setHovBar(null)}
                               style={{
                                 position:"absolute",
                                 left:`${barLeft}%`,
                                 width:`${totalWidth}%`,
-                                top: 4 + row * 42,
+                                top: 4,
                                 height:36,
                                 display:"flex",
                                 borderRadius:6,
@@ -395,7 +395,6 @@ export default function App() {
                                 transform: isHov ? "scaleY(1.12)" : "scaleY(1)",
                                 transition:"transform 0.15s ease, box-shadow 0.15s ease",
                                 boxShadow: isHov ? `0 4px 24px ${film.color}55, 0 0 0 1px ${film.color}88` : `0 1px 4px rgba(0,0,0,0.3)`,
-                                cursor: sess.bookingUrl ? "pointer" : "default",
                               }}>
                               {/* Ads portion */}
                               <div style={{
@@ -412,7 +411,7 @@ export default function App() {
                                 flex:1,
                                 background:`linear-gradient(135deg, ${film.color}cc 0%, ${film.color}99 100%)`,
                                 padding:"3px 8px",
-                                display:"flex", alignItems:"center", gap:8,
+                                display:"flex", alignItems:"center", gap:6,
                                 minWidth:0,
                               }}>
                                 <div style={{ flex:1, minWidth:0 }}>
@@ -429,20 +428,28 @@ export default function App() {
                                     <div style={{ fontSize:9, color:"rgba(255,255,255,0.7)", marginTop:1 }}>
                                       Ends ~{minToTime(sess.filmEnd)} with ads
                                       {sess.screen ? ` · ${sess.screen}` : ""}
-                                      {sess.bookingUrl ? " · Click to book" : ""}
                                     </div>
                                   )}
                                 </div>
+                                {/* Book button */}
+                                {sess.bookingUrl && (
+                                  <a href={sess.bookingUrl} target="_blank" rel="noopener"
+                                    onClick={(e) => e.stopPropagation()}
+                                    className="book-btn"
+                                    style={{
+                                      display:"flex", alignItems:"center", gap:3,
+                                      padding:"3px 10px", borderRadius:4,
+                                      background:"rgba(255,255,255,0.2)", border:"1px solid rgba(255,255,255,0.3)",
+                                      color:"#fff", fontSize:10, fontWeight:700, letterSpacing:0.5,
+                                      textDecoration:"none", textTransform:"uppercase", flexShrink:0,
+                                      cursor:"pointer", transition:"background 0.15s",
+                                      backdropFilter:"blur(4px)", whiteSpace:"nowrap",
+                                    }}>
+                                    BOOK
+                                  </a>
+                                )}
                               </div>
                             </div>
-                          );
-
-                          return sess.bookingUrl ? (
-                            <a key={si} href={sess.bookingUrl} target="_blank" rel="noopener" className="booking-link">
-                              {barContent}
-                            </a>
-                          ) : (
-                            <div key={si}>{barContent}</div>
                           );
                         })}
                       </div>
