@@ -609,7 +609,7 @@ export default function App() {
               <table style={{ width:"100%", borderCollapse:"collapse", minWidth:600 }}>
                 <thead>
                   <tr>
-                    <th style={{ padding:"10px 12px", textAlign:"left", fontSize:11, color:"#555", fontWeight:600, borderBottom:"1px solid #1a1a24", position:"sticky", left:0, background:"#0c0c14", zIndex:5, minWidth:140 }}>Film</th>
+                    <th style={{ padding:"10px 12px", textAlign:"left", fontSize:11, color:"#555", fontWeight:600, borderBottom:"1px solid #1a1a24", position:"sticky", left:0, background:"#0c0c14", zIndex:5, minWidth:140, boxShadow:"4px 0 8px rgba(0,0,0,0.5)" }}>Film</th>
                     {allDates.map(d => {
                       const info = formatDayTab(d);
                       const isT = d === today;
@@ -636,7 +636,7 @@ export default function App() {
                     <tr key={film.id} style={{ background: fi%2===0 ? "rgba(255,255,255,0.01)" : "transparent" }}>
                       <td style={{
                         padding:"8px 10px", borderBottom:"1px solid #111118",
-                        position:"sticky", left:0, background: fi%2===0 ? "#0d0d13" : "#0a0a10", zIndex:4,
+                        position:"sticky", left:0, background: fi%2===0 ? "#0d0d13" : "#0a0a10", zIndex:4, boxShadow:"4px 0 8px rgba(0,0,0,0.5)",
                       }}>
                         <div style={{ display:"flex", alignItems:"center", gap:6 }}>
                           <div style={{ width:3, height:22, borderRadius:2, background:film.color }} />
