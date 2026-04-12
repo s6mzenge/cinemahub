@@ -583,7 +583,7 @@ export default function App() {
                                   <div style={{ flex:1, background:`linear-gradient(135deg,${film.color}bb 0%,${film.color}88 100%)`, padding:"4px 10px", display:"flex", alignItems:"center", gap:6, minWidth:0, borderRadius:"0 5px 5px 0", overflow:"hidden" }}>
                                     <div style={{ flex:1, minWidth:0 }}>
                                       <div style={{ fontSize:10.5, fontWeight:700, color:T.barText, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", textShadow:"0 1px 4px rgba(0,0,0,0.5)", fontFamily:T.mono }}>
-                                        {sess.time} – {minToTime(sess.startMin+film.runtime)}{sess.isHoh?"  CC":""}{sess.screen?`  · ${sess.screen}`:""}
+                                        {sess.time} – {minToTime(sess.startMin+film.runtime)}{sess.isHoh?"  CC":""}
                                       </div>
                                       {isHov && <div style={{ fontSize:9, color:T.barSubText, marginTop:3, fontFamily:T.mono }}>Ends ~{minToTime(sess.filmEnd)} with ads{sess.screen?` · ${sess.screen}`:""}</div>}
                                     </div>
