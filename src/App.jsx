@@ -375,37 +375,34 @@ export default function App() {
         .book-btn:hover { background:${T.barBookHover} !important; }
         .book-btn:active { opacity:0.7; transform:scale(0.95); }
 
-        .tkt-bar { position:relative; }
-        .tkt-bar::before, .tkt-bar::after {
-          content:''; position:absolute; width:10px; height:10px;
-          border-radius:50%; top:50%; transform:translateY(-50%); z-index:15;
-          background:var(--tkt-bg,${T.bg});
-          box-shadow:inset 0 1px 4px rgba(0,0,0,${isDark?"0.5":"0.15"}), 0 0 0 1px ${isDark?"rgba(255,255,255,0.06)":"rgba(0,0,0,0.06)"};
+        /* ── Ticket shape: mask-based concave notches ── */
+        .tkt-bar {
+          -webkit-mask:
+            radial-gradient(circle 7px at 0 50%, transparent 6px, #000 6.5px) 0 0 / 51% 100% no-repeat,
+            radial-gradient(circle 7px at 100% 50%, transparent 6px, #000 6.5px) 100% 0 / 51% 100% no-repeat;
+          mask:
+            radial-gradient(circle 7px at 0 50%, transparent 6px, #000 6.5px) 0 0 / 51% 100% no-repeat,
+            radial-gradient(circle 7px at 100% 50%, transparent 6px, #000 6.5px) 100% 0 / 51% 100% no-repeat;
         }
-        .tkt-bar::before { left:-5px; }
-        .tkt-bar::after { right:-5px; }
 
-        .tkt-card { position:relative; overflow:visible !important; }
-        .tkt-card::before, .tkt-card::after {
-          content:''; position:absolute; width:12px; height:12px;
-          border-radius:50%; z-index:5;
-          background:var(--tkt-bg,${T.bg});
-          box-shadow:inset 0 1px 4px rgba(0,0,0,${isDark?"0.5":"0.15"}), 0 0 0 1px ${isDark?"rgba(255,255,255,0.06)":"rgba(0,0,0,0.06)"};
+        .tkt-card {
+          -webkit-mask:
+            radial-gradient(circle 9px at 0 50%, transparent 8px, #000 8.5px) 0 0 / 51% 100% no-repeat,
+            radial-gradient(circle 9px at 100% 50%, transparent 8px, #000 8.5px) 100% 0 / 51% 100% no-repeat;
+          mask:
+            radial-gradient(circle 9px at 0 50%, transparent 8px, #000 8.5px) 0 0 / 51% 100% no-repeat,
+            radial-gradient(circle 9px at 100% 50%, transparent 8px, #000 8.5px) 100% 0 / 51% 100% no-repeat;
         }
-        .tkt-card::before { left:-6px; top:50%; transform:translateY(-50%); }
-        .tkt-card::after { right:-6px; top:50%; transform:translateY(-50%); }
 
-        .tkt-pill { position:relative; overflow:visible !important; }
-        .tkt-pill::before, .tkt-pill::after {
-          content:''; position:absolute; width:8px; height:8px;
-          border-radius:50%; top:50%; transform:translateY(-50%); z-index:2;
-          background:var(--tkt-bg,${T.bg});
-          border:1.5px solid var(--tkt-notch-border,${T.border});
-          box-shadow:inset 0 1px 3px rgba(0,0,0,${isDark?"0.4":"0.12"});
+        .tkt-pill {
+          -webkit-mask:
+            radial-gradient(circle 5px at 0 50%, transparent 4px, #000 4.5px) 0 0 / 51% 100% no-repeat,
+            radial-gradient(circle 5px at 100% 50%, transparent 4px, #000 4.5px) 100% 0 / 51% 100% no-repeat;
+          mask:
+            radial-gradient(circle 5px at 0 50%, transparent 4px, #000 4.5px) 0 0 / 51% 100% no-repeat,
+            radial-gradient(circle 5px at 100% 50%, transparent 4px, #000 4.5px) 100% 0 / 51% 100% no-repeat;
         }
-        .tkt-pill::before { left:-5px; }
-        .tkt-pill::after { right:-5px; }
-        .tkt-cell { overflow:visible !important; }
+        .tkt-cell { }
       `}</style>
 
       <Overlay />
@@ -513,7 +510,7 @@ export default function App() {
                               {group.sessions.map((sess,si) => {
                                 const film=sess.film;
                                 return (
-                                  <div key={`${film.id}-${si}`} className="tkt-card" style={{ "--tkt-bg":T.bg, display:"flex", alignItems:"center", gap:0, borderRadius:12, overflow:"visible", border:`1px solid ${T.cardBorder(film.color)}`, background:T.cardBg(film.color) }}>
+                                  <div key={`${film.id}-${si}`} className="tkt-card" style={{ display:"flex", alignItems:"center", gap:0, borderRadius:12, border:`1px solid ${T.cardBorder(film.color)}`, background:T.cardBg(film.color) }}>
                                     <div style={{ width:4, alignSelf:"stretch", background:`linear-gradient(180deg,${film.color},${film.color}66)`, flexShrink:0, borderRadius:"12px 0 0 12px" }} />
                                     <div style={{ flex:1, padding:"11px 14px" }}>
                                       <div style={{ fontSize:14, fontWeight:700, color:T.text, lineHeight:1.25, fontFamily:T.serif }}>
@@ -553,7 +550,7 @@ export default function App() {
                     {dayFilms.map((film,fi) => {
                       const anyHov = film.sessions.some((_,si)=>hovBar===`${film.id}-${si}`);
                       return (
-                        <div key={film.id} style={{ display:"flex", alignItems:"stretch", marginBottom:4, background:fi%2===0?T.rowEven:T.rowOdd, borderRadius:8, overflow:"visible", minHeight:anyHov?74:56, transition:"min-height 0.25s cubic-bezier(0.4,0,0.2,1)" }}>
+                        <div key={film.id} style={{ display:"flex", alignItems:"stretch", marginBottom:4, background:fi%2===0?T.rowEven:T.rowOdd, borderRadius:8, minHeight:anyHov?74:56, transition:"min-height 0.25s cubic-bezier(0.4,0,0.2,1)" }}>
                           <div style={{ width:180, flexShrink:0, padding:"10px 14px", display:"flex", flexDirection:"column", justifyContent:"center", borderRight:`1px solid ${T.border}` }}>
                             <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:3 }}>
                               <div style={{ width:3, height:28, borderRadius:1.5, background:`linear-gradient(180deg,${film.color},${film.color}55)`, flexShrink:0 }} />
@@ -577,7 +574,7 @@ export default function App() {
                               const bKey=`${film.id}-${si}`, isHov=hovBar===bKey;
                               return (
                                 <div key={si} className="tkt-bar" onMouseEnter={()=>setHovBar(bKey)} onMouseLeave={()=>setHovBar(null)}
-                                  style={{ "--tkt-bg":T.bg, position:"absolute", left:`${barLeft}%`, width:`${totalWidth}%`, top:"50%", height:isHov?54:36, transform:"translateY(-50%)", display:"flex", borderRadius:5, overflow:"visible", zIndex:isHov?10:2, transition:"height 0.2s cubic-bezier(0.4,0,0.2,1),box-shadow 0.2s cubic-bezier(0.4,0,0.2,1)",
+                                  style={{ position:"absolute", left:`${barLeft}%`, width:`${totalWidth}%`, top:"50%", height:isHov?54:36, transform:"translateY(-50%)", display:"flex", borderRadius:5, overflow:"hidden", zIndex:isHov?10:2, transition:"height 0.2s cubic-bezier(0.4,0,0.2,1),box-shadow 0.2s cubic-bezier(0.4,0,0.2,1)",
                                     boxShadow: isHov ? `0 8px 32px ${film.color}44,0 0 0 1px ${film.color}55,inset 0 1px 0 rgba(255,255,255,0.06)` : isDark ? `0 1px 6px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.03)` : `0 1px 4px rgba(0,0,0,0.08),inset 0 1px 0 rgba(255,255,255,0.5)`,
                                   }}>
                                   <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${film.color}30,${film.color}30 3px,${film.color}18 3px,${film.color}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"5px 0 0 5px", overflow:"hidden" }}>
@@ -648,12 +645,12 @@ export default function App() {
                         {weekDates.map(d => {
                           const times=film.showtimes[d], isToday=d===today;
                           return (
-                            <td key={d} className="tkt-cell" style={{ padding:"6px 6px", textAlign:"center", borderBottom:`1px solid ${T.gridCellBorder}`, borderLeft:`1px solid ${T.gridCellBorder}`, background:isToday?T.accentSoft:"transparent", overflow:"visible" }}>
+                            <td key={d} className="tkt-cell" style={{ padding:"6px 6px", textAlign:"center", borderBottom:`1px solid ${T.gridCellBorder}`, borderLeft:`1px solid ${T.gridCellBorder}`, background:isToday?T.accentSoft:"transparent" }}>
                               {times ? (
                                 <div style={{ display:"flex", flexDirection:"column", gap:5, alignItems:"center" }}>
                                   {times.map((t,i) => {
                                     const isHoh=film.hoh?.[d]?.includes(t), bookingUrl=film.bookingUrls?.[d]?.[t];
-                                    const pill = <span key={i} className="tkt-pill" style={{ "--tkt-bg":isToday?(isDark?"#0b0a10":"#f3efe8"):(fi%2===0?T.gridStickyBg1:T.surface), "--tkt-notch-border":`${film.color}${T.pillBorderAlpha}`, fontSize:11, fontWeight:600, padding:"4px 12px", borderRadius:4, background:`${film.color}${T.pillBgAlpha}`, border:`1.5px solid ${film.color}${T.pillBorderAlpha}`, color:isDark?film.accent:film.color, fontFamily:T.mono, whiteSpace:"nowrap", transition:"all 0.2s", cursor:bookingUrl?"pointer":"default", display:"inline-flex", alignItems:"center", gap:3 }} title={film.screens?.[d]?.[t]?`${film.screens[d][t]}${isHoh?" · HoH":""}`:(isHoh?"Hard of Hearing":"")}>{t}{isHoh?" CC":""}</span>;
+                                    const pill = <span key={i} className="tkt-pill" style={{ fontSize:11, fontWeight:600, padding:"4px 12px", borderRadius:4, background:`${film.color}${T.pillBgAlpha}`, border:`1.5px solid ${film.color}${T.pillBorderAlpha}`, color:isDark?film.accent:film.color, fontFamily:T.mono, whiteSpace:"nowrap", transition:"all 0.2s", cursor:bookingUrl?"pointer":"default", display:"inline-flex", alignItems:"center", gap:3 }} title={film.screens?.[d]?.[t]?`${film.screens[d][t]}${isHoh?" · HoH":""}`:(isHoh?"Hard of Hearing":"")}>{t}{isHoh?" CC":""}</span>;
                                     return bookingUrl ? <a key={i} href={bookingUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}>{pill}</a> : pill;
                                   })}
                                 </div>
