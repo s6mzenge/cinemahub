@@ -37,6 +37,9 @@ jobs:
       - name: Run Prince Charles Cinema scraper
         run: python scraper/scrape_prince_charles.py
 
+      - name: Run Castle Cinema scraper
+        run: python scraper/scrape_castle.py
+
       - name: Check for changes
         id: changes
         run: |
@@ -47,6 +50,6 @@ jobs:
         run: |
           git config user.name "Cinema Scraper Bot"
           git config user.email "actions@github.com"
-          git add public/data/films.json public/data/films_pcc.json
+          git add public/data/films.json public/data/films_pcc.json public/data/films_castle.json
           git commit -m "chore: update timetable data ($(date -u '+%Y-%m-%d %H:%M UTC'))"
           git push
