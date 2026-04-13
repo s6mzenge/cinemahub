@@ -46,8 +46,11 @@ OVERVIEW_URL = (
     "&BOparam::WScontent::loadArticle::context_id="
 )
 
-# Polite delay between Playwright page loads (seconds)
-REQUEST_DELAY = 1.5
+# Polite delay between requests (seconds)
+REQUEST_DELAY = 0.3
+
+# Number of concurrent page fetches
+CONCURRENT_WORKERS = 5
 
 # ─── searchNames are parsed dynamically from each page ───
 # We build an index map at runtime from the searchNames array.
@@ -384,82 +387,112 @@ def parse_detail_page(html: str, permalink: str, link_title: str) -> dict | None
     }
 
 
-# ─── Playwright-based live fetching ───
+# ─── Page fetching ───
 
-async def _wait_for_real_content(page, timeout=30000):
-    """Wait for Cloudflare challenge to resolve and real BFI content to appear."""
+# Content markers that prove we got the real BFI page, not a Cloudflare challenge
+_REAL_CONTENT_MARKERS = ("Page__heading", "Rich-text", "Film-info", "searchResults")
+
+
+def _has_real_content(html: str) -> bool:
+    return any(marker in html for marker in _REAL_CONTENT_MARKERS)
+
+
+def _create_session():
+    """Create a curl_cffi session with Chrome TLS impersonation."""
     try:
-        # Wait for actual BFI content — this naturally waits through
-        # any Cloudflare challenge, which eventually reloads to the real page.
-        await page.wait_for_selector(
-            "div.Rich-text, h1.Page__heading, div.bodyDetails",
-            timeout=timeout,
-        )
+        from curl_cffi import requests as cffi_req
+        session = cffi_req.Session(impersonate="chrome")
+        return session
+    except ImportError:
+        return None
+
+
+def fetch_page(url: str, session=None) -> str | None:
+    """
+    Fetch a BFI page using curl_cffi with Chrome TLS fingerprint impersonation.
+
+    Cloudflare's primary bot detection checks the TLS fingerprint —
+    curl_cffi impersonates a real Chrome browser at the TLS level,
+    which is what makes it effective where requests and Playwright fail.
+    """
+    # Strategy 1: curl_cffi (best Cloudflare bypass)
+    try:
+        from curl_cffi import requests as cffi_req
+        if session:
+            resp = session.get(url, timeout=20)
+        else:
+            resp = cffi_req.get(url, impersonate="chrome", timeout=20)
+        resp.raise_for_status()
+        if _has_real_content(resp.text):
+            return resp.text
+        log.debug("curl_cffi got Cloudflare challenge page")
+    except ImportError:
+        log.warning("curl_cffi not installed — run: pip install curl_cffi")
+    except Exception as e:
+        log.debug(f"curl_cffi failed for {url}: {e}")
+
+    # Strategy 2: plain requests (unlikely to work if curl_cffi didn't)
+    try:
+        import requests as req
+        resp = req.get(url, headers={
+            "User-Agent": (
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+            ),
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-GB,en;q=0.9",
+        }, timeout=20)
+        resp.raise_for_status()
+        if _has_real_content(resp.text):
+            return resp.text
     except Exception:
-        # Last resort: wait a flat 8 seconds for Cloudflare to resolve
-        import asyncio
-        await asyncio.sleep(8)
+        pass
+
+    return None
 
 
-async def fetch_all_playwright(overview_url: str) -> tuple[str, dict[str, str]]:
+def fetch_and_parse_all(film_list: list[dict]) -> list[dict]:
     """
-    Use a single Playwright browser session to:
-    1. Fetch the overview page (waiting for Cloudflare to clear)
-    2. Fetch all film detail pages (reusing the cleared session)
+    Fetch and parse all film detail pages concurrently.
 
-    Returns (overview_html, {permalink: detail_html}).
+    Uses ThreadPoolExecutor to fetch CONCURRENT_WORKERS pages at a time,
+    each with its own curl_cffi session. ~200 films in ~1-2 minutes
+    instead of 10+ minutes sequentially.
     """
-    from playwright.async_api import async_playwright
-    import asyncio
+    from concurrent.futures import ThreadPoolExecutor, as_completed
 
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        # Use a realistic browser context (default UA, viewport, etc.)
-        context = await browser.new_context(
-            viewport={"width": 1280, "height": 720},
-            locale="en-GB",
-        )
-        page = await context.new_page()
+    total = len(film_list)
+    log.info(f"Fetching {total} detail pages ({CONCURRENT_WORKERS} concurrent workers)...")
 
-        # ─── Phase 1: Fetch overview ───
-        log.info(f"Fetching overview: {overview_url}")
-        overview_html = ""
-        try:
-            await page.goto(overview_url, wait_until="domcontentloaded", timeout=30000)
-            await _wait_for_real_content(page, timeout=30000)
-            overview_html = await page.content()
-        except Exception as e:
-            log.error(f"Failed to fetch overview: {e}")
-            await browser.close()
-            return "", {}
+    results = []
+    done_count = 0
 
-        # Parse film links from overview
-        film_list = extract_film_permalinks(overview_html)
-        log.info(f"Found {len(film_list)} films to fetch")
+    def _fetch_one(film: dict) -> dict | None:
+        """Fetch and parse a single film (runs in a thread)."""
+        session = _create_session()
+        html = fetch_page(film["url"], session)
+        if not html:
+            return None
+        time.sleep(REQUEST_DELAY)
+        return parse_detail_page(html, film["permalink"], film["title"])
 
-        if not film_list:
-            await browser.close()
-            return overview_html, {}
+    with ThreadPoolExecutor(max_workers=CONCURRENT_WORKERS) as executor:
+        future_to_film = {executor.submit(_fetch_one, f): f for f in film_list}
 
-        # ─── Phase 2: Fetch each detail page ───
-        detail_htmls = {}
-        for i, film in enumerate(film_list):
-            url = film["url"]
-            log.info(f"[{i+1}/{len(film_list)}] Fetching: {film['title']}")
+        for future in as_completed(future_to_film):
+            done_count += 1
+            film = future_to_film[future]
             try:
-                await page.goto(url, wait_until="domcontentloaded", timeout=30000)
-                await _wait_for_real_content(page, timeout=10000)
-                html = await page.content()
-                detail_htmls[film["permalink"]] = html
+                detail = future.result()
+                if detail and detail.get("showtimes"):
+                    results.append(detail)
+                    if done_count % 20 == 0 or done_count == total:
+                        log.info(f"  Progress: {done_count}/{total} fetched, {len(results)} with showtimes")
             except Exception as e:
-                log.warning(f"Failed to fetch {film['permalink']}: {e}")
+                log.warning(f"Error processing {film['title']}: {e}")
 
-            # Polite delay
-            await asyncio.sleep(REQUEST_DELAY)
-
-        await browser.close()
-
-    return overview_html, detail_htmls
+    log.info(f"Fetched {total} pages, {len(results)} films with showtimes")
+    return results
 
 
 # ─── Color assignment ───
@@ -541,51 +574,17 @@ def main():
             log.error("No films found in overview. Aborting.")
             sys.exit(1)
 
-        # Fetch detail pages live via Playwright (reuses Cloudflare session)
-        log.info(f"Fetching {len(film_list)} detail pages via Playwright...")
-        import asyncio
-
-        async def fetch_details_only(fl):
-            from playwright.async_api import async_playwright
-            detail_htmls = {}
-            async with async_playwright() as pw:
-                browser = await pw.chromium.launch(headless=True)
-                context = await browser.new_context(
-                    viewport={"width": 1280, "height": 720}, locale="en-GB",
-                )
-                page = await context.new_page()
-                for i, film in enumerate(fl):
-                    log.info(f"[{i+1}/{len(fl)}] Fetching: {film['title']}")
-                    try:
-                        await page.goto(film["url"], wait_until="domcontentloaded", timeout=30000)
-                        await _wait_for_real_content(page, timeout=10000)
-                        detail_htmls[film["permalink"]] = await page.content()
-                    except Exception as e:
-                        log.warning(f"Failed to fetch {film['permalink']}: {e}")
-                    await asyncio.sleep(REQUEST_DELAY)
-                await browser.close()
-            return detail_htmls
-
-        detail_htmls = asyncio.run(fetch_details_only(film_list))
-
-        for film_info in film_list:
-            html = detail_htmls.get(film_info["permalink"])
-            if not html:
-                continue
-            detail = parse_detail_page(html, film_info["permalink"], film_info["title"])
-            if detail and detail["showtimes"]:
-                films.append(detail)
+        films = fetch_and_parse_all(film_list)
 
     else:
-        # ─── Live mode: single browser session for everything ───
-        import asyncio
-
-        overview_html, detail_htmls = asyncio.run(
-            fetch_all_playwright(OVERVIEW_URL)
-        )
+        # ─── Live mode: fetch overview then all detail pages ───
+        log.info("Fetching overview page...")
+        session = _create_session()
+        overview_html = fetch_page(OVERVIEW_URL, session)
 
         if not overview_html:
-            log.error("Could not fetch overview page. Aborting.")
+            log.error("Could not fetch overview page (Cloudflare blocked all attempts).")
+            log.error("Install curl_cffi for best results: pip install curl_cffi")
             sys.exit(1)
 
         film_list = extract_film_permalinks(overview_html)
@@ -594,13 +593,7 @@ def main():
             log.error("No films found in overview. Aborting.")
             sys.exit(1)
 
-        for film_info in film_list:
-            html = detail_htmls.get(film_info["permalink"])
-            if not html:
-                continue
-            detail = parse_detail_page(html, film_info["permalink"], film_info["title"])
-            if detail and detail["showtimes"]:
-                films.append(detail)
+        films = fetch_and_parse_all(film_list)
 
     log.info(f"Parsed {len(films)} films with showtimes")
 
