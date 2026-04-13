@@ -12,6 +12,7 @@ const CINEMAS = [
   { id:"peckhamplex", name:"Peckhamplex", address:"95a Rye Lane, Peckham", url:"https://www.peckhamplex.london", price:"£7.59", dataFile:"films.json", source:"peckhamplex.london" },
   { id:"prince-charles", name:"Prince Charles Cinema", address:"7 Leicester Place, WC2", url:"https://princecharlescinema.com", price:null, dataFile:"films_pcc.json", source:"princecharlescinema.com" },
   { id:"castle-hackney", name:"The Castle Cinema", address:"64-66 Brooksby's Walk, E9", url:"https://thecastlecinema.com", price:null, dataFile:"films_castle.json", source:"thecastlecinema.com" },
+  { id:"the-arzner", name:"The Arzner", address:"10 Bermondsey Square, SE1", url:"https://thearzner.com", price:null, dataFile:"films_arzner.json", source:"thearzner.com" },
 ];
 
 function timeToMin(t){ const [h,m]=t.split(":").map(Number); return h*60+m; }
