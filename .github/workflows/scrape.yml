@@ -1,4 +1,4 @@
-name: Scrape Peckhamplex Timetable
+name: Scrape Cinema Timetables
 
 on:
   workflow_dispatch: # Triggered externally via cron-job.org
@@ -31,19 +31,22 @@ jobs:
       - name: Install Playwright browsers
         run: playwright install chromium --with-deps
 
-      - name: Run scraper
+      - name: Run Peckhamplex scraper
         run: python scraper/scrape.py
+
+      - name: Run Prince Charles Cinema scraper
+        run: python scraper/scrape_prince_charles.py
 
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet public/data/films.json && echo "changed=false" >> "$GITHUB_OUTPUT" || echo "changed=true" >> "$GITHUB_OUTPUT"
+          git diff --quiet public/data/ && echo "changed=false" >> "$GITHUB_OUTPUT" || echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Commit and push updated data
         if: steps.changes.outputs.changed == 'true'
         run: |
-          git config user.name "Peckhamplex Scraper Bot"
+          git config user.name "Cinema Scraper Bot"
           git config user.email "actions@github.com"
-          git add public/data/films.json
+          git add public/data/films.json public/data/films_pcc.json
           git commit -m "chore: update timetable data ($(date -u '+%Y-%m-%d %H:%M UTC'))"
           git push
