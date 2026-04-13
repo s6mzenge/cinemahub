@@ -386,18 +386,19 @@ def parse_detail_page(html: str, permalink: str, link_title: str) -> dict | None
 
 # ─── Playwright-based live fetching ───
 
-async def _wait_for_real_content(page, timeout=20000):
+async def _wait_for_real_content(page, timeout=30000):
     """Wait for Cloudflare challenge to resolve and real BFI content to appear."""
     try:
-        # Wait for either the film list (overview) or Page heading (detail)
+        # Wait for actual BFI content — this naturally waits through
+        # any Cloudflare challenge, which eventually reloads to the real page.
         await page.wait_for_selector(
             "div.Rich-text, h1.Page__heading, div.bodyDetails",
             timeout=timeout,
         )
     except Exception:
-        # Fallback: just wait a fixed time for Cloudflare to resolve
+        # Last resort: wait a flat 8 seconds for Cloudflare to resolve
         import asyncio
-        await asyncio.sleep(5)
+        await asyncio.sleep(8)
 
 
 async def fetch_all_playwright(overview_url: str) -> tuple[str, dict[str, str]]:
@@ -424,8 +425,8 @@ async def fetch_all_playwright(overview_url: str) -> tuple[str, dict[str, str]]:
         log.info(f"Fetching overview: {overview_url}")
         overview_html = ""
         try:
-            await page.goto(overview_url, wait_until="networkidle", timeout=45000)
-            await _wait_for_real_content(page)
+            await page.goto(overview_url, wait_until="domcontentloaded", timeout=30000)
+            await _wait_for_real_content(page, timeout=30000)
             overview_html = await page.content()
         except Exception as e:
             log.error(f"Failed to fetch overview: {e}")
@@ -446,7 +447,7 @@ async def fetch_all_playwright(overview_url: str) -> tuple[str, dict[str, str]]:
             url = film["url"]
             log.info(f"[{i+1}/{len(film_list)}] Fetching: {film['title']}")
             try:
-                await page.goto(url, wait_until="networkidle", timeout=30000)
+                await page.goto(url, wait_until="domcontentloaded", timeout=30000)
                 await _wait_for_real_content(page, timeout=10000)
                 html = await page.content()
                 detail_htmls[film["permalink"]] = html
@@ -556,7 +557,7 @@ def main():
                 for i, film in enumerate(fl):
                     log.info(f"[{i+1}/{len(fl)}] Fetching: {film['title']}")
                     try:
-                        await page.goto(film["url"], wait_until="networkidle", timeout=30000)
+                        await page.goto(film["url"], wait_until="domcontentloaded", timeout=30000)
                         await _wait_for_real_content(page, timeout=10000)
                         detail_htmls[film["permalink"]] = await page.content()
                     except Exception as e:
