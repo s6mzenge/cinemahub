@@ -386,47 +386,74 @@ def parse_detail_page(html: str, permalink: str, link_title: str) -> dict | None
 
 # ─── Playwright-based live fetching ───
 
-async def fetch_pages_playwright(overview_url: str, film_list: list[dict]) -> tuple[str | None, dict[str, str]]:
+async def _wait_for_real_content(page, timeout=20000):
+    """Wait for Cloudflare challenge to resolve and real BFI content to appear."""
+    try:
+        # Wait for either the film list (overview) or Page heading (detail)
+        await page.wait_for_selector(
+            "div.Rich-text, h1.Page__heading, div.bodyDetails",
+            timeout=timeout,
+        )
+    except Exception:
+        # Fallback: just wait a fixed time for Cloudflare to resolve
+        import asyncio
+        await asyncio.sleep(5)
+
+
+async def fetch_all_playwright(overview_url: str) -> tuple[str, dict[str, str]]:
     """
-    Use Playwright to fetch the overview page and all film detail pages.
+    Use a single Playwright browser session to:
+    1. Fetch the overview page (waiting for Cloudflare to clear)
+    2. Fetch all film detail pages (reusing the cleared session)
 
     Returns (overview_html, {permalink: detail_html}).
-    BFI uses Cloudflare, so we need a real browser.
     """
     from playwright.async_api import async_playwright
-
-    detail_htmls = {}
+    import asyncio
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
+        # Use a realistic browser context (default UA, viewport, etc.)
         context = await browser.new_context(
-            user_agent="BFIScraper/1.0 (personal project; scrapes twice daily)"
+            viewport={"width": 1280, "height": 720},
+            locale="en-GB",
         )
         page = await context.new_page()
 
-        # Fetch overview if needed
-        overview_html = None
-        if overview_url:
-            log.info(f"Fetching overview: {overview_url}")
-            try:
-                await page.goto(overview_url, wait_until="domcontentloaded", timeout=30000)
-                overview_html = await page.content()
-            except Exception as e:
-                log.error(f"Failed to fetch overview: {e}")
+        # ─── Phase 1: Fetch overview ───
+        log.info(f"Fetching overview: {overview_url}")
+        overview_html = ""
+        try:
+            await page.goto(overview_url, wait_until="networkidle", timeout=45000)
+            await _wait_for_real_content(page)
+            overview_html = await page.content()
+        except Exception as e:
+            log.error(f"Failed to fetch overview: {e}")
+            await browser.close()
+            return "", {}
 
-        # Fetch each detail page
+        # Parse film links from overview
+        film_list = extract_film_permalinks(overview_html)
+        log.info(f"Found {len(film_list)} films to fetch")
+
+        if not film_list:
+            await browser.close()
+            return overview_html, {}
+
+        # ─── Phase 2: Fetch each detail page ───
+        detail_htmls = {}
         for i, film in enumerate(film_list):
             url = film["url"]
             log.info(f"[{i+1}/{len(film_list)}] Fetching: {film['title']}")
             try:
-                await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+                await page.goto(url, wait_until="networkidle", timeout=30000)
+                await _wait_for_real_content(page, timeout=10000)
                 html = await page.content()
                 detail_htmls[film["permalink"]] = html
             except Exception as e:
                 log.warning(f"Failed to fetch {film['permalink']}: {e}")
 
             # Polite delay
-            import asyncio
             await asyncio.sleep(REQUEST_DELAY)
 
         await browser.close()
@@ -499,7 +526,7 @@ def main():
                 films.append(detail)
 
     elif args.local_overview:
-        # ─── Local overview mode: parse overview to get permalinks ───
+        # ─── Local overview + live detail pages ───
         p = Path(args.local_overview)
         if not p.exists():
             log.error(f"Overview file not found: {args.local_overview}")
@@ -513,12 +540,32 @@ def main():
             log.error("No films found in overview. Aborting.")
             sys.exit(1)
 
-        # In local-overview mode, we still need to fetch detail pages live
+        # Fetch detail pages live via Playwright (reuses Cloudflare session)
         log.info(f"Fetching {len(film_list)} detail pages via Playwright...")
         import asyncio
-        _, detail_htmls = asyncio.run(
-            fetch_pages_playwright(None, film_list)
-        )
+
+        async def fetch_details_only(fl):
+            from playwright.async_api import async_playwright
+            detail_htmls = {}
+            async with async_playwright() as pw:
+                browser = await pw.chromium.launch(headless=True)
+                context = await browser.new_context(
+                    viewport={"width": 1280, "height": 720}, locale="en-GB",
+                )
+                page = await context.new_page()
+                for i, film in enumerate(fl):
+                    log.info(f"[{i+1}/{len(fl)}] Fetching: {film['title']}")
+                    try:
+                        await page.goto(film["url"], wait_until="networkidle", timeout=30000)
+                        await _wait_for_real_content(page, timeout=10000)
+                        detail_htmls[film["permalink"]] = await page.content()
+                    except Exception as e:
+                        log.warning(f"Failed to fetch {film['permalink']}: {e}")
+                    await asyncio.sleep(REQUEST_DELAY)
+                await browser.close()
+            return detail_htmls
+
+        detail_htmls = asyncio.run(fetch_details_only(film_list))
 
         for film_info in film_list:
             html = detail_htmls.get(film_info["permalink"])
@@ -529,22 +576,12 @@ def main():
                 films.append(detail)
 
     else:
-        # ─── Live mode: fetch everything via Playwright ───
-        log.info("Fetching overview page via Playwright...")
+        # ─── Live mode: single browser session for everything ───
         import asyncio
 
-        # First pass: get overview
-        async def get_overview():
-            from playwright.async_api import async_playwright
-            async with async_playwright() as p:
-                browser = await p.chromium.launch(headless=True)
-                page = await browser.new_page()
-                await page.goto(OVERVIEW_URL, wait_until="domcontentloaded", timeout=30000)
-                html = await page.content()
-                await browser.close()
-                return html
-
-        overview_html = asyncio.run(get_overview())
+        overview_html, detail_htmls = asyncio.run(
+            fetch_all_playwright(OVERVIEW_URL)
+        )
 
         if not overview_html:
             log.error("Could not fetch overview page. Aborting.")
@@ -555,12 +592,6 @@ def main():
         if not film_list:
             log.error("No films found in overview. Aborting.")
             sys.exit(1)
-
-        # Second pass: fetch all detail pages
-        log.info(f"Fetching {len(film_list)} detail pages via Playwright...")
-        _, detail_htmls = asyncio.run(
-            fetch_pages_playwright(None, film_list)
-        )
 
         for film_info in film_list:
             html = detail_htmls.get(film_info["permalink"])
