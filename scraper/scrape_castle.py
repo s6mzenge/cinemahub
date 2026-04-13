@@ -359,9 +359,35 @@ def scrape_programme_detail(film: dict) -> dict | None:
 
 
 def assign_colors(films: list[dict]) -> None:
-    """Assign colors to films based on genre, avoiding duplicates."""
+    """Assign colors to films. Genre colors first, then procedural hue rotation."""
+    import colorsys
+
+    def hsl_to_hex(h, s, l):
+        r, g, b = colorsys.hls_to_rgb(h, l, s)
+        return f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}"
+
+    def generate_color(index):
+        """Use golden angle for max hue separation, with varied saturation/lightness."""
+        golden = 0.618033988749895
+        hue = (index * golden) % 1.0
+        # Alternate between two saturation/lightness bands for variety
+        if index % 3 == 0:
+            sat, lit = 0.65, 0.38
+            asat, alit = 0.55, 0.62
+        elif index % 3 == 1:
+            sat, lit = 0.55, 0.42
+            asat, alit = 0.50, 0.68
+        else:
+            sat, lit = 0.70, 0.35
+            asat, alit = 0.60, 0.58
+        return {
+            "color": hsl_to_hex(hue, sat, lit),
+            "accent": hsl_to_hex(hue, asat, alit),
+        }
+
     used_colors = set()
     palette_idx = 0
+    gen_idx = 0
 
     for film in films:
         genre = film.get("genre", "Other")
@@ -372,6 +398,8 @@ def assign_colors(films: list[dict]) -> None:
             film["accent"] = colors["accent"]
             used_colors.add(colors["color"])
         else:
+            # Try hand-picked extras first
+            assigned = False
             while palette_idx < len(EXTRA_PALETTES):
                 c = EXTRA_PALETTES[palette_idx]
                 palette_idx += 1
@@ -379,11 +407,18 @@ def assign_colors(films: list[dict]) -> None:
                     film["color"] = c["color"]
                     film["accent"] = c["accent"]
                     used_colors.add(c["color"])
+                    assigned = True
                     break
-            else:
-                film["color"] = DEFAULT_COLORS["color"]
-                film["accent"] = DEFAULT_COLORS["accent"]
-
+            # Fallback: generate procedural colors (never grey)
+            if not assigned:
+                while True:
+                    c = generate_color(gen_idx)
+                    gen_idx += 1
+                    if c["color"] not in used_colors:
+                        film["color"] = c["color"]
+                        film["accent"] = c["accent"]
+                        used_colors.add(c["color"])
+                        break
 
 def main():
     import argparse
