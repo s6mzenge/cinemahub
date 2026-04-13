@@ -1,7 +1,7 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 
 const ADS_MIN = 20;
-const DATA_URL = import.meta.env.BASE_URL + "data/films.json";
+const DATA_BASE = import.meta.env.BASE_URL + "data/";
 
 const DAYS = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -9,7 +9,8 @@ const rBg = { U:"#2e7d32", PG:"#b8960f", "12A":"#c45a00", "15":"#a12020", TBC:"#
 
 /* ─── Cinema registry (extend this later) ─── */
 const CINEMAS = [
-  { id:"peckhamplex", name:"Peckhamplex", address:"95a Rye Lane, Peckham", url:"https://www.peckhamplex.london", price:"£7.59" },
+  { id:"peckhamplex", name:"Peckhamplex", address:"95a Rye Lane, Peckham", url:"https://www.peckhamplex.london", price:"£7.59", dataFile:"films.json", source:"peckhamplex.london" },
+  { id:"prince-charles", name:"Prince Charles Cinema", address:"7 Leicester Place, WC2", url:"https://princecharlescinema.com", price:null, dataFile:"films_pcc.json", source:"princecharlescinema.com" },
 ];
 
 function timeToMin(t){ const [h,m]=t.split(":").map(Number); return h*60+m; }
@@ -30,7 +31,7 @@ function formatDayTab(dateStr) {
 
 function normalizeFilms(rawFilms) {
   return rawFilms.map(f => {
-    const showtimes={}, bookingUrls={}, screens={}, hoh={};
+    const showtimes={}, bookingUrls={}, screens={}, hoh={}, tags={};
     if (f.showtimes) {
       for (const [date, sessions] of Object.entries(f.showtimes)) {
         const times = [];
@@ -41,6 +42,7 @@ function normalizeFilms(rawFilms) {
             if (sess.booking_url) { if(!bookingUrls[date]) bookingUrls[date]={}; bookingUrls[date][sess.time]=sess.booking_url; }
             if (sess.screen) { if(!screens[date]) screens[date]={}; screens[date][sess.time]=sess.screen; }
             if (sess.hoh) { if(!hoh[date]) hoh[date]=[]; hoh[date].push(sess.time); }
+            if (sess.tags && sess.tags.length) { if(!tags[date]) tags[date]={}; tags[date][sess.time]=sess.tags; }
           }
         });
         showtimes[date] = times;
@@ -48,7 +50,7 @@ function normalizeFilms(rawFilms) {
     }
     return { id:f.id, title:f.title, rating:f.rating||"TBC", runtime:f.runtime||90, genre:f.genre||"Other",
       color:f.color||"#78909c", accent:f.accent||"#b0bec5", film_url:f.film_url||null, poster_url:f.poster_url||null,
-      showtimes, bookingUrls, screens, hoh:Object.keys(hoh).length>0?hoh:(f.hoh||{}) };
+      showtimes, bookingUrls, screens, hoh:Object.keys(hoh).length>0?hoh:(f.hoh||{}), tags };
   });
 }
 
@@ -140,17 +142,22 @@ export default function App() {
   }, [isMobile, sidebarOpen]);
 
   useEffect(() => {
-    fetch(DATA_URL)
+    setLoading(true); setError(null);
+    const c = CINEMAS.find(c => c.id === selCinema) || CINEMAS[0];
+    fetch(DATA_BASE + c.dataFile)
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(data => {
         const normalized = normalizeFilms(data.films || []);
         setFilms(normalized); setScrapedAt(data.scraped_at || null);
         const allDates = getAllDatesWithScreenings(normalized);
-        if (allDates.length > 0 && !allDates.includes(today)) { const future = allDates.find(d => d >= today); setSelDate(future || allDates[0]); }
+        const todayStr = getToday();
+        if (allDates.length > 0 && !allDates.includes(todayStr)) { const future = allDates.find(d => d >= todayStr); setSelDate(future || allDates[0]); }
+        else if (allDates.includes(todayStr)) { setSelDate(todayStr); }
+        setSelWeekStart(null);
         setLoading(false);
       })
       .catch(err => { setError(err.message); setLoading(false); });
-  }, []);
+  }, [selCinema]);
 
   const allDates = useMemo(() => getAllDatesWithScreenings(films), [films]);
 
@@ -189,6 +196,7 @@ export default function App() {
       sessions: f.showtimes[selDate].map(t => ({
         time:t, startMin:timeToMin(t), adsEnd:timeToMin(t)+ADS_MIN, filmEnd:timeToMin(t)+ADS_MIN+f.runtime,
         isHoh:f.hoh?.[selDate]?.includes(t), bookingUrl:f.bookingUrls?.[selDate]?.[t]||null, screen:f.screens?.[selDate]?.[t]||null,
+        tags:f.tags?.[selDate]?.[t]||[],
       })),
     }));
   }, [selDate, films]);
@@ -428,6 +436,7 @@ export default function App() {
                 </div>
               </div>
               <div style={{ display:"flex", alignItems:"center", gap:10, flexWrap:"wrap" }}>
+                {cinema.price && (
                 <div style={{
                   display:"inline-flex", alignItems:"center", gap:6,
                   padding:"5px 14px", borderRadius:20,
@@ -437,6 +446,7 @@ export default function App() {
                   <span style={{ fontSize:13, color:T.accent, fontWeight:700, fontFamily:T.mono }}>{cinema.price}</span>
                   <span style={{ fontSize:10, color:`${T.accent}88` }}>all tickets</span>
                 </div>
+                )}
                 <a href={cinema.url} target="_blank" rel="noopener" style={{ color:T.textMuted, textDecoration:"none", fontSize:11, fontFamily:T.mono, letterSpacing:0.5 }}>
                   {cinema.address} ↗
                 </a>
@@ -522,6 +532,7 @@ export default function App() {
                                         <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>ends {minToTime(sess.startMin+film.runtime)}</span>
                                         {sess.screen && <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>{sess.screen}</span>}
                                         {sess.isHoh && <span style={{ fontSize:9, color:T.textMuted, fontFamily:T.mono, padding:"1px 4px", borderRadius:3, background:T.ccBg, border:`1px solid ${T.ccBorder}` }}>CC</span>}
+                                        {sess.tags?.map((tag,ti) => <span key={ti} style={{ fontSize:9, color:T.accent, fontFamily:T.mono, padding:"1px 5px", borderRadius:3, background:T.accentSoft, border:`1px solid ${T.accent}22`, fontWeight:600 }}>{tag}</span>)}
                                       </div>
                                     </div>
                                     {sess.bookingUrl && (<>
@@ -584,7 +595,7 @@ export default function App() {
                                   <div style={{ flex:1, background:`linear-gradient(135deg,${film.color}bb 0%,${film.color}88 100%)`, padding:"4px 10px", display:"flex", alignItems:"center", gap:6, minWidth:0, borderRadius:"0 5px 5px 0", overflow:"hidden" }}>
                                     <div style={{ flex:1, minWidth:0 }}>
                                       <div style={{ fontSize:10.5, fontWeight:700, color:T.barText, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", textShadow:"0 1px 4px rgba(0,0,0,0.5)", fontFamily:T.mono }}>
-                                        {sess.time} – {minToTime(sess.startMin+film.runtime)}{sess.isHoh?"  CC":""}
+                                        {sess.time} – {minToTime(sess.startMin+film.runtime)}{sess.isHoh?"  CC":""}{sess.tags?.length?`  ${sess.tags.join(" · ")}`:""}
                                       </div>
                                       {isHov && <div style={{ fontSize:9, color:T.barSubText, marginTop:3, fontFamily:T.mono }}>Ends ~{minToTime(sess.filmEnd)} with ads{sess.screen?` · ${sess.screen}`:""}</div>}
                                     </div>
@@ -649,8 +660,9 @@ export default function App() {
                               {times ? (
                                 <div style={{ display:"flex", flexDirection:"column", gap:5, alignItems:"center" }}>
                                   {times.map((t,i) => {
-                                    const isHoh=film.hoh?.[d]?.includes(t), bookingUrl=film.bookingUrls?.[d]?.[t];
-                                    const pill = <span key={i} className="tkt-pill" style={{ fontSize:11, fontWeight:600, padding:"4px 12px", borderRadius:4, background:`${film.color}${T.pillBgAlpha}`, border:`1.5px solid ${film.color}${T.pillBorderAlpha}`, color:isDark?film.accent:film.color, fontFamily:T.mono, whiteSpace:"nowrap", transition:"all 0.2s", cursor:bookingUrl?"pointer":"default", display:"inline-flex", alignItems:"center", gap:3 }} title={film.screens?.[d]?.[t]?`${film.screens[d][t]}${isHoh?" · HoH":""}`:(isHoh?"Hard of Hearing":"")}>{t}{isHoh?" CC":""}</span>;
+                                    const isHoh=film.hoh?.[d]?.includes(t), bookingUrl=film.bookingUrls?.[d]?.[t], sessTags=film.tags?.[d]?.[t]||[];
+                                    const tagStr = sessTags.length ? ` ${sessTags.join("·")}` : "";
+                                    const pill = <span key={i} className="tkt-pill" style={{ fontSize:11, fontWeight:600, padding:"4px 12px", borderRadius:4, background:`${film.color}${T.pillBgAlpha}`, border:`1.5px solid ${film.color}${T.pillBorderAlpha}`, color:isDark?film.accent:film.color, fontFamily:T.mono, whiteSpace:"nowrap", transition:"all 0.2s", cursor:bookingUrl?"pointer":"default", display:"inline-flex", alignItems:"center", gap:3 }} title={film.screens?.[d]?.[t]?`${film.screens[d][t]}${isHoh?" · HoH":""}`:(isHoh?"Hard of Hearing":"")}>{t}{isHoh?" CC":""}{tagStr}</span>;
                                     return bookingUrl ? <a key={i} href={bookingUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}>{pill}</a> : pill;
                                   })}
                                 </div>
@@ -688,7 +700,7 @@ export default function App() {
             </div>
             {scrapedAt && (
               <div style={{ fontSize:9, color:T.textFaint, marginTop:8, fontFamily:T.mono, paddingTop:8, borderTop:`1px solid ${T.border}`, letterSpacing:0.3 }}>
-                Data from peckhamplex.london · Updated {new Date(scrapedAt).toLocaleString("en-GB",{dateStyle:"medium",timeStyle:"short"})} · Always confirm at the cinema
+                Data from {cinema.source || cinema.url.replace(/^https?:\/\/(www\.)?/,"")} · Updated {new Date(scrapedAt).toLocaleString("en-GB",{dateStyle:"medium",timeStyle:"short"})} · Always confirm at the cinema
               </div>
             )}
           </div>
