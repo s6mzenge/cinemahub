@@ -334,7 +334,7 @@ async def _scrape_single_screen(
         screen = None
         try:
             log.info(f"  Veezi [{index+1}/{total}]: {url[:70]}...")
-            await page.goto(url, wait_until="domcontentloaded", timeout=20000)
+            await page.goto(url, wait_until="domcontentloaded", timeout=30000)
 
             # Fast path: wait for the content selector to appear.
             # After the first few requests warm Cloudflare, this resolves in <500ms.
