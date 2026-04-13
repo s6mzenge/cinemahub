@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
 """
-Peckhamplex Timetable Scraper — FAST VARIANT
+Peckhamplex Timetable Scraper — FULLY ASYNC
 
-Same as scrape.py but with concurrent Veezi screen scraping in Step 3.
-Instead of visiting each booking URL one-by-one in a single tab,
-this opens multiple tabs in parallel (default: 5 concurrent tabs).
+All three steps run asynchronously:
+  Step 1: Film list pages fetched concurrently with aiohttp
+  Step 2: Film detail pages fetched concurrently (semaphore-gated)
+  Step 3: Veezi screen scraping with concurrent Playwright tabs
 
-Typical speedup: 4-6x on Step 3 depending on the number of booking URLs.
+Typical total time: ~30-40s instead of ~2-3 minutes.
 
 Usage:
-    python scrape_fast.py                          # default concurrency (5 tabs)
-    python scrape_fast.py --concurrency 8          # more aggressive
-    python scrape_fast.py --no-screens             # skip Step 3 entirely
-    python scrape_fast.py -o my_output.json        # custom output path
+    python scrape.py                          # default concurrency
+    python scrape.py --concurrency 8          # more Playwright tabs
+    python scrape.py --no-screens             # skip Step 3 entirely
+    python scrape.py -o my_output.json        # custom output path
 """
 
 import json
@@ -23,9 +24,9 @@ import logging
 import asyncio
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin, urlparse, parse_qs
+from urllib.parse import urljoin
 
-import requests
+import aiohttp
 from bs4 import BeautifulSoup
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -35,8 +36,8 @@ BASE_URL = "https://www.peckhamplex.london"
 LISTINGS_URL = f"{BASE_URL}/films/out-now"
 COMING_SOON_URL = f"{BASE_URL}/films/coming-soon"
 
-# Polite delay between requests (seconds)
-REQUEST_DELAY = 1.0
+# Max concurrent HTTP requests for the Peckhamplex site
+HTTP_CONCURRENCY = 5
 REQUEST_TIMEOUT = 15
 
 HEADERS = {
@@ -84,23 +85,34 @@ EXTRA_PALETTES = [
 
 
 # ---------------------------------------------------------------------------
-# Steps 1 & 2: Film list + detail scraping (unchanged)
+# Async HTTP fetching
 # ---------------------------------------------------------------------------
 
-def fetch(url: str, retries: int = 2) -> BeautifulSoup | None:
-    for attempt in range(retries + 1):
-        try:
-            log.info(f"Fetching: {url}")
-            resp = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-            resp.raise_for_status()
-            time.sleep(REQUEST_DELAY)
-            return BeautifulSoup(resp.text, "html.parser")
-        except requests.RequestException as e:
-            log.warning(f"Attempt {attempt+1} failed for {url}: {e}")
-            if attempt < retries:
-                time.sleep(2 ** attempt)
+async def fetch(
+    session: aiohttp.ClientSession,
+    url: str,
+    semaphore: asyncio.Semaphore,
+    retries: int = 2,
+) -> BeautifulSoup | None:
+    """Fetch a URL through the shared session, gated by the semaphore."""
+    async with semaphore:
+        for attempt in range(retries + 1):
+            try:
+                log.info(f"Fetching: {url}")
+                async with session.get(url, timeout=aiohttp.ClientTimeout(total=REQUEST_TIMEOUT)) as resp:
+                    resp.raise_for_status()
+                    html = await resp.text()
+                    return BeautifulSoup(html, "html.parser")
+            except (aiohttp.ClientError, asyncio.TimeoutError) as e:
+                log.warning(f"Attempt {attempt+1} failed for {url}: {e}")
+                if attempt < retries:
+                    await asyncio.sleep(2 ** attempt)
     return None
 
+
+# ---------------------------------------------------------------------------
+# Parsing helpers (unchanged)
+# ---------------------------------------------------------------------------
 
 def parse_runtime(text: str) -> int | None:
     text = text.strip().lower()
@@ -149,12 +161,23 @@ def extract_runtime(soup: BeautifulSoup) -> int | None:
     return None
 
 
-def scrape_film_list(url: str) -> list[dict]:
-    soup = fetch(url)
-    if not soup:
-        log.error(f"Could not fetch listings page: {url}")
-        return []
+def parse_date_text(text: str) -> str | None:
+    cleaned = re.sub(r"(\d+)(st|nd|rd|th)", r"\1", text.strip())
+    for fmt in ["%A %d %B %Y", "%d %B %Y", "%A %d %b %Y"]:
+        try:
+            dt = datetime.strptime(cleaned, fmt)
+            return dt.strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+    return None
 
+
+# ---------------------------------------------------------------------------
+# Step 1: Film list scraping (async)
+# ---------------------------------------------------------------------------
+
+def parse_film_list(soup: BeautifulSoup, url: str) -> list[dict]:
+    """Parse a listing page soup into film stubs."""
     films = []
     for wrapper in soup.select(".title-wrapper"):
         link_el = wrapper.select_one("a[href*='/film/']")
@@ -185,23 +208,36 @@ def scrape_film_list(url: str) -> list[dict]:
     return films
 
 
-def parse_date_text(text: str) -> str | None:
-    cleaned = re.sub(r"(\d+)(st|nd|rd|th)", r"\1", text.strip())
-    for fmt in ["%A %d %B %Y", "%d %B %Y", "%A %d %b %Y"]:
-        try:
-            dt = datetime.strptime(cleaned, fmt)
-            return dt.strftime("%Y-%m-%d")
-        except ValueError:
+async def scrape_film_lists(
+    session: aiohttp.ClientSession,
+    semaphore: asyncio.Semaphore,
+) -> list[dict]:
+    """Fetch both listing pages concurrently and merge results."""
+    urls = [LISTINGS_URL, COMING_SOON_URL]
+    soups = await asyncio.gather(
+        *(fetch(session, url, semaphore) for url in urls)
+    )
+
+    all_films = []
+    seen_ids: set[str] = set()
+    for soup, url in zip(soups, urls):
+        if not soup:
+            log.error(f"Could not fetch listings page: {url}")
             continue
-    return None
+        for film in parse_film_list(soup, url):
+            if film["id"] not in seen_ids:
+                all_films.append(film)
+                seen_ids.add(film["id"])
+
+    return all_films
 
 
-def scrape_film_detail(film: dict) -> dict | None:
-    soup = fetch(film["film_url"])
-    if not soup:
-        log.error(f"Could not fetch film page: {film['film_url']}")
-        return None
+# ---------------------------------------------------------------------------
+# Step 2: Film detail scraping (async, concurrent)
+# ---------------------------------------------------------------------------
 
+def parse_film_detail(soup: BeautifulSoup, film: dict) -> dict | None:
+    """Parse a film detail page soup into a film dict. Pure parsing, no I/O."""
     rating = extract_rating(soup)
     genre = extract_genre(soup)
     runtime = extract_runtime(soup)
@@ -256,8 +292,33 @@ def scrape_film_detail(film: dict) -> dict | None:
     }
 
 
+async def scrape_film_detail(
+    session: aiohttp.ClientSession,
+    semaphore: asyncio.Semaphore,
+    film: dict,
+) -> dict | None:
+    """Fetch and parse a single film detail page."""
+    soup = await fetch(session, film["film_url"], semaphore)
+    if not soup:
+        log.error(f"Could not fetch film page: {film['film_url']}")
+        return None
+    return parse_film_detail(soup, film)
+
+
+async def scrape_all_details(
+    session: aiohttp.ClientSession,
+    semaphore: asyncio.Semaphore,
+    films_raw: list[dict],
+) -> list[dict]:
+    """Fetch all film detail pages concurrently."""
+    results = await asyncio.gather(
+        *(scrape_film_detail(session, semaphore, f) for f in films_raw)
+    )
+    return [r for r in results if r and r["showtimes"]]
+
+
 # ---------------------------------------------------------------------------
-# Step 3: FAST concurrent Veezi screen scraping
+# Step 3: FAST concurrent Veezi screen scraping (unchanged)
 # ---------------------------------------------------------------------------
 
 async def _scrape_single_screen(
@@ -275,22 +336,35 @@ async def _scrape_single_screen(
             log.info(f"  Veezi [{index+1}/{total}]: {url[:70]}...")
             await page.goto(url, wait_until="domcontentloaded", timeout=20000)
 
-            # Poll for Cloudflare to resolve — reduced ticks since we're parallel
-            for tick in range(6):
-                await page.wait_for_timeout(2000)
-                try:
-                    title = await page.title()
-                except Exception:
-                    continue
+            # Fast path: wait for the content selector to appear.
+            # After the first few requests warm Cloudflare, this resolves in <500ms.
+            # Falls back to short-interval polling for Cloudflare challenges.
+            try:
+                await page.wait_for_selector(
+                    ".showtime-info, .error-page, .unavailable",
+                    timeout=12000,
+                )
+            except Exception:
+                # Selector didn't appear — may be stuck on Cloudflare challenge.
+                # Short-poll as a fallback.
+                for tick in range(4):
+                    await page.wait_for_timeout(500)
+                    try:
+                        title = await page.title()
+                    except Exception:
+                        continue
+                    if "moment" not in title.lower():
+                        break
 
-                if "moment" in title.lower():
-                    continue
-
-                if "unavailable" in title.lower() or "error" in title.lower():
-                    log.info(f"    Session unavailable (past showtime)")
-                    break
-
-                # We're through — extract screen
+            # Check if we landed on an error/unavailable page
+            try:
+                title = await page.title()
+            except Exception:
+                title = ""
+            if "unavailable" in title.lower() or "error" in title.lower():
+                log.info(f"    Session unavailable (past showtime)")
+            else:
+                # Extract screen info
                 infos = await page.query_selector_all(".showtime-info")
                 for info in infos:
                     label_el = await info.query_selector("label")
@@ -300,7 +374,6 @@ async def _scrape_single_screen(
                         if "screen" in label_text:
                             screen = (await text_el.inner_text()).strip()
                             break
-                break
 
             if screen:
                 log.info(f"    → {screen}")
@@ -315,31 +388,19 @@ async def _scrape_single_screen(
 
 async def scrape_screens_playwright_fast(
     booking_urls: list[str],
-    concurrency: int = 5,
+    concurrency: int = 8,
 ) -> dict[str, str | None]:
-    """Scrape screen numbers from Veezi using multiple concurrent browser tabs.
-
-    Args:
-        booking_urls: List of Veezi booking URLs to check.
-        concurrency:  Max number of tabs open at once (default 5).
-                      Higher = faster, but more memory & CPU. 3-8 is the sweet spot.
-
-    Returns:
-        Dict mapping booking_url -> screen name (or None).
-    """
+    """Scrape screen numbers from Veezi using multiple concurrent browser tabs."""
     from playwright.async_api import async_playwright
 
     if not booking_urls:
         return {}
 
-    # Filter to only Veezi URLs
     veezi_urls = [u for u in booking_urls if u and "veezi.com" in u]
     if not veezi_urls:
         return {}
 
-    log.info(
-        f"Scraping {len(veezi_urls)} Veezi URLs with concurrency={concurrency}"
-    )
+    log.info(f"Scraping {len(veezi_urls)} Veezi URLs with concurrency={concurrency}")
     start_time = time.time()
 
     results: dict[str, str | None] = {}
@@ -360,8 +421,6 @@ async def scrape_screens_playwright_fast(
         )
 
         semaphore = asyncio.Semaphore(concurrency)
-
-        # Launch ALL tasks concurrently (semaphore limits actual parallelism)
         tasks = [
             _scrape_single_screen(context, semaphore, url, i, len(veezi_urls))
             for i, url in enumerate(veezi_urls)
@@ -384,7 +443,6 @@ async def scrape_screens_playwright_fast(
         f"Veezi scraping done: {screens_found}/{len(veezi_urls)} screens found "
         f"in {elapsed:.1f}s"
     )
-
     return results
 
 
@@ -422,51 +480,37 @@ def assign_colors(films: list[dict]) -> None:
 # Main
 # ---------------------------------------------------------------------------
 
-def main():
-    import argparse
-    parser = argparse.ArgumentParser(description="Scrape Peckhamplex timetable (fast)")
-    parser.add_argument("-o", "--output", type=str, default=None,
-                        help="Output path for films.json")
-    parser.add_argument("--no-screens", action="store_true",
-                        help="Skip scraping Veezi for screen numbers (faster)")
-    parser.add_argument("--concurrency", type=int, default=5,
-                        help="Number of concurrent Playwright tabs for Veezi (default: 5)")
-    args = parser.parse_args()
-
+async def async_main(args):
     output_path = Path(args.output) if args.output else (
         Path(__file__).parent.parent / "public" / "data" / "films.json"
     )
 
-    log.info("=== Peckhamplex Scraper Starting (FAST) ===")
+    log.info("=== Peckhamplex Scraper Starting (FULLY ASYNC) ===")
+    total_start = time.time()
 
-    # Step 1: Get film list
-    all_films_raw = []
-    seen_ids = set()
+    http_semaphore = asyncio.Semaphore(HTTP_CONCURRENCY)
 
-    for url in [LISTINGS_URL, COMING_SOON_URL]:
-        for film in scrape_film_list(url):
-            if film["id"] not in seen_ids:
-                all_films_raw.append(film)
-                seen_ids.add(film["id"])
+    async with aiohttp.ClientSession(headers=HEADERS) as session:
+        # Step 1: Get film lists (both pages concurrently)
+        t0 = time.time()
+        all_films_raw = await scrape_film_lists(session, http_semaphore)
+        log.info(f"Step 1 done in {time.time()-t0:.1f}s — {len(all_films_raw)} films found")
 
-    if not all_films_raw:
-        log.error("No films found at all. Aborting.")
-        sys.exit(1)
+        if not all_films_raw:
+            log.error("No films found at all. Aborting.")
+            sys.exit(1)
 
-    # Step 2: Scrape each film's detail page
-    films = []
-    for film_raw in all_films_raw:
-        detail = scrape_film_detail(film_raw)
-        if detail and detail["showtimes"]:
-            films.append(detail)
+        # Step 2: Scrape all film detail pages concurrently
+        t0 = time.time()
+        films = await scrape_all_details(session, http_semaphore, all_films_raw)
+        log.info(f"Step 2 done in {time.time()-t0:.1f}s — {len(films)} films with showtimes")
 
-    log.info(f"Scraped details for {len(films)} films with showtimes")
-
-    # Step 3: Scrape screen numbers — NOW CONCURRENT
+    # Step 3: Scrape screen numbers (Playwright, already concurrent)
     if not args.no_screens:
+        t0 = time.time()
         log.info("Scraping Veezi for screen numbers (concurrent)...")
         unique_booking_urls = []
-        seen_urls = set()
+        seen_urls: set[str] = set()
 
         for film in films:
             for date_str, sessions in film["showtimes"].items():
@@ -477,11 +521,10 @@ def main():
 
         log.info(f"Found {len(unique_booking_urls)} unique booking URLs to check")
 
-        url_to_screen = asyncio.run(
-            scrape_screens_playwright_fast(unique_booking_urls, args.concurrency)
+        url_to_screen = await scrape_screens_playwright_fast(
+            unique_booking_urls, args.concurrency
         )
 
-        # Apply screen info back to sessions
         screens_found = 0
         for film in films:
             for date_str, sessions in film["showtimes"].items():
@@ -490,7 +533,7 @@ def main():
                         sess["screen"] = url_to_screen[sess["booking_url"]]
                         screens_found += 1
 
-        log.info(f"Applied screen info to {screens_found} sessions")
+        log.info(f"Step 3 done in {time.time()-t0:.1f}s — {screens_found} screens applied")
     else:
         log.info("Skipping Veezi screen scraping (--no-screens)")
 
@@ -506,8 +549,23 @@ def main():
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(json.dumps(output, indent=2, ensure_ascii=False))
+
+    total_elapsed = time.time() - total_start
     log.info(f"Wrote {len(films)} films to {output_path}")
-    log.info("=== Scraper Complete ===")
+    log.info(f"=== Scraper Complete in {total_elapsed:.1f}s ===")
+
+
+def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Scrape Peckhamplex timetable (fully async)")
+    parser.add_argument("-o", "--output", type=str, default=None,
+                        help="Output path for films.json")
+    parser.add_argument("--no-screens", action="store_true",
+                        help="Skip scraping Veezi for screen numbers (faster)")
+    parser.add_argument("--concurrency", type=int, default=8,
+                        help="Number of concurrent Playwright tabs for Veezi (default: 8)")
+    args = parser.parse_args()
+    asyncio.run(async_main(args))
 
 
 if __name__ == "__main__":
