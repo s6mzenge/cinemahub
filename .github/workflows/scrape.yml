@@ -12,7 +12,7 @@ env:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
 
     steps:
       - name: Checkout repo
@@ -43,6 +43,9 @@ jobs:
       - name: Run The Arzner scraper
         run: python scraper/scrape_arzner.py
 
+      - name: Run BFI Southbank scraper
+        run: python scraper/scrape_bfi.py
+
       - name: Check for changes
         id: changes
         run: |
@@ -53,6 +56,6 @@ jobs:
         run: |
           git config user.name "Cinema Scraper Bot"
           git config user.email "actions@github.com"
-          git add public/data/films.json public/data/films_pcc.json public/data/films_castle.json public/data/films_arzner.json
+          git add public/data/films.json public/data/films_pcc.json public/data/films_castle.json public/data/films_arzner.json public/data/films_bfi.json
           git commit -m "chore: update timetable data ($(date -u '+%Y-%m-%d %H:%M UTC'))"
           git push
