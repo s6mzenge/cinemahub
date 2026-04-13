@@ -45,6 +45,7 @@ jobs:
 
       - name: Run BFI Southbank scraper
         run: python scraper/scrape_bfi.py
+        continue-on-error: true  # BFI has aggressive Cloudflare; don't block other cinemas
 
       - name: Check for changes
         id: changes
