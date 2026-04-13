@@ -10,10 +10,10 @@ const rBg = { U:"#2e7d32", PG:"#b8960f", "12A":"#c45a00", "15":"#a12020", TBC:"#
 /* ─── Cinema registry (extend this later) ─── */
 const CINEMAS = [
   { id:"peckhamplex", name:"Peckhamplex", address:"95a Rye Lane, Peckham", url:"https://www.peckhamplex.london", price:"£7.59", dataFile:"films.json", source:"peckhamplex.london" },
-  { id:"prince-charles", name:"Prince Charles Cinema", address:"7 Leicester Place, WC2", url:"https://princecharlescinema.com", price:null, dataFile:"films_pcc.json", source:"princecharlescinema.com" },
-  { id:"castle-hackney", name:"The Castle Cinema", address:"64-66 Brooksby's Walk, E9", url:"https://thecastlecinema.com", price:null, dataFile:"films_castle.json", source:"thecastlecinema.com" },
+  { id:"prince-charles", name:"Prince Charles", address:"7 Leicester Place, WC2", url:"https://princecharlescinema.com", price:null, dataFile:"films_pcc.json", source:"princecharlescinema.com" },
+  { id:"castle-hackney", name:"The Castle", address:"64-66 Brooksby's Walk, E9", url:"https://thecastlecinema.com", price:null, dataFile:"films_castle.json", source:"thecastlecinema.com" },
   { id:"the-arzner", name:"The Arzner", address:"10 Bermondsey Square, SE1", url:"https://thearzner.com", price:null, dataFile:"films_arzner.json", source:"thearzner.com" },
-  { id:"bfi-southbank", name:"BFI Southbank", address:"Belvedere Rd, SE1 8XT", url:"https://whatson.bfi.org.uk", price:null, dataFile:"films_bfi.json", source:"whatson.bfi.org.uk" },
+  { id:"bfi-southbank", name:"The BFI", address:"Belvedere Rd, SE1 8XT", url:"https://whatson.bfi.org.uk", price:null, dataFile:"films_bfi.json", source:"whatson.bfi.org.uk" },
 ];
 
 function timeToMin(t){ const [h,m]=t.split(":").map(Number); return h*60+m; }
@@ -110,6 +110,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [scrapedAt, setScrapedAt] = useState(null);
+  const [tickerItems, setTickerItems] = useState([]);
 
   const today = getToday();
   const [selDate, setSelDate] = useState(today);
@@ -143,6 +144,55 @@ export default function App() {
     const timer = setTimeout(() => document.addEventListener("click", close), 10);
     return () => { clearTimeout(timer); document.removeEventListener("click", close); };
   }, [isMobile, sidebarOpen]);
+
+  /* ─── Ticker: load all cinema data and find next showings ─── */
+  useEffect(() => {
+    const loadTicker = async () => {
+      const todayStr = getToday();
+      const nowMin = getNowMin();
+      const items = [];
+      await Promise.all(CINEMAS.map(async (c) => {
+        try {
+          const r = await fetch(DATA_BASE + c.dataFile);
+          if (!r.ok) return;
+          const data = await r.json();
+          const films = normalizeFilms(data.films || []);
+          // Find next showings today and tomorrow
+          const dates = [todayStr];
+          const tmrw = new Date(); tmrw.setDate(tmrw.getDate()+1);
+          const tmrwStr = `${tmrw.getFullYear()}-${String(tmrw.getMonth()+1).padStart(2,"0")}-${String(tmrw.getDate()).padStart(2,"0")}`;
+          dates.push(tmrwStr);
+          for (const date of dates) {
+            for (const film of films) {
+              const times = film.showtimes[date];
+              if (!times) continue;
+              for (const t of times) {
+                const tMin = timeToMin(t);
+                if (date === todayStr && tMin < nowMin) continue; // skip past showings
+                items.push({ cinema: c.name, cinemaId: c.id, title: film.title, time: t, date, color: film.color, isToday: date === todayStr });
+              }
+            }
+          }
+        } catch(e) { /* ignore */ }
+      }));
+      // Sort by soonest first
+      items.sort((a,b) => {
+        if (a.date !== b.date) return a.date < b.date ? -1 : 1;
+        return timeToMin(a.time) - timeToMin(b.time);
+      });
+      // Take next few per cinema for a good ticker
+      const perCinema = {};
+      const selected = [];
+      for (const item of items) {
+        const count = perCinema[item.cinemaId] || 0;
+        if (count < 3) { selected.push(item); perCinema[item.cinemaId] = count + 1; }
+      }
+      setTickerItems(selected);
+    };
+    loadTicker();
+    const interval = setInterval(loadTicker, 5 * 60 * 1000); // refresh every 5 min
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     setLoading(true); setError(null);
@@ -281,21 +331,7 @@ export default function App() {
           );
         })}
 
-        {/* Placeholder for future cinemas */}
-        <button style={{
-          display:"flex", alignItems:"center", gap:10, width:"100%",
-          padding:"10px 12px", borderRadius:8, border:`1px dashed ${T.border}`, cursor:"default",
-          fontFamily:T.mono, fontSize:10, textAlign:"left", marginTop:4,
-          background:"transparent", color:T.textFaint, letterSpacing:0.5,
-        }}>
-          <div style={{
-            width:32, height:32, borderRadius:8, flexShrink:0,
-            border:`1px dashed ${T.border}`,
-            display:"flex", alignItems:"center", justifyContent:"center",
-            fontSize:14, opacity:0.4,
-          }}>+</div>
-          <div>More cinemas soon</div>
-        </button>
+
       </div>
 
       {/* Bottom: theme toggle */}
@@ -414,6 +450,17 @@ export default function App() {
             radial-gradient(circle 5px at 100% 50%, transparent 4px, #000 4.5px) 100% 0 / 51% 100% no-repeat;
         }
         .tkt-cell { }
+
+        @keyframes tickerScroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .ticker-wrap { overflow:hidden; }
+        .ticker-track {
+          display:inline-flex; white-space:nowrap;
+          animation: tickerScroll var(--ticker-dur, 30s) linear infinite;
+        }
+        .ticker-track:hover { animation-play-state: paused; }
       `}</style>
 
       <Overlay />
@@ -424,6 +471,52 @@ export default function App() {
         flex:1, position:"relative", zIndex:1, minWidth:0,
         marginLeft: isMobile ? 0 : 0, /* sidebar is sticky, content flows naturally */
       }}>
+
+        {/* ═══════ TICKER BANNER ═══════ */}
+        {tickerItems.length > 0 && (
+          <div style={{
+            background: isDark ? "rgba(212,160,83,0.06)" : "rgba(160,116,48,0.06)",
+            borderBottom: `1px solid ${T.accent}22`,
+            padding: "6px 0",
+            position: "relative",
+            overflow: "hidden",
+          }}>
+            <div className="ticker-wrap">
+              <div className="ticker-track" style={{ "--ticker-dur": `${Math.max(25, tickerItems.length * 5)}s` }}>
+                {[...tickerItems, ...tickerItems].map((item, i) => (
+                  <span key={i} onClick={() => { setSelCinema(item.cinemaId); if(item.isToday) setSelDate(item.date); }}
+                    style={{
+                      display: "inline-flex", alignItems: "center", gap: 6,
+                      padding: "2px 20px", cursor: "pointer",
+                      borderRight: `1px solid ${T.accent}15`,
+                    }}>
+                    <span style={{
+                      width: 5, height: 5, borderRadius: "50%",
+                      background: item.color || T.accent, flexShrink: 0,
+                    }} />
+                    <span style={{ fontSize: 10, fontFamily: T.mono, color: T.accent, fontWeight: 700 }}>
+                      {item.time}
+                    </span>
+                    <span style={{ fontSize: 10, fontFamily: T.sans, color: T.textSub, fontWeight: 600 }}>
+                      {item.title}
+                    </span>
+                    <span style={{ fontSize: 9, fontFamily: T.mono, color: T.textDim }}>
+                      @ {item.cinema}
+                    </span>
+                    {item.isToday && (
+                      <span style={{
+                        fontSize: 8, fontFamily: T.mono, fontWeight: 700,
+                        color: T.accent, background: T.accentSoft,
+                        padding: "1px 5px", borderRadius: 3, letterSpacing: 0.5,
+                      }}>TODAY</span>
+                    )}
+                    <span style={{ color: T.textFaint, padding: "0 8px", fontSize: 9 }}>✦</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* ═══════ HEADER ═══════ */}
         <div style={{ background:T.headerBg, padding:"20px 24px 18px", borderBottom:`1px solid ${T.accent}33` }}>
