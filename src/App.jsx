@@ -282,21 +282,6 @@ export default function App() {
           );
         })}
 
-        {/* Placeholder for future cinemas */}
-        <button style={{
-          display:"flex", alignItems:"center", gap:10, width:"100%",
-          padding:"10px 12px", borderRadius:8, border:`1px dashed ${T.border}`, cursor:"default",
-          fontFamily:T.mono, fontSize:10, textAlign:"left", marginTop:4,
-          background:"transparent", color:T.textFaint, letterSpacing:0.5,
-        }}>
-          <div style={{
-            width:32, height:32, borderRadius:8, flexShrink:0,
-            border:`1px dashed ${T.border}`,
-            display:"flex", alignItems:"center", justifyContent:"center",
-            fontSize:14, opacity:0.4,
-          }}>+</div>
-          <div>More cinemas soon</div>
-        </button>
       </div>
 
       {/* Bottom: theme toggle */}
@@ -515,40 +500,48 @@ export default function App() {
                       {groups.map((group,gi) => {
                         const isPast = nowMin!==null && group.startMin+ADS_MIN<nowMin;
                         return (
-                          <div key={group.time+gi} style={{ display:"flex", gap:0, opacity:isPast?0.35:1, transition:"opacity 0.3s" }}>
-                            <div style={{ width:56, flexShrink:0, display:"flex", flexDirection:"column", alignItems:"center", position:"relative" }}>
-                              <div style={{ fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono, padding:"13px 0 4px", zIndex:2, background:T.bg }}>{group.time}</div>
-                              {gi<groups.length-1 && <div style={{ width:1, flex:1, background:T.mobileConnector(T.accent), minHeight:8 }} />}
-                            </div>
-                            <div style={{ flex:1, display:"flex", flexDirection:"column", gap:8, paddingBottom:18 }}>
-                              {group.sessions.map((sess,si) => {
-                                const film=sess.film;
-                                return (
-                                  <div key={`${film.id}-${si}`} className="tkt-card" style={{ display:"flex", alignItems:"center", gap:0, borderRadius:12, border:`1px solid ${T.cardBorder(film.color)}`, background:T.cardBg(film.color) }}>
-                                    <div style={{ width:4, alignSelf:"stretch", background:`linear-gradient(180deg,${film.color},${film.color}66)`, flexShrink:0, borderRadius:"12px 0 0 12px" }} />
-                                    <div style={{ flex:1, padding:"11px 14px" }}>
-                                      <div style={{ fontSize:14, fontWeight:700, color:T.text, lineHeight:1.25, fontFamily:T.serif }}>
-                                        {film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.text, textDecoration:"none" }}>{film.title}</a> : film.title}
-                                      </div>
-                                      <div style={{ display:"flex", gap:6, marginTop:5, alignItems:"center", flexWrap:"wrap" }}>
-                                        <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:rBg[film.rating]||"#444", color:"#fff", fontFamily:T.mono, letterSpacing:0.5 }}>{film.rating}</span>
-                                        <span style={{ fontSize:10, color:T.textMuted, fontFamily:T.mono }}>{film.runtime}min</span>
-                                        <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>ends {displayTime(sess.startMin+film.runtime)}</span>
-                                        {sess.screen && <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>{sess.screen}</span>}
-                                        {sess.isHoh && <span style={{ fontSize:9, color:T.textMuted, fontFamily:T.mono, padding:"1px 4px", borderRadius:3, background:T.ccBg, border:`1px solid ${T.ccBorder}` }}>CC</span>}
-                                        {sess.tags?.map((tag,ti) => <span key={ti} style={{ fontSize:9, color:T.accent, fontFamily:T.mono, padding:"1px 5px", borderRadius:3, background:T.accentSoft, border:`1px solid ${T.accent}22`, fontWeight:600 }}>{tag}</span>)}
-                                      </div>
-                                    </div>
-                                    {sess.bookingUrl && (<>
-                                      <div style={{ width:6, alignSelf:"stretch", flexShrink:0, background:`radial-gradient(circle 2px at center,${T.bg} 1.5px,${film.color}22 2px) center top / 4px 7px repeat-y` }} />
-                                      <a href={sess.bookingUrl} target="_blank" rel="noopener" className="book-btn" style={{ display:"flex", alignItems:"center", justifyContent:"center", padding:"0 14px", alignSelf:"stretch", background:`${film.color}10`, textDecoration:"none", cursor:"pointer", transition:"background 0.2s", borderRadius:"0 12px 12px 0" }}>
-                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={film.accent} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>
-                                      </a>
-                                    </>)}
+                          <div key={group.time+gi} style={{ opacity:isPast?0.35:1, transition:"opacity 0.3s" }}>
+                            {group.sessions.map((sess,si) => {
+                              const film=sess.film;
+                              return (
+                                <div key={`${film.id}-${si}`} style={{ display:"flex", alignItems:"center", gap:0, marginBottom:si<group.sessions.length-1?8:0 }}>
+                                  <div style={{ width:56, flexShrink:0, display:"flex", justifyContent:"center" }}>
+                                    {si===0 && <div style={{ fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono }}>{group.time}</div>}
                                   </div>
-                                );
-                              })}
-                            </div>
+                                  <div style={{ flex:1 }}>
+                                    <div className="tkt-card" style={{ display:"flex", alignItems:"center", gap:0, borderRadius:12, border:`1px solid ${T.cardBorder(film.color)}`, background:T.cardBg(film.color) }}>
+                                      <div style={{ width:4, alignSelf:"stretch", background:`linear-gradient(180deg,${film.color},${film.color}66)`, flexShrink:0, borderRadius:"12px 0 0 12px" }} />
+                                      <div style={{ flex:1, padding:"11px 14px" }}>
+                                        <div style={{ fontSize:14, fontWeight:700, color:T.text, lineHeight:1.25, fontFamily:T.serif }}>
+                                          {film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.text, textDecoration:"none" }}>{film.title}</a> : film.title}
+                                        </div>
+                                        <div style={{ display:"flex", gap:6, marginTop:5, alignItems:"center", flexWrap:"wrap" }}>
+                                          <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:rBg[film.rating]||"#444", color:"#fff", fontFamily:T.mono, letterSpacing:0.5 }}>{film.rating}</span>
+                                          <span style={{ fontSize:10, color:T.textMuted, fontFamily:T.mono }}>{film.runtime}min</span>
+                                          <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>ends {displayTime(sess.startMin+film.runtime)}</span>
+                                          {sess.screen && <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>{sess.screen}</span>}
+                                          {sess.isHoh && <span style={{ fontSize:9, color:T.textMuted, fontFamily:T.mono, padding:"1px 4px", borderRadius:3, background:T.ccBg, border:`1px solid ${T.ccBorder}` }}>CC</span>}
+                                          {sess.tags?.map((tag,ti) => <span key={ti} style={{ fontSize:9, color:T.accent, fontFamily:T.mono, padding:"1px 5px", borderRadius:3, background:T.accentSoft, border:`1px solid ${T.accent}22`, fontWeight:600 }}>{tag}</span>)}
+                                        </div>
+                                      </div>
+                                      {sess.bookingUrl && (<>
+                                        <div style={{ width:6, alignSelf:"stretch", flexShrink:0, background:`radial-gradient(circle 2px at center,${T.bg} 1.5px,${film.color}22 2px) center top / 4px 7px repeat-y` }} />
+                                        <a href={sess.bookingUrl} target="_blank" rel="noopener" className="book-btn" style={{ display:"flex", alignItems:"center", justifyContent:"center", padding:"0 14px", alignSelf:"stretch", background:`${film.color}10`, textDecoration:"none", cursor:"pointer", transition:"background 0.2s", borderRadius:"0 12px 12px 0" }}>
+                                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={film.accent} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>
+                                        </a>
+                                      </>)}
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            })}
+                            {gi<groups.length-1 && (
+                              <div style={{ display:"flex" }}>
+                                <div style={{ width:56, display:"flex", justifyContent:"center" }}>
+                                  <div style={{ width:1, height:18, background:T.mobileConnector(T.accent) }} />
+                                </div>
+                              </div>
+                            )}
                           </div>
                         );
                       })}
