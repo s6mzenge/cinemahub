@@ -10,8 +10,8 @@ const rBg = { U:"#2e7d32", PG:"#b8960f", "12A":"#c45a00", "15":"#a12020", TBC:"#
 /* ─── Cinema registry (extend this later) ─── */
 const CINEMAS = [
   { id:"peckhamplex", name:"Peckhamplex", address:"95a Rye Lane, Peckham", url:"https://www.peckhamplex.london", price:"£7.59", dataFile:"films.json", source:"peckhamplex.london" },
-  { id:"prince-charles", name:"Prince Charles Cinema", address:"7 Leicester Place, WC2", url:"https://princecharlescinema.com", price:null, dataFile:"films_pcc.json", source:"princecharlescinema.com" },
-  { id:"castle-hackney", name:"The Castle Cinema", address:"64-66 Brooksby's Walk, E9", url:"https://thecastlecinema.com", price:null, dataFile:"films_castle.json", source:"thecastlecinema.com" },
+  { id:"prince-charles", name:"Prince Charles", address:"7 Leicester Place, WC2", url:"https://princecharlescinema.com", price:null, dataFile:"films_pcc.json", source:"princecharlescinema.com" },
+  { id:"castle-hackney", name:"The Castle", address:"64-66 Brooksby's Walk, E9", url:"https://thecastlecinema.com", price:null, dataFile:"films_castle.json", source:"thecastlecinema.com" },
   { id:"the-arzner", name:"The Arzner", address:"10 Bermondsey Square, SE1", url:"https://thearzner.com", price:null, dataFile:"films_arzner.json", source:"thearzner.com" },
   { id:"bfi-southbank", name:"BFI Southbank", address:"Belvedere Rd, SE1 8XT", url:"https://whatson.bfi.org.uk", price:null, dataFile:"films_bfi.json", source:"whatson.bfi.org.uk" },
 ];
@@ -234,11 +234,13 @@ export default function App() {
           if (date === today && startMin + ADS_MIN < nowMin) return;
           items.push({
             film: film.title,
+            filmUrl: film.film_url || null,
             time: t,
             date,
             dateLabel: date === today ? "Today" : `${dayInfo.day} ${dayInfo.num}`,
             startMin,
             color: film.color,
+            cinemaName: cinema.name,
             screen: film.screens?.[date]?.[t] || null,
           });
         });
@@ -246,7 +248,7 @@ export default function App() {
     });
     items.sort((a, b) => a.date === b.date ? a.startMin - b.startMin : a.date.localeCompare(b.date));
     return items.slice(0, 30);
-  }, [films, allDates, today]);
+  }, [films, allDates, today, cinema]);
 
   const fontLink = <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />;
 
@@ -401,6 +403,7 @@ export default function App() {
         .view-btn:hover { border-color:${T.accent} !important; color:${T.accent} !important; }
         .book-btn:hover { background:${T.barBookHover} !important; }
         .book-btn:active { opacity:0.7; transform:scale(0.95); }
+        .ticker-link:hover { color:${T.accent} !important; border-bottom-color:${T.accent} !important; }
 
         /* ── Ticket shape: mask-based concave notches ── */
         .tkt-bar {
@@ -445,9 +448,10 @@ export default function App() {
         {tickerItems.length > 0 && (
           <div style={{
             background: isDark
-              ? "linear-gradient(90deg, #1a0e04 0%, #12090200 8%, #12090200 92%, #1a0e04 100%)"
-              : "linear-gradient(90deg, #2c1a08 0%, #1f1208 50%, #2c1a08 100%)",
-            borderBottom: `1px solid ${T.accent}44`,
+              ? `linear-gradient(90deg, ${T.accent}0a 0%, ${T.accent}05 50%, ${T.accent}0a 100%)`
+              : `linear-gradient(90deg, ${T.accent}12 0%, ${T.accent}08 50%, ${T.accent}12 100%)`,
+            borderBottom: `1px solid ${T.accent}22`,
+            borderTop: `1px solid ${T.accent}11`,
             overflow: "hidden",
             position: "relative",
             height: 32,
@@ -460,14 +464,15 @@ export default function App() {
               display: "flex", alignItems: "center", gap: 6,
               padding: "0 14px", height: "100%", flexShrink: 0,
               background: isDark
-                ? "linear-gradient(135deg, #d4a053 0%, #b8862f 100%)"
-                : "linear-gradient(135deg, #d4a053 0%, #c49340 100%)",
+                ? `linear-gradient(135deg, ${T.accent}30 0%, ${T.accent}20 100%)`
+                : `linear-gradient(135deg, ${T.accent}28 0%, ${T.accent}18 100%)`,
               fontFamily: T.mono, fontSize: 9, fontWeight: 700,
-              color: "#0a0700", letterSpacing: 2, textTransform: "uppercase",
+              color: T.accent, letterSpacing: 2, textTransform: "uppercase",
               clipPath: "polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%)",
               paddingRight: 22,
+              borderRight: `1px solid ${T.accent}22`,
             }}>
-              <span style={{ width: 5, height: 5, borderRadius: "50%", background: "#6b1a1a", animation: "goldPulse 1.2s ease infinite" }} />
+              <span style={{ width: 5, height: 5, borderRadius: "50%", background: T.accent, animation: "goldPulse 1.2s ease infinite" }} />
               COMING UP
             </div>
             {/* Scrolling track */}
@@ -479,12 +484,17 @@ export default function App() {
               }}>
                 {[...tickerItems, ...tickerItems].map((item, i) => (
                   <span key={i} style={{ display: "inline-flex", alignItems: "center", gap: 0, paddingRight: 8 }}>
-                    <span style={{ fontSize: 10, color: T.accent, fontFamily: T.mono, fontWeight: 700, opacity: 0.9 }}>{item.dateLabel}</span>
-                    <span style={{ fontSize: 10, color: isDark ? "#584a36" : "#7a6a52", fontFamily: T.mono, margin: "0 6px" }}>|</span>
-                    <span style={{ fontSize: 10, color: "#fff", fontFamily: T.mono, fontWeight: 700 }}>{item.time}</span>
-                    <span style={{ fontSize: 10, color: isDark ? "#8a7d6a" : "#b0a590", fontFamily: T.serif, fontStyle: "italic", margin: "0 4px 0 8px" }}>{item.film}</span>
-                    {item.screen && <span style={{ fontSize: 8, color: isDark ? "#504838" : "#7a6a52", fontFamily: T.mono, opacity: 0.7 }}>({item.screen})</span>}
-                    <span style={{ display: "inline-block", width: 3, height: 3, borderRadius: "50%", background: item.color, margin: "0 12px 0 12px", opacity: 0.7 }} />
+                    <span style={{ fontSize: 10, color: T.accent, fontFamily: T.mono, fontWeight: 700, opacity: 0.85 }}>{item.dateLabel}</span>
+                    <span style={{ fontSize: 10, color: T.textFaint, fontFamily: T.mono, margin: "0 6px" }}>|</span>
+                    <span style={{ fontSize: 10, color: T.text, fontFamily: T.mono, fontWeight: 700 }}>{item.time}</span>
+                    {item.filmUrl ? (
+                      <a href={item.filmUrl} target="_blank" rel="noopener" className="ticker-link" style={{ fontSize: 10, color: T.textSub, fontFamily: T.serif, fontStyle: "italic", margin: "0 4px 0 8px", textDecoration: "none", borderBottom: `1px dotted ${T.textFaint}` }}>{item.film}</a>
+                    ) : (
+                      <span style={{ fontSize: 10, color: T.textMuted, fontFamily: T.serif, fontStyle: "italic", margin: "0 4px 0 8px" }}>{item.film}</span>
+                    )}
+                    <span style={{ fontSize: 8, color: T.textDim, fontFamily: T.mono, fontWeight: 600, letterSpacing: 0.5 }}>@ {item.cinemaName}</span>
+                    {item.screen && <span style={{ fontSize: 8, color: T.textFaint, fontFamily: T.mono, marginLeft: 4 }}>({item.screen})</span>}
+                    <span style={{ display: "inline-block", width: 3, height: 3, borderRadius: "50%", background: item.color, margin: "0 12px 0 12px", opacity: 0.6 }} />
                   </span>
                 ))}
               </div>
