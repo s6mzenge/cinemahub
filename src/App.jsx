@@ -218,6 +218,36 @@ export default function App() {
   useEffect(()=>{ if(tlRef.current) tlRef.current.scrollLeft=0; },[selDate]);
   const pct = min => ((min-axisStart)/axisDuration)*100;
 
+  /* ─── Ticker: upcoming sessions across all dates ─── */
+  const tickerItems = useMemo(() => {
+    const nowMin = getNowMin();
+    const items = [];
+    const futureDates = allDates.filter(d => d >= today).slice(0, 7);
+    futureDates.forEach(date => {
+      const dayInfo = formatDayTab(date);
+      films.forEach(film => {
+        const times = film.showtimes[date];
+        if (!times) return;
+        times.forEach(t => {
+          const startMin = timeToMin(t);
+          // skip past sessions for today
+          if (date === today && startMin + ADS_MIN < nowMin) return;
+          items.push({
+            film: film.title,
+            time: t,
+            date,
+            dateLabel: date === today ? "Today" : `${dayInfo.day} ${dayInfo.num}`,
+            startMin,
+            color: film.color,
+            screen: film.screens?.[date]?.[t] || null,
+          });
+        });
+      });
+    });
+    items.sort((a, b) => a.date === b.date ? a.startMin - b.startMin : a.date.localeCompare(b.date));
+    return items.slice(0, 30);
+  }, [films, allDates, today]);
+
   const fontLink = <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />;
 
   /* ─── Sidebar ─── */
@@ -364,6 +394,7 @@ export default function App() {
 
       <style>{`
         @keyframes goldPulse { 0%,100%{opacity:0.5} 50%{opacity:1} }
+        @keyframes tickerScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         *::-webkit-scrollbar { height:4px; width:4px; }
         *::-webkit-scrollbar-track { background:${T.bg}; }
         *::-webkit-scrollbar-thumb { background:${T.border}; border-radius:2px; }
@@ -409,6 +440,57 @@ export default function App() {
         flex:1, position:"relative", zIndex:1, minWidth:0,
         marginLeft: isMobile ? 0 : 0, /* sidebar is sticky, content flows naturally */
       }}>
+
+        {/* ═══════ TICKER BANNER ═══════ */}
+        {tickerItems.length > 0 && (
+          <div style={{
+            background: isDark
+              ? "linear-gradient(90deg, #1a0e04 0%, #12090200 8%, #12090200 92%, #1a0e04 100%)"
+              : "linear-gradient(90deg, #2c1a08 0%, #1f1208 50%, #2c1a08 100%)",
+            borderBottom: `1px solid ${T.accent}44`,
+            overflow: "hidden",
+            position: "relative",
+            height: 32,
+            display: "flex",
+            alignItems: "center",
+          }}>
+            {/* Label */}
+            <div style={{
+              position: "relative", zIndex: 3,
+              display: "flex", alignItems: "center", gap: 6,
+              padding: "0 14px", height: "100%", flexShrink: 0,
+              background: isDark
+                ? "linear-gradient(135deg, #d4a053 0%, #b8862f 100%)"
+                : "linear-gradient(135deg, #d4a053 0%, #c49340 100%)",
+              fontFamily: T.mono, fontSize: 9, fontWeight: 700,
+              color: "#0a0700", letterSpacing: 2, textTransform: "uppercase",
+              clipPath: "polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%)",
+              paddingRight: 22,
+            }}>
+              <span style={{ width: 5, height: 5, borderRadius: "50%", background: "#6b1a1a", animation: "goldPulse 1.2s ease infinite" }} />
+              COMING UP
+            </div>
+            {/* Scrolling track */}
+            <div style={{ flex: 1, overflow: "hidden", height: "100%", display: "flex", alignItems: "center", maskImage: "linear-gradient(90deg, transparent 0%, #000 3%, #000 97%, transparent 100%)", WebkitMaskImage: "linear-gradient(90deg, transparent 0%, #000 3%, #000 97%, transparent 100%)" }}>
+              <div style={{
+                display: "flex", alignItems: "center", gap: 0,
+                animation: `tickerScroll ${Math.max(tickerItems.length * 3, 20)}s linear infinite`,
+                whiteSpace: "nowrap",
+              }}>
+                {[...tickerItems, ...tickerItems].map((item, i) => (
+                  <span key={i} style={{ display: "inline-flex", alignItems: "center", gap: 0, paddingRight: 8 }}>
+                    <span style={{ fontSize: 10, color: T.accent, fontFamily: T.mono, fontWeight: 700, opacity: 0.9 }}>{item.dateLabel}</span>
+                    <span style={{ fontSize: 10, color: isDark ? "#584a36" : "#7a6a52", fontFamily: T.mono, margin: "0 6px" }}>|</span>
+                    <span style={{ fontSize: 10, color: "#fff", fontFamily: T.mono, fontWeight: 700 }}>{item.time}</span>
+                    <span style={{ fontSize: 10, color: isDark ? "#8a7d6a" : "#b0a590", fontFamily: T.serif, fontStyle: "italic", margin: "0 4px 0 8px" }}>{item.film}</span>
+                    {item.screen && <span style={{ fontSize: 8, color: isDark ? "#504838" : "#7a6a52", fontFamily: T.mono, opacity: 0.7 }}>({item.screen})</span>}
+                    <span style={{ display: "inline-block", width: 3, height: 3, borderRadius: "50%", background: item.color, margin: "0 12px 0 12px", opacity: 0.7 }} />
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* ═══════ HEADER ═══════ */}
         <div style={{ background:T.headerBg, padding:"20px 24px 18px", borderBottom:`1px solid ${T.accent}33` }}>
