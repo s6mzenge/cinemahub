@@ -235,6 +235,12 @@ def parse_runtime_from_info(text: str) -> int | None:
     return int(m.group(1)) if m else None
 
 
+def parse_year_from_info(text: str) -> int | None:
+    """Extract release year from text like 'France 2001. 122min'."""
+    m = re.search(r'\b((?:19|20)\d{2})\b', text)
+    return int(m.group(1)) if m else None
+
+
 def parse_detail_page(html: str, permalink: str, link_title: str) -> dict | None:
     """
     Parse a BFI film detail page for metadata and showtimes.
@@ -263,6 +269,7 @@ def parse_detail_page(html: str, permalink: str, link_title: str) -> dict | None
     director = None
     cast = None
     runtime = None
+    release_year = None
     rating = "TBC"
     format_tags = []
 
@@ -282,11 +289,14 @@ def parse_detail_page(html: str, permalink: str, link_title: str) -> dict | None
         elif heading == "Certificate":
             rating = value
         elif not heading:
-            # No heading — could be runtime or format
+            # No heading — could be runtime/year line or format tag
             rt = parse_runtime_from_info(value)
             if rt:
                 runtime = rt
-            elif value in ("35mm", "70mm", "16mm", "4K", "DCP", "Digital"):
+            yr = parse_year_from_info(value)
+            if yr:
+                release_year = yr
+            if value in ("35mm", "70mm", "16mm", "4K", "DCP", "Digital"):
                 format_tags.append(value)
 
     # Synopsis from Rich-text
@@ -378,6 +388,7 @@ def parse_detail_page(html: str, permalink: str, link_title: str) -> dict | None
         "rating": rating,
         "runtime": runtime,
         "genre": "Other",
+        "year": release_year,
         "director": director,
         "cast": cast,
         "description": description or synopsis,
