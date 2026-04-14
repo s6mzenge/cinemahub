@@ -56,18 +56,59 @@ function normalizeFilms(rawFilms) {
     }
     return { id:f.id, title:f.title, rating:f.rating||"TBC", runtime:f.runtime||90, genre:f.genre||"Other",
       color:f.color||"#78909c", accent:f.accent||"#b0bec5", film_url:f.film_url||null, poster_url:f.poster_url||null,
-      letterboxd_url:f.letterboxd_url||null, letterboxd_rating:f.letterboxd_rating||null,
       showtimes, bookingUrls, screens, hoh:Object.keys(hoh).length>0?hoh:(f.hoh||{}), tags };
   });
 }
 
 /* ─── Title normalisation for cross-cinema matching ─── */
+// Known event-series prefixes (mirrored from enrich_letterboxd.py EVENT_PREFIXES)
+const EVENT_PREFIXES_NORM = [
+  "adults only", "camp classics presents", "camp classics",
+  "cine-real presents", "cine-real", "distorted frame",
+  "dog-friendly", "exhibition on screen", "exclusive preview",
+  "fetish friendly", "funday", "in the scene", "late night",
+  "lesbian visibility day", "lesbian visibility",
+  "lost reels presents", "lost reels", "memories",
+  "nt live", "national theatre live",
+  "pitchblack mixtapes", "pitchblack playback",
+  "preview", "the male gaze",
+  "uk premiere of 4k restoration", "uk premiere",
+  "violet hour presents", "violet hour",
+  "word space presents", "word space",
+  "25 and under",
+];
+
 function normalizeTitle(title) {
   let t = title;
   // Remove diacritics (é→e, ü→u, etc.)
   t = t.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   // Lowercase
   t = t.toLowerCase().trim();
+
+  // ── Step 1: Strip known event-series prefixes (before colon) ──
+  // e.g. "Camp Classics presents: Hackers" → "hackers"
+  // but  "Kill Bill: The Whole Bloody Affair" → kept as-is
+  if (t.includes(":")) {
+    const beforeColon = t.split(":")[0].trim().replace(/\s+presents$/, "");
+    if (EVENT_PREFIXES_NORM.includes(beforeColon)) {
+      t = t.split(":").slice(1).join(":").trim();
+      // Strip leading/trailing quotes (e.g. Lost Reels presents "Lianna")
+      t = t.replace(/^["""\u201c\u201d]+|["""\u201c\u201d]+$/g, "").trim();
+    }
+  }
+
+  // ── Step 2: Strip event suffixes: "+ Q&A", "+ Intro", etc. ──
+  // But preserve " + " in actual titles like "Romeo + Juliet"
+  t = t.replace(/\s*\+\s*(q\s*&\s*a|intro\b.*|director\b.*|special\b.*|extended\b.*)\s*$/i, "");
+
+  // ── Step 3: Strip non-film parentheticals ──
+  t = t.replace(/\s*\(independent filmmakers showcase\)/gi, "");
+  t = t.replace(/\s*\(short films?\)/gi, "");
+  t = t.replace(/\s*\(live score\)/gi, "");
+  t = t.replace(/\s*\(4k restoration\)/gi, "");
+  t = t.replace(/\s*\(black & white version\)/gi, "");
+
+  // ── Step 4: Strip anniversary / re-release / year suffixes ──
   // Normalise "national theatre live:" → "nt live:" prefix
   t = t.replace(/^national theatre live:\s*/i, "nt live: ");
   // Strip " - Nth Anniversary..." suffix  (e.g. "Amelie - 25th Anniversary")
@@ -126,7 +167,6 @@ function mergeAllCinemaFilms(allCinemaData) {
         byKey[key] = {
           id: f.id, title: f.title, rating: f.rating, runtime: f.runtime, genre: f.genre,
           color: f.color, accent: f.accent, film_url: f.film_url, poster_url: f.poster_url,
-          letterboxd_url: f.letterboxd_url, letterboxd_rating: f.letterboxd_rating,
           showtimes: {}, bookingUrls: {}, screens: {}, hoh: {}, tags: {},
           perCinema: {},
         };
@@ -168,8 +208,6 @@ function mergeAllCinemaFilms(allCinemaData) {
       }
       if (f.film_url && !merged.film_url) merged.film_url = f.film_url;
       if (f.poster_url && !merged.poster_url) merged.poster_url = f.poster_url;
-      if (f.letterboxd_url && !merged.letterboxd_url) merged.letterboxd_url = f.letterboxd_url;
-      if (f.letterboxd_rating && !merged.letterboxd_rating) merged.letterboxd_rating = f.letterboxd_rating;
     });
   });
   // Pick the best display title for each merged group
@@ -177,20 +215,6 @@ function mergeAllCinemaFilms(allCinemaData) {
     merged.title = pickBestTitle(titlesByKey[key]);
   }
   return Object.values(byKey);
-}
-
-/* ─── Letterboxd rating badge (inline after title) ─── */
-function LbRating({ rating, url, size=12, color="#639922" }) {
-  if (!rating) return null;
-  const star = <svg width={size} height={size} viewBox="0 0 24 24" fill={color} style={{ display:"block", flexShrink:0 }}><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>;
-  const inner = (
-    <span style={{ display:"inline-flex", alignItems:"center", gap:2, flexShrink:0, whiteSpace:"nowrap" }}>
-      {star}
-      <span style={{ fontSize:size, fontWeight:700, color, fontFamily:"'Space Mono', monospace", lineHeight:1 }}>{rating}</span>
-    </span>
-  );
-  if (url) return <a href={url} target="_blank" rel="noopener" style={{ textDecoration:"none" }} title="Letterboxd rating">{inner}</a>;
-  return inner;
 }
 
 /* ─── Theme palettes ─── */
@@ -851,11 +875,8 @@ export default function App() {
                                     <div className="tkt-card" style={{ display:"flex", alignItems:"center", gap:0, borderRadius:12, border:`1px solid ${T.cardBorder(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color)}`, background:T.cardBg(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color) }}>
                                       <div style={{ width:4, alignSelf:"stretch", background:`linear-gradient(180deg,${isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color},${isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color}66)`, flexShrink:0, borderRadius:"12px 0 0 12px" }} />
                                       <div style={{ flex:1, padding:"11px 14px" }}>
-                                        <div style={{ display:"flex", alignItems:"center", gap:6 }}>
-                                          <div style={{ fontSize:14, fontWeight:700, color:T.text, lineHeight:1.25, fontFamily:T.serif, minWidth:0, overflow:"hidden", display:"-webkit-box", WebkitLineClamp:2, WebkitBoxOrient:"vertical" }}>
-                                            {film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.text, textDecoration:"none" }}>{film.title}</a> : film.title}
-                                          </div>
-                                          <LbRating rating={film.letterboxd_rating} url={film.letterboxd_url} size={13} />
+                                        <div style={{ fontSize:14, fontWeight:700, color:T.text, lineHeight:1.25, fontFamily:T.serif }}>
+                                          {film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.text, textDecoration:"none" }}>{film.title}</a> : film.title}
                                         </div>
                                         <div style={{ display:"flex", gap:6, marginTop:5, alignItems:"center", flexWrap:"wrap" }}>
                                           {isAllCinemas && sess.cinemaName && (
@@ -910,12 +931,9 @@ export default function App() {
                             {/* Film label spanning all sub-rows */}
                             <div style={{ width:177, flexShrink:0, padding:"10px 14px", display:"flex", flexDirection:"column", justifyContent:"center", borderRight:`1px solid ${T.border}` }}>
                               <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:3 }}>
-                                <div style={{ minWidth:0 }}>
-                                  <div style={{ display:"flex", alignItems:"baseline", gap:5, minWidth:0 }}>
-                                    <div style={{ fontSize:12, fontWeight:700, color:T.textSub, lineHeight:1.2, fontFamily:T.serif, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", minWidth:0 }}>
-                                      {film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.textSub, textDecoration:"none" }}>{film.title}</a> : film.title}
-                                    </div>
-                                    <LbRating rating={film.letterboxd_rating} url={film.letterboxd_url} size={11} />
+                                <div>
+                                  <div style={{ fontSize:12, fontWeight:700, color:T.textSub, lineHeight:1.2, fontFamily:T.serif }}>
+                                    {film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.textSub, textDecoration:"none" }}>{film.title}</a> : film.title}
                                   </div>
                                   <div style={{ display:"flex", gap:5, marginTop:4, alignItems:"center", flexWrap:"wrap" }}>
                                     <span style={{ fontSize:8, padding:"1px 5px", borderRadius:3, fontWeight:700, background:rBg[film.rating]||"#444", color:"#fff", fontFamily:T.mono, letterSpacing:0.5 }}>{film.rating}</span>
@@ -982,12 +1000,9 @@ export default function App() {
                           <div style={{ width:180, flexShrink:0, padding:"10px 14px", display:"flex", flexDirection:"column", justifyContent:"center", borderRight:`1px solid ${T.border}` }}>
                             <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:3 }}>
                               <div style={{ width:3, height:28, borderRadius:1.5, background:`linear-gradient(180deg,${film.color},${film.color}55)`, flexShrink:0 }} />
-                              <div style={{ minWidth:0 }}>
-                                <div style={{ display:"flex", alignItems:"baseline", gap:5, minWidth:0 }}>
-                                  <div style={{ fontSize:12, fontWeight:700, color:T.textSub, lineHeight:1.2, fontFamily:T.serif, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", minWidth:0 }}>
-                                    {film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.textSub, textDecoration:"none" }}>{film.title}</a> : film.title}
-                                  </div>
-                                  <LbRating rating={film.letterboxd_rating} url={film.letterboxd_url} size={11} />
+                              <div>
+                                <div style={{ fontSize:12, fontWeight:700, color:T.textSub, lineHeight:1.2, fontFamily:T.serif }}>
+                                  {film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.textSub, textDecoration:"none" }}>{film.title}</a> : film.title}
                                 </div>
                                 <div style={{ display:"flex", gap:5, marginTop:4, alignItems:"center" }}>
                                   <span style={{ fontSize:8, padding:"1px 5px", borderRadius:3, fontWeight:700, background:rBg[film.rating]||"#444", color:"#fff", fontFamily:T.mono, letterSpacing:0.5 }}>{film.rating}</span>
@@ -1082,10 +1097,7 @@ export default function App() {
                               </div>;
                             })()}
                             <div style={{ minWidth:0 }}>
-                              <div style={{ display:"flex", alignItems:"baseline", gap:4, minWidth:0 }}>
-                                <div style={{ fontSize:11, fontWeight:700, color:T.textSub, fontFamily:T.serif, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", minWidth:0 }}>{film.film_url?<a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.textSub, textDecoration:"none" }}>{film.title}</a>:film.title}</div>
-                                <LbRating rating={film.letterboxd_rating} url={film.letterboxd_url} size={10} />
-                              </div>
+                              <div style={{ fontSize:11, fontWeight:700, color:T.textSub, fontFamily:T.serif, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>{film.film_url?<a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.textSub, textDecoration:"none" }}>{film.title}</a>:film.title}</div>
                               <div style={{ display:"flex", gap:4, marginTop:3, flexWrap:"wrap" }}>
                                 <span style={{ fontSize:8, padding:"0px 5px", borderRadius:2, background:rBg[film.rating]||"#444", color:"#fff", fontWeight:700, fontFamily:T.mono }}>{film.rating}</span>
                                 <span style={{ fontSize:9, color:T.textFaint, fontFamily:T.mono }}>{film.runtime}m</span>
