@@ -9,14 +9,15 @@ const rBg = { U:"#2e7d32", PG:"#b8960f", "12A":"#c45a00", "15":"#a12020", TBC:"#
 
 /* ─── Cinema registry (extend this later) ─── */
 const CINEMAS = [
-  { id:"peckhamplex", name:"Peckhamplex", address:"95a Rye Lane, Peckham", url:"https://www.peckhamplex.london", price:"£7.59", dataFile:"films.json", source:"peckhamplex.london" },
-  { id:"prince-charles", name:"Prince Charles", address:"7 Leicester Place, WC2", url:"https://princecharlescinema.com", price:null, dataFile:"films_pcc.json", source:"princecharlescinema.com" },
-  { id:"castle-hackney", name:"The Castle", address:"64-66 Brooksby's Walk, E9", url:"https://thecastlecinema.com", price:null, dataFile:"films_castle.json", source:"thecastlecinema.com" },
-  { id:"the-arzner", name:"The Arzner", address:"10 Bermondsey Square, SE1", url:"https://thearzner.com", price:null, dataFile:"films_arzner.json", source:"thearzner.com" },
-  { id:"bfi-southbank", name:"BFI Southbank", address:"Belvedere Rd, SE1 8XT", url:"https://whatson.bfi.org.uk", price:null, dataFile:"films_bfi.json", source:"whatson.bfi.org.uk" },
-  { id:"electric-portobello", name:"Electric Portobello", address:"191 Portobello Rd, W11", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_portobello.json", source:"electriccinema.co.uk" },
-  { id:"electric-white-city", name:"Electric White City", address:"101 Wood Lane, W12", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_white_city.json", source:"electriccinema.co.uk" },
+  { id:"peckhamplex", name:"Peckhamplex", short:"PKX", barColor:"#b8860b", address:"95a Rye Lane, Peckham", url:"https://www.peckhamplex.london", price:"£7.59", dataFile:"films.json", source:"peckhamplex.london" },
+  { id:"prince-charles", name:"Prince Charles", short:"PCC", barColor:"#7b68ee", address:"7 Leicester Place, WC2", url:"https://princecharlescinema.com", price:null, dataFile:"films_pcc.json", source:"princecharlescinema.com" },
+  { id:"castle-hackney", name:"The Castle", short:"CST", barColor:"#e06050", address:"64-66 Brooksby's Walk, E9", url:"https://thecastlecinema.com", price:null, dataFile:"films_castle.json", source:"thecastlecinema.com" },
+  { id:"the-arzner", name:"The Arzner", short:"ARZ", barColor:"#2aa67e", address:"10 Bermondsey Square, SE1", url:"https://thearzner.com", price:null, dataFile:"films_arzner.json", source:"thearzner.com" },
+  { id:"bfi-southbank", name:"BFI Southbank", short:"BFI", barColor:"#378add", address:"Belvedere Rd, SE1 8XT", url:"https://whatson.bfi.org.uk", price:null, dataFile:"films_bfi.json", source:"whatson.bfi.org.uk" },
+  { id:"electric-portobello", name:"Electric Portobello", short:"ELP", barColor:"#d4537e", address:"191 Portobello Rd, W11", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_portobello.json", source:"electriccinema.co.uk" },
+  { id:"electric-white-city", name:"Electric White City", short:"EWC", barColor:"#639922", address:"101 Wood Lane, W12", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_white_city.json", source:"electriccinema.co.uk" },
 ];
+const CINEMA_MAP = Object.fromEntries(CINEMAS.map(c => [c.id, c]));
 
 function timeToMin(t){ const [h,m]=t.split(":").map(Number); return h*60+m; }
 function minToTime(m){ const h=Math.floor(m/60)%24; return `${h}:${String(m%60).padStart(2,"0")}`; }
@@ -57,6 +58,63 @@ function normalizeFilms(rawFilms) {
       color:f.color||"#78909c", accent:f.accent||"#b0bec5", film_url:f.film_url||null, poster_url:f.poster_url||null,
       showtimes, bookingUrls, screens, hoh:Object.keys(hoh).length>0?hoh:(f.hoh||{}), tags };
   });
+}
+
+/* ─── Merge films across all cinemas by title ─── */
+function mergeAllCinemaFilms(allCinemaData) {
+  const byTitle = {};
+  allCinemaData.forEach(({ cinemaId, films: cFilms }) => {
+    cFilms.forEach(f => {
+      const key = f.title;
+      if (!byTitle[key]) {
+        byTitle[key] = {
+          id: f.id, title: f.title, rating: f.rating, runtime: f.runtime, genre: f.genre,
+          color: f.color, accent: f.accent, film_url: f.film_url, poster_url: f.poster_url,
+          showtimes: {}, bookingUrls: {}, screens: {}, hoh: {}, tags: {},
+          perCinema: {},
+        };
+      }
+      const merged = byTitle[key];
+      if (!merged.perCinema[cinemaId]) {
+        merged.perCinema[cinemaId] = { showtimes:{}, bookingUrls:{}, screens:{}, hoh:{}, tags:{} };
+      }
+      const pc = merged.perCinema[cinemaId];
+      for (const [date, times] of Object.entries(f.showtimes)) {
+        if (!pc.showtimes[date]) pc.showtimes[date] = [];
+        pc.showtimes[date].push(...times);
+        if (!merged.showtimes[date]) merged.showtimes[date] = [];
+        merged.showtimes[date].push(...times);
+      }
+      for (const [date, urls] of Object.entries(f.bookingUrls)) {
+        if (!pc.bookingUrls[date]) pc.bookingUrls[date] = {};
+        Object.assign(pc.bookingUrls[date], urls);
+        if (!merged.bookingUrls[date]) merged.bookingUrls[date] = {};
+        Object.assign(merged.bookingUrls[date], urls);
+      }
+      for (const [date, scr] of Object.entries(f.screens)) {
+        if (!pc.screens[date]) pc.screens[date] = {};
+        Object.assign(pc.screens[date], scr);
+        if (!merged.screens[date]) merged.screens[date] = {};
+        Object.assign(merged.screens[date], scr);
+      }
+      for (const [date, arr] of Object.entries(f.hoh || {})) {
+        if (!pc.hoh[date]) pc.hoh[date] = [];
+        pc.hoh[date].push(...arr);
+        if (!merged.hoh[date]) merged.hoh[date] = [];
+        merged.hoh[date].push(...arr);
+      }
+      for (const [date, tg] of Object.entries(f.tags)) {
+        if (!pc.tags[date]) pc.tags[date] = {};
+        Object.assign(pc.tags[date], tg);
+        if (!merged.tags[date]) merged.tags[date] = {};
+        Object.assign(merged.tags[date], tg);
+      }
+      // Prefer poster/url from whichever cinema has them
+      if (f.film_url && !merged.film_url) merged.film_url = f.film_url;
+      if (f.poster_url && !merged.poster_url) merged.poster_url = f.poster_url;
+    });
+  });
+  return Object.values(byTitle);
 }
 
 /* ─── Theme palettes ─── */
@@ -121,9 +179,10 @@ export default function App() {
   const tlRef = useRef(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [selCinema, setSelCinema] = useState(CINEMAS[0].id);
+  const [selCinema, setSelCinema] = useState("all");
 
-  const cinema = CINEMAS.find(c => c.id === selCinema) || CINEMAS[0];
+  const isAllCinemas = selCinema === "all";
+  const cinema = isAllCinemas ? null : (CINEMAS.find(c => c.id === selCinema) || CINEMAS[0]);
 
   const [theme, setTheme] = useState(() => {
     if (typeof window !== "undefined" && window.matchMedia?.("(prefers-color-scheme: light)").matches) return "light";
@@ -148,20 +207,40 @@ export default function App() {
 
   useEffect(() => {
     setLoading(true); setError(null);
-    const c = CINEMAS.find(c => c.id === selCinema) || CINEMAS[0];
-    fetch(DATA_BASE + c.dataFile)
-      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
-      .then(data => {
-        const normalized = normalizeFilms(data.films || []);
-        setFilms(normalized); setScrapedAt(data.scraped_at || null);
-        const allDates = getAllDatesWithScreenings(normalized);
+    if (isAllCinemas) {
+      Promise.all(CINEMAS.map(c =>
+        fetch(DATA_BASE + c.dataFile)
+          .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status} for ${c.name}`); return r.json(); })
+          .then(data => ({ cinemaId: c.id, films: normalizeFilms(data.films || []), scrapedAt: data.scraped_at }))
+          .catch(() => ({ cinemaId: c.id, films: [], scrapedAt: null }))
+      )).then(allData => {
+        const merged = mergeAllCinemaFilms(allData);
+        setFilms(merged);
+        const latestScraped = allData.map(d => d.scrapedAt).filter(Boolean).sort().pop();
+        setScrapedAt(latestScraped || null);
+        const allDates = getAllDatesWithScreenings(merged);
         const todayStr = getToday();
         if (allDates.length > 0 && !allDates.includes(todayStr)) { const future = allDates.find(d => d >= todayStr); setSelDate(future || allDates[0]); }
         else if (allDates.includes(todayStr)) { setSelDate(todayStr); }
         setSelWeekStart(null);
         setLoading(false);
-      })
-      .catch(err => { setError(err.message); setLoading(false); });
+      });
+    } else {
+      const c = CINEMAS.find(c => c.id === selCinema) || CINEMAS[0];
+      fetch(DATA_BASE + c.dataFile)
+        .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+        .then(data => {
+          const normalized = normalizeFilms(data.films || []);
+          setFilms(normalized); setScrapedAt(data.scraped_at || null);
+          const allDates = getAllDatesWithScreenings(normalized);
+          const todayStr = getToday();
+          if (allDates.length > 0 && !allDates.includes(todayStr)) { const future = allDates.find(d => d >= todayStr); setSelDate(future || allDates[0]); }
+          else if (allDates.includes(todayStr)) { setSelDate(todayStr); }
+          setSelWeekStart(null);
+          setLoading(false);
+        })
+        .catch(err => { setError(err.message); setLoading(false); });
+    }
   }, [selCinema]);
 
   const allDates = useMemo(() => getAllDatesWithScreenings(films), [films]);
@@ -196,15 +275,41 @@ export default function App() {
   const goWeek = dir => { const ni=selWeekIdx+dir; if(ni>=0&&ni<weeks.length) setSelWeekStart(weeks[ni].monStr); };
 
   const dayFilms = useMemo(() => {
-    return films.filter(f => f.showtimes[selDate]).map(f => ({
-      ...f, times:f.showtimes[selDate],
-      sessions: f.showtimes[selDate].map(t => ({
-        time:t, startMin:timeToMin(t), adsEnd:timeToMin(t)+ADS_MIN, filmEnd:timeToMin(t)+ADS_MIN+f.runtime,
-        isHoh:f.hoh?.[selDate]?.includes(t), bookingUrl:f.bookingUrls?.[selDate]?.[t]||null, screen:f.screens?.[selDate]?.[t]||null,
-        tags:f.tags?.[selDate]?.[t]||[],
-      })),
-    }));
-  }, [selDate, films]);
+    if (!isAllCinemas) {
+      return films.filter(f => f.showtimes[selDate]).map(f => ({
+        ...f, times:f.showtimes[selDate],
+        sessions: f.showtimes[selDate].map(t => ({
+          time:t, startMin:timeToMin(t), adsEnd:timeToMin(t)+ADS_MIN, filmEnd:timeToMin(t)+ADS_MIN+f.runtime,
+          isHoh:f.hoh?.[selDate]?.includes(t), bookingUrl:f.bookingUrls?.[selDate]?.[t]||null, screen:f.screens?.[selDate]?.[t]||null,
+          tags:f.tags?.[selDate]?.[t]||[],
+        })),
+      }));
+    }
+    // All-cinemas mode: group sessions by cinema within each film
+    return films.filter(f => f.showtimes[selDate]).map(f => {
+      const cinemaEntries = [];
+      const allSessions = [];
+      for (const cId of Object.keys(f.perCinema || {})) {
+        const pc = f.perCinema[cId];
+        const times = pc.showtimes[selDate];
+        if (!times || !times.length) continue;
+        const cin = CINEMA_MAP[cId];
+        const sessions = times.map(t => ({
+          time:t, startMin:timeToMin(t), adsEnd:timeToMin(t)+ADS_MIN, filmEnd:timeToMin(t)+ADS_MIN+f.runtime,
+          isHoh:pc.hoh?.[selDate]?.includes(t), bookingUrl:pc.bookingUrls?.[selDate]?.[t]||null, screen:pc.screens?.[selDate]?.[t]||null,
+          tags:pc.tags?.[selDate]?.[t]||[], cinemaId:cId,
+        }));
+        cinemaEntries.push({ cinemaId:cId, cinemaName:cin?.name||cId, cinemaShort:cin?.short||cId.slice(0,3).toUpperCase(), cinemaColor:cin?.barColor||"#888", sessions });
+        allSessions.push(...sessions);
+      }
+      return {
+        ...f, times:f.showtimes[selDate],
+        sessions: allSessions,
+        cinemaEntries,
+        cinemaCount: cinemaEntries.length,
+      };
+    }).sort((a,b) => (b.cinemaCount||0) - (a.cinemaCount||0) || a.title.localeCompare(b.title));
+  }, [selDate, films, isAllCinemas]);
 
   const { axisStart, axisEnd } = useMemo(() => {
     if(!dayFilms.length) return { axisStart:17*60, axisEnd:24*60 };
@@ -228,29 +333,43 @@ export default function App() {
     futureDates.forEach(date => {
       const dayInfo = formatDayTab(date);
       films.forEach(film => {
-        const times = film.showtimes[date];
-        if (!times) return;
-        times.forEach(t => {
-          const startMin = timeToMin(t);
-          // skip past sessions for today
-          if (date === today && startMin + ADS_MIN < nowMin) return;
-          items.push({
-            film: film.title,
-            filmUrl: film.film_url || null,
-            time: t,
-            date,
-            dateLabel: date === today ? "Today" : `${dayInfo.day} ${dayInfo.num}`,
-            startMin,
-            color: film.color,
-            cinemaName: cinema.name,
-            screen: film.screens?.[date]?.[t] || null,
+        if (isAllCinemas && film.perCinema) {
+          for (const [cId, pc] of Object.entries(film.perCinema)) {
+            const times = pc.showtimes[date];
+            if (!times) continue;
+            const cin = CINEMA_MAP[cId];
+            times.forEach(t => {
+              const startMin = timeToMin(t);
+              if (date === today && startMin + ADS_MIN < nowMin) return;
+              items.push({
+                film: film.title, filmUrl: film.film_url || null, time: t, date,
+                dateLabel: date === today ? "Today" : `${dayInfo.day} ${dayInfo.num}`,
+                startMin, color: cin?.barColor || film.color,
+                cinemaName: cin?.name || cId,
+                screen: pc.screens?.[date]?.[t] || null,
+              });
+            });
+          }
+        } else {
+          const times = film.showtimes[date];
+          if (!times) return;
+          times.forEach(t => {
+            const startMin = timeToMin(t);
+            if (date === today && startMin + ADS_MIN < nowMin) return;
+            items.push({
+              film: film.title, filmUrl: film.film_url || null, time: t, date,
+              dateLabel: date === today ? "Today" : `${dayInfo.day} ${dayInfo.num}`,
+              startMin, color: film.color,
+              cinemaName: cinema?.name || "",
+              screen: film.screens?.[date]?.[t] || null,
+            });
           });
-        });
+        }
       });
     });
     items.sort((a, b) => a.date === b.date ? a.startMin - b.startMin : a.date.localeCompare(b.date));
-    return items.slice(0, 30);
-  }, [films, allDates, today, cinema]);
+    return items.slice(0, 50);
+  }, [films, allDates, today, cinema, isAllCinemas]);
 
   const fontLink = <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />;
 
@@ -282,6 +401,34 @@ export default function App() {
 
       {/* Cinema list */}
       <div style={{ flex:1, padding:"12px 10px", overflowY:"auto" }}>
+        {/* All Cinemas button */}
+        <button onClick={() => { setSelCinema("all"); if(isMobile) setSidebarOpen(false); }}
+          style={{
+            display:"flex", alignItems:"center", gap:10, width:"100%",
+            padding:"10px 12px", borderRadius:8, border:"none", cursor:"pointer",
+            fontFamily:T.sans, fontSize:13, fontWeight:isAllCinemas?700:500, textAlign:"left",
+            background: isAllCinemas ? T.accentSoft : "transparent",
+            color: isAllCinemas ? T.accent : T.textMuted,
+            transition:"all 0.2s",
+            outline: isAllCinemas ? `1px solid ${T.accent}33` : "1px solid transparent",
+            marginBottom:4,
+          }}
+        >
+          <div style={{
+            width:32, height:32, borderRadius:8, flexShrink:0,
+            background: isAllCinemas ? T.accentMed : (isDark ? "rgba(255,255,255,0.03)" : "rgba(0,0,0,0.03)"),
+            border:`1px solid ${isAllCinemas ? T.accent+"44" : T.border}`,
+            display:"flex", alignItems:"center", justifyContent:"center",
+            fontSize:11, fontFamily:T.mono, fontWeight:700, color: isAllCinemas ? T.accent : T.textDim,
+          }}>ALL</div>
+          <div>
+            <div>All Cinemas</div>
+            <div style={{ fontSize:10, color:T.textDim, fontWeight:400, marginTop:1 }}>{CINEMAS.length} venues</div>
+          </div>
+        </button>
+
+        <div style={{ height:1, background:T.sidebarBorder, margin:"6px 10px 10px" }} />
+
         <div style={{ fontSize:9, letterSpacing:2, textTransform:"uppercase", color:T.textDim, fontFamily:T.mono, fontWeight:600, padding:"4px 10px", marginBottom:4 }}>
           Cinemas
         </div>
@@ -299,14 +446,15 @@ export default function App() {
                 outline: isActive ? `1px solid ${T.accent}33` : "1px solid transparent",
               }}
             >
-              {/* Cinema icon */}
+              {/* Cinema color dot */}
               <div style={{
                 width:32, height:32, borderRadius:8, flexShrink:0,
                 background: isActive ? T.accentMed : (isDark ? "rgba(255,255,255,0.03)" : "rgba(0,0,0,0.03)"),
                 border:`1px solid ${isActive ? T.accent+"44" : T.border}`,
                 display:"flex", alignItems:"center", justifyContent:"center",
-                fontSize:14,
-              }}>🎬</div>
+              }}>
+                <div style={{ width:10, height:10, borderRadius:3, background:c.barColor }} />
+              </div>
               <div>
                 <div>{c.name}</div>
                 <div style={{ fontSize:10, color:T.textDim, fontWeight:400, marginTop:1 }}>{c.address}</div>
@@ -511,14 +659,14 @@ export default function App() {
               <div style={{ display:"flex", alignItems:"center", gap:12 }}>
                 <HamburgerBtn />
                 <div>
-                  <div style={{ fontSize:9, letterSpacing:3, textTransform:"uppercase", color:T.accent, fontFamily:T.mono, fontWeight:700, opacity:0.6, marginBottom:2 }}>Now Showing</div>
+                  <div style={{ fontSize:9, letterSpacing:3, textTransform:"uppercase", color:T.accent, fontFamily:T.mono, fontWeight:700, opacity:0.6, marginBottom:2 }}>{isAllCinemas ? "All Venues" : "Now Showing"}</div>
                   <h1 style={{ fontFamily:T.serif, fontSize:26, fontWeight:900, margin:0, letterSpacing:"-0.3px", lineHeight:1, color:T.text }}>
-                    {cinema.name}
+                    {isAllCinemas ? "All Cinemas" : cinema.name}
                   </h1>
                 </div>
               </div>
               <div style={{ display:"flex", alignItems:"center", gap:10, flexWrap:"wrap" }}>
-                {cinema.price && (
+                {!isAllCinemas && cinema.price && (
                 <div style={{
                   display:"inline-flex", alignItems:"center", gap:6,
                   padding:"5px 14px", borderRadius:20,
@@ -529,11 +677,24 @@ export default function App() {
                   <span style={{ fontSize:10, color:`${T.accent}88` }}>all tickets</span>
                 </div>
                 )}
+                {!isAllCinemas && (
                 <a href={cinema.url} target="_blank" rel="noopener" style={{ color:T.textMuted, textDecoration:"none", fontSize:11, fontFamily:T.mono, letterSpacing:0.5 }}>
                   {cinema.address} ↗
                 </a>
+                )}
               </div>
             </div>
+            {/* Cinema color legend for "all" view */}
+            {isAllCinemas && (
+              <div style={{ display:"flex", gap:12, flexWrap:"wrap", marginTop:12 }}>
+                {CINEMAS.map(c => (
+                  <div key={c.id} style={{ display:"flex", alignItems:"center", gap:5, cursor:"pointer", opacity:0.8, transition:"opacity 0.2s" }} onClick={() => setSelCinema(c.id)}>
+                    <div style={{ width:8, height:8, borderRadius:3, background:c.barColor, flexShrink:0 }} />
+                    <span style={{ fontSize:10, color:T.textMuted, fontFamily:T.mono, fontWeight:500 }}>{c.name}</span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 
@@ -558,7 +719,7 @@ export default function App() {
                 <button onClick={()=>goDay(-1)} disabled={!canPrevDay} className="view-btn" style={{ padding:"6px 12px", borderRadius:6, fontSize:16, cursor:canPrevDay?"pointer":"default", border:`1.5px solid ${T.border}`, background:"transparent", color:canPrevDay?T.text:T.textFaint, fontFamily:T.serif, fontWeight:600, transition:"all 0.25s", lineHeight:1 }}>‹</button>
                 <div style={{ textAlign:"center", minWidth:140 }}>
                   <div style={{ fontSize:17, fontWeight:700, color:T.text, fontFamily:T.serif, letterSpacing:"-0.3px" }}>{selDayInfo.day} {selDayInfo.num} {selDayInfo.mon}</div>
-                  <div style={{ fontSize:10, color:T.textDim, fontFamily:T.mono, marginTop:2 }}>{selDate===today?"Today · ":""}{dayFilms.length} film{dayFilms.length!==1?"s":""}</div>
+                  <div style={{ fontSize:10, color:T.textDim, fontFamily:T.mono, marginTop:2 }}>{selDate===today?"Today · ":""}{dayFilms.length} film{dayFilms.length!==1?"s":""}{isAllCinemas&&dayFilms.length>0?` across ${new Set(dayFilms.flatMap(f=>(f.cinemaEntries||[]).map(ce=>ce.cinemaId))).size} venues`:""}</div>
                 </div>
                 <button onClick={()=>goDay(1)} disabled={!canNextDay} className="view-btn" style={{ padding:"6px 12px", borderRadius:6, fontSize:16, cursor:canNextDay?"pointer":"default", border:`1.5px solid ${T.border}`, background:"transparent", color:canNextDay?T.text:T.textFaint, fontFamily:T.serif, fontWeight:600, transition:"all 0.25s", lineHeight:1 }}>›</button>
               </div>
@@ -584,7 +745,16 @@ export default function App() {
               ) : isMobile ? (
                 /* ═══════ MOBILE FEED ═══════ */
                 (() => {
-                  const allSessions=[]; dayFilms.forEach(film=>{film.sessions.forEach(sess=>{allSessions.push({...sess,film});});});
+                  const allSessions=[];
+                  if (isAllCinemas) {
+                    dayFilms.forEach(film => {
+                      (film.cinemaEntries||[]).forEach(ce => {
+                        ce.sessions.forEach(sess => { allSessions.push({...sess, film, cinemaName:ce.cinemaName, cinemaColor:ce.cinemaColor, cinemaShort:ce.cinemaShort}); });
+                      });
+                    });
+                  } else {
+                    dayFilms.forEach(film=>{film.sessions.forEach(sess=>{allSessions.push({...sess,film});});});
+                  }
                   allSessions.sort((a,b)=>a.startMin-b.startMin);
                   const groups=[]; allSessions.forEach(sess=>{ const last=groups[groups.length-1]; if(last&&last.time===sess.time) last.sessions.push(sess); else groups.push({time:sess.time,startMin:sess.startMin,sessions:[sess]}); });
                   const nowMin = selDate===today?getNowMin():null;
@@ -602,13 +772,16 @@ export default function App() {
                                     {si===0 && <div style={{ fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono }}>{group.time}</div>}
                                   </div>
                                   <div style={{ flex:1 }}>
-                                    <div className="tkt-card" style={{ display:"flex", alignItems:"center", gap:0, borderRadius:12, border:`1px solid ${T.cardBorder(film.color)}`, background:T.cardBg(film.color) }}>
-                                      <div style={{ width:4, alignSelf:"stretch", background:`linear-gradient(180deg,${film.color},${film.color}66)`, flexShrink:0, borderRadius:"12px 0 0 12px" }} />
+                                    <div className="tkt-card" style={{ display:"flex", alignItems:"center", gap:0, borderRadius:12, border:`1px solid ${T.cardBorder(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color)}`, background:T.cardBg(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color) }}>
+                                      <div style={{ width:4, alignSelf:"stretch", background:`linear-gradient(180deg,${isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color},${isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color}66)`, flexShrink:0, borderRadius:"12px 0 0 12px" }} />
                                       <div style={{ flex:1, padding:"11px 14px" }}>
                                         <div style={{ fontSize:14, fontWeight:700, color:T.text, lineHeight:1.25, fontFamily:T.serif }}>
                                           {film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.text, textDecoration:"none" }}>{film.title}</a> : film.title}
                                         </div>
                                         <div style={{ display:"flex", gap:6, marginTop:5, alignItems:"center", flexWrap:"wrap" }}>
+                                          {isAllCinemas && sess.cinemaName && (
+                                            <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:`${sess.cinemaColor}22`, color:sess.cinemaColor, fontFamily:T.mono, letterSpacing:0.3, border:`1px solid ${sess.cinemaColor}33` }}>{sess.cinemaShort||sess.cinemaName}</span>
+                                          )}
                                           <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:rBg[film.rating]||"#444", color:"#fff", fontFamily:T.mono, letterSpacing:0.5 }}>{film.rating}</span>
                                           <span style={{ fontSize:10, color:T.textMuted, fontFamily:T.mono }}>{film.runtime}min</span>
                                           <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>ends ~{minToTime(sess.filmEnd)}</span>
@@ -649,6 +822,77 @@ export default function App() {
                   </div>
                   <div ref={tlRef} style={{ position:"relative" }}>
                     {dayFilms.map((film,fi) => {
+
+                      /* ─── ALL CINEMAS: sub-rows per cinema ─── */
+                      if (isAllCinemas && film.cinemaEntries) {
+                        const isMulti = film.cinemaEntries.length > 1;
+                        return (
+                          <div key={film.title+fi} style={{ display:"flex", alignItems:"stretch", marginBottom:4, background:fi%2===0?T.rowEven:T.rowOdd, borderRadius:8, borderLeft:isMulti?`3px solid ${T.accent}`:"3px solid transparent" }}>
+                            {/* Film label spanning all sub-rows */}
+                            <div style={{ width:177, flexShrink:0, padding:"10px 14px", display:"flex", flexDirection:"column", justifyContent:"center", borderRight:`1px solid ${T.border}` }}>
+                              <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:3 }}>
+                                <div>
+                                  <div style={{ fontSize:12, fontWeight:700, color:T.textSub, lineHeight:1.2, fontFamily:T.serif }}>
+                                    {film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.textSub, textDecoration:"none" }}>{film.title}</a> : film.title}
+                                  </div>
+                                  <div style={{ display:"flex", gap:5, marginTop:4, alignItems:"center", flexWrap:"wrap" }}>
+                                    <span style={{ fontSize:8, padding:"1px 5px", borderRadius:3, fontWeight:700, background:rBg[film.rating]||"#444", color:"#fff", fontFamily:T.mono, letterSpacing:0.5 }}>{film.rating}</span>
+                                    <span style={{ fontSize:9, color:T.textDim, fontFamily:T.mono }}>{film.runtime}m</span>
+                                    {isMulti && <span style={{ fontSize:8, color:T.accent, fontFamily:T.mono, padding:"1px 5px", borderRadius:3, background:T.accentSoft, border:`1px solid ${T.accent}22`, fontWeight:700 }}>{film.cinemaEntries.length} venues</span>}
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            {/* Sub-rows container */}
+                            <div style={{ flex:1, display:"flex", flexDirection:"column" }}>
+                              {film.cinemaEntries.map((ce,ci) => (
+                                <div key={ce.cinemaId} style={{ display:"flex", alignItems:"center", minHeight:42, borderTop:ci>0?`1px dashed ${T.border}`:"none" }}>
+                                  {/* Cinema label */}
+                                  <div style={{ width:60, flexShrink:0, padding:"4px 6px", display:"flex", alignItems:"center", gap:4, borderRight:`1px solid ${T.border}` }}>
+                                    <div style={{ width:6, height:6, borderRadius:2, background:ce.cinemaColor, flexShrink:0 }} />
+                                    <span style={{ fontSize:8, color:T.textMuted, fontFamily:T.mono, fontWeight:600, letterSpacing:0.3 }}>{ce.cinemaShort}</span>
+                                  </div>
+                                  {/* Bars for this cinema */}
+                                  <div style={{ flex:1, position:"relative", height:42 }}>
+                                    {hourMarks.map(m=><div key={m} style={{ position:"absolute", left:`${pct(m)}%`, top:0, bottom:0, width:1, background:isDark?`${T.accent}0a`:`${T.accent}12`, zIndex:0 }} />)}
+                                    {ce.sessions.map((sess,si) => {
+                                      const barLeft=pct(sess.startMin), adsWidth=pct(sess.adsEnd)-barLeft, totalWidth=pct(sess.filmEnd)-barLeft;
+                                      const bKey=`${film.title}-${ce.cinemaId}-${si}`, isHov=hovBar===bKey;
+                                      const bc = ce.cinemaColor;
+                                      return (
+                                        <div key={si} className="tkt-bar" onMouseEnter={()=>setHovBar(bKey)} onMouseLeave={()=>setHovBar(null)}
+                                          style={{ position:"absolute", left:`${barLeft}%`, width:`${totalWidth}%`, top:"50%", height:isHov?38:28, transform:"translateY(-50%)", display:"flex", borderRadius:4, overflow:"hidden", zIndex:isHov?10:2, transition:"height 0.2s cubic-bezier(0.4,0,0.2,1),box-shadow 0.2s cubic-bezier(0.4,0,0.2,1)",
+                                            boxShadow: isHov ? `0 6px 24px ${bc}44,0 0 0 1px ${bc}55` : isDark ? `0 1px 4px rgba(0,0,0,0.3)` : `0 1px 3px rgba(0,0,0,0.08)`,
+                                          }}>
+                                          <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${bc}30,${bc}30 3px,${bc}18 3px,${bc}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"4px 0 0 4px", overflow:"hidden" }}>
+                                            <span style={{ fontSize:6, fontWeight:700, color:`${bc}`, letterSpacing:1, textTransform:"uppercase", opacity:0.5, fontFamily:T.mono }}>ADS</span>
+                                          </div>
+                                          <div style={{ width:6, flexShrink:0, background:`radial-gradient(circle 2px at center,${T.bg} 1.5px,${bc}55 2px) center top / 4px 6px repeat-y` }} />
+                                          <div style={{ flex:1, background:`linear-gradient(135deg,${bc}bb 0%,${bc}88 100%)`, padding:"2px 8px", display:"flex", alignItems:"center", gap:4, minWidth:0, borderRadius:"0 4px 4px 0", overflow:"hidden" }}>
+                                            <div style={{ flex:1, minWidth:0 }}>
+                                              <div style={{ fontSize:9.5, fontWeight:700, color:T.barText, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", textShadow:"0 1px 3px rgba(0,0,0,0.5)", fontFamily:T.mono }}>
+                                                {sess.time} – ~{minToTime(sess.filmEnd)}{sess.isHoh?"  CC":""}
+                                              </div>
+                                              {isHov && <div style={{ fontSize:8, color:T.barSubText, marginTop:1, fontFamily:T.mono }}>{ce.cinemaName}{sess.screen?` · ${sess.screen}`:""}</div>}
+                                            </div>
+                                            {sess.bookingUrl && (
+                                              <a href={sess.bookingUrl} target="_blank" rel="noopener" onClick={e=>e.stopPropagation()} className="book-btn" title={`Book at ${ce.cinemaName}`} style={{ display:"flex", alignItems:"center", justifyContent:"center", padding:"3px 6px", borderRadius:3, background:T.barBookBg, border:`1px solid ${T.barBookBorder}`, textDecoration:"none", flexShrink:0, cursor:"pointer", transition:"background 0.2s" }}>
+                                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>
+                                              </a>
+                                            )}
+                                          </div>
+                                        </div>
+                                      );
+                                    })}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        );
+                      }
+
+                      /* ─── SINGLE CINEMA: original timeline row ─── */
                       const anyHov = film.sessions.some((_,si)=>hovBar===`${film.id}-${si}`);
                       return (
                         <div key={film.id} style={{ display:"flex", alignItems:"stretch", marginBottom:4, background:fi%2===0?T.rowEven:T.rowOdd, borderRadius:8, minHeight:anyHov?74:56, transition:"min-height 0.25s cubic-bezier(0.4,0,0.2,1)" }}>
@@ -732,14 +976,32 @@ export default function App() {
                     </tr>
                   </thead>
                   <tbody>
-                    {(()=>{ const weekDates=selWeek?selWeek.dates:allDates; return films.filter(f=>weekDates.some(d=>f.showtimes[d])).map((film,fi)=>(
-                      <tr key={film.id} style={{ background:fi%2===0?T.rowEven:T.rowOdd }}>
+                    {(()=>{ const weekDates=selWeek?selWeek.dates:allDates;
+                      const sortedFilms = isAllCinemas
+                        ? [...films].filter(f=>weekDates.some(d=>f.showtimes[d])).sort((a,b) => {
+                            const aCnt = Object.keys(a.perCinema||{}).length, bCnt = Object.keys(b.perCinema||{}).length;
+                            return bCnt - aCnt || a.title.localeCompare(b.title);
+                          })
+                        : films.filter(f=>weekDates.some(d=>f.showtimes[d]));
+                      return sortedFilms.map((film,fi)=>(
+                      <tr key={film.title+fi} style={{ background:fi%2===0?T.rowEven:T.rowOdd }}>
                         <td style={{ padding:"10px 12px", borderBottom:`1px solid ${T.gridCellBorder}`, position:"sticky", left:0, background:fi%2===0?T.gridStickyBg1:T.gridStickyBg2, zIndex:4, boxShadow:T.stickyShadow }}>
                           <div style={{ display:"flex", alignItems:"center", gap:7 }}>
-                            <div style={{ width:3, height:24, borderRadius:1.5, background:`linear-gradient(180deg,${film.color},${film.color}44)` }} />
+                            {!isAllCinemas && <div style={{ width:3, height:24, borderRadius:1.5, background:`linear-gradient(180deg,${film.color},${film.color}44)` }} />}
+                            {isAllCinemas && (()=>{
+                              const cinIds = Object.keys(film.perCinema||{});
+                              return <div style={{ display:"flex", flexDirection:"column", gap:2 }}>
+                                {cinIds.slice(0,3).map(cId => <div key={cId} style={{ width:8, height:5, borderRadius:1.5, background:CINEMA_MAP[cId]?.barColor||"#888" }} />)}
+                                {cinIds.length>3 && <div style={{ fontSize:7, color:T.textFaint, fontFamily:T.mono }}>+{cinIds.length-3}</div>}
+                              </div>;
+                            })()}
                             <div>
                               <div style={{ fontSize:11, fontWeight:700, color:T.textSub, fontFamily:T.serif }}>{film.film_url?<a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.textSub, textDecoration:"none" }}>{film.title}</a>:film.title}</div>
-                              <div style={{ display:"flex", gap:4, marginTop:3 }}><span style={{ fontSize:8, padding:"0px 5px", borderRadius:2, background:rBg[film.rating]||"#444", color:"#fff", fontWeight:700, fontFamily:T.mono }}>{film.rating}</span><span style={{ fontSize:9, color:T.textFaint, fontFamily:T.mono }}>{film.runtime}m</span></div>
+                              <div style={{ display:"flex", gap:4, marginTop:3, flexWrap:"wrap" }}>
+                                <span style={{ fontSize:8, padding:"0px 5px", borderRadius:2, background:rBg[film.rating]||"#444", color:"#fff", fontWeight:700, fontFamily:T.mono }}>{film.rating}</span>
+                                <span style={{ fontSize:9, color:T.textFaint, fontFamily:T.mono }}>{film.runtime}m</span>
+                                {isAllCinemas && Object.keys(film.perCinema||{}).length>1 && <span style={{ fontSize:8, color:T.accent, fontFamily:T.mono, padding:"0px 4px", borderRadius:2, background:T.accentSoft, fontWeight:700 }}>{Object.keys(film.perCinema).length} venues</span>}
+                              </div>
                             </div>
                           </div>
                         </td>
@@ -749,21 +1011,37 @@ export default function App() {
                             <td key={d} className="tkt-cell" style={{ padding:"6px 6px", textAlign:"center", borderBottom:`1px solid ${T.gridCellBorder}`, borderLeft:`1px solid ${T.gridCellBorder}`, background:isToday?T.accentSoft:"transparent" }}>
                               {times ? (
                                 <div style={{ display:"flex", flexDirection:"column", gap:5, alignItems:"center" }}>
-                                  {times.map((t,i) => {
-                                    const isHoh=film.hoh?.[d]?.includes(t), bookingUrl=film.bookingUrls?.[d]?.[t], sessTags=film.tags?.[d]?.[t]||[];
-                                    const pill = <span className="tkt-pill" style={{ fontSize:11, fontWeight:600, padding:"4px 12px", borderRadius:4, background:`${film.color}${T.pillBgAlpha}`, border:`1.5px solid ${film.color}${T.pillBorderAlpha}`, color:isDark?film.accent:film.color, fontFamily:T.mono, whiteSpace:"nowrap", transition:"all 0.2s", cursor:bookingUrl?"pointer":"default", display:"inline-flex", alignItems:"center", gap:3 }} title={film.screens?.[d]?.[t]?`${film.screens[d][t]}${isHoh?" · HoH":""}`:(isHoh?"Hard of Hearing":"")}>{t}{isHoh?" CC":""}</span>;
-                                    return (
-                                      <div key={i} style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:3 }}>
-                                        {bookingUrl ? <a href={bookingUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}>{pill}</a> : pill}
-                                        {sessTags.length>0 && (
-                                          <div style={{ display:"flex", gap:2, flexWrap:"wrap", justifyContent:"center", maxWidth:100 }}>
-                                            {sessTags.slice(0,2).map((tag,ti) => <span key={ti} style={{ fontSize:7, color:T.textDim, fontFamily:T.mono, padding:"1px 4px", borderRadius:2, background:`${film.color}${T.pillBgAlpha}`, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", maxWidth:90 }}>{tag}</span>)}
-                                            {sessTags.length>2 && <span style={{ fontSize:7, color:T.textFaint, fontFamily:T.mono }}>+{sessTags.length-2}</span>}
-                                          </div>
-                                        )}
-                                      </div>
-                                    );
-                                  })}
+                                  {isAllCinemas ? (
+                                    /* All-cinemas grid: group pills by cinema */
+                                    Object.entries(film.perCinema||{}).filter(([,pc])=>pc.showtimes[d]).map(([cId,pc]) => {
+                                      const cin = CINEMA_MAP[cId];
+                                      const bc = cin?.barColor||"#888";
+                                      return pc.showtimes[d].map((t,i) => {
+                                        const bookingUrl=pc.bookingUrls?.[d]?.[t];
+                                        const pill = <span key={`${cId}-${i}`} className="tkt-pill" style={{ fontSize:10, fontWeight:600, padding:"3px 8px", borderRadius:4, background:`${bc}${T.pillBgAlpha}`, border:`1.5px solid ${bc}${T.pillBorderAlpha}`, color:isDark?`${bc}`:`${bc}`, fontFamily:T.mono, whiteSpace:"nowrap", transition:"all 0.2s", cursor:bookingUrl?"pointer":"default", display:"inline-flex", alignItems:"center", gap:3 }} title={`${cin?.name||cId}`}>
+                                          <span style={{ width:5, height:5, borderRadius:2, background:bc, flexShrink:0 }} />{t}
+                                        </span>;
+                                        return bookingUrl ? <a key={`${cId}-${i}`} href={bookingUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}>{pill}</a> : pill;
+                                      });
+                                    })
+                                  ) : (
+                                    /* Single cinema grid: original pills */
+                                    times.map((t,i) => {
+                                      const isHoh=film.hoh?.[d]?.includes(t), bookingUrl=film.bookingUrls?.[d]?.[t], sessTags=film.tags?.[d]?.[t]||[];
+                                      const pill = <span className="tkt-pill" style={{ fontSize:11, fontWeight:600, padding:"4px 12px", borderRadius:4, background:`${film.color}${T.pillBgAlpha}`, border:`1.5px solid ${film.color}${T.pillBorderAlpha}`, color:isDark?film.accent:film.color, fontFamily:T.mono, whiteSpace:"nowrap", transition:"all 0.2s", cursor:bookingUrl?"pointer":"default", display:"inline-flex", alignItems:"center", gap:3 }} title={film.screens?.[d]?.[t]?`${film.screens[d][t]}${isHoh?" · HoH":""}`:(isHoh?"Hard of Hearing":"")}>{t}{isHoh?" CC":""}</span>;
+                                      return (
+                                        <div key={i} style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:3 }}>
+                                          {bookingUrl ? <a href={bookingUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}>{pill}</a> : pill}
+                                          {sessTags.length>0 && (
+                                            <div style={{ display:"flex", gap:2, flexWrap:"wrap", justifyContent:"center", maxWidth:100 }}>
+                                              {sessTags.slice(0,2).map((tag,ti) => <span key={ti} style={{ fontSize:7, color:T.textDim, fontFamily:T.mono, padding:"1px 4px", borderRadius:2, background:`${film.color}${T.pillBgAlpha}`, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", maxWidth:90 }}>{tag}</span>)}
+                                              {sessTags.length>2 && <span style={{ fontSize:7, color:T.textFaint, fontFamily:T.mono }}>+{sessTags.length-2}</span>}
+                                            </div>
+                                          )}
+                                        </div>
+                                      );
+                                    })
+                                  )}
                                 </div>
                               ) : <span style={{ color:T.gridDashColor, fontSize:14 }}>—</span>}
                             </td>
@@ -799,7 +1077,7 @@ export default function App() {
             </div>
             {scrapedAt && (
               <div style={{ fontSize:9, color:T.textFaint, marginTop:8, fontFamily:T.mono, paddingTop:8, borderTop:`1px solid ${T.border}`, letterSpacing:0.3 }}>
-                Data from {cinema.source || cinema.url.replace(/^https?:\/\/(www\.)?/,"")} · Updated {new Date(scrapedAt).toLocaleString("en-GB",{dateStyle:"medium",timeStyle:"short"})} · Always confirm at the cinema
+                Data from {isAllCinemas ? `${CINEMAS.length} cinemas` : (cinema.source || cinema.url.replace(/^https?:\/\/(www\.)?/,""))} · Updated {new Date(scrapedAt).toLocaleString("en-GB",{dateStyle:"medium",timeStyle:"short"})} · Always confirm at the cinema
               </div>
             )}
           </div>
