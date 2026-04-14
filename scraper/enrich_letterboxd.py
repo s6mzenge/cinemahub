@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Letterboxd Enrichment Script
+Letterboxd Enrichment Script (v2 – async, smarter cleaning)
 
 Reads all films_*.json / films.json data files, looks up each unique film
 on Letterboxd via direct slug matching, and writes back `letterboxd_url`
@@ -12,23 +12,25 @@ Usage:
     python enrich_letterboxd.py                      # auto-finds public/data/
     python enrich_letterboxd.py -d ./public/data     # explicit data dir
     python enrich_letterboxd.py --dry-run             # preview without writing
+    python enrich_letterboxd.py --concurrency 8       # parallel requests (default 5)
 """
 
+import asyncio
 import json
 import re
 import sys
-import time
 import logging
 import argparse
 import unicodedata
 from pathlib import Path
 
-import requests
+import aiohttp
 from bs4 import BeautifulSoup
 
 # ─── Config ───────────────────────────────────────────────────────────
 REQUEST_TIMEOUT = 12
-DELAY_BETWEEN_FILMS = 1.0   # seconds between Letterboxd requests (be polite)
+CONCURRENCY = 5          # parallel Letterboxd requests
+DELAY_BETWEEN = 0.25     # seconds between starting each request
 MAX_RETRIES = 2
 
 HEADERS = {
@@ -51,6 +53,20 @@ logging.basicConfig(
 log = logging.getLogger("enrich_letterboxd")
 
 
+# ─── Manual slug overrides for films whose titles don't slugify cleanly ─
+# Maps cleaned title (lowercase) → Letterboxd slug
+SLUG_OVERRIDES = {
+    "dr. strangelove": "dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb",
+    "e.t. the extra terrestrial": "e-t-the-extra-terrestrial",
+    "e.t. the extra-terrestrial": "e-t-the-extra-terrestrial",
+    "a.i. artificial intelligence": "ai-artificial-intelligence",
+    "d.e.b.s.": "d-e-b-s",
+    "at midnight i'll take your soul": "at-midnight-ill-take-your-soul",
+    "small axe: lovers rock": "lovers-rock",
+    "timecode live": "timecode",
+}
+
+
 # ─── Title cleaning ──────────────────────────────────────────────────
 
 # Known event-series prefixes (case-insensitive).
@@ -61,8 +77,8 @@ EVENT_PREFIXES = [
     "cine-real presents",
     "distorted frame",
     "dog-friendly",
-    "exhibition on screen",
     "exclusive preview",
+    "exhibition on screen",
     "fetish friendly",
     "funday",
     "in the scene",
@@ -70,7 +86,6 @@ EVENT_PREFIXES = [
     "lesbian visibility day",
     "lesbian visibility",
     "lost reels presents",
-    "memories",
     "nt live",
     "national theatre live",
     "pitchblack mixtapes",
@@ -80,6 +95,14 @@ EVENT_PREFIXES = [
     "uk premiere of 4k restoration",
     "uk premiere",
     "violet hour presents",
+    "word space presents",
+]
+
+# Prefixes that appear WITHOUT a colon — strip them directly
+STRIP_PREFIXES_NO_COLON = [
+    r"(?i)^sing-a-long-a\s+",
+    r"(?i)^solve along a\s+",
+    r"(?i)^funeral parade presents\s+",
 ]
 
 # Titles matching these patterns are NOT films → skip entirely
@@ -87,19 +110,37 @@ SKIP_PATTERNS = [
     r"(?i)\bnt live\b",
     r"(?i)\bnational theatre live\b",
     r"(?i)\bexhibition on screen\b",
-    r"(?i)\bshort films?\b",             # "Short Films", "Shorts"
+    r"(?i)\bshort films?\b",
     r"(?i)\bshorts\s*[&+]\s*stand-up\b",
     r"(?i)\bday pass\b",
     r"(?i)\bpitchblack (playback|mixtapes)\b",
-    r"(?i)\bfilm night\b",               # "Big Bike Film Night"
+    r"(?i)\bfilm night\b",
     r"(?i)^festival of britain\b",
     r"(?i)^future forward\b",
     r"(?i)\bfundraiser\b",
     r"(?i)^the quiz of rassilon\b",
     r"(?i)^laura mulvey\b",
     r"(?i)\bdouble feature\b",
-    r"(?i)^25 and under:",               # BFI intro events
+    r"(?i)^25 and under:",
     r"(?i)^inferno, purgatory",
+    r"(?i)\bmystery movie marathon\b",
+    r"(?i)\bmystery movie\b",
+    r"(?i)\bbleak week\b",
+    r"(?i)\bfilm quiz\b",
+    r"(?i)\bpoetry\s*#\d",
+    r"(?i)\bin conversation\b",
+    r"(?i)\bsip and paint\b",
+    r"(?i)\bquiz\b(?!.*\bfilm\b)",  # quiz events, but not quiz-titled films
+    r"(?i)^creative minds of tomorrow",
+    r"(?i)^new writings from\b",
+    r"(?i)^ways of seeing archives\b",
+    r"(?i)^words, songs and screens\b",
+    r"(?i)^music video preservation\b",
+    r"(?i)\barchive tour\b",
+    r"(?i)^meet the projectionists\b",
+    r"(?i)^hitchcock & herrmann\b",
+    r"(?i)^melodrama as provocateur\b",
+    r"(?i)\bsilent dreams shorts\b",
 ]
 
 
@@ -113,38 +154,43 @@ def should_skip(title: str) -> bool:
 
 def clean_title_for_lookup(title: str) -> str:
     """
-    Strip event prefixes, Q&A/intro suffixes, and other cruft to extract
-    the actual film title for Letterboxd lookup.
-
-    Examples:
-        "Preview: Departures + Q&A"          → "Departures"
-        "CAMP CLASSICS presents: Hackers (1995)" → "Hackers"
-        "Loner (Independent Filmmakers Showcase)" → "Loner"
-        "The Devil Wears Prada 2 + Intro"    → "The Devil Wears Prada 2"
-        "Mother Mary + Intro from Femmi"     → "Mother Mary"
-        "Adults Only: The Devil Wears Prada 2" → "The Devil Wears Prada 2"
-        "Cockroach + Q&A"                    → "Cockroach"
-        "Kill Bill: The Whole Bloody Affair"  → "Kill Bill: The Whole Bloody Affair" (kept!)
+    Strip event prefixes, Q&A/intro suffixes, brackets, and other cruft
+    to extract the actual film title for Letterboxd lookup.
     """
     t = title.strip()
 
-    # ── Step 1: Strip known event-series prefixes ──
-    # Only strip if the part before the colon is a known event prefix
+    # ── Step 0: Strip [original language title] brackets ──
+    # e.g. "Oldboy [Oldeuboi]" → "Oldboy"
+    # But preserve brackets that are part of the title when there's nothing before them
+    t = re.sub(r"\s*\[[^\]]+\]\s*$", "", t)
+    # Also handle mid-title brackets like "Cinema Paradiso [Nuovo Cinema Paradiso]"
+    t = re.sub(r"\s*\[[^\]]+\]", "", t)
+
+    # ── Step 1: Strip known event-series prefixes (colon-separated) ──
     if ":" in t:
         before_colon = t.split(":")[0].strip()
         before_lower = before_colon.lower()
-        # Also handle "presents" variants like 'Lost Reels presents "Lianna"'
         before_lower_clean = re.sub(r'\s+presents$', '', before_lower)
         for prefix in EVENT_PREFIXES:
             if before_lower == prefix or before_lower_clean == prefix:
                 t = ":".join(t.split(":")[1:]).strip()
-                # Strip leading quotes if present (e.g. Lost Reels presents "Lianna")
-                t = t.strip('"').strip('"').strip('"').strip()
+                t = t.strip('"').strip('\u201c').strip('\u201d').strip()
                 break
 
-    # ── Step 2: Handle " + " — strip suffixes like "+ Q&A", "+ Intro", etc. ──
-    # But preserve " + " in actual titles like "Romeo + Juliet" or "Orwell: 2+2=5"
-    # Strategy: strip if what follows "+" looks like event text (Q&A, Intro, Director, Special, etc.)
+    # ── Step 1b: Strip non-colon prefixes ──
+    for pat in STRIP_PREFIXES_NO_COLON:
+        t = re.sub(pat, "", t)
+
+    # Handle 'X presents "Title"' patterns (with quotes, no colon)
+    m = re.match(
+        r'(?i)^(?:funeral parade|lost reels|word space)\s+presents\s*'
+        r'["\u201c]([^"\u201d]+)["\u201d]',
+        t,
+    )
+    if m:
+        t = m.group(1).strip()
+
+    # ── Step 2: Strip " + " suffixes (Q&A, Intro, etc.) ──
     plus_match = re.search(
         r'\s*\+\s*('
         r'Q\s*&\s*A'
@@ -152,7 +198,8 @@ def clean_title_for_lookup(title: str) -> str:
         r'|[Dd]irector\b.*'
         r'|[Ss]pecial\b.*'
         r'|[Ee]xtended\b.*'
-        r'|5:40 Fantasy.*'       # "I Saw the TV Glow + 5:40 Fantasy Music Video"
+        r'|5:40 Fantasy.*'
+        r'|Reece Shearsmith.*'
         r')\s*$',
         t
     )
@@ -160,31 +207,48 @@ def clean_title_for_lookup(title: str) -> str:
         t = t[:plus_match.start()].strip()
 
     # Handle double bills: "Film A + Film B" — take just the first film
-    # But only if both sides look like titles (not "Romeo + Juliet")
-    # Heuristic: if there's a " + " with >3 chars on each side, and it's not
-    # a known compound title, split and take the first
     if " + " in t and not re.search(r'(?i)romeo\s*\+\s*juliet', t) and not re.search(r'(?i)\d\+\d', t):
         parts = t.split(" + ", 1)
         if len(parts[0].strip()) > 3 and len(parts[1].strip()) > 3:
-            # Looks like a double bill
             t = parts[0].strip()
 
-    # ── Step 3: Strip non-film parentheticals ──
-    # Remove things like "(Independent Filmmakers Showcase)", "(Live Score)"
-    # But keep year parentheticals "(1996)" and format ones "(Director's Cut)"
-    t = re.sub(r"\s*\(Independent Filmmakers Showcase\)", "", t, flags=re.I)
-    t = re.sub(r"\s*\(Short Films?\)", "", t, flags=re.I)
-    t = re.sub(r"\s*\(Live Score\)", "", t, flags=re.I)
-    t = re.sub(r"\s*\(4K Restoration\)", "", t, flags=re.I)
-    t = re.sub(r"\s*\(Black & White version\)", "", t, flags=re.I)
+    # ── Step 3: Strip "with X live on stage" suffix ──
+    t = re.sub(r"\s+with\s+\w[\w\s]*\blive on stage\b.*$", "", t, flags=re.I)
 
-    # ── Step 4: Strip year parenthetical — we pass year separately ──
+    # ── Step 4: Strip non-film parentheticals ──
+    # Remove things like "(Independent Filmmakers Showcase)", "(Live Score)",
+    # "(Director's Cut)", "(Extended Cut)", "(Theatrical Cut)", etc.
+    strip_parens = [
+        r"\(Independent Filmmakers Showcase\)",
+        r"\(Short Films?\)",
+        r"\(Live Score\)",
+        r"\(4K Restoration\)",
+        r"\(Black & White version\)",
+        r"\(Director'?s?\s*Cut\)",
+        r"\(Extended\s*Cut\)",
+        r"\(Theatrical\s*Cut\)",
+        r"\(Sedmikr[aá]sky\)",     # Daisies (Sedmikrásky)
+    ]
+    for pat in strip_parens:
+        t = re.sub(r"\s*" + pat, "", t, flags=re.I)
+
+    # ── Step 5: Strip year parenthetical — we pass year separately ──
     t = re.sub(r"\s*\(\d{4}\)\s*$", "", t)
 
-    # ── Step 5: Strip re-release / anniversary suffixes ──
+    # ── Step 6: Strip re-release / anniversary suffixes ──
     t = re.sub(r"\s*[-–—]\s*\d+\w*\s*anniversary.*$", "", t, flags=re.I)
     t = re.sub(r"\s*\(\d+\w*\s*anniversary[^)]*\)", "", t, flags=re.I)
     t = re.sub(r"\s*\(re-?release\)", "", t, flags=re.I)
+
+    # ── Step 7: Strip restoration/premiere suffixes after colon ──
+    # "Vampire's Kiss : 4K Restoration Premiere" → "Vampire's Kiss"
+    # "Doctor Who: The Movie – 4K Restoration" → "Doctor Who: The Movie"
+    # "Mimic: Director's Cut" → "Mimic"
+    t = re.sub(r"\s*[:–—-]\s*4K\s+Restoration\s*(Premiere)?\s*$", "", t, flags=re.I)
+    t = re.sub(r"\s*:\s*Director'?s?\s*Cut\s*$", "", t, flags=re.I)
+
+    # ── Step 8: Strip any leftover surrounding quotes ──
+    t = t.strip('"').strip('\u201c').strip('\u201d').strip('"')
 
     return t.strip()
 
@@ -196,48 +260,69 @@ def slugify_title(title: str) -> str:
     s = unicodedata.normalize("NFD", title)
     s = "".join(c for c in s if unicodedata.category(c) != "Mn")
     s = s.lower()
-    s = re.sub(r"[''`]", "", s)
+    # Strip ALL apostrophe-like characters (straight, curly left/right, backtick)
+    s = re.sub(r"[''\u2018\u2019\u0060\u00B4]", "", s)
     s = re.sub(r"[^a-z0-9]+", "-", s)
     s = s.strip("-")
     return s
 
 
-def fetch_with_retry(url: str, retries: int = MAX_RETRIES) -> requests.Response | None:
-    """GET with retries and polite error handling."""
+async def fetch_with_retry(
+    session: aiohttp.ClientSession,
+    url: str,
+    retries: int = MAX_RETRIES,
+) -> str | None:
+    """GET with retries. Returns HTML text on 200, None on 404."""
     for attempt in range(retries + 1):
         try:
-            resp = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-            if resp.status_code == 200:
-                return resp
-            if resp.status_code == 404:
-                return None
-            log.warning(f"  HTTP {resp.status_code} for {url} (attempt {attempt+1})")
-        except requests.RequestException as e:
+            async with session.get(
+                url,
+                timeout=aiohttp.ClientTimeout(total=REQUEST_TIMEOUT),
+                allow_redirects=True,
+            ) as resp:
+                if resp.status == 200:
+                    return await resp.text()
+                if resp.status == 404:
+                    return None
+                log.warning(f"  HTTP {resp.status} for {url} (attempt {attempt+1})")
+        except (aiohttp.ClientError, asyncio.TimeoutError) as e:
             log.warning(f"  Request error for {url}: {e} (attempt {attempt+1})")
         if attempt < retries:
-            time.sleep(1.5 * (attempt + 1))
+            await asyncio.sleep(1.5 * (attempt + 1))
     return None
 
 
-def try_direct_slug(title: str, year: int | None = None) -> dict | None:
+async def try_direct_slug(
+    session: aiohttp.ClientSession,
+    title: str,
+    year: int | None = None,
+) -> dict | None:
     """
     Try to hit the film page directly by guessing the slug.
-    Tries variants in order:
-      1. title-year  (e.g. /film/amelie-2001/)
-      2. title       (e.g. /film/amelie/)
+    Order: manual override → title-year → title-only → English title variants.
     """
+    # Check manual overrides first
+    override_slug = SLUG_OVERRIDES.get(title.lower())
+    if override_slug:
+        url = f"{LBOXD_BASE}/film/{override_slug}/"
+        html = await fetch_with_retry(session, url, retries=0)
+        if html is not None:
+            return extract_rating_from_page(html, url)
+
     slug = slugify_title(title)
 
+    # Try slug-year first (e.g. /film/amelie-2001/)
     if year:
         url = f"{LBOXD_BASE}/film/{slug}-{year}/"
-        resp = fetch_with_retry(url, retries=0)
-        if resp is not None:
-            return extract_rating_from_page(resp.text, url)
+        html = await fetch_with_retry(session, url, retries=0)
+        if html is not None:
+            return extract_rating_from_page(html, url)
 
+    # Try slug without year
     url = f"{LBOXD_BASE}/film/{slug}/"
-    resp = fetch_with_retry(url, retries=0)
-    if resp is not None:
-        return extract_rating_from_page(resp.text, url)
+    html = await fetch_with_retry(session, url, retries=0)
+    if html is not None:
+        return extract_rating_from_page(html, url)
 
     return None
 
@@ -245,10 +330,7 @@ def try_direct_slug(title: str, year: int | None = None) -> dict | None:
 # ─── Rating extraction ────────────────────────────────────────────────
 
 def extract_rating_from_page(html: str, url: str) -> dict | None:
-    """
-    Extract the average rating from a Letterboxd film page.
-    Tries multiple HTML locations for robustness.
-    """
+    """Extract the average rating from a Letterboxd film page."""
     soup = BeautifulSoup(html, "html.parser")
     rating = None
 
@@ -313,12 +395,50 @@ def normalize_for_lookup(title: str) -> str:
     t = unicodedata.normalize("NFD", title)
     t = "".join(c for c in t if unicodedata.category(c) != "Mn")
     t = t.lower().strip()
+    t = re.sub(r"\s*\[[^\]]+\]", "", t)           # strip [original title]
     t = re.sub(r"\s*[-\u2013\u2014]\s*\d+\w*\s*anniversary.*$", "", t, flags=re.I)
     t = re.sub(r"\s*\(\d+\w*\s*anniversary[^)]*\)", "", t, flags=re.I)
     t = re.sub(r"\s*\(re-?release\)", "", t, flags=re.I)
     t = re.sub(r"\s*\(\d{4}\)\s*$", "", t)
     t = re.sub(r"\s+", " ", t).strip()
     return t
+
+
+# ─── Async lookup pipeline ────────────────────────────────────────────
+
+async def lookup_film(
+    session: aiohttp.ClientSession,
+    semaphore: asyncio.Semaphore,
+    title: str,
+    year: int | None,
+    index: int,
+    total: int,
+) -> dict:
+    """Clean the title and look up on Letterboxd. Returns enrichment dict."""
+    async with semaphore:
+        cleaned = clean_title_for_lookup(title)
+        year_str = f" ({year})" if year else ""
+
+        if cleaned != title:
+            log.info(f"[{index}/{total}] \u21b3 cleaned: \"{title}\" → \"{cleaned}\"{year_str}")
+        else:
+            log.info(f"[{index}/{total}] {title}{year_str}")
+
+        result = await try_direct_slug(session, cleaned, year)
+        if result and result["url"]:
+            log.info(f"  ✓ {result['url']} — rating: {result['rating']}")
+            return {"letterboxd_url": result["url"], "letterboxd_rating": result["rating"]}
+
+        # Fallback: retry with the original title if cleaning changed it
+        if cleaned != title:
+            await asyncio.sleep(0.3)
+            result = await try_direct_slug(session, title, year)
+            if result and result["url"]:
+                log.info(f"  ✓ (original) {result['url']} — rating: {result['rating']}")
+                return {"letterboxd_url": result["url"], "letterboxd_rating": result["rating"]}
+
+        log.warning(f"  ✗ no result for: {cleaned}{year_str}")
+        return {"letterboxd_url": None, "letterboxd_rating": None}
 
 
 # ─── Main pipeline ────────────────────────────────────────────────────
@@ -358,37 +478,6 @@ def collect_unique_titles(data_files: list[Path]) -> dict[str, dict]:
     return result
 
 
-def lookup_film(title: str, year: int | None = None) -> dict:
-    """
-    Clean the title and look up on Letterboxd via direct slug.
-    Returns {"letterboxd_url": str|null, "letterboxd_rating": float|null}
-    """
-    cleaned = clean_title_for_lookup(title)
-    year_str = f" ({year})" if year else ""
-
-    if cleaned != title:
-        log.info(f"  \u21b3 cleaned: \"{title}\" → \"{cleaned}\"")
-
-    log.info(f"  \u21b3 trying slug for: {cleaned}{year_str}")
-    result = try_direct_slug(cleaned, year)
-    if result and result["url"]:
-        log.info(f"    \u2713 hit: {result['url']} — rating: {result['rating']}")
-        return {"letterboxd_url": result["url"], "letterboxd_rating": result["rating"]}
-
-    # If cleaned title differs from slug without year, also worth trying
-    # the original (uncleaned) slug in case the colon IS part of the title
-    if cleaned != title:
-        time.sleep(0.8)
-        log.info(f"  \u21b3 retrying with original title: {title}")
-        result = try_direct_slug(title, year)
-        if result and result["url"]:
-            log.info(f"    \u2713 hit: {result['url']} — rating: {result['rating']}")
-            return {"letterboxd_url": result["url"], "letterboxd_rating": result["rating"]}
-
-    log.warning(f"    \u2717 no result for: {cleaned}{year_str}")
-    return {"letterboxd_url": None, "letterboxd_rating": None}
-
-
 def enrich_data_files(data_files: list[Path], lookup_cache: dict, dry_run: bool = False):
     """Write letterboxd_url and letterboxd_rating into each film entry."""
     for path in data_files:
@@ -410,21 +499,14 @@ def enrich_data_files(data_files: list[Path], lookup_cache: dict, dry_run: bool 
                 json.dumps(data, indent=2, ensure_ascii=False) + "\n",
                 encoding="utf-8",
             )
-            log.info(f"\u270f\ufe0f  Updated {path.name}")
+            log.info(f"✏️  Updated {path.name}")
         elif modified:
             log.info(f"[DRY RUN] Would update {path.name}")
         else:
             log.info(f"  No changes needed for {path.name}")
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Enrich film data with Letterboxd ratings")
-    parser.add_argument("-d", "--data-dir", type=str, default=None,
-                        help="Directory containing films JSON files")
-    parser.add_argument("--dry-run", action="store_true",
-                        help="Preview lookups without writing to files")
-    args = parser.parse_args()
-
+async def run(args):
     if args.data_dir:
         data_dir = Path(args.data_dir)
     else:
@@ -450,7 +532,6 @@ def main():
 
     unique_titles = collect_unique_titles(data_files)
 
-    # Partition into lookups vs skips
     to_lookup = {k: v for k, v in unique_titles.items() if not v["skip"]}
     skipped = {k: v for k, v in unique_titles.items() if v["skip"]}
 
@@ -464,18 +545,50 @@ def main():
         for v in sorted(skipped.values(), key=lambda x: x["title"]):
             log.info(f"  ⏭  {v['title']}")
 
-    # Look up each film
-    lookup_cache = {}
-    for i, (key, info) in enumerate(to_lookup.items(), 1):
-        title, year = info["title"], info["year"]
-        year_label = f" ({year})" if year else " (no year)"
-        log.info(f"[{i}/{len(to_lookup)}] {title}{year_label}")
-        lookup_cache[key] = lookup_film(title, year)
+    # ── Deduplicate by cleaned title to avoid redundant HTTP requests ──
+    # Multiple raw titles can clean to the same slug (e.g. "Departures",
+    # "Preview: Departures + Q&A", "Fetish Friendly: Departures" all → "Departures")
+    clean_to_keys: dict[str, list[str]] = {}
+    for key, info in to_lookup.items():
+        cleaned = clean_title_for_lookup(info["title"])
+        year = info["year"]
+        dedup_key = f"{cleaned.lower()}|{year or ''}"
+        clean_to_keys.setdefault(dedup_key, []).append(key)
 
-        if i < len(to_lookup):
-            time.sleep(DELAY_BETWEEN_FILMS)
+    # Build the deduped work list
+    work_items = []
+    for dedup_key, keys in clean_to_keys.items():
+        # Pick the representative entry (prefer one with a year)
+        rep_key = next((k for k in keys if to_lookup[k]["year"]), keys[0])
+        work_items.append((dedup_key, rep_key, keys))
 
-    # Also mark skipped titles as no-result so they don't get stale data
+    log.info(f"  → {len(work_items)} unique lookups after dedup (saved {len(to_lookup) - len(work_items)} requests)")
+
+    # ── Async lookups ──
+    concurrency = args.concurrency
+    semaphore = asyncio.Semaphore(concurrency)
+    log.info(f"  → concurrency: {concurrency}")
+
+    lookup_cache: dict[str, dict] = {}
+
+    async with aiohttp.ClientSession(headers=HEADERS) as session:
+        tasks = []
+        for i, (dedup_key, rep_key, keys) in enumerate(work_items, 1):
+            info = to_lookup[rep_key]
+            task = lookup_film(session, semaphore, info["title"], info["year"], i, len(work_items))
+            tasks.append((keys, task))
+            # Stagger task creation slightly to avoid burst
+            if i % concurrency == 0:
+                await asyncio.sleep(DELAY_BETWEEN)
+
+        # Gather results
+        results = await asyncio.gather(*(t for _, t in tasks))
+
+        for (keys, _), result in zip(tasks, results):
+            for key in keys:
+                lookup_cache[key] = result
+
+    # Also mark skipped titles as no-result
     for key in skipped:
         lookup_cache[key] = {"letterboxd_url": None, "letterboxd_rating": None}
 
@@ -490,6 +603,19 @@ def main():
 
     enrich_data_files(data_files, lookup_cache, dry_run=args.dry_run)
     log.info("=== Enrichment Complete ===")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Enrich film data with Letterboxd ratings")
+    parser.add_argument("-d", "--data-dir", type=str, default=None,
+                        help="Directory containing films JSON files")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="Preview lookups without writing to files")
+    parser.add_argument("--concurrency", type=int, default=CONCURRENCY,
+                        help=f"Number of parallel requests (default {CONCURRENCY})")
+    args = parser.parse_args()
+
+    asyncio.run(run(args))
 
 
 if __name__ == "__main__":
