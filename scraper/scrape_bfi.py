@@ -455,10 +455,16 @@ def fetch_page_playwright(url: str, page) -> str | None:
     """Fetch a single page using an existing Playwright page handle."""
     try:
         page.goto(url, wait_until="domcontentloaded", timeout=30000)
-        page.wait_for_timeout(2000)  # Let Cloudflare challenge resolve
-        html = page.content()
-        if _has_real_content(html):
-            return html
+        # Poll for real content — Cloudflare JS challenges can take 5-10s
+        for _ in range(6):
+            page.wait_for_timeout(2000)
+            html = page.content()
+            if _has_real_content(html):
+                return html
+        # Log what we actually got for diagnosis
+        title = page.title()
+        log.info(f"  Playwright page title after wait: '{title}'")
+        log.info(f"  HTML length: {len(html)} chars, has markers: {[m for m in _REAL_CONTENT_MARKERS if m in html]}")
     except Exception as e:
         log.debug(f"Playwright failed for {url}: {e}")
     return None
