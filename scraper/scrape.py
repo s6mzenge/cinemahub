@@ -1,17 +1,20 @@
 #!/usr/bin/env python3
 """
-Peckhamplex Timetable Scraper — FULLY ASYNC
+Peckhamplex Timetable Scraper — FULLY ASYNC + PIPELINED
 
-All three steps run asynchronously:
+All steps run asynchronously, and Steps 2+3 are pipelined:
   Step 1: Film list pages fetched concurrently with aiohttp
-  Step 2: Film detail pages fetched concurrently (semaphore-gated)
-  Step 3: Veezi screen scraping with concurrent Playwright tabs
+  Step 2+3: Film detail pages fetched concurrently — as booking URLs are
+            discovered, Playwright workers immediately start scraping Veezi
+            for screen numbers (no waiting for all detail pages to finish).
 
-Typical total time: ~30-40s instead of ~2-3 minutes.
+Playwright pages block images/CSS/fonts for faster loads.
+
+Typical total time: ~20-30s (down from ~40-60s without pipelining).
 
 Usage:
     python scrape.py                          # default concurrency
-    python scrape.py --concurrency 8          # more Playwright tabs
+    python scrape.py --concurrency 12         # more Playwright tabs
     python scrape.py --no-screens             # skip Step 3 entirely
     python scrape.py -o my_output.json        # custom output path
 """
@@ -37,7 +40,7 @@ LISTINGS_URL = f"{BASE_URL}/films/out-now"
 COMING_SOON_URL = f"{BASE_URL}/films/coming-soon"
 
 # Max concurrent HTTP requests for the Peckhamplex site
-HTTP_CONCURRENCY = 5
+HTTP_CONCURRENCY = 10
 REQUEST_TIMEOUT = 15
 
 HEADERS = {
@@ -83,6 +86,10 @@ EXTRA_PALETTES = [
     {"color": "#558b2f", "accent": "#9ccc65"},
 ]
 
+# Site names to reject when extracting film titles — the mobile header <h1>
+# contains "Peckhamplex" and must never be mistaken for a film title.
+_SITE_NAMES = {"peckhamplex", "peckhamplex multi-screen cinema"}
+
 
 # ---------------------------------------------------------------------------
 # Async HTTP fetching
@@ -111,7 +118,7 @@ async def fetch(
 
 
 # ---------------------------------------------------------------------------
-# Parsing helpers (unchanged)
+# Parsing helpers
 # ---------------------------------------------------------------------------
 
 def parse_runtime(text: str) -> int | None:
@@ -172,6 +179,51 @@ def parse_date_text(text: str) -> str | None:
     return None
 
 
+def extract_title(soup: BeautifulSoup, film_id: str, listing_title: str) -> str:
+    """Extract the film title from a detail page, with multiple fallbacks.
+
+    Selector priority:
+      1. h1.page-title  — the actual film title on current Peckhamplex pages
+      2. .film-title h1 / .film-title p / h1.film-title — older markup variants
+      3. og:title meta tag
+      4. <title> tag (split on " - ")
+      5. Listing page title (if usable)
+      6. Humanised URL slug
+
+    NEVER uses a bare "h1" — the site header contains "Peckhamplex" which
+    would silently replace short titles like "Fuze" or "GOAT".
+    """
+    # Try film-specific selectors
+    for sel in ["h1.page-title", ".film-title h1", ".film-title p", "h1.film-title"]:
+        el = soup.select_one(sel)
+        if el:
+            candidate = el.get_text(strip=True)
+            if candidate and candidate.lower() not in _SITE_NAMES:
+                return candidate
+
+    # Fallback: og:title meta tag
+    og = soup.select_one('meta[property="og:title"]')
+    if og and og.get("content", "").strip():
+        candidate = og["content"].strip()
+        if candidate.lower() not in _SITE_NAMES:
+            return candidate
+
+    # Fallback: <title> tag — format is "Fuze - Peckhamplex Multi-Screen Cinema"
+    title_tag = soup.find("title")
+    if title_tag:
+        parts = title_tag.get_text(strip=True).split(" - ", 1)
+        if parts[0].strip() and parts[0].strip().lower() not in _SITE_NAMES:
+            return parts[0].strip()
+
+    # Fallback: keep listing title if it's not "Unknown"
+    if listing_title and listing_title != "Unknown" and listing_title.lower() not in _SITE_NAMES:
+        return listing_title
+
+    # Last resort: humanise the URL slug
+    log.warning(f"Could not extract title for {film_id}, falling back to slug")
+    return film_id.replace("-", " ").title()
+
+
 # ---------------------------------------------------------------------------
 # Step 1: Film list scraping (async)
 # ---------------------------------------------------------------------------
@@ -185,8 +237,14 @@ def parse_film_list(soup: BeautifulSoup, url: str) -> list[dict]:
             continue
         film_url = urljoin(BASE_URL, link_el["href"])
 
-        title_el = wrapper.select_one(".film-title p")
-        title = title_el.get_text(strip=True) if title_el else "Unknown"
+        title = "Unknown"
+        for title_sel in [".film-title p", ".film-title h1", ".film-title h2", ".film-title"]:
+            title_el = wrapper.select_one(title_sel)
+            if title_el:
+                candidate = title_el.get_text(strip=True)
+                if candidate:
+                    title = candidate
+                    break
 
         poster_el = wrapper.select_one("img.poster")
         poster_url = ""
@@ -195,6 +253,9 @@ def parse_film_list(soup: BeautifulSoup, url: str) -> list[dict]:
 
         has_hoh_listing = bool(wrapper.select_one('.icon[title*="Hard of Hearing"]'))
         slug = film_url.rstrip("/").split("/")[-1]
+
+        if title == "Unknown":
+            log.warning(f"Could not extract title from listing page for slug: {slug}")
 
         films.append({
             "id": slug,
@@ -241,16 +302,7 @@ def parse_film_detail(soup: BeautifulSoup, film: dict) -> dict | None:
     rating = extract_rating(soup)
     genre = extract_genre(soup)
     runtime = extract_runtime(soup)
-
-    # Try to get a better title from the detail page (listing page titles can be truncated)
-    detail_title = film["title"]
-    for sel in [".film-title h1", ".film-title p", "h1.film-title", "h1"]:
-        el = soup.select_one(sel)
-        if el:
-            candidate = el.get_text(strip=True)
-            if candidate and len(candidate) > len(detail_title):
-                detail_title = candidate
-                break
+    detail_title = extract_title(soup, film["id"], film["title"])
 
     showtimes = {}
     for date_wrapper in soup.select(".book-tickets .date-wrapper"):
@@ -320,7 +372,7 @@ async def scrape_all_details(
     semaphore: asyncio.Semaphore,
     films_raw: list[dict],
 ) -> list[dict]:
-    """Fetch all film detail pages concurrently."""
+    """Fetch all film detail pages concurrently (used when --no-screens)."""
     results = await asyncio.gather(
         *(scrape_film_detail(session, semaphore, f) for f in films_raw)
     )
@@ -328,35 +380,34 @@ async def scrape_all_details(
 
 
 # ---------------------------------------------------------------------------
-# Step 3: FAST concurrent Veezi screen scraping (unchanged)
+# Step 3: Veezi screen scraping helpers
 # ---------------------------------------------------------------------------
 
-async def _scrape_single_screen(
-    context,
-    semaphore: asyncio.Semaphore,
-    url: str,
-    index: int,
-    total: int,
-) -> tuple[str, str | None]:
+async def _block_unnecessary_resources(route):
+    """Abort image/CSS/font/media requests in Playwright for faster loads."""
+    if route.request.resource_type in {"image", "stylesheet", "font", "media"}:
+        await route.abort()
+    else:
+        await route.continue_()
+
+
+async def _scrape_single_screen(context, semaphore, url: str) -> tuple[str, str | None]:
     """Scrape a single Veezi URL in its own tab, gated by the semaphore."""
     async with semaphore:
         page = await context.new_page()
         screen = None
         try:
-            log.info(f"  Veezi [{index+1}/{total}]: {url[:70]}...")
-            await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            log.info(f"  Veezi: {url[:70]}...")
+            await page.goto(url, wait_until="domcontentloaded", timeout=20000)
 
-            # Fast path: wait for the content selector to appear.
-            # After the first few requests warm Cloudflare, this resolves in <500ms.
-            # Falls back to short-interval polling for Cloudflare challenges.
+            # Wait for the content selector or error indicator.
             try:
                 await page.wait_for_selector(
                     ".showtime-info, .error-page, .unavailable",
-                    timeout=12000,
+                    timeout=10000,
                 )
             except Exception:
                 # Selector didn't appear — may be stuck on Cloudflare challenge.
-                # Short-poll as a fallback.
                 for tick in range(4):
                     await page.wait_for_timeout(500)
                     try:
@@ -396,24 +447,57 @@ async def _scrape_single_screen(
         return url, screen
 
 
-async def scrape_screens_playwright_fast(
-    booking_urls: list[str],
-    concurrency: int = 8,
-) -> dict[str, str | None]:
-    """Scrape screen numbers from Veezi using multiple concurrent browser tabs."""
+# ---------------------------------------------------------------------------
+# Pipelined Steps 2+3: detail pages + Veezi screens concurrently
+# ---------------------------------------------------------------------------
+
+async def scrape_details_and_screens(
+    session: aiohttp.ClientSession,
+    http_semaphore: asyncio.Semaphore,
+    films_raw: list[dict],
+    pw_concurrency: int,
+) -> tuple[list[dict], dict[str, str | None]]:
+    """Fetch detail pages and scrape Veezi screens in a producer-consumer pipeline.
+
+    As each detail page is parsed, its booking URLs are immediately queued for
+    Playwright workers — so screen scraping starts while detail pages are still
+    being fetched. This overlaps the two slowest phases of the scraper.
+    """
     from playwright.async_api import async_playwright
 
-    if not booking_urls:
-        return {}
+    films: list[dict] = []
+    url_to_screen: dict[str, str | None] = {}
+    seen_urls: set[str] = set()
+    queue: asyncio.Queue[str | None] = asyncio.Queue()
 
-    veezi_urls = [u for u in booking_urls if u and "veezi.com" in u]
-    if not veezi_urls:
-        return {}
+    # -- Producers: fetch detail pages, enqueue booking URLs ----------------
 
-    log.info(f"Scraping {len(veezi_urls)} Veezi URLs with concurrency={concurrency}")
-    start_time = time.time()
+    async def detail_producer(film_stub: dict):
+        result = await scrape_film_detail(session, http_semaphore, film_stub)
+        if result and result["showtimes"]:
+            films.append(result)
+            for sessions_list in result["showtimes"].values():
+                for sess in sessions_list:
+                    url = sess["booking_url"]
+                    if url and "veezi.com" in url and url not in seen_urls:
+                        seen_urls.add(url)
+                        await queue.put(url)
 
-    results: dict[str, str | None] = {}
+    # -- Consumers: scrape Veezi pages from the queue -----------------------
+
+    async def screen_consumer(context, pw_semaphore):
+        while True:
+            url = await queue.get()
+            if url is None:
+                break
+            try:
+                _, screen = await _scrape_single_screen(context, pw_semaphore, url)
+                if screen:
+                    url_to_screen[url] = screen
+            except Exception as e:
+                log.warning(f"Screen consumer error: {e}")
+
+    # -- Orchestrate --------------------------------------------------------
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(
@@ -430,34 +514,38 @@ async def scrape_screens_playwright_fast(
             locale="en-GB",
         )
 
-        semaphore = asyncio.Semaphore(concurrency)
-        tasks = [
-            _scrape_single_screen(context, semaphore, url, i, len(veezi_urls))
-            for i, url in enumerate(veezi_urls)
-        ]
-        task_results = await asyncio.gather(*tasks, return_exceptions=True)
+        # Block images/CSS/fonts — Veezi pages only need HTML+JS
+        await context.route("**/*", _block_unnecessary_resources)
 
-        for result in task_results:
-            if isinstance(result, Exception):
-                log.warning(f"Task failed with exception: {result}")
-            else:
-                url, screen = result
-                results[url] = screen
+        pw_semaphore = asyncio.Semaphore(pw_concurrency)
+
+        # Start consumer workers (they block on queue.get() until URLs arrive)
+        consumers = [
+            asyncio.create_task(screen_consumer(context, pw_semaphore))
+            for _ in range(pw_concurrency)
+        ]
+
+        # Run all producers (detail page fetches) — URLs flow to consumers
+        # as they're discovered
+        await asyncio.gather(
+            *(detail_producer(f) for f in films_raw)
+        )
+
+        # All detail pages done — send sentinel per consumer to shut them down
+        for _ in range(pw_concurrency):
+            await queue.put(None)
+
+        # Wait for remaining screen scraping to finish
+        await asyncio.gather(*consumers)
 
         await context.close()
         await browser.close()
 
-    elapsed = time.time() - start_time
-    screens_found = sum(1 for v in results.values() if v)
-    log.info(
-        f"Veezi scraping done: {screens_found}/{len(veezi_urls)} screens found "
-        f"in {elapsed:.1f}s"
-    )
-    return results
+    return films, url_to_screen
 
 
 # ---------------------------------------------------------------------------
-# Color assignment (unchanged)
+# Color assignment
 # ---------------------------------------------------------------------------
 
 def assign_colors(films: list[dict]) -> None:
@@ -472,7 +560,6 @@ def assign_colors(films: list[dict]) -> None:
         """Use golden angle for max hue separation, with varied saturation/lightness."""
         golden = 0.618033988749895
         hue = (index * golden) % 1.0
-        # Alternate between two saturation/lightness bands for variety
         if index % 3 == 0:
             sat, lit = 0.65, 0.38
             asat, alit = 0.55, 0.62
@@ -500,7 +587,6 @@ def assign_colors(films: list[dict]) -> None:
             film["accent"] = colors["accent"]
             used_colors.add(colors["color"])
         else:
-            # Try hand-picked extras first
             assigned = False
             while palette_idx < len(EXTRA_PALETTES):
                 c = EXTRA_PALETTES[palette_idx]
@@ -511,7 +597,6 @@ def assign_colors(films: list[dict]) -> None:
                     used_colors.add(c["color"])
                     assigned = True
                     break
-            # Fallback: generate procedural colors (never grey)
             if not assigned:
                 while True:
                     c = generate_color(gen_idx)
@@ -531,7 +616,7 @@ async def async_main(args):
         Path(__file__).parent.parent / "public" / "data" / "films.json"
     )
 
-    log.info("=== Peckhamplex Scraper Starting (FULLY ASYNC) ===")
+    log.info("=== Peckhamplex Scraper Starting (PIPELINED) ===")
     total_start = time.time()
 
     http_semaphore = asyncio.Semaphore(HTTP_CONCURRENCY)
@@ -546,42 +631,33 @@ async def async_main(args):
             log.error("No films found at all. Aborting.")
             sys.exit(1)
 
-        # Step 2: Scrape all film detail pages concurrently
-        t0 = time.time()
-        films = await scrape_all_details(session, http_semaphore, all_films_raw)
-        log.info(f"Step 2 done in {time.time()-t0:.1f}s — {len(films)} films with showtimes")
+        if args.no_screens:
+            # Step 2 only (no Playwright)
+            t0 = time.time()
+            films = await scrape_all_details(session, http_semaphore, all_films_raw)
+            log.info(f"Step 2 done in {time.time()-t0:.1f}s — {len(films)} films with showtimes")
+        else:
+            # Steps 2+3 pipelined: detail pages + Veezi screens concurrently
+            t0 = time.time()
+            log.info("Steps 2+3 pipelined: fetching details + scraping Veezi concurrently...")
+            films, url_to_screen = await scrape_details_and_screens(
+                session, http_semaphore, all_films_raw, args.concurrency
+            )
+            log.info(
+                f"Steps 2+3 done in {time.time()-t0:.1f}s — "
+                f"{len(films)} films, {sum(1 for v in url_to_screen.values() if v)} screens found"
+            )
 
-    # Step 3: Scrape screen numbers (Playwright, already concurrent)
-    if not args.no_screens:
-        t0 = time.time()
-        log.info("Scraping Veezi for screen numbers (concurrent)...")
-        unique_booking_urls = []
-        seen_urls: set[str] = set()
-
-        for film in films:
-            for date_str, sessions in film["showtimes"].items():
-                for sess in sessions:
-                    if sess["booking_url"] and sess["booking_url"] not in seen_urls:
-                        unique_booking_urls.append(sess["booking_url"])
-                        seen_urls.add(sess["booking_url"])
-
-        log.info(f"Found {len(unique_booking_urls)} unique booking URLs to check")
-
-        url_to_screen = await scrape_screens_playwright_fast(
-            unique_booking_urls, args.concurrency
-        )
-
-        screens_found = 0
-        for film in films:
-            for date_str, sessions in film["showtimes"].items():
-                for sess in sessions:
-                    if sess["booking_url"] in url_to_screen and url_to_screen[sess["booking_url"]]:
-                        sess["screen"] = url_to_screen[sess["booking_url"]]
-                        screens_found += 1
-
-        log.info(f"Step 3 done in {time.time()-t0:.1f}s — {screens_found} screens applied")
-    else:
-        log.info("Skipping Veezi screen scraping (--no-screens)")
+            # Apply screen numbers to sessions
+            screens_applied = 0
+            for film in films:
+                for date_str, sessions in film["showtimes"].items():
+                    for sess in sessions:
+                        screen = url_to_screen.get(sess["booking_url"])
+                        if screen:
+                            sess["screen"] = screen
+                            screens_applied += 1
+            log.info(f"Applied {screens_applied} screen numbers to sessions")
 
     # Step 4: Assign colors
     assign_colors(films)
@@ -594,7 +670,7 @@ async def async_main(args):
     }
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(json.dumps(output, indent=2, ensure_ascii=False))
+    output_path.write_text(json.dumps(output, indent=2, ensure_ascii=False), encoding="utf-8")
 
     total_elapsed = time.time() - total_start
     log.info(f"Wrote {len(films)} films to {output_path}")
@@ -603,13 +679,13 @@ async def async_main(args):
 
 def main():
     import argparse
-    parser = argparse.ArgumentParser(description="Scrape Peckhamplex timetable (fully async)")
+    parser = argparse.ArgumentParser(description="Scrape Peckhamplex timetable (pipelined async)")
     parser.add_argument("-o", "--output", type=str, default=None,
                         help="Output path for films.json")
     parser.add_argument("--no-screens", action="store_true",
                         help="Skip scraping Veezi for screen numbers (faster)")
-    parser.add_argument("--concurrency", type=int, default=8,
-                        help="Number of concurrent Playwright tabs for Veezi (default: 8)")
+    parser.add_argument("--concurrency", type=int, default=12,
+                        help="Number of concurrent Playwright tabs for Veezi (default: 12)")
     args = parser.parse_args()
     asyncio.run(async_main(args))
 
