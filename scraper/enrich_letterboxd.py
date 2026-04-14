@@ -56,14 +56,36 @@ log = logging.getLogger("enrich_letterboxd")
 # ─── Manual slug overrides for films whose titles don't slugify cleanly ─
 # Maps cleaned title (lowercase) → Letterboxd slug
 SLUG_OVERRIDES = {
+    # Periods collapse to nothing in Letterboxd slugs (not hyphens)
     "dr. strangelove": "dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb",
-    "e.t. the extra terrestrial": "e-t-the-extra-terrestrial",
-    "e.t. the extra-terrestrial": "e-t-the-extra-terrestrial",
+    "e.t. the extra terrestrial": "et-the-extra-terrestrial",
+    "e.t. the extra-terrestrial": "et-the-extra-terrestrial",
     "a.i. artificial intelligence": "ai-artificial-intelligence",
-    "d.e.b.s.": "d-e-b-s",
+    "d.e.b.s.": "debs",
+    "to live and die in l.a.": "to-live-and-die-in-la",
+    # Curly apostrophe variants (after clean_title strips accents, these become straight)
     "at midnight i'll take your soul": "at-midnight-ill-take-your-soul",
+    # Alternate titles / regional spelling
     "small axe: lovers rock": "lovers-rock",
     "timecode live": "timecode",
+    "the colour of pomegranates": "the-color-of-pomegranates",
+    "osamu tezuka's metropolis": "metropolis-2001",
+    "osamu tezukas metropolis": "metropolis-2001",      # after apostrophe strip
+    "boy and the world": "the-boy-and-the-world",
+    "rocky horror picture show": "the-rocky-horror-picture-show",
+    # Trilogy parts with non-standard slug patterns
+    "the human condition - part 1 - no greater love":
+        "the-human-condition-i-no-greater-love",
+    "the human condition - part 2 - road to eternity":
+        "the-human-condition-ii-road-to-eternity",
+    "the human condition - part 3 - a soldier's prayer":
+        "the-human-condition-iii-a-soldiers-prayer",
+    "the human condition - part 3 - a soldier\u2019s prayer":
+        "the-human-condition-iii-a-soldiers-prayer",
+    # TV specials screened theatrically
+    "twin peaks : pilot - northwest passage": "twin-peaks",
+    # Miami Vice after anniversary-screening strip
+    "miami vice": "miami-vice-2006",
 }
 
 
@@ -124,7 +146,7 @@ SKIP_PATTERNS = [
     r"(?i)^25 and under:",
     r"(?i)^inferno, purgatory",
     r"(?i)\bmystery movie marathon\b",
-    r"(?i)\bmystery movie\b",
+    r"(?i)^mystery movie\b",
     r"(?i)\bbleak week\b",
     r"(?i)\bfilm quiz\b",
     r"(?i)\bpoetry\s*#\d",
@@ -141,6 +163,20 @@ SKIP_PATTERNS = [
     r"(?i)^hitchcock & herrmann\b",
     r"(?i)^melodrama as provocateur\b",
     r"(?i)\bsilent dreams shorts\b",
+    # v3 additions
+    r"(?i)^brat summer\b",                    # Charli XCX marathon event
+    r"(?i)^mark kermode live\b",              # live event
+    r"(?i)^rosie turner\s+q\s*&?\s*a\b",     # Q&A event
+    r"(?i)^an introduction to\b",             # intro talks
+    r"(?i)^the before trilogy\b",             # compilation
+    r"(?i)\btrilogy\s*[-–—]\s*(extended|special)\b", # "Trilogy - Extended Editions"
+    r"(?i)^tales of arcadia\b",              # compilation/event
+    r"(?i)^two boxes\s*:",                   # double-bill event
+    r"(?i)^peckhamplex$",                    # cinema name, not a film
+    r"(?i)^guillermo del toro$",             # filmmaker name alone = event
+    r"(?i)\bw/\s+\w+.*\bintro\b",           # "w/ Reece Shearsmith intro" suffix
+    r"(?i)\bcomedy shorts\b",                # "Lesbian Visibility: Comedy Shorts"
+    r"(?i)\banimated shorts\b",               # "Lesbian Visibility: Animated Shorts"
 ]
 
 
@@ -218,15 +254,17 @@ def clean_title_for_lookup(title: str) -> str:
     # ── Step 4: Strip non-film parentheticals ──
     # Remove things like "(Independent Filmmakers Showcase)", "(Live Score)",
     # "(Director's Cut)", "(Extended Cut)", "(Theatrical Cut)", etc.
+    # Note: handle both straight (') and curly (\u2019) apostrophes
+    _apos = r"['\u2019]"  # matches either apostrophe style
     strip_parens = [
         r"\(Independent Filmmakers Showcase\)",
         r"\(Short Films?\)",
         r"\(Live Score\)",
         r"\(4K Restoration\)",
         r"\(Black & White version\)",
-        r"\(Director'?s?\s*Cut\)",
+        rf"\(Director{_apos}?s?\s*Cut\)",
         r"\(Extended\s*Cut\)",
-        r"\(Theatrical\s*Cut\)",
+        rf"\(Theatrical\s*Cut\)",
         r"\(Sedmikr[aá]sky\)",     # Daisies (Sedmikrásky)
     ]
     for pat in strip_parens:
@@ -236,18 +274,30 @@ def clean_title_for_lookup(title: str) -> str:
     t = re.sub(r"\s*\(\d{4}\)\s*$", "", t)
 
     # ── Step 6: Strip re-release / anniversary suffixes ──
-    t = re.sub(r"\s*[-–—]\s*\d+\w*\s*anniversary.*$", "", t, flags=re.I)
+    # "All The President's Men - 50th Anniversary" → "All The President's Men"
+    # "Miami Vice 20th Anniversary Screening" → "Miami Vice"
+    t = re.sub(r"\s*[-–—]\s*\d+\w*\s*anniversary[\w\s]*$", "", t, flags=re.I)
+    t = re.sub(r"\s+\d+\w*\s*anniversary[\w\s]*$", "", t, flags=re.I)
     t = re.sub(r"\s*\(\d+\w*\s*anniversary[^)]*\)", "", t, flags=re.I)
     t = re.sub(r"\s*\(re-?release\)", "", t, flags=re.I)
 
     # ── Step 7: Strip restoration/premiere suffixes after colon ──
     # "Vampire's Kiss : 4K Restoration Premiere" → "Vampire's Kiss"
     # "Doctor Who: The Movie – 4K Restoration" → "Doctor Who: The Movie"
-    # "Mimic: Director's Cut" → "Mimic"
+    # "Mimic: Director's Cut" → "Mimic" (handles curly apostrophe too)
+    _apos2 = r"['\u2019]"
     t = re.sub(r"\s*[:–—-]\s*4K\s+Restoration\s*(Premiere)?\s*$", "", t, flags=re.I)
-    t = re.sub(r"\s*:\s*Director'?s?\s*Cut\s*$", "", t, flags=re.I)
+    t = re.sub(rf"\s*:\s*Director{_apos2}?s?\s*Cut\s*$", "", t, flags=re.I)
 
-    # ── Step 8: Strip any leftover surrounding quotes ──
+    # ── Step 8: Strip trailing "Preview" / "Exclusive Preview" / "Screening" ──
+    # After prefix stripping, titles like "Skiff Exclusive Preview" remain
+    t = re.sub(r"\s+(Exclusive\s+)?Preview\s*$", "", t, flags=re.I)
+    t = re.sub(r"\s+Screening\s*$", "", t, flags=re.I)
+
+    # ── Step 9: Strip "w/ Name intro" suffix ──
+    t = re.sub(r"\s+w/\s+\w[\w\s]*\bintro\b.*$", "", t, flags=re.I)
+
+    # ── Step 10: Strip any leftover surrounding quotes ──
     t = t.strip('"').strip('\u201c').strip('\u201d').strip('"')
 
     return t.strip()
