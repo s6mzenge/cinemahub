@@ -904,14 +904,14 @@ export default function App() {
                             {/* Sub-rows container */}
                             <div style={{ flex:1, display:"flex", flexDirection:"column" }}>
                               {film.cinemaEntries.map((ce,ci) => (
-                                <div key={ce.cinemaId} style={{ display:"flex", alignItems:"center", minHeight:42, borderTop:ci>0?`1px dashed ${T.border}`:"none" }}>
+                                <div key={ce.cinemaId} style={{ display:"flex", alignItems:"stretch", flex:1, minHeight:42, borderTop:ci>0?`1px dashed ${T.border}`:"none" }}>
                                   {/* Cinema label */}
-                                  <div style={{ width:60, flexShrink:0, padding:"4px 6px", display:"flex", alignItems:"center", gap:4, borderRight:`1px solid ${T.border}` }}>
+                                  <div style={{ width:60, flexShrink:0, padding:"4px 6px", display:"flex", alignItems:"center", gap:4 }}>
                                     <div style={{ width:6, height:6, borderRadius:2, background:ce.cinemaColor, flexShrink:0 }} />
                                     <span style={{ fontSize:8, color:T.textMuted, fontFamily:T.mono, fontWeight:600, letterSpacing:0.3 }}>{ce.cinemaShort}</span>
                                   </div>
                                   {/* Bars for this cinema */}
-                                  <div style={{ flex:1, position:"relative", height:42 }}>
+                                  <div style={{ flex:1, position:"relative", minHeight:42 }}>
                                     {hourMarks.map(m=><div key={m} style={{ position:"absolute", left:`${pct(m)}%`, top:0, bottom:0, width:1, background:isDark?`${T.accent}0a`:`${T.accent}12`, zIndex:0 }} />)}
                                     {ce.sessions.map((sess,si) => {
                                       const barLeft=pct(sess.startMin), adsWidth=pct(sess.adsEnd)-barLeft, totalWidth=pct(sess.filmEnd)-barLeft;
