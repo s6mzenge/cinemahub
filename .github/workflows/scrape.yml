@@ -47,6 +47,9 @@ jobs:
         run: python scraper/scrape_bfi.py
         continue-on-error: true  # BFI has aggressive Cloudflare; don't block other cinemas
 
+      - name: Run Electric Cinema scraper
+        run: python scraper/scrape_electric.py
+
       - name: Check for changes
         id: changes
         run: |
@@ -57,6 +60,6 @@ jobs:
         run: |
           git config user.name "Cinema Scraper Bot"
           git config user.email "actions@github.com"
-          git add public/data/films.json public/data/films_pcc.json public/data/films_castle.json public/data/films_arzner.json public/data/films_bfi.json
+          git add public/data/films.json public/data/films_pcc.json public/data/films_castle.json public/data/films_arzner.json public/data/films_bfi.json public/data/films_electric_portobello.json public/data/films_electric_white_city.json
           git commit -m "chore: update timetable data ($(date -u '+%Y-%m-%d %H:%M UTC'))"
           git push
