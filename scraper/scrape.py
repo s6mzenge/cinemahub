@@ -242,6 +242,16 @@ def parse_film_detail(soup: BeautifulSoup, film: dict) -> dict | None:
     genre = extract_genre(soup)
     runtime = extract_runtime(soup)
 
+    # Try to get a better title from the detail page (listing page titles can be truncated)
+    detail_title = film["title"]
+    for sel in [".film-title h1", ".film-title p", "h1.film-title", "h1"]:
+        el = soup.select_one(sel)
+        if el:
+            candidate = el.get_text(strip=True)
+            if candidate and len(candidate) > len(detail_title):
+                detail_title = candidate
+                break
+
     showtimes = {}
     for date_wrapper in soup.select(".book-tickets .date-wrapper"):
         date_el = date_wrapper.select_one(".ticket-date")
@@ -278,11 +288,11 @@ def parse_film_detail(soup: BeautifulSoup, film: dict) -> dict | None:
             showtimes[date_str] = sessions
 
     if not showtimes:
-        log.warning(f"No showtimes found for: {film['title']}")
+        log.warning(f"No showtimes found for: {detail_title}")
 
     return {
         "id": film["id"],
-        "title": film["title"],
+        "title": detail_title,
         "rating": rating,
         "runtime": runtime,
         "genre": genre,
