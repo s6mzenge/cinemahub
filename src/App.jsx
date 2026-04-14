@@ -902,9 +902,11 @@ export default function App() {
                               </div>
                             </div>
                             {/* Sub-rows container */}
-                            <div style={{ flex:1, display:"flex", flexDirection:"column" }}>
+                            <div style={{ flex:1, display:"flex", flexDirection:"column", position:"relative" }}>
+                              {/* Hour marks spanning all sub-rows */}
+                              {hourMarks.map(m=><div key={m} style={{ position:"absolute", left:`calc(60px + (100% - 60px) * ${pct(m)/100})`, top:0, bottom:0, width:1, background:isDark?`${T.accent}0a`:`${T.accent}12`, zIndex:0, pointerEvents:"none" }} />)}
                               {film.cinemaEntries.map((ce,ci) => (
-                                <div key={ce.cinemaId} style={{ display:"flex", alignItems:"stretch", flex:1, minHeight:42, borderTop:ci>0?`1px dashed ${T.border}`:"none" }}>
+                                <div key={ce.cinemaId} style={{ display:"flex", alignItems:"stretch", flex:1, minHeight:42, borderTop:ci>0?`1px dashed ${T.border}`:"none", position:"relative", zIndex:1 }}>
                                   {/* Cinema label */}
                                   <div style={{ width:60, flexShrink:0, padding:"4px 6px", display:"flex", alignItems:"center", gap:4 }}>
                                     <div style={{ width:6, height:6, borderRadius:2, background:ce.cinemaColor, flexShrink:0 }} />
@@ -912,7 +914,6 @@ export default function App() {
                                   </div>
                                   {/* Bars for this cinema */}
                                   <div style={{ flex:1, position:"relative", minHeight:42 }}>
-                                    {hourMarks.map(m=><div key={m} style={{ position:"absolute", left:`${pct(m)}%`, top:0, bottom:0, width:1, background:isDark?`${T.accent}0a`:`${T.accent}12`, zIndex:0 }} />)}
                                     {ce.sessions.map((sess,si) => {
                                       const barLeft=pct(sess.startMin), adsWidth=pct(sess.adsEnd)-barLeft, totalWidth=pct(sess.filmEnd)-barLeft;
                                       const bKey=`${film.title}-${ce.cinemaId}-${si}`, isHov=hovBar===bKey;
@@ -1020,7 +1021,7 @@ export default function App() {
                 <table style={{ width:"100%", borderCollapse:"separate", borderSpacing:0, minWidth:400 }}>
                   <thead>
                     <tr>
-                      <th style={{ padding:"12px 14px", textAlign:"left", fontSize:10, color:T.textDim, fontWeight:600, borderBottom:`1px solid ${T.border}`, position:"sticky", left:0, background:T.surface, zIndex:5, minWidth:150, boxShadow:T.stickyShadow, fontFamily:T.mono, letterSpacing:1, textTransform:"uppercase" }}>Film</th>
+                      <th style={{ padding:"12px 14px", textAlign:"left", fontSize:10, color:T.textDim, fontWeight:600, borderBottom:`1px solid ${T.border}`, position:"sticky", left:0, background:T.surface, zIndex:5, width:160, maxWidth:180, boxShadow:T.stickyShadow, fontFamily:T.mono, letterSpacing:1, textTransform:"uppercase" }}>Film</th>
                       {(selWeek?selWeek.dates:allDates).map(d => {
                         const info=formatDayTab(d), isT=d===today;
                         return (
@@ -1043,8 +1044,8 @@ export default function App() {
                         : films.filter(f=>weekDates.some(d=>f.showtimes[d]));
                       return sortedFilms.map((film,fi)=>(
                       <tr key={film.title+fi} style={{ background:fi%2===0?T.rowEven:T.rowOdd }}>
-                        <td style={{ padding:"10px 12px", borderBottom:`1px solid ${T.gridCellBorder}`, position:"sticky", left:0, background:fi%2===0?T.gridStickyBg1:T.gridStickyBg2, zIndex:4, boxShadow:T.stickyShadow }}>
-                          <div style={{ display:"flex", alignItems:"center", gap:7 }}>
+                        <td style={{ padding:"10px 12px", borderBottom:`1px solid ${T.gridCellBorder}`, position:"sticky", left:0, background:fi%2===0?T.gridStickyBg1:T.gridStickyBg2, zIndex:4, boxShadow:T.stickyShadow, width:160, maxWidth:180 }}>
+                          <div style={{ display:"flex", alignItems:"center", gap:7, maxWidth:160 }}>
                             {!isAllCinemas && <div style={{ width:3, height:24, borderRadius:1.5, background:`linear-gradient(180deg,${film.color},${film.color}44)` }} />}
                             {isAllCinemas && (()=>{
                               const cinIds = Object.keys(film.perCinema||{});
@@ -1053,8 +1054,8 @@ export default function App() {
                                 {cinIds.length>3 && <div style={{ fontSize:7, color:T.textFaint, fontFamily:T.mono }}>+{cinIds.length-3}</div>}
                               </div>;
                             })()}
-                            <div>
-                              <div style={{ fontSize:11, fontWeight:700, color:T.textSub, fontFamily:T.serif }}>{film.film_url?<a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.textSub, textDecoration:"none" }}>{film.title}</a>:film.title}</div>
+                            <div style={{ minWidth:0 }}>
+                              <div style={{ fontSize:11, fontWeight:700, color:T.textSub, fontFamily:T.serif, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>{film.film_url?<a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.textSub, textDecoration:"none" }}>{film.title}</a>:film.title}</div>
                               <div style={{ display:"flex", gap:4, marginTop:3, flexWrap:"wrap" }}>
                                 <span style={{ fontSize:8, padding:"0px 5px", borderRadius:2, background:rBg[film.rating]||"#444", color:"#fff", fontWeight:700, fontFamily:T.mono }}>{film.rating}</span>
                                 <span style={{ fontSize:9, color:T.textFaint, fontFamily:T.mono }}>{film.runtime}m</span>
