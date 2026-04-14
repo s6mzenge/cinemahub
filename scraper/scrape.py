@@ -8,8 +8,6 @@ All steps run asynchronously, and Steps 2+3 are pipelined:
             discovered, Playwright workers immediately start scraping Veezi
             for screen numbers (no waiting for all detail pages to finish).
 
-Playwright pages block images/CSS/fonts for faster loads.
-
 Typical total time: ~20-30s (down from ~40-60s without pipelining).
 
 Usage:
@@ -383,14 +381,6 @@ async def scrape_all_details(
 # Step 3: Veezi screen scraping helpers
 # ---------------------------------------------------------------------------
 
-async def _block_unnecessary_resources(route):
-    """Abort image/CSS/font/media requests in Playwright for faster loads."""
-    if route.request.resource_type in {"image", "stylesheet", "font", "media"}:
-        await route.abort()
-    else:
-        await route.continue_()
-
-
 async def _scrape_single_screen(context, semaphore, url: str) -> tuple[str, str | None]:
     """Scrape a single Veezi URL in its own tab, gated by the semaphore."""
     async with semaphore:
@@ -513,9 +503,6 @@ async def scrape_details_and_screens(
             viewport={"width": 1280, "height": 800},
             locale="en-GB",
         )
-
-        # Block images/CSS/fonts — Veezi pages only need HTML+JS
-        await context.route("**/*", _block_unnecessary_resources)
 
         pw_semaphore = asyncio.Semaphore(pw_concurrency)
 
