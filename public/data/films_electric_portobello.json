@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-14T20:16:29.497451+00:00",
+  "scraped_at": "2026-04-14T20:45:56.413935+00:00",
   "source": "electriccinema.co.uk (Portobello)",
   "films": [
     {
@@ -28,7 +28,9 @@
         ]
       },
       "color": "#e53935",
-      "accent": "#ff6f60"
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/amelie/",
+      "letterboxd_rating": 4.19
     },
     {
       "id": "bridget-joness-diary-25th-anniversary",
@@ -76,7 +78,9 @@
         ]
       },
       "color": "#7c4dff",
-      "accent": "#b388ff"
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/bridget-joness-diary/",
+      "letterboxd_rating": 3.48
     },
     {
       "id": "romeo-juliet-30th-anniversary",
@@ -105,7 +109,9 @@
         ]
       },
       "color": "#d81b60",
-      "accent": "#ff6090"
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/romeo-juliet-1996/",
+      "letterboxd_rating": 3.46
     },
     {
       "id": "the-drama",
@@ -120,15 +126,6 @@
       "film_url": "https://www.electriccinema.co.uk/film/the-drama/",
       "poster_url": "https://www.electriccinema.co.uk/wp-content/uploads/film/45592.d-1024x576.jpg",
       "showtimes": {
-        "2026-04-14": [
-          {
-            "time": "20:45",
-            "screen": "1",
-            "hoh": false,
-            "booking_url": null,
-            "sold_out": true
-          }
-        ],
         "2026-04-15": [
           {
             "time": "17:45",
@@ -156,8 +153,7 @@
             "time": "17:45",
             "screen": "1",
             "hoh": false,
-            "booking_url": null,
-            "sold_out": true
+            "booking_url": "https://www.electriccinema.co.uk/tickets/48721"
           }
         ],
         "2026-04-17": [
@@ -235,7 +231,9 @@
         ]
       },
       "color": "#00897b",
-      "accent": "#4db6ac"
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/the-drama/",
+      "letterboxd_rating": 3.77
     },
     {
       "id": "the-spongebob-movie-search-for-squarepants",
@@ -263,7 +261,9 @@
         ]
       },
       "color": "#1565c0",
-      "accent": "#64b5f6"
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/the-spongebob-movie-search-for-squarepants/",
+      "letterboxd_rating": 2.48
     },
     {
       "id": "the-devil-wears-prada-2",
@@ -404,7 +404,9 @@
         ]
       },
       "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2-2026/",
+      "letterboxd_rating": null
     }
   ]
 }

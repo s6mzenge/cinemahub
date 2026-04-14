@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-14T20:16:29.499135+00:00",
+  "scraped_at": "2026-04-14T20:45:56.415634+00:00",
   "source": "electriccinema.co.uk (White City)",
   "films": [
     {
@@ -39,7 +39,9 @@
         ]
       },
       "color": "#e53935",
-      "accent": "#ff6f60"
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/bridget-joness-diary/",
+      "letterboxd_rating": 3.48
     },
     {
       "id": "you-me-tuscany",
@@ -108,7 +110,9 @@
         ]
       },
       "color": "#7c4dff",
-      "accent": "#b388ff"
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/you-me-tuscany/",
+      "letterboxd_rating": 2.98
     },
     {
       "id": "the-super-mario-galaxy-movie",
@@ -141,7 +145,9 @@
         ]
       },
       "color": "#d81b60",
-      "accent": "#ff6090"
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/the-super-mario-galaxy-movie/",
+      "letterboxd_rating": 2.95
     },
     {
       "id": "the-drama",
@@ -156,14 +162,6 @@
       "film_url": "https://www.electriccinema.co.uk/film/the-drama/",
       "poster_url": "https://www.electriccinema.co.uk/wp-content/uploads/film/45592.d-1024x576.jpg",
       "showtimes": {
-        "2026-04-14": [
-          {
-            "time": "20:30",
-            "screen": "1",
-            "hoh": false,
-            "booking_url": null
-          }
-        ],
         "2026-04-15": [
           {
             "time": "18:00",
@@ -276,7 +274,9 @@
         ]
       },
       "color": "#00897b",
-      "accent": "#4db6ac"
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/the-drama/",
+      "letterboxd_rating": 3.77
     },
     {
       "id": "the-devil-wears-prada-2",
@@ -337,7 +337,8 @@
             "time": "14:00",
             "screen": "1",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/43842"
+            "booking_url": null,
+            "sold_out": true
           },
           {
             "time": "17:15",
@@ -354,7 +355,9 @@
         ]
       },
       "color": "#1565c0",
-      "accent": "#64b5f6"
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2-2026/",
+      "letterboxd_rating": null
     },
     {
       "id": "project-hail-mary",
@@ -447,7 +450,9 @@
         ]
       },
       "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/project-hail-mary/",
+      "letterboxd_rating": 4.33
     },
     {
       "id": "paddington-in-peru",
@@ -475,7 +480,9 @@
         ]
       },
       "color": "#c62828",
-      "accent": "#ef5350"
+      "accent": "#ef5350",
+      "letterboxd_url": "https://letterboxd.com/film/paddington-in-peru/",
+      "letterboxd_rating": 3.4
     }
   ]
 }
