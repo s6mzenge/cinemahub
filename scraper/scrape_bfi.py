@@ -392,6 +392,9 @@ def parse_detail_page(html: str, permalink: str, link_title: str) -> dict | None
 # Content markers that prove we got the real BFI page, not a Cloudflare challenge
 _REAL_CONTENT_MARKERS = ("Page__heading", "Rich-text", "Film-info", "searchResults")
 
+# Number of concurrent Playwright tabs
+PLAYWRIGHT_CONCURRENCY = 8
+
 
 def _has_real_content(html: str) -> bool:
     return any(marker in html for marker in _REAL_CONTENT_MARKERS)
@@ -409,13 +412,10 @@ def _create_session():
 
 def fetch_page(url: str, session=None) -> str | None:
     """
-    Fetch a BFI page using curl_cffi with Chrome TLS fingerprint impersonation.
-
-    Cloudflare's primary bot detection checks the TLS fingerprint —
-    curl_cffi impersonates a real Chrome browser at the TLS level,
-    which is what makes it effective where requests and Playwright fail.
+    Fetch a BFI page. Tries curl_cffi first, then plain requests.
+    Playwright is handled separately for the full pipeline.
     """
-    # Strategy 1: curl_cffi (best Cloudflare bypass)
+    # Strategy 1: curl_cffi (Chrome TLS impersonation)
     try:
         from curl_cffi import requests as cffi_req
         if session:
@@ -427,7 +427,7 @@ def fetch_page(url: str, session=None) -> str | None:
             return resp.text
         log.debug("curl_cffi got Cloudflare challenge page")
     except ImportError:
-        log.warning("curl_cffi not installed — run: pip install curl_cffi")
+        pass
     except Exception as e:
         log.debug(f"curl_cffi failed for {url}: {e}")
 
@@ -451,18 +451,64 @@ def fetch_page(url: str, session=None) -> str | None:
     return None
 
 
+def fetch_page_playwright(url: str, page) -> str | None:
+    """Fetch a single page using an existing Playwright page handle."""
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        page.wait_for_timeout(2000)  # Let Cloudflare challenge resolve
+        html = page.content()
+        if _has_real_content(html):
+            return html
+    except Exception as e:
+        log.debug(f"Playwright failed for {url}: {e}")
+    return None
+
+
+def fetch_overview_playwright() -> str | None:
+    """
+    Fetch the BFI overview page using Playwright (Cloudflare bypass).
+
+    Strategy 3: real Chromium browser that can execute JS challenges.
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        log.warning("Playwright not installed")
+        return None
+
+    log.info("Trying Playwright for overview page...")
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(
+                user_agent=(
+                    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                    "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+                ),
+                locale="en-GB",
+            )
+            page = context.new_page()
+            html = fetch_page_playwright(OVERVIEW_URL, page)
+            browser.close()
+            if html:
+                log.info("Playwright succeeded for overview page")
+            return html
+    except Exception as e:
+        log.warning(f"Playwright overview fetch failed: {e}")
+        return None
+
+
 def fetch_and_parse_all(film_list: list[dict]) -> list[dict]:
     """
     Fetch and parse all film detail pages concurrently.
 
     Uses ThreadPoolExecutor to fetch CONCURRENT_WORKERS pages at a time,
-    each with its own curl_cffi session. ~200 films in ~1-2 minutes
-    instead of 10+ minutes sequentially.
+    each with its own curl_cffi session.
     """
     from concurrent.futures import ThreadPoolExecutor, as_completed
 
     total = len(film_list)
-    log.info(f"Fetching {total} detail pages ({CONCURRENT_WORKERS} concurrent workers)...")
+    log.info(f"Fetching {total} detail pages ({CONCURRENT_WORKERS} concurrent workers, curl_cffi)...")
 
     results = []
     done_count = 0
@@ -492,6 +538,71 @@ def fetch_and_parse_all(film_list: list[dict]) -> list[dict]:
                 log.warning(f"Error processing {film['title']}: {e}")
 
     log.info(f"Fetched {total} pages, {len(results)} films with showtimes")
+    return results
+
+
+def fetch_and_parse_all_playwright(film_list: list[dict]) -> list[dict]:
+    """
+    Fetch and parse all film detail pages using Playwright with concurrent tabs.
+
+    Fallback when curl_cffi can't bypass Cloudflare. Uses async Playwright
+    with a semaphore to limit concurrency — similar to the Peckhamplex
+    Veezi screen scraper.
+    """
+    import asyncio
+
+    total = len(film_list)
+    log.info(f"Fetching {total} detail pages via Playwright ({PLAYWRIGHT_CONCURRENCY} concurrent tabs)...")
+
+    async def _run():
+        from playwright.async_api import async_playwright
+
+        results = []
+        done_count = 0
+        semaphore = asyncio.Semaphore(PLAYWRIGHT_CONCURRENCY)
+
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(headless=True)
+            context = await browser.new_context(
+                user_agent=(
+                    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                    "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+                ),
+                locale="en-GB",
+            )
+
+            async def _fetch_one(film: dict) -> dict | None:
+                nonlocal done_count
+                async with semaphore:
+                    page = await context.new_page()
+                    try:
+                        await page.goto(film["url"], wait_until="domcontentloaded", timeout=30000)
+                        await page.wait_for_timeout(2000)
+                        html = await page.content()
+                        if _has_real_content(html):
+                            return parse_detail_page(html, film["permalink"], film["title"])
+                    except Exception as e:
+                        log.debug(f"Playwright failed for {film['title']}: {e}")
+                    finally:
+                        done_count += 1
+                        if done_count % 20 == 0 or done_count == total:
+                            log.info(f"  Progress: {done_count}/{total} fetched, {len(results)} with showtimes")
+                        await page.close()
+                    return None
+
+            tasks = [_fetch_one(film) for film in film_list]
+            all_results = await asyncio.gather(*tasks)
+
+            await browser.close()
+
+        for detail in all_results:
+            if detail and detail.get("showtimes"):
+                results.append(detail)
+
+        return results
+
+    results = asyncio.run(_run())
+    log.info(f"Playwright fetched {total} pages, {len(results)} films with showtimes")
     return results
 
 
@@ -616,10 +727,16 @@ def main():
         log.info("Fetching overview page...")
         session = _create_session()
         overview_html = fetch_page(OVERVIEW_URL, session)
+        use_playwright = False
 
         if not overview_html:
-            log.error("Could not fetch overview page (Cloudflare blocked all attempts).")
-            log.error("Install curl_cffi for best results: pip install curl_cffi")
+            # curl_cffi / requests failed — try Playwright
+            overview_html = fetch_overview_playwright()
+            if overview_html:
+                use_playwright = True  # Cloudflare blocked HTTP; use Playwright for details too
+
+        if not overview_html:
+            log.error("Could not fetch overview page (all strategies failed).")
             sys.exit(1)
 
         film_list = extract_film_permalinks(overview_html)
@@ -628,7 +745,17 @@ def main():
             log.error("No films found in overview. Aborting.")
             sys.exit(1)
 
-        films = fetch_and_parse_all(film_list)
+        # Try curl_cffi first for detail pages; if the overview needed Playwright,
+        # detail pages almost certainly will too
+        if use_playwright:
+            log.info("Overview required Playwright — using Playwright for detail pages too")
+            films = fetch_and_parse_all_playwright(film_list)
+        else:
+            films = fetch_and_parse_all(film_list)
+            # If curl_cffi got zero results, retry with Playwright
+            if not films:
+                log.warning("curl_cffi got 0 films with showtimes — retrying with Playwright...")
+                films = fetch_and_parse_all_playwright(film_list)
 
     log.info(f"Parsed {len(films)} films with showtimes")
 
