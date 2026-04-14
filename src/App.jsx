@@ -14,6 +14,8 @@ const CINEMAS = [
   { id:"castle-hackney", name:"The Castle", address:"64-66 Brooksby's Walk, E9", url:"https://thecastlecinema.com", price:null, dataFile:"films_castle.json", source:"thecastlecinema.com" },
   { id:"the-arzner", name:"The Arzner", address:"10 Bermondsey Square, SE1", url:"https://thearzner.com", price:null, dataFile:"films_arzner.json", source:"thearzner.com" },
   { id:"bfi-southbank", name:"BFI Southbank", address:"Belvedere Rd, SE1 8XT", url:"https://whatson.bfi.org.uk", price:null, dataFile:"films_bfi.json", source:"whatson.bfi.org.uk" },
+  { id:"electric-portobello", name:"Electric Portobello", address:"191 Portobello Rd, W11", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_portobello.json", source:"electriccinema.co.uk" },
+  { id:"electric-white-city", name:"Electric White City", address:"101 Wood Lane, W12", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_white_city.json", source:"electriccinema.co.uk" },
 ];
 
 function timeToMin(t){ const [h,m]=t.split(":").map(Number); return h*60+m; }
