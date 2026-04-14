@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-14T08:03:19.528149+00:00",
+  "scraped_at": "2026-04-14T08:45:22.292263+00:00",
   "source": "peckhamplex.london",
   "films": [
     {
@@ -571,7 +571,7 @@
           {
             "time": "17:45",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79443?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": true
           }
         ],
@@ -665,7 +665,7 @@
           {
             "time": "17:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79583?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": true
           }
         ],
@@ -1023,69 +1023,6 @@
       "accent": "#8d6e63"
     },
     {
-      "id": "loner-independent-filmmakers-showcase",
-      "title": "Loner (Independent Filmmakers Showcase)",
-      "rating": "15",
-      "runtime": 120,
-      "genre": "Horror",
-      "film_url": "https://www.peckhamplex.london/film/loner-independent-filmmakers-showcase",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/loner-independent-filmmakers-showcase.jpg",
-      "showtimes": {
-        "2026-04-20": [
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/78777?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
-    },
-    {
-      "id": "national-theatre-live-les-liaisons-dangereuses",
-      "title": "National Theatre Live: Les Liaisons Dangereuses",
-      "rating": "TBC",
-      "runtime": 180,
-      "genre": "Opera",
-      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-les-liaisons-dangereuses",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-les-liaisons-dangereuses.jpg",
-      "showtimes": {
-        "2026-06-25": [
-          {
-            "time": "19:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/77602?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
-    },
-    {
-      "id": "national-theatre-live-the-playboy-of-the-western",
-      "title": "National Theatre Live: The Playboy of the Western",
-      "rating": "15",
-      "runtime": 170,
-      "genre": "Live Theatre",
-      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-the-playboy-of-the-western",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-the-playboy-of-the-western.jpg",
-      "showtimes": {
-        "2026-05-28": [
-          {
-            "time": "19:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/77601?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#9f2121",
-      "accent": "#d36868"
-    },
-    {
       "id": "glenrothan",
       "title": "Glenrothan",
       "rating": "12A",
@@ -1207,6 +1144,69 @@
             "time": "21:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79604?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
+    },
+    {
+      "id": "loner-independent-filmmakers-showcase",
+      "title": "Loner (Independent Filmmakers Showcase)",
+      "rating": "15",
+      "runtime": 120,
+      "genre": "Horror",
+      "film_url": "https://www.peckhamplex.london/film/loner-independent-filmmakers-showcase",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/loner-independent-filmmakers-showcase.jpg",
+      "showtimes": {
+        "2026-04-20": [
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/78777?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#558b2f",
+      "accent": "#9ccc65"
+    },
+    {
+      "id": "national-theatre-live-les-liaisons-dangereuses",
+      "title": "National Theatre Live: Les Liaisons Dangereuses",
+      "rating": "TBC",
+      "runtime": 180,
+      "genre": "Opera",
+      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-les-liaisons-dangereuses",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-les-liaisons-dangereuses.jpg",
+      "showtimes": {
+        "2026-06-25": [
+          {
+            "time": "19:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/77602?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#9f2121",
+      "accent": "#d36868"
+    },
+    {
+      "id": "national-theatre-live-the-playboy-of-the-western",
+      "title": "National Theatre Live: The Playboy of the Western",
+      "rating": "15",
+      "runtime": 170,
+      "genre": "Live Theatre",
+      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-the-playboy-of-the-western",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-the-playboy-of-the-western.jpg",
+      "showtimes": {
+        "2026-05-28": [
+          {
+            "time": "19:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/77601?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
             "hoh": false
           }
         ]
