@@ -60,21 +60,76 @@ function normalizeFilms(rawFilms) {
   });
 }
 
-/* ─── Merge films across all cinemas by title ─── */
+/* ─── Title normalisation for cross-cinema matching ─── */
+function normalizeTitle(title) {
+  let t = title;
+  // Remove diacritics (é→e, ü→u, etc.)
+  t = t.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  // Lowercase
+  t = t.toLowerCase().trim();
+  // Normalise "national theatre live:" → "nt live:" prefix
+  t = t.replace(/^national theatre live:\s*/i, "nt live: ");
+  // Strip " - Nth Anniversary..." suffix  (e.g. "Amelie - 25th Anniversary")
+  t = t.replace(/\s*[-\u2013\u2014]\s*\d+\w*\s*anniversary.*$/i, "");
+  // Strip "(Nth Anniversary...)" parenthetical  (e.g. "(25th Anniversary Re-release)")
+  t = t.replace(/\s*\(\d+\w*\s*anniversary[^)]*\)/gi, "");
+  // Strip "(Re-release)" standalone
+  t = t.replace(/\s*\(re-?release\)/gi, "");
+  // Strip trailing year parenthetical "(1996)" — but ONLY at end of string
+  t = t.replace(/\s*\(\d{4}\)\s*$/, "");
+  // Normalise ", " → " & "  (matches "You, Me" to "You & Me")
+  t = t.replace(/,\s+/g, " & ");
+  // Collapse whitespace
+  t = t.replace(/\s+/g, " ").trim();
+  return t;
+}
+
+function pickBestTitle(titles) {
+  const unique = [...new Set(titles)];
+  if (unique.length === 1) return unique[0];
+  // Check if any title is "clean" (no anniversary/re-release/year suffix)
+  const hasSuffix = t => /\d+\w*\s*anniversary|re-?release|\(\d{4}\)\s*$/i.test(t);
+  const clean = unique.filter(t => !hasSuffix(t));
+  if (clean.length > 0) {
+    // Among clean titles: prefer diacritics, then shortest
+    return clean.sort((a, b) => {
+      const aAcc = /[^\x00-\x7F]/.test(a), bAcc = /[^\x00-\x7F]/.test(b);
+      if (aAcc !== bAcc) return aAcc ? -1 : 1;
+      return a.length - b.length;
+    })[0];
+  }
+  // All have suffixes — strip the best one and use that as display
+  const strip = t => t
+    .replace(/\s*[-\u2013\u2014]\s*\d+\w*\s*anniversary.*$/i, "")
+    .replace(/\s*\(\d+\w*\s*anniversary[^)]*\)/gi, "")
+    .replace(/\s*\(re-?release\)/gi, "")
+    .replace(/\s*\(\d{4}\)\s*$/, "")
+    .trim();
+  return unique.map(t => strip(t)).sort((a, b) => {
+    const aAcc = /[^\x00-\x7F]/.test(a), bAcc = /[^\x00-\x7F]/.test(b);
+    if (aAcc !== bAcc) return aAcc ? -1 : 1;
+    return a.length - b.length;
+  })[0];
+}
+
+/* ─── Merge films across all cinemas by normalised title ─── */
 function mergeAllCinemaFilms(allCinemaData) {
-  const byTitle = {};
+  const byKey = {};      // normalised key → merged film object
+  const titlesByKey = {}; // normalised key → [original titles]
   allCinemaData.forEach(({ cinemaId, films: cFilms }) => {
     cFilms.forEach(f => {
-      const key = f.title;
-      if (!byTitle[key]) {
-        byTitle[key] = {
+      const key = normalizeTitle(f.title);
+      if (!titlesByKey[key]) titlesByKey[key] = [];
+      titlesByKey[key].push(f.title);
+      if (!byKey[key]) {
+        byKey[key] = {
           id: f.id, title: f.title, rating: f.rating, runtime: f.runtime, genre: f.genre,
           color: f.color, accent: f.accent, film_url: f.film_url, poster_url: f.poster_url,
           showtimes: {}, bookingUrls: {}, screens: {}, hoh: {}, tags: {},
           perCinema: {},
         };
       }
-      const merged = byTitle[key];
+      const merged = byKey[key];
       if (!merged.perCinema[cinemaId]) {
         merged.perCinema[cinemaId] = { showtimes:{}, bookingUrls:{}, screens:{}, hoh:{}, tags:{} };
       }
@@ -109,12 +164,15 @@ function mergeAllCinemaFilms(allCinemaData) {
         if (!merged.tags[date]) merged.tags[date] = {};
         Object.assign(merged.tags[date], tg);
       }
-      // Prefer poster/url from whichever cinema has them
       if (f.film_url && !merged.film_url) merged.film_url = f.film_url;
       if (f.poster_url && !merged.poster_url) merged.poster_url = f.poster_url;
     });
   });
-  return Object.values(byTitle);
+  // Pick the best display title for each merged group
+  for (const [key, merged] of Object.entries(byKey)) {
+    merged.title = pickBestTitle(titlesByKey[key]);
+  }
+  return Object.values(byKey);
 }
 
 /* ─── Theme palettes ─── */
