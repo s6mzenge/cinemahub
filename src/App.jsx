@@ -611,7 +611,7 @@ export default function App() {
                                         <div style={{ display:"flex", gap:6, marginTop:5, alignItems:"center", flexWrap:"wrap" }}>
                                           <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:rBg[film.rating]||"#444", color:"#fff", fontFamily:T.mono, letterSpacing:0.5 }}>{film.rating}</span>
                                           <span style={{ fontSize:10, color:T.textMuted, fontFamily:T.mono }}>{film.runtime}min</span>
-                                          <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>ends {minToTime(sess.startMin+film.runtime)}</span>
+                                          <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>ends ~{minToTime(sess.filmEnd)}</span>
                                           {sess.screen && <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>{sess.screen}</span>}
                                           {sess.isHoh && <span style={{ fontSize:9, color:T.textMuted, fontFamily:T.mono, padding:"1px 4px", borderRadius:3, background:T.ccBg, border:`1px solid ${T.ccBorder}` }}>CC</span>}
                                           {sess.tags?.map((tag,ti) => <span key={ti} style={{ fontSize:9, color:T.accent, fontFamily:T.mono, padding:"1px 5px", borderRadius:3, background:T.accentSoft, border:`1px solid ${T.accent}22`, fontWeight:600 }}>{tag}</span>)}
@@ -685,9 +685,9 @@ export default function App() {
                                   <div style={{ flex:1, background:`linear-gradient(135deg,${film.color}bb 0%,${film.color}88 100%)`, padding:"4px 10px", display:"flex", alignItems:"center", gap:6, minWidth:0, borderRadius:"0 5px 5px 0", overflow:"hidden" }}>
                                     <div style={{ flex:1, minWidth:0 }}>
                                       <div style={{ fontSize:10.5, fontWeight:700, color:T.barText, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", textShadow:"0 1px 4px rgba(0,0,0,0.5)", fontFamily:T.mono }}>
-                                        {sess.time} – {minToTime(sess.startMin+film.runtime)}{sess.isHoh?"  CC":""}{sess.tags?.length?`  ${sess.tags.join(" · ")}`:""}
+                                        {sess.time} – ~{minToTime(sess.filmEnd)}{sess.isHoh?"  CC":""}{sess.tags?.length?`  ${sess.tags.join(" · ")}`:""}
                                       </div>
-                                      {isHov && <div style={{ fontSize:9, color:T.barSubText, marginTop:3, fontFamily:T.mono }}>Ends ~{minToTime(sess.filmEnd)} with ads{sess.screen?` · ${sess.screen}`:""}</div>}
+                                      {isHov && <div style={{ fontSize:9, color:T.barSubText, marginTop:3, fontFamily:T.mono }}>{film.runtime}min + ~{ADS_MIN}min ads{sess.screen?` · ${sess.screen}`:""}</div>}
                                     </div>
                                     {sess.bookingUrl && (
                                       <a href={sess.bookingUrl} target="_blank" rel="noopener" onClick={e=>e.stopPropagation()} className="book-btn" title="Book tickets" style={{ display:"flex", alignItems:"center", justifyContent:"center", padding:"4px 8px", borderRadius:4, background:T.barBookBg, border:`1px solid ${T.barBookBorder}`, textDecoration:"none", flexShrink:0, cursor:"pointer", transition:"background 0.2s" }}>
