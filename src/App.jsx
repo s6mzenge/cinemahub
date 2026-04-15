@@ -175,8 +175,9 @@ function mergeAllCinemaFilms(allCinemaData) {
       }
       const merged = byKey[key];
       if (!merged.perCinema[cinemaId]) {
-        merged.perCinema[cinemaId] = { showtimes:{}, bookingUrls:{}, screens:{}, hoh:{}, tags:{} };
+        merged.perCinema[cinemaId] = { showtimes:{}, bookingUrls:{}, screens:{}, hoh:{}, tags:{}, film_url:null };
       }
+      if (f.film_url && !merged.perCinema[cinemaId].film_url) merged.perCinema[cinemaId].film_url = f.film_url;
       const pc = merged.perCinema[cinemaId];
       for (const [date, times] of Object.entries(f.showtimes)) {
         if (!pc.showtimes[date]) pc.showtimes[date] = [];
@@ -417,7 +418,7 @@ export default function App() {
           isHoh:pc.hoh?.[selDate]?.includes(t), bookingUrl:pc.bookingUrls?.[selDate]?.[t]||null, screen:pc.screens?.[selDate]?.[t]||null,
           tags:pc.tags?.[selDate]?.[t]||[], cinemaId:cId,
         }));
-        cinemaEntries.push({ cinemaId:cId, cinemaName:cin?.name||cId, cinemaShort:cin?.short||cId.slice(0,3).toUpperCase(), cinemaColor:cin?.barColor||"#888", sessions });
+        cinemaEntries.push({ cinemaId:cId, cinemaName:cin?.name||cId, cinemaShort:cin?.short||cId.slice(0,3).toUpperCase(), cinemaColor:cin?.barColor||"#888", filmUrl:pc.film_url||null, sessions });
         allSessions.push(...sessions);
       }
       return {
@@ -867,7 +868,7 @@ export default function App() {
                   if (isAllCinemas) {
                     dayFilms.forEach(film => {
                       (film.cinemaEntries||[]).forEach(ce => {
-                        ce.sessions.forEach(sess => { allSessions.push({...sess, film, cinemaName:ce.cinemaName, cinemaColor:ce.cinemaColor, cinemaShort:ce.cinemaShort}); });
+                        ce.sessions.forEach(sess => { allSessions.push({...sess, film, cinemaName:ce.cinemaName, cinemaColor:ce.cinemaColor, cinemaShort:ce.cinemaShort, cinemaFilmUrl:ce.filmUrl}); });
                       });
                     });
                   } else {
@@ -895,13 +896,14 @@ export default function App() {
                                       <div style={{ flex:1, padding:"11px 14px" }}>
                                         <div style={{ display:"flex", alignItems:"center", gap:6 }}>
                                           <div style={{ fontSize:14, fontWeight:700, color:T.text, lineHeight:1.25, fontFamily:T.serif, minWidth:0, overflow:"hidden", display:"-webkit-box", WebkitLineClamp:2, WebkitBoxOrient:"vertical" }}>
-                                            {film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.text, textDecoration:"none" }}>{film.title}</a> : film.title}
+                                            {!isAllCinemas && film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.text, textDecoration:"none" }}>{film.title}</a> : film.title}
                                           </div>
                                           <LbRating rating={film.letterboxd_rating} url={film.letterboxd_url} size={13} />
                                         </div>
                                         <div style={{ display:"flex", gap:6, marginTop:5, alignItems:"center", flexWrap:"wrap" }}>
                                           {isAllCinemas && sess.cinemaName && (
-                                            <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:`${sess.cinemaColor}22`, color:sess.cinemaColor, fontFamily:T.mono, letterSpacing:0.3, border:`1px solid ${sess.cinemaColor}33` }}>{sess.cinemaShort||sess.cinemaName}</span>
+                                            sess.cinemaFilmUrl ? <a href={sess.cinemaFilmUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}><span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:`${sess.cinemaColor}22`, color:sess.cinemaColor, fontFamily:T.mono, letterSpacing:0.3, border:`1px solid ${sess.cinemaColor}33`, cursor:"pointer" }}>{sess.cinemaShort||sess.cinemaName}</span></a>
+                                            : <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:`${sess.cinemaColor}22`, color:sess.cinemaColor, fontFamily:T.mono, letterSpacing:0.3, border:`1px solid ${sess.cinemaColor}33` }}>{sess.cinemaShort||sess.cinemaName}</span>
                                           )}
                                           <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:rBg[film.rating]||"#444", color:"#fff", fontFamily:T.mono, letterSpacing:0.5 }}>{film.rating}</span>
                                           <span style={{ fontSize:10, color:T.textMuted, fontFamily:T.mono }}>{film.runtime}min</span>
@@ -955,7 +957,7 @@ export default function App() {
                                 <div style={{ minWidth:0 }}>
                                   <div style={{ display:"flex", alignItems:"baseline", gap:5, minWidth:0 }}>
                                     <div style={{ fontSize:12, fontWeight:700, color:T.textSub, lineHeight:1.2, fontFamily:T.serif, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", minWidth:0 }}>
-                                      {film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.textSub, textDecoration:"none" }}>{film.title}</a> : film.title}
+                                      {film.title}
                                     </div>
                                     <LbRating rating={film.letterboxd_rating} url={film.letterboxd_url} size={11} />
                                   </div>
@@ -974,9 +976,10 @@ export default function App() {
                               {film.cinemaEntries.map((ce,ci) => (
                                 <div key={ce.cinemaId} style={{ display:"flex", alignItems:"stretch", flex:1, minHeight:42, borderTop:ci>0?`1px dashed ${T.border}`:"none", position:"relative", zIndex:1 }}>
                                   {/* Cinema label */}
-                                  <div style={{ width:60, flexShrink:0, padding:"4px 6px", display:"flex", alignItems:"center", gap:4 }}>
+                                  <div style={{ width:60, flexShrink:0, padding:"4px 6px", display:"flex", alignItems:"center", justifyContent:"center", gap:4 }}>
                                     <div style={{ width:6, height:6, borderRadius:2, background:ce.cinemaColor, flexShrink:0 }} />
-                                    <span style={{ fontSize:8, color:T.textMuted, fontFamily:T.mono, fontWeight:600, letterSpacing:0.3 }}>{ce.cinemaShort}</span>
+                                    {ce.filmUrl ? <a href={ce.filmUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}><span style={{ fontSize:8, color:ce.cinemaColor, fontFamily:T.mono, fontWeight:600, letterSpacing:0.3, cursor:"pointer" }}>{ce.cinemaShort}</span></a>
+                                    : <span style={{ fontSize:8, color:T.textMuted, fontFamily:T.mono, fontWeight:600, letterSpacing:0.3 }}>{ce.cinemaShort}</span>}
                                   </div>
                                   {/* Bars for this cinema */}
                                   <div style={{ flex:1, position:"relative", minHeight:42 }}>
@@ -1118,14 +1121,20 @@ export default function App() {
                             {!isAllCinemas && <div style={{ width:3, height:24, borderRadius:1.5, background:`linear-gradient(180deg,${film.color},${film.color}44)` }} />}
                             {isAllCinemas && (()=>{
                               const cinIds = Object.keys(film.perCinema||{});
-                              return <div style={{ display:"flex", flexDirection:"column", gap:2 }}>
-                                {cinIds.slice(0,3).map(cId => <div key={cId} style={{ width:8, height:5, borderRadius:1.5, background:CINEMA_MAP[cId]?.barColor||"#888" }} />)}
+                              return <div style={{ display:"flex", flexDirection:"column", gap:2, alignItems:"center", justifyContent:"center" }}>
+                                {cinIds.slice(0,3).map(cId => {
+                                  const cin = CINEMA_MAP[cId];
+                                  const bc = cin?.barColor||"#888";
+                                  const filmUrl = film.perCinema[cId]?.film_url;
+                                  const code = <span key={cId} style={{ fontSize:7, fontWeight:700, color:bc, fontFamily:T.mono, letterSpacing:0.3, lineHeight:1.3, cursor:filmUrl?"pointer":"default" }}>{cin?.short||cId.slice(0,3).toUpperCase()}</span>;
+                                  return filmUrl ? <a key={cId} href={filmUrl} target="_blank" rel="noopener" style={{ textDecoration:"none", display:"flex", alignItems:"center" }}>{code}</a> : code;
+                                })}
                                 {cinIds.length>3 && <div style={{ fontSize:7, color:T.textFaint, fontFamily:T.mono }}>+{cinIds.length-3}</div>}
                               </div>;
                             })()}
                             <div style={{ minWidth:0 }}>
                               <div style={{ display:"flex", alignItems:"baseline", gap:4, minWidth:0 }}>
-                                <div style={{ fontSize:11, fontWeight:700, color:T.textSub, fontFamily:T.serif, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", minWidth:0 }}>{film.film_url?<a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.textSub, textDecoration:"none" }}>{film.title}</a>:film.title}</div>
+                                <div style={{ fontSize:11, fontWeight:700, color:T.textSub, fontFamily:T.serif, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", minWidth:0 }}>{!isAllCinemas&&film.film_url?<a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.textSub, textDecoration:"none" }}>{film.title}</a>:film.title}</div>
                                 <LbRating rating={film.letterboxd_rating} url={film.letterboxd_url} size={10} />
                               </div>
                               <div style={{ display:"flex", gap:4, marginTop:3, flexWrap:"wrap" }}>
