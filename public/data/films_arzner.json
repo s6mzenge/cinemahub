@@ -1,45 +1,7 @@
 {
-  "scraped_at": "2026-04-15T13:33:20.552890+00:00",
+  "scraped_at": "2026-04-15T14:03:39.647569+00:00",
   "source": "thearzner.com",
   "films": [
-    {
-      "id": "conclave-176817",
-      "title": "Conclave",
-      "rating": "12A",
-      "runtime": 120,
-      "genre": "Drama",
-      "description": "After the unexpected death of the Pope, Cardinal Lawrence is tasked with managing the covert and ancient ritual of electing a new one. Sequestered in the Vatican with the Catholic Church’s most powerful leaders until the process is complete, Lawrence finds himself at the center of a conspiracy that …",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=176817",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/176814.jpg",
-      "showtimes": {
-        "2026-04-15": [
-          {
-            "time": "18:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_177202.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "Drama"
-            ]
-          }
-        ],
-        "2026-04-16": [
-          {
-            "time": "15:45",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_177207.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "Drama"
-            ]
-          }
-        ]
-      },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/conclave/",
-      "letterboxd_rating": 3.92
-    },
     {
       "id": "night-stage-107368",
       "title": "Night Stage",
@@ -51,6 +13,12 @@
       "poster_url": "https://images.savoysystems.co.uk/TAL/173573.jpg",
       "showtimes": {
         "2026-04-15": [
+          {
+            "time": "12:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176809.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
           {
             "time": "20:30",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_177201.TcsSection_963",
@@ -91,10 +59,48 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/night-stage/",
       "letterboxd_rating": 3.32
+    },
+    {
+      "id": "conclave-176817",
+      "title": "Conclave",
+      "rating": "12A",
+      "runtime": 120,
+      "genre": "Drama",
+      "description": "After the unexpected death of the Pope, Cardinal Lawrence is tasked with managing the covert and ancient ritual of electing a new one. Sequestered in the Vatican with the Catholic Church’s most powerful leaders until the process is complete, Lawrence finds himself at the center of a conspiracy that …",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=176817",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/176814.jpg",
+      "showtimes": {
+        "2026-04-15": [
+          {
+            "time": "18:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_177202.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Drama"
+            ]
+          }
+        ],
+        "2026-04-16": [
+          {
+            "time": "15:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_177207.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Drama"
+            ]
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/conclave/",
+      "letterboxd_rating": 3.92
     },
     {
       "id": "plainclothes-79695",
@@ -860,7 +866,7 @@
       "rating": "18",
       "runtime": 94,
       "genre": "New Release",
-      "description": "Saturday's screening at 16:30, will be introduced by actor Vaslov Goom.  The Arzner is the only UK cinema to be screening The Activist.  A young man infiltrates a radical neo-Nazi group to find the killer of his LGBT+ activist boyfriend.  Content Warning: Contains distressing themes and scenes.",
+      "description": "Saturday's screening at 16:30 will be introduced by actor Vaslov Goom and director Romas Zabarauskas.  The Arzner is the only UK cinema to be screening The Activist.  A young man infiltrates a radical neo-Nazi group to find the killer of his LGBT+ activist boyfriend.  Content Warning: Contains distr…",
       "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=172788",
       "poster_url": "https://images.savoysystems.co.uk/TAL/172784.jpg",
       "showtimes": {
@@ -1544,7 +1550,7 @@
             ]
           },
           {
-            "time": "20:00",
+            "time": "20:30",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_167327.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
