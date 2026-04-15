@@ -943,18 +943,21 @@ export default function App() {
                 /* ═══════ DESKTOP TIMELINE ═══════ */
                 <div style={{ position:"relative" }}>
                   {isAllCinemas ? (
-                    <div style={{ display:"flex", height:30, marginBottom:4 }}>
-                      <div style={{ width:177, flexShrink:0, borderRight:`1px solid transparent` }} />
+                    <div style={{ display:"flex", height:30, marginBottom:4, borderLeft:"3px solid transparent" }}>
+                      <div style={{ width:177, flexShrink:0, padding:"0 14px", borderRight:`1px solid transparent` }} />
                       <div style={{ flex:1, display:"flex" }}>
-                        <div style={{ width:60, flexShrink:0 }} />
+                        <div style={{ width:60, flexShrink:0, padding:"0 2px" }} />
                         <div style={{ flex:1, position:"relative" }}>
                           {hourMarks.map(m => <div key={m} style={{ position:"absolute", left:`${pct(m)}%`, transform:"translateX(-50%)", fontSize:10, fontFamily:T.mono, color:T.textDim, fontWeight:400, letterSpacing:0.5 }}>{minToTime(m)}</div>)}
                         </div>
                       </div>
                     </div>
                   ) : (
-                    <div style={{ marginLeft:180, position:"relative", height:30, marginBottom:4 }}>
-                      {hourMarks.map(m => <div key={m} style={{ position:"absolute", left:`${pct(m)}%`, transform:"translateX(-50%)", fontSize:10, fontFamily:T.mono, color:T.textDim, fontWeight:400, letterSpacing:0.5 }}>{minToTime(m)}</div>)}
+                    <div style={{ display:"flex", height:30, marginBottom:4 }}>
+                      <div style={{ width:180, flexShrink:0, padding:"0 14px", borderRight:`1px solid transparent` }} />
+                      <div style={{ flex:1, position:"relative" }}>
+                        {hourMarks.map(m => <div key={m} style={{ position:"absolute", left:`${pct(m)}%`, transform:"translateX(-50%)", fontSize:10, fontFamily:T.mono, color:T.textDim, fontWeight:400, letterSpacing:0.5 }}>{minToTime(m)}</div>)}
+                      </div>
                     </div>
                   )}
                   <div ref={tlRef} style={{ position:"relative" }}>
