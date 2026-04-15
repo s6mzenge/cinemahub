@@ -992,7 +992,7 @@ export default function App() {
                                             boxShadow: isHov ? `0 6px 24px ${bc}44,0 0 0 1px ${bc}55` : isDark ? `0 1px 4px rgba(0,0,0,0.3)` : `0 1px 3px rgba(0,0,0,0.08)`,
                                           }}>
                                           <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${bc}30,${bc}30 3px,${bc}18 3px,${bc}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"4px 0 0 4px", overflow:"hidden", paddingLeft:7 }}>
-                                            {(adsWidth/totalWidth)>=0.14 && <span style={{ fontSize:6, fontWeight:700, color:`${bc}`, letterSpacing:1, textTransform:"uppercase", opacity:0.5, fontFamily:T.mono }}>ADS</span>}
+                                            {(adsWidth/totalWidth)>=0.07 && <span style={{ fontSize:6, fontWeight:700, color:`${bc}`, letterSpacing:1, textTransform:"uppercase", opacity:0.5, fontFamily:T.mono }}>ADS</span>}
                                           </div>
                                           <div style={{ width:6, flexShrink:0, background:`radial-gradient(circle 2px at center,${T.bg} 1.5px,${bc}55 2px) center top / 4px 6px repeat-y` }} />
                                           <div style={{ flex:1, background:`linear-gradient(135deg,${bc}bb 0%,${bc}88 100%)`, padding:"2px 10px 2px 8px", display:"flex", alignItems:"center", gap:4, minWidth:0, borderRadius:"0 4px 4px 0", overflow:"hidden" }}>
@@ -1053,7 +1053,7 @@ export default function App() {
                                     boxShadow: isHov ? `0 8px 32px ${film.color}44,0 0 0 1px ${film.color}55,inset 0 1px 0 rgba(255,255,255,0.06)` : isDark ? `0 1px 6px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.03)` : `0 1px 4px rgba(0,0,0,0.08),inset 0 1px 0 rgba(255,255,255,0.5)`,
                                   }}>
                                   <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${film.color}30,${film.color}30 3px,${film.color}18 3px,${film.color}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"5px 0 0 5px", overflow:"hidden", paddingLeft:7 }}>
-                                    {(adsWidth/totalWidth)>=0.14 && <span style={{ fontSize:7, fontWeight:700, color:film.accent, letterSpacing:1, textTransform:"uppercase", opacity:0.6, fontFamily:T.mono }}>ADS</span>}
+                                    {(adsWidth/totalWidth)>=0.07 && <span style={{ fontSize:7, fontWeight:700, color:film.accent, letterSpacing:1, textTransform:"uppercase", opacity:0.6, fontFamily:T.mono }}>ADS</span>}
                                   </div>
                                   <div style={{ width:8, flexShrink:0, position:"relative", zIndex:3, background:`radial-gradient(circle 2.5px at center,${T.bg} 2px,${film.color}55 2.5px) center top / 5px 8px repeat-y` }} />
                                   <div style={{ flex:1, background:`linear-gradient(135deg,${film.color}bb 0%,${film.color}88 100%)`, padding:"4px 10px", display:"flex", alignItems:"center", gap:6, minWidth:0, borderRadius:"0 5px 5px 0", overflow:"hidden" }}>
