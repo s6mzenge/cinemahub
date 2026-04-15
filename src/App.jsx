@@ -5,7 +5,8 @@ const DATA_BASE = import.meta.env.BASE_URL + "data/";
 
 const DAYS = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-const rBg = { U:"#2e7d32", PG:"#b8960f", "12A":"#c45a00", "15":"#a12020", TBC:"#666", very:"#b8960f" };
+const VALID_RATINGS = new Set(["U","PG","12A","12","15","18","R18","TBC"]);
+const rBg = { U:"#2e7d32", PG:"#b8960f", "12A":"#c45a00", "12":"#c45a00", "15":"#a12020", "18":"#8b0000", "R18":"#5c0000", TBC:"#666" };
 
 /* ─── Cinema registry (extend this later) ─── */
 const CINEMAS = [
@@ -54,7 +55,8 @@ function normalizeFilms(rawFilms) {
         showtimes[date] = times;
       }
     }
-    return { id:f.id, title:f.title, rating:f.rating||"TBC", runtime:f.runtime||90, genre:f.genre||"Other",
+    const rawRating = (f.rating||"").trim().toUpperCase();
+    return { id:f.id, title:f.title, rating:VALID_RATINGS.has(rawRating)?rawRating:"TBC", runtime:f.runtime||90, genre:f.genre||"Other",
       color:f.color||"#78909c", accent:f.accent||"#b0bec5", film_url:f.film_url||null, poster_url:f.poster_url||null,
       letterboxd_url:f.letterboxd_url||null, letterboxd_rating:f.letterboxd_rating||null,
       showtimes, bookingUrls, screens, hoh:Object.keys(hoh).length>0?hoh:(f.hoh||{}), tags };
@@ -940,9 +942,21 @@ export default function App() {
               ) : (
                 /* ═══════ DESKTOP TIMELINE ═══════ */
                 <div style={{ position:"relative" }}>
-                  <div style={{ marginLeft:180, position:"relative", height:30, marginBottom:4 }}>
-                    {hourMarks.map(m => <div key={m} style={{ position:"absolute", left:`${pct(m)}%`, transform:"translateX(-50%)", fontSize:10, fontFamily:T.mono, color:T.textDim, fontWeight:400, letterSpacing:0.5 }}>{minToTime(m)}</div>)}
-                  </div>
+                  {isAllCinemas ? (
+                    <div style={{ display:"flex", height:30, marginBottom:4 }}>
+                      <div style={{ width:177, flexShrink:0, borderRight:`1px solid transparent` }} />
+                      <div style={{ flex:1, display:"flex" }}>
+                        <div style={{ width:60, flexShrink:0 }} />
+                        <div style={{ flex:1, position:"relative" }}>
+                          {hourMarks.map(m => <div key={m} style={{ position:"absolute", left:`${pct(m)}%`, transform:"translateX(-50%)", fontSize:10, fontFamily:T.mono, color:T.textDim, fontWeight:400, letterSpacing:0.5 }}>{minToTime(m)}</div>)}
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div style={{ marginLeft:180, position:"relative", height:30, marginBottom:4 }}>
+                      {hourMarks.map(m => <div key={m} style={{ position:"absolute", left:`${pct(m)}%`, transform:"translateX(-50%)", fontSize:10, fontFamily:T.mono, color:T.textDim, fontWeight:400, letterSpacing:0.5 }}>{minToTime(m)}</div>)}
+                    </div>
+                  )}
                   <div ref={tlRef} style={{ position:"relative" }}>
                     {dayFilms.map((film,fi) => {
 
