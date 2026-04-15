@@ -915,7 +915,7 @@ export default function App() {
                                       </div>
                                       {sess.bookingUrl && (<>
                                         <div style={{ width:6, alignSelf:"stretch", flexShrink:0, background:`radial-gradient(circle 2px at center,${T.bg} 1.5px,${film.color}22 2px) center top / 4px 7px repeat-y` }} />
-                                        <a href={sess.bookingUrl} target="_blank" rel="noopener" className="book-btn" style={{ display:"flex", alignItems:"center", justifyContent:"center", padding:"0 14px", alignSelf:"stretch", background:`${film.color}10`, textDecoration:"none", cursor:"pointer", transition:"background 0.2s", borderRadius:"0 12px 12px 0" }}>
+                                        <a href={sess.bookingUrl} target="_blank" rel="noopener" className="book-btn" style={{ display:"flex", alignItems:"center", justifyContent:"center", padding:"0 19px 0 11px", alignSelf:"stretch", background:`${film.color}10`, textDecoration:"none", cursor:"pointer", transition:"background 0.2s", borderRadius:"0 12px 12px 0" }}>
                                           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={film.accent} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>
                                         </a>
                                       </>)}
@@ -976,10 +976,9 @@ export default function App() {
                               {film.cinemaEntries.map((ce,ci) => (
                                 <div key={ce.cinemaId} style={{ display:"flex", alignItems:"stretch", flex:1, minHeight:42, borderTop:ci>0?`1px dashed ${T.border}`:"none", position:"relative", zIndex:1 }}>
                                   {/* Cinema label */}
-                                  <div style={{ width:60, flexShrink:0, padding:"4px 6px", display:"flex", alignItems:"center", justifyContent:"center", gap:4 }}>
-                                    <div style={{ width:6, height:6, borderRadius:2, background:ce.cinemaColor, flexShrink:0 }} />
-                                    {ce.filmUrl ? <a href={ce.filmUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}><span style={{ fontSize:8, color:ce.cinemaColor, fontFamily:T.mono, fontWeight:600, letterSpacing:0.3, cursor:"pointer" }}>{ce.cinemaShort}</span></a>
-                                    : <span style={{ fontSize:8, color:T.textMuted, fontFamily:T.mono, fontWeight:600, letterSpacing:0.3 }}>{ce.cinemaShort}</span>}
+                                  <div style={{ width:60, flexShrink:0, padding:"4px 6px", display:"flex", alignItems:"center", justifyContent:"center" }}>
+                                    {ce.filmUrl ? <a href={ce.filmUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}><span style={{ fontSize:8, fontWeight:700, color:ce.cinemaColor, fontFamily:T.mono, letterSpacing:0.3, padding:"2px 6px", borderRadius:3, background:`${ce.cinemaColor}18`, cursor:"pointer", whiteSpace:"nowrap", display:"inline-flex", alignItems:"center", gap:3 }}><span style={{ width:4, height:4, borderRadius:1.5, background:ce.cinemaColor, flexShrink:0 }} />{ce.cinemaShort}</span></a>
+                                    : <span style={{ fontSize:8, fontWeight:600, color:T.textMuted, fontFamily:T.mono, letterSpacing:0.3, padding:"2px 6px", borderRadius:3, background:`${ce.cinemaColor}10`, whiteSpace:"nowrap", display:"inline-flex", alignItems:"center", gap:3 }}><span style={{ width:4, height:4, borderRadius:1.5, background:ce.cinemaColor, flexShrink:0 }} />{ce.cinemaShort}</span>}
                                   </div>
                                   {/* Bars for this cinema */}
                                   <div style={{ flex:1, position:"relative", minHeight:42 }}>
@@ -992,11 +991,11 @@ export default function App() {
                                           style={{ position:"absolute", left:`${barLeft}%`, width:`${totalWidth}%`, top:"50%", height:isHov?38:28, transform:"translateY(-50%)", display:"flex", borderRadius:4, overflow:"hidden", zIndex:isHov?10:2, transition:"height 0.2s cubic-bezier(0.4,0,0.2,1),box-shadow 0.2s cubic-bezier(0.4,0,0.2,1)",
                                             boxShadow: isHov ? `0 6px 24px ${bc}44,0 0 0 1px ${bc}55` : isDark ? `0 1px 4px rgba(0,0,0,0.3)` : `0 1px 3px rgba(0,0,0,0.08)`,
                                           }}>
-                                          <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${bc}30,${bc}30 3px,${bc}18 3px,${bc}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"4px 0 0 4px", overflow:"hidden" }}>
-                                            <span style={{ fontSize:6, fontWeight:700, color:`${bc}`, letterSpacing:1, textTransform:"uppercase", opacity:0.5, fontFamily:T.mono }}>ADS</span>
+                                          <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${bc}30,${bc}30 3px,${bc}18 3px,${bc}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"4px 0 0 4px", overflow:"hidden", paddingLeft:7 }}>
+                                            {(adsWidth/totalWidth)>=0.14 && <span style={{ fontSize:6, fontWeight:700, color:`${bc}`, letterSpacing:1, textTransform:"uppercase", opacity:0.5, fontFamily:T.mono }}>ADS</span>}
                                           </div>
                                           <div style={{ width:6, flexShrink:0, background:`radial-gradient(circle 2px at center,${T.bg} 1.5px,${bc}55 2px) center top / 4px 6px repeat-y` }} />
-                                          <div style={{ flex:1, background:`linear-gradient(135deg,${bc}bb 0%,${bc}88 100%)`, padding:"2px 8px", display:"flex", alignItems:"center", gap:4, minWidth:0, borderRadius:"0 4px 4px 0", overflow:"hidden" }}>
+                                          <div style={{ flex:1, background:`linear-gradient(135deg,${bc}bb 0%,${bc}88 100%)`, padding:"2px 10px 2px 8px", display:"flex", alignItems:"center", gap:4, minWidth:0, borderRadius:"0 4px 4px 0", overflow:"hidden" }}>
                                             <div style={{ flex:1, minWidth:0 }}>
                                               <div style={{ fontSize:9.5, fontWeight:700, color:T.barText, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", textShadow:"0 1px 3px rgba(0,0,0,0.5)", fontFamily:T.mono }}>
                                                 {sess.time} – ~{minToTime(sess.filmEnd)}{sess.isHoh?"  CC":""}
@@ -1053,8 +1052,8 @@ export default function App() {
                                   style={{ position:"absolute", left:`${barLeft}%`, width:`${totalWidth}%`, top:"50%", height:isHov?54:36, transform:"translateY(-50%)", display:"flex", borderRadius:5, overflow:"hidden", zIndex:isHov?10:2, transition:"height 0.2s cubic-bezier(0.4,0,0.2,1),box-shadow 0.2s cubic-bezier(0.4,0,0.2,1)",
                                     boxShadow: isHov ? `0 8px 32px ${film.color}44,0 0 0 1px ${film.color}55,inset 0 1px 0 rgba(255,255,255,0.06)` : isDark ? `0 1px 6px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.03)` : `0 1px 4px rgba(0,0,0,0.08),inset 0 1px 0 rgba(255,255,255,0.5)`,
                                   }}>
-                                  <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${film.color}30,${film.color}30 3px,${film.color}18 3px,${film.color}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"5px 0 0 5px", overflow:"hidden" }}>
-                                    <span style={{ fontSize:7, fontWeight:700, color:film.accent, letterSpacing:1, textTransform:"uppercase", opacity:0.6, fontFamily:T.mono }}>ADS</span>
+                                  <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${film.color}30,${film.color}30 3px,${film.color}18 3px,${film.color}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"5px 0 0 5px", overflow:"hidden", paddingLeft:7 }}>
+                                    {(adsWidth/totalWidth)>=0.14 && <span style={{ fontSize:7, fontWeight:700, color:film.accent, letterSpacing:1, textTransform:"uppercase", opacity:0.6, fontFamily:T.mono }}>ADS</span>}
                                   </div>
                                   <div style={{ width:8, flexShrink:0, position:"relative", zIndex:3, background:`radial-gradient(circle 2.5px at center,${T.bg} 2px,${film.color}55 2.5px) center top / 5px 8px repeat-y` }} />
                                   <div style={{ flex:1, background:`linear-gradient(135deg,${film.color}bb 0%,${film.color}88 100%)`, padding:"4px 10px", display:"flex", alignItems:"center", gap:6, minWidth:0, borderRadius:"0 5px 5px 0", overflow:"hidden" }}>
@@ -1121,13 +1120,13 @@ export default function App() {
                             {!isAllCinemas && <div style={{ width:3, height:24, borderRadius:1.5, background:`linear-gradient(180deg,${film.color},${film.color}44)` }} />}
                             {isAllCinemas && (()=>{
                               const cinIds = Object.keys(film.perCinema||{});
-                              return <div style={{ display:"flex", flexDirection:"column", gap:2, alignItems:"center", justifyContent:"center" }}>
+                              return <div style={{ display:"flex", flexDirection:"column", gap:3, alignItems:"center", justifyContent:"center" }}>
                                 {cinIds.slice(0,3).map(cId => {
                                   const cin = CINEMA_MAP[cId];
                                   const bc = cin?.barColor||"#888";
                                   const filmUrl = film.perCinema[cId]?.film_url;
-                                  const code = <span key={cId} style={{ fontSize:7, fontWeight:700, color:bc, fontFamily:T.mono, letterSpacing:0.3, lineHeight:1.3, cursor:filmUrl?"pointer":"default" }}>{cin?.short||cId.slice(0,3).toUpperCase()}</span>;
-                                  return filmUrl ? <a key={cId} href={filmUrl} target="_blank" rel="noopener" style={{ textDecoration:"none", display:"flex", alignItems:"center" }}>{code}</a> : code;
+                                  const pill = <span key={cId} style={{ fontSize:7, fontWeight:700, color:bc, fontFamily:T.mono, letterSpacing:0.3, lineHeight:1, padding:"2px 4px", borderRadius:2, background:`${bc}18`, cursor:filmUrl?"pointer":"default", whiteSpace:"nowrap" }}>{cin?.short||cId.slice(0,3).toUpperCase()}</span>;
+                                  return filmUrl ? <a key={cId} href={filmUrl} target="_blank" rel="noopener" style={{ textDecoration:"none", display:"block" }}>{pill}</a> : pill;
                                 })}
                                 {cinIds.length>3 && <div style={{ fontSize:7, color:T.textFaint, fontFamily:T.mono }}>+{cinIds.length-3}</div>}
                               </div>;
