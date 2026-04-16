@@ -1094,8 +1094,8 @@ export default function App() {
                       );
                     })}
                   </div>
-                  {selDate===today&&(()=>{ const nowMin=getNowMin(); if(nowMin>=axisStart&&nowMin<=axisEnd){ return (
-                    <div style={{ position:"absolute", left:`calc(180px + (100% - 180px) * ${(nowMin-axisStart)/axisDuration})`, top:30, bottom:0, width:2, background:T.accent, zIndex:20, boxShadow:`0 0 12px ${T.accentGlow}` }}>
+                  {selDate===today&&(()=>{ const nowMin=getNowMin(); if(nowMin>=axisStart&&nowMin<=axisEnd){ const tlOffset=isAllCinemas?240:180; return (
+                    <div style={{ position:"absolute", left:`calc(${tlOffset}px + (100% - ${tlOffset}px) * ${(nowMin-axisStart)/axisDuration})`, top:30, bottom:0, width:2, background:T.accent, zIndex:20, boxShadow:`0 0 12px ${T.accentGlow}` }}>
                       <div style={{ position:"absolute", top:-8, left:-14, fontSize:8, fontWeight:700, color:T.accent, background:T.bg, padding:"1px 5px", borderRadius:3, fontFamily:T.mono, letterSpacing:1 }}>NOW</div>
                     </div>
                   ); } return null; })()}
