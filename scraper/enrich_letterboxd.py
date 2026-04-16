@@ -338,34 +338,35 @@ def directors_match(source_director: str | None, page_directors: list[str]) -> b
     if not page_directors:
         return None
 
-    # Normalize the source director — may contain multiple names
-    source_names = set()
     source_norm = normalize_director_name(source_director)
-    if source_norm:
-        source_names.add(source_norm)
-        # Also extract last name for looser matching
-        parts = source_norm.split()
-        if len(parts) >= 2:
-            source_names.add(parts[-1])
+    if not source_norm:
+        return None
+
+    source_parts = source_norm.split()
+    source_last = source_parts[-1] if source_parts else ""
 
     for page_dir in page_directors:
         page_norm = normalize_director_name(page_dir)
         if not page_norm:
             continue
-        # Exact full-name match
-        if page_norm in source_names:
-            return True
-        # Last-name match (both ways)
+
         page_parts = page_norm.split()
-        if len(page_parts) >= 2:
-            page_last = page_parts[-1]
-            if page_last in source_names:
-                # Also verify first name initial if possible
-                source_parts = source_norm.split()
-                if source_parts and page_parts[0][0] == source_parts[0][0]:
-                    return True
-            # Full source name matches page director
-            if source_norm == page_norm:
+        page_last = page_parts[-1] if page_parts else ""
+
+        # Exact full-name match
+        if source_norm == page_norm:
+            return True
+
+        # Suffix match: "Sofía Petersen" is a suffix of "Olivia Sofía Petersen"
+        # (handles director names where the source has extra first/middle names)
+        if source_norm.endswith(page_norm) or page_norm.endswith(source_norm):
+            return True
+
+        # Last-name match + any first-name initial overlap
+        if source_last and page_last and source_last == page_last:
+            source_initials = {p[0] for p in source_parts[:-1] if p}
+            page_initials = {p[0] for p in page_parts[:-1] if p}
+            if source_initials & page_initials:
                 return True
 
     return False
@@ -722,8 +723,16 @@ def extract_slug_from_url(url: str) -> str | None:
 
 
 def extract_directors_from_soup(soup: BeautifulSoup) -> list[str]:
-    """Extract director names from the Letterboxd page's ld+json metadata."""
+    """Extract director names from a Letterboxd page.
+
+    Tries multiple sources in order:
+      1. ld+json structured data (most reliable when present)
+      2. <a href="/director/..."> links in the page (visible on almost all pages)
+      3. "Directed by" text in the header area
+    """
     directors = []
+
+    # ── Strategy 1: ld+json ──
     for script in soup.find_all("script", type="application/ld+json"):
         try:
             payload = json.loads(script.string)
@@ -745,6 +754,31 @@ def extract_directors_from_soup(soup: BeautifulSoup) -> list[str]:
                         directors.append(str(name).strip())
                 elif isinstance(entry, str) and entry.strip():
                     directors.append(entry.strip())
+
+    if directors:
+        return directors
+
+    # ── Strategy 2: /director/ links ──
+    # Letterboxd pages have <a href="/director/name/"> elements
+    for link in soup.find_all("a", href=re.compile(r"^/director/")):
+        name = link.get_text(strip=True)
+        if name and len(name) > 1:
+            directors.append(name)
+
+    if directors:
+        return directors
+
+    # ── Strategy 3: "Directed by" visible text ──
+    # Sometimes appears in a <span> or <p> near the title
+    for el in soup.find_all(string=re.compile(r"Directed by")):
+        parent = el.parent
+        if parent:
+            # The director name is usually in a sibling <a> tag
+            link = parent.find("a", href=re.compile(r"/director/"))
+            if link:
+                name = link.get_text(strip=True)
+                if name:
+                    directors.append(name)
 
     return directors
 
@@ -949,15 +983,6 @@ def is_valid_page_match(
         delta = abs(source_year - page_year)
         if delta > YEAR_TOLERANCE and not (strength >= 3 and is_specific_title(source_title)):
             return False, f"source year {source_year} resolved to {page_year}"
-
-    # Obscure-entry heuristic: if the source has a director but the page has
-    # neither director metadata NOR a rating, AND the candidate is year-suffixed
-    # (e.g. rocky-1976, aftersun-2022), it's very likely an obscure wrong-match
-    # entry. Only apply to year-suffixed candidates — bare slugs and overrides
-    # are usually the canonical entry and shouldn't be rejected this way.
-    if (source_director and not page_directors and page.get("rating") is None
-            and candidate.candidate_year is not None):
-        return False, "year-suffixed page with no directors or rating (likely obscure wrong match)"
 
     return True, "ok"
 
