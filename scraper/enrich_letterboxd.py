@@ -189,6 +189,11 @@ EVENT_PREFIXES = [
     "surreal sinema",
     "the cinema of",
     "three films by",
+    # ── Garden Cinema event/strand prefixes ──
+    "alborada films presents",
+    "earth day 2026",
+    "earth day 2025",
+    "fashion film club presents",
 ]
 
 # Prefixes that appear WITHOUT a colon — strip them directly
@@ -199,6 +204,10 @@ STRIP_PREFIXES_NO_COLON = [
     r"(?i)^opening\s+night\s+",
     r"(?i)^closing\s+night\s+",
     r"(?i)^(?:LONDON|UK|WORLD|EUROPEAN)\s+PREMIERE\s+",
+    # ── Garden Cinema non-colon prefixes ──
+    r"(?i)^re:?mind\s+film\s+festival\s+presents?\s+",
+    r"(?i)^uk\s+asian\s+film\s+festival\s+presents?\s+",
+    r"(?i)^waving\s+kites\s+and\s+re:?mind\s+film\s+festival\s+presents?\s+",
 ]
 
 # Titles matching these patterns are NOT films → skip entirely
@@ -251,6 +260,17 @@ SKIP_PATTERNS = [
     r"(?i)\bcomedy shorts\b",                # "Lesbian Visibility: Comedy Shorts"
     r"(?i)\banimated shorts\b",              # "Lesbian Visibility: Animated Shorts"
     r"(?i)^solve along a\b",
+    # ── Garden Cinema non-film events & compilations ──
+    r"(?i)^bar shorts\b",
+    r"(?i)^clermont-ferrand\b",
+    r"(?i)^offbeat folk film\b",
+    r"(?i)\bkabuki salon\b",
+    r"(?i)\bkaraoke party\b",
+    r"(?i)\bscratch night\b",
+    r"(?i)\bmembers[''\u2019]?\s*mingle\b",
+    r"(?i)\bseason launch\b",
+    r"(?i)^dress-up karaoke\b",
+    r"(?i)^baijiu tasting\b",
 ]
 
 # Pre-compiled regex for stripping " + Q&A", " + Intro …" etc.
@@ -259,6 +279,7 @@ TRAILING_PLUS_SUFFIX_RE = re.compile(
     r"Q\s*&\s*A"
     r"|intro\b.*"
     r"|director\b.*"
+    r"|panel\b.*"
     r"|special\b.*"
     r"|extended\b.*"
     r"|5:40 fantasy.*"
@@ -606,6 +627,7 @@ def clean_title_for_lookup(title: str) -> str:
 
     # Strip restoration/premiere/director's cut suffixes after colon/dash
     t = re.sub(r"\s*[:\u2013\u2014-]\s*4K\s+Restoration\s*(Premiere)?\s*$", "", t, flags=re.I)
+    t = re.sub(r"\s*[-\u2013\u2014]\s*restoration\s+premiere\s*$", "", t, flags=re.I)
     t = re.sub(r"\s*:\s*Director['\u2019]?s?\s*Cut\s*$", "", t, flags=re.I)
 
     # Strip trailing "Preview" / "Exclusive Preview" / "Screening"
