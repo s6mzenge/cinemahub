@@ -103,7 +103,7 @@ function normalizeTitle(title) {
 
   // ── Step 2: Strip event suffixes: "+ Q&A", "+ Intro", etc. ──
   // But preserve " + " in actual titles like "Romeo + Juliet"
-  t = t.replace(/\s*\+\s*(q\s*&\s*a|intro\b.*|director\b.*|special\b.*|extended\b.*)\s*$/i, "");
+  t = t.replace(/\s*\+\s*(q\s*&\s*a\b.*|intro\b.*|director\b.*|special\b.*|extended\b.*)\s*$/i, "");
 
   // ── Step 3: Strip non-film parentheticals ──
   t = t.replace(/\s*\(independent filmmakers showcase\)/gi, "");
