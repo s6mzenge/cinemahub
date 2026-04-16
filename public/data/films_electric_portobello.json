@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-16T20:16:09.471123+00:00",
+  "scraped_at": "2026-04-16T20:34:49.549240+00:00",
   "source": "electriccinema.co.uk (Portobello)",
   "films": [
     {
@@ -94,37 +94,6 @@
       "letterboxd_rating": 3.48
     },
     {
-      "id": "romeo-juliet-30th-anniversary",
-      "title": "Romeo + Juliet (30th Anniversary)",
-      "rating": "12A",
-      "runtime": null,
-      "genre": "Other",
-      "year": "1996",
-      "director": "Baz Luhrmann",
-      "cast": null,
-      "description": "Mixing Shakespeare's classic prose with contemporary imagery, Baz Luhrmann's brilliant interpretation of the timeless tale of star-crossed lovers...",
-      "film_url": "https://www.electriccinema.co.uk/film/romeo-juliet-30th-anniversary/",
-      "poster_url": "https://www.electriccinema.co.uk/wp-content/uploads/film/48706.d-1024x576.jpg",
-      "showtimes": {
-        "2026-04-16": [
-          {
-            "time": "20:45",
-            "screen": "1",
-            "hoh": false,
-            "booking_url": null,
-            "tags": [
-              "Electric Selects"
-            ],
-            "sold_out": true
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/romeo-juliet-1996/",
-      "letterboxd_rating": 3.46
-    },
-    {
       "id": "the-drama",
       "title": "The Drama",
       "rating": "15",
@@ -158,7 +127,8 @@
             "time": "17:15",
             "screen": "1",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50293"
+            "booking_url": null,
+            "sold_out": true
           },
           {
             "time": "20:15",
@@ -222,8 +192,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/the-drama/",
       "letterboxd_rating": 3.76
     },
@@ -252,8 +222,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/the-spongebob-movie-search-for-squarepants/",
       "letterboxd_rating": 2.48
     },
@@ -395,8 +365,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": null
     }
