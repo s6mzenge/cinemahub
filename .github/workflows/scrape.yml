@@ -40,6 +40,9 @@ jobs:
       - name: Run Electric Cinema scraper
         run: python scraper/scrape_electric.py
         continue-on-error: true
+      - name: Run Close-Up Film Centre scraper
+        run: python scraper/scrape_closeup.py
+        continue-on-error: true
       - name: Enrich with Letterboxd ratings
         run: python scraper/enrich_letterboxd.py -d ./public/data
       - name: Check for changes
@@ -51,6 +54,6 @@ jobs:
         run: |
           git config user.name "Cinema Scraper Bot"
           git config user.email "actions@github.com"
-          git add public/data/films.json public/data/films_pcc.json public/data/films_castle.json public/data/films_arzner.json public/data/films_bfi.json public/data/films_electric_portobello.json public/data/films_electric_white_city.json
+          git add public/data/films.json public/data/films_pcc.json public/data/films_castle.json public/data/films_arzner.json public/data/films_bfi.json public/data/films_electric_portobello.json public/data/films_electric_white_city.json public/data/films_closeup.json
           git commit -m "chore: update timetable data ($(date -u '+%Y-%m-%d %H:%M UTC'))"
           git push
