@@ -97,6 +97,8 @@ _RAW_SLUG_OVERRIDES = {
     "departures": "departures-2025",
     "love me tender": "love-me-tender-2025",
     "michael": "michael-2026",
+    # ── ICA alternate titles ──
+    "a ay": "oh-moon",
 }
 
 # (title, source_year) → forced slug — for cases where the default
@@ -111,6 +113,9 @@ _RAW_YEAR_SLUG_OVERRIDES = {
     ("sirat", 2026): "sirat-2025",
     ("small axe lovers rock", 2020): "lovers-rock-2020",
     ("super 8½", 1994): "super-8-1994",
+    # ── ICA same-year disambiguation ──
+    ("dracula", 2025): "dracula-2025-1",
+    ("the stranger", 2025): "the-stranger-2025-1",
 }
 
 # (title, source_year) → expected Letterboxd year — for when the source
@@ -175,6 +180,15 @@ EVENT_PREFIXES = [
     "uk premiere",
     "violet hour presents",
     "word space presents",
+    # ── ICA-specific event/strand prefixes ──
+    "closing night",
+    "opening night",
+    "in focus",
+    "jukebox film club",
+    "sürreal sinema",
+    "surreal sinema",
+    "the cinema of",
+    "three films by",
 ]
 
 # Prefixes that appear WITHOUT a colon — strip them directly
@@ -182,6 +196,9 @@ STRIP_PREFIXES_NO_COLON = [
     r"(?i)^sing-a-long-a\s+",
     r"(?i)^solve along a\s+",
     r"(?i)^funeral parade presents\s+",
+    r"(?i)^opening\s+night\s+",
+    r"(?i)^closing\s+night\s+",
+    r"(?i)^(?:LONDON|UK|WORLD|EUROPEAN)\s+PREMIERE\s+",
 ]
 
 # Titles matching these patterns are NOT films → skip entirely
