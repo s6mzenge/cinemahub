@@ -159,6 +159,33 @@ def extract_genre(soup: BeautifulSoup) -> str:
     return "Other"
 
 
+def extract_director(soup: BeautifulSoup) -> str | None:
+    """Extract director name(s) from the cast & crew section."""
+    # Look for the schema.org itemprop="director" markup first
+    director_el = soup.find(attrs={"itemprop": "director"})
+    if director_el:
+        name_el = director_el.find(attrs={"itemprop": "name"})
+        if name_el:
+            return name_el.get_text(strip=True)
+        name = director_el.get_text(strip=True)
+        if name:
+            return name
+
+    # Fallback: look for the "Director" label in cast-crew section
+    label = soup.find("div", class_="cast-crew-title", string=re.compile(r"Director", re.I))
+    if label:
+        names_div = label.find_next_sibling("div", class_="cast-crew-names")
+        if names_div:
+            name_spans = names_div.find_all(attrs={"itemprop": "name"})
+            if name_spans:
+                return name_spans[0].get_text(strip=True)
+            text = names_div.get_text(strip=True)
+            if text:
+                return text.split("\n")[0].strip()
+
+    return None
+
+
 def extract_runtime(soup: BeautifulSoup) -> int | None:
     rt_el = soup.find("b", string=re.compile(r"Running Time", re.I))
     if rt_el and rt_el.parent:
@@ -300,6 +327,7 @@ def parse_film_detail(soup: BeautifulSoup, film: dict) -> dict | None:
     rating = extract_rating(soup)
     genre = extract_genre(soup)
     runtime = extract_runtime(soup)
+    director = extract_director(soup)
     detail_title = extract_title(soup, film["id"], film["title"])
 
     showtimes = {}
@@ -340,7 +368,7 @@ def parse_film_detail(soup: BeautifulSoup, film: dict) -> dict | None:
     if not showtimes:
         log.warning(f"No showtimes found for: {detail_title}")
 
-    return {
+    result = {
         "id": film["id"],
         "title": detail_title,
         "rating": rating,
@@ -350,6 +378,9 @@ def parse_film_detail(soup: BeautifulSoup, film: dict) -> dict | None:
         "poster_url": film["poster_url"],
         "showtimes": showtimes,
     }
+    if director:
+        result["director"] = director
+    return result
 
 
 async def scrape_film_detail(
