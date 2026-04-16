@@ -110,6 +110,7 @@ _RAW_YEAR_SLUG_OVERRIDES = {
     ("sirat", 2025): "sirat-2025",
     ("sirat", 2026): "sirat-2025",
     ("small axe lovers rock", 2020): "lovers-rock-2020",
+    ("super 8½", 1994): "super-8-1994",
 }
 
 # (title, source_year) → expected Letterboxd year — for when the source
@@ -309,7 +310,7 @@ def normalize_match_key(title: str | None) -> str:
 
 
 def normalize_director_name(name: str) -> str:
-    """Normalize a director name for fuzzy comparison."""
+    """Normalize a single director name for fuzzy comparison."""
     if not name:
         return ""
     t = unicodedata.normalize("NFKD", name)
@@ -319,11 +320,6 @@ def normalize_director_name(name: str) -> str:
     t = t.replace("ø", "o").replace("Ø", "O")
     t = t.replace("đ", "d").replace("Đ", "D")
     t = t.lower().strip()
-    # Strip common multi-director separators to get first director
-    for sep in ["|", " • ", " · ", " & ", " and ", ", "]:
-        if sep in t:
-            t = t.split(sep)[0].strip()
-            break
     # Strip apostrophe-like chars WITHOUT creating word boundaries
     # ("Shin'ichirô" → "shinichiro", not "shin ichiro")
     t = re.sub(r"[''\u2018\u2019\u0060\u00B4]", "", t)
@@ -332,6 +328,77 @@ def normalize_director_name(name: str) -> str:
     t = re.sub(r"[^a-z ]+", " ", t)
     t = re.sub(r"\s+", " ", t).strip()
     return t
+
+
+def _split_director_field(raw: str) -> list[str]:
+    """Split a raw director field into individual director names."""
+    for sep in ["|", " • ", " · "]:
+        if sep in raw:
+            return [s.strip() for s in raw.split(sep) if s.strip()]
+    return [raw.strip()] if raw.strip() else []
+
+
+def _names_fuzzy_match(src_norm: str, page_norm: str) -> bool:
+    """Check if two normalized director names refer to the same person."""
+    if not src_norm or not page_norm:
+        return False
+
+    # Exact match
+    if src_norm == page_norm:
+        return True
+
+    src_words = src_norm.split()
+    page_words = page_norm.split()
+    src_set = set(src_words)
+    page_set = set(page_words)
+
+    # Suffix match: "Sofía Petersen" ⊂ "Olivia Sofía Petersen"
+    if src_norm.endswith(page_norm) or page_norm.endswith(src_norm):
+        return True
+
+    # Word-set match: "chan wook park" vs "park chan wook"
+    if len(src_set) >= 2 and len(page_set) >= 2 and src_set == page_set:
+        return True
+
+    # Overlapping full words covering the shorter name entirely
+    overlap = src_set & page_set
+    if len(overlap) >= 2 and len(overlap) >= min(len(src_set), len(page_set)):
+        return True
+
+    # Initial matching: "r" matches "ribeiro", single-letter words are initials
+    # Expand initials to check if they match the first letter of the other name's words
+    def expand_initials(words_a, words_b):
+        """Check if all words in a match words in b, treating single-char words as initials."""
+        for wa in words_a:
+            matched = False
+            for wb in words_b:
+                if wa == wb:
+                    matched = True
+                    break
+                if len(wa) == 1 and wb.startswith(wa):
+                    matched = True
+                    break
+                if len(wb) == 1 and wa.startswith(wb):
+                    matched = True
+                    break
+            if not matched:
+                return False
+        return True
+
+    if len(src_words) >= 2 and len(page_words) >= 2:
+        if expand_initials(src_words, page_words) or expand_initials(page_words, src_words):
+            return True
+
+    # Nickname/variant matching: shared last name + first names share prefix ≥4 chars
+    # Catches "Charles Chaplin" vs "Charlie Chaplin"
+    if len(src_words) >= 2 and len(page_words) >= 2 and src_words[-1] == page_words[-1]:
+        src_first = src_words[0]
+        page_first = page_words[0]
+        prefix_len = min(len(src_first), len(page_first), 4)
+        if prefix_len >= 4 and src_first[:prefix_len] == page_first[:prefix_len]:
+            return True
+
+    return False
 
 
 def directors_match(source_director: str | None, page_directors: list[str]) -> bool | None:
@@ -347,37 +414,29 @@ def directors_match(source_director: str | None, page_directors: list[str]) -> b
     if not page_directors:
         return None
 
-    source_norm = normalize_director_name(source_director)
-    if not source_norm:
+    # Split source into individual directors (handles "Ethan Coen|Joel Coen")
+    source_names = _split_director_field(source_director)
+    source_norms = [normalize_director_name(n) for n in source_names]
+    source_norms = [n for n in source_norms if n]
+    if not source_norms:
         return None
 
-    source_words = set(source_norm.split())
+    # Deduplicate page directors
+    page_norms = []
+    seen = set()
+    for pd in page_directors:
+        pn = normalize_director_name(pd)
+        if pn and pn not in seen:
+            page_norms.append(pn)
+            seen.add(pn)
+    if not page_norms:
+        return None
 
-    for page_dir in page_directors:
-        page_norm = normalize_director_name(page_dir)
-        if not page_norm:
-            continue
-
-        page_words = set(page_norm.split())
-
-        # Exact full-name match
-        if source_norm == page_norm:
-            return True
-
-        # Suffix match: "Sofía Petersen" is a suffix of "Olivia Sofía Petersen"
-        if source_norm.endswith(page_norm) or page_norm.endswith(source_norm):
-            return True
-
-        # Word-set match: handles East Asian name order differences
-        # "chan wook park" vs "park chan wook" — same words, different order
-        if len(source_words) >= 2 and len(page_words) >= 2 and source_words == page_words:
-            return True
-
-        # Overlapping words: if at least 2 words match and cover the shorter
-        # name entirely (handles partial differences)
-        overlap = source_words & page_words
-        if len(overlap) >= 2 and len(overlap) >= min(len(source_words), len(page_words)):
-            return True
+    # Check if ANY source director matches ANY page director
+    for src_norm in source_norms:
+        for page_norm in page_norms:
+            if _names_fuzzy_match(src_norm, page_norm):
+                return True
 
     return False
 
