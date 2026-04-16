@@ -24,17 +24,22 @@ jobs:
         run: playwright install chromium --with-deps
       - name: Run Peckhamplex scraper
         run: python scraper/scrape.py
+        continue-on-error: true
       - name: Run Prince Charles Cinema scraper
         run: python scraper/scrape_prince_charles.py
+        continue-on-error: true
       - name: Run Castle Cinema scraper
         run: python scraper/scrape_castle.py
+        continue-on-error: true
       - name: Run The Arzner scraper
         run: python scraper/scrape_arzner.py
+        continue-on-error: true
       - name: Run BFI Southbank scraper
         run: python scraper/scrape_bfi.py
-        continue-on-error: true  # BFI has aggressive Cloudflare; don't block other cinemas
+        continue-on-error: true
       - name: Run Electric Cinema scraper
         run: python scraper/scrape_electric.py
+        continue-on-error: true
       - name: Enrich with Letterboxd ratings
         run: python scraper/enrich_letterboxd.py -d ./public/data
       - name: Check for changes
