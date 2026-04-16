@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-16T20:04:02.221201+00:00",
+  "scraped_at": "2026-04-16T20:16:09.471123+00:00",
   "source": "electriccinema.co.uk (Portobello)",
   "films": [
     {
@@ -142,7 +142,8 @@
             "time": "18:00",
             "screen": "1",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50291"
+            "booking_url": null,
+            "sold_out": true
           },
           {
             "time": "21:00",
@@ -395,7 +396,9 @@
         ]
       },
       "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
+      "letterboxd_rating": null
     }
   ]
 }

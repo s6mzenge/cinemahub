@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-16T20:04:02.222517+00:00",
+  "scraped_at": "2026-04-16T20:16:09.472481+00:00",
   "source": "electriccinema.co.uk (White City)",
   "films": [
     {
@@ -132,7 +132,7 @@
             "time": "20:45",
             "screen": "1",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/49174"
+            "booking_url": null
           }
         ],
         "2026-04-17": [
@@ -289,7 +289,8 @@
             "time": "17:15",
             "screen": "1",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/43843"
+            "booking_url": null,
+            "sold_out": true
           },
           {
             "time": "20:30",
@@ -300,7 +301,9 @@
         ]
       },
       "color": "#00897b",
-      "accent": "#4db6ac"
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
+      "letterboxd_rating": null
     },
     {
       "id": "project-hail-mary",
