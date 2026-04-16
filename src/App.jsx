@@ -17,7 +17,7 @@ const CINEMAS = [
   { id:"bfi-southbank", name:"BFI Southbank", short:"BFI", barColor:"#378add", address:"Belvedere Rd, SE1", url:"https://whatson.bfi.org.uk", price:null, dataFile:"films_bfi.json", source:"whatson.bfi.org.uk", adsMin:20 },
   { id:"electric-portobello", name:"Electric Portobello", short:"ELP", barColor:"#d4537e", address:"191 Portobello Rd, W11", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_portobello.json", source:"electriccinema.co.uk", adsMin:20 },
   { id:"electric-white-city", name:"Electric White City", short:"EWC", barColor:"#639922", address:"101 Wood Lane, W12", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_white_city.json", source:"electriccinema.co.uk", adsMin:20 },
-  { id:"close-up", name:"Close-Up", short:"CLU", barColor:"#c17817", address:"97 Sclater St, E1", url:"https://www.closeupfilmcentre.com", price:null, dataFile:"films_closeup.json", source:"closeupfilmcentre.com", adsMin:20 },
+  { id:"close-up", name:"Close-Up", short:"CLU", barColor:"#c17817", address:"97 Sclater St, E1", url:"https://www.closeupfilmcentre.com", price:null, dataFile:"films_closeup.json", source:"closeupfilmcentre.com", adsMin:0 },
   { id:"ica", name:"ICA", short:"ICA", barColor:"#1a1aff", address:"The Mall, SW1Y", url:"https://www.ica.art", price:null, dataFile:"films_ica.json", source:"ica.art", adsMin:0 },
 ];
 const CINEMA_MAP = Object.fromEntries(CINEMAS.map(c => [c.id, c]));
@@ -1055,7 +1055,7 @@ export default function App() {
                                           </div>
                                           <div style={{ width:6, flexShrink:0, background:`radial-gradient(circle 2px at center,${T.bg} 1.5px,${bc}55 2px) center top / 4px 6px repeat-y` }} />
                                           </>}
-                                          <div style={{ flex:1, background:`linear-gradient(135deg,${bc}bb 0%,${bc}88 100%)`, padding:"2px 10px 2px 8px", display:"flex", alignItems:"center", gap:4, minWidth:0, borderRadius:sess.adsMin>0?"0 4px 4px 0":"4px", overflow:"hidden" }}>
+                                          <div style={{ flex:1, background:`linear-gradient(135deg,${bc}bb 0%,${bc}88 100%)`, padding:sess.adsMin>0?"2px 10px 2px 8px":"2px 10px 2px 20px", display:"flex", alignItems:"center", gap:4, minWidth:0, borderRadius:sess.adsMin>0?"0 4px 4px 0":"4px", overflow:"hidden" }}>
                                             <div style={{ flex:1, minWidth:0 }}>
                                               <div style={{ fontSize:9.5, fontWeight:700, color:T.barText, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", textShadow:"0 1px 3px rgba(0,0,0,0.5)", fontFamily:T.mono }}>
                                                 {sess.time} – ~{minToTime(sess.filmEnd)}{sess.isHoh?"  CC":""}
@@ -1118,7 +1118,7 @@ export default function App() {
                                   </div>
                                   <div style={{ width:8, flexShrink:0, position:"relative", zIndex:3, background:`radial-gradient(circle 2.5px at center,${T.bg} 2px,${film.color}55 2.5px) center top / 5px 8px repeat-y` }} />
                                   </>}
-                                  <div style={{ flex:1, background:`linear-gradient(135deg,${film.color}bb 0%,${film.color}88 100%)`, padding:"4px 10px", display:"flex", alignItems:"center", gap:6, minWidth:0, borderRadius:sess.adsMin>0?"0 5px 5px 0":"5px", overflow:"hidden" }}>
+                                  <div style={{ flex:1, background:`linear-gradient(135deg,${film.color}bb 0%,${film.color}88 100%)`, padding:sess.adsMin>0?"4px 10px":"4px 10px 4px 20px", display:"flex", alignItems:"center", gap:6, minWidth:0, borderRadius:sess.adsMin>0?"0 5px 5px 0":"5px", overflow:"hidden" }}>
                                     <div style={{ flex:1, minWidth:0 }}>
                                       <div style={{ fontSize:10.5, fontWeight:700, color:T.barText, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", textShadow:"0 1px 4px rgba(0,0,0,0.5)", fontFamily:T.mono }}>
                                         {sess.time} – ~{minToTime(sess.filmEnd)}{sess.isHoh?"  CC":""}{sess.tags?.length?`  ${sess.tags.join(" · ")}`:""}
