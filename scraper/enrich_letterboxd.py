@@ -96,6 +96,9 @@ _RAW_SLUG_OVERRIDES = {
     "departures": "departures-2025",
     "love me tender": "love-me-tender-2025",
     "michael": "michael-2026",
+    # ── Special characters that break slugify_title ──
+    "8½": "8-half",                   # ½ is not a-z0-9, gets stripped → "8"
+    "8 1/2": "8-half",               # alternate rendering
 }
 
 # (title, source_year) → forced slug — for cases where the default
@@ -139,6 +142,7 @@ TITLE_EQUIVALENCE_GROUPS = [
     ("the lodger", "the lodger a story of the london fog"),
     ("timecode live", "timecode"),
     ("twin peaks pilot northwest passage", "twin peaks"),
+    ("8½", "8 1/2", "eight and a half"),
 ]
 
 
@@ -232,12 +236,16 @@ SKIP_PATTERNS = [
     r"(?i)\bcomedy shorts\b",                # "Lesbian Visibility: Comedy Shorts"
     r"(?i)\banimated shorts\b",              # "Lesbian Visibility: Animated Shorts"
     r"(?i)^solve along a\b",
+    # Close-Up Film Centre compiled programmes
+    r"(?i)^combined programme\b",
+    r"(?i)\bseeing through film\b",
+    r"(?i)^analogue in depth\b",
 ]
 
 # Pre-compiled regex for stripping " + Q&A", " + Intro …" etc.
 TRAILING_PLUS_SUFFIX_RE = re.compile(
     r"\s*\+\s*("
-    r"Q\s*&\s*A"
+    r"Q\s*&\s*A\b.*"
     r"|intro\b.*"
     r"|director\b.*"
     r"|special\b.*"
