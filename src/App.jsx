@@ -1,6 +1,6 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 
-const ADS_MIN = 20;
+const DEFAULT_ADS_MIN = 20;
 const DATA_BASE = import.meta.env.BASE_URL + "data/";
 
 const DAYS = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
@@ -10,17 +10,18 @@ const rBg = { U:"#2e7d32", PG:"#b8960f", "12A":"#c45a00", "12":"#c45a00", "15":"
 
 /* ─── Cinema registry (extend this later) ─── */
 const CINEMAS = [
-  { id:"peckhamplex", name:"Peckhamplex", short:"PKX", barColor:"#b8860b", address:"95a Rye Lane, Peckham", url:"https://www.peckhamplex.london", price:"£7.59", dataFile:"films.json", source:"peckhamplex.london" },
-  { id:"prince-charles", name:"Prince Charles", short:"PCC", barColor:"#7b68ee", address:"7 Leicester Place, WC2", url:"https://princecharlescinema.com", price:null, dataFile:"films_pcc.json", source:"princecharlescinema.com" },
-  { id:"castle-hackney", name:"The Castle", short:"CST", barColor:"#e06050", address:"64-66 Brooksby's Walk, E9", url:"https://thecastlecinema.com", price:null, dataFile:"films_castle.json", source:"thecastlecinema.com" },
-  { id:"the-arzner", name:"The Arzner", short:"ARZ", barColor:"#2aa67e", address:"10 Bermondsey Square, SE1", url:"https://thearzner.com", price:null, dataFile:"films_arzner.json", source:"thearzner.com" },
-  { id:"bfi-southbank", name:"BFI Southbank", short:"BFI", barColor:"#378add", address:"Belvedere Rd, SE1 8XT", url:"https://whatson.bfi.org.uk", price:null, dataFile:"films_bfi.json", source:"whatson.bfi.org.uk" },
-  { id:"electric-portobello", name:"Electric Portobello", short:"ELP", barColor:"#d4537e", address:"191 Portobello Rd, W11", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_portobello.json", source:"electriccinema.co.uk" },
-  { id:"electric-white-city", name:"Electric White City", short:"EWC", barColor:"#639922", address:"101 Wood Lane, W12", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_white_city.json", source:"electriccinema.co.uk" },
-  { id:"close-up", name:"Close-Up", short:"CLU", barColor:"#c17817", address:"97 Sclater St, E1", url:"https://www.closeupfilmcentre.com", price:null, dataFile:"films_closeup.json", source:"closeupfilmcentre.com" },
-  { id:"ica", name:"ICA", short:"ICA", barColor:"#1a1aff", address:"The Mall, SW1Y 5AH", url:"https://www.ica.art", price:null, dataFile:"films_ica.json", source:"ica.art" },
+  { id:"peckhamplex", name:"Peckhamplex", short:"PKX", barColor:"#b8860b", address:"95a Rye Lane, SE15", url:"https://www.peckhamplex.london", price:"£7.59", dataFile:"films.json", source:"peckhamplex.london", adsMin:20 },
+  { id:"prince-charles", name:"Prince Charles", short:"PCC", barColor:"#7b68ee", address:"7 Leicester Place, WC2", url:"https://princecharlescinema.com", price:null, dataFile:"films_pcc.json", source:"princecharlescinema.com", adsMin:20 },
+  { id:"castle-hackney", name:"The Castle", short:"CST", barColor:"#e06050", address:"64-66 Brooksby's Walk, E9", url:"https://thecastlecinema.com", price:null, dataFile:"films_castle.json", source:"thecastlecinema.com", adsMin:20 },
+  { id:"the-arzner", name:"The Arzner", short:"ARZ", barColor:"#2aa67e", address:"10 Bermondsey Square, SE1", url:"https://thearzner.com", price:null, dataFile:"films_arzner.json", source:"thearzner.com", adsMin:20 },
+  { id:"bfi-southbank", name:"BFI Southbank", short:"BFI", barColor:"#378add", address:"Belvedere Rd, SE1", url:"https://whatson.bfi.org.uk", price:null, dataFile:"films_bfi.json", source:"whatson.bfi.org.uk", adsMin:20 },
+  { id:"electric-portobello", name:"Electric Portobello", short:"ELP", barColor:"#d4537e", address:"191 Portobello Rd, W11", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_portobello.json", source:"electriccinema.co.uk", adsMin:20 },
+  { id:"electric-white-city", name:"Electric White City", short:"EWC", barColor:"#639922", address:"101 Wood Lane, W12", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_white_city.json", source:"electriccinema.co.uk", adsMin:20 },
+  { id:"close-up", name:"Close-Up", short:"CLU", barColor:"#c17817", address:"97 Sclater St, E1", url:"https://www.closeupfilmcentre.com", price:null, dataFile:"films_closeup.json", source:"closeupfilmcentre.com", adsMin:20 },
+  { id:"ica", name:"ICA", short:"ICA", barColor:"#1a1aff", address:"The Mall, SW1Y", url:"https://www.ica.art", price:null, dataFile:"films_ica.json", source:"ica.art", adsMin:0 },
 ];
 const CINEMA_MAP = Object.fromEntries(CINEMAS.map(c => [c.id, c]));
+function getAdsMin(cinemaId) { return CINEMA_MAP[cinemaId]?.adsMin ?? DEFAULT_ADS_MIN; }
 
 function timeToMin(t){ const [h,m]=t.split(":").map(Number); return h*60+m; }
 function minToTime(m){ const h=Math.floor(m/60)%24; return `${h}:${String(m%60).padStart(2,"0")}`; }
@@ -31,6 +32,40 @@ function getAllDatesWithScreenings(films) {
   const s = new Set();
   films.forEach(f => { if (f.showtimes) Object.keys(f.showtimes).forEach(d => s.add(d)); });
   return [...s].sort();
+}
+
+/* Pick best initial date: skip today if all screenings have ended */
+function pickInitialDate(allDates, films, todayStr, isAllCinemas, cinemaId) {
+  if (!allDates.length) return todayStr;
+  if (!allDates.includes(todayStr)) {
+    return allDates.find(d => d >= todayStr) || allDates[0];
+  }
+  const nowMin = getNowMin();
+  let hasActive = false;
+  for (const f of films) {
+    if (hasActive) break;
+    if (isAllCinemas && f.perCinema) {
+      for (const [cId, pc] of Object.entries(f.perCinema)) {
+        const times = pc.showtimes?.[todayStr];
+        if (!times) continue;
+        const ads = getAdsMin(cId);
+        for (const t of times) {
+          if (timeToMin(t) + ads + (f.runtime || 0) > nowMin) { hasActive = true; break; }
+        }
+        if (hasActive) break;
+      }
+    } else {
+      const times = f.showtimes?.[todayStr];
+      if (!times) continue;
+      const ads = cinemaId ? getAdsMin(cinemaId) : DEFAULT_ADS_MIN;
+      for (const t of times) {
+        if (timeToMin(t) + ads + (f.runtime || 0) > nowMin) { hasActive = true; break; }
+      }
+    }
+  }
+  if (hasActive) return todayStr;
+  const nextDate = allDates.find(d => d > todayStr);
+  return nextDate || todayStr;
 }
 
 function formatDayTab(dateStr) {
@@ -343,8 +378,7 @@ export default function App() {
         setScrapedAt(latestScraped || null);
         const allDates = getAllDatesWithScreenings(merged);
         const todayStr = getToday();
-        if (allDates.length > 0 && !allDates.includes(todayStr)) { const future = allDates.find(d => d >= todayStr); setSelDate(future || allDates[0]); }
-        else if (allDates.includes(todayStr)) { setSelDate(todayStr); }
+        setSelDate(pickInitialDate(allDates, merged, todayStr, true, null));
         setSelWeekStart(null);
         setLoading(false);
       });
@@ -357,8 +391,7 @@ export default function App() {
           setFilms(normalized); setScrapedAt(data.scraped_at || null);
           const allDates = getAllDatesWithScreenings(normalized);
           const todayStr = getToday();
-          if (allDates.length > 0 && !allDates.includes(todayStr)) { const future = allDates.find(d => d >= todayStr); setSelDate(future || allDates[0]); }
-          else if (allDates.includes(todayStr)) { setSelDate(todayStr); }
+          setSelDate(pickInitialDate(allDates, normalized, todayStr, false, c.id));
           setSelWeekStart(null);
           setLoading(false);
         })
@@ -399,10 +432,11 @@ export default function App() {
 
   const dayFilms = useMemo(() => {
     if (!isAllCinemas) {
+      const cAds = cinema?.adsMin ?? DEFAULT_ADS_MIN;
       return films.filter(f => f.showtimes[selDate]).map(f => ({
         ...f, times:f.showtimes[selDate],
         sessions: f.showtimes[selDate].map(t => ({
-          time:t, startMin:timeToMin(t), adsEnd:timeToMin(t)+ADS_MIN, filmEnd:timeToMin(t)+ADS_MIN+f.runtime,
+          time:t, startMin:timeToMin(t), adsEnd:timeToMin(t)+cAds, filmEnd:timeToMin(t)+cAds+f.runtime, adsMin:cAds,
           isHoh:f.hoh?.[selDate]?.includes(t), bookingUrl:f.bookingUrls?.[selDate]?.[t]||null, screen:f.screens?.[selDate]?.[t]||null,
           tags:f.tags?.[selDate]?.[t]||[],
         })),
@@ -417,8 +451,9 @@ export default function App() {
         const times = pc.showtimes[selDate];
         if (!times || !times.length) continue;
         const cin = CINEMA_MAP[cId];
+        const cAds = cin?.adsMin ?? DEFAULT_ADS_MIN;
         const sessions = times.map(t => ({
-          time:t, startMin:timeToMin(t), adsEnd:timeToMin(t)+ADS_MIN, filmEnd:timeToMin(t)+ADS_MIN+f.runtime,
+          time:t, startMin:timeToMin(t), adsEnd:timeToMin(t)+cAds, filmEnd:timeToMin(t)+cAds+f.runtime, adsMin:cAds,
           isHoh:pc.hoh?.[selDate]?.includes(t), bookingUrl:pc.bookingUrls?.[selDate]?.[t]||null, screen:pc.screens?.[selDate]?.[t]||null,
           tags:pc.tags?.[selDate]?.[t]||[], cinemaId:cId,
         }));
@@ -461,9 +496,11 @@ export default function App() {
             const times = pc.showtimes[date];
             if (!times) continue;
             const cin = CINEMA_MAP[cId];
+            const cAds = cin?.adsMin ?? DEFAULT_ADS_MIN;
             times.forEach(t => {
               const startMin = timeToMin(t);
-              if (date === today && startMin + ADS_MIN < nowMin) return;
+              const filmEnd = startMin + cAds + (film.runtime || 0);
+              if (date === today && filmEnd < nowMin) return;
               items.push({
                 film: film.title, filmUrl: film.film_url || null, time: t, date,
                 dateLabel: date === today ? "Today" : `${dayInfo.day} ${dayInfo.num}`,
@@ -476,9 +513,11 @@ export default function App() {
         } else {
           const times = film.showtimes[date];
           if (!times) return;
+          const cAds = cinema?.adsMin ?? DEFAULT_ADS_MIN;
           times.forEach(t => {
             const startMin = timeToMin(t);
-            if (date === today && startMin + ADS_MIN < nowMin) return;
+            const filmEnd = startMin + cAds + (film.runtime || 0);
+            if (date === today && filmEnd < nowMin) return;
             items.push({
               film: film.title, filmUrl: film.film_url || null, time: t, date,
               dateLabel: date === today ? "Today" : `${dayInfo.day} ${dayInfo.num}`,
@@ -884,7 +923,7 @@ export default function App() {
                   return (
                     <div style={{ display:"flex", flexDirection:"column", gap:0, paddingTop:6 }}>
                       {groups.map((group,gi) => {
-                        const isPast = nowMin!==null && group.startMin+ADS_MIN<nowMin;
+                        const isPast = nowMin!==null && group.sessions.every(s => s.filmEnd<nowMin);
                         return (
                           <div key={group.time+gi} style={{ opacity:isPast?0.35:1, transition:"opacity 0.3s" }}>
                             {group.sessions.map((sess,si) => {
@@ -1010,11 +1049,13 @@ export default function App() {
                                           style={{ position:"absolute", left:`${barLeft}%`, width:`${totalWidth}%`, top:"50%", height:isHov?38:28, transform:"translateY(-50%)", display:"flex", borderRadius:4, overflow:"hidden", zIndex:isHov?10:2, transition:"height 0.2s cubic-bezier(0.4,0,0.2,1),box-shadow 0.2s cubic-bezier(0.4,0,0.2,1)",
                                             boxShadow: isHov ? `0 6px 24px ${bc}44,0 0 0 1px ${bc}55` : isDark ? `0 1px 4px rgba(0,0,0,0.3)` : `0 1px 3px rgba(0,0,0,0.08)`,
                                           }}>
+                                          {sess.adsMin > 0 && <>
                                           <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${bc}30,${bc}30 3px,${bc}18 3px,${bc}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"4px 0 0 4px", overflow:"hidden", paddingLeft:7 }}>
                                             {(adsWidth/totalWidth)>=0.07 && <span style={{ fontSize:6, fontWeight:700, color:`${bc}`, letterSpacing:1, textTransform:"uppercase", opacity:0.5, fontFamily:T.mono }}>ADS</span>}
                                           </div>
                                           <div style={{ width:6, flexShrink:0, background:`radial-gradient(circle 2px at center,${T.bg} 1.5px,${bc}55 2px) center top / 4px 6px repeat-y` }} />
-                                          <div style={{ flex:1, background:`linear-gradient(135deg,${bc}bb 0%,${bc}88 100%)`, padding:"2px 10px 2px 8px", display:"flex", alignItems:"center", gap:4, minWidth:0, borderRadius:"0 4px 4px 0", overflow:"hidden" }}>
+                                          </>}
+                                          <div style={{ flex:1, background:`linear-gradient(135deg,${bc}bb 0%,${bc}88 100%)`, padding:"2px 10px 2px 8px", display:"flex", alignItems:"center", gap:4, minWidth:0, borderRadius:sess.adsMin>0?"0 4px 4px 0":"4px", overflow:"hidden" }}>
                                             <div style={{ flex:1, minWidth:0 }}>
                                               <div style={{ fontSize:9.5, fontWeight:700, color:T.barText, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", textShadow:"0 1px 3px rgba(0,0,0,0.5)", fontFamily:T.mono }}>
                                                 {sess.time} – ~{minToTime(sess.filmEnd)}{sess.isHoh?"  CC":""}
@@ -1071,16 +1112,18 @@ export default function App() {
                                   style={{ position:"absolute", left:`${barLeft}%`, width:`${totalWidth}%`, top:"50%", height:isHov?54:36, transform:"translateY(-50%)", display:"flex", borderRadius:5, overflow:"hidden", zIndex:isHov?10:2, transition:"height 0.2s cubic-bezier(0.4,0,0.2,1),box-shadow 0.2s cubic-bezier(0.4,0,0.2,1)",
                                     boxShadow: isHov ? `0 8px 32px ${film.color}44,0 0 0 1px ${film.color}55,inset 0 1px 0 rgba(255,255,255,0.06)` : isDark ? `0 1px 6px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.03)` : `0 1px 4px rgba(0,0,0,0.08),inset 0 1px 0 rgba(255,255,255,0.5)`,
                                   }}>
+                                  {sess.adsMin > 0 && <>
                                   <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${film.color}30,${film.color}30 3px,${film.color}18 3px,${film.color}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"5px 0 0 5px", overflow:"hidden", paddingLeft:7 }}>
                                     {(adsWidth/totalWidth)>=0.07 && <span style={{ fontSize:7, fontWeight:700, color:film.accent, letterSpacing:1, textTransform:"uppercase", opacity:0.6, fontFamily:T.mono }}>ADS</span>}
                                   </div>
                                   <div style={{ width:8, flexShrink:0, position:"relative", zIndex:3, background:`radial-gradient(circle 2.5px at center,${T.bg} 2px,${film.color}55 2.5px) center top / 5px 8px repeat-y` }} />
-                                  <div style={{ flex:1, background:`linear-gradient(135deg,${film.color}bb 0%,${film.color}88 100%)`, padding:"4px 10px", display:"flex", alignItems:"center", gap:6, minWidth:0, borderRadius:"0 5px 5px 0", overflow:"hidden" }}>
+                                  </>}
+                                  <div style={{ flex:1, background:`linear-gradient(135deg,${film.color}bb 0%,${film.color}88 100%)`, padding:"4px 10px", display:"flex", alignItems:"center", gap:6, minWidth:0, borderRadius:sess.adsMin>0?"0 5px 5px 0":"5px", overflow:"hidden" }}>
                                     <div style={{ flex:1, minWidth:0 }}>
                                       <div style={{ fontSize:10.5, fontWeight:700, color:T.barText, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", textShadow:"0 1px 4px rgba(0,0,0,0.5)", fontFamily:T.mono }}>
                                         {sess.time} – ~{minToTime(sess.filmEnd)}{sess.isHoh?"  CC":""}{sess.tags?.length?`  ${sess.tags.join(" · ")}`:""}
                                       </div>
-                                      {isHov && <div style={{ fontSize:9, color:T.barSubText, marginTop:3, fontFamily:T.mono }}>{film.runtime}min + ~{ADS_MIN}min ads{sess.screen?` · ${sess.screen}`:""}</div>}
+                                      {isHov && <div style={{ fontSize:9, color:T.barSubText, marginTop:3, fontFamily:T.mono }}>{film.runtime}min{sess.adsMin>0?` + ~${sess.adsMin}min ads`:""}{sess.screen?` · ${sess.screen}`:""}</div>}
                                     </div>
                                     {sess.bookingUrl && (
                                       <a href={sess.bookingUrl} target="_blank" rel="noopener" onClick={e=>e.stopPropagation()} className="book-btn" title="Book tickets" style={{ display:"flex", alignItems:"center", justifyContent:"center", padding:"4px 8px", borderRadius:4, background:T.barBookBg, border:`1px solid ${T.barBookBorder}`, textDecoration:"none", flexShrink:0, cursor:"pointer", transition:"background 0.2s" }}>
@@ -1220,7 +1263,7 @@ export default function App() {
               <div style={{ display:"flex", gap:18, flexWrap:"wrap", fontSize:10, color:T.textDim, fontFamily:T.mono }}>
                 <div style={{ display:"flex", alignItems:"center", gap:5 }}>
                   <div style={{ width:22, height:10, borderRadius:2, background:`repeating-linear-gradient(120deg,${T.accent}30,${T.accent}30 3px,${T.accent}18 3px,${T.accent}18 6px)` }} />
-                  <span>= ~{ADS_MIN}min ads/trailers</span>
+                  <span>= ~{DEFAULT_ADS_MIN}min ads/trailers</span>
                 </div>
                 <span>CC = Subtitled (Hard of Hearing)</span>
                 <span>Bar length = full session (ads + film)</span>
