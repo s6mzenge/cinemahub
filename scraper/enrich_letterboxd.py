@@ -371,6 +371,38 @@ def directors_match(source_director: str | None, page_directors: list[str]) -> b
     return False
 
 
+def validate_director(director: str | None) -> str | None:
+    """Return None if the director string looks garbled or implausible.
+
+    Some scrapers (notably Close-Up Film Centre) sometimes capture programme
+    descriptions, film titles, or other metadata as the director name.
+    """
+    if not director:
+        return None
+    d = director.strip()
+    if not d:
+        return None
+    # Too long to be a real director name
+    if len(d) > 60:
+        return None
+    # Contains patterns that indicate scraper confusion
+    garbled = [
+        r"\(by\s",              # "(by Kelly Gabron)"
+        r"^Programme:",         # "Programme: Cairo Streets Abdellah Taïa"
+        r"^Opening the",        # "Opening the 19th Century: 1896 Ken Jacobs"
+        r"^Lying Spirit",       # "Lying Spirit (by Kelly Gabron) Cauleen Smith"
+        r"^Pride:",             # "Pride: From Jericho to Gaza Sven Augustijnen"
+        r"^Combined\b",         # "Combined Programme..."
+        r"\bProgramme\b",       # any "Programme" reference
+        r":\s*\d{4}\s",         # "1896 Ken Jacobs" (year embedded)
+        r"\bChild Labor\b",     # "Capitalism: Child Labor Ken Jacobs"
+    ]
+    for pattern in garbled:
+        if re.search(pattern, d, re.I):
+            return None
+    return d
+
+
 def build_equivalence_map(groups: list[tuple[str, ...]]) -> dict[str, set[str]]:
     """Create a symmetric title-equivalence map from grouped aliases."""
     result: dict[str, set[str]] = {}
@@ -530,7 +562,12 @@ def should_skip(title: str) -> bool:
 
 def slugify_title(title: str) -> str:
     """Convert a film title into a Letterboxd-style slug."""
-    s = unicodedata.normalize("NFD", title)
+    s = title
+    # Handle vulgar fractions before normalization (NFD doesn't decompose these)
+    s = s.replace("½", " 1 2 ")
+    s = s.replace("¼", " 1 4 ")
+    s = s.replace("¾", " 3 4 ")
+    s = unicodedata.normalize("NFD", s)
     s = "".join(c for c in s if unicodedata.category(c) != "Mn")
     s = s.lower()
     # Strip ALL apostrophe-like characters (straight, curly left/right, backtick)
@@ -560,6 +597,14 @@ def generate_title_variants(title: str) -> list[str]:
     if "&" in title:
         add(title.replace("&", "and"))
         add(clean_title_for_lookup(title).replace("&", "and"))
+
+    # Try without leading article — Letterboxd sometimes omits "The"/"A"
+    # from the slug (e.g. "The Male Gaze: Heavenly Creatures" →
+    # /film/male-gaze-heavenly-creatures/)
+    for base in list(variants):
+        stripped = re.sub(r"^(?:The|A|An)\s+", "", base, flags=re.I)
+        if stripped != base:
+            add(stripped)
 
     return variants
 
@@ -841,6 +886,22 @@ def title_match_strength(source_title: str, page_title: str | None, final_slug: 
     if final_slug and final_slug in valid_source_slugs(source_title):
         return 2
 
+    # Slug-based fallback: compare slugified titles directly.
+    # This catches cases where normalize_match_key diverges due to
+    # unusual Unicode (e.g. different apostrophe codepoints between
+    # source and page), but the slugified versions still match.
+    source_slug = slugify_title(source_title)
+    page_slug = slugify_title(page_title)
+    if source_slug and page_slug and source_slug == page_slug:
+        return 2
+
+    # Also check if the page's final slug (minus any year suffix) matches
+    # a slug derived from the source title
+    if final_slug:
+        bare_slug = re.sub(r"-\d{4}$", "", final_slug)
+        if bare_slug in valid_source_slugs(source_title):
+            return 2
+
     return 0
 
 
@@ -890,13 +951,13 @@ def is_valid_page_match(
             return False, f"source year {source_year} resolved to {page_year}"
 
     # Obscure-entry heuristic: if the source has a director but the page has
-    # neither director metadata NOR a rating, it's very likely an obscure
-    # wrong-match entry (e.g. the Paul McCarthy "Rocky" art video at
-    # /film/rocky-1976/, or the Lluís Galter "Aftersun" short at
-    # /film/aftersun-2022/). Skip it and try the next candidate — the
-    # well-known film with actual metadata will be at another slug.
-    if source_director and not page_directors and page.get("rating") is None:
-        return False, "no page directors or rating (likely obscure wrong match)"
+    # neither director metadata NOR a rating, AND the candidate is year-suffixed
+    # (e.g. rocky-1976, aftersun-2022), it's very likely an obscure wrong-match
+    # entry. Only apply to year-suffixed candidates — bare slugs and overrides
+    # are usually the canonical entry and shouldn't be rejected this way.
+    if (source_director and not page_directors and page.get("rating") is None
+            and candidate.candidate_year is not None):
+        return False, "year-suffixed page with no directors or rating (likely obscure wrong match)"
 
     return True, "ok"
 
@@ -1016,7 +1077,7 @@ def collect_unique_titles(data_files: list[Path]) -> dict[str, dict]:
             entries[key].append({
                 "title": film["title"],
                 "year": extract_title_year_hint(film["title"]) or coerce_year(film.get("year")),
-                "director": film.get("director"),
+                "director": validate_director(film.get("director")),
             })
 
     result = {}
