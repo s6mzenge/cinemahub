@@ -944,9 +944,9 @@ export default function App() {
                 <div style={{ position:"relative" }}>
                   {isAllCinemas ? (
                     <div style={{ display:"flex", height:30, marginBottom:4, borderLeft:"3px solid transparent" }}>
-                      <div style={{ width:177, flexShrink:0, padding:"0 14px", borderRight:`1px solid transparent` }} />
+                      <div style={{ width:177, flexShrink:0, padding:"0 14px", borderRight:`1px solid transparent`, boxSizing:"border-box" }} />
                       <div style={{ flex:1, display:"flex" }}>
-                        <div style={{ width:60, flexShrink:0, padding:"0 2px" }} />
+                        <div style={{ width:60, flexShrink:0, padding:"0 2px", boxSizing:"border-box" }} />
                         <div style={{ flex:1, position:"relative" }}>
                           {hourMarks.map(m => <div key={m} style={{ position:"absolute", left:`${pct(m)}%`, transform:"translateX(-50%)", fontSize:10, fontFamily:T.mono, color:T.textDim, fontWeight:400, letterSpacing:0.5 }}>{minToTime(m)}</div>)}
                         </div>
@@ -954,7 +954,7 @@ export default function App() {
                     </div>
                   ) : (
                     <div style={{ display:"flex", height:30, marginBottom:4 }}>
-                      <div style={{ width:180, flexShrink:0, padding:"0 14px", borderRight:`1px solid transparent` }} />
+                      <div style={{ width:180, flexShrink:0, padding:"0 14px", borderRight:`1px solid transparent`, boxSizing:"border-box" }} />
                       <div style={{ flex:1, position:"relative" }}>
                         {hourMarks.map(m => <div key={m} style={{ position:"absolute", left:`${pct(m)}%`, transform:"translateX(-50%)", fontSize:10, fontFamily:T.mono, color:T.textDim, fontWeight:400, letterSpacing:0.5 }}>{minToTime(m)}</div>)}
                       </div>
@@ -969,7 +969,7 @@ export default function App() {
                         return (
                           <div key={film.title+fi} style={{ display:"flex", alignItems:"stretch", marginBottom:4, background:fi%2===0?T.rowEven:T.rowOdd, borderRadius:8, borderLeft:isMulti?`3px solid ${T.accent}`:"3px solid transparent" }}>
                             {/* Film label spanning all sub-rows */}
-                            <div style={{ width:177, flexShrink:0, padding:"10px 14px", display:"flex", flexDirection:"column", justifyContent:"center", borderRight:`1px solid ${T.border}` }}>
+                            <div style={{ width:177, flexShrink:0, padding:"10px 14px", display:"flex", flexDirection:"column", justifyContent:"center", borderRight:`1px solid ${T.border}`, boxSizing:"border-box" }}>
                               <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:3 }}>
                                 <div style={{ minWidth:0 }}>
                                   <div style={{ display:"flex", alignItems:"baseline", gap:5, minWidth:0 }}>
@@ -993,7 +993,7 @@ export default function App() {
                               {film.cinemaEntries.map((ce,ci) => (
                                 <div key={ce.cinemaId} style={{ display:"flex", alignItems:"stretch", flex:1, minHeight:42, borderTop:ci>0?`1px dashed ${T.border}`:"none", position:"relative", zIndex:1 }}>
                                   {/* Cinema label */}
-                                  <div style={{ width:60, flexShrink:0, padding:"4px 2px", display:"flex", alignItems:"center", justifyContent:"center" }}>
+                                  <div style={{ width:60, flexShrink:0, padding:"4px 2px", display:"flex", alignItems:"center", justifyContent:"center", boxSizing:"border-box" }}>
                                     {ce.filmUrl ? <a href={ce.filmUrl} target="_blank" rel="noopener" style={{ textDecoration:"none", display:"inline-flex" }}><span style={{ fontSize:8, fontWeight:700, color:ce.cinemaColor, fontFamily:T.mono, letterSpacing:0.3, padding:"2px 5px", borderRadius:3, background:`${ce.cinemaColor}18`, cursor:"pointer", whiteSpace:"nowrap", display:"inline-flex", alignItems:"center", gap:3 }}><span style={{ width:4, height:4, borderRadius:1.5, background:ce.cinemaColor, flexShrink:0 }} />{ce.cinemaShort}</span></a>
                                     : <span style={{ fontSize:8, fontWeight:600, color:T.textMuted, fontFamily:T.mono, letterSpacing:0.3, padding:"2px 5px", borderRadius:3, background:`${ce.cinemaColor}10`, whiteSpace:"nowrap", display:"inline-flex", alignItems:"center", gap:3 }}><span style={{ width:4, height:4, borderRadius:1.5, background:ce.cinemaColor, flexShrink:0 }} />{ce.cinemaShort}</span>}
                                   </div>
@@ -1040,7 +1040,7 @@ export default function App() {
                       const anyHov = film.sessions.some((_,si)=>hovBar===`${film.id}-${si}`);
                       return (
                         <div key={film.id} style={{ display:"flex", alignItems:"stretch", marginBottom:4, background:fi%2===0?T.rowEven:T.rowOdd, borderRadius:8, minHeight:anyHov?74:56, transition:"min-height 0.25s cubic-bezier(0.4,0,0.2,1)" }}>
-                          <div style={{ width:180, flexShrink:0, padding:"10px 14px", display:"flex", flexDirection:"column", justifyContent:"center", borderRight:`1px solid ${T.border}` }}>
+                          <div style={{ width:180, flexShrink:0, padding:"10px 14px", display:"flex", flexDirection:"column", justifyContent:"center", borderRight:`1px solid ${T.border}`, boxSizing:"border-box" }}>
                             <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:3 }}>
                               <div style={{ width:3, height:28, borderRadius:1.5, background:`linear-gradient(180deg,${film.color},${film.color}55)`, flexShrink:0 }} />
                               <div style={{ minWidth:0 }}>
