@@ -24,6 +24,7 @@ import logging
 import argparse
 import unicodedata
 from dataclasses import dataclass
+from datetime import datetime
 from html import unescape
 from pathlib import Path
 
@@ -36,6 +37,10 @@ CONCURRENCY = 5          # parallel Letterboxd requests
 DELAY_BETWEEN = 0.25     # seconds between starting each request
 MAX_RETRIES = 2
 YEAR_TOLERANCE = 2
+# When a source has no year AND no director, reject bare-slug matches to
+# films older than this many years — cinema listings without year metadata
+# are almost always current/recent releases, not deep-catalogue revivals.
+NO_YEAR_MAX_AGE = 3
 
 HEADERS = {
     "User-Agent": (
@@ -96,9 +101,6 @@ _RAW_SLUG_OVERRIDES = {
     "departures": "departures-2025",
     "love me tender": "love-me-tender-2025",
     "michael": "michael-2026",
-    # ── Special characters that break slugify_title ──
-    "8½": "8-half",                   # ½ is not a-z0-9, gets stripped → "8"
-    "8 1/2": "8-half",               # alternate rendering
 }
 
 # (title, source_year) → forced slug — for cases where the default
@@ -142,7 +144,6 @@ TITLE_EQUIVALENCE_GROUPS = [
     ("the lodger", "the lodger a story of the london fog"),
     ("timecode live", "timecode"),
     ("twin peaks pilot northwest passage", "twin peaks"),
-    ("8½", "8 1/2", "eight and a half"),
 ]
 
 
@@ -236,16 +237,12 @@ SKIP_PATTERNS = [
     r"(?i)\bcomedy shorts\b",                # "Lesbian Visibility: Comedy Shorts"
     r"(?i)\banimated shorts\b",              # "Lesbian Visibility: Animated Shorts"
     r"(?i)^solve along a\b",
-    # Close-Up Film Centre compiled programmes
-    r"(?i)^combined programme\b",
-    r"(?i)\bseeing through film\b",
-    r"(?i)^analogue in depth\b",
 ]
 
 # Pre-compiled regex for stripping " + Q&A", " + Intro …" etc.
 TRAILING_PLUS_SUFFIX_RE = re.compile(
     r"\s*\+\s*("
-    r"Q\s*&\s*A\b.*"
+    r"Q\s*&\s*A"
     r"|intro\b.*"
     r"|director\b.*"
     r"|special\b.*"
@@ -313,6 +310,69 @@ def normalize_match_key(title: str | None) -> str:
     t = re.sub(r"[^a-z0-9]+", " ", t)
     t = re.sub(r"\s+", " ", t).strip()
     return t
+
+
+def normalize_director_name(name: str) -> str:
+    """Normalize a director name for fuzzy comparison."""
+    if not name:
+        return ""
+    t = unicodedata.normalize("NFKD", name)
+    t = "".join(c for c in t if unicodedata.category(c) != "Mn")
+    t = t.lower().strip()
+    # Strip common multi-director separators to get first director
+    for sep in [" • ", " · ", " & ", " and ", ", "]:
+        if sep in t:
+            t = t.split(sep)[0].strip()
+            break
+    t = re.sub(r"[^a-z ]+", "", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
+
+
+def directors_match(source_director: str | None, page_directors: list[str]) -> bool | None:
+    """Check whether the source director matches any of the Letterboxd page directors.
+
+    Returns:
+        True  — at least one director matches
+        False — source has a director but none of the page directors match
+        None  — not enough info to decide (source has no director, or page has none)
+    """
+    if not source_director:
+        return None
+    if not page_directors:
+        return None
+
+    # Normalize the source director — may contain multiple names
+    source_names = set()
+    source_norm = normalize_director_name(source_director)
+    if source_norm:
+        source_names.add(source_norm)
+        # Also extract last name for looser matching
+        parts = source_norm.split()
+        if len(parts) >= 2:
+            source_names.add(parts[-1])
+
+    for page_dir in page_directors:
+        page_norm = normalize_director_name(page_dir)
+        if not page_norm:
+            continue
+        # Exact full-name match
+        if page_norm in source_names:
+            return True
+        # Last-name match (both ways)
+        page_parts = page_norm.split()
+        if len(page_parts) >= 2:
+            page_last = page_parts[-1]
+            if page_last in source_names:
+                # Also verify first name initial if possible
+                source_parts = source_norm.split()
+                if source_parts and page_parts[0][0] == source_parts[0][0]:
+                    return True
+            # Full source name matches page director
+            if source_norm == page_norm:
+                return True
+
+    return False
 
 
 def build_equivalence_map(groups: list[tuple[str, ...]]) -> dict[str, set[str]]:
@@ -404,6 +464,14 @@ def clean_title_for_lookup(title: str) -> str:
     plus_match = TRAILING_PLUS_SUFFIX_RE.search(t)
     if plus_match:
         t = t[:plus_match.start()].strip()
+
+    # Strip bullet-separated suffixes (e.g. "Audition • 4K Restoration UK Theatrical Premiere")
+    # Only strip if the part after the bullet looks like a non-title event/release descriptor
+    bullet_match = re.search(r"\s*[•·]\s+", t)
+    if bullet_match:
+        after = t[bullet_match.end():]
+        if re.search(r"(?i)(restoration|premiere|screening|re-?release|anniversary|4k|imax|hfr|special)", after):
+            t = t[:bullet_match.start()].strip()
 
     # Strip "with X live on stage" suffix
     t = re.sub(r"\s+with\s+\w[\w\s]*\blive on stage\b.*$", "", t, flags=re.I)
@@ -612,11 +680,40 @@ def extract_slug_from_url(url: str) -> str | None:
     return match.group(1) if match else None
 
 
+def extract_directors_from_soup(soup: BeautifulSoup) -> list[str]:
+    """Extract director names from the Letterboxd page's ld+json metadata."""
+    directors = []
+    for script in soup.find_all("script", type="application/ld+json"):
+        try:
+            payload = json.loads(script.string)
+        except (json.JSONDecodeError, TypeError, ValueError):
+            continue
+
+        items = payload if isinstance(payload, list) else [payload]
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+            raw = item.get("director")
+            if not raw:
+                continue
+            entries = raw if isinstance(raw, list) else [raw]
+            for entry in entries:
+                if isinstance(entry, dict):
+                    name = entry.get("name")
+                    if name:
+                        directors.append(str(name).strip())
+                elif isinstance(entry, str) and entry.strip():
+                    directors.append(entry.strip())
+
+    return directors
+
+
 def extract_page_metadata(html: str, final_url: str) -> dict:
     """Extract the metadata needed to validate and persist a Letterboxd page."""
     soup = BeautifulSoup(html, "html.parser")
     title, year = parse_page_title_and_year(soup)
     rating = extract_rating_from_soup(soup)
+    directors = extract_directors_from_soup(soup)
 
     clean_url = final_url.split("?")[0]
     if not clean_url.endswith("/"):
@@ -628,6 +725,7 @@ def extract_page_metadata(html: str, final_url: str) -> dict:
         "title": title,
         "year": year,
         "rating": round(rating, 2) if rating is not None else None,
+        "directors": directors,
     }
 
 
@@ -704,10 +802,22 @@ def build_slug_candidates(title: str, year: int | None) -> list[SlugCandidate]:
         if not slug:
             continue
         if year is not None:
+            # 1. Exact year (highest confidence)
             add(f"{slug}-{year}", f"{variant} [{year}]", year)
+            # 2. Title-only / bare slug (Letterboxd's canonical entry for the
+            #    most notable film with this title — preferred over year±1
+            #    to avoid matching a different film from an adjacent year)
+            add(slug, f"{variant} [title-only]")
+            # 3. Adjacent years (lowest confidence — different film risk)
             add(f"{slug}-{year - 1}", f"{variant} [{year - 1}]", year - 1)
             add(f"{slug}-{year + 1}", f"{variant} [{year + 1}]", year + 1)
-        add(slug, f"{variant} [title-only]")
+        else:
+            # No year available — try bare slug first, then recent years
+            # (cinema listings without year are almost always current releases)
+            add(slug, f"{variant} [title-only]")
+            current_year = datetime.now().year
+            add(f"{slug}-{current_year}", f"{variant} [{current_year} guess]", current_year)
+            add(f"{slug}-{current_year - 1}", f"{variant} [{current_year - 1} guess]", current_year - 1)
 
     return candidates
 
@@ -737,12 +847,14 @@ def title_match_strength(source_title: str, page_title: str | None, final_slug: 
 def is_valid_page_match(
     source_title: str,
     source_year: int | None,
+    source_director: str | None,
     page: dict,
     candidate: SlugCandidate,
 ) -> tuple[bool, str]:
     """Validate that a fetched Letterboxd page actually represents the source film."""
     page_title = page.get("title")
     page_year = coerce_year(page.get("year"))
+    page_directors = page.get("directors", [])
     final_slug = page.get("slug")
 
     strength = title_match_strength(source_title, page_title, final_slug)
@@ -750,15 +862,42 @@ def is_valid_page_match(
         page_label = f"{page_title} ({page_year})" if page_title else "unknown page"
         return False, f"title mismatch -> {page_label}"
 
+    # ── Director check ──
+    dir_match = directors_match(source_director, page_directors)
+
+    # Director mismatch is a strong rejection signal — even if title+year
+    # are identical (e.g. Rocky 1976 Avildsen vs Rocky 1976 McCarthy)
+    if dir_match is False:
+        page_dir_str = ", ".join(page_directors[:2])
+        return False, f"director mismatch: source={source_director!r} page={page_dir_str!r}"
+
+    # ── Year checks ──
+
+    # If director positively matches, trust it over year-tolerance —
+    # a confirmed director match is stronger than a year discrepancy
+    # (source year metadata can be noisy across territories/festivals)
+    if dir_match is True:
+        return True, "ok (director confirmed)"
+
     # If the candidate carried a specific expected year, verify it
     if candidate.candidate_year is not None and page_year is not None and page_year != candidate.candidate_year:
         return False, f"candidate year {candidate.candidate_year} resolved to {page_year}"
 
-    # General year-tolerance check
+    # General year-tolerance check (source has year, director unknown)
     if source_year is not None and page_year is not None and candidate.candidate_year is None:
         delta = abs(source_year - page_year)
         if delta > YEAR_TOLERANCE and not (strength >= 3 and is_specific_title(source_title)):
             return False, f"source year {source_year} resolved to {page_year}"
+
+    # Safety net for no-year, no-director films: if the source has neither
+    # year nor director, reject bare-slug matches to films that are too old
+    # to plausibly be a current cinema listing (e.g. Mother Mary 1982 when
+    # the cinema is showing the 2026 Lowery film).
+    if source_year is None and dir_match is None and page_year is not None:
+        current_year = datetime.now().year
+        age = current_year - page_year
+        if age > NO_YEAR_MAX_AGE:
+            return False, f"no-year source but page is from {page_year} ({age}y old, max {NO_YEAR_MAX_AGE})"
 
     return True, "ok"
 
@@ -767,6 +906,7 @@ async def try_direct_slug(
     session: aiohttp.ClientSession,
     title: str,
     year: int | None = None,
+    director: str | None = None,
 ) -> dict | None:
     """
     Try Letterboxd slugs derived from the cleaned title, but only accept pages
@@ -779,7 +919,7 @@ async def try_direct_slug(
             continue
 
         page = extract_page_metadata(payload["html"], payload["final_url"])
-        is_valid, reason = is_valid_page_match(title, year, page, candidate)
+        is_valid, reason = is_valid_page_match(title, year, director, page, candidate)
         if is_valid:
             return {
                 "url": page["url"],
@@ -820,6 +960,7 @@ async def lookup_film(
     semaphore: asyncio.Semaphore,
     title: str,
     year: int | None,
+    director: str | None,
     index: int,
     total: int,
 ) -> dict:
@@ -827,13 +968,14 @@ async def lookup_film(
     async with semaphore:
         cleaned = clean_title_for_lookup(title)
         year_str = f" ({year})" if year else ""
+        dir_str = f" [dir: {director}]" if director else ""
 
         if cleaned != title:
-            log.info(f"[{index}/{total}] \u21b3 cleaned: \"{title}\" \u2192 \"{cleaned}\"{year_str}")
+            log.info(f"[{index}/{total}] \u21b3 cleaned: \"{title}\" \u2192 \"{cleaned}\"{year_str}{dir_str}")
         else:
-            log.info(f"[{index}/{total}] {title}{year_str}")
+            log.info(f"[{index}/{total}] {title}{year_str}{dir_str}")
 
-        result = await try_direct_slug(session, cleaned, year)
+        result = await try_direct_slug(session, cleaned, year, director)
         if result and result["url"]:
             log.info(f"  \u2713 {result['url']} \u2014 rating: {result['rating']}")
             return {"letterboxd_url": result["url"], "letterboxd_rating": result["rating"]}
@@ -841,7 +983,7 @@ async def lookup_film(
         # Fallback: retry with the original title if cleaning changed it
         if cleaned != title:
             await asyncio.sleep(0.3)
-            result = await try_direct_slug(session, title, year)
+            result = await try_direct_slug(session, title, year, director)
             if result and result["url"]:
                 log.info(f"  \u2713 (original) {result['url']} \u2014 rating: {result['rating']}")
                 return {"letterboxd_url": result["url"], "letterboxd_rating": result["rating"]}
@@ -862,8 +1004,8 @@ def find_data_files(data_dir: Path) -> list[Path]:
 
 def collect_unique_titles(data_files: list[Path]) -> dict[str, dict]:
     """
-    Returns {normalised_key: {"title": str, "year": int|None, "skip": bool}}
-    for all unique films. Merges year info across cinemas.
+    Returns {normalised_key: {"title": str, "year": int|None, "director": str|None, "skip": bool}}
+    for all unique films. Merges year and director info across cinemas.
     """
     entries = {}
     for path in data_files:
@@ -875,14 +1017,16 @@ def collect_unique_titles(data_files: list[Path]) -> dict[str, dict]:
             entries[key].append({
                 "title": film["title"],
                 "year": extract_title_year_hint(film["title"]) or coerce_year(film.get("year")),
+                "director": film.get("director"),
             })
 
     result = {}
     for key, items in entries.items():
         best_title = min(set(item["title"] for item in items), key=len)
         best_year = next((item["year"] for item in items if item.get("year")), None)
+        best_director = next((item["director"] for item in items if item.get("director")), None)
         skip = should_skip(best_title)
-        result[key] = {"title": best_title, "year": best_year, "skip": skip}
+        result[key] = {"title": best_title, "year": best_year, "director": best_director, "skip": skip}
 
     return result
 
@@ -982,7 +1126,7 @@ async def run(args):
         tasks = []
         for i, (dedup_key, rep_key, keys) in enumerate(work_items, 1):
             info = to_lookup[rep_key]
-            task = lookup_film(session, semaphore, info["title"], info["year"], i, len(work_items))
+            task = lookup_film(session, semaphore, info["title"], info["year"], info.get("director"), i, len(work_items))
             tasks.append((keys, task))
             # Stagger task creation slightly to avoid burst
             if i % concurrency == 0:
