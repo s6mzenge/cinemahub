@@ -5,24 +5,23 @@ ICA (Institute of Contemporary Arts) Cinema Scraper
 Scrapes ica.art/upcoming for current film screenings, showtimes, and metadata.
 
 NOTE: The ICA server returns HTTP 404 for /upcoming but still serves the full
-listings page in the response body. We deliberately ignore the status code and
-check the body for content instead.
+listings page in the response body. We deliberately ignore the status code.
 
-The listings page shows all upcoming events by date. We filter for films only,
-group showtimes by film URL slug across dates, then optionally fetch individual
-detail pages for richer metadata (director, year, runtime, BBFC rating, screen).
+Step 1: Fetch /upcoming, parse all film showtimes (single request).
+Step 2: Fetch all detail pages concurrently (async aiohttp) for metadata
+        enrichment (director, year, runtime, rating, screen, booking URL).
 
 Usage:
     python scraper/scrape_ica.py
     python scraper/scrape_ica.py --local saved_page.html
-    python scraper/scrape_ica.py --no-details          # skip detail page fetches
+    python scraper/scrape_ica.py --no-details
     python scraper/scrape_ica.py -o my_output.json
 """
 
+import asyncio
 import json
 import re
 import sys
-import time
 import logging
 from datetime import datetime, timezone
 from pathlib import Path
@@ -35,13 +34,18 @@ try:
 except ImportError:
     requests = None
 
+try:
+    import aiohttp
+except ImportError:
+    aiohttp = None
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
 BASE_URL = "https://www.ica.art"
 LISTINGS_URL = f"{BASE_URL}/upcoming"
 
-REQUEST_DELAY = 1.0
+CONCURRENCY = 5
 REQUEST_TIMEOUT = 20
 
 HEADERS = {
@@ -60,6 +64,27 @@ TITLE_PREFIXES = [
     "WORLD PREMIERE",
     "EUROPEAN PREMIERE",
     "PREVIEW",
+]
+
+# ICA event/strand prefixes that appear before a colon in the title div.
+# These are stripped to expose the actual film title underneath.
+ICA_EVENT_PREFIXES = [
+    "closing night",
+    "opening night",
+    "jukebox film club",
+    "sürreal sinema",
+    "surreal sinema",
+    "the cinema of olaa zhyzhko",
+    "the cinema of",
+    "in focus",
+    "three films by penny allen",
+    "three films by",
+]
+
+# Prefixes without colon that appear at the start of titles
+ICA_NO_COLON_PREFIXES = [
+    r"(?i)^Opening\s+Night\s+",
+    r"(?i)^Closing\s+Night\s+",
 ]
 
 # ─── Color palette ───
@@ -105,10 +130,7 @@ EXTRA_PALETTES = [
 # ─── Fetching ───
 
 def fetch_page(url: str, allow_404: bool = False) -> str | None:
-    """
-    Fetch a page. If allow_404 is True, accept a 404 response as long as the
-    body contains real HTML content (the ICA /upcoming page does this).
-    """
+    """Fetch a page synchronously (used for the single /upcoming request)."""
     if requests is None:
         log.error("requests library not installed.")
         return None
@@ -164,14 +186,38 @@ def parse_time_to_24h(time_text: str) -> str | None:
 
 
 def clean_title(raw_title: str) -> tuple[str, list[str]]:
-    """Strip premiere prefixes. Returns (clean_title, tags)."""
+    """
+    Strip ICA event prefixes, premiere labels, and other cruft.
+    Returns (clean_title, tags).
+
+    Processing order:
+      1. Strip colon-separated event prefixes ("Jukebox Film Club: ...")
+      2. Strip non-colon prefixes ("Opening Night ...")
+      3. Strip premiere prefixes ("UK PREMIERE ...")
+    """
     title = raw_title.strip()
     tags = []
+
+    # Step 1: Strip ICA event prefixes before a colon
+    if ":" in title:
+        before_colon = title.split(":", 1)[0].strip()
+        before_lower = before_colon.lower()
+        for prefix in ICA_EVENT_PREFIXES:
+            if before_lower == prefix or before_lower.startswith(prefix):
+                title = title.split(":", 1)[1].strip()
+                break
+
+    # Step 2: Strip non-colon prefixes
+    for pattern in ICA_NO_COLON_PREFIXES:
+        title = re.sub(pattern, "", title).strip()
+
+    # Step 3: Strip premiere prefixes
     for prefix in TITLE_PREFIXES:
         pattern = re.compile(r"^\s*" + re.escape(prefix) + r"\s*", re.IGNORECASE)
         if pattern.match(title):
             title = pattern.sub("", title).strip()
             tags.append(prefix.title())
+
     return re.sub(r"\s+", " ", title).strip(), tags
 
 
@@ -201,10 +247,7 @@ def parse_colophon(colophon_text: str) -> dict:
 # ─── Listings page parsing ───
 
 def extract_films_from_listings(html: str) -> list[dict]:
-    """
-    Parse the /upcoming page for all film items, grouped by slug.
-    Returns a list of film dicts with showtimes.
-    """
+    """Parse the /upcoming page for all film items, grouped by slug."""
     soup = BeautifulSoup(html, "html.parser")
 
     ladder = soup.select_one("#ladder > div")
@@ -340,19 +383,15 @@ def extract_films_from_listings(html: str) -> list[dict]:
     return list(films_by_slug.values())
 
 
-# ─── Detail page enrichment ───
+# ─── Detail page enrichment (sync helper) ───
 
 def enrich_from_detail(film: dict, html: str) -> None:
-    """
-    Enrich a film dict in-place with metadata from its detail page:
-    director, year, runtime, rating, country, booking_url, screen info.
-    """
+    """Enrich a film dict in-place with metadata from its detail page."""
     soup = BeautifulSoup(html, "html.parser")
 
     # Colophon
     colophon_el = soup.select_one("#colophon")
     if colophon_el:
-        # Use separator to preserve whitespace between child nodes (e.g. dir.&nbsp;<span>Name)
         text = colophon_el.get_text(separator=" ")
         text = re.sub(r"[\s\xa0]+", " ", text).strip()
         italic = colophon_el.select_one("i")
@@ -404,6 +443,53 @@ def enrich_from_detail(film: dict, html: str) -> None:
                 screen = perf_lookup.get((date_str, s["time"]))
                 if screen:
                     s["screen"] = screen
+
+
+# ─── Async detail page fetching ───
+
+async def fetch_detail_async(session: "aiohttp.ClientSession", sem: asyncio.Semaphore,
+                              film: dict) -> None:
+    """Fetch a single detail page and enrich the film dict."""
+    url = film["film_url"]
+    async with sem:
+        try:
+            async with session.get(url, timeout=aiohttp.ClientTimeout(total=REQUEST_TIMEOUT)) as resp:
+                html = await resp.text()
+                enrich_from_detail(film, html)
+        except Exception as e:
+            log.warning(f"  Failed to fetch {url}: {e}")
+
+
+async def enrich_all_async(films: list[dict]) -> None:
+    """Fetch all detail pages concurrently and enrich films."""
+    if aiohttp is None:
+        log.error("aiohttp not installed — falling back to sequential fetching")
+        enrich_all_sync(films)
+        return
+
+    log.info(f"Fetching {len(films)} detail pages (concurrency={CONCURRENCY})...")
+    sem = asyncio.Semaphore(CONCURRENCY)
+
+    async with aiohttp.ClientSession(headers=HEADERS) as session:
+        tasks = [fetch_detail_async(session, sem, film) for film in films]
+        await asyncio.gather(*tasks)
+
+    enriched = sum(1 for f in films if f.get("director"))
+    log.info(f"  Enriched {enriched}/{len(films)} films with metadata")
+
+
+def enrich_all_sync(films: list[dict]) -> None:
+    """Fallback: sequential fetching with requests."""
+    import time
+    log.info(f"Fetching {len(films)} detail pages sequentially...")
+    for i, film in enumerate(films):
+        if i > 0:
+            time.sleep(0.5)
+        html = fetch_page(film["film_url"])
+        if html:
+            enrich_from_detail(film, html)
+    enriched = sum(1 for f in films if f.get("director"))
+    log.info(f"  Enriched {enriched}/{len(films)} films with metadata")
 
 
 # ─── Color assignment ───
@@ -480,17 +566,7 @@ def main():
 
     # Step 3: Optionally enrich from detail pages
     if not args.no_details and not args.local:
-        log.info(f"Fetching {len(films)} detail pages for metadata...")
-        for i, film in enumerate(films):
-            if i > 0:
-                time.sleep(REQUEST_DELAY)
-            detail_html = fetch_page(film["film_url"])
-            if not detail_html:
-                continue
-            enrich_from_detail(film, detail_html)
-            log.info(f"  [{i+1}/{len(films)}] {film['title']}: "
-                     f"dir={film.get('director','?')}, {film.get('year','?')}, "
-                     f"{film.get('runtime','?')}min, {film.get('rating','TBC')}")
+        asyncio.run(enrich_all_async(films))
 
     # Clean up internal fields
     for film in films:
