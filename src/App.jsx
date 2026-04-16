@@ -1051,7 +1051,7 @@ export default function App() {
                                           }}>
                                           {sess.adsMin > 0 && <>
                                           <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${bc}30,${bc}30 3px,${bc}18 3px,${bc}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"4px 0 0 4px", overflow:"hidden", paddingLeft:7 }}>
-                                            {(adsWidth/totalWidth)>=0.07 && <span style={{ fontSize:6, fontWeight:700, color:`${bc}`, letterSpacing:1, textTransform:"uppercase", opacity:0.5, fontFamily:T.mono }}>ADS</span>}
+                                            {(adsWidth/totalWidth)>=0.18 && <span style={{ fontSize:6, fontWeight:700, color:`${bc}`, letterSpacing:1, textTransform:"uppercase", opacity:0.5, fontFamily:T.mono }}>ADS</span>}
                                           </div>
                                           <div style={{ width:6, flexShrink:0, background:`radial-gradient(circle 2px at center,${T.bg} 1.5px,${bc}55 2px) center top / 4px 6px repeat-y` }} />
                                           </>}
@@ -1114,7 +1114,7 @@ export default function App() {
                                   }}>
                                   {sess.adsMin > 0 && <>
                                   <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${film.color}30,${film.color}30 3px,${film.color}18 3px,${film.color}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"5px 0 0 5px", overflow:"hidden", paddingLeft:7 }}>
-                                    {(adsWidth/totalWidth)>=0.07 && <span style={{ fontSize:7, fontWeight:700, color:film.accent, letterSpacing:1, textTransform:"uppercase", opacity:0.6, fontFamily:T.mono }}>ADS</span>}
+                                    {(adsWidth/totalWidth)>=0.18 && <span style={{ fontSize:7, fontWeight:700, color:film.accent, letterSpacing:1, textTransform:"uppercase", opacity:0.6, fontFamily:T.mono }}>ADS</span>}
                                   </div>
                                   <div style={{ width:8, flexShrink:0, position:"relative", zIndex:3, background:`radial-gradient(circle 2.5px at center,${T.bg} 2px,${film.color}55 2.5px) center top / 5px 8px repeat-y` }} />
                                   </>}
