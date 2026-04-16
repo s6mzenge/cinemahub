@@ -17,6 +17,7 @@ const CINEMAS = [
   { id:"bfi-southbank", name:"BFI Southbank", short:"BFI", barColor:"#378add", address:"Belvedere Rd, SE1 8XT", url:"https://whatson.bfi.org.uk", price:null, dataFile:"films_bfi.json", source:"whatson.bfi.org.uk" },
   { id:"electric-portobello", name:"Electric Portobello", short:"ELP", barColor:"#d4537e", address:"191 Portobello Rd, W11", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_portobello.json", source:"electriccinema.co.uk" },
   { id:"electric-white-city", name:"Electric White City", short:"EWC", barColor:"#639922", address:"101 Wood Lane, W12", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_white_city.json", source:"electriccinema.co.uk" },
+  { id:"close-up", name:"Close-Up", short:"CLU", barColor:"#c17817", address:"97 Sclater St, E1", url:"https://www.closeupfilmcentre.com", price:null, dataFile:"films_closeup.json", source:"closeupfilmcentre.com" },
 ];
 const CINEMA_MAP = Object.fromEntries(CINEMAS.map(c => [c.id, c]));
 
