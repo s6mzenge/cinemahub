@@ -314,13 +314,22 @@ def normalize_director_name(name: str) -> str:
         return ""
     t = unicodedata.normalize("NFKD", name)
     t = "".join(c for c in t if unicodedata.category(c) != "Mn")
+    # Handle common chars that NFKD doesn't decompose
+    t = t.replace("ł", "l").replace("Ł", "L")
+    t = t.replace("ø", "o").replace("Ø", "O")
+    t = t.replace("đ", "d").replace("Đ", "D")
     t = t.lower().strip()
     # Strip common multi-director separators to get first director
-    for sep in [" • ", " · ", " & ", " and ", ", "]:
+    for sep in ["|", " • ", " · ", " & ", " and ", ", "]:
         if sep in t:
             t = t.split(sep)[0].strip()
             break
-    t = re.sub(r"[^a-z ]+", "", t)
+    # Strip apostrophe-like chars WITHOUT creating word boundaries
+    # ("Shin'ichirô" → "shinichiro", not "shin ichiro")
+    t = re.sub(r"[''\u2018\u2019\u0060\u00B4]", "", t)
+    # Replace remaining non-alpha chars with spaces (preserves word
+    # boundaries from hyphens: "Kar-Wai" → "kar wai")
+    t = re.sub(r"[^a-z ]+", " ", t)
     t = re.sub(r"\s+", " ", t).strip()
     return t
 
@@ -342,32 +351,33 @@ def directors_match(source_director: str | None, page_directors: list[str]) -> b
     if not source_norm:
         return None
 
-    source_parts = source_norm.split()
-    source_last = source_parts[-1] if source_parts else ""
+    source_words = set(source_norm.split())
 
     for page_dir in page_directors:
         page_norm = normalize_director_name(page_dir)
         if not page_norm:
             continue
 
-        page_parts = page_norm.split()
-        page_last = page_parts[-1] if page_parts else ""
+        page_words = set(page_norm.split())
 
         # Exact full-name match
         if source_norm == page_norm:
             return True
 
         # Suffix match: "Sofía Petersen" is a suffix of "Olivia Sofía Petersen"
-        # (handles director names where the source has extra first/middle names)
         if source_norm.endswith(page_norm) or page_norm.endswith(source_norm):
             return True
 
-        # Last-name match + any first-name initial overlap
-        if source_last and page_last and source_last == page_last:
-            source_initials = {p[0] for p in source_parts[:-1] if p}
-            page_initials = {p[0] for p in page_parts[:-1] if p}
-            if source_initials & page_initials:
-                return True
+        # Word-set match: handles East Asian name order differences
+        # "chan wook park" vs "park chan wook" — same words, different order
+        if len(source_words) >= 2 and len(page_words) >= 2 and source_words == page_words:
+            return True
+
+        # Overlapping words: if at least 2 words match and cover the shorter
+        # name entirely (handles partial differences)
+        overlap = source_words & page_words
+        if len(overlap) >= 2 and len(overlap) >= min(len(source_words), len(page_words)):
+            return True
 
     return False
 
