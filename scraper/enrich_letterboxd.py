@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-Letterboxd Enrichment Script (v2 – async, smarter cleaning)
+Letterboxd Enrichment Script (v3 – async, validated matching)
 
 Reads all films_*.json / films.json data files, looks up each unique film
-on Letterboxd via direct slug matching, and writes back `letterboxd_url`
-and `letterboxd_rating` into every matching film entry.
+on Letterboxd via direct slug matching, validates page metadata against
+the source, and writes back `letterboxd_url` and `letterboxd_rating`
+into every matching film entry.
 
 Designed to run as a post-scraping step in GitHub Actions, or locally.
 
@@ -22,6 +23,8 @@ import sys
 import logging
 import argparse
 import unicodedata
+from dataclasses import dataclass
+from html import unescape
 from pathlib import Path
 
 import aiohttp
@@ -32,6 +35,7 @@ REQUEST_TIMEOUT = 12
 CONCURRENCY = 5          # parallel Letterboxd requests
 DELAY_BETWEEN = 0.25     # seconds between starting each request
 MAX_RETRIES = 2
+YEAR_TOLERANCE = 2
 
 HEADERS = {
     "User-Agent": (
@@ -53,9 +57,11 @@ logging.basicConfig(
 log = logging.getLogger("enrich_letterboxd")
 
 
-# ─── Manual slug overrides for films whose titles don't slugify cleanly ─
-# Maps cleaned title (lowercase) → Letterboxd slug
-SLUG_OVERRIDES = {
+# ─── Manual slug overrides ───────────────────────────────────────────
+# Maps cleaned title (lowercase) → Letterboxd slug.
+# These are normalised via normalize_match_key() at module load time.
+
+_RAW_SLUG_OVERRIDES = {
     # Periods collapse to nothing in Letterboxd slugs (not hyphens)
     "dr. strangelove": "dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb",
     "e.t. the extra terrestrial": "et-the-extra-terrestrial",
@@ -86,10 +92,57 @@ SLUG_OVERRIDES = {
     "twin peaks : pilot - northwest passage": "twin-peaks",
     # Miami Vice after anniversary-screening strip
     "miami vice": "miami-vice-2006",
+    # ── Same-title disambiguation (no year available in source) ──
+    "departures": "departures-2025",
+    "love me tender": "love-me-tender-2025",
+    "michael": "michael-2026",
 }
 
+# (title, source_year) → forced slug — for cases where the default
+# year-suffixed slug resolves to the wrong film on Letterboxd.
+_RAW_YEAR_SLUG_OVERRIDES = {
+    ("the cannibals", 1969): "the-year-of-the-cannibals",
+    ("fly away home", 1996): "fly-away-home",
+    ("in the mood for love", 2000): "in-the-mood-for-love",
+    ("jurassic park", 1993): "jurassic-park",
+    ("pride and prejudice", 2005): "pride-prejudice",
+    ("sirat", 2025): "sirat-2025",
+    ("sirat", 2026): "sirat-2025",
+    ("small axe lovers rock", 2020): "lovers-rock-2020",
+}
 
-# ─── Title cleaning ──────────────────────────────────────────────────
+# (title, source_year) → expected Letterboxd year — for when the source
+# data uses a different year than Letterboxd.
+_RAW_YEAR_TARGET_OVERRIDES = {
+    ("sirat", 2026): 2025,
+    ("twin peaks pilot northwest passage", 1990): 1989,
+}
+
+# Groups of title variants that should be treated as equivalent when
+# validating a fetched page against the source film.
+TITLE_EQUIVALENCE_GROUPS = [
+    ("apocalypse now final cut", "apocalypse now"),
+    ("blade runner the final cut", "blade runner"),
+    ("doctor who the movie", "doctor who"),
+    ("dr strangelove", "dr strangelove or how i learned to stop worrying and love the bomb"),
+    ("man marked for death twenty years later", "twenty years later"),
+    ("montreal ma belle", "montreal my beautiful"),
+    ("mr hulots holiday", "monsieur hulots holiday"),
+    ("neighbouring sounds", "neighboring sounds"),
+    ("nightmare alley vision in darkness and light", "nightmare alley"),
+    ("osamu tezukas metropolis", "metropolis"),
+    ("robocop directors cut", "robocop"),
+    ("rocky horror picture show", "the rocky horror picture show"),
+    ("small axe lovers rock", "lovers rock"),
+    ("the cannibals", "the year of the cannibals"),
+    ("the colour of pomegranates", "the color of pomegranates"),
+    ("the lodger", "the lodger a story of the london fog"),
+    ("timecode live", "timecode"),
+    ("twin peaks pilot northwest passage", "twin peaks"),
+]
+
+
+# ─── Title cleaning constants ────────────────────────────────────────
 
 # Known event-series prefixes (case-insensitive).
 # If the text BEFORE the colon matches one of these, strip it.
@@ -113,7 +166,9 @@ EVENT_PREFIXES = [
     "pitchblack mixtapes",
     "pitchblack playback",
     "preview",
-    "the male gaze",
+    # NOTE: "the male gaze" deliberately NOT here — NQV short film
+    # compilations have their own Letterboxd pages and should be
+    # looked up as-is (e.g. "The Male Gaze: Heavenly Creatures").
     "uk premiere of 4k restoration",
     "uk premiere",
     "violet hour presents",
@@ -163,7 +218,6 @@ SKIP_PATTERNS = [
     r"(?i)^hitchcock & herrmann\b",
     r"(?i)^melodrama as provocateur\b",
     r"(?i)\bsilent dreams shorts\b",
-    # v3 additions
     r"(?i)^brat summer\b",                    # Charli XCX marathon event
     r"(?i)^mark kermode live\b",              # live event
     r"(?i)^rosie turner\s+q\s*&?\s*a\b",     # Q&A event
@@ -176,134 +230,231 @@ SKIP_PATTERNS = [
     r"(?i)^guillermo del toro$",             # filmmaker name alone = event
     r"(?i)\bw/\s+\w+.*\bintro\b",           # "w/ Reece Shearsmith intro" suffix
     r"(?i)\bcomedy shorts\b",                # "Lesbian Visibility: Comedy Shorts"
-    r"(?i)\banimated shorts\b",               # "Lesbian Visibility: Animated Shorts"
+    r"(?i)\banimated shorts\b",              # "Lesbian Visibility: Animated Shorts"
+    r"(?i)^solve along a\b",
+]
+
+# Pre-compiled regex for stripping " + Q&A", " + Intro …" etc.
+TRAILING_PLUS_SUFFIX_RE = re.compile(
+    r"\s*\+\s*("
+    r"Q\s*&\s*A"
+    r"|intro\b.*"
+    r"|director\b.*"
+    r"|special\b.*"
+    r"|extended\b.*"
+    r"|5:40 fantasy.*"
+    r"|reece shearsmith.*"
+    r")\s*$",
+    flags=re.I,
+)
+
+# Parentheticals to strip from titles (not part of the actual film name)
+NON_FILM_PARENS = [
+    r"\(Independent Filmmakers Showcase\)",
+    r"\(Short Films?\)",
+    r"\(Live Score\)",
+    r"\(4K Restoration\)",
+    r"\(Black & White version\)",
+    r"\(Director['']?s?\s*Cut\)",
+    r"\(Extended\s*Cut\)",
+    r"\(Theatrical\s*Cut\)",
+    r"\(Sedmikr[aá]sky\)",
 ]
 
 
-def should_skip(title: str) -> bool:
-    """Return True if this title is an event/pass/compilation, not a film."""
-    for pattern in SKIP_PATTERNS:
-        if re.search(pattern, title):
-            return True
-    return False
+# ─── Utility functions ───────────────────────────────────────────────
 
+def coerce_year(value) -> int | None:
+    """Convert JSON year values into integers where possible."""
+    if value is None:
+        return None
+    if isinstance(value, int):
+        return value
+    if isinstance(value, str):
+        value = value.strip()
+        if re.fullmatch(r"\d{4}", value):
+            return int(value)
+    return None
+
+
+def extract_title_year_hint(title: str) -> int | None:
+    """Prefer an explicit film year embedded in the title when present."""
+    matches = re.findall(r"\((\d{4})\)", title)
+    if len(matches) == 1:
+        return int(matches[0])
+    return None
+
+
+def normalize_match_key(title: str | None) -> str:
+    """Normalize a title into a punctuation-light comparison key."""
+    if not title:
+        return ""
+
+    t = unescape(title)
+    t = t.replace("½", " 1/2 ")
+    t = t.replace("&", " and ")
+    t = unicodedata.normalize("NFKD", t)
+    t = "".join(c for c in t if unicodedata.category(c) != "Mn")
+    t = t.lower()
+    t = re.sub(r"\bpart\b", " ", t)
+    t = re.sub(r"\biii\b", " 3 ", t)
+    t = re.sub(r"\bii\b", " 2 ", t)
+    t = re.sub(r"\biv\b", " 4 ", t)
+    t = re.sub(r"\bi\b", " 1 ", t)
+    t = re.sub(r"['''`´]", "", t)
+    t = re.sub(r"[^a-z0-9]+", " ", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
+
+
+def build_equivalence_map(groups: list[tuple[str, ...]]) -> dict[str, set[str]]:
+    """Create a symmetric title-equivalence map from grouped aliases."""
+    result: dict[str, set[str]] = {}
+    for group in groups:
+        normalized = {normalize_match_key(value) for value in group if value}
+        normalized.discard("")
+        if not normalized:
+            continue
+        for key in normalized:
+            result.setdefault(key, set()).update(normalized)
+    return result
+
+
+# ─── Build normalised override tables at module load time ────────────
+
+SLUG_OVERRIDES = {
+    normalize_match_key(title): slug
+    for title, slug in _RAW_SLUG_OVERRIDES.items()
+}
+
+YEAR_SLUG_OVERRIDES = {
+    (normalize_match_key(title), year): slug
+    for (title, year), slug in _RAW_YEAR_SLUG_OVERRIDES.items()
+}
+
+YEAR_TARGET_OVERRIDES = {
+    (normalize_match_key(title), year): target_year
+    for (title, year), target_year in _RAW_YEAR_TARGET_OVERRIDES.items()
+}
+
+TITLE_EQUIVALENTS = build_equivalence_map(TITLE_EQUIVALENCE_GROUPS)
+
+
+def equivalent_title_keys(title: str | None) -> set[str]:
+    """Return the normalized title plus any accepted equivalent titles."""
+    key = normalize_match_key(title)
+    if not key:
+        return set()
+
+    keys = set(TITLE_EQUIVALENTS.get(key, {key}))
+    expanded = set(keys)
+    for value in keys:
+        if value.startswith(("the ", "a ", "an ")):
+            expanded.add(re.sub(r"^(the|a|an)\s+", "", value))
+        else:
+            expanded.add(f"the {value}")
+    return expanded
+
+
+# ─── Title cleaning ──────────────────────────────────────────────────
 
 def clean_title_for_lookup(title: str) -> str:
     """
-    Strip event prefixes, Q&A/intro suffixes, brackets, and other cruft
-    to extract the actual film title for Letterboxd lookup.
+    Strip event prefixes, Q&A / intro suffixes, brackets, and other cruft
+    to extract the underlying film title for Letterboxd lookup.
     """
     t = title.strip()
 
-    # ── Step 0: Strip [original language title] brackets ──
-    # e.g. "Oldboy [Oldeuboi]" → "Oldboy"
-    # But preserve brackets that are part of the title when there's nothing before them
+    # Strip [original language title] brackets
     t = re.sub(r"\s*\[[^\]]+\]\s*$", "", t)
-    # Also handle mid-title brackets like "Cinema Paradiso [Nuovo Cinema Paradiso]"
     t = re.sub(r"\s*\[[^\]]+\]", "", t)
 
-    # ── Step 1: Strip known event-series prefixes (colon-separated) ──
+    # Strip known event-series prefixes (colon-separated)
     if ":" in t:
-        before_colon = t.split(":")[0].strip()
+        before_colon = t.split(":", 1)[0].strip()
         before_lower = before_colon.lower()
-        before_lower_clean = re.sub(r'\s+presents$', '', before_lower)
+        before_lower_clean = re.sub(r"\s+presents$", "", before_lower)
         for prefix in EVENT_PREFIXES:
             if before_lower == prefix or before_lower_clean == prefix:
-                t = ":".join(t.split(":")[1:]).strip()
-                t = t.strip('"').strip('\u201c').strip('\u201d').strip()
+                t = t.split(":", 1)[1].strip()
+                t = t.strip('"').strip("\u201c").strip("\u201d").strip()
                 break
 
-    # ── Step 1b: Strip non-colon prefixes ──
-    for pat in STRIP_PREFIXES_NO_COLON:
-        t = re.sub(pat, "", t)
+    # Strip non-colon prefixes
+    for pattern in STRIP_PREFIXES_NO_COLON:
+        t = re.sub(pattern, "", t)
 
     # Handle 'X presents "Title"' patterns (with quotes, no colon)
-    m = re.match(
-        r'(?i)^(?:funeral parade|lost reels|word space)\s+presents\s*'
-        r'["\u201c]([^"\u201d]+)["\u201d]',
+    match = re.match(
+        r'(?i)^(?:funeral parade|lost reels|word space)\s+presents\s*["\u201c]([^"\u201d]+)["\u201d]',
         t,
     )
-    if m:
-        t = m.group(1).strip()
+    if match:
+        t = match.group(1).strip()
 
-    # ── Step 2: Strip " + " suffixes (Q&A, Intro, etc.) ──
-    plus_match = re.search(
-        r'\s*\+\s*('
-        r'Q\s*&\s*A'
-        r'|[Ii]ntro\b.*'
-        r'|[Dd]irector\b.*'
-        r'|[Ss]pecial\b.*'
-        r'|[Ee]xtended\b.*'
-        r'|5:40 Fantasy.*'
-        r'|Reece Shearsmith.*'
-        r')\s*$',
-        t
-    )
+    # Strip " + Q&A", " + Intro …" etc.
+    plus_match = TRAILING_PLUS_SUFFIX_RE.search(t)
     if plus_match:
         t = t[:plus_match.start()].strip()
 
-    # Handle double bills: "Film A + Film B" — take just the first film
-    if " + " in t and not re.search(r'(?i)romeo\s*\+\s*juliet', t) and not re.search(r'(?i)\d\+\d', t):
-        parts = t.split(" + ", 1)
-        if len(parts[0].strip()) > 3 and len(parts[1].strip()) > 3:
-            t = parts[0].strip()
-
-    # ── Step 3: Strip "with X live on stage" suffix ──
+    # Strip "with X live on stage" suffix
     t = re.sub(r"\s+with\s+\w[\w\s]*\blive on stage\b.*$", "", t, flags=re.I)
 
-    # ── Step 4: Strip non-film parentheticals ──
-    # Remove things like "(Independent Filmmakers Showcase)", "(Live Score)",
-    # "(Director's Cut)", "(Extended Cut)", "(Theatrical Cut)", etc.
-    # Note: handle both straight (') and curly (\u2019) apostrophes
-    _apos = r"['\u2019]"  # matches either apostrophe style
-    strip_parens = [
-        r"\(Independent Filmmakers Showcase\)",
-        r"\(Short Films?\)",
-        r"\(Live Score\)",
-        r"\(4K Restoration\)",
-        r"\(Black & White version\)",
-        rf"\(Director{_apos}?s?\s*Cut\)",
-        r"\(Extended\s*Cut\)",
-        rf"\(Theatrical\s*Cut\)",
-        r"\(Sedmikr[aá]sky\)",     # Daisies (Sedmikrásky)
-    ]
-    for pat in strip_parens:
-        t = re.sub(r"\s*" + pat, "", t, flags=re.I)
+    # Strip non-film parentheticals
+    for pattern in NON_FILM_PARENS:
+        t = re.sub(r"\s*" + pattern, "", t, flags=re.I)
 
-    # ── Step 5: Strip year parenthetical — we pass year separately ──
+    # Strip year parenthetical (we pass year separately)
     t = re.sub(r"\s*\(\d{4}\)\s*$", "", t)
 
-    # ── Step 6: Strip re-release / anniversary suffixes ──
-    # "All The President's Men - 50th Anniversary" → "All The President's Men"
-    # "Miami Vice 20th Anniversary Screening" → "Miami Vice"
-    t = re.sub(r"\s*[-–—]\s*\d+\w*\s*anniversary[\w\s]*$", "", t, flags=re.I)
+    # Strip re-release / anniversary suffixes
+    t = re.sub(r"\s*[-\u2013\u2014]\s*\d+\w*\s*anniversary[\w\s]*$", "", t, flags=re.I)
     t = re.sub(r"\s+\d+\w*\s*anniversary[\w\s]*$", "", t, flags=re.I)
     t = re.sub(r"\s*\(\d+\w*\s*anniversary[^)]*\)", "", t, flags=re.I)
     t = re.sub(r"\s*\(re-?release\)", "", t, flags=re.I)
 
-    # ── Step 7: Strip restoration/premiere suffixes after colon ──
-    # "Vampire's Kiss : 4K Restoration Premiere" → "Vampire's Kiss"
-    # "Doctor Who: The Movie – 4K Restoration" → "Doctor Who: The Movie"
-    # "Mimic: Director's Cut" → "Mimic" (handles curly apostrophe too)
-    _apos2 = r"['\u2019]"
-    t = re.sub(r"\s*[:–—-]\s*4K\s+Restoration\s*(Premiere)?\s*$", "", t, flags=re.I)
-    t = re.sub(rf"\s*:\s*Director{_apos2}?s?\s*Cut\s*$", "", t, flags=re.I)
+    # Strip restoration/premiere/director's cut suffixes after colon/dash
+    t = re.sub(r"\s*[:\u2013\u2014-]\s*4K\s+Restoration\s*(Premiere)?\s*$", "", t, flags=re.I)
+    t = re.sub(r"\s*:\s*Director['\u2019]?s?\s*Cut\s*$", "", t, flags=re.I)
 
-    # ── Step 8: Strip trailing "Preview" / "Exclusive Preview" / "Screening" ──
-    # After prefix stripping, titles like "Skiff Exclusive Preview" remain
+    # Strip trailing "Preview" / "Exclusive Preview" / "Screening"
     t = re.sub(r"\s+(Exclusive\s+)?Preview\s*$", "", t, flags=re.I)
     t = re.sub(r"\s+Screening\s*$", "", t, flags=re.I)
 
-    # ── Step 9: Strip "w/ Name intro" suffix ──
+    # Strip "w/ Name intro" suffix
     t = re.sub(r"\s+w/\s+\w[\w\s]*\bintro\b.*$", "", t, flags=re.I)
 
-    # ── Step 10: Strip any leftover surrounding quotes ──
-    t = t.strip('"').strip('\u201c').strip('\u201d').strip('"')
-
-    return t.strip()
+    return t.strip('"').strip("\u201c").strip("\u201d").strip('"').strip()
 
 
-# ─── Slug & fetch ─────────────────────────────────────────────────────
+def looks_like_multi_film_title(title: str) -> bool:
+    """Heuristic: if a cleaned title still has multiple long parts, skip it."""
+    if " + " not in title:
+        return False
+    if re.search(r"(?i)romeo\s*\+\s*juliet", title):
+        return False
+    if re.search(r"(?i)\d\+\d", title):
+        return False
+
+    parts = [part.strip(" -:") for part in title.split(" + ")]
+    if len(parts) < 2:
+        return False
+
+    normalized_parts = [normalize_match_key(part) for part in parts]
+    return all(len(part) >= 4 for part in normalized_parts[:2])
+
+
+def should_skip(title: str) -> bool:
+    """Return True if this title is an event / compilation, not a single film."""
+    cleaned = clean_title_for_lookup(title)
+    for candidate in (title, cleaned):
+        for pattern in SKIP_PATTERNS:
+            if re.search(pattern, candidate):
+                return True
+    return looks_like_multi_film_title(cleaned)
+
+
+# ─── Slug construction ───────────────────────────────────────────────
 
 def slugify_title(title: str) -> str:
     """Convert a film title into a Letterboxd-style slug."""
@@ -317,12 +468,169 @@ def slugify_title(title: str) -> str:
     return s
 
 
+def generate_title_variants(title: str) -> list[str]:
+    """Generate a small set of safe title variants for slug guessing."""
+    variants: list[str] = []
+    seen: set[str] = set()
+
+    def add(value: str):
+        clean = value.strip()
+        if clean and clean not in seen:
+            seen.add(clean)
+            variants.append(clean)
+
+    add(title)
+    add(clean_title_for_lookup(title))
+
+    if re.search(r"(?i)\band\b", title):
+        add(re.sub(r"(?i)\band\b", "&", title))
+        add(re.sub(r"(?i)\band\b", "&", clean_title_for_lookup(title)))
+    if "&" in title:
+        add(title.replace("&", "and"))
+        add(clean_title_for_lookup(title).replace("&", "and"))
+
+    return variants
+
+
+def valid_source_slugs(title: str) -> set[str]:
+    """Return slugs plausibly derived from the source title itself."""
+    slugs = set()
+    for variant in generate_title_variants(title):
+        slug = slugify_title(variant)
+        if slug:
+            slugs.add(slug)
+    return slugs
+
+
+def is_specific_title(title: str) -> bool:
+    """
+    Long or structurally specific titles are safer to accept even when the
+    source year is noisy.
+    """
+    cleaned = normalize_match_key(clean_title_for_lookup(title))
+    if len(cleaned.split()) >= 4:
+        return True
+    return any(token in title for token in (":", "-", "'", "\u2019", ","))
+
+
+# ─── Letterboxd page parsing ────────────────────────────────────────
+
+def parse_page_title_and_year(soup: BeautifulSoup) -> tuple[str | None, int | None]:
+    """Extract the Letterboxd page title and year from page metadata."""
+    og_title = soup.find("meta", attrs={"property": "og:title"})
+    if og_title:
+        raw = unescape(og_title.get("content", "")).strip()
+        match = re.match(r"(.+?)\s*\((\d{4})\)\s*$", raw)
+        if match:
+            return match.group(1).strip(), int(match.group(2))
+        if raw:
+            return raw, None
+
+    for script in soup.find_all("script", type="application/ld+json"):
+        try:
+            payload = json.loads(script.string)
+        except (json.JSONDecodeError, TypeError, ValueError):
+            continue
+
+        items = payload if isinstance(payload, list) else [payload]
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+            name = item.get("name")
+            date_published = item.get("datePublished")
+            year = None
+            if isinstance(date_published, str):
+                year_match = re.match(r"(\d{4})", date_published)
+                if year_match:
+                    year = int(year_match.group(1))
+            if name:
+                return str(name).strip(), year
+
+    headline = soup.select_one("h1.headline-1, h1")
+    if headline:
+        return headline.get_text(" ", strip=True), None
+
+    return None, None
+
+
+def extract_rating_from_soup(soup: BeautifulSoup) -> float | None:
+    """Extract the average Letterboxd rating from the film page."""
+    twitter_meta = soup.find("meta", attrs={"name": "twitter:data2"})
+    if twitter_meta:
+        content = twitter_meta.get("content", "")
+        match = re.search(r"([\d.]+)\s*out\s*of\s*5", content)
+        if match:
+            return float(match.group(1))
+
+    for meta in soup.find_all("meta"):
+        content = meta.get("content", "")
+        if "out of 5" in content:
+            match = re.search(r"([\d.]+)\s*out\s*of\s*5", content)
+            if match:
+                return float(match.group(1))
+
+    for script in soup.find_all("script", type="application/ld+json"):
+        try:
+            payload = json.loads(script.string)
+        except (json.JSONDecodeError, TypeError, ValueError):
+            continue
+
+        items = payload if isinstance(payload, list) else [payload]
+        for item in items:
+            if isinstance(item, dict) and "aggregateRating" in item:
+                agg = item["aggregateRating"]
+                value = agg.get("ratingValue")
+                if value is None:
+                    continue
+                rating = float(value)
+                best = float(agg.get("bestRating", 5))
+                if best == 10:
+                    rating = round(rating / 2, 2)
+                return rating
+
+    avg_el = soup.select_one("a.display-rating, .average-rating")
+    if avg_el:
+        text = avg_el.get_text(strip=True)
+        match = re.search(r"([\d.]+)", text)
+        if match:
+            return float(match.group(1))
+
+    return None
+
+
+def extract_slug_from_url(url: str) -> str | None:
+    """Extract /film/<slug>/ from a Letterboxd URL."""
+    match = re.search(r"/film/([^/?#]+)/?", url)
+    return match.group(1) if match else None
+
+
+def extract_page_metadata(html: str, final_url: str) -> dict:
+    """Extract the metadata needed to validate and persist a Letterboxd page."""
+    soup = BeautifulSoup(html, "html.parser")
+    title, year = parse_page_title_and_year(soup)
+    rating = extract_rating_from_soup(soup)
+
+    clean_url = final_url.split("?")[0]
+    if not clean_url.endswith("/"):
+        clean_url += "/"
+
+    return {
+        "url": clean_url,
+        "slug": extract_slug_from_url(clean_url),
+        "title": title,
+        "year": year,
+        "rating": round(rating, 2) if rating is not None else None,
+    }
+
+
+# ─── HTTP fetch ──────────────────────────────────────────────────────
+
 async def fetch_with_retry(
     session: aiohttp.ClientSession,
     url: str,
     retries: int = MAX_RETRIES,
-) -> str | None:
-    """GET with retries. Returns HTML text on 200, None on 404."""
+) -> dict | None:
+    """GET with retries and return HTML plus the final redirected URL."""
     for attempt in range(retries + 1):
         try:
             async with session.get(
@@ -331,15 +639,120 @@ async def fetch_with_retry(
                 allow_redirects=True,
             ) as resp:
                 if resp.status == 200:
-                    return await resp.text()
+                    return {
+                        "html": await resp.text(),
+                        "final_url": str(resp.url),
+                    }
                 if resp.status == 404:
                     return None
-                log.warning(f"  HTTP {resp.status} for {url} (attempt {attempt+1})")
-        except (aiohttp.ClientError, asyncio.TimeoutError) as e:
-            log.warning(f"  Request error for {url}: {e} (attempt {attempt+1})")
+                log.warning(f"  HTTP {resp.status} for {url} (attempt {attempt + 1})")
+        except (aiohttp.ClientError, asyncio.TimeoutError) as exc:
+            log.warning(f"  Request error for {url}: {exc} (attempt {attempt + 1})")
+
         if attempt < retries:
             await asyncio.sleep(1.5 * (attempt + 1))
+
     return None
+
+
+# ─── Slug candidate generation & validation ──────────────────────────
+
+@dataclass(frozen=True)
+class SlugCandidate:
+    slug: str
+    label: str
+    candidate_year: int | None = None
+
+
+def build_slug_candidates(title: str, year: int | None) -> list[SlugCandidate]:
+    """Build an ordered list of slug guesses to try for a source title."""
+    candidates: list[SlugCandidate] = []
+    seen: set[str] = set()
+    title_key = normalize_match_key(title)
+
+    def add(slug: str, label: str, candidate_year: int | None = None):
+        slug = slug.strip("/")
+        if not slug or slug in seen:
+            return
+        seen.add(slug)
+        candidates.append(SlugCandidate(slug=slug, label=label, candidate_year=candidate_year))
+
+    # Year-specific overrides first
+    if year is not None:
+        override = YEAR_SLUG_OVERRIDES.get((title_key, year))
+        if override:
+            target_year = YEAR_TARGET_OVERRIDES.get((title_key, year), year)
+            add(override, "year override", target_year)
+
+    # Title-only overrides
+    override = SLUG_OVERRIDES.get(title_key)
+    if override:
+        target_year = YEAR_TARGET_OVERRIDES.get((title_key, year), year) if year is not None else None
+        add(override, "override", target_year)
+
+    # Auto-generated slug variants
+    for variant in generate_title_variants(title):
+        slug = slugify_title(variant)
+        if not slug:
+            continue
+        if year is not None:
+            add(f"{slug}-{year}", f"{variant} [{year}]", year)
+            add(f"{slug}-{year - 1}", f"{variant} [{year - 1}]", year - 1)
+            add(f"{slug}-{year + 1}", f"{variant} [{year + 1}]", year + 1)
+        add(slug, f"{variant} [title-only]")
+
+    return candidates
+
+
+def title_match_strength(source_title: str, page_title: str | None, final_slug: str | None) -> int:
+    """Score how confidently a page title looks like the intended source title.
+
+    Returns:
+        3 — equivalence group match (strongest)
+        2 — slug plausibly derived from source title
+        0 — no recognisable connection
+    """
+    if not page_title:
+        return 0
+
+    source_keys = equivalent_title_keys(source_title)
+    page_keys = equivalent_title_keys(page_title)
+    if source_keys & page_keys:
+        return 3
+
+    if final_slug and final_slug in valid_source_slugs(source_title):
+        return 2
+
+    return 0
+
+
+def is_valid_page_match(
+    source_title: str,
+    source_year: int | None,
+    page: dict,
+    candidate: SlugCandidate,
+) -> tuple[bool, str]:
+    """Validate that a fetched Letterboxd page actually represents the source film."""
+    page_title = page.get("title")
+    page_year = coerce_year(page.get("year"))
+    final_slug = page.get("slug")
+
+    strength = title_match_strength(source_title, page_title, final_slug)
+    if strength == 0:
+        page_label = f"{page_title} ({page_year})" if page_title else "unknown page"
+        return False, f"title mismatch -> {page_label}"
+
+    # If the candidate carried a specific expected year, verify it
+    if candidate.candidate_year is not None and page_year is not None and page_year != candidate.candidate_year:
+        return False, f"candidate year {candidate.candidate_year} resolved to {page_year}"
+
+    # General year-tolerance check
+    if source_year is not None and page_year is not None and candidate.candidate_year is None:
+        delta = abs(source_year - page_year)
+        if delta > YEAR_TOLERANCE and not (strength >= 3 and is_specific_title(source_title)):
+            return False, f"source year {source_year} resolved to {page_year}"
+
+    return True, "ok"
 
 
 async def try_direct_slug(
@@ -348,94 +761,32 @@ async def try_direct_slug(
     year: int | None = None,
 ) -> dict | None:
     """
-    Try to hit the film page directly by guessing the slug.
-    Order: manual override → title-year → title-only → English title variants.
+    Try Letterboxd slugs derived from the cleaned title, but only accept pages
+    whose resolved metadata still look like the intended film.
     """
-    # Check manual overrides first
-    override_slug = SLUG_OVERRIDES.get(title.lower())
-    if override_slug:
-        url = f"{LBOXD_BASE}/film/{override_slug}/"
-        html = await fetch_with_retry(session, url, retries=0)
-        if html is not None:
-            return extract_rating_from_page(html, url)
+    for candidate in build_slug_candidates(title, year):
+        url = f"{LBOXD_BASE}/film/{candidate.slug}/"
+        payload = await fetch_with_retry(session, url, retries=0)
+        if payload is None:
+            continue
 
-    slug = slugify_title(title)
+        page = extract_page_metadata(payload["html"], payload["final_url"])
+        is_valid, reason = is_valid_page_match(title, year, page, candidate)
+        if is_valid:
+            return {
+                "url": page["url"],
+                "rating": page["rating"],
+            }
 
-    # Try slug-year first (e.g. /film/amelie-2001/)
-    if year:
-        url = f"{LBOXD_BASE}/film/{slug}-{year}/"
-        html = await fetch_with_retry(session, url, retries=0)
-        if html is not None:
-            return extract_rating_from_page(html, url)
-
-    # Try slug without year
-    url = f"{LBOXD_BASE}/film/{slug}/"
-    html = await fetch_with_retry(session, url, retries=0)
-    if html is not None:
-        return extract_rating_from_page(html, url)
+        page_title = page.get("title") or "unknown"
+        page_year = page.get("year")
+        year_suffix = f" ({page_year})" if page_year else ""
+        log.info(
+            f"  rejected {candidate.label}: {page.get('url')} -> {page_title}{year_suffix}"
+            f" [{reason}]"
+        )
 
     return None
-
-
-# ─── Rating extraction ────────────────────────────────────────────────
-
-def extract_rating_from_page(html: str, url: str) -> dict | None:
-    """Extract the average rating from a Letterboxd film page."""
-    soup = BeautifulSoup(html, "html.parser")
-    rating = None
-
-    # Method 1: <meta name="twitter:data2" content="Average rating: 3.6 out of 5">
-    twitter_meta = soup.find("meta", attrs={"name": "twitter:data2"})
-    if twitter_meta:
-        content = twitter_meta.get("content", "")
-        match = re.search(r"([\d.]+)\s*out\s*of\s*5", content)
-        if match:
-            rating = float(match.group(1))
-
-    # Method 2: any meta tag with "X.X out of 5"
-    if rating is None:
-        for meta in soup.find_all("meta"):
-            content = meta.get("content", "")
-            if "out of 5" in content:
-                match = re.search(r"([\d.]+)\s*out\s*of\s*5", content)
-                if match:
-                    rating = float(match.group(1))
-                    break
-
-    # Method 3: JSON-LD aggregateRating
-    if rating is None:
-        for script in soup.find_all("script", type="application/ld+json"):
-            try:
-                data = json.loads(script.string)
-                if isinstance(data, dict) and "aggregateRating" in data:
-                    agg = data["aggregateRating"]
-                    val = agg.get("ratingValue")
-                    if val is not None:
-                        rating = float(val)
-                        best = float(agg.get("bestRating", 5))
-                        if best == 10:
-                            rating = round(rating / 2, 2)
-                        break
-            except (json.JSONDecodeError, ValueError, TypeError):
-                continue
-
-    # Method 4: visible average-rating element
-    if rating is None:
-        avg_el = soup.select_one("a.display-rating, .average-rating")
-        if avg_el:
-            text = avg_el.get_text(strip=True)
-            match = re.search(r"([\d.]+)", text)
-            if match:
-                rating = float(match.group(1))
-
-    clean_url = url.split("?")[0]
-    if not clean_url.endswith("/"):
-        clean_url += "/"
-
-    return {
-        "url": clean_url,
-        "rating": round(rating, 2) if rating is not None else None,
-    }
 
 
 # ─── Normalisation (dedup across scrapers) ────────────────────────────
@@ -470,13 +821,13 @@ async def lookup_film(
         year_str = f" ({year})" if year else ""
 
         if cleaned != title:
-            log.info(f"[{index}/{total}] \u21b3 cleaned: \"{title}\" → \"{cleaned}\"{year_str}")
+            log.info(f"[{index}/{total}] \u21b3 cleaned: \"{title}\" \u2192 \"{cleaned}\"{year_str}")
         else:
             log.info(f"[{index}/{total}] {title}{year_str}")
 
         result = await try_direct_slug(session, cleaned, year)
         if result and result["url"]:
-            log.info(f"  ✓ {result['url']} — rating: {result['rating']}")
+            log.info(f"  \u2713 {result['url']} \u2014 rating: {result['rating']}")
             return {"letterboxd_url": result["url"], "letterboxd_rating": result["rating"]}
 
         # Fallback: retry with the original title if cleaning changed it
@@ -484,10 +835,10 @@ async def lookup_film(
             await asyncio.sleep(0.3)
             result = await try_direct_slug(session, title, year)
             if result and result["url"]:
-                log.info(f"  ✓ (original) {result['url']} — rating: {result['rating']}")
+                log.info(f"  \u2713 (original) {result['url']} \u2014 rating: {result['rating']}")
                 return {"letterboxd_url": result["url"], "letterboxd_rating": result["rating"]}
 
-        log.warning(f"  ✗ no result for: {cleaned}{year_str}")
+        log.warning(f"  \u2717 no result for: {cleaned}{year_str}")
         return {"letterboxd_url": None, "letterboxd_rating": None}
 
 
@@ -515,7 +866,7 @@ def collect_unique_titles(data_files: list[Path]) -> dict[str, dict]:
                 entries[key] = []
             entries[key].append({
                 "title": film["title"],
-                "year": film.get("year"),
+                "year": extract_title_year_hint(film["title"]) or coerce_year(film.get("year")),
             })
 
     result = {}
@@ -549,7 +900,7 @@ def enrich_data_files(data_files: list[Path], lookup_cache: dict, dry_run: bool 
                 json.dumps(data, indent=2, ensure_ascii=False) + "\n",
                 encoding="utf-8",
             )
-            log.info(f"✏️  Updated {path.name}")
+            log.info(f"\u270f\ufe0f  Updated {path.name}")
         elif modified:
             log.info(f"[DRY RUN] Would update {path.name}")
         else:
@@ -587,17 +938,15 @@ async def run(args):
 
     has_year = sum(1 for v in to_lookup.values() if v["year"])
     log.info(f"Found {len(unique_titles)} unique titles total")
-    log.info(f"  → {len(skipped)} skipped (events/compilations/NT Live)")
-    log.info(f"  → {len(to_lookup)} to look up ({has_year} with year, {len(to_lookup) - has_year} without)")
+    log.info(f"  \u2192 {len(skipped)} skipped (events/compilations/NT Live)")
+    log.info(f"  \u2192 {len(to_lookup)} to look up ({has_year} with year, {len(to_lookup) - has_year} without)")
 
     if skipped:
         log.info("Skipped titles:")
         for v in sorted(skipped.values(), key=lambda x: x["title"]):
-            log.info(f"  ⏭  {v['title']}")
+            log.info(f"  \u23ed  {v['title']}")
 
     # ── Deduplicate by cleaned title to avoid redundant HTTP requests ──
-    # Multiple raw titles can clean to the same slug (e.g. "Departures",
-    # "Preview: Departures + Q&A", "Fetish Friendly: Departures" all → "Departures")
     clean_to_keys: dict[str, list[str]] = {}
     for key, info in to_lookup.items():
         cleaned = clean_title_for_lookup(info["title"])
@@ -612,12 +961,12 @@ async def run(args):
         rep_key = next((k for k in keys if to_lookup[k]["year"]), keys[0])
         work_items.append((dedup_key, rep_key, keys))
 
-    log.info(f"  → {len(work_items)} unique lookups after dedup (saved {len(to_lookup) - len(work_items)} requests)")
+    log.info(f"  \u2192 {len(work_items)} unique lookups after dedup (saved {len(to_lookup) - len(work_items)} requests)")
 
     # ── Async lookups ──
     concurrency = args.concurrency
     semaphore = asyncio.Semaphore(concurrency)
-    log.info(f"  → concurrency: {concurrency}")
+    log.info(f"  \u2192 concurrency: {concurrency}")
 
     lookup_cache: dict[str, dict] = {}
 
