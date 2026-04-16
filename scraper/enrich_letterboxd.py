@@ -37,10 +37,6 @@ CONCURRENCY = 5          # parallel Letterboxd requests
 DELAY_BETWEEN = 0.25     # seconds between starting each request
 MAX_RETRIES = 2
 YEAR_TOLERANCE = 2
-# When a source has no year AND no director, reject bare-slug matches to
-# films older than this many years — cinema listings without year metadata
-# are almost always current/recent releases, not deep-catalogue revivals.
-NO_YEAR_MAX_AGE = 3
 
 HEADERS = {
     "User-Agent": (
@@ -812,12 +808,16 @@ def build_slug_candidates(title: str, year: int | None) -> list[SlugCandidate]:
             add(f"{slug}-{year - 1}", f"{variant} [{year - 1}]", year - 1)
             add(f"{slug}-{year + 1}", f"{variant} [{year + 1}]", year + 1)
         else:
-            # No year available — try bare slug first, then recent years
-            # (cinema listings without year are almost always current releases)
-            add(slug, f"{variant} [title-only]")
+            # No year available — try recent years first (cinema listings
+            # without year are almost always current/recent releases), then
+            # fall back to bare slug for genuine catalogue titles.
+            # This ordering means: if mother-mary-2026 exists, it wins over
+            # mother-mary (1982). But if debs-2026/2025 both 404, we still
+            # correctly match debs (2004) via the bare slug.
             current_year = datetime.now().year
             add(f"{slug}-{current_year}", f"{variant} [{current_year} guess]", current_year)
             add(f"{slug}-{current_year - 1}", f"{variant} [{current_year - 1} guess]", current_year - 1)
+            add(slug, f"{variant} [title-only]")
 
     return candidates
 
@@ -889,15 +889,14 @@ def is_valid_page_match(
         if delta > YEAR_TOLERANCE and not (strength >= 3 and is_specific_title(source_title)):
             return False, f"source year {source_year} resolved to {page_year}"
 
-    # Safety net for no-year, no-director films: if the source has neither
-    # year nor director, reject bare-slug matches to films that are too old
-    # to plausibly be a current cinema listing (e.g. Mother Mary 1982 when
-    # the cinema is showing the 2026 Lowery film).
-    if source_year is None and dir_match is None and page_year is not None:
-        current_year = datetime.now().year
-        age = current_year - page_year
-        if age > NO_YEAR_MAX_AGE:
-            return False, f"no-year source but page is from {page_year} ({age}y old, max {NO_YEAR_MAX_AGE})"
+    # Obscure-entry heuristic: if the source has a director but the page has
+    # neither director metadata NOR a rating, it's very likely an obscure
+    # wrong-match entry (e.g. the Paul McCarthy "Rocky" art video at
+    # /film/rocky-1976/, or the Lluís Galter "Aftersun" short at
+    # /film/aftersun-2022/). Skip it and try the next candidate — the
+    # well-known film with actual metadata will be at another slug.
+    if source_director and not page_directors and page.get("rating") is None:
+        return False, "no page directors or rating (likely obscure wrong match)"
 
     return True, "ok"
 
