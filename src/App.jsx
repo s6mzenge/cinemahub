@@ -1302,9 +1302,9 @@ export default function App() {
                                 <div key={`${film.id}-${si}`} style={{ display:"flex", alignItems:"stretch", gap:0, marginBottom:isLastCard?0:8 }}>
                                   <div style={{ width:56, flexShrink:0, display:"flex", flexDirection:"column", alignItems:"center", position:"relative" }}>
                                     {/* Spine line above time label */}
-                                    {!(gi===0 && isFirstCard) && <div style={{ width:1, flex: isFirstCard ? "0 0 8px" : "1", background:T.mobileConnector(T.accent) }} />}
+                                    {!(gi===0 && isFirstCard) && <div style={{ width:1, flex: isFirstCard ? "0 0 12px" : "1", background:T.mobileConnector(T.accent) }} />}
                                     {/* Time label */}
-                                    {isFirstCard && <div style={{ fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono, padding:"2px 0", flexShrink:0 }}>{group.time}</div>}
+                                    {isFirstCard && <div style={{ fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono, padding:"6px 0", flexShrink:0 }}>{group.time}</div>}
                                     {/* Spine line below time label */}
                                     {!(isLast && isLastCard) && <div style={{ width:1, flex:1, background:T.mobileConnector(T.accent) }} />}
                                   </div>
