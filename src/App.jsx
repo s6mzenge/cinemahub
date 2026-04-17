@@ -746,6 +746,13 @@ export default function App() {
             radial-gradient(circle 5px at 100% 50%, transparent 4px, #000 4.5px) 100% 0 / 51% 100% no-repeat;
         }
         .tkt-cell { }
+
+        /* ── ADS label: show only when container has enough real pixels ── */
+        .ads-zone { container-type: inline-size; }
+        .ads-zone .ads-label { display: none; }
+        @container (min-width: 28px) {
+          .ads-zone .ads-label { display: block; }
+        }
       `}</style>
 
       <Overlay />
@@ -1051,8 +1058,8 @@ export default function App() {
                                             boxShadow: isHov ? `0 6px 24px ${bc}44,0 0 0 1px ${bc}55` : isDark ? `0 1px 4px rgba(0,0,0,0.3)` : `0 1px 3px rgba(0,0,0,0.08)`,
                                           }}>
                                           {sess.adsMin > 0 && <>
-                                          <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${bc}30,${bc}30 3px,${bc}18 3px,${bc}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"4px 0 0 4px", overflow:"hidden", padding:"0 4px" }}>
-                                            {adsWidth>=1.2 && <span style={{ fontSize:6, fontWeight:700, color:`${bc}`, letterSpacing:1, textTransform:"uppercase", opacity:0.5, fontFamily:T.mono }}>ADS</span>}
+                                          <div className="ads-zone" style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${bc}30,${bc}30 3px,${bc}18 3px,${bc}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"4px 0 0 4px", overflow:"hidden", boxSizing:"border-box", paddingLeft:6, paddingRight:2 }}>
+                                            <span className="ads-label" style={{ fontSize:6, fontWeight:700, color:`${bc}`, letterSpacing:1, textTransform:"uppercase", opacity:0.5, fontFamily:T.mono }}>ADS</span>
                                           </div>
                                           <div style={{ width:6, flexShrink:0, background:`radial-gradient(circle 2px at center,${T.bg} 1.5px,${bc}55 2px) center top / 4px 6px repeat-y` }} />
                                           </>}
@@ -1114,8 +1121,8 @@ export default function App() {
                                     boxShadow: isHov ? `0 8px 32px ${film.color}44,0 0 0 1px ${film.color}55,inset 0 1px 0 rgba(255,255,255,0.06)` : isDark ? `0 1px 6px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.03)` : `0 1px 4px rgba(0,0,0,0.08),inset 0 1px 0 rgba(255,255,255,0.5)`,
                                   }}>
                                   {sess.adsMin > 0 && <>
-                                  <div style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${film.color}30,${film.color}30 3px,${film.color}18 3px,${film.color}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"5px 0 0 5px", overflow:"hidden", padding:"0 4px" }}>
-                                    {adsWidth>=1.2 && <span style={{ fontSize:7, fontWeight:700, color:film.accent, letterSpacing:1, textTransform:"uppercase", opacity:0.6, fontFamily:T.mono }}>ADS</span>}
+                                  <div className="ads-zone" style={{ width:`${(adsWidth/totalWidth)*100}%`, background:`repeating-linear-gradient(120deg,${film.color}30,${film.color}30 3px,${film.color}18 3px,${film.color}18 6px)`, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, borderRadius:"5px 0 0 5px", overflow:"hidden", boxSizing:"border-box", paddingLeft:7, paddingRight:2 }}>
+                                    <span className="ads-label" style={{ fontSize:7, fontWeight:700, color:film.accent, letterSpacing:1, textTransform:"uppercase", opacity:0.6, fontFamily:T.mono }}>ADS</span>
                                   </div>
                                   <div style={{ width:8, flexShrink:0, position:"relative", zIndex:3, background:`radial-gradient(circle 2.5px at center,${T.bg} 2px,${film.color}55 2.5px) center top / 5px 8px repeat-y` }} />
                                   </>}
