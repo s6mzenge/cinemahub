@@ -345,6 +345,7 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchSelectedFilm, setSearchSelectedFilm] = useState(null);
   const [searchSortBy, setSearchSortBy] = useState("cinema");
+  const [searchListSort, setSearchListSort] = useState("alpha"); // "alpha" | "rating"
   const [searchHighlight, setSearchHighlight] = useState(-1);
   const [allFilmsForSearch, setAllFilmsForSearch] = useState([]);
   const searchInputRef = useRef(null);
@@ -428,7 +429,7 @@ export default function App() {
     if (isSearch && searchInputRef.current) {
       setTimeout(() => searchInputRef.current?.focus(), 120);
     }
-    if (!isSearch) { setSearchQuery(""); setSearchSelectedFilm(null); setSearchSortBy("cinema"); setSearchHighlight(-1); }
+    if (!isSearch) { setSearchQuery(""); setSearchSelectedFilm(null); setSearchSortBy("cinema"); setSearchHighlight(-1); setSearchListSort("alpha"); }
   }, [isSearch]);
 
   const allDates = useMemo(() => getAllDatesWithScreenings(films), [films]);
@@ -576,19 +577,31 @@ export default function App() {
   }, [allFilmsForSearch]);
 
   const searchResults = useMemo(() => {
-    if (!searchQuery.trim()) return [];
-    const q = searchQuery.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
-    const tokens = q.split(/\s+/);
-    return searchIndex
-      .filter(f => tokens.every(tok => f.searchStr.includes(tok)))
-      .sort((a, b) => {
-        const aStarts = a.searchStr.startsWith(q) ? 0 : 1;
-        const bStarts = b.searchStr.startsWith(q) ? 0 : 1;
-        if (aStarts !== bStarts) return aStarts - bStarts;
-        return a.title.localeCompare(b.title);
-      })
-      .slice(0, 20);
-  }, [searchQuery, searchIndex]);
+    let results;
+    if (!searchQuery.trim()) {
+      results = [...searchIndex];
+    } else {
+      const q = searchQuery.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+      const tokens = q.split(/\s+/);
+      results = searchIndex.filter(f => tokens.every(tok => f.searchStr.includes(tok)));
+      // If sorting by alpha, prefer start-matches when there's a query
+      if (searchListSort === "alpha") {
+        results.sort((a, b) => {
+          const aStarts = a.searchStr.startsWith(q) ? 0 : 1;
+          const bStarts = b.searchStr.startsWith(q) ? 0 : 1;
+          if (aStarts !== bStarts) return aStarts - bStarts;
+          return a.title.localeCompare(b.title);
+        });
+        return results;
+      }
+    }
+    if (searchListSort === "rating") {
+      results.sort((a, b) => (b.letterboxd_rating || 0) - (a.letterboxd_rating || 0) || a.title.localeCompare(b.title));
+    } else {
+      results.sort((a, b) => a.title.localeCompare(b.title));
+    }
+    return results;
+  }, [searchQuery, searchIndex, searchListSort]);
 
   /* ─── Showtimes for selected search film ─── */
   const searchShowtimes = useMemo(() => {
@@ -943,8 +956,26 @@ export default function App() {
 
               {!searchSelectedFilm ? (
                 /* ─── Results list ─── */
-                searchQuery.trim() ? (
-                  searchResults.length > 0 ? (
+                <>
+                  {/* Sort toggle + count */}
+                  <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", marginBottom:12 }}>
+                    <span style={{ fontSize:11, color:T.textDim, fontFamily:T.mono }}>
+                      {searchResults.length} film{searchResults.length !== 1 ? "s" : ""}
+                    </span>
+                    <div style={{ display:"flex", gap:4 }}>
+                      {[["alpha","A–Z"],["rating","★ Rating"]].map(([key,label]) => (
+                        <button key={key} onClick={() => { setSearchListSort(key); setSearchHighlight(-1); }} className="view-btn" style={{
+                          padding:"5px 12px", borderRadius:5, fontSize:10, fontWeight:600, cursor:"pointer",
+                          fontFamily:T.mono, letterSpacing:0.3,
+                          border: searchListSort===key ? `1.5px solid ${T.accent}` : `1.5px solid ${T.border}`,
+                          background: searchListSort===key ? T.accentSoft : "transparent",
+                          color: searchListSort===key ? T.accent : T.textDim, transition:"all 0.2s",
+                        }}>{label}</button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {searchResults.length > 0 ? (
                     <div style={{ borderRadius:12, border:`1px solid ${T.border}`, overflow:"hidden" }}>
                       {searchResults.map((f, i) => {
                         const cinemaCount = Object.keys(f.perCinema || {}).length;
@@ -981,14 +1012,8 @@ export default function App() {
                       <div style={{ fontSize:40, opacity:0.15, marginBottom:12 }}>◇</div>
                       <p style={{ fontSize:14, color:T.textDim, fontFamily:T.serif, fontStyle:"italic" }}>No films found for "{searchQuery}"</p>
                     </div>
-                  )
-                ) : (
-                  /* Empty state */
-                  <div style={{ textAlign:"center", padding:"60px 20px" }}>
-                    <div style={{ fontSize:48, opacity:0.08, marginBottom:16 }}>🎬</div>
-                    <p style={{ fontSize:13, color:T.textDim, fontFamily:T.mono, letterSpacing:0.5 }}>Start typing to find a film</p>
-                  </div>
-                )
+                  )}
+                </>
               ) : (
                 /* ─── Film detail view ─── */
                 (() => {
