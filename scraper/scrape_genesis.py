@@ -410,7 +410,7 @@ def main():
     args = parser.parse_args()
 
     output_path = Path(args.output) if args.output else (
-        Path(__file__).parent / "public" / "data" / "films_genesis.json"
+        Path(__file__).resolve().parent.parent / "public" / "data" / "films_genesis.json"
     )
 
     log.info("=== Genesis Cinema Scraper Starting ===")
