@@ -99,6 +99,12 @@ _RAW_SLUG_OVERRIDES = {
     "michael": "michael-2026",
     # ── ICA alternate titles ──
     "a ay": "oh-moon",
+    # ── Garden Cinema alternate titles ──
+    "jules et jim": "jules-and-jim",
+    "lift to the scaffold": "elevator-to-the-gallows",
+    "xiao wu": "xiao-wu",
+    "the photograph": "the-photograph-1986",     # Nico/Nikos Papatakis transliteration
+    "walking a tightrope": "walking-a-tightrope", # Nico/Nikos Papatakis transliteration
 }
 
 # (title, source_year) → forced slug — for cases where the default
@@ -116,6 +122,9 @@ _RAW_YEAR_SLUG_OVERRIDES = {
     # ── ICA same-year disambiguation ──
     ("dracula", 2025): "dracula-2025-1",
     ("the stranger", 2025): "the-stranger-2025-1",
+    # ── Garden Cinema: Nico/Nikos Papatakis transliteration ──
+    ("the photograph", 1986): "the-photograph-1986",
+    ("walking a tightrope", 1991): "walking-a-tightrope",
 }
 
 # (title, source_year) → expected Letterboxd year — for when the source
@@ -146,6 +155,9 @@ TITLE_EQUIVALENCE_GROUPS = [
     ("the lodger", "the lodger a story of the london fog"),
     ("timecode live", "timecode"),
     ("twin peaks pilot northwest passage", "twin peaks"),
+    # ── Garden Cinema alternate titles ──
+    ("jules et jim", "jules and jim"),
+    ("lift to the scaffold", "elevator to the gallows"),
 ]
 
 
@@ -390,6 +402,12 @@ def _names_fuzzy_match(src_norm: str, page_norm: str) -> bool:
     src_set = set(src_words)
     page_set = set(page_words)
 
+    # Known first-name transliteration equivalences (normalized form)
+    _FIRST_NAME_ALIASES = {
+        "nico": "nikos", "nikos": "nico",
+        "kate": "catherine", "catherine": "kate",
+    }
+
     # Suffix match: "Sofía Petersen" ⊂ "Olivia Sofía Petersen"
     if src_norm.endswith(page_norm) or page_norm.endswith(src_norm):
         return True
@@ -402,6 +420,15 @@ def _names_fuzzy_match(src_norm: str, page_norm: str) -> bool:
     overlap = src_set & page_set
     if len(overlap) >= 2 and len(overlap) >= min(len(src_set), len(page_set)):
         return True
+
+    # Alias-aware word-set match: replace known aliases and re-check
+    if len(src_words) >= 2 and len(page_words) >= 2:
+        src_aliased = {_FIRST_NAME_ALIASES.get(w, w) for w in src_set}
+        if src_aliased == page_set:
+            return True
+        page_aliased = {_FIRST_NAME_ALIASES.get(w, w) for w in page_set}
+        if src_set == page_aliased:
+            return True
 
     # Initial matching: "r" matches "ribeiro", single-letter words are initials
     # Expand initials to check if they match the first letter of the other name's words
@@ -612,6 +639,10 @@ def clean_title_for_lookup(title: str) -> str:
     # Strip "with X live on stage" suffix
     t = re.sub(r"\s+with\s+\w[\w\s]*\blive on stage\b.*$", "", t, flags=re.I)
 
+    # Strip "with Firstname Lastname" event attribution suffix
+    # e.g. "Colossal Wreck with Josh Appignanesi" → "Colossal Wreck"
+    t = re.sub(r"\s+with\s+[A-Z][a-z]+(?:\s+[A-Z][a-zÀ-ÿ]+)+\s*$", "", t)
+
     # Strip non-film parentheticals
     for pattern in NON_FILM_PARENS:
         t = re.sub(r"\s*" + pattern, "", t, flags=re.I)
@@ -636,6 +667,21 @@ def clean_title_for_lookup(title: str) -> str:
 
     # Strip "w/ Name intro" suffix
     t = re.sub(r"\s+w/\s+\w[\w\s]*\bintro\b.*$", "", t, flags=re.I)
+
+    # Extract English title from parenthesized translation:
+    # "Relatos salvajes (Wild Tales)" → "Wild Tales"
+    # "El secreto de sus ojos (The Secret in Their Eyes)" → "The Secret in Their Eyes"
+    # Triggers when a trailing parenthetical is all-ASCII and starts with a
+    # capital letter — by this point, years, anniversaries, and known
+    # non-film descriptors have already been stripped.
+    paren_match = re.match(r'^(.+?)\s*\(([A-Z][A-Za-z0-9\s\':,!?\-]{2,})\)\s*$', t)
+    if paren_match:
+        english_part = paren_match.group(2).strip()
+        if english_part.isascii() and not re.match(
+            r'(?i)^(live|extended|director|theatrical|original|restoration|remaster|special|uncut)',
+            english_part,
+        ):
+            t = english_part
 
     return t.strip('"').strip("\u201c").strip("\u201d").strip('"').strip()
 
