@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-17T13:04:44.358399+00:00",
+  "scraped_at": "2026-04-17T13:23:07.031643+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -899,6 +899,37 @@
       "accent": "#d36868"
     },
     {
+      "id": "theatre-of-blood",
+      "title": "Theatre of Blood",
+      "rating": "15",
+      "runtime": 102,
+      "genre": "Other",
+      "year": "1973",
+      "director": "Douglas Hickox",
+      "cast": "Vincent Price, Diana Rigg, Ian Hendry, Harry Andrews, Coral Browne, Robert Coote, Jack Hawkins, Michael Hordern, Arthur Lowe",
+      "country": "UK",
+      "description": "THEATRE OF BLOOD (1973) is a British horror-comedy starring Vincent Price as Edward Lionheart, a Shakespearean actor who, after being scorned by critics, fakes his suicide and returns to murder them in gruesome ways inspired by Shakespeare’s plays assisted by his daughter (Diana Rigg).  The film wil...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=470625",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/470620.jpg",
+      "showtimes": {
+        "2026-05-16": [
+          {
+            "time": "19:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_470647.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false,
+            "tags": [
+              "Q&A"
+            ]
+          }
+        ]
+      },
+      "color": "#3052a6",
+      "accent": "#849cd6",
+      "letterboxd_url": "https://letterboxd.com/film/theatre-of-blood/",
+      "letterboxd_rating": 3.65
+    },
+    {
       "id": "exhibition-on-screen-frida-kahlo",
       "title": "Exhibition On Screen: Frida Kahlo",
       "rating": "12A",
@@ -921,8 +952,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "star-wars-the-mandalorian-and-grogu",
@@ -1067,8 +1098,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#9f2190",
+      "accent": "#d368c6",
       "letterboxd_url": "https://letterboxd.com/film/star-wars-the-mandalorian-and-grogu/",
       "letterboxd_rating": null
     },
@@ -1095,8 +1126,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "the-metropolitan-opera-el-ltimo-sue-o-de-frida-y-diego",
@@ -1121,8 +1152,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#975e1a",
+      "accent": "#d49953"
     },
     {
       "id": "national-theatre-live-les-liaisons-dangereuses",
@@ -1147,8 +1178,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#41219f",
+      "accent": "#8368d3"
     }
   ]
 }
