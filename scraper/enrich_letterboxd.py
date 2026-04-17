@@ -609,6 +609,9 @@ def clean_title_for_lookup(title: str) -> str:
             if before_lower == prefix or before_lower_clean == prefix:
                 t = t.split(":", 1)[1].strip()
                 t = t.strip('"').strip("\u201c").strip("\u201d").strip()
+                # Strip "with Firstname Lastname" attribution that follows
+                # event-prefixed titles (e.g. "Colossal Wreck with Josh Appignanesi")
+                t = re.sub(r"\s+with\s+[A-Z][a-z]+(?:\s+[A-Z][a-zÀ-ÿ]+)+\s*$", "", t)
                 break
 
     # Strip non-colon prefixes
@@ -638,10 +641,6 @@ def clean_title_for_lookup(title: str) -> str:
 
     # Strip "with X live on stage" suffix
     t = re.sub(r"\s+with\s+\w[\w\s]*\blive on stage\b.*$", "", t, flags=re.I)
-
-    # Strip "with Firstname Lastname" event attribution suffix
-    # e.g. "Colossal Wreck with Josh Appignanesi" → "Colossal Wreck"
-    t = re.sub(r"\s+with\s+[A-Z][a-z]+(?:\s+[A-Z][a-zÀ-ÿ]+)+\s*$", "", t)
 
     # Strip non-film parentheticals
     for pattern in NON_FILM_PARENS:
@@ -680,7 +679,7 @@ def clean_title_for_lookup(title: str) -> str:
         if english_part.isascii() and not re.match(
             r'(?i)^(live|extended|director|theatrical|original|restoration|remaster|special|uncut)',
             english_part,
-        ):
+        ) and not re.match(r'^[A-Z]{2,}\b', english_part):
             t = english_part
 
     return t.strip('"').strip("\u201c").strip("\u201d").strip('"').strip()
