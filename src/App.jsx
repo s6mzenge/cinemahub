@@ -1291,65 +1291,62 @@ export default function App() {
                     <div style={{ display:"flex", flexDirection:"column", gap:0, paddingTop:6 }}>
                       {groups.map((group,gi) => {
                         const isPast = nowMin!==null && group.startMin<nowMin;
+                        const isFirst = gi === 0;
                         const isLast = gi === groups.length - 1;
                         return (
-                          <div key={group.time+gi} style={{ opacity:isPast?0.35:1, transition:"opacity 0.3s" }}>
-                            {group.sessions.map((sess,si) => {
-                              const film=sess.film;
-                              const isFirstCard = si === 0;
-                              const isLastCard = si === group.sessions.length - 1;
-                              const isVeryFirst = gi===0 && isFirstCard;
-                              const isVeryLast = isLast && isLastCard;
-                              return (
-                                <div key={`${film.id}-${si}`} style={{ display:"flex", alignItems:"stretch", gap:0, marginBottom:isLastCard?0:8 }}>
-                                  <div style={{ width:56, flexShrink:0, position:"relative" }}>
-                                    {/* Spine line */}
-                                    <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)", width:1, background:T.mobileConnector(T.accent),
-                                      top: isVeryFirst ? "50%" : 0,
-                                      bottom: isVeryLast ? "50%" : (!isLastCard ? -8 : 0),
-                                    }} />
-                                    {/* Time label (vertically centered with card) */}
-                                    {isFirstCard && (
-                                      <div style={{ position:"absolute", top:"50%", left:"50%", transform:"translate(-50%,-50%)", background:T.bg, padding:"3px 4px", fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono, whiteSpace:"nowrap", zIndex:1 }}>{group.time}</div>
-                                    )}
-                                  </div>
-                                  <div style={{ flex:1 }}>
-                                    <div className="tkt-card" style={{ display:"flex", alignItems:"center", gap:0, borderRadius:12, border:`1px solid ${T.cardBorder(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color)}`, background:T.cardBg(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color) }}>
-                                      <div style={{ width:4, alignSelf:"stretch", background:`linear-gradient(180deg,${isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color},${isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color}66)`, flexShrink:0, borderRadius:"12px 0 0 12px" }} />
-                                      <div style={{ flex:1, padding:"11px 14px" }}>
-                                        <div style={{ display:"flex", alignItems:"center", gap:6 }}>
-                                          <div style={{ fontSize:14, fontWeight:700, color:T.text, lineHeight:1.25, fontFamily:T.serif, minWidth:0, overflow:"hidden", display:"-webkit-box", WebkitLineClamp:2, WebkitBoxOrient:"vertical" }}>
-                                            {!isAllCinemas && film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.text, textDecoration:"none" }}>{film.title}</a> : film.title}
+                          <div key={group.time+gi}>
+                            {/* Group row: spine column + cards column */}
+                            <div style={{ display:"flex", alignItems:"stretch" }}>
+                              {/* Spine column */}
+                              <div style={{ width:56, flexShrink:0, position:"relative", display:"flex", alignItems:"center", justifyContent:"center" }}>
+                                {/* Continuous spine line */}
+                                <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)", width:1, background:T.mobileConnector(T.accent), top: isFirst ? "50%" : 0, bottom: isLast ? "50%" : 0 }} />
+                                {/* Time label */}
+                                <div style={{ position:"relative", zIndex:1, background:T.bg, padding:"3px 4px", fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono, whiteSpace:"nowrap", opacity:isPast?0.5:1, transition:"opacity 0.3s" }}>{group.time}</div>
+                              </div>
+                              {/* Cards column */}
+                              <div style={{ flex:1, display:"flex", flexDirection:"column", gap:8, opacity:isPast?0.35:1, transition:"opacity 0.3s" }}>
+                                {group.sessions.map((sess,si) => {
+                                  const film=sess.film;
+                                  return (
+                                    <div key={`${film.id}-${si}`}>
+                                      <div className="tkt-card" style={{ display:"flex", alignItems:"center", gap:0, borderRadius:12, border:`1px solid ${T.cardBorder(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color)}`, background:T.cardBg(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color) }}>
+                                        <div style={{ width:4, alignSelf:"stretch", background:`linear-gradient(180deg,${isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color},${isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color}66)`, flexShrink:0, borderRadius:"12px 0 0 12px" }} />
+                                        <div style={{ flex:1, padding:"11px 14px" }}>
+                                          <div style={{ display:"flex", alignItems:"center", gap:6 }}>
+                                            <div style={{ fontSize:14, fontWeight:700, color:T.text, lineHeight:1.25, fontFamily:T.serif, minWidth:0, overflow:"hidden", display:"-webkit-box", WebkitLineClamp:2, WebkitBoxOrient:"vertical" }}>
+                                              {!isAllCinemas && film.film_url ? <a href={film.film_url} target="_blank" rel="noopener" style={{ color:T.text, textDecoration:"none" }}>{film.title}</a> : film.title}
+                                            </div>
+                                            <LbRating rating={film.letterboxd_rating} url={film.letterboxd_url} size={13} />
                                           </div>
-                                          <LbRating rating={film.letterboxd_rating} url={film.letterboxd_url} size={13} />
+                                          <div style={{ display:"flex", gap:6, marginTop:5, alignItems:"center", flexWrap:"wrap" }}>
+                                            {isAllCinemas && sess.cinemaName && (
+                                              sess.cinemaFilmUrl ? <a href={sess.cinemaFilmUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}><span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:`${sess.cinemaColor}22`, color:sess.cinemaColor, fontFamily:T.mono, letterSpacing:0.3, border:`1px solid ${sess.cinemaColor}33`, cursor:"pointer" }}>{sess.cinemaShort||sess.cinemaName}</span></a>
+                                              : <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:`${sess.cinemaColor}22`, color:sess.cinemaColor, fontFamily:T.mono, letterSpacing:0.3, border:`1px solid ${sess.cinemaColor}33` }}>{sess.cinemaShort||sess.cinemaName}</span>
+                                            )}
+                                            <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:rBg[film.rating]||"#444", color:"#fff", fontFamily:T.mono, letterSpacing:0.5 }}>{film.rating}</span>
+                                            <span style={{ fontSize:10, color:T.textMuted, fontFamily:T.mono }}>{film.runtime}min</span>
+                                            <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>ends ~{minToTime(sess.filmEnd)}</span>
+                                            {sess.screen && <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>{sess.screen}</span>}
+                                            {sess.isHoh && <span style={{ fontSize:9, color:T.textMuted, fontFamily:T.mono, padding:"1px 4px", borderRadius:3, background:T.ccBg, border:`1px solid ${T.ccBorder}` }}>CC</span>}
+                                            {sess.tags?.map((tag,ti) => <span key={ti} style={{ fontSize:9, color:T.accent, fontFamily:T.mono, padding:"1px 5px", borderRadius:3, background:T.accentSoft, border:`1px solid ${T.accent}22`, fontWeight:600 }}>{tag}</span>)}
+                                          </div>
                                         </div>
-                                        <div style={{ display:"flex", gap:6, marginTop:5, alignItems:"center", flexWrap:"wrap" }}>
-                                          {isAllCinemas && sess.cinemaName && (
-                                            sess.cinemaFilmUrl ? <a href={sess.cinemaFilmUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}><span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:`${sess.cinemaColor}22`, color:sess.cinemaColor, fontFamily:T.mono, letterSpacing:0.3, border:`1px solid ${sess.cinemaColor}33`, cursor:"pointer" }}>{sess.cinemaShort||sess.cinemaName}</span></a>
-                                            : <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:`${sess.cinemaColor}22`, color:sess.cinemaColor, fontFamily:T.mono, letterSpacing:0.3, border:`1px solid ${sess.cinemaColor}33` }}>{sess.cinemaShort||sess.cinemaName}</span>
-                                          )}
-                                          <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:rBg[film.rating]||"#444", color:"#fff", fontFamily:T.mono, letterSpacing:0.5 }}>{film.rating}</span>
-                                          <span style={{ fontSize:10, color:T.textMuted, fontFamily:T.mono }}>{film.runtime}min</span>
-                                          <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>ends ~{minToTime(sess.filmEnd)}</span>
-                                          {sess.screen && <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono }}>{sess.screen}</span>}
-                                          {sess.isHoh && <span style={{ fontSize:9, color:T.textMuted, fontFamily:T.mono, padding:"1px 4px", borderRadius:3, background:T.ccBg, border:`1px solid ${T.ccBorder}` }}>CC</span>}
-                                          {sess.tags?.map((tag,ti) => <span key={ti} style={{ fontSize:9, color:T.accent, fontFamily:T.mono, padding:"1px 5px", borderRadius:3, background:T.accentSoft, border:`1px solid ${T.accent}22`, fontWeight:600 }}>{tag}</span>)}
-                                        </div>
+                                        {sess.bookingUrl && (<>
+                                          <div style={{ width:6, alignSelf:"stretch", flexShrink:0, background:`radial-gradient(circle 2px at center,${T.bg} 1.5px,${film.color}22 2px) center top / 4px 7px repeat-y` }} />
+                                          <a href={sess.bookingUrl} target="_blank" rel="noopener" className="book-btn" style={{ display:"flex", alignItems:"center", justifyContent:"center", padding:"0 19px 0 11px", alignSelf:"stretch", background:`${film.color}10`, textDecoration:"none", cursor:"pointer", transition:"background 0.2s", borderRadius:"0 12px 12px 0" }}>
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={film.accent} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>
+                                          </a>
+                                        </>)}
                                       </div>
-                                      {sess.bookingUrl && (<>
-                                        <div style={{ width:6, alignSelf:"stretch", flexShrink:0, background:`radial-gradient(circle 2px at center,${T.bg} 1.5px,${film.color}22 2px) center top / 4px 7px repeat-y` }} />
-                                        <a href={sess.bookingUrl} target="_blank" rel="noopener" className="book-btn" style={{ display:"flex", alignItems:"center", justifyContent:"center", padding:"0 19px 0 11px", alignSelf:"stretch", background:`${film.color}10`, textDecoration:"none", cursor:"pointer", transition:"background 0.2s", borderRadius:"0 12px 12px 0" }}>
-                                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={film.accent} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>
-                                        </a>
-                                      </>)}
                                     </div>
-                                  </div>
-                                </div>
-                              );
-                            })}
+                                  );
+                                })}
+                              </div>
+                            </div>
                             {/* Spacer between groups with spine */}
                             {!isLast && (
-                              <div style={{ display:"flex", alignItems:"stretch" }}>
+                              <div style={{ display:"flex" }}>
                                 <div style={{ width:56, flexShrink:0, display:"flex", justifyContent:"center" }}>
                                   <div style={{ width:1, height:10, background:T.mobileConnector(T.accent) }} />
                                 </div>
