@@ -20,38 +20,38 @@ jobs:
           cache-dependency-path: scraper/requirements.txt
       - name: Install dependencies
         run: pip install -r scraper/requirements.txt
-      # - name: Install Playwright browsers
-      #   run: playwright install chromium --with-deps
-      # - name: Run Peckhamplex scraper
-      #   run: python scraper/scrape.py
-      #   continue-on-error: true
-      # - name: Run Prince Charles Cinema scraper
-      #   run: python scraper/scrape_prince_charles.py
-      #   continue-on-error: true
-      # - name: Run Castle Cinema scraper
-      #   run: python scraper/scrape_castle.py
-      #   continue-on-error: true
-      # - name: Run The Arzner scraper
-      #   run: python scraper/scrape_arzner.py
-      #   continue-on-error: true
-      # - name: Run BFI Southbank scraper
-      #   run: python scraper/scrape_bfi.py
-      #   continue-on-error: true
-      # - name: Run Electric Cinema scraper
-      #   run: python scraper/scrape_electric.py
-      #   continue-on-error: true
-      # - name: Run Close-Up Film Centre scraper
-      #   run: python scraper/scrape_closeup.py
-      #   continue-on-error: true
-      # - name: Run ICA scraper
-      #   run: python scraper/scrape_ica.py
-      #   continue-on-error: true
-      # - name: Run Garden Cinema scraper
-      #   run: python scraper/scrape_garden.py
-      #   continue-on-error: true
-      # - name: Run Rio Cinema scraper
-      #   run: python scraper/scrape_rio.py
-      #   continue-on-error: true
+      - name: Install Playwright browsers
+        run: playwright install chromium --with-deps
+      - name: Run Peckhamplex scraper
+        run: python scraper/scrape.py
+        continue-on-error: true
+      - name: Run Prince Charles Cinema scraper
+        run: python scraper/scrape_prince_charles.py
+        continue-on-error: true
+      - name: Run Castle Cinema scraper
+        run: python scraper/scrape_castle.py
+        continue-on-error: true
+      - name: Run The Arzner scraper
+        run: python scraper/scrape_arzner.py
+        continue-on-error: true
+      - name: Run BFI Southbank scraper
+        run: python scraper/scrape_bfi.py
+        continue-on-error: true
+      - name: Run Electric Cinema scraper
+        run: python scraper/scrape_electric.py
+        continue-on-error: true
+      - name: Run Close-Up Film Centre scraper
+        run: python scraper/scrape_closeup.py
+        continue-on-error: true
+      - name: Run ICA scraper
+        run: python scraper/scrape_ica.py
+        continue-on-error: true
+      - name: Run Garden Cinema scraper
+        run: python scraper/scrape_garden.py
+        continue-on-error: true
+      - name: Run Rio Cinema scraper
+        run: python scraper/scrape_rio.py
+        continue-on-error: true
       - name: Run Genesis Cinema scraper
         run: python scraper/scrape_genesis.py
         continue-on-error: true
