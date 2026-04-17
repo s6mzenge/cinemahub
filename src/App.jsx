@@ -129,6 +129,16 @@ function normalizeTitle(title) {
   // Lowercase
   t = t.toLowerCase().trim();
 
+  // ── Step 0a: Normalise Unicode fractions (½→1/2 etc.) ──
+  t = t.replace(/½/g, " 1/2").replace(/¼/g, " 1/4").replace(/¾/g, " 3/4");
+
+  // ── Step 0b: Strip square-bracket content ── e.g. "[Theatrical Cut]", "[Oldeuboi]"
+  t = t.replace(/\s*\[[^\]]*\]/g, "");
+
+  // ── Step 0c: Normalise hyphens between word chars to spaces ──
+  // "Punch-Drunk" → "Punch Drunk", but preserves leading/trailing hyphens
+  t = t.replace(/(?<=\w)-(?=\w)/g, " ");
+
   // ── Step 1: Strip known event-series prefixes (before colon) ──
   // e.g. "Camp Classics presents: Hackers" → "hackers"
   // but  "Kill Bill: The Whole Bloody Affair" → kept as-is
