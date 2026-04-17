@@ -1305,12 +1305,12 @@ export default function App() {
                                   <div style={{ width:56, flexShrink:0, position:"relative" }}>
                                     {/* Spine line */}
                                     <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)", width:1, background:T.mobileConnector(T.accent),
-                                      top: isFirstCard ? (isVeryFirst ? 22 : 0) : 0,
-                                      bottom: isVeryLast ? "calc(100% - 22px)" : 0,
+                                      top: isVeryFirst ? "50%" : 0,
+                                      bottom: isVeryLast ? "50%" : 0,
                                     }} />
-                                    {/* Time label (top-aligned with card title) */}
+                                    {/* Time label (vertically centered with card) */}
                                     {isFirstCard && (
-                                      <div style={{ position:"absolute", top:10, left:"50%", transform:"translateX(-50%)", background:T.bg, padding:"2px 4px", fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono, whiteSpace:"nowrap", zIndex:1 }}>{group.time}</div>
+                                      <div style={{ position:"absolute", top:"50%", left:"50%", transform:"translate(-50%,-50%)", background:T.bg, padding:"3px 4px", fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono, whiteSpace:"nowrap", zIndex:1 }}>{group.time}</div>
                                     )}
                                   </div>
                                   <div style={{ flex:1 }}>
