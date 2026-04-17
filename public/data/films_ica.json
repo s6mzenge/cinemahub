@@ -1,24 +1,36 @@
 {
-  "scraped_at": "2026-04-16T23:55:23.447715+00:00",
+  "scraped_at": "2026-04-17T00:17:55.304060+00:00",
   "source": "ica.art",
   "films": [
     {
-      "id": "bouchra",
-      "title": "Bouchra",
+      "id": "dracula",
+      "title": "Dracula",
       "rating": "TBC",
-      "runtime": 83,
+      "runtime": 170,
       "genre": "Other",
       "year": "2025",
-      "country": "Italy / Morocco / USA",
-      "director": "Orian Barki",
-      "description": "In Orian Barki and Meriem Bennani’s debut feature, a queer Moroccan coyote navigates distance and family in a genre-blurring animated journey through New York’s emotional landscapes.",
-      "film_url": "https://www.ica.art/films/bouchra",
-      "poster_url": "https://www.ica.art/media/12425.jpg",
+      "country": "Romania / Austria / Luxembourg",
+      "director": "Radu Jude",
+      "description": "Radu Jude resurrects Dracula, dissecting modern Europe and its myths through a collision of AI mischief and pornographic absurdity.",
+      "film_url": "https://www.ica.art/films/dracula",
+      "poster_url": "https://www.ica.art/media/12963.jpg",
       "showtimes": {
-        "2026-04-16": [
+        "2026-04-17": [
           {
             "time": "12:00",
-            "booking_url": "https://www.ica.art/book/665802",
+            "booking_url": "https://www.ica.art/book/704601",
+            "screen": "Cinema 1",
+            "hoh": false,
+            "tags": [
+              "Off-Circuit",
+              "London Premiere"
+            ]
+          }
+        ],
+        "2026-04-18": [
+          {
+            "time": "13:15",
+            "booking_url": "https://www.ica.art/book/704601",
             "screen": "Cinema 2",
             "hoh": false,
             "tags": [
@@ -30,8 +42,8 @@
       },
       "color": "#e53935",
       "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/bouchra/",
-      "letterboxd_rating": 3.62
+      "letterboxd_url": "https://letterboxd.com/film/dracula-2025-1/",
+      "letterboxd_rating": 3.14
     },
     {
       "id": "ozon-the-stranger",
@@ -46,20 +58,6 @@
       "film_url": "https://www.ica.art/films/ozon-the-stranger",
       "poster_url": "https://www.ica.art/media/13043.jpg",
       "showtimes": {
-        "2026-04-16": [
-          {
-            "time": "12:10",
-            "booking_url": "https://www.ica.art/book/715601",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "13:40",
-            "booking_url": "https://www.ica.art/book/715601",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-04-17": [
           {
             "time": "12:15",
@@ -101,20 +99,6 @@
       "film_url": "https://www.ica.art/films/father-mother-sister-brother",
       "poster_url": "https://www.ica.art/media/12919.jpg",
       "showtimes": {
-        "2026-04-16": [
-          {
-            "time": "14:45",
-            "booking_url": "https://www.ica.art/book/704401",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:40",
-            "booking_url": "https://www.ica.art/book/704401",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-04-17": [
           {
             "time": "14:40",
@@ -144,117 +128,6 @@
       "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/father-mother-sister-brother/",
       "letterboxd_rating": 3.13
-    },
-    {
-      "id": "dracula",
-      "title": "Dracula",
-      "rating": "TBC",
-      "runtime": 170,
-      "genre": "Other",
-      "year": "2025",
-      "country": "Romania / Austria / Luxembourg",
-      "director": "Radu Jude",
-      "description": "Radu Jude resurrects Dracula, dissecting modern Europe and its myths through a collision of AI mischief and pornographic absurdity.",
-      "film_url": "https://www.ica.art/films/dracula",
-      "poster_url": "https://www.ica.art/media/12963.jpg",
-      "showtimes": {
-        "2026-04-16": [
-          {
-            "time": "16:00",
-            "booking_url": "https://www.ica.art/book/704601",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "Off-Circuit",
-              "London Premiere"
-            ]
-          }
-        ],
-        "2026-04-17": [
-          {
-            "time": "12:00",
-            "booking_url": "https://www.ica.art/book/704601",
-            "screen": "Cinema 1",
-            "hoh": false,
-            "tags": [
-              "Off-Circuit",
-              "London Premiere"
-            ]
-          }
-        ],
-        "2026-04-18": [
-          {
-            "time": "13:15",
-            "booking_url": "https://www.ica.art/book/704601",
-            "screen": "Cinema 2",
-            "hoh": false,
-            "tags": [
-              "Off-Circuit",
-              "London Premiere"
-            ]
-          }
-        ]
-      },
-      "color": "#00897b",
-      "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/dracula-2025-1/",
-      "letterboxd_rating": 3.14
-    },
-    {
-      "id": "ocdf26-ken-and-flo-jacobs-seeing-through-film-2",
-      "title": "Ken and Flo Jacobs: Seeing Through Film 2",
-      "rating": "TBC",
-      "runtime": 27,
-      "genre": "Other",
-      "year": "1955",
-      "country": "USA",
-      "director": "Ken Jacobs",
-      "description": "New York, seen through the eyes of Ken Jacobs. The retrospective Seeing Through Film celebrates the work and lives of Ken and Flo Jacobs, who both passed away in 2025. One of the American avant-garde’s most prolific figures, Ken Jacobs (1933-2025) and his wife and lifelong collaborator Flo Jacobs (1941-2025) were an integral part of the New York alternative film scene.",
-      "film_url": "https://www.ica.art/films/ocdf26-ken-and-flo-jacobs-seeing-through-film-2",
-      "poster_url": "https://www.ica.art/media/12830.png",
-      "showtimes": {
-        "2026-04-16": [
-          {
-            "time": "18:30",
-            "booking_url": "https://www.ica.art/book/696201",
-            "screen": "Cinema 1",
-            "hoh": false,
-            "tags": [
-              "Open City Documentary Festival 2026"
-            ]
-          }
-        ]
-      },
-      "color": "#1565c0",
-      "accent": "#64b5f6"
-    },
-    {
-      "id": "ocdf26-sensual-laboratories",
-      "title": "Sensual Laboratories",
-      "rating": "TBC",
-      "runtime": 5,
-      "genre": "Other",
-      "year": "1973",
-      "country": "UK",
-      "director": "John Smith",
-      "description": "Curated by Sophia Satchell-Baeza, this programme focuses on British and North American work from the 1960s and 1970s, bringing together early films by Barbara Hammer, John Smith, Jud Yalkut, Jerry Abrams, Scott Bartlett, and Mark Boyle and Joan Hills.",
-      "film_url": "https://www.ica.art/films/ocdf26-sensual-laboratories",
-      "poster_url": "https://www.ica.art/media/12829.jpg",
-      "showtimes": {
-        "2026-04-16": [
-          {
-            "time": "20:30",
-            "booking_url": "https://www.ica.art/book/696401",
-            "screen": "Cinema 1",
-            "hoh": false,
-            "tags": [
-              "Open City Documentary Festival 2026"
-            ]
-          }
-        ]
-      },
-      "color": "#ef6c00",
-      "accent": "#ffb74d"
     },
     {
       "id": "the-blue-trail",
@@ -310,8 +183,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/the-blue-trail/",
       "letterboxd_rating": 3.7
     },
@@ -340,8 +213,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
+      "color": "#1565c0",
+      "accent": "#64b5f6"
     },
     {
       "id": "miroirs-no-3",
@@ -405,8 +278,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/miroirs-no-3/",
       "letterboxd_rating": 3.47
     },
@@ -448,8 +321,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/akira/",
       "letterboxd_rating": 4.28
     },
@@ -478,8 +351,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/last-movies/",
       "letterboxd_rating": null
     },
@@ -508,8 +381,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#00838f",
+      "accent": "#4dd0e1"
     },
     {
       "id": "ocdf26-in-focus-onyeka-igwe-3",
@@ -536,8 +409,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "ocdf26-two-refusals-an-impossible-address",
@@ -564,8 +437,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63"
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "ocdf26-the-ian-white-lecture-jordan-lord",
@@ -592,8 +465,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#ad1457",
+      "accent": "#f06292"
     },
     {
       "id": "ocdf26-thames-film",
@@ -620,8 +493,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65",
+      "color": "#37474f",
+      "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/thames-film/",
       "letterboxd_rating": null
     },
@@ -650,8 +523,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "rose-of-nevada",
@@ -691,8 +564,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.43
     },
@@ -718,8 +591,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/olivia-2025/",
       "letterboxd_rating": null
     },
@@ -748,8 +621,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/komitas/",
       "letterboxd_rating": 3.77
     },
@@ -779,8 +652,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8",
+      "color": "#3052a6",
+      "accent": "#849cd6",
       "letterboxd_url": "https://letterboxd.com/film/pushing-past-the-bad/",
       "letterboxd_rating": null
     },
@@ -870,8 +743,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953",
+      "color": "#63971a",
+      "accent": "#9ed453",
       "letterboxd_url": "https://letterboxd.com/film/phantoms-of-july/",
       "letterboxd_rating": 3.5
     },
@@ -937,8 +810,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#9f2190",
+      "accent": "#d368c6",
       "letterboxd_url": "https://letterboxd.com/film/wild-foxes/",
       "letterboxd_rating": 3.65
     },
@@ -967,8 +840,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684",
+      "color": "#30a692",
+      "accent": "#84d6c8",
       "letterboxd_url": "https://letterboxd.com/film/property/",
       "letterboxd_rating": null
     },
@@ -997,8 +870,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e",
+      "color": "#975e1a",
+      "accent": "#d49953",
       "letterboxd_url": "https://letterboxd.com/film/paydirt/",
       "letterboxd_rating": null
     },
@@ -1027,8 +900,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3",
+      "color": "#41219f",
+      "accent": "#8368d3",
       "letterboxd_url": "https://letterboxd.com/film/the-sound-of-the-shaking-earth/",
       "letterboxd_rating": 3.87
     },
@@ -1054,8 +927,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#35a630",
+      "accent": "#88d684"
     },
     {
       "id": "rita-azevedo-gomes-fragile-as-the-world",
@@ -1082,8 +955,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#971a44",
+      "accent": "#d4537e"
     },
     {
       "id": "the-cinema-of-olaa-zhyzhko",
@@ -1107,8 +980,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "romeria",
@@ -1208,8 +1081,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584",
+      "color": "#9ca630",
+      "accent": "#cfd684",
       "letterboxd_url": "https://letterboxd.com/film/romeria/",
       "letterboxd_rating": 3.59
     },
@@ -1238,8 +1111,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4",
+      "color": "#7d1a97",
+      "accent": "#b953d4",
       "letterboxd_url": "https://letterboxd.com/film/on-dangerous-ground/",
       "letterboxd_rating": 3.75
     },
@@ -1268,8 +1141,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "rita-azevedo-gomes-altar",
@@ -1296,8 +1169,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "azevedo-gomes-the-15th-stone",
@@ -1324,9 +1197,67 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4",
+      "color": "#1a2597",
+      "accent": "#535ed4",
       "letterboxd_url": "https://letterboxd.com/film/the-15th-stone/",
+      "letterboxd_rating": null
+    },
+    {
+      "id": "rita-azevedo-gomes-the-invisible-collection-conquest-of-faro",
+      "title": "The Invisible Collection & The Conquest of Faro + introduction",
+      "rating": "TBC",
+      "runtime": 33,
+      "genre": "Other",
+      "year": "2005",
+      "country": "Portugal",
+      "director": "Rita Azevedo Gomes",
+      "description": "A Rita Azevedo Gomes double bill: an adaption of a medieval Portuguese farce and a contemplation on art and cultivated lives, faltering and fragile.",
+      "film_url": "https://www.ica.art/films/rita-azevedo-gomes-the-invisible-collection-conquest-of-faro",
+      "poster_url": "https://www.ica.art/media/12584.jpg",
+      "showtimes": {
+        "2026-05-16": [
+          {
+            "time": "16:00",
+            "booking_url": "https://www.ica.art/book/677601",
+            "screen": "Cinema 1",
+            "hoh": false,
+            "tags": [
+              "Nothing But Life: The Cinema of Rita Azevedo Gomes"
+            ]
+          }
+        ]
+      },
+      "color": "#519f21",
+      "accent": "#90d368"
+    },
+    {
+      "id": "azevedo-gomes-uma-rapariga-no-verao",
+      "title": "A Girl In Summer",
+      "rating": "TBC",
+      "runtime": 85,
+      "genre": "Other",
+      "year": "1986",
+      "country": "Portugal",
+      "director": "Vítor Gonçalves",
+      "description": "Vitor Gonçalves' debut feature is both a moody and atmospheric portrait of a young woman unable to make the crucial decisions needed to move forward with her life and a fascinating portrait of post-Salazar youth culture.",
+      "film_url": "https://www.ica.art/films/azevedo-gomes-uma-rapariga-no-verao",
+      "poster_url": "https://www.ica.art/media/12993.jpg",
+      "showtimes": {
+        "2026-05-16": [
+          {
+            "time": "18:00",
+            "booking_url": "https://www.ica.art/book/693601",
+            "screen": "Cinema 1",
+            "hoh": false,
+            "tags": [
+              "Nothing But Life: The Cinema of Rita Azevedo Gomes"
+            ]
+          }
+        ]
+      },
+      "color": "#a6307e",
+      "accent": "#d684bb",
+      "letterboxd_url": "https://letterboxd.com/film/a-girl-in-summer/",
       "letterboxd_rating": null
     }
   ]
