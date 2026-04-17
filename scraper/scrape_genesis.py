@@ -90,13 +90,6 @@ DIRECTOR_TITLE_PREFIXES = [
     r"^Lee Cronin's\s+",
 ]
 
-# Event-type prefixes to strip (colon-separated)
-EVENT_TITLE_PREFIXES = sorted([
-    "nt live", "national theatre live",
-    "roh", "royal opera house",
-    "the metropolitan opera", "met opera",
-    "bolshoi ballet",
-], key=len, reverse=True)
 
 
 def clean_genesis_title(raw_title: str) -> str:
@@ -107,22 +100,6 @@ def clean_genesis_title(raw_title: str) -> str:
     # Strip director possessive prefixes
     for pattern in DIRECTOR_TITLE_PREFIXES:
         t = re.sub(pattern, "", t, flags=re.IGNORECASE).strip()
-
-    # Strip event-type colon prefixes like "NT Live: ..."
-    prefix_changed = True
-    while prefix_changed and ":" in t:
-        prefix_changed = False
-        for prefix in EVENT_TITLE_PREFIXES:
-            colon_positions = [i for i, c in enumerate(t) if c == ":"]
-            for colon_pos in colon_positions:
-                before = t[:colon_pos].strip()
-                if before.lower() == prefix or before.lower().rstrip(" -") == prefix:
-                    t = t[colon_pos + 1:].strip()
-                    prefix_changed = True
-                    break
-            else:
-                continue
-            break
 
     # Strip event suffixes
     changed = True
