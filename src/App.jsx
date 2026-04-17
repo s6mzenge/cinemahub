@@ -369,6 +369,12 @@ export default function App() {
   });
   const T = themes[theme];
   const isDark = theme === "dark";
+  const [noTransition, setNoTransition] = useState(false);
+  const toggleTheme = () => {
+    setNoTransition(true);
+    setTheme(t => t==="dark"?"light":"dark");
+    requestAnimationFrame(() => requestAnimationFrame(() => setNoTransition(false)));
+  };
 
   useEffect(() => {
     const onResize = () => setIsMobile(window.innerWidth < 768);
@@ -780,7 +786,7 @@ export default function App() {
           {isDark ? "Dark" : "Light"} mode
         </span>
         <button
-          onClick={() => setTheme(t => t==="dark"?"light":"dark")}
+          onClick={toggleTheme}
           aria-label="Toggle theme"
           style={{
             display:"flex", alignItems:"center", justifyContent:"center",
@@ -849,11 +855,12 @@ export default function App() {
      MAIN RENDER
      ═══════════════════════════════════════════════════ */
   return (
-    <div style={{ fontFamily:T.sans, background:T.bg, color:T.text, minHeight:"100vh", position:"relative", transition:"background 0.35s, color 0.35s", display:"flex" }}>
+    <div style={{ fontFamily:T.sans, background:T.bg, color:T.text, minHeight:"100vh", position:"relative", display:"flex" }}>
       {fontLink}
       {grainOverlay}
 
       <style>{`
+        ${noTransition ? "*, *::before, *::after { transition: none !important; }" : ""}
         @keyframes goldPulse { 0%,100%{opacity:0.5} 50%{opacity:1} }
         @keyframes tickerScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         *::-webkit-scrollbar { height:4px; width:4px; }
@@ -909,6 +916,64 @@ export default function App() {
         flex:1, position:"relative", zIndex:1, minWidth:0,
         marginLeft: isMobile ? 0 : 0, /* sidebar is sticky, content flows naturally */
       }}>
+
+        {/* ═══════ TICKER BANNER ═══════ */}
+        {tickerItems.length > 0 && (
+          <div style={{
+            background: isDark
+              ? `linear-gradient(90deg, ${T.accent}0a 0%, ${T.accent}05 50%, ${T.accent}0a 100%)`
+              : `linear-gradient(90deg, ${T.accent}12 0%, ${T.accent}08 50%, ${T.accent}12 100%)`,
+            borderBottom: `1px solid ${T.accent}22`,
+            borderTop: `1px solid ${T.accent}11`,
+            overflow: "hidden",
+            position: "relative",
+            height: 32,
+            display: "flex",
+            alignItems: "center",
+          }}>
+            {/* Label */}
+            <div style={{
+              position: "relative", zIndex: 3,
+              display: "flex", alignItems: "center", gap: 6,
+              padding: "0 14px", height: "100%", flexShrink: 0,
+              background: isDark
+                ? `linear-gradient(135deg, ${T.accent}30 0%, ${T.accent}20 100%)`
+                : `linear-gradient(135deg, ${T.accent}28 0%, ${T.accent}18 100%)`,
+              fontFamily: T.mono, fontSize: 9, fontWeight: 700,
+              color: T.accent, letterSpacing: 2, textTransform: "uppercase",
+              clipPath: "polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%)",
+              paddingRight: 22,
+              borderRight: `1px solid ${T.accent}22`,
+            }}>
+              <span style={{ width: 5, height: 5, borderRadius: "50%", background: T.accent, animation: "goldPulse 1.2s ease infinite" }} />
+              COMING UP
+            </div>
+            {/* Scrolling track */}
+            <div style={{ flex: 1, overflow: "hidden", height: "100%", display: "flex", alignItems: "center", maskImage: "linear-gradient(90deg, transparent 0%, #000 3%, #000 97%, transparent 100%)", WebkitMaskImage: "linear-gradient(90deg, transparent 0%, #000 3%, #000 97%, transparent 100%)" }}>
+              <div style={{
+                display: "flex", alignItems: "center", gap: 0,
+                animation: `tickerScroll ${Math.max(tickerItems.length * 3, 20)}s linear infinite`,
+                whiteSpace: "nowrap",
+              }}>
+                {[...tickerItems, ...tickerItems].map((item, i) => (
+                  <span key={i} style={{ display: "inline-flex", alignItems: "center", gap: 0, paddingRight: 8 }}>
+                    <span style={{ fontSize: 10, color: T.accent, fontFamily: T.mono, fontWeight: 700, opacity: 0.85 }}>{item.dateLabel}</span>
+                    <span style={{ fontSize: 10, color: T.textFaint, fontFamily: T.mono, margin: "0 6px" }}>|</span>
+                    <span style={{ fontSize: 10, color: T.text, fontFamily: T.mono, fontWeight: 700 }}>{item.time}</span>
+                    {item.filmUrl ? (
+                      <a href={item.filmUrl} target="_blank" rel="noopener" className="ticker-link" style={{ fontSize: 10, color: T.textSub, fontFamily: T.serif, fontStyle: "italic", margin: "0 4px 0 8px", textDecoration: "none", borderBottom: `1px dotted ${T.textFaint}` }}>{item.film}</a>
+                    ) : (
+                      <span style={{ fontSize: 10, color: T.textMuted, fontFamily: T.serif, fontStyle: "italic", margin: "0 4px 0 8px" }}>{item.film}</span>
+                    )}
+                    <span style={{ fontSize: 8, color: T.textDim, fontFamily: T.mono, fontWeight: 600, letterSpacing: 0.5 }}>@ {item.cinemaName}</span>
+                    {item.screen && <span style={{ fontSize: 8, color: T.textFaint, fontFamily: T.mono, marginLeft: 4 }}>({item.screen})</span>}
+                    <span style={{ display: "inline-block", width: 3, height: 3, borderRadius: "50%", background: item.color, margin: "0 12px 0 12px", opacity: 0.6 }} />
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
 
         {isSearch ? (
           /* ═══════ SEARCH VIEW ═══════ */
@@ -1115,64 +1180,6 @@ export default function App() {
           </>
         ) : (
         <>
-
-        {/* ═══════ TICKER BANNER ═══════ */}
-        {tickerItems.length > 0 && (
-          <div style={{
-            background: isDark
-              ? `linear-gradient(90deg, ${T.accent}0a 0%, ${T.accent}05 50%, ${T.accent}0a 100%)`
-              : `linear-gradient(90deg, ${T.accent}12 0%, ${T.accent}08 50%, ${T.accent}12 100%)`,
-            borderBottom: `1px solid ${T.accent}22`,
-            borderTop: `1px solid ${T.accent}11`,
-            overflow: "hidden",
-            position: "relative",
-            height: 32,
-            display: "flex",
-            alignItems: "center",
-          }}>
-            {/* Label */}
-            <div style={{
-              position: "relative", zIndex: 3,
-              display: "flex", alignItems: "center", gap: 6,
-              padding: "0 14px", height: "100%", flexShrink: 0,
-              background: isDark
-                ? `linear-gradient(135deg, ${T.accent}30 0%, ${T.accent}20 100%)`
-                : `linear-gradient(135deg, ${T.accent}28 0%, ${T.accent}18 100%)`,
-              fontFamily: T.mono, fontSize: 9, fontWeight: 700,
-              color: T.accent, letterSpacing: 2, textTransform: "uppercase",
-              clipPath: "polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%)",
-              paddingRight: 22,
-              borderRight: `1px solid ${T.accent}22`,
-            }}>
-              <span style={{ width: 5, height: 5, borderRadius: "50%", background: T.accent, animation: "goldPulse 1.2s ease infinite" }} />
-              COMING UP
-            </div>
-            {/* Scrolling track */}
-            <div style={{ flex: 1, overflow: "hidden", height: "100%", display: "flex", alignItems: "center", maskImage: "linear-gradient(90deg, transparent 0%, #000 3%, #000 97%, transparent 100%)", WebkitMaskImage: "linear-gradient(90deg, transparent 0%, #000 3%, #000 97%, transparent 100%)" }}>
-              <div style={{
-                display: "flex", alignItems: "center", gap: 0,
-                animation: `tickerScroll ${Math.max(tickerItems.length * 3, 20)}s linear infinite`,
-                whiteSpace: "nowrap",
-              }}>
-                {[...tickerItems, ...tickerItems].map((item, i) => (
-                  <span key={i} style={{ display: "inline-flex", alignItems: "center", gap: 0, paddingRight: 8 }}>
-                    <span style={{ fontSize: 10, color: T.accent, fontFamily: T.mono, fontWeight: 700, opacity: 0.85 }}>{item.dateLabel}</span>
-                    <span style={{ fontSize: 10, color: T.textFaint, fontFamily: T.mono, margin: "0 6px" }}>|</span>
-                    <span style={{ fontSize: 10, color: T.text, fontFamily: T.mono, fontWeight: 700 }}>{item.time}</span>
-                    {item.filmUrl ? (
-                      <a href={item.filmUrl} target="_blank" rel="noopener" className="ticker-link" style={{ fontSize: 10, color: T.textSub, fontFamily: T.serif, fontStyle: "italic", margin: "0 4px 0 8px", textDecoration: "none", borderBottom: `1px dotted ${T.textFaint}` }}>{item.film}</a>
-                    ) : (
-                      <span style={{ fontSize: 10, color: T.textMuted, fontFamily: T.serif, fontStyle: "italic", margin: "0 4px 0 8px" }}>{item.film}</span>
-                    )}
-                    <span style={{ fontSize: 8, color: T.textDim, fontFamily: T.mono, fontWeight: 600, letterSpacing: 0.5 }}>@ {item.cinemaName}</span>
-                    {item.screen && <span style={{ fontSize: 8, color: T.textFaint, fontFamily: T.mono, marginLeft: 4 }}>({item.screen})</span>}
-                    <span style={{ display: "inline-block", width: 3, height: 3, borderRadius: "50%", background: item.color, margin: "0 12px 0 12px", opacity: 0.6 }} />
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
 
         {/* ═══════ HEADER ═══════ */}
         <div style={{ background:T.headerBg, padding:"20px 24px 18px", borderBottom:`1px solid ${T.accent}33` }}>
