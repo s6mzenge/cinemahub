@@ -117,6 +117,11 @@ TRAILING_SUFFIXES = [
 NON_FILM_SKIP_PATTERNS = [
     r"ego death.*rave",
     r"wesley gonzalez.*clementine march",
+    # Category H late-night double-bill events (thematic names, not actual films)
+    r"^an evening of public access$",
+    r"^ladies night$",
+    r"^blood and bones$",
+    r"^gemini season$",
 ]
 
 
@@ -316,18 +321,20 @@ def parse_events(events: list[dict]) -> list[dict]:
         if not raw_title:
             continue
 
-        # Skip non-film events
+        # Clean the title first (needed for skip check on cleaned names)
+        clean_title = clean_rio_title(raw_title)
+
+        # Skip non-film events (check both raw and cleaned title)
         skip = False
         for pattern in NON_FILM_SKIP_PATTERNS:
-            if re.search(pattern, raw_title, re.IGNORECASE):
+            if re.search(pattern, raw_title, re.IGNORECASE) or \
+               re.search(pattern, clean_title, re.IGNORECASE):
                 log.info(f"  Skipping non-film: {raw_title}")
                 skip = True
                 break
         if skip:
             continue
 
-        # Clean the title
-        clean_title = clean_rio_title(raw_title)
         film_id = make_film_id(clean_title)
 
         # Rating
@@ -557,7 +564,7 @@ def main():
     args = parser.parse_args()
 
     output_path = Path(args.output) if args.output else (
-        Path(__file__).parent.parent / "public" / "data" / "films_rio.json"
+        Path(__file__).parent / "public" / "data" / "films_rio.json"
     )
 
     log.info("=== Rio Cinema Scraper Starting ===")
