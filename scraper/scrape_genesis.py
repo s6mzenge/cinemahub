@@ -73,6 +73,7 @@ EVENT_SUFFIXES = [
     r"\s*-\s*Seasonal Affective Cinema\s*$",
     r"\s*-\s*Mark Jenkin Retrospective\s*$",
     r"\s*Presented by Bloody Mary Film Club\s*$",
+    r"\s*[-\u2013\u2014]\s*Films that F[u\W]*ck\b.*$",
     r"\s*\+\s*Q\s*&\s*A\s*$",
     r"\s*\+\s*Q&A\s*$",
     r"\s*\+\s*Directors?\s+Q\s*&\s*A\s*$",
@@ -85,21 +86,15 @@ EVENT_SUFFIXES = [
     r"\s*\(Live Script Reading\)\s*$",
 ]
 
-# Title prefixes like "Lee Cronin's " → strip possessive director credit
-DIRECTOR_TITLE_PREFIXES = [
-    r"^Lee Cronin's\s+",
-]
-
-
-
 def clean_genesis_title(raw_title: str) -> str:
     """Clean Genesis Cinema event titles to extract the core film title."""
     t = unescape(raw_title).strip()
+    # Remove zero-width / invisible Unicode characters
+    t = re.sub(r"[\u200b\u200c\u200d\u2060\ufeff]", "", t)
+    # Normalize Unicode quotes/apostrophes to ASCII
+    t = t.replace("\u2019", "'").replace("\u2018", "'")
+    t = t.replace("\u201c", '"').replace("\u201d", '"')
     t = re.sub(r"\s+", " ", t).strip()
-
-    # Strip director possessive prefixes
-    for pattern in DIRECTOR_TITLE_PREFIXES:
-        t = re.sub(pattern, "", t, flags=re.IGNORECASE).strip()
 
     # Strip event suffixes
     changed = True
