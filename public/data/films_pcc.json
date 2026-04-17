@@ -1,7 +1,35 @@
 {
-  "scraped_at": "2026-04-17T19:02:40.986346+00:00",
+  "scraped_at": "2026-04-17T19:32:19.399594+00:00",
   "source": "princecharlescinema.com",
   "films": [
+    {
+      "id": "la-la-land",
+      "title": "La La Land",
+      "rating": "12A",
+      "runtime": 128,
+      "genre": "Musical",
+      "year": "2016",
+      "country": null,
+      "director": "Damien Chazelle",
+      "cast": "Emma Stone, Ryan Gosling, Rosemarie DeWitt",
+      "description": "Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire to do what they love. But as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.",
+      "film_url": "https://princecharlescinema.com/film/1787253/la-la-land",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1787253.jpg",
+      "showtimes": {
+        "2026-04-17": [
+          {
+            "time": "20:45",
+            "booking_url": "",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#ad1457",
+      "accent": "#f06292",
+      "letterboxd_url": "https://letterboxd.com/film/la-la-land/",
+      "letterboxd_rating": 4.12
+    },
     {
       "id": "akira",
       "title": "Akira",
@@ -16,18 +44,6 @@
       "film_url": "https://princecharlescinema.com/film/1808/akira",
       "poster_url": "https://cdn.taposapp.com/poster/600x900/BevMTYiD9MRWq4QbDIx3fKNDYwjxKufgFRKEVYJGYYE.jpg",
       "showtimes": {
-        "2026-04-17": [
-          {
-            "time": "20:30",
-            "booking_url": "",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K",
-              "SUB"
-            ]
-          }
-        ],
         "2026-04-18": [
           {
             "time": "11:30",
@@ -462,34 +478,6 @@
       "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/akira/",
       "letterboxd_rating": 4.28
-    },
-    {
-      "id": "la-la-land",
-      "title": "La La Land",
-      "rating": "12A",
-      "runtime": 128,
-      "genre": "Musical",
-      "year": "2016",
-      "country": null,
-      "director": "Damien Chazelle",
-      "cast": "Emma Stone, Ryan Gosling, Rosemarie DeWitt",
-      "description": "Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire to do what they love. But as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.",
-      "film_url": "https://princecharlescinema.com/film/1787253/la-la-land",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1787253.jpg",
-      "showtimes": {
-        "2026-04-17": [
-          {
-            "time": "20:45",
-            "booking_url": "",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#ad1457",
-      "accent": "#f06292",
-      "letterboxd_url": "https://letterboxd.com/film/la-la-land/",
-      "letterboxd_rating": 4.12
     },
     {
       "id": "citizen-kane",
