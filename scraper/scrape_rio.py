@@ -557,7 +557,7 @@ def main():
     args = parser.parse_args()
 
     output_path = Path(args.output) if args.output else (
-        Path(__file__).parent / "public" / "data" / "films_rio.json"
+        Path(__file__).parent.parent / "public" / "data" / "films_rio.json"
     )
 
     log.info("=== Rio Cinema Scraper Starting ===")
