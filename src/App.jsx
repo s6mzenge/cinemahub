@@ -1298,6 +1298,7 @@ export default function App() {
                               const film=sess.film;
                               const isFirstCard = si === 0;
                               const isLastCard = si === group.sessions.length - 1;
+                              const isVeryLast = isLast && isLastCard;
                               return (
                                 <div key={`${film.id}-${si}`} style={{ display:"flex", alignItems:"stretch", gap:0, marginBottom:isLastCard?0:8 }}>
                                   <div style={{ width:56, flexShrink:0, display:"flex", flexDirection:"column", alignItems:"center", position:"relative" }}>
@@ -1306,7 +1307,7 @@ export default function App() {
                                     {/* Time label */}
                                     {isFirstCard && <div style={{ fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono, padding:"6px 0", flexShrink:0 }}>{group.time}</div>}
                                     {/* Spine line below time label */}
-                                    {!(isLast && isLastCard) && <div style={{ width:1, flex:1, background:T.mobileConnector(T.accent) }} />}
+                                    {!isVeryLast && <div style={{ width:1, flex:1, background:T.mobileConnector(T.accent) }} />}
                                   </div>
                                   <div style={{ flex:1 }}>
                                     <div className="tkt-card" style={{ display:"flex", alignItems:"center", gap:0, borderRadius:12, border:`1px solid ${T.cardBorder(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color)}`, background:T.cardBg(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color) }}>
@@ -1342,6 +1343,14 @@ export default function App() {
                                 </div>
                               );
                             })}
+                            {/* Spacer between groups with spine */}
+                            {!isLast && (
+                              <div style={{ display:"flex", alignItems:"stretch" }}>
+                                <div style={{ width:56, flexShrink:0, display:"flex", justifyContent:"center" }}>
+                                  <div style={{ width:1, height:10, background:T.mobileConnector(T.accent) }} />
+                                </div>
+                              </div>
+                            )}
                           </div>
                         );
                       })}
