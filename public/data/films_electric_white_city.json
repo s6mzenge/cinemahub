@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-17T17:04:09.277044+00:00",
+  "scraped_at": "2026-04-17T17:33:48.400470+00:00",
   "source": "electriccinema.co.uk (White City)",
   "films": [
     {
@@ -132,7 +132,7 @@
             "time": "18:00",
             "screen": "1",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50318"
+            "booking_url": null
           },
           {
             "time": "20:30",
@@ -233,7 +233,8 @@
             "time": "18:00",
             "screen": "1",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/43836"
+            "booking_url": null,
+            "sold_out": true
           },
           {
             "time": "21:00",
@@ -308,14 +309,6 @@
       "film_url": "https://www.electriccinema.co.uk/film/project-hail-mary/",
       "poster_url": "https://www.electriccinema.co.uk/wp-content/uploads/film/41612.d-1024x576.jpg",
       "showtimes": {
-        "2026-04-17": [
-          {
-            "time": "17:30",
-            "screen": "3",
-            "hoh": false,
-            "booking_url": null
-          }
-        ],
         "2026-04-18": [
           {
             "time": "13:45",
