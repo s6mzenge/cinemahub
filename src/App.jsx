@@ -1291,6 +1291,7 @@ export default function App() {
                     <div style={{ display:"flex", flexDirection:"column", gap:0, paddingTop:6 }}>
                       {groups.map((group,gi) => {
                         const isPast = nowMin!==null && group.startMin<nowMin;
+                        const prevPast = gi > 0 && nowMin!==null && groups[gi-1].startMin<nowMin;
                         const isFirst = gi === 0;
                         const isLast = gi === groups.length - 1;
                         return (
@@ -1299,8 +1300,10 @@ export default function App() {
                             <div style={{ display:"flex", alignItems:"stretch" }}>
                               {/* Spine column */}
                               <div style={{ width:56, flexShrink:0, position:"relative", display:"flex", alignItems:"center", justifyContent:"center" }}>
-                                {/* Continuous spine line */}
-                                <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)", width:1, background:T.mobileConnector(T.accent), top: isFirst ? "50%" : 0, bottom: isLast ? "50%" : 0 }} />
+                                {/* Spine above time label */}
+                                {!isFirst && <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)", width:1, background:T.mobileConnector(T.accent), top:0, bottom:"50%", opacity: prevPast ? 0.35 : 1 }} />}
+                                {/* Spine below time label */}
+                                {!isLast && <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)", width:1, background:T.mobileConnector(T.accent), top:"50%", bottom:0, opacity: isPast ? 0.35 : 1 }} />}
                                 {/* Time label */}
                                 <div style={{ position:"relative", zIndex:1, background:T.bg, padding:"3px 4px", fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono, whiteSpace:"nowrap", opacity:isPast?0.5:1, transition:"opacity 0.3s" }}>{group.time}</div>
                               </div>
