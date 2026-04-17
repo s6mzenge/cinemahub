@@ -1351,7 +1351,7 @@ export default function App() {
                             {!isLast && (
                               <div style={{ display:"flex" }}>
                                 <div style={{ width:56, flexShrink:0, display:"flex", justifyContent:"center" }}>
-                                  <div style={{ width:1, height:10, background:T.mobileConnector(T.accent) }} />
+                                  <div style={{ width:1, height:10, background:T.mobileConnector(T.accent), opacity: isPast ? 0.35 : 1 }} />
                                 </div>
                               </div>
                             )}
