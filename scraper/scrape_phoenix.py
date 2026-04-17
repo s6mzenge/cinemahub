@@ -17,7 +17,7 @@ Usage:
     python scraper/scrape_phoenix.py -o my_output.json
 """
 
-import json, re, sys, logging, colorsys
+import json, re, sys, logging
 from datetime import datetime, timezone
 from html import unescape
 from pathlib import Path
@@ -27,6 +27,8 @@ try:
     import requests
 except ImportError:
     requests = None
+
+from colors import assign_colors
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
@@ -292,50 +294,6 @@ def parse_events(events: list[dict]) -> list[dict]:
 
 
 # ─── Color assignment (golden-ratio hue stepping) ────────────────────
-
-GENRE_COLORS = {
-    "Animation":{"color":"#e53935","accent":"#ff6f60"},"Adventure":{"color":"#7c4dff","accent":"#b388ff"},
-    "Horror":{"color":"#546e7a","accent":"#90a4ae"},"Comedy":{"color":"#d81b60","accent":"#ff6090"},
-    "Romance":{"color":"#00897b","accent":"#4db6ac"},"Action":{"color":"#ef6c00","accent":"#ffb74d"},
-    "Documentary":{"color":"#c62828","accent":"#ef5350"},"Drama":{"color":"#6a1b9a","accent":"#ba68c8"},
-    "Sci-Fi":{"color":"#00838f","accent":"#4dd0e1"},"Thriller":{"color":"#37474f","accent":"#78909c"},
-    "Family":{"color":"#2e7d32","accent":"#66bb6a"},"Musical":{"color":"#ad1457","accent":"#f06292"},
-    "Crime":{"color":"#4e342e","accent":"#8d6e63"},"Event":{"color":"#558b2f","accent":"#9ccc65"},
-}
-EXTRA_PALETTES = [
-    {"color":"#e53935","accent":"#ff6f60"},{"color":"#7c4dff","accent":"#b388ff"},
-    {"color":"#d81b60","accent":"#ff6090"},{"color":"#00897b","accent":"#4db6ac"},
-    {"color":"#1565c0","accent":"#64b5f6"},{"color":"#ef6c00","accent":"#ffb74d"},
-    {"color":"#c62828","accent":"#ef5350"},{"color":"#6a1b9a","accent":"#ba68c8"},
-    {"color":"#00838f","accent":"#4dd0e1"},{"color":"#546e7a","accent":"#90a4ae"},
-    {"color":"#2e7d32","accent":"#66bb6a"},{"color":"#ad1457","accent":"#f06292"},
-    {"color":"#37474f","accent":"#78909c"},{"color":"#4e342e","accent":"#8d6e63"},
-    {"color":"#0277bd","accent":"#4fc3f7"},{"color":"#558b2f","accent":"#9ccc65"},
-]
-
-def assign_colors(films):
-    def hsl_to_hex(h,s,l):
-        r,g,b = colorsys.hls_to_rgb(h,l,s)
-        return f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}"
-    def gen_color(idx):
-        hue = (idx * 0.618033988749895) % 1.0
-        s,l,sa,la = [(0.65,0.38,0.55,0.62),(0.55,0.42,0.50,0.68),(0.70,0.35,0.60,0.58)][idx%3]
-        return {"color": hsl_to_hex(hue,s,l), "accent": hsl_to_hex(hue,sa,la)}
-    used, pidx, gidx = set(), 0, 0
-    for film in films:
-        c = GENRE_COLORS.get(film.get("genre","Other"))
-        if c and c["color"] not in used:
-            film["color"],film["accent"] = c["color"],c["accent"]; used.add(c["color"]); continue
-        assigned = False
-        while pidx < len(EXTRA_PALETTES):
-            c = EXTRA_PALETTES[pidx]; pidx += 1
-            if c["color"] not in used:
-                film["color"],film["accent"] = c["color"],c["accent"]; used.add(c["color"]); assigned=True; break
-        if not assigned:
-            while True:
-                c = gen_color(gidx); gidx += 1
-                if c["color"] not in used:
-                    film["color"],film["accent"] = c["color"],c["accent"]; used.add(c["color"]); break
 
 
 def main():
