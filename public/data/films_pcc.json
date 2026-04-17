@@ -1,114 +1,81 @@
 {
-  "scraped_at": "2026-04-17T13:32:33.038556+00:00",
+  "scraped_at": "2026-04-17T15:02:31.187074+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
-      "id": "amelie-25th-anniversary",
-      "title": "Amelie - 25th Anniversary",
-      "rating": "15",
-      "runtime": 123,
-      "genre": "Romance/Comedy",
-      "year": "2001",
+      "id": "the-hitcher",
+      "title": "The Hitcher",
+      "rating": "18",
+      "runtime": 97,
+      "genre": "Horror / Thriller",
+      "year": "1986",
       "country": null,
-      "director": "Jean-Pierre Jeunet",
-      "cast": "Audrey Tautou, Mathieu Kassovitz,  Rufus",
-      "description": "23-year-old Amélie is lonely. After an isolating childhood, she moves to Paris and becomes a waitress at the Café des Deux Moulins, a bar restaurant filled with a colourful cast of diners and employees. One night, Amélie happens across a box of treasures hidden in her apartment, left by a little boy in the Fifties, that changes the course of her life. Henceforth, she dedicates herself to giving back to her community, tracking down the owner of these keepsakes, consoling a widowed neighbour and befriending a reclusive artist. When completing these good deeds, she crosses paths with Nino, a photobooth collagist who shares her oddball sensibilities. She quickly falls in love with him.",
-      "film_url": "https://princecharlescinema.com/film/1870384/amelie-25th-anniversary",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1870384.jpg",
+      "director": "Robert Harmon",
+      "cast": "Rutger Hauer, C. Thomas Howell, Jennifer Jason Leigh",
+      "description": "While transporting a car from Chicago to San Diego, Jim Halsey (C. Thomas Howell) picks up a hitchhiker named John Ryder (Rutger Hauer), who claims to be a serial killer. After a daring escape, Jim hopes to never see Ryder again. But when he witnesses the hitchhiker murdering an entire family, Jim pursues Ryder with the help of truck-stop waitress Nash (Jennifer Jason Leigh), pitting the rivals against each other in a deadly series of car chases and brutal murders.",
+      "film_url": "https://princecharlescinema.com/film/31616839/the-hitcher",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/31616839.jpg",
       "showtimes": {
         "2026-04-17": [
           {
-            "time": "15:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626283",
+            "time": "18:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625535",
             "screen": null,
             "hoh": false,
             "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-04-20": [
-          {
-            "time": "15:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626276",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-04-30": [
-          {
-            "time": "14:50",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626278",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-05-02": [
-          {
-            "time": "20:50",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626298",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-05-07": [
-          {
-            "time": "20:45",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626297",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-05-09": [
-          {
-            "time": "11:45",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626302",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-05-28": [
-          {
-            "time": "20:45",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626307",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-06-06": [
-          {
-            "time": "14:55",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626304",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
+              "4K"
             ]
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/amelie/",
-      "letterboxd_rating": 4.19
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/the-hitcher/",
+      "letterboxd_rating": 3.63
+    },
+    {
+      "id": "ghost-in-the-shell",
+      "title": "Ghost in the Shell",
+      "rating": "15",
+      "runtime": 89,
+      "genre": "Anime",
+      "year": "1995",
+      "country": null,
+      "director": "Mamoru Oshii",
+      "cast": "Akio Ôtsuka, Atsuko Tanaka, Iemasa Kayumi",
+      "description": "In this Japanese animation, cyborg federal agent Maj. Motoko Kusanagi (Mimi Woods) trails \"The Puppet Master\" (Abe Lasser), who illegally hacks into the computerized minds of cyborg-human hybrids. Her pursuit of a man who can modify the identity of strangers leaves Motoko pondering her own makeup and what life might be like if she had more human traits. With her partner (Richard George), she corners the hacker, but her curiosity about her identity sends the case in an unforeseen direction.",
+      "film_url": "https://princecharlescinema.com/film/115369/ghost-in-the-shell",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/115369.jpg",
+      "showtimes": {
+        "2026-04-17": [
+          {
+            "time": "18:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625537",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K",
+              "SUB"
+            ]
+          }
+        ],
+        "2026-06-04": [
+          {
+            "time": "15:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626064",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K",
+              "SUB"
+            ]
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/ghost-in-the-shell/",
+      "letterboxd_rating": 4.1
     },
     {
       "id": "akira",
@@ -125,16 +92,6 @@
       "poster_url": "https://cdn.taposapp.com/poster/600x900/BevMTYiD9MRWq4QbDIx3fKNDYwjxKufgFRKEVYJGYYE.jpg",
       "showtimes": {
         "2026-04-17": [
-          {
-            "time": "15:25",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625810",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K",
-              "SUB"
-            ]
-          },
           {
             "time": "20:30",
             "booking_url": "",
@@ -576,85 +533,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/akira/",
-      "letterboxd_rating": 4.28
-    },
-    {
-      "id": "the-hitcher",
-      "title": "The Hitcher",
-      "rating": "18",
-      "runtime": 97,
-      "genre": "Horror / Thriller",
-      "year": "1986",
-      "country": null,
-      "director": "Robert Harmon",
-      "cast": "Rutger Hauer, C. Thomas Howell, Jennifer Jason Leigh",
-      "description": "While transporting a car from Chicago to San Diego, Jim Halsey (C. Thomas Howell) picks up a hitchhiker named John Ryder (Rutger Hauer), who claims to be a serial killer. After a daring escape, Jim hopes to never see Ryder again. But when he witnesses the hitchhiker murdering an entire family, Jim pursues Ryder with the help of truck-stop waitress Nash (Jennifer Jason Leigh), pitting the rivals against each other in a deadly series of car chases and brutal murders.",
-      "film_url": "https://princecharlescinema.com/film/31616839/the-hitcher",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/31616839.jpg",
-      "showtimes": {
-        "2026-04-17": [
-          {
-            "time": "18:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625535",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K"
-            ]
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/the-hitcher/",
-      "letterboxd_rating": 3.63
-    },
-    {
-      "id": "ghost-in-the-shell",
-      "title": "Ghost in the Shell",
-      "rating": "15",
-      "runtime": 89,
-      "genre": "Anime",
-      "year": "1995",
-      "country": null,
-      "director": "Mamoru Oshii",
-      "cast": "Akio Ôtsuka, Atsuko Tanaka, Iemasa Kayumi",
-      "description": "In this Japanese animation, cyborg federal agent Maj. Motoko Kusanagi (Mimi Woods) trails \"The Puppet Master\" (Abe Lasser), who illegally hacks into the computerized minds of cyborg-human hybrids. Her pursuit of a man who can modify the identity of strangers leaves Motoko pondering her own makeup and what life might be like if she had more human traits. With her partner (Richard George), she corners the hacker, but her curiosity about her identity sends the case in an unforeseen direction.",
-      "film_url": "https://princecharlescinema.com/film/115369/ghost-in-the-shell",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/115369.jpg",
-      "showtimes": {
-        "2026-04-17": [
-          {
-            "time": "18:15",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625537",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K",
-              "SUB"
-            ]
-          }
-        ],
-        "2026-06-04": [
-          {
-            "time": "15:15",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626064",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K",
-              "SUB"
-            ]
-          }
-        ]
-      },
       "color": "#d81b60",
       "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/ghost-in-the-shell/",
-      "letterboxd_rating": 4.1
+      "letterboxd_url": "https://letterboxd.com/film/akira/",
+      "letterboxd_rating": 4.28
     },
     {
       "id": "la-la-land",
@@ -849,8 +731,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/blade-runner-2049/",
       "letterboxd_rating": 4.1
     },
@@ -1001,8 +883,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/in-the-mood-for-love/",
       "letterboxd_rating": 4.38
     },
@@ -1029,8 +911,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/challengers/",
       "letterboxd_rating": 3.83
     },
@@ -1065,8 +947,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/the-holy-mountain/",
       "letterboxd_rating": 4.13
     },
@@ -1104,8 +986,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
       "letterboxd_url": "https://letterboxd.com/film/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb/",
       "letterboxd_rating": 4.3
     },
@@ -1132,8 +1014,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#37474f",
+      "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/the-french-connection/",
       "letterboxd_rating": 3.99
     },
@@ -1223,8 +1105,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
+      "color": "#4e342e",
+      "accent": "#8d6e63",
       "letterboxd_url": "https://letterboxd.com/film/one-battle-after-another/",
       "letterboxd_rating": 4.15
     },
@@ -1262,8 +1144,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/romeo-juliet-1996/",
       "letterboxd_rating": 3.46
     },
@@ -1290,8 +1172,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/the-age-of-innocence/",
       "letterboxd_rating": 3.81
     },
@@ -1326,10 +1208,107 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/the-seventh-seal/",
       "letterboxd_rating": 4.33
+    },
+    {
+      "id": "amelie-25th-anniversary",
+      "title": "Amelie - 25th Anniversary",
+      "rating": "15",
+      "runtime": 123,
+      "genre": "Romance/Comedy",
+      "year": "2001",
+      "country": null,
+      "director": "Jean-Pierre Jeunet",
+      "cast": "Audrey Tautou, Mathieu Kassovitz,  Rufus",
+      "description": "23-year-old Amélie is lonely. After an isolating childhood, she moves to Paris and becomes a waitress at the Café des Deux Moulins, a bar restaurant filled with a colourful cast of diners and employees. One night, Amélie happens across a box of treasures hidden in her apartment, left by a little boy in the Fifties, that changes the course of her life. Henceforth, she dedicates herself to giving back to her community, tracking down the owner of these keepsakes, consoling a widowed neighbour and befriending a reclusive artist. When completing these good deeds, she crosses paths with Nino, a photobooth collagist who shares her oddball sensibilities. She quickly falls in love with him.",
+      "film_url": "https://princecharlescinema.com/film/1870384/amelie-25th-anniversary",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1870384.jpg",
+      "showtimes": {
+        "2026-04-20": [
+          {
+            "time": "15:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626276",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-04-30": [
+          {
+            "time": "14:50",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626278",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-05-02": [
+          {
+            "time": "20:50",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626298",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-05-07": [
+          {
+            "time": "20:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626297",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-05-09": [
+          {
+            "time": "11:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626302",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-05-28": [
+          {
+            "time": "20:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626307",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-06-06": [
+          {
+            "time": "14:55",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626304",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#3052a6",
+      "accent": "#849cd6",
+      "letterboxd_url": "https://letterboxd.com/film/amelie/",
+      "letterboxd_rating": 4.19
     },
     {
       "id": "how-high",
