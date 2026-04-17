@@ -291,6 +291,12 @@ SKIP_PATTERNS = [
     r"(?i)\bseason launch\b",
     r"(?i)^dress-up karaoke\b",
     r"(?i)^baijiu tasting\b",
+    # ── Opera/ballet broadcast prefixes ──
+    r"(?i)^the royal opera\b",
+    r"(?i)^the metropolitan opera\b",
+    r"(?i)^royal opera house\b",
+    r"(?i)^bolshoi ballet\b",
+    r"(?i)^roh\s*:",
 ]
 
 # Pre-compiled regex for stripping " + Q&A", " + Intro …" etc.
