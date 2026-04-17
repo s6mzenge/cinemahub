@@ -43,6 +43,8 @@ try:
 except ImportError:
     requests = None  # only needed for live mode
 
+from colors import assign_colors
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
@@ -58,7 +60,7 @@ REQUEST_TIMEOUT = 20
 
 # ─── Color palette (consistent with other scrapers) ───
 
-GENRE_COLORS = {
+ARZNER_GENRE_COLORS = {
     "New Release":             {"color": "#6a1b9a", "accent": "#ba68c8"},
     "Drama":                   {"color": "#6a1b9a", "accent": "#ba68c8"},
     "Short Films":             {"color": "#ef6c00", "accent": "#ffb74d"},
@@ -77,26 +79,6 @@ GENRE_COLORS = {
     "Comedy Night":            {"color": "#d81b60", "accent": "#ff6090"},
     "Fundraiser":              {"color": "#00838f", "accent": "#4dd0e1"},
 }
-DEFAULT_COLORS = {"color": "#78909c", "accent": "#b0bec5"}
-
-EXTRA_PALETTES = [
-    {"color": "#e53935", "accent": "#ff6f60"},
-    {"color": "#7c4dff", "accent": "#b388ff"},
-    {"color": "#d81b60", "accent": "#ff6090"},
-    {"color": "#00897b", "accent": "#4db6ac"},
-    {"color": "#1565c0", "accent": "#64b5f6"},
-    {"color": "#ef6c00", "accent": "#ffb74d"},
-    {"color": "#c62828", "accent": "#ef5350"},
-    {"color": "#6a1b9a", "accent": "#ba68c8"},
-    {"color": "#00838f", "accent": "#4dd0e1"},
-    {"color": "#546e7a", "accent": "#90a4ae"},
-    {"color": "#2e7d32", "accent": "#66bb6a"},
-    {"color": "#ad1457", "accent": "#f06292"},
-    {"color": "#37474f", "accent": "#78909c"},
-    {"color": "#4e342e", "accent": "#8d6e63"},
-    {"color": "#0277bd", "accent": "#4fc3f7"},
-    {"color": "#558b2f", "accent": "#9ccc65"},
-]
 
 
 # ─── Fetching / loading ───
@@ -341,67 +323,6 @@ def parse_events(events: list[dict]) -> list[dict]:
     return films
 
 
-def assign_colors(films: list[dict]) -> None:
-    """Assign colors to films. Genre colors first, then procedural hue rotation."""
-    import colorsys
-
-    def hsl_to_hex(h, s, l):
-        r, g, b = colorsys.hls_to_rgb(h, l, s)
-        return f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}"
-
-    def generate_color(index):
-        """Use golden angle for max hue separation, with varied saturation/lightness."""
-        golden = 0.618033988749895
-        hue = (index * golden) % 1.0
-        # Alternate between two saturation/lightness bands for variety
-        if index % 3 == 0:
-            sat, lit = 0.65, 0.38
-            asat, alit = 0.55, 0.62
-        elif index % 3 == 1:
-            sat, lit = 0.55, 0.42
-            asat, alit = 0.50, 0.68
-        else:
-            sat, lit = 0.70, 0.35
-            asat, alit = 0.60, 0.58
-        return {
-            "color": hsl_to_hex(hue, sat, lit),
-            "accent": hsl_to_hex(hue, asat, alit),
-        }
-
-    used_colors = set()
-    palette_idx = 0
-    gen_idx = 0
-
-    for film in films:
-        genre = film.get("genre", "Other")
-        colors = GENRE_COLORS.get(genre, None)
-
-        if colors and colors["color"] not in used_colors:
-            film["color"] = colors["color"]
-            film["accent"] = colors["accent"]
-            used_colors.add(colors["color"])
-        else:
-            # Try hand-picked extras first
-            assigned = False
-            while palette_idx < len(EXTRA_PALETTES):
-                c = EXTRA_PALETTES[palette_idx]
-                palette_idx += 1
-                if c["color"] not in used_colors:
-                    film["color"] = c["color"]
-                    film["accent"] = c["accent"]
-                    used_colors.add(c["color"])
-                    assigned = True
-                    break
-            # Fallback: generate procedural colors (never grey)
-            if not assigned:
-                while True:
-                    c = generate_color(gen_idx)
-                    gen_idx += 1
-                    if c["color"] not in used_colors:
-                        film["color"] = c["color"]
-                        film["accent"] = c["accent"]
-                        used_colors.add(c["color"])
-                        break
 
 def main():
     import argparse
@@ -443,7 +364,7 @@ def main():
         sys.exit(1)
 
     # Step 4: Assign colors
-    assign_colors(films)
+    assign_colors(films, genre_colors=ARZNER_GENRE_COLORS)
 
     # Step 5: Write output
     output = {
