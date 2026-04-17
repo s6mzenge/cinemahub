@@ -50,9 +50,6 @@ PHOENIX_EVENT_PREFIXES = sorted([
     "japanese film club", "phoenix classics",
     "parents and baby screening", "parent and baby screening",
     "parent & baby screening", "watch with baby",
-    "exhibition on screen", "national theatre live", "nt live",
-    "the royal opera", "the metropolitan opera",
-    "royal opera house", "roh", "bolshoi ballet",
 ], key=len, reverse=True)
 
 TRAILING_SUFFIXES = [
