@@ -37,8 +37,13 @@ HOMEPAGE_URL = BASE_URL + "/"
 
 REQUEST_TIMEOUT = 20
 HEADERS = {
-    "User-Agent": "GardenCinemaScraper/1.0 (personal project; scrapes twice daily)",
-    "Accept": "text/html,application/xhtml+xml",
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/125.0.0.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-GB,en;q=0.5",
 }
 
 # ─── Tag mapping: CSS class fragments → human-readable tag names ─────
@@ -127,7 +132,16 @@ def fetch_html(url: str) -> str | None:
     try:
         log.info(f"Fetching: {url}")
         resp = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
+        log.info(f"Response: status={resp.status_code}, length={len(resp.text):,} bytes")
+        if resp.status_code != 200:
+            log.error(f"Non-200 status: {resp.status_code}")
+            log.error(f"Response snippet: {resp.text[:500]}")
+            return None
+        # Sanity check: does this look like the Garden Cinema homepage?
+        if "films-list__by-date" not in resp.text:
+            log.error("Response does not contain expected film listings HTML.")
+            log.error(f"Response snippet: {resp.text[:500]}")
+            return None
         return resp.text
     except requests.RequestException as e:
         log.error(f"Failed to fetch {url}: {e}")
@@ -512,7 +526,7 @@ def main():
     args = parser.parse_args()
 
     output_path = Path(args.output) if args.output else (
-        Path(__file__).parent / "public" / "data" / "films_garden.json"
+        Path(__file__).parent.parent / "public" / "data" / "films_garden.json"
     )
 
     log.info("=== Garden Cinema Scraper Starting ===")
