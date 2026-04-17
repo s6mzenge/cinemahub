@@ -349,7 +349,7 @@ def main():
     args = parser.parse_args()
 
     output_path = Path(args.output) if args.output else (
-        Path(__file__).parent / "public" / "data" / "films_phoenix.json"
+        Path(__file__).resolve().parent.parent / "public" / "data" / "films_phoenix.json"
     )
 
     log.info("=== Phoenix Cinema Scraper Starting ===")
