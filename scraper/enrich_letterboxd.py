@@ -105,6 +105,9 @@ _RAW_SLUG_OVERRIDES = {
     "xiao wu": "xiao-wu",
     "the photograph": "the-photograph-1986",     # Nico/Nikos Papatakis transliteration
     "walking a tightrope": "walking-a-tightrope", # Nico/Nikos Papatakis transliteration
+    # ── Rio Cinema alternate titles / spelling ──
+    "murs murs": "mur-murs",                    # Varda film: Letterboxd uses "Mur Murs"
+    "appropriate behaviour": "appropriate-behavior", # UK spelling → US slug on Letterboxd
 }
 
 # (title, source_year) → forced slug — for cases where the default
@@ -158,6 +161,9 @@ TITLE_EQUIVALENCE_GROUPS = [
     # ── Garden Cinema alternate titles ──
     ("jules et jim", "jules and jim"),
     ("lift to the scaffold", "elevator to the gallows"),
+    # ── Rio Cinema alternate titles / spelling ──
+    ("murs murs", "mur murs"),
+    ("appropriate behaviour", "appropriate behavior"),
 ]
 
 
