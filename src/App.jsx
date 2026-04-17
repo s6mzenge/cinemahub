@@ -570,13 +570,13 @@ export default function App() {
     return allFilmsForSearch.map(f => ({
       ...f,
       normalizedTitle: normalizeTitle(f.title),
-      searchStr: f.title.toLowerCase(),
+      searchStr: f.title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(),
     }));
   }, [allFilmsForSearch]);
 
   const searchResults = useMemo(() => {
     if (!searchQuery.trim()) return [];
-    const q = searchQuery.toLowerCase().trim();
+    const q = searchQuery.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
     const tokens = q.split(/\s+/);
     return searchIndex
       .filter(f => tokens.every(tok => f.searchStr.includes(tok)))
