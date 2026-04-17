@@ -49,15 +49,21 @@ jobs:
       # - name: Run Garden Cinema scraper
       #   run: python scraper/scrape_garden.py
       #   continue-on-error: true
-      - name: Run Rio Cinema scraper
-        run: python scraper/scrape_rio.py
+      # - name: Run Rio Cinema scraper
+      #   run: python scraper/scrape_rio.py
+      #   continue-on-error: true
+      - name: Run Genesis Cinema scraper
+        run: python scraper/scrape_genesis.py
+        continue-on-error: true
+      - name: Run Phoenix Cinema scraper
+        run: python scraper/scrape_phoenix.py
         continue-on-error: true
       - name: Enrich with Letterboxd ratings
         run: python scraper/enrich_letterboxd.py -d ./public/data
       - name: Check for changes
         id: changes
         run: |
-          git add public/data/films.json public/data/films_pcc.json public/data/films_castle.json public/data/films_arzner.json public/data/films_bfi.json public/data/films_electric_portobello.json public/data/films_electric_white_city.json public/data/films_closeup.json public/data/films_ica.json public/data/films_garden.json public/data/films_rio.json
+          git add public/data/films.json public/data/films_pcc.json public/data/films_castle.json public/data/films_arzner.json public/data/films_bfi.json public/data/films_electric_portobello.json public/data/films_electric_white_city.json public/data/films_closeup.json public/data/films_ica.json public/data/films_garden.json public/data/films_rio.json public/data/films_genesis.json public/data/films_phoenix.json
           git diff --cached --quiet && echo "changed=false" >> "$GITHUB_OUTPUT" || echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Commit and push updated data
         if: steps.changes.outputs.changed == 'true'
