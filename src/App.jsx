@@ -1290,7 +1290,7 @@ export default function App() {
                   return (
                     <div style={{ display:"flex", flexDirection:"column", gap:0, paddingTop:6 }}>
                       {groups.map((group,gi) => {
-                        const isPast = nowMin!==null && group.sessions.every(s => s.filmEnd<nowMin);
+                        const isPast = nowMin!==null && group.startMin<nowMin;
                         const isLast = gi === groups.length - 1;
                         return (
                           <div key={group.time+gi} style={{ opacity:isPast?0.35:1, transition:"opacity 0.3s" }}>
@@ -1306,7 +1306,7 @@ export default function App() {
                                     {/* Spine line */}
                                     <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)", width:1, background:T.mobileConnector(T.accent),
                                       top: isVeryFirst ? "50%" : 0,
-                                      bottom: isVeryLast ? "50%" : 0,
+                                      bottom: isVeryLast ? "50%" : (!isLastCard ? -8 : 0),
                                     }} />
                                     {/* Time label (vertically centered with card) */}
                                     {isFirstCard && (
