@@ -220,6 +220,8 @@ STRIP_PREFIXES_NO_COLON = [
     r"(?i)^re:?mind\s+film\s+festival\s+presents?\s+",
     r"(?i)^uk\s+asian\s+film\s+festival\s+presents?\s+",
     r"(?i)^waving\s+kites\s+and\s+re:?mind\s+film\s+festival\s+presents?\s+",
+    # ── Possessive-name title prefixes ──
+    r"(?i)^osamu\s+tezuka[''\u2019]?s?\s+",
 ]
 
 # Titles matching these patterns are NOT films → skip entirely
