@@ -21,6 +21,8 @@ const CINEMAS = [
   { id:"ica", name:"ICA", short:"ICA", barColor:"#1a1aff", address:"The Mall, SW1Y", url:"https://www.ica.art", price:null, dataFile:"films_ica.json", source:"ica.art", adsMin:10 },
   { id:"garden-cinema", name:"Garden Cinema", short:"GDN", barColor:"#6d8764", address:"39 Parker St, WC2B", url:"https://www.thegardencinema.co.uk", price:null, dataFile:"films_garden.json", source:"thegardencinema.co.uk", adsMin:10 },
   { id:"rio-dalston", name:"Rio Cinema", short:"RIO", barColor:"#9b2d30", address:"107 Kingsland High St, E8", url:"https://riocinema.org.uk", price:null, dataFile:"films_rio.json", source:"riocinema.org.uk", adsMin:15 },
+  { id:"genesis", name:"Genesis Cinema", short:"GEN", barColor:"#c44536", address:"93-95 Mile End Rd, E1", url:"https://www.genesiscinema.co.uk", price:null, dataFile:"films_genesis.json", source:"genesiscinema.co.uk", adsMin:15 },
+  { id:"phoenix", name:"Phoenix Cinema", short:"PHX", barColor:"#8b5cf6", address:"52 High Rd, N2", url:"https://www.phoenixcinema.co.uk", price:null, dataFile:"films_phoenix.json", source:"phoenixcinema.co.uk", adsMin:15 },
 ];
 const CINEMA_MAP = Object.fromEntries(CINEMAS.map(c => [c.id, c]));
 function getAdsMin(cinemaId) { return CINEMA_MAP[cinemaId]?.adsMin ?? DEFAULT_ADS_MIN; }
