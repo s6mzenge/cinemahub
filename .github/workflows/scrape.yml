@@ -20,41 +20,44 @@ jobs:
           cache-dependency-path: scraper/requirements.txt
       - name: Install dependencies
         run: pip install -r scraper/requirements.txt
-      - name: Install Playwright browsers
-        run: playwright install chromium --with-deps
-      - name: Run Peckhamplex scraper
-        run: python scraper/scrape.py
-        continue-on-error: true
-      - name: Run Prince Charles Cinema scraper
-        run: python scraper/scrape_prince_charles.py
-        continue-on-error: true
-      - name: Run Castle Cinema scraper
-        run: python scraper/scrape_castle.py
-        continue-on-error: true
-      - name: Run The Arzner scraper
-        run: python scraper/scrape_arzner.py
-        continue-on-error: true
-      - name: Run BFI Southbank scraper
-        run: python scraper/scrape_bfi.py
-        continue-on-error: true
-      - name: Run Electric Cinema scraper
-        run: python scraper/scrape_electric.py
-        continue-on-error: true
-      - name: Run Close-Up Film Centre scraper
-        run: python scraper/scrape_closeup.py
-        continue-on-error: true
-      - name: Run ICA scraper
-        run: python scraper/scrape_ica.py
-        continue-on-error: true
-      - name: Run Garden Cinema scraper
-        run: python scraper/scrape_garden.py
+      # - name: Install Playwright browsers
+      #   run: playwright install chromium --with-deps
+      # - name: Run Peckhamplex scraper
+      #   run: python scraper/scrape.py
+      #   continue-on-error: true
+      # - name: Run Prince Charles Cinema scraper
+      #   run: python scraper/scrape_prince_charles.py
+      #   continue-on-error: true
+      # - name: Run Castle Cinema scraper
+      #   run: python scraper/scrape_castle.py
+      #   continue-on-error: true
+      # - name: Run The Arzner scraper
+      #   run: python scraper/scrape_arzner.py
+      #   continue-on-error: true
+      # - name: Run BFI Southbank scraper
+      #   run: python scraper/scrape_bfi.py
+      #   continue-on-error: true
+      # - name: Run Electric Cinema scraper
+      #   run: python scraper/scrape_electric.py
+      #   continue-on-error: true
+      # - name: Run Close-Up Film Centre scraper
+      #   run: python scraper/scrape_closeup.py
+      #   continue-on-error: true
+      # - name: Run ICA scraper
+      #   run: python scraper/scrape_ica.py
+      #   continue-on-error: true
+      # - name: Run Garden Cinema scraper
+      #   run: python scraper/scrape_garden.py
+      #   continue-on-error: true
+      - name: Run Rio Cinema scraper
+        run: python scraper/scrape_rio.py
         continue-on-error: true
       - name: Enrich with Letterboxd ratings
         run: python scraper/enrich_letterboxd.py -d ./public/data
       - name: Check for changes
         id: changes
         run: |
-          git add public/data/films.json public/data/films_pcc.json public/data/films_castle.json public/data/films_arzner.json public/data/films_bfi.json public/data/films_electric_portobello.json public/data/films_electric_white_city.json public/data/films_closeup.json public/data/films_ica.json public/data/films_garden.json
+          git add public/data/films.json public/data/films_pcc.json public/data/films_castle.json public/data/films_arzner.json public/data/films_bfi.json public/data/films_electric_portobello.json public/data/films_electric_white_city.json public/data/films_closeup.json public/data/films_ica.json public/data/films_garden.json public/data/films_rio.json
           git diff --cached --quiet && echo "changed=false" >> "$GITHUB_OUTPUT" || echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Commit and push updated data
         if: steps.changes.outputs.changed == 'true'
