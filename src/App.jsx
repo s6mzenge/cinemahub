@@ -1298,16 +1298,20 @@ export default function App() {
                               const film=sess.film;
                               const isFirstCard = si === 0;
                               const isLastCard = si === group.sessions.length - 1;
+                              const isVeryFirst = gi===0 && isFirstCard;
                               const isVeryLast = isLast && isLastCard;
                               return (
                                 <div key={`${film.id}-${si}`} style={{ display:"flex", alignItems:"stretch", gap:0, marginBottom:isLastCard?0:8 }}>
-                                  <div style={{ width:56, flexShrink:0, display:"flex", flexDirection:"column", alignItems:"center", position:"relative" }}>
-                                    {/* Spine line above time label */}
-                                    {!(gi===0 && isFirstCard) && <div style={{ width:1, flex: isFirstCard ? "0 0 12px" : "1", background:T.mobileConnector(T.accent) }} />}
-                                    {/* Time label */}
-                                    {isFirstCard && <div style={{ fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono, padding:"6px 0", flexShrink:0 }}>{group.time}</div>}
-                                    {/* Spine line below time label */}
-                                    {!isVeryLast && <div style={{ width:1, flex:1, background:T.mobileConnector(T.accent) }} />}
+                                  <div style={{ width:56, flexShrink:0, position:"relative" }}>
+                                    {/* Spine line */}
+                                    <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)", width:1, background:T.mobileConnector(T.accent),
+                                      top: isFirstCard ? (isVeryFirst ? 22 : 0) : 0,
+                                      bottom: isVeryLast ? "calc(100% - 22px)" : 0,
+                                    }} />
+                                    {/* Time label (top-aligned with card title) */}
+                                    {isFirstCard && (
+                                      <div style={{ position:"absolute", top:10, left:"50%", transform:"translateX(-50%)", background:T.bg, padding:"2px 4px", fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono, whiteSpace:"nowrap", zIndex:1 }}>{group.time}</div>
+                                    )}
                                   </div>
                                   <div style={{ flex:1 }}>
                                     <div className="tkt-card" style={{ display:"flex", alignItems:"center", gap:0, borderRadius:12, border:`1px solid ${T.cardBorder(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color)}`, background:T.cardBg(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color) }}>
