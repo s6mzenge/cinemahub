@@ -612,9 +612,9 @@ def clean_title_for_lookup(title: str) -> str:
 
     # Normalize ASCII fractions to Unicode equivalents so
     # "Super 8 1/2" matches "Super 8½" across cinemas
-    t = re.sub(r"\b1/2\b", "½", t)
-    t = re.sub(r"\b1/4\b", "¼", t)
-    t = re.sub(r"\b3/4\b", "¾", t)
+    t = re.sub(r" 1/2\b", "½", t)
+    t = re.sub(r" 1/4\b", "¼", t)
+    t = re.sub(r" 3/4\b", "¾", t)
 
     # Strip [original language title] brackets
     t = re.sub(r"\s*\[[^\]]+\]\s*$", "", t)
