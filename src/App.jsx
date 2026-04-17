@@ -345,6 +345,7 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchSelectedFilm, setSearchSelectedFilm] = useState(null);
   const [searchSortBy, setSearchSortBy] = useState("cinema");
+  const [searchHighlight, setSearchHighlight] = useState(-1);
   const [allFilmsForSearch, setAllFilmsForSearch] = useState([]);
   const searchInputRef = useRef(null);
 
@@ -427,7 +428,7 @@ export default function App() {
     if (isSearch && searchInputRef.current) {
       setTimeout(() => searchInputRef.current?.focus(), 120);
     }
-    if (!isSearch) { setSearchQuery(""); setSearchSelectedFilm(null); setSearchSortBy("cinema"); }
+    if (!isSearch) { setSearchQuery(""); setSearchSelectedFilm(null); setSearchSortBy("cinema"); setSearchHighlight(-1); }
   }, [isSearch]);
 
   const allDates = useMemo(() => getAllDatesWithScreenings(films), [films]);
@@ -612,13 +613,15 @@ export default function App() {
 
   const searchGroupedByCinema = useMemo(() => {
     const groups = {};
-    searchShowtimes.forEach(s => {
-      if (!groups[s.cinemaId]) groups[s.cinemaId] = { ...CINEMA_MAP[s.cinemaId], cinemaId: s.cinemaId, sessions: [] };
-      groups[s.cinemaId].sessions.push(s);
-    });
+    searchShowtimes
+      .filter(s => s.date >= today)
+      .forEach(s => {
+        if (!groups[s.cinemaId]) groups[s.cinemaId] = { ...CINEMA_MAP[s.cinemaId], cinemaId: s.cinemaId, sessions: [] };
+        groups[s.cinemaId].sessions.push(s);
+      });
     Object.values(groups).forEach(g => g.sessions.sort((a, b) => a.date === b.date ? a.startMin - b.startMin : a.date.localeCompare(b.date)));
     return Object.values(groups).sort((a, b) => (a.name || "").localeCompare(b.name || ""));
-  }, [searchShowtimes]);
+  }, [searchShowtimes, today]);
 
   const searchFlatByTime = useMemo(() => {
     return [...searchShowtimes]
@@ -915,7 +918,13 @@ export default function App() {
                   ref={searchInputRef}
                   type="text"
                   value={searchQuery}
-                  onChange={e => { setSearchQuery(e.target.value); setSearchSelectedFilm(null); }}
+                  onChange={e => { setSearchQuery(e.target.value); setSearchSelectedFilm(null); setSearchHighlight(-1); }}
+                  onKeyDown={e => {
+                    if (!searchQuery.trim() || searchSelectedFilm) return;
+                    if (e.key === "ArrowDown") { e.preventDefault(); setSearchHighlight(h => Math.min(h + 1, searchResults.length - 1)); }
+                    else if (e.key === "ArrowUp") { e.preventDefault(); setSearchHighlight(h => Math.max(h - 1, -1)); }
+                    else if (e.key === "Enter" && searchHighlight >= 0 && searchHighlight < searchResults.length) { e.preventDefault(); setSearchSelectedFilm(searchResults[searchHighlight]); setSearchHighlight(-1); }
+                  }}
                   placeholder={`Search ${allFilmsForSearch.length} films across ${CINEMAS.length} cinemas…`}
                   style={{
                     flex:1, border:"none", outline:"none", background:"transparent",
@@ -939,15 +948,16 @@ export default function App() {
                     <div style={{ borderRadius:12, border:`1px solid ${T.border}`, overflow:"hidden" }}>
                       {searchResults.map((f, i) => {
                         const cinemaCount = Object.keys(f.perCinema || {}).length;
+                        const isHL = i === searchHighlight;
                         return (
-                          <button key={f.normalizedTitle + i} onClick={() => setSearchSelectedFilm(f)} style={{
+                          <button key={f.normalizedTitle + i} onClick={() => { setSearchSelectedFilm(f); setSearchHighlight(-1); }} style={{
                             display:"flex", alignItems:"center", gap:12, width:"100%",
                             padding:"14px 18px", border:"none", cursor:"pointer", textAlign:"left",
-                            background:"transparent", transition:"background 0.15s",
+                            background: isHL ? T.accentSoft : "transparent", transition:"background 0.15s",
                             borderBottom: i < searchResults.length - 1 ? `1px solid ${T.border}44` : "none",
                           }}
-                          onMouseEnter={e => e.currentTarget.style.background = T.accentSoft}
-                          onMouseLeave={e => e.currentTarget.style.background = "transparent"}
+                          onMouseEnter={e => { e.currentTarget.style.background = T.accentSoft; setSearchHighlight(i); }}
+                          onMouseLeave={e => { if (!isHL) e.currentTarget.style.background = "transparent"; }}
                           >
                             <div style={{ width:4, height:36, borderRadius:2, background:`linear-gradient(180deg,${f.color},${f.color}44)`, flexShrink:0 }} />
                             <div style={{ flex:1, minWidth:0 }}>
@@ -999,7 +1009,11 @@ export default function App() {
                         </button>
 
                         <div style={{ display:"flex", alignItems:"flex-start", gap:14 }}>
-                          <div style={{ width:5, height:48, borderRadius:2.5, background:`linear-gradient(180deg,${film.color},${film.color}44)`, flexShrink:0, marginTop:2 }} />
+                          {film.poster_url ? (
+                            <img src={film.poster_url} alt="" style={{ width:60, height:90, objectFit:"cover", borderRadius:6, flexShrink:0, border:`1px solid ${T.border}` }} onError={e => { e.target.style.display = "none"; }} />
+                          ) : (
+                            <div style={{ width:5, height:48, borderRadius:2.5, background:`linear-gradient(180deg,${film.color},${film.color}44)`, flexShrink:0, marginTop:2 }} />
+                          )}
                           <div style={{ flex:1, minWidth:0 }}>
                             <div style={{ display:"flex", alignItems:"baseline", gap:8, flexWrap:"wrap" }}>
                               <h2 style={{ fontSize:22, fontWeight:800, color:T.text, fontFamily:T.serif, margin:0, letterSpacing:"-0.3px", lineHeight:1.2 }}>{film.title}</h2>
@@ -1046,18 +1060,19 @@ export default function App() {
                               </div>
                               {(() => {
                                 const byDate = {};
+                                const nowMin = getNowMin();
                                 group.sessions.forEach(s => { if (!byDate[s.date]) byDate[s.date] = []; byDate[s.date].push(s); });
                                 return Object.entries(byDate).map(([date, sessions]) => {
                                   const info = formatDayTab(date);
                                   const isToday = date === today;
                                   return (
                                     <div key={date} style={{ display:"flex", alignItems:"flex-start", gap:0, padding:"8px 0", borderBottom:`1px solid ${T.border}33` }}>
-                                      <div style={{ width:80, flexShrink:0, paddingTop:3 }}>
-                                        <div style={{ fontSize:11, fontWeight:isToday ? 700 : 500, color:isToday ? T.accent : T.textMuted, fontFamily:T.mono }}>{info.day} {info.num}</div>
-                                        <div style={{ fontSize:9, color:T.textFaint, fontFamily:T.mono }}>{info.mon}</div>
+                                      <div style={{ width:90, flexShrink:0, paddingTop:4 }}>
+                                        <span onClick={() => { setSelCinema(group.cinemaId); setSelDate(date); setView("day"); }} style={{ fontSize:11, fontWeight:isToday ? 700 : 500, color:isToday ? T.accent : T.textMuted, fontFamily:T.mono, cursor:"pointer", borderBottom:`1px dashed ${isToday ? T.accent+"44" : T.textFaint}`, paddingBottom:1 }}>{info.day} {info.num} {info.mon}</span>
                                       </div>
                                       <div style={{ flex:1, display:"flex", gap:6, flexWrap:"wrap" }}>
                                         {sessions.map((s, si) => {
+                                          const isPast = isToday && (s.startMin + (film.runtime || 0) + (getAdsMin(group.cinemaId))) < nowMin;
                                           const pill = (
                                             <span key={si} className="tkt-pill" style={{
                                               fontSize:11, fontWeight:600, padding:"5px 14px", borderRadius:4,
@@ -1066,12 +1081,13 @@ export default function App() {
                                               color: group.barColor || "#888",
                                               fontFamily:T.mono, whiteSpace:"nowrap", display:"inline-flex", alignItems:"center", gap:4,
                                               cursor: s.bookingUrl ? "pointer" : "default", transition:"all 0.2s",
+                                              opacity: isPast ? 0.35 : 1,
                                             }}>
                                               {s.time}
                                               {s.screen && <span style={{ fontSize:8, opacity:0.7 }}>{s.screen}</span>}
                                             </span>
                                           );
-                                          return s.bookingUrl ? <a key={si} href={s.bookingUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}>{pill}</a> : pill;
+                                          return s.bookingUrl ? <a key={si} href={s.bookingUrl} target="_blank" rel="noopener" style={{ textDecoration:"none", opacity: isPast ? 0.35 : 1 }}>{pill}</a> : pill;
                                         })}
                                       </div>
                                     </div>
@@ -1084,6 +1100,7 @@ export default function App() {
                           /* ── By Time ── */
                           (() => {
                             const byDate = {};
+                            const nowMin = getNowMin();
                             searchFlatByTime.forEach(s => { if (!byDate[s.date]) byDate[s.date] = []; byDate[s.date].push(s); });
                             return Object.entries(byDate).map(([date, sessions]) => {
                               const info = formatDayTab(date);
@@ -1094,12 +1111,14 @@ export default function App() {
                                     <span style={{ fontSize:14, fontWeight:700, color:isToday ? T.accent : T.text, fontFamily:T.serif }}>{info.day} {info.num} {info.mon}</span>
                                     {isToday && <span style={{ fontSize:9, color:T.accent, fontFamily:T.mono, fontWeight:600, padding:"2px 6px", borderRadius:3, background:T.accentSoft }}>Today</span>}
                                   </div>
-                                  {sessions.map((s, si) => (
-                                    <div key={si} style={{ display:"flex", alignItems:"center", gap:10, padding:"9px 0", borderBottom:`1px solid ${T.border}22` }}>
+                                  {sessions.map((s, si) => {
+                                    const isPast = isToday && (s.startMin + (searchSelectedFilm?.runtime || 0) + getAdsMin(s.cinemaId)) < nowMin;
+                                    return (
+                                    <div key={si} style={{ display:"flex", alignItems:"center", gap:10, padding:"9px 0", borderBottom:`1px solid ${T.border}22`, opacity: isPast ? 0.35 : 1, transition:"opacity 0.3s" }}>
                                       <span style={{ fontSize:14, fontWeight:700, color:T.text, fontFamily:T.mono, width:50, flexShrink:0 }}>{s.time}</span>
                                       <div style={{ display:"flex", alignItems:"center", gap:6, flex:1, minWidth:0 }}>
                                         <span style={{ width:6, height:6, borderRadius:2, background:s.cinemaColor, flexShrink:0 }} />
-                                        <span style={{ fontSize:11, color:T.textMuted, fontFamily:T.sans, fontWeight:500 }}>{s.cinemaName}</span>
+                                        <span onClick={() => { setSelCinema(s.cinemaId); setSelDate(date); setView("day"); }} style={{ fontSize:11, color:T.textMuted, fontFamily:T.sans, fontWeight:500, cursor:"pointer", borderBottom:`1px dashed ${T.textFaint}`, paddingBottom:1 }}>{s.cinemaName}</span>
                                         {s.screen && <span style={{ fontSize:9, color:T.textFaint, fontFamily:T.mono }}>({s.screen})</span>}
                                       </div>
                                       {s.bookingUrl && (
@@ -1112,7 +1131,8 @@ export default function App() {
                                         </a>
                                       )}
                                     </div>
-                                  ))}
+                                    );
+                                  })}
                                 </div>
                               );
                             });
