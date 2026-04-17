@@ -11,18 +11,18 @@ const rBg = { U:"#2e7d32", PG:"#b8960f", "12A":"#c45a00", "12":"#c45a00", "15":"
 /* ─── Cinema registry (extend this later) ─── */
 const CINEMAS = [
   { id:"peckhamplex", name:"Peckhamplex", short:"PKX", barColor:"#b8860b", address:"95a Rye Lane, SE15", url:"https://www.peckhamplex.london", price:"£7.59", dataFile:"films.json", source:"peckhamplex.london", adsMin:20 },
-  { id:"prince-charles", name:"Prince Charles", short:"PCC", barColor:"#7b68ee", address:"7 Leicester Place, WC2", url:"https://princecharlescinema.com", price:null, dataFile:"films_pcc.json", source:"princecharlescinema.com", adsMin:20 },
-  { id:"castle-hackney", name:"The Castle", short:"CST", barColor:"#e06050", address:"64-66 Brooksby's Walk, E9", url:"https://thecastlecinema.com", price:null, dataFile:"films_castle.json", source:"thecastlecinema.com", adsMin:10 },
+  { id:"prince-charles", name:"Prince Charles", short:"PCC", barColor:"#6b5ca5", address:"7 Leicester Place, WC2", url:"https://princecharlescinema.com", price:null, dataFile:"films_pcc.json", source:"princecharlescinema.com", adsMin:20 },
+  { id:"castle-hackney", name:"The Castle", short:"CST", barColor:"#c47b5c", address:"64-66 Brooksby's Walk, E9", url:"https://thecastlecinema.com", price:null, dataFile:"films_castle.json", source:"thecastlecinema.com", adsMin:10 },
   { id:"the-arzner", name:"The Arzner", short:"ARZ", barColor:"#2aa67e", address:"10 Bermondsey Square, SE1", url:"https://thearzner.com", price:null, dataFile:"films_arzner.json", source:"thearzner.com", adsMin:20 },
-  { id:"bfi-southbank", name:"BFI Southbank", short:"BFI", barColor:"#378add", address:"Belvedere Rd, SE1", url:"https://whatson.bfi.org.uk", price:null, dataFile:"films_bfi.json", source:"whatson.bfi.org.uk", adsMin:20 },
+  { id:"bfi-southbank", name:"BFI Southbank", short:"BFI", barColor:"#4a7fb5", address:"Belvedere Rd, SE1", url:"https://whatson.bfi.org.uk", price:null, dataFile:"films_bfi.json", source:"whatson.bfi.org.uk", adsMin:20 },
   { id:"electric-portobello", name:"Electric Portobello", short:"ELP", barColor:"#d4537e", address:"191 Portobello Rd, W11", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_portobello.json", source:"electriccinema.co.uk", adsMin:20 },
   { id:"electric-white-city", name:"Electric White City", short:"EWC", barColor:"#639922", address:"101 Wood Lane, W12", url:"https://www.electriccinema.co.uk", price:null, dataFile:"films_electric_white_city.json", source:"electriccinema.co.uk", adsMin:20 },
-  { id:"close-up", name:"Close-Up", short:"CLU", barColor:"#c17817", address:"97 Sclater St, E1", url:"https://www.closeupfilmcentre.com", price:null, dataFile:"films_closeup.json", source:"closeupfilmcentre.com", adsMin:0 },
-  { id:"ica", name:"ICA", short:"ICA", barColor:"#1a1aff", address:"The Mall, SW1Y", url:"https://www.ica.art", price:null, dataFile:"films_ica.json", source:"ica.art", adsMin:10 },
+  { id:"close-up", name:"Close-Up", short:"CLU", barColor:"#c46a3c", address:"97 Sclater St, E1", url:"https://www.closeupfilmcentre.com", price:null, dataFile:"films_closeup.json", source:"closeupfilmcentre.com", adsMin:0 },
+  { id:"ica", name:"ICA", short:"ICA", barColor:"#3d6b8c", address:"The Mall, SW1Y", url:"https://www.ica.art", price:null, dataFile:"films_ica.json", source:"ica.art", adsMin:10 },
   { id:"garden-cinema", name:"Garden Cinema", short:"GDN", barColor:"#6d8764", address:"39 Parker St, WC2B", url:"https://www.thegardencinema.co.uk", price:null, dataFile:"films_garden.json", source:"thegardencinema.co.uk", adsMin:10 },
-  { id:"rio-dalston", name:"Rio Cinema", short:"RIO", barColor:"#9b2d30", address:"107 Kingsland High St, E8", url:"https://riocinema.org.uk", price:null, dataFile:"films_rio.json", source:"riocinema.org.uk", adsMin:15 },
+  { id:"rio-dalston", name:"Rio Cinema", short:"RIO", barColor:"#8c3b56", address:"107 Kingsland High St, E8", url:"https://riocinema.org.uk", price:null, dataFile:"films_rio.json", source:"riocinema.org.uk", adsMin:15 },
   { id:"genesis", name:"Genesis Cinema", short:"GEN", barColor:"#c44536", address:"93-95 Mile End Rd, E1", url:"https://www.genesiscinema.co.uk", price:null, dataFile:"films_genesis.json", source:"genesiscinema.co.uk", adsMin:15 },
-  { id:"phoenix", name:"Phoenix Cinema", short:"PHX", barColor:"#8b5cf6", address:"52 High Rd, N2", url:"https://www.phoenixcinema.co.uk", price:null, dataFile:"films_phoenix.json", source:"phoenixcinema.co.uk", adsMin:15 },
+  { id:"phoenix", name:"Phoenix Cinema", short:"PHX", barColor:"#9872b5", address:"52 High Rd, N2", url:"https://www.phoenixcinema.co.uk", price:null, dataFile:"films_phoenix.json", source:"phoenixcinema.co.uk", adsMin:15 },
 ];
 const CINEMA_MAP = Object.fromEntries(CINEMAS.map(c => [c.id, c]));
 function getAdsMin(cinemaId) { return CINEMA_MAP[cinemaId]?.adsMin ?? DEFAULT_ADS_MIN; }
