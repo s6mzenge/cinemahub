@@ -1291,14 +1291,22 @@ export default function App() {
                     <div style={{ display:"flex", flexDirection:"column", gap:0, paddingTop:6 }}>
                       {groups.map((group,gi) => {
                         const isPast = nowMin!==null && group.sessions.every(s => s.filmEnd<nowMin);
+                        const isLast = gi === groups.length - 1;
                         return (
                           <div key={group.time+gi} style={{ opacity:isPast?0.35:1, transition:"opacity 0.3s" }}>
                             {group.sessions.map((sess,si) => {
                               const film=sess.film;
+                              const isFirstCard = si === 0;
+                              const isLastCard = si === group.sessions.length - 1;
                               return (
-                                <div key={`${film.id}-${si}`} style={{ display:"flex", alignItems:"center", gap:0, marginBottom:si<group.sessions.length-1?8:0 }}>
-                                  <div style={{ width:56, flexShrink:0, display:"flex", justifyContent:"center" }}>
-                                    {si===0 && <div style={{ fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono }}>{group.time}</div>}
+                                <div key={`${film.id}-${si}`} style={{ display:"flex", alignItems:"stretch", gap:0, marginBottom:isLastCard?0:8 }}>
+                                  <div style={{ width:56, flexShrink:0, display:"flex", flexDirection:"column", alignItems:"center", position:"relative" }}>
+                                    {/* Spine line above time label */}
+                                    {!(gi===0 && isFirstCard) && <div style={{ width:1, flex: isFirstCard ? "0 0 8px" : "1", background:T.mobileConnector(T.accent) }} />}
+                                    {/* Time label */}
+                                    {isFirstCard && <div style={{ fontSize:13, fontWeight:700, color:isPast?T.textFaint:T.accent, fontFamily:T.mono, padding:"2px 0", flexShrink:0 }}>{group.time}</div>}
+                                    {/* Spine line below time label */}
+                                    {!(isLast && isLastCard) && <div style={{ width:1, flex:1, background:T.mobileConnector(T.accent) }} />}
                                   </div>
                                   <div style={{ flex:1 }}>
                                     <div className="tkt-card" style={{ display:"flex", alignItems:"center", gap:0, borderRadius:12, border:`1px solid ${T.cardBorder(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color)}`, background:T.cardBg(isAllCinemas&&sess.cinemaColor?sess.cinemaColor:film.color) }}>
@@ -1334,13 +1342,6 @@ export default function App() {
                                 </div>
                               );
                             })}
-                            {gi<groups.length-1 && (
-                              <div style={{ display:"flex" }}>
-                                <div style={{ width:56, display:"flex", justifyContent:"center" }}>
-                                  <div style={{ width:1, height:18, background:T.mobileConnector(T.accent) }} />
-                                </div>
-                              </div>
-                            )}
                           </div>
                         );
                       })}
