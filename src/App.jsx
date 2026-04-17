@@ -1305,17 +1305,24 @@ export default function App() {
                               return (
                                 <div key={`${film.id}-${si}`} style={{ display:"flex", alignItems:"stretch", gap:0, marginBottom: isLastCard ? 0 : 8, opacity: isPast ? 0.35 : 1, transition:"opacity 0.3s" }}>
                                   <div style={{ width:56, flexShrink:0, position:"relative" }}>
-                                    {/* Spine line — extends through margin gap */}
-                                    {!isVeryFirst && (
+                                    {/* Spine segments */}
+                                    {isFirstCard && !isVeryFirst && (
+                                      /* Above time label — dimmed if previous group was past */
                                       <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)", width:1, background:T.mobileConnector(T.accent),
-                                        top:0,
-                                        bottom: isVeryLast ? "50%" : (isLastCard ? 0 : -8),
-                                        opacity: isFirstCard ? (prevPast && !isPast ? 0.35/Math.max(isPast?0.35:1,0.01) : 1) : 1,
+                                        top:0, bottom:"50%",
+                                        opacity: prevPast && !isPast ? 0.35 : 1,
                                       }} />
                                     )}
-                                    {isVeryFirst && !isVeryLast && (
+                                    {isFirstCard && !isVeryLast && (
+                                      /* Below time label — always matches current group */
                                       <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)", width:1, background:T.mobileConnector(T.accent),
                                         top:"50%", bottom: isLastCard ? 0 : -8,
+                                      }} />
+                                    )}
+                                    {!isFirstCard && (
+                                      /* Non-first cards: single continuous line */
+                                      <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)", width:1, background:T.mobileConnector(T.accent),
+                                        top:0, bottom: isVeryLast ? "50%" : (isLastCard ? 0 : -8),
                                       }} />
                                     )}
                                     {/* Time label — centered with this card */}
