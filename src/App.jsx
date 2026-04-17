@@ -342,15 +342,15 @@ export default function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [selCinema, setSelCinema] = useState("all");
-  const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchSelectedFilm, setSearchSelectedFilm] = useState(null);
-  const [searchSortBy, setSearchSortBy] = useState("cinema"); // "cinema" | "time"
+  const [searchSortBy, setSearchSortBy] = useState("cinema");
   const [allFilmsForSearch, setAllFilmsForSearch] = useState([]);
   const searchInputRef = useRef(null);
 
+  const isSearch = selCinema === "search";
   const isAllCinemas = selCinema === "all";
-  const cinema = isAllCinemas ? null : (CINEMAS.find(c => c.id === selCinema) || CINEMAS[0]);
+  const cinema = (isAllCinemas || isSearch) ? null : (CINEMAS.find(c => c.id === selCinema) || CINEMAS[0]);
 
   const [theme, setTheme] = useState(() => {
     if (typeof window !== "undefined" && window.matchMedia?.("(prefers-color-scheme: light)").matches) return "light";
@@ -374,6 +374,7 @@ export default function App() {
   }, [isMobile, sidebarOpen]);
 
   useEffect(() => {
+    if (isSearch) { setLoading(false); return; }
     setLoading(true); setError(null);
     if (isAllCinemas) {
       Promise.all(CINEMAS.map(c =>
@@ -421,28 +422,13 @@ export default function App() {
     });
   }, []);
 
-  /* ─── Focus search input when opening ─── */
+  /* ─── Focus search input when switching to search tab ─── */
   useEffect(() => {
-    if (searchOpen && searchInputRef.current) {
-      setTimeout(() => searchInputRef.current?.focus(), 80);
+    if (isSearch && searchInputRef.current) {
+      setTimeout(() => searchInputRef.current?.focus(), 120);
     }
-    if (!searchOpen) { setSearchQuery(""); setSearchSelectedFilm(null); setSearchSortBy("cinema"); }
-  }, [searchOpen]);
-
-  /* ─── Close search on Escape ─── */
-  useEffect(() => {
-    if (!searchOpen) return;
-    const onKey = (e) => { if (e.key === "Escape") setSearchOpen(false); };
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
-  }, [searchOpen]);
-
-  /* ─── Cmd+K / Ctrl+K to open search ─── */
-  useEffect(() => {
-    const onKey = (e) => { if ((e.metaKey || e.ctrlKey) && e.key === "k") { e.preventDefault(); setSearchOpen(o => !o); } };
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
-  }, []);
+    if (!isSearch) { setSearchQuery(""); setSearchSelectedFilm(null); setSearchSortBy("cinema"); }
+  }, [isSearch]);
 
   const allDates = useMemo(() => getAllDatesWithScreenings(films), [films]);
 
@@ -578,7 +564,7 @@ export default function App() {
     return items.slice(0, 50);
   }, [films, allDates, today, cinema, isAllCinemas]);
 
-  /* ─── Search index: deduplicated film list with all cinema data ─── */
+  /* ─── Search index: deduplicated film list across all cinemas ─── */
   const searchIndex = useMemo(() => {
     if (!allFilmsForSearch.length) return [];
     return allFilmsForSearch.map(f => ({
@@ -595,300 +581,50 @@ export default function App() {
     return searchIndex
       .filter(f => tokens.every(tok => f.searchStr.includes(tok)))
       .sort((a, b) => {
-        // Exact start match first
         const aStarts = a.searchStr.startsWith(q) ? 0 : 1;
         const bStarts = b.searchStr.startsWith(q) ? 0 : 1;
         if (aStarts !== bStarts) return aStarts - bStarts;
         return a.title.localeCompare(b.title);
       })
-      .slice(0, 12);
+      .slice(0, 20);
   }, [searchQuery, searchIndex]);
 
-  /* ─── Search Modal ─── */
-  const SearchModal = () => {
+  /* ─── Showtimes for selected search film ─── */
+  const searchShowtimes = useMemo(() => {
     const film = searchSelectedFilm;
-
-    /* Gather all showtimes across cinemas for the selected film */
-    const allShowtimes = useMemo(() => {
-      if (!film || !film.perCinema) return [];
-      const items = [];
-      for (const [cId, pc] of Object.entries(film.perCinema)) {
-        const cin = CINEMA_MAP[cId];
-        for (const [date, times] of Object.entries(pc.showtimes || {})) {
-          times.forEach(t => {
-            items.push({
-              cinemaId: cId, cinemaName: cin?.name || cId, cinemaShort: cin?.short || cId.slice(0,3).toUpperCase(),
-              cinemaColor: cin?.barColor || "#888", date, time: t, startMin: timeToMin(t),
-              bookingUrl: pc.bookingUrls?.[date]?.[t] || null,
-              screen: pc.screens?.[date]?.[t] || null,
-              filmUrl: pc.film_url || null,
-            });
+    if (!film || !film.perCinema) return [];
+    const items = [];
+    for (const [cId, pc] of Object.entries(film.perCinema)) {
+      const cin = CINEMA_MAP[cId];
+      for (const [date, times] of Object.entries(pc.showtimes || {})) {
+        times.forEach(t => {
+          items.push({
+            cinemaId: cId, cinemaName: cin?.name || cId, cinemaShort: cin?.short || cId.slice(0,3).toUpperCase(),
+            cinemaColor: cin?.barColor || "#888", date, time: t, startMin: timeToMin(t),
+            bookingUrl: pc.bookingUrls?.[date]?.[t] || null,
+            screen: pc.screens?.[date]?.[t] || null,
           });
-        }
+        });
       }
-      return items;
-    }, [film]);
+    }
+    return items;
+  }, [searchSelectedFilm]);
 
-    /* Group by cinema or flatten by time */
-    const groupedByCinema = useMemo(() => {
-      const groups = {};
-      allShowtimes.forEach(s => {
-        if (!groups[s.cinemaId]) groups[s.cinemaId] = { ...CINEMA_MAP[s.cinemaId], cinemaId: s.cinemaId, sessions: [] };
-        groups[s.cinemaId].sessions.push(s);
-      });
-      Object.values(groups).forEach(g => g.sessions.sort((a, b) => a.date === b.date ? a.startMin - b.startMin : a.date.localeCompare(b.date)));
-      return Object.values(groups).sort((a, b) => (a.name || "").localeCompare(b.name || ""));
-    }, [allShowtimes]);
+  const searchGroupedByCinema = useMemo(() => {
+    const groups = {};
+    searchShowtimes.forEach(s => {
+      if (!groups[s.cinemaId]) groups[s.cinemaId] = { ...CINEMA_MAP[s.cinemaId], cinemaId: s.cinemaId, sessions: [] };
+      groups[s.cinemaId].sessions.push(s);
+    });
+    Object.values(groups).forEach(g => g.sessions.sort((a, b) => a.date === b.date ? a.startMin - b.startMin : a.date.localeCompare(b.date)));
+    return Object.values(groups).sort((a, b) => (a.name || "").localeCompare(b.name || ""));
+  }, [searchShowtimes]);
 
-    const flatByTime = useMemo(() => {
-      return [...allShowtimes]
-        .filter(s => s.date >= today)
-        .sort((a, b) => a.date === b.date ? a.startMin - b.startMin : a.date.localeCompare(b.date));
-    }, [allShowtimes, today]);
-
-    if (!searchOpen) return null;
-
-    return (
-      <div style={{ position:"fixed", inset:0, zIndex:200, display:"flex", alignItems:"flex-start", justifyContent:"center" }} onClick={() => setSearchOpen(false)}>
-        {/* Backdrop */}
-        <div style={{ position:"absolute", inset:0, background:"rgba(0,0,0,0.65)", backdropFilter:"blur(8px)", WebkitBackdropFilter:"blur(8px)" }} />
-
-        {/* Modal */}
-        <div onClick={e => e.stopPropagation()} style={{
-          position:"relative", width:"100%", maxWidth:520, marginTop: isMobile ? 0 : 60,
-          background: T.surface, borderRadius: isMobile ? 0 : 16,
-          border: isMobile ? "none" : `1px solid ${T.border}`,
-          boxShadow: `0 24px 80px rgba(0,0,0,0.4)`,
-          maxHeight: isMobile ? "100vh" : "calc(100vh - 120px)",
-          display:"flex", flexDirection:"column", overflow:"hidden",
-          animation: "searchSlideIn 0.25s cubic-bezier(0.4,0,0.2,1)",
-        }}>
-          {/* Search input area */}
-          <div style={{ padding:"16px 20px", borderBottom:`1px solid ${T.border}`, display:"flex", alignItems:"center", gap:12, flexShrink:0 }}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={T.textMuted} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink:0 }}><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            <input
-              ref={searchInputRef}
-              type="text"
-              value={searchQuery}
-              onChange={e => { setSearchQuery(e.target.value); setSearchSelectedFilm(null); }}
-              placeholder="Search films across all cinemas…"
-              style={{
-                flex:1, border:"none", outline:"none", background:"transparent",
-                fontSize:16, color:T.text, fontFamily:T.sans, fontWeight:500,
-                letterSpacing:"-0.2px",
-              }}
-            />
-            {searchQuery && (
-              <button onClick={() => { setSearchQuery(""); setSearchSelectedFilm(null); }} style={{
-                background:"none", border:"none", cursor:"pointer", padding:4, display:"flex", alignItems:"center", justifyContent:"center",
-                color:T.textDim, borderRadius:6, flexShrink:0,
-              }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-              </button>
-            )}
-            <button onClick={() => setSearchOpen(false)} style={{
-              background: isDark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.05)",
-              border:`1px solid ${T.border}`, borderRadius:6, padding:"4px 10px",
-              fontSize:10, fontFamily:T.mono, color:T.textDim, cursor:"pointer", flexShrink:0, fontWeight:600, letterSpacing:0.5,
-            }}>ESC</button>
-          </div>
-
-          {/* Results / Detail area */}
-          <div style={{ flex:1, overflowY:"auto", minHeight:0 }}>
-            {!searchSelectedFilm ? (
-              /* ─── Dropdown results ─── */
-              searchQuery.trim() ? (
-                searchResults.length > 0 ? (
-                  <div style={{ padding:"4px 0" }}>
-                    {searchResults.map((f, i) => {
-                      const cinemaCount = Object.keys(f.perCinema || {}).length;
-                      return (
-                        <button key={f.normalizedTitle + i} onClick={() => setSearchSelectedFilm(f)} style={{
-                          display:"flex", alignItems:"center", gap:12, width:"100%",
-                          padding:"12px 20px", border:"none", cursor:"pointer", textAlign:"left",
-                          background:"transparent", transition:"background 0.15s",
-                          borderBottom:`1px solid ${T.border}44`,
-                        }}
-                        onMouseEnter={e => e.currentTarget.style.background = T.accentSoft}
-                        onMouseLeave={e => e.currentTarget.style.background = "transparent"}
-                        >
-                          <div style={{ width:4, height:32, borderRadius:2, background:`linear-gradient(180deg,${f.color},${f.color}44)`, flexShrink:0 }} />
-                          <div style={{ flex:1, minWidth:0 }}>
-                            <div style={{ display:"flex", alignItems:"baseline", gap:6 }}>
-                              <span style={{ fontSize:14, fontWeight:700, color:T.text, fontFamily:T.serif, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", minWidth:0 }}>{f.title}</span>
-                              <LbRating rating={f.letterboxd_rating} url={null} size={11} />
-                            </div>
-                            <div style={{ display:"flex", gap:6, marginTop:4, alignItems:"center", flexWrap:"wrap" }}>
-                              <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:rBg[f.rating]||"#444", color:"#fff", fontFamily:T.mono }}>{f.rating}</span>
-                              <span style={{ fontSize:10, color:T.textMuted, fontFamily:T.mono }}>{f.runtime}min</span>
-                              {cinemaCount > 0 && (
-                                <span style={{ fontSize:9, color:T.accent, fontFamily:T.mono, fontWeight:600 }}>{cinemaCount} venue{cinemaCount !== 1 ? "s" : ""}</span>
-                              )}
-                            </div>
-                          </div>
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={T.textFaint} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink:0 }}><path d="m9 18 6-6-6-6"/></svg>
-                        </button>
-                      );
-                    })}
-                  </div>
-                ) : (
-                  <div style={{ padding:"40px 20px", textAlign:"center" }}>
-                    <div style={{ fontSize:32, opacity:0.15, marginBottom:10 }}>◇</div>
-                    <div style={{ fontSize:13, color:T.textDim, fontFamily:T.serif, fontStyle:"italic" }}>No films found for "{searchQuery}"</div>
-                  </div>
-                )
-              ) : (
-                /* Empty state */
-                <div style={{ padding:"40px 20px", textAlign:"center" }}>
-                  <div style={{ fontSize:36, opacity:0.1, marginBottom:10 }}>🎬</div>
-                  <div style={{ fontSize:12, color:T.textDim, fontFamily:T.mono, letterSpacing:0.5 }}>Search {allFilmsForSearch.length} films across {CINEMAS.length} cinemas</div>
-                </div>
-              )
-            ) : (
-              /* ─── Film detail view ─── */
-              <div style={{ padding:0 }}>
-                {/* Film header */}
-                <div style={{ padding:"20px 20px 16px", borderBottom:`1px solid ${T.border}`, background: isDark ? `linear-gradient(135deg,${film.color}08 0%,transparent 100%)` : `linear-gradient(135deg,${film.color}0c 0%,transparent 100%)` }}>
-                  <button onClick={() => setSearchSelectedFilm(null)} style={{
-                    display:"inline-flex", alignItems:"center", gap:5, background:"none", border:"none", cursor:"pointer",
-                    color:T.textMuted, fontSize:11, fontFamily:T.mono, padding:0, marginBottom:12, fontWeight:500,
-                  }}>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="m15 18-6-6 6-6"/></svg>
-                    Back to results
-                  </button>
-
-                  <div style={{ display:"flex", alignItems:"flex-start", gap:14 }}>
-                    <div style={{ width:5, height:48, borderRadius:2.5, background:`linear-gradient(180deg,${film.color},${film.color}44)`, flexShrink:0, marginTop:2 }} />
-                    <div style={{ flex:1, minWidth:0 }}>
-                      <div style={{ display:"flex", alignItems:"baseline", gap:8, flexWrap:"wrap" }}>
-                        <h2 style={{ fontSize:22, fontWeight:800, color:T.text, fontFamily:T.serif, margin:0, letterSpacing:"-0.3px", lineHeight:1.2 }}>{film.title}</h2>
-                        <LbRating rating={film.letterboxd_rating} url={film.letterboxd_url} size={14} />
-                      </div>
-                      <div style={{ display:"flex", gap:8, marginTop:8, alignItems:"center", flexWrap:"wrap" }}>
-                        <span style={{ fontSize:10, padding:"3px 8px", borderRadius:4, fontWeight:700, background:rBg[film.rating]||"#444", color:"#fff", fontFamily:T.mono, letterSpacing:0.5 }}>{film.rating}</span>
-                        <span style={{ fontSize:12, color:T.textMuted, fontFamily:T.mono, fontWeight:600 }}>{film.runtime} min</span>
-                        {film.genre && film.genre !== "Other" && <span style={{ fontSize:11, color:T.textDim, fontFamily:T.sans }}>{film.genre}</span>}
-                        {film.letterboxd_url && <a href={film.letterboxd_url} target="_blank" rel="noopener" style={{ fontSize:10, color:"#639922", fontFamily:T.mono, textDecoration:"none", fontWeight:600 }}>Letterboxd ↗</a>}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Sort toggle */}
-                <div style={{ padding:"12px 20px", borderBottom:`1px solid ${T.border}`, display:"flex", alignItems:"center", justifyContent:"space-between" }}>
-                  <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono, letterSpacing:1, textTransform:"uppercase", fontWeight:600 }}>Showtimes</span>
-                  <div style={{ display:"flex", gap:4 }}>
-                    {[["cinema","By Cinema"],["time","By Time"]].map(([key,label]) => (
-                      <button key={key} onClick={() => setSearchSortBy(key)} style={{
-                        padding:"5px 12px", borderRadius:5, fontSize:10, fontWeight:600, cursor:"pointer",
-                        fontFamily:T.mono, letterSpacing:0.3,
-                        border: searchSortBy===key ? `1.5px solid ${T.accent}` : `1.5px solid ${T.border}`,
-                        background: searchSortBy===key ? T.accentSoft : "transparent",
-                        color: searchSortBy===key ? T.accent : T.textDim, transition:"all 0.2s",
-                      }}>{label}</button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Showtimes content */}
-                <div style={{ padding:"8px 0 20px" }}>
-                  {allShowtimes.length === 0 ? (
-                    <div style={{ padding:"30px 20px", textAlign:"center", color:T.textDim, fontSize:12, fontFamily:T.mono }}>No upcoming showtimes found</div>
-                  ) : searchSortBy === "cinema" ? (
-                    /* ── By Cinema ── */
-                    groupedByCinema.map(group => (
-                      <div key={group.cinemaId} style={{ padding:"0 20px", marginBottom:4 }}>
-                        <div style={{ display:"flex", alignItems:"center", gap:8, padding:"10px 0 6px" }}>
-                          <div style={{ width:8, height:8, borderRadius:3, background:group.barColor || "#888", flexShrink:0 }} />
-                          <span style={{ fontSize:12, fontWeight:700, color:T.text, fontFamily:T.sans }}>{group.name || group.cinemaId}</span>
-                          <span style={{ fontSize:9, color:T.textDim, fontFamily:T.mono }}>{group.address || ""}</span>
-                        </div>
-                        <div style={{ display:"flex", flexDirection:"column", gap:0 }}>
-                          {(() => {
-                            // Group sessions by date
-                            const byDate = {};
-                            group.sessions.forEach(s => { if (!byDate[s.date]) byDate[s.date] = []; byDate[s.date].push(s); });
-                            return Object.entries(byDate).map(([date, sessions]) => {
-                              const info = formatDayTab(date);
-                              const isToday = date === today;
-                              return (
-                                <div key={date} style={{ display:"flex", alignItems:"flex-start", gap:0, padding:"6px 0", borderBottom:`1px solid ${T.border}33` }}>
-                                  <div style={{ width:72, flexShrink:0, paddingTop:2 }}>
-                                    <div style={{ fontSize:11, fontWeight:isToday ? 700 : 500, color:isToday ? T.accent : T.textMuted, fontFamily:T.mono }}>{info.day} {info.num}</div>
-                                    <div style={{ fontSize:9, color:T.textFaint, fontFamily:T.mono }}>{info.mon}</div>
-                                  </div>
-                                  <div style={{ flex:1, display:"flex", gap:6, flexWrap:"wrap" }}>
-                                    {sessions.map((s, si) => {
-                                      const pill = (
-                                        <span key={si} className="tkt-pill" style={{
-                                          fontSize:11, fontWeight:600, padding:"5px 14px", borderRadius:4,
-                                          background:`${group.barColor || "#888"}${T.pillBgAlpha}`,
-                                          border:`1.5px solid ${group.barColor || "#888"}${T.pillBorderAlpha}`,
-                                          color: isDark ? (group.barColor || "#888") : (group.barColor || "#888"),
-                                          fontFamily:T.mono, whiteSpace:"nowrap", display:"inline-flex", alignItems:"center", gap:4,
-                                          cursor: s.bookingUrl ? "pointer" : "default", transition:"all 0.2s",
-                                        }}>
-                                          {s.time}
-                                          {s.screen && <span style={{ fontSize:8, opacity:0.7 }}>{s.screen}</span>}
-                                        </span>
-                                      );
-                                      return s.bookingUrl ? <a key={si} href={s.bookingUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}>{pill}</a> : pill;
-                                    })}
-                                  </div>
-                                </div>
-                              );
-                            });
-                          })()}
-                        </div>
-                      </div>
-                    ))
-                  ) : (
-                    /* ── By Time ── */
-                    (() => {
-                      // Group flat list by date
-                      const byDate = {};
-                      flatByTime.forEach(s => { if (!byDate[s.date]) byDate[s.date] = []; byDate[s.date].push(s); });
-                      return Object.entries(byDate).map(([date, sessions]) => {
-                        const info = formatDayTab(date);
-                        const isToday = date === today;
-                        return (
-                          <div key={date} style={{ padding:"0 20px", marginBottom:4 }}>
-                            <div style={{ display:"flex", alignItems:"center", gap:8, padding:"10px 0 6px", borderBottom:`1px solid ${T.border}44` }}>
-                              <span style={{ fontSize:13, fontWeight:700, color: isToday ? T.accent : T.text, fontFamily:T.serif }}>{info.day} {info.num} {info.mon}</span>
-                              {isToday && <span style={{ fontSize:9, color:T.accent, fontFamily:T.mono, fontWeight:600, padding:"2px 6px", borderRadius:3, background:T.accentSoft }}>Today</span>}
-                            </div>
-                            {sessions.map((s, si) => (
-                              <div key={si} style={{ display:"flex", alignItems:"center", gap:10, padding:"8px 0", borderBottom:`1px solid ${T.border}22` }}>
-                                <span style={{ fontSize:14, fontWeight:700, color:T.text, fontFamily:T.mono, width:50, flexShrink:0 }}>{s.time}</span>
-                                <div style={{ display:"flex", alignItems:"center", gap:6, flex:1, minWidth:0 }}>
-                                  <span style={{ width:6, height:6, borderRadius:2, background:s.cinemaColor, flexShrink:0 }} />
-                                  <span style={{ fontSize:11, color:T.textMuted, fontFamily:T.sans, fontWeight:500 }}>{s.cinemaName}</span>
-                                  {s.screen && <span style={{ fontSize:9, color:T.textFaint, fontFamily:T.mono }}>({s.screen})</span>}
-                                </div>
-                                {s.bookingUrl && (
-                                  <a href={s.bookingUrl} target="_blank" rel="noopener" style={{
-                                    display:"flex", alignItems:"center", justifyContent:"center",
-                                    padding:"5px 10px", borderRadius:5, textDecoration:"none", flexShrink:0,
-                                    background:T.accentSoft, border:`1px solid ${T.accent}22`, cursor:"pointer", transition:"background 0.2s",
-                                  }}>
-                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={T.accent} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>
-                                  </a>
-                                )}
-                              </div>
-                            ))}
-                          </div>
-                        );
-                      });
-                    })()
-                  )}
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
-    );
-  };
+  const searchFlatByTime = useMemo(() => {
+    return [...searchShowtimes]
+      .filter(s => s.date >= today)
+      .sort((a, b) => a.date === b.date ? a.startMin - b.startMin : a.date.localeCompare(b.date));
+  }, [searchShowtimes, today]);
 
   const fontLink = <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />;
 
@@ -943,6 +679,33 @@ export default function App() {
           <div>
             <div>All Cinemas</div>
             <div style={{ fontSize:10, color:T.textDim, fontWeight:400, marginTop:1 }}>{CINEMAS.length} venues</div>
+          </div>
+        </button>
+
+        {/* Search button */}
+        <button onClick={() => { setSelCinema("search"); if(isMobile) setSidebarOpen(false); }}
+          style={{
+            display:"flex", alignItems:"center", gap:10, width:"100%",
+            padding:"10px 12px", borderRadius:8, border:"none", cursor:"pointer",
+            fontFamily:T.sans, fontSize:13, fontWeight:isSearch?700:500, textAlign:"left",
+            background: isSearch ? T.accentSoft : "transparent",
+            color: isSearch ? T.accent : T.textMuted,
+            transition:"all 0.2s",
+            outline: isSearch ? `1px solid ${T.accent}33` : "1px solid transparent",
+            marginBottom:4,
+          }}
+        >
+          <div style={{
+            width:32, height:32, borderRadius:8, flexShrink:0,
+            background: isSearch ? T.accentMed : (isDark ? "rgba(255,255,255,0.03)" : "rgba(0,0,0,0.03)"),
+            border:`1px solid ${isSearch ? T.accent+"44" : T.border}`,
+            display:"flex", alignItems:"center", justifyContent:"center",
+          }}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={isSearch ? T.accent : T.textDim} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+          <div>
+            <div>Search</div>
+            <div style={{ fontSize:10, color:T.textDim, fontWeight:400, marginTop:1 }}>Find a film</div>
           </div>
         </button>
 
@@ -1066,7 +829,6 @@ export default function App() {
       <style>{`
         @keyframes goldPulse { 0%,100%{opacity:0.5} 50%{opacity:1} }
         @keyframes tickerScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-        @keyframes searchSlideIn { 0% { opacity:0; transform:translateY(-12px); } 100% { opacity:1; transform:translateY(0); } }
         *::-webkit-scrollbar { height:4px; width:4px; }
         *::-webkit-scrollbar-track { background:${T.bg}; }
         *::-webkit-scrollbar-thumb { background:${T.border}; border-radius:2px; }
@@ -1074,7 +836,6 @@ export default function App() {
         .book-btn:hover { background:${T.barBookHover} !important; }
         .book-btn:active { opacity:0.7; transform:scale(0.95); }
         .ticker-link:hover { color:${T.accent} !important; border-bottom-color:${T.accent} !important; }
-        .search-btn:hover { border-color:${T.accent} !important; color:${T.accent} !important; }
 
         /* ── Ticket shape: mask-based concave notches ── */
         .tkt-bar {
@@ -1115,13 +876,257 @@ export default function App() {
 
       <Overlay />
       <Sidebar />
-      <SearchModal />
 
       {/* ═══════ MAIN CONTENT ═══════ */}
       <div style={{
         flex:1, position:"relative", zIndex:1, minWidth:0,
         marginLeft: isMobile ? 0 : 0, /* sidebar is sticky, content flows naturally */
       }}>
+
+        {isSearch ? (
+          /* ═══════ SEARCH VIEW ═══════ */
+          <>
+            {/* Search header */}
+            <div style={{ background:T.headerBg, padding:"20px 24px 18px", borderBottom:`1px solid ${T.accent}33` }}>
+              <div style={{ maxWidth:1000, margin:"0 auto" }}>
+                <div style={{ display:"flex", alignItems:"center", gap:12 }}>
+                  <HamburgerBtn />
+                  <div>
+                    <div style={{ fontSize:9, letterSpacing:3, textTransform:"uppercase", color:T.accent, fontFamily:T.mono, fontWeight:700, opacity:0.6, marginBottom:2 }}>Find a Film</div>
+                    <h1 style={{ fontFamily:T.serif, fontSize:26, fontWeight:900, margin:0, letterSpacing:"-0.3px", lineHeight:1, color:T.text }}>Search</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ maxWidth:1000, margin:"0 auto", padding:"20px 20px 40px" }}>
+              {/* Search input */}
+              <div style={{
+                display:"flex", alignItems:"center", gap:12, padding:"14px 18px",
+                borderRadius:12, border:`1.5px solid ${T.border}`,
+                background: isDark ? "rgba(255,255,255,0.02)" : "rgba(0,0,0,0.02)",
+                transition:"border-color 0.2s", marginBottom:20,
+              }}
+              onFocus={e => e.currentTarget.style.borderColor = T.accent}
+              onBlur={e => e.currentTarget.style.borderColor = T.border}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={T.textMuted} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink:0 }}><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input
+                  ref={searchInputRef}
+                  type="text"
+                  value={searchQuery}
+                  onChange={e => { setSearchQuery(e.target.value); setSearchSelectedFilm(null); }}
+                  placeholder={`Search ${allFilmsForSearch.length} films across ${CINEMAS.length} cinemas…`}
+                  style={{
+                    flex:1, border:"none", outline:"none", background:"transparent",
+                    fontSize:16, color:T.text, fontFamily:T.sans, fontWeight:500, letterSpacing:"-0.2px",
+                  }}
+                />
+                {searchQuery && (
+                  <button onClick={() => { setSearchQuery(""); setSearchSelectedFilm(null); searchInputRef.current?.focus(); }} style={{
+                    background:"none", border:"none", cursor:"pointer", padding:4, display:"flex",
+                    color:T.textDim, borderRadius:6, flexShrink:0,
+                  }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                  </button>
+                )}
+              </div>
+
+              {!searchSelectedFilm ? (
+                /* ─── Results list ─── */
+                searchQuery.trim() ? (
+                  searchResults.length > 0 ? (
+                    <div style={{ borderRadius:12, border:`1px solid ${T.border}`, overflow:"hidden" }}>
+                      {searchResults.map((f, i) => {
+                        const cinemaCount = Object.keys(f.perCinema || {}).length;
+                        return (
+                          <button key={f.normalizedTitle + i} onClick={() => setSearchSelectedFilm(f)} style={{
+                            display:"flex", alignItems:"center", gap:12, width:"100%",
+                            padding:"14px 18px", border:"none", cursor:"pointer", textAlign:"left",
+                            background:"transparent", transition:"background 0.15s",
+                            borderBottom: i < searchResults.length - 1 ? `1px solid ${T.border}44` : "none",
+                          }}
+                          onMouseEnter={e => e.currentTarget.style.background = T.accentSoft}
+                          onMouseLeave={e => e.currentTarget.style.background = "transparent"}
+                          >
+                            <div style={{ width:4, height:36, borderRadius:2, background:`linear-gradient(180deg,${f.color},${f.color}44)`, flexShrink:0 }} />
+                            <div style={{ flex:1, minWidth:0 }}>
+                              <div style={{ display:"flex", alignItems:"baseline", gap:6 }}>
+                                <span style={{ fontSize:14, fontWeight:700, color:T.text, fontFamily:T.serif, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis", minWidth:0 }}>{f.title}</span>
+                                <LbRating rating={f.letterboxd_rating} url={null} size={11} />
+                              </div>
+                              <div style={{ display:"flex", gap:6, marginTop:4, alignItems:"center", flexWrap:"wrap" }}>
+                                <span style={{ fontSize:9, padding:"2px 6px", borderRadius:3, fontWeight:700, background:rBg[f.rating]||"#444", color:"#fff", fontFamily:T.mono }}>{f.rating}</span>
+                                <span style={{ fontSize:10, color:T.textMuted, fontFamily:T.mono }}>{f.runtime}min</span>
+                                {cinemaCount > 0 && <span style={{ fontSize:9, color:T.accent, fontFamily:T.mono, fontWeight:600 }}>{cinemaCount} venue{cinemaCount !== 1 ? "s" : ""}</span>}
+                              </div>
+                            </div>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={T.textFaint} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink:0 }}><path d="m9 18 6-6-6-6"/></svg>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    <div style={{ textAlign:"center", padding:"60px 20px" }}>
+                      <div style={{ fontSize:40, opacity:0.15, marginBottom:12 }}>◇</div>
+                      <p style={{ fontSize:14, color:T.textDim, fontFamily:T.serif, fontStyle:"italic" }}>No films found for "{searchQuery}"</p>
+                    </div>
+                  )
+                ) : (
+                  /* Empty state */
+                  <div style={{ textAlign:"center", padding:"60px 20px" }}>
+                    <div style={{ fontSize:48, opacity:0.08, marginBottom:16 }}>🎬</div>
+                    <p style={{ fontSize:13, color:T.textDim, fontFamily:T.mono, letterSpacing:0.5 }}>Start typing to find a film</p>
+                  </div>
+                )
+              ) : (
+                /* ─── Film detail view ─── */
+                (() => {
+                  const film = searchSelectedFilm;
+                  return (
+                    <div style={{ borderRadius:12, border:`1px solid ${T.border}`, overflow:"hidden" }}>
+                      {/* Film header */}
+                      <div style={{ padding:"20px 20px 16px", background: isDark ? `linear-gradient(135deg,${film.color}08 0%,transparent 100%)` : `linear-gradient(135deg,${film.color}0c 0%,transparent 100%)`, borderBottom:`1px solid ${T.border}` }}>
+                        <button onClick={() => setSearchSelectedFilm(null)} style={{
+                          display:"inline-flex", alignItems:"center", gap:5, background:"none", border:"none", cursor:"pointer",
+                          color:T.textMuted, fontSize:11, fontFamily:T.mono, padding:0, marginBottom:14, fontWeight:500,
+                        }}
+                        onMouseEnter={e => e.currentTarget.style.color = T.accent}
+                        onMouseLeave={e => e.currentTarget.style.color = T.textMuted}
+                        >
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="m15 18-6-6 6-6"/></svg>
+                          Back to results
+                        </button>
+
+                        <div style={{ display:"flex", alignItems:"flex-start", gap:14 }}>
+                          <div style={{ width:5, height:48, borderRadius:2.5, background:`linear-gradient(180deg,${film.color},${film.color}44)`, flexShrink:0, marginTop:2 }} />
+                          <div style={{ flex:1, minWidth:0 }}>
+                            <div style={{ display:"flex", alignItems:"baseline", gap:8, flexWrap:"wrap" }}>
+                              <h2 style={{ fontSize:22, fontWeight:800, color:T.text, fontFamily:T.serif, margin:0, letterSpacing:"-0.3px", lineHeight:1.2 }}>{film.title}</h2>
+                              <LbRating rating={film.letterboxd_rating} url={film.letterboxd_url} size={14} />
+                            </div>
+                            <div style={{ display:"flex", gap:8, marginTop:8, alignItems:"center", flexWrap:"wrap" }}>
+                              <span style={{ fontSize:10, padding:"3px 8px", borderRadius:4, fontWeight:700, background:rBg[film.rating]||"#444", color:"#fff", fontFamily:T.mono, letterSpacing:0.5 }}>{film.rating}</span>
+                              <span style={{ fontSize:12, color:T.textMuted, fontFamily:T.mono, fontWeight:600 }}>{film.runtime} min</span>
+                              {film.genre && film.genre !== "Other" && <span style={{ fontSize:11, color:T.textDim, fontFamily:T.sans }}>{film.genre}</span>}
+                              {film.letterboxd_url && <a href={film.letterboxd_url} target="_blank" rel="noopener" style={{ fontSize:10, color:"#639922", fontFamily:T.mono, textDecoration:"none", fontWeight:600 }}>Letterboxd ↗</a>}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Sort toggle */}
+                      <div style={{ padding:"12px 20px", borderBottom:`1px solid ${T.border}`, display:"flex", alignItems:"center", justifyContent:"space-between" }}>
+                        <span style={{ fontSize:10, color:T.textDim, fontFamily:T.mono, letterSpacing:1, textTransform:"uppercase", fontWeight:600 }}>Showtimes</span>
+                        <div style={{ display:"flex", gap:4 }}>
+                          {[["cinema","By Cinema"],["time","By Time"]].map(([key,label]) => (
+                            <button key={key} onClick={() => setSearchSortBy(key)} className="view-btn" style={{
+                              padding:"5px 12px", borderRadius:5, fontSize:10, fontWeight:600, cursor:"pointer",
+                              fontFamily:T.mono, letterSpacing:0.3,
+                              border: searchSortBy===key ? `1.5px solid ${T.accent}` : `1.5px solid ${T.border}`,
+                              background: searchSortBy===key ? T.accentSoft : "transparent",
+                              color: searchSortBy===key ? T.accent : T.textDim, transition:"all 0.2s",
+                            }}>{label}</button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Showtimes content */}
+                      <div style={{ padding:"4px 0 16px" }}>
+                        {searchShowtimes.length === 0 ? (
+                          <div style={{ padding:"30px 20px", textAlign:"center", color:T.textDim, fontSize:12, fontFamily:T.mono }}>No upcoming showtimes found</div>
+                        ) : searchSortBy === "cinema" ? (
+                          /* ── By Cinema ── */
+                          searchGroupedByCinema.map(group => (
+                            <div key={group.cinemaId} style={{ padding:"0 20px", marginBottom:4 }}>
+                              <div style={{ display:"flex", alignItems:"center", gap:8, padding:"12px 0 6px" }}>
+                                <div style={{ width:8, height:8, borderRadius:3, background:group.barColor || "#888", flexShrink:0 }} />
+                                <span style={{ fontSize:13, fontWeight:700, color:T.text, fontFamily:T.sans }}>{group.name || group.cinemaId}</span>
+                                <span style={{ fontSize:9, color:T.textDim, fontFamily:T.mono }}>{group.address || ""}</span>
+                              </div>
+                              {(() => {
+                                const byDate = {};
+                                group.sessions.forEach(s => { if (!byDate[s.date]) byDate[s.date] = []; byDate[s.date].push(s); });
+                                return Object.entries(byDate).map(([date, sessions]) => {
+                                  const info = formatDayTab(date);
+                                  const isToday = date === today;
+                                  return (
+                                    <div key={date} style={{ display:"flex", alignItems:"flex-start", gap:0, padding:"8px 0", borderBottom:`1px solid ${T.border}33` }}>
+                                      <div style={{ width:80, flexShrink:0, paddingTop:3 }}>
+                                        <div style={{ fontSize:11, fontWeight:isToday ? 700 : 500, color:isToday ? T.accent : T.textMuted, fontFamily:T.mono }}>{info.day} {info.num}</div>
+                                        <div style={{ fontSize:9, color:T.textFaint, fontFamily:T.mono }}>{info.mon}</div>
+                                      </div>
+                                      <div style={{ flex:1, display:"flex", gap:6, flexWrap:"wrap" }}>
+                                        {sessions.map((s, si) => {
+                                          const pill = (
+                                            <span key={si} className="tkt-pill" style={{
+                                              fontSize:11, fontWeight:600, padding:"5px 14px", borderRadius:4,
+                                              background:`${group.barColor || "#888"}${T.pillBgAlpha}`,
+                                              border:`1.5px solid ${group.barColor || "#888"}${T.pillBorderAlpha}`,
+                                              color: group.barColor || "#888",
+                                              fontFamily:T.mono, whiteSpace:"nowrap", display:"inline-flex", alignItems:"center", gap:4,
+                                              cursor: s.bookingUrl ? "pointer" : "default", transition:"all 0.2s",
+                                            }}>
+                                              {s.time}
+                                              {s.screen && <span style={{ fontSize:8, opacity:0.7 }}>{s.screen}</span>}
+                                            </span>
+                                          );
+                                          return s.bookingUrl ? <a key={si} href={s.bookingUrl} target="_blank" rel="noopener" style={{ textDecoration:"none" }}>{pill}</a> : pill;
+                                        })}
+                                      </div>
+                                    </div>
+                                  );
+                                });
+                              })()}
+                            </div>
+                          ))
+                        ) : (
+                          /* ── By Time ── */
+                          (() => {
+                            const byDate = {};
+                            searchFlatByTime.forEach(s => { if (!byDate[s.date]) byDate[s.date] = []; byDate[s.date].push(s); });
+                            return Object.entries(byDate).map(([date, sessions]) => {
+                              const info = formatDayTab(date);
+                              const isToday = date === today;
+                              return (
+                                <div key={date} style={{ padding:"0 20px", marginBottom:4 }}>
+                                  <div style={{ display:"flex", alignItems:"center", gap:8, padding:"12px 0 6px", borderBottom:`1px solid ${T.border}44` }}>
+                                    <span style={{ fontSize:14, fontWeight:700, color:isToday ? T.accent : T.text, fontFamily:T.serif }}>{info.day} {info.num} {info.mon}</span>
+                                    {isToday && <span style={{ fontSize:9, color:T.accent, fontFamily:T.mono, fontWeight:600, padding:"2px 6px", borderRadius:3, background:T.accentSoft }}>Today</span>}
+                                  </div>
+                                  {sessions.map((s, si) => (
+                                    <div key={si} style={{ display:"flex", alignItems:"center", gap:10, padding:"9px 0", borderBottom:`1px solid ${T.border}22` }}>
+                                      <span style={{ fontSize:14, fontWeight:700, color:T.text, fontFamily:T.mono, width:50, flexShrink:0 }}>{s.time}</span>
+                                      <div style={{ display:"flex", alignItems:"center", gap:6, flex:1, minWidth:0 }}>
+                                        <span style={{ width:6, height:6, borderRadius:2, background:s.cinemaColor, flexShrink:0 }} />
+                                        <span style={{ fontSize:11, color:T.textMuted, fontFamily:T.sans, fontWeight:500 }}>{s.cinemaName}</span>
+                                        {s.screen && <span style={{ fontSize:9, color:T.textFaint, fontFamily:T.mono }}>({s.screen})</span>}
+                                      </div>
+                                      {s.bookingUrl && (
+                                        <a href={s.bookingUrl} target="_blank" rel="noopener" style={{
+                                          display:"flex", alignItems:"center", justifyContent:"center",
+                                          padding:"5px 10px", borderRadius:5, textDecoration:"none", flexShrink:0,
+                                          background:T.accentSoft, border:`1px solid ${T.accent}22`, cursor:"pointer", transition:"background 0.2s",
+                                        }}>
+                                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={T.accent} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>
+                                        </a>
+                                      )}
+                                    </div>
+                                  ))}
+                                </div>
+                              );
+                            });
+                          })()
+                        )}
+                      </div>
+                    </div>
+                  );
+                })()
+              )}
+            </div>
+          </>
+        ) : (
+        <>
 
         {/* ═══════ TICKER BANNER ═══════ */}
         {tickerItems.length > 0 && (
@@ -1195,20 +1200,6 @@ export default function App() {
                 </div>
               </div>
               <div style={{ display:"flex", alignItems:"center", gap:10, flexWrap:"wrap" }}>
-                {/* Search button */}
-                <button onClick={() => setSearchOpen(true)} style={{
-                  display:"inline-flex", alignItems:"center", gap:7,
-                  padding:"7px 14px", borderRadius:8,
-                  background: isDark ? "rgba(255,255,255,0.04)" : "rgba(0,0,0,0.04)",
-                  border:`1px solid ${T.border}`, cursor:"pointer", transition:"all 0.25s",
-                  color:T.textMuted, fontFamily:T.mono, fontSize:11, fontWeight:500,
-                }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = T.accent; e.currentTarget.style.color = T.accent; }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = T.border; e.currentTarget.style.color = T.textMuted; }}
-                >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                  {!isMobile && <span>Search</span>}
-                </button>
                 {!isAllCinemas && cinema.price && (
                 <div style={{
                   display:"inline-flex", alignItems:"center", gap:6,
@@ -1664,6 +1655,9 @@ export default function App() {
             )}
           </div>
         </div>
+
+        </>
+        )}
 
       </div>
     </div>
