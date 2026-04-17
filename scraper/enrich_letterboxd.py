@@ -108,6 +108,8 @@ _RAW_SLUG_OVERRIDES = {
     # ── Rio Cinema alternate titles / spelling ──
     "murs murs": "mur-murs",                    # Varda film: Letterboxd uses "Mur Murs"
     "appropriate behaviour": "appropriate-behavior", # UK spelling → US slug on Letterboxd
+    # ── Genesis Cinema fraction-title fix ──
+    "super 8½": "super-8-1994",                    # ½ expands to "1-2" in slug but LB uses "super-8"
 }
 
 # (title, source_year) → forced slug — for cases where the default
