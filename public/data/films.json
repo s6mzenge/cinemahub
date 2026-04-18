@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-18T06:02:12.334929+00:00",
+  "scraped_at": "2026-04-18T06:32:07.458595+00:00",
   "source": "peckhamplex.london",
   "films": [
     {
@@ -103,36 +103,68 @@
       "letterboxd_rating": 3.46
     },
     {
-      "id": "goat",
-      "title": "GOAT",
-      "rating": "PG",
-      "runtime": 100,
+      "id": "hoppers",
+      "title": "Hoppers",
+      "rating": "U",
+      "runtime": 104,
       "genre": "Adventure",
-      "film_url": "https://www.peckhamplex.london/film/goat",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/goat.jpg",
+      "film_url": "https://www.peckhamplex.london/film/hoppers",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/hoppers.jpg",
       "showtimes": {
         "2026-04-18": [
           {
-            "time": "12:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79479?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "time": "13:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79481?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
             "hoh": false
           }
         ],
         "2026-04-19": [
           {
-            "time": "12:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79528?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "time": "13:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79530?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
             "hoh": false
           }
         ]
       },
-      "director": "Tyree Dillihay",
+      "director": "Daniel Chong",
       "color": "#7c4dff",
       "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/goat-2026/",
-      "letterboxd_rating": 3.39
+      "letterboxd_url": "https://letterboxd.com/film/hoppers/",
+      "letterboxd_rating": 3.79
+    },
+    {
+      "id": "my-fathers-shadow",
+      "title": "My Father’s Shadow",
+      "rating": "12A",
+      "runtime": 93,
+      "genre": "Drama",
+      "film_url": "https://www.peckhamplex.london/film/my-fathers-shadow",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/my-fathers-shadow.jpg",
+      "showtimes": {
+        "2026-04-18": [
+          {
+            "time": "13:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79484?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-04-19": [
+          {
+            "time": "13:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79532?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Akinola Davies",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/my-fathers-shadow-2025/",
+      "letterboxd_rating": 4.12
     },
     {
       "id": "loner-independent-filmmakers-showcase",
@@ -147,7 +179,7 @@
           {
             "time": "20:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/78777?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 6",
             "hoh": false
           }
         ]
@@ -182,7 +214,7 @@
           {
             "time": "21:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79502?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -190,19 +222,19 @@
           {
             "time": "16:10",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79533?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 2",
             "hoh": false
           },
           {
             "time": "18:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79541?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": false
           },
           {
             "time": "21:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79550?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -224,7 +256,7 @@
           {
             "time": "18:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79572?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 2",
             "hoh": false
           },
           {
@@ -264,42 +296,10 @@
         ]
       },
       "director": "Brian Cox",
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/glenrothan/",
-      "letterboxd_rating": 2.96
-    },
-    {
-      "id": "my-fathers-shadow",
-      "title": "My Father’s Shadow",
-      "rating": "12A",
-      "runtime": 93,
-      "genre": "Drama",
-      "film_url": "https://www.peckhamplex.london/film/my-fathers-shadow",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/my-fathers-shadow.jpg",
-      "showtimes": {
-        "2026-04-18": [
-          {
-            "time": "13:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79484?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-04-19": [
-          {
-            "time": "13:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79532?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Akinola Davies",
       "color": "#e53935",
       "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/my-fathers-shadow-2025/",
-      "letterboxd_rating": 4.12
+      "letterboxd_url": "https://letterboxd.com/film/glenrothan/",
+      "letterboxd_rating": 2.96
     },
     {
       "id": "michael",
@@ -332,6 +332,38 @@
       "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "goat",
+      "title": "GOAT",
+      "rating": "PG",
+      "runtime": 100,
+      "genre": "Adventure",
+      "film_url": "https://www.peckhamplex.london/film/goat",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/goat.jpg",
+      "showtimes": {
+        "2026-04-18": [
+          {
+            "time": "12:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79479?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ],
+        "2026-04-19": [
+          {
+            "time": "12:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79528?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Tyree Dillihay",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/goat-2026/",
+      "letterboxd_rating": 3.39
     },
     {
       "id": "lee-cronins-the-mummy",
@@ -372,13 +404,13 @@
           {
             "time": "17:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79544?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           },
           {
             "time": "20:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79545?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           }
         ],
@@ -386,7 +418,7 @@
           {
             "time": "17:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79562?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           },
           {
@@ -400,7 +432,7 @@
           {
             "time": "17:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79575?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "screen": null,
             "hoh": false
           },
           {
@@ -414,7 +446,7 @@
           {
             "time": "17:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79587?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "screen": null,
             "hoh": false
           },
           {
@@ -440,42 +472,10 @@
         ]
       },
       "director": "Lee Cronin",
-      "color": "#1565c0",
-      "accent": "#64b5f6",
-      "letterboxd_url": "https://letterboxd.com/film/lee-cronins-the-mummy/",
-      "letterboxd_rating": 2.96
-    },
-    {
-      "id": "hoppers",
-      "title": "Hoppers",
-      "rating": "U",
-      "runtime": 104,
-      "genre": "Adventure",
-      "film_url": "https://www.peckhamplex.london/film/hoppers",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/hoppers.jpg",
-      "showtimes": {
-        "2026-04-18": [
-          {
-            "time": "13:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79481?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-04-19": [
-          {
-            "time": "13:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79530?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Daniel Chong",
       "color": "#ef6c00",
       "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/hoppers/",
-      "letterboxd_rating": 3.79
+      "letterboxd_url": "https://letterboxd.com/film/lee-cronins-the-mummy/",
+      "letterboxd_rating": 2.96
     },
     {
       "id": "project-hail-mary",
@@ -498,7 +498,7 @@
           {
             "time": "20:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79546?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": false
           }
         ],
@@ -506,7 +506,7 @@
           {
             "time": "20:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79564?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -522,7 +522,7 @@
           {
             "time": "20:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79589?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -530,7 +530,7 @@
           {
             "time": "20:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79601?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "screen": null,
             "hoh": false
           }
         ]
@@ -554,7 +554,7 @@
           {
             "time": "15:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79489?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
+            "screen": null,
             "hoh": false
           },
           {
@@ -574,7 +574,7 @@
           {
             "time": "15:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79537?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": false
           },
           {
@@ -586,7 +586,7 @@
           {
             "time": "20:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79548?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -600,7 +600,7 @@
           {
             "time": "20:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79566?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -622,7 +622,7 @@
           {
             "time": "20:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79590?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -660,7 +660,7 @@
           {
             "time": "15:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79486?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": false
           },
           {
@@ -748,7 +748,7 @@
           {
             "time": "15:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79487?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": false
           },
           {
@@ -762,7 +762,7 @@
           {
             "time": "13:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79531?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           },
           {
@@ -913,6 +913,28 @@
       "letterboxd_rating": 3.69
     },
     {
+      "id": "national-theatre-live-les-liaisons-dangereuses",
+      "title": "National Theatre Live: Les Liaisons Dangereuses",
+      "rating": "TBC",
+      "runtime": 180,
+      "genre": "Opera",
+      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-les-liaisons-dangereuses",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-les-liaisons-dangereuses.jpg",
+      "showtimes": {
+        "2026-06-25": [
+          {
+            "time": "19:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/77602?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Marianne Elliott",
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
+    },
+    {
       "id": "exhibition-on-screen-frida-kahlo",
       "title": "EXHIBITION ON SCREEN: Frida Kahlo",
       "rating": "12A",
@@ -939,8 +961,8 @@
         ]
       },
       "director": "Ali Ray",
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#558b2f",
+      "accent": "#9ccc65"
     },
     {
       "id": "national-theatre-live-the-playboy-of-the-western",
@@ -961,28 +983,6 @@
         ]
       },
       "director": "Caitríona McLaughlin",
-      "color": "#558b2f",
-      "accent": "#9ccc65"
-    },
-    {
-      "id": "national-theatre-live-les-liaisons-dangereuses",
-      "title": "National Theatre Live: Les Liaisons Dangereuses",
-      "rating": "TBC",
-      "runtime": 180,
-      "genre": "Opera",
-      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-les-liaisons-dangereuses",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-les-liaisons-dangereuses.jpg",
-      "showtimes": {
-        "2026-06-25": [
-          {
-            "time": "19:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/77602?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Marianne Elliott",
       "color": "#9f2121",
       "accent": "#d36868"
     }
