@@ -1,7 +1,177 @@
 {
-  "scraped_at": "2026-04-18T10:02:23.237805+00:00",
+  "scraped_at": "2026-04-18T10:32:15.705264+00:00",
   "source": "princecharlescinema.com",
   "films": [
+    {
+      "id": "citizen-kane",
+      "title": "Citizen Kane",
+      "rating": "U",
+      "runtime": 120,
+      "genre": "Drama",
+      "year": "1941",
+      "country": null,
+      "director": "Orson Welles",
+      "cast": "Orson Welles, Joseph Cotten, Dorothy Comingore",
+      "description": "When a reporter is assigned to decipher newspaper magnate Charles Foster Kane's (Orson Welles) dying words, his investigation gradually reveals the fascinating portrait of a complex man who rose from obscurity to staggering heights. Though Kane's friend and colleague Jedediah Leland (Joseph Cotten), and his mistress, Susan Alexander (Dorothy Comingore), shed fragments of light on Kane's life, the reporter fears he may never penetrate the mystery of the elusive man's final word, \"Rosebud.\"",
+      "film_url": "https://princecharlescinema.com/film/1865921/citizen-kane",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1865921.jpg",
+      "showtimes": {
+        "2026-04-18": [
+          {
+            "time": "12:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625543",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-06-08": [
+          {
+            "time": "18:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626157",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/citizen-kane/",
+      "letterboxd_rating": 4.19
+    },
+    {
+      "id": "saving-private-ryan",
+      "title": "Saving Private Ryan",
+      "rating": "15",
+      "runtime": 169,
+      "genre": "War",
+      "year": "1998",
+      "country": null,
+      "director": "Steven Spielberg",
+      "cast": "Tom Hanks, Matt Damon, Tom Sizemore, Barry Pepper, Vin Diesel, Edward Burns, Adam Goldberg, Ted Danson",
+      "description": "Captain John Miller (Tom Hanks) takes his men behind enemy lines to find Private James Ryan, whose three brothers have been killed in combat. Surrounded by the brutal realties of war, while searching for Ryan, each man embarks upon a personal journey and discovers their own strength to triumph over an uncertain future with honor, decency and courage.",
+      "film_url": "https://princecharlescinema.com/film/11886256/saving-private-ryan",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/zrgt0uQ0JhLU7wx2j4076DYBq8eRt0sLXCws_CyeGY0.jpg",
+      "showtimes": {
+        "2026-04-18": [
+          {
+            "time": "14:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31624691",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K"
+            ]
+          }
+        ],
+        "2026-04-30": [
+          {
+            "time": "14:30",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625652",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K"
+            ]
+          }
+        ]
+      },
+      "color": "#546e7a",
+      "accent": "#90a4ae",
+      "letterboxd_url": "https://letterboxd.com/film/saving-private-ryan/",
+      "letterboxd_rating": 4.25
+    },
+    {
+      "id": "blade-runner-the-final-cut",
+      "title": "Blade Runner : The Final Cut",
+      "rating": "15",
+      "runtime": 118,
+      "genre": "Science Fiction",
+      "year": "1982",
+      "country": null,
+      "director": "Ridley Scott",
+      "cast": "Harrison Ford, Sean Young, Rutger Hauer",
+      "description": "Deckard (Harrison Ford) is forced by the police Boss (M. Emmet Walsh) to continue his old job as Replicant Hunter. His assignment: eliminate four escaped Replicants from the colonies who have returned to Earth. Before starting the job, Deckard goes to the Tyrell Corporation and he meets Rachel (Sean Young), a Replicant girl he falls in love with.",
+      "film_url": "https://princecharlescinema.com/film/3721500/blade-runner-the-final-cut",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/3721500.jpg",
+      "showtimes": {
+        "2026-04-18": [
+          {
+            "time": "14:45",
+            "booking_url": "",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-04-21": [
+          {
+            "time": "12:20",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626284",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-11": [
+          {
+            "time": "15:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625752",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K"
+            ]
+          }
+        ]
+      },
+      "color": "#00838f",
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/blade-runner/",
+      "letterboxd_rating": 4.1
+    },
+    {
+      "id": "blade-runner-2049",
+      "title": "Blade Runner 2049",
+      "rating": "15",
+      "runtime": 163,
+      "genre": "Science Fiction",
+      "year": "2017",
+      "country": null,
+      "director": "Denis Villeneuve",
+      "cast": "Ana de Armas, Harrison Ford, Ryan Gosling",
+      "description": "Officer K (Ryan Gosling), a new blade runner for the Los Angeles Police Department, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. His discovery leads him on a quest to find Rick Deckard (Harrison Ford), a former blade runner who's been missing for 30 years.",
+      "film_url": "https://princecharlescinema.com/film/11698092/blade-runner-2049",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/11698092.jpg",
+      "showtimes": {
+        "2026-04-18": [
+          {
+            "time": "17:30",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625541",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-18": [
+          {
+            "time": "14:30",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625903",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K"
+            ]
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/blade-runner-2049/",
+      "letterboxd_rating": 4.1
+    },
     {
       "id": "akira",
       "title": "Akira",
@@ -17,16 +187,6 @@
       "poster_url": "https://cdn.taposapp.com/poster/600x900/BevMTYiD9MRWq4QbDIx3fKNDYwjxKufgFRKEVYJGYYE.jpg",
       "showtimes": {
         "2026-04-18": [
-          {
-            "time": "11:30",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625812",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K",
-              "SUB"
-            ]
-          },
           {
             "time": "18:00",
             "booking_url": "",
@@ -446,180 +606,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/akira/",
-      "letterboxd_rating": 4.28
-    },
-    {
-      "id": "citizen-kane",
-      "title": "Citizen Kane",
-      "rating": "U",
-      "runtime": 120,
-      "genre": "Drama",
-      "year": "1941",
-      "country": null,
-      "director": "Orson Welles",
-      "cast": "Orson Welles, Joseph Cotten, Dorothy Comingore",
-      "description": "When a reporter is assigned to decipher newspaper magnate Charles Foster Kane's (Orson Welles) dying words, his investigation gradually reveals the fascinating portrait of a complex man who rose from obscurity to staggering heights. Though Kane's friend and colleague Jedediah Leland (Joseph Cotten), and his mistress, Susan Alexander (Dorothy Comingore), shed fragments of light on Kane's life, the reporter fears he may never penetrate the mystery of the elusive man's final word, \"Rosebud.\"",
-      "film_url": "https://princecharlescinema.com/film/1865921/citizen-kane",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1865921.jpg",
-      "showtimes": {
-        "2026-04-18": [
-          {
-            "time": "12:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625543",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-06-08": [
-          {
-            "time": "18:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626157",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ]
-      },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/citizen-kane/",
-      "letterboxd_rating": 4.19
-    },
-    {
-      "id": "saving-private-ryan",
-      "title": "Saving Private Ryan",
-      "rating": "15",
-      "runtime": 169,
-      "genre": "War",
-      "year": "1998",
-      "country": null,
-      "director": "Steven Spielberg",
-      "cast": "Tom Hanks, Matt Damon, Tom Sizemore, Barry Pepper, Vin Diesel, Edward Burns, Adam Goldberg, Ted Danson",
-      "description": "Captain John Miller (Tom Hanks) takes his men behind enemy lines to find Private James Ryan, whose three brothers have been killed in combat. Surrounded by the brutal realties of war, while searching for Ryan, each man embarks upon a personal journey and discovers their own strength to triumph over an uncertain future with honor, decency and courage.",
-      "film_url": "https://princecharlescinema.com/film/11886256/saving-private-ryan",
-      "poster_url": "https://cdn.taposapp.com/poster/600x900/zrgt0uQ0JhLU7wx2j4076DYBq8eRt0sLXCws_CyeGY0.jpg",
-      "showtimes": {
-        "2026-04-18": [
-          {
-            "time": "14:15",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31624691",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K"
-            ]
-          }
-        ],
-        "2026-04-30": [
-          {
-            "time": "14:30",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625652",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K"
-            ]
-          }
-        ]
-      },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
-      "letterboxd_url": "https://letterboxd.com/film/saving-private-ryan/",
-      "letterboxd_rating": 4.25
-    },
-    {
-      "id": "blade-runner-the-final-cut",
-      "title": "Blade Runner : The Final Cut",
-      "rating": "15",
-      "runtime": 118,
-      "genre": "Science Fiction",
-      "year": "1982",
-      "country": null,
-      "director": "Ridley Scott",
-      "cast": "Harrison Ford, Sean Young, Rutger Hauer",
-      "description": "Deckard (Harrison Ford) is forced by the police Boss (M. Emmet Walsh) to continue his old job as Replicant Hunter. His assignment: eliminate four escaped Replicants from the colonies who have returned to Earth. Before starting the job, Deckard goes to the Tyrell Corporation and he meets Rachel (Sean Young), a Replicant girl he falls in love with.",
-      "film_url": "https://princecharlescinema.com/film/3721500/blade-runner-the-final-cut",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/3721500.jpg",
-      "showtimes": {
-        "2026-04-18": [
-          {
-            "time": "14:45",
-            "booking_url": "",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-04-21": [
-          {
-            "time": "12:20",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626284",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-11": [
-          {
-            "time": "15:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625752",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K"
-            ]
-          }
-        ]
-      },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
-      "letterboxd_url": "https://letterboxd.com/film/blade-runner/",
-      "letterboxd_rating": 4.1
-    },
-    {
-      "id": "blade-runner-2049",
-      "title": "Blade Runner 2049",
-      "rating": "15",
-      "runtime": 163,
-      "genre": "Science Fiction",
-      "year": "2017",
-      "country": null,
-      "director": "Denis Villeneuve",
-      "cast": "Ana de Armas, Harrison Ford, Ryan Gosling",
-      "description": "Officer K (Ryan Gosling), a new blade runner for the Los Angeles Police Department, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. His discovery leads him on a quest to find Rick Deckard (Harrison Ford), a former blade runner who's been missing for 30 years.",
-      "film_url": "https://princecharlescinema.com/film/11698092/blade-runner-2049",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/11698092.jpg",
-      "showtimes": {
-        "2026-04-18": [
-          {
-            "time": "17:30",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625541",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-18": [
-          {
-            "time": "14:30",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625903",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K"
-            ]
-          }
-        ]
-      },
       "color": "#7c4dff",
       "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/blade-runner-2049/",
-      "letterboxd_rating": 4.1
+      "letterboxd_url": "https://letterboxd.com/film/akira/",
+      "letterboxd_rating": 4.28
     },
     {
       "id": "in-the-mood-for-love",
