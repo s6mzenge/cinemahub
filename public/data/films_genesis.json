@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-18T17:03:59.086952+00:00",
+  "scraped_at": "2026-04-18T17:33:47.825068+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -350,12 +350,6 @@
       "showtimes": {
         "2026-04-18": [
           {
-            "time": "18:15",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10531",
-            "screen": null,
-            "hoh": false
-          },
-          {
             "time": "20:45",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10532",
             "screen": null,
@@ -481,62 +475,6 @@
       "letterboxd_rating": 3.76
     },
     {
-      "id": "the-super-mario-galaxy-movie",
-      "title": "The Super Mario Galaxy Movie",
-      "rating": "PG",
-      "runtime": 98,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/102277",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/102277_0.jpg",
-      "showtimes": {
-        "2026-04-18": [
-          {
-            "time": "18:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10538",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-04-19": [
-          {
-            "time": "13:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10572",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "14:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10592",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "15:25",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10547",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-04-22": [
-          {
-            "time": "17:35",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10514",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/the-super-mario-galaxy-movie/",
-      "letterboxd_rating": 2.94
-    },
-    {
       "id": "akira",
       "title": "AKIRA",
       "rating": "15",
@@ -589,8 +527,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/akira/",
       "letterboxd_rating": 4.28
     },
@@ -617,8 +555,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/washed-up-2026/",
       "letterboxd_rating": null
     },
@@ -645,8 +583,56 @@
           }
         ]
       },
+      "color": "#00838f",
+      "accent": "#4dd0e1"
+    },
+    {
+      "id": "the-super-mario-galaxy-movie",
+      "title": "The Super Mario Galaxy Movie",
+      "rating": "PG",
+      "runtime": 98,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/102277",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/102277_0.jpg",
+      "showtimes": {
+        "2026-04-19": [
+          {
+            "time": "13:30",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10572",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "14:30",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10592",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "15:25",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10547",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-04-22": [
+          {
+            "time": "17:35",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10514",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
       "color": "#546e7a",
-      "accent": "#90a4ae"
+      "accent": "#90a4ae",
+      "letterboxd_url": "https://letterboxd.com/film/the-super-mario-galaxy-movie/",
+      "letterboxd_rating": 2.94
     },
     {
       "id": "bait",
