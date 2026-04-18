@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-18T10:33:50.381094+00:00",
+  "scraped_at": "2026-04-18T11:03:56.062859+00:00",
   "source": "electriccinema.co.uk (Portobello)",
   "films": [
     {
@@ -20,10 +20,11 @@
             "time": "14:00",
             "screen": "1",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50314",
+            "booking_url": null,
             "tags": [
               "Electric Selects"
-            ]
+            ],
+            "sold_out": true
           }
         ],
         "2026-04-23": [
@@ -184,36 +185,6 @@
       "letterboxd_rating": 3.76
     },
     {
-      "id": "the-spongebob-movie-search-for-squarepants",
-      "title": "The SpongeBob Movie: Search for Squarepants",
-      "rating": "PG",
-      "runtime": null,
-      "genre": "Other",
-      "year": "2025",
-      "director": "",
-      "cast": null,
-      "description": "SpongeBob and his Bikini Bottom friends set sail in their biggest, all-new, can’t miss cinematic event ever…The SpongeBob Movie: Search for SquarePants.",
-      "film_url": "https://www.electriccinema.co.uk/film/the-spongebob-movie-search-for-squarepants/",
-      "poster_url": "https://www.electriccinema.co.uk/wp-content/uploads/film/43853.d-1024x576.jpg",
-      "showtimes": {
-        "2026-04-18": [
-          {
-            "time": "11:00",
-            "screen": "1",
-            "hoh": false,
-            "booking_url": null,
-            "tags": [
-              "Kids Club"
-            ]
-          }
-        ]
-      },
-      "color": "#00897b",
-      "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/the-spongebob-movie-search-for-squarepants/",
-      "letterboxd_rating": 2.48
-    },
-    {
       "id": "the-devil-wears-prada-2",
       "title": "The Devil Wears Prada 2",
       "rating": "TBC",
@@ -351,8 +322,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": null
     }
