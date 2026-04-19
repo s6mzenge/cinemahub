@@ -1,65 +1,7 @@
 {
-  "scraped_at": "2026-04-19T14:32:19.555544+00:00",
+  "scraped_at": "2026-04-19T15:02:33.414801+00:00",
   "source": "thearzner.com",
   "films": [
-    {
-      "id": "cockroach-174611",
-      "title": "Cockroach",
-      "rating": "18",
-      "runtime": 22,
-      "genre": "Short Films",
-      "description": "Starring John Cameron Mitchell (Hedwig and the Angry Inch) & Justice Singleton.  A black transgender man plans to exchange sex for top surgery money with an older gay man until his night hook up turns into a hunt for a cockroach.",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=174611",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/174626.jpg",
-      "showtimes": {
-        "2026-04-19": [
-          {
-            "time": "12:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_174863.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "Short Films"
-            ]
-          }
-        ],
-        "2026-04-20": [
-          {
-            "time": "16:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175853.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "Short Films"
-            ]
-          }
-        ],
-        "2026-04-21": [
-          {
-            "time": "13:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176632.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "Short Films"
-            ]
-          },
-          {
-            "time": "18:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176631.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "Short Films"
-            ]
-          }
-        ]
-      },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/cockroach-2025/",
-      "letterboxd_rating": null
-    },
     {
       "id": "departures-174589",
       "title": "Departures",
@@ -71,12 +13,6 @@
       "poster_url": "https://images.savoysystems.co.uk/TAL/174584.jpg",
       "showtimes": {
         "2026-04-19": [
-          {
-            "time": "13:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_174862.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
           {
             "time": "18:45",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175323.TcsSection_963",
@@ -225,15 +161,6 @@
       "showtimes": {
         "2026-04-19": [
           {
-            "time": "15:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_174860.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "Short Films"
-            ]
-          },
-          {
             "time": "20:30",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175324.TcsSection_963",
             "screen": "Screening Room",
@@ -244,8 +171,8 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/male-gaze-heavenly-creatures/",
       "letterboxd_rating": null
     },
@@ -292,10 +219,57 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/night-stage/",
       "letterboxd_rating": 3.32
+    },
+    {
+      "id": "cockroach-174611",
+      "title": "Cockroach",
+      "rating": "18",
+      "runtime": 22,
+      "genre": "Short Films",
+      "description": "Starring John Cameron Mitchell (Hedwig and the Angry Inch) & Justice Singleton.  A black transgender man plans to exchange sex for top surgery money with an older gay man until his night hook up turns into a hunt for a cockroach.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=174611",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/174626.jpg",
+      "showtimes": {
+        "2026-04-20": [
+          {
+            "time": "16:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175853.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Short Films"
+            ]
+          }
+        ],
+        "2026-04-21": [
+          {
+            "time": "13:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176632.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Short Films"
+            ]
+          },
+          {
+            "time": "18:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176631.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Short Films"
+            ]
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/cockroach-2025/",
+      "letterboxd_rating": null
     },
     {
       "id": "the-handmaiden-43904",
