@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-19T10:33:14.283569+00:00",
+  "scraped_at": "2026-04-19T11:03:32.717529+00:00",
   "source": "electriccinema.co.uk (White City)",
   "films": [
     {
@@ -64,7 +64,8 @@
             "time": "17:30",
             "screen": "3",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50341"
+            "booking_url": null,
+            "sold_out": true
           }
         ],
         "2026-04-21": [
@@ -72,7 +73,8 @@
             "time": "20:45",
             "screen": "3",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50345"
+            "booking_url": null,
+            "sold_out": true
           }
         ]
       },
@@ -99,13 +101,14 @@
             "time": "11:30",
             "screen": "3",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50333"
+            "booking_url": null
           },
           {
             "time": "17:30",
             "screen": "1",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50331"
+            "booking_url": null,
+            "sold_out": true
           },
           {
             "time": "20:15",
@@ -119,13 +122,15 @@
             "time": "18:00",
             "screen": "2",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50338"
+            "booking_url": null,
+            "sold_out": true
           },
           {
             "time": "20:45",
             "screen": "2",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50339"
+            "booking_url": null,
+            "sold_out": true
           }
         ],
         "2026-04-21": [
@@ -133,13 +138,15 @@
             "time": "17:45",
             "screen": "1",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50342"
+            "booking_url": null,
+            "sold_out": true
           },
           {
             "time": "20:30",
             "screen": "1",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50343"
+            "booking_url": null,
+            "sold_out": true
           }
         ]
       },
@@ -268,7 +275,8 @@
             "time": "20:15",
             "screen": "3",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50340"
+            "booking_url": null,
+            "sold_out": true
           }
         ],
         "2026-04-21": [
@@ -276,7 +284,8 @@
             "time": "17:15",
             "screen": "3",
             "hoh": false,
-            "booking_url": "https://www.electriccinema.co.uk/tickets/50344"
+            "booking_url": null,
+            "sold_out": true
           }
         ]
       },
@@ -284,36 +293,6 @@
       "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/project-hail-mary/",
       "letterboxd_rating": 4.33
-    },
-    {
-      "id": "paddington-in-peru",
-      "title": "Paddington in Peru",
-      "rating": "PG",
-      "runtime": null,
-      "genre": "Other",
-      "year": "2024",
-      "director": "Dougal Wilson",
-      "cast": null,
-      "description": "Paddington comes back home to the Peruvian jungle to visit his beloved Aunt Lucy, now a resident at the Home for Retired Bears.",
-      "film_url": "https://www.electriccinema.co.uk/film/paddington-in-peru/",
-      "poster_url": "https://www.electriccinema.co.uk/wp-content/uploads/film/5662.d-1024x576.jpg",
-      "showtimes": {
-        "2026-04-19": [
-          {
-            "time": "11:00",
-            "screen": "1",
-            "hoh": false,
-            "booking_url": null,
-            "tags": [
-              "Kids Club"
-            ]
-          }
-        ]
-      },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/paddington-in-peru/",
-      "letterboxd_rating": 3.4
     }
   ]
 }
