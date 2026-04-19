@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-19T16:04:06.303441+00:00",
+  "scraped_at": "2026-04-19T16:33:47.085074+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -103,12 +103,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/108660_0.jpg",
       "showtimes": {
         "2026-04-19": [
-          {
-            "time": "17:10",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10570",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "20:35",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10553",
@@ -281,12 +275,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/100576_1.jpg",
       "showtimes": {
         "2026-04-19": [
-          {
-            "time": "17:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10551",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "19:50",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10552",
@@ -1061,9 +1049,10 @@
         "2026-05-07": [
           {
             "time": "21:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10495",
+            "booking_url": "",
             "screen": null,
-            "hoh": false
+            "hoh": false,
+            "sold_out": true
           }
         ]
       },
