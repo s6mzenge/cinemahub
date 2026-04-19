@@ -1,43 +1,7 @@
 {
-  "scraped_at": "2026-04-19T18:33:29.916391+00:00",
+  "scraped_at": "2026-04-19T19:03:49.494594+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "la-grazia",
-      "title": "La Grazia",
-      "rating": "12A",
-      "runtime": 133,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Paolo Sorrentino",
-      "cast": null,
-      "description": "From Academy and BAFTA Award–winning filmmaker Paolo Sorrentino, La Grazia is a sweeping exploration of love, duty, and personal freedom. Toni Servillo…",
-      "film_url": "https://www.thegardencinema.co.uk/film/la-grazia/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5128769.jpg",
-      "showtimes": {
-        "2026-04-19": [
-          {
-            "time": "18:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5409833.TcsSection_971",
-            "screen": null,
-            "hoh": false,
-            "sold_out": true
-          }
-        ],
-        "2026-04-21": [
-          {
-            "time": "18:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5409892.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/la-grazia/",
-      "letterboxd_rating": 3.71
-    },
     {
       "id": "akira",
       "title": "Akira",
@@ -84,8 +48,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/akira/",
       "letterboxd_rating": 4.28
     },
@@ -135,8 +99,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
       "letterboxd_rating": 3.47
     },
@@ -173,8 +137,8 @@
       "seasons": [
         "Celebrating Jeanne Moreau"
       ],
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/viva-maria/",
       "letterboxd_rating": 3.3
     },
@@ -245,8 +209,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/rebuilding/",
       "letterboxd_rating": 3.62
     },
@@ -280,8 +244,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/miroirs-no-3/",
       "letterboxd_rating": 3.48
     },
@@ -315,8 +279,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/father-mother-sister-brother/",
       "letterboxd_rating": 3.12
     },
@@ -358,10 +322,37 @@
       "seasons": [
         "Members' Events"
       ],
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/faces-places/",
       "letterboxd_rating": 4.15
+    },
+    {
+      "id": "la-grazia",
+      "title": "La Grazia",
+      "rating": "12A",
+      "runtime": 133,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Paolo Sorrentino",
+      "cast": null,
+      "description": "From Academy and BAFTA Award–winning filmmaker Paolo Sorrentino, La Grazia is a sweeping exploration of love, duty, and personal freedom. Toni Servillo…",
+      "film_url": "https://www.thegardencinema.co.uk/film/la-grazia/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5128769.jpg",
+      "showtimes": {
+        "2026-04-21": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5409892.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/la-grazia/",
+      "letterboxd_rating": 3.71
     },
     {
       "id": "the-adventures-of-prince-achmed-100th-anniversary-live-score",
@@ -956,8 +947,8 @@
       },
       "color": "#30a692",
       "accent": "#84d6c8",
-      "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
-      "letterboxd_rating": 3.64
+      "letterboxd_url": "https://letterboxd.com/film/surviving-earth/",
+      "letterboxd_rating": null
     },
     {
       "id": "mary-poppins",
