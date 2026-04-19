@@ -1,60 +1,7 @@
 {
-  "scraped_at": "2026-04-19T20:03:25.997025+00:00",
+  "scraped_at": "2026-04-19T20:33:43.489138+00:00",
   "source": "riocinema.org.uk",
   "films": [
-    {
-      "id": "departures",
-      "title": "Departures",
-      "rating": "18",
-      "runtime": 82,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Neil Ely & Lloyd Eyre-Morgan",
-      "cast": null,
-      "country": "UK",
-      "description": "When Benji encounters Jake at an airport gate, there is instant chemistry. Their relationship unfolds through monthly secret trips to Amsterdam. A must-see British comedy-drama that dissects a toxic relationship with humour and raw emotion. Inspired by real heartbreak. What begins as thrilling month...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2463139",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2463147.webp",
-      "showtimes": {
-        "2026-04-19": [
-          {
-            "time": "20:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2463307.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-04-20": [
-          {
-            "time": "16:00",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2463309.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          },
-          {
-            "time": "21:00",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2463311.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-04-23": [
-          {
-            "time": "18:40",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2463313.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ]
-      },
-      "season_tags": [
-        "Main Features"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/departures-2025/",
-      "letterboxd_rating": 3.38
-    },
     {
       "id": "the-drama",
       "title": "The Drama",
@@ -85,8 +32,8 @@
         "Carers &amp; Babies",
         "Main Features"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-drama/",
       "letterboxd_rating": 3.76
     },
@@ -146,8 +93,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/california-schemin/",
       "letterboxd_rating": 3.46
     },
@@ -203,10 +150,53 @@
         "Hard of Hearing",
         "Main Features"
       ],
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/father-mother-sister-brother/",
       "letterboxd_rating": 3.12
+    },
+    {
+      "id": "departures",
+      "title": "Departures",
+      "rating": "18",
+      "runtime": 82,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Neil Ely & Lloyd Eyre-Morgan",
+      "cast": null,
+      "country": "UK",
+      "description": "When Benji encounters Jake at an airport gate, there is instant chemistry. Their relationship unfolds through monthly secret trips to Amsterdam. A must-see British comedy-drama that dissects a toxic relationship with humour and raw emotion. Inspired by real heartbreak. What begins as thrilling month...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2463139",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2463147.webp",
+      "showtimes": {
+        "2026-04-20": [
+          {
+            "time": "16:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2463309.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          },
+          {
+            "time": "21:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2463311.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ],
+        "2026-04-23": [
+          {
+            "time": "18:40",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2463313.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ]
+      },
+      "season_tags": [
+        "Main Features"
+      ],
+      "color": "#00897b",
+      "accent": "#4db6ac"
     },
     {
       "id": "the-drama",
