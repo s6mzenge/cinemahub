@@ -1,7 +1,152 @@
 {
-  "scraped_at": "2026-04-20T14:34:01.569078+00:00",
+  "scraped_at": "2026-04-20T15:05:52.331620+00:00",
   "source": "ica.art",
   "films": [
+    {
+      "id": "dracula",
+      "title": "Dracula",
+      "rating": "TBC",
+      "runtime": 170,
+      "genre": "Other",
+      "year": "2025",
+      "country": "Romania / Austria / Luxembourg",
+      "director": "Radu Jude",
+      "description": "Radu Jude resurrects Dracula, dissecting modern Europe and its myths through a collision of AI mischief and pornographic absurdity.",
+      "film_url": "https://www.ica.art/films/dracula",
+      "poster_url": "https://www.ica.art/media/12963.jpg",
+      "showtimes": {
+        "2026-04-28": [
+          {
+            "time": "13:00",
+            "booking_url": "https://www.ica.art/book/704601",
+            "screen": "Cinema 2",
+            "hoh": false,
+            "tags": [
+              "Off-Circuit",
+              "London Premiere"
+            ]
+          }
+        ],
+        "2026-04-29": [
+          {
+            "time": "12:30",
+            "booking_url": "https://www.ica.art/book/704601",
+            "screen": "Cinema 1",
+            "hoh": false,
+            "tags": [
+              "Off-Circuit",
+              "London Premiere"
+            ]
+          }
+        ],
+        "2026-04-30": [
+          {
+            "time": "15:00",
+            "booking_url": "https://www.ica.art/book/704601",
+            "screen": "Cinema 1",
+            "hoh": false,
+            "tags": [
+              "Off-Circuit",
+              "London Premiere"
+            ]
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/dracula-2025-1/",
+      "letterboxd_rating": 3.14
+    },
+    {
+      "id": "rose-of-nevada",
+      "title": "Rose of Nevada",
+      "rating": "15",
+      "runtime": 104,
+      "genre": "Other",
+      "year": "2025",
+      "country": "UK",
+      "director": "Mark Jenkin",
+      "description": "When a fishing boat, the Rose of Nevada, lost with all hands 30 years ago, mysteriously reappears in the old harbour of a forgotten Cornish village, for those who remember, it’s surely a sign. The boat must go out to sea again and maybe then the luck of the devastated village will turn.",
+      "film_url": "https://www.ica.art/films/rose-of-nevada",
+      "poster_url": "https://www.ica.art/media/13048.jpg",
+      "showtimes": {
+        "2026-04-28": [
+          {
+            "time": "13:30",
+            "booking_url": "https://www.ica.art/book/718401",
+            "screen": "Cinema 1",
+            "hoh": false
+          },
+          {
+            "time": "18:30",
+            "booking_url": "https://www.ica.art/book/718401",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ],
+        "2026-04-29": [
+          {
+            "time": "18:15",
+            "booking_url": "https://www.ica.art/book/718401",
+            "screen": "Cinema 1",
+            "hoh": false
+          },
+          {
+            "time": "21:15",
+            "booking_url": "https://www.ica.art/book/718401",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ],
+        "2026-04-30": [
+          {
+            "time": "18:20",
+            "booking_url": "https://www.ica.art/book/718401",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
+      "letterboxd_rating": 3.43
+    },
+    {
+      "id": "akira",
+      "title": "Akira",
+      "rating": "15",
+      "runtime": 125,
+      "genre": "Other",
+      "year": "1988",
+      "country": "Japan",
+      "director": "Katsuhiro Otomo",
+      "description": "Iconic and game-changing, Katsuhiro Otomo's landmark anime returns to the cinema where it was first released in the UK.",
+      "film_url": "https://www.ica.art/films/akira",
+      "poster_url": "https://www.ica.art/media/13024.jpg",
+      "showtimes": {
+        "2026-04-28": [
+          {
+            "time": "16:00",
+            "booking_url": "https://www.ica.art/book/712401",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ],
+        "2026-04-30": [
+          {
+            "time": "21:00",
+            "booking_url": "https://www.ica.art/book/712401",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/akira/",
+      "letterboxd_rating": 4.28
+    },
     {
       "id": "the-blue-trail",
       "title": "The Blue Trail",
@@ -23,6 +168,14 @@
             "hoh": false
           }
         ],
+        "2026-04-29": [
+          {
+            "time": "12:05",
+            "booking_url": "https://www.ica.art/book/715201",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ],
         "2026-04-30": [
           {
             "time": "13:40",
@@ -32,53 +185,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/the-blue-trail/",
       "letterboxd_rating": 3.71
-    },
-    {
-      "id": "rose-of-nevada",
-      "title": "Rose of Nevada",
-      "rating": "15",
-      "runtime": 104,
-      "genre": "Other",
-      "year": "2025",
-      "country": "UK",
-      "director": "Mark Jenkin",
-      "description": "When a fishing boat, the Rose of Nevada, lost with all hands 30 years ago, mysteriously reappears in the old harbour of a forgotten Cornish village, for those who remember, it’s surely a sign. The boat must go out to sea again and maybe then the luck of the devastated village will turn.",
-      "film_url": "https://www.ica.art/films/rose-of-nevada",
-      "poster_url": "https://www.ica.art/media/13048.jpg",
-      "showtimes": {
-        "2026-04-28": [
-          {
-            "time": "18:30",
-            "booking_url": "https://www.ica.art/book/718401",
-            "screen": "Cinema 1",
-            "hoh": false
-          }
-        ],
-        "2026-04-29": [
-          {
-            "time": "21:15",
-            "booking_url": "https://www.ica.art/book/718401",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ],
-        "2026-04-30": [
-          {
-            "time": "18:20",
-            "booking_url": "https://www.ica.art/book/718401",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
-      "letterboxd_rating": 3.43
     },
     {
       "id": "miroirs-no-3",
@@ -103,7 +213,7 @@
         ],
         "2026-04-29": [
           {
-            "time": "15:40",
+            "time": "16:30",
             "booking_url": "https://www.ica.art/book/714801",
             "screen": "Cinema 2",
             "hoh": false
@@ -118,10 +228,96 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/miroirs-no-3/",
       "letterboxd_rating": 3.48
+    },
+    {
+      "id": "father-mother-sister-brother",
+      "title": "Father Mother Sister Brother",
+      "rating": "TBC",
+      "runtime": 110,
+      "genre": "Other",
+      "year": "2025",
+      "country": "US",
+      "director": "Jim Jarmusch",
+      "description": "Winner of the Golden Lion at the Venice Film Festival, the latest film from Jim Jarmusch takes the form of a triptych, to tell three stories concerning the relationships between adult children, their somewhat distant parent (or parents), and each other.",
+      "film_url": "https://www.ica.art/films/father-mother-sister-brother",
+      "poster_url": "https://www.ica.art/media/12919.jpg",
+      "showtimes": {
+        "2026-04-28": [
+          {
+            "time": "20:20",
+            "booking_url": "https://www.ica.art/book/704401",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ],
+        "2026-04-29": [
+          {
+            "time": "16:00",
+            "booking_url": "https://www.ica.art/book/704401",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ],
+        "2026-04-30": [
+          {
+            "time": "12:30",
+            "booking_url": "https://www.ica.art/book/704401",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/father-mother-sister-brother/",
+      "letterboxd_rating": 3.12
+    },
+    {
+      "id": "ozon-the-stranger",
+      "title": "The Stranger",
+      "rating": "15",
+      "runtime": 123,
+      "genre": "Other",
+      "year": "2025",
+      "country": "France/Belgium",
+      "director": "François Ozon",
+      "description": "François Ozon’s exquisite adaptation of Albert Camus’s classic existential novel brings the contradictions and hypocrisy of the French colonial project into sharper focus, while maintaining the original novel’s spirit of philosophical provocation.",
+      "film_url": "https://www.ica.art/films/ozon-the-stranger",
+      "poster_url": "https://www.ica.art/media/13043.jpg",
+      "showtimes": {
+        "2026-04-28": [
+          {
+            "time": "20:50",
+            "booking_url": "https://www.ica.art/book/715601",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ],
+        "2026-04-29": [
+          {
+            "time": "14:00",
+            "booking_url": "https://www.ica.art/book/715601",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ],
+        "2026-04-30": [
+          {
+            "time": "15:50",
+            "booking_url": "https://www.ica.art/book/715601",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#c62828",
+      "accent": "#ef5350",
+      "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
+      "letterboxd_rating": 3.47
     },
     {
       "id": "olivia",
@@ -145,8 +341,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/olivia-2025/",
       "letterboxd_rating": null
     },
@@ -175,8 +371,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/komitas/",
       "letterboxd_rating": 3.77
     },
@@ -206,8 +402,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/pushing-past-the-bad/",
       "letterboxd_rating": null
     },
@@ -297,8 +493,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
       "letterboxd_url": "https://letterboxd.com/film/phantoms-of-july/",
       "letterboxd_rating": 3.5
     },
@@ -364,8 +560,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#ad1457",
+      "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/wild-foxes/",
       "letterboxd_rating": 3.65
     },
@@ -394,8 +590,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#37474f",
+      "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/property/",
       "letterboxd_rating": null
     },
@@ -425,8 +621,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "paydirt",
@@ -453,8 +649,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/paydirt/",
       "letterboxd_rating": null
     },
@@ -483,8 +679,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/the-sound-of-the-shaking-earth/",
       "letterboxd_rating": 3.87
     },
@@ -510,8 +706,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/oh-moon/",
       "letterboxd_rating": 3.65
     },
@@ -540,8 +736,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63"
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "rita-azevedo-gomes-fragile-as-the-world",
@@ -568,8 +764,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "the-cinema-of-olaa-zhyzhko",
@@ -593,8 +789,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#9f2190",
+      "accent": "#d368c6"
     },
     {
       "id": "romeria",
@@ -694,8 +890,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868",
+      "color": "#30a692",
+      "accent": "#84d6c8",
       "letterboxd_url": "https://letterboxd.com/film/romeria/",
       "letterboxd_rating": 3.6
     },
@@ -725,8 +921,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6"
+      "color": "#975e1a",
+      "accent": "#d49953"
     },
     {
       "id": "azevedo-gomes-on-dangerous-ground",
@@ -753,8 +949,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#41219f",
+      "accent": "#8368d3",
       "letterboxd_url": "https://letterboxd.com/film/on-dangerous-ground/",
       "letterboxd_rating": 3.75
     },
@@ -783,8 +979,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#35a630",
+      "accent": "#88d684"
     },
     {
       "id": "jlg-unmade-the-remake",
@@ -811,8 +1007,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#971a44",
+      "accent": "#d4537e"
     },
     {
       "id": "with-beauty-and-sorrow-on-35mm",
@@ -839,8 +1035,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "rita-azevedo-gomes-altar",
@@ -867,8 +1063,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3"
+      "color": "#9ca630",
+      "accent": "#cfd684"
     },
     {
       "id": "azevedo-gomes-the-15th-stone",
@@ -895,8 +1091,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684",
+      "color": "#7d1a97",
+      "accent": "#b953d4",
       "letterboxd_url": "https://letterboxd.com/film/the-15th-stone/",
       "letterboxd_rating": null
     },
@@ -925,8 +1121,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "where-comes-mulan",
@@ -953,8 +1149,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "queer-east-takeover",
@@ -999,8 +1195,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#1a2597",
+      "accent": "#535ed4"
     },
     {
       "id": "rita-azevedo-gomes-the-invisible-collection-conquest-of-faro",
@@ -1027,8 +1223,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "azevedo-gomes-uma-rapariga-no-verao",
@@ -1055,8 +1251,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d",
+      "color": "#a6307e",
+      "accent": "#d684bb",
       "letterboxd_url": "https://letterboxd.com/film/a-girl-in-summer/",
       "letterboxd_rating": null
     },
@@ -1085,8 +1281,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584"
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     }
   ]
 }
