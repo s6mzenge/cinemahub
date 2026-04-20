@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-20T15:35:30.523973+00:00",
+  "scraped_at": "2026-04-20T16:05:17.856149+00:00",
   "source": "riocinema.org.uk",
   "films": [
     {
@@ -446,7 +446,10 @@
             "time": "14:40",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2489354.TcsSection_936",
             "screen": "S1",
-            "hoh": false
+            "hoh": true,
+            "tags": [
+              "HoH"
+            ]
           }
         ],
         "2026-04-28": [
@@ -458,6 +461,9 @@
           }
         ]
       },
+      "season_tags": [
+        "Hard of Hearing"
+      ],
       "color": "#00838f",
       "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/the-blue-trail/",
@@ -676,8 +682,8 @@
       },
       "color": "#4e342e",
       "accent": "#8d6e63",
-      "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
-      "letterboxd_rating": 3.64
+      "letterboxd_url": "https://letterboxd.com/film/surviving-earth/",
+      "letterboxd_rating": null
     },
     {
       "id": "rave-culture-a-new-era",
@@ -799,8 +805,8 @@
       ],
       "color": "#9f2121",
       "accent": "#d36868",
-      "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
-      "letterboxd_rating": 3.64
+      "letterboxd_url": "https://letterboxd.com/film/surviving-earth/",
+      "letterboxd_rating": null
     },
     {
       "id": "three-colours-white",
