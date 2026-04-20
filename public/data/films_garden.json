@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-20T11:03:55.989319+00:00",
+  "scraped_at": "2026-04-20T11:32:47.829169+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
     {
@@ -797,7 +797,8 @@
             "hoh": false,
             "tags": [
               "Q&A"
-            ]
+            ],
+            "sold_out": true
           }
         ]
       },
@@ -884,7 +885,8 @@
             "time": "18:15",
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4966102.TcsSection_971",
             "screen": null,
-            "hoh": false
+            "hoh": false,
+            "sold_out": true
           }
         ]
       },
@@ -1411,8 +1413,7 @@
             "hoh": false,
             "tags": [
               "Intro"
-            ],
-            "sold_out": true
+            ]
           }
         ]
       },
