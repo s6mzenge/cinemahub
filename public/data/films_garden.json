@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-21T13:35:09.812311+00:00",
+  "scraped_at": "2026-04-21T14:04:59.813567+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
     {
@@ -804,7 +804,8 @@
             "time": "18:00",
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5002212.TcsSection_3060731",
             "screen": null,
-            "hoh": false
+            "hoh": false,
+            "sold_out": true
           }
         ]
       },
@@ -2363,7 +2364,7 @@
       "showtimes": {
         "2026-05-10": [
           {
-            "time": "13:00",
+            "time": "16:30",
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5365940.TcsSection_638",
             "screen": null,
             "hoh": false
@@ -2973,6 +2974,44 @@
       "letterboxd_rating": 3.48
     },
     {
+      "id": "bringing-up-baby",
+      "title": "Bringing Up Baby",
+      "rating": "U",
+      "runtime": 103,
+      "genre": "Other",
+      "year": "1938",
+      "director": "Howard Hawks",
+      "cast": null,
+      "description": "No synopsis can do it justice: Cary Grant plays a stuffy palaeontologist who meets the anarchically free-spirited Katharine Hepburn. She has…",
+      "film_url": "https://www.thegardencinema.co.uk/film/bringing-up-baby/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5390428.jpg",
+      "showtimes": {
+        "2026-05-25": [
+          {
+            "time": "16:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5413909.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-08-12": [
+          {
+            "time": "20:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414240.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#a63035",
+      "accent": "#d68488",
+      "letterboxd_url": "https://letterboxd.com/film/bringing-up-baby/",
+      "letterboxd_rating": 4.0
+    },
+    {
       "id": "miss-mary-intro",
       "title": "Miss Mary + intro",
       "rating": "18",
@@ -3001,10 +3040,49 @@
         "50 Years of Argentina on Film"
       ],
       "partner": "Cinema Mentiré",
-      "color": "#a63035",
-      "accent": "#d68488",
+      "color": "#1a4597",
+      "accent": "#537fd4",
       "letterboxd_url": "https://letterboxd.com/film/miss-mary/",
       "letterboxd_rating": 3.49
+    },
+    {
+      "id": "his-girl-friday",
+      "title": "His Girl Friday",
+      "rating": "U",
+      "runtime": 92,
+      "genre": "Other",
+      "year": "1940",
+      "director": "Howard Hawks",
+      "cast": null,
+      "description": "The screening on Thursday 28 May will be introduced by filmmaker John Gordillo and will followed by a discussion at The…",
+      "film_url": "https://www.thegardencinema.co.uk/film/his-girl-friday/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5390970.jpg",
+      "showtimes": {
+        "2026-05-28": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5413911.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "Discussion",
+              "Intro"
+            ]
+          }
+        ],
+        "2026-07-13": [
+          {
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414124.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#719f21",
+      "accent": "#acd368",
+      "letterboxd_url": "https://letterboxd.com/film/his-girl-friday/",
+      "letterboxd_rating": 4.03
     },
     {
       "id": "ernest-and-celestine",
@@ -3056,8 +3134,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#1a4597",
-      "accent": "#537fd4",
+      "color": "#a6309d",
+      "accent": "#d684d0",
       "letterboxd_url": "https://letterboxd.com/film/ernest-celestine/",
       "letterboxd_rating": 4.18
     },
@@ -3105,10 +3183,48 @@
       "seasons": [
         "50 Years of Argentina on Film"
       ],
-      "color": "#719f21",
-      "accent": "#acd368",
+      "color": "#1a977c",
+      "accent": "#53d4b8",
       "letterboxd_url": "https://letterboxd.com/film/nine-queens/",
       "letterboxd_rating": 4.15
+    },
+    {
+      "id": "the-lady-eve",
+      "title": "The Lady Eve",
+      "rating": "U",
+      "runtime": 94,
+      "genre": "Other",
+      "year": "1941",
+      "director": "Preston Sturges",
+      "cast": null,
+      "description": "Better remembered for intense dramatic roles, Barbara Stanwyck and Henry Fonda weren’t obvious choices for light romantic comedy, but they’re nicely…",
+      "film_url": "https://www.thegardencinema.co.uk/film/the-lady-eve/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5391217.jpg",
+      "showtimes": {
+        "2026-05-30": [
+          {
+            "time": "13:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5413928.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-08-02": [
+          {
+            "time": "17:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414216.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#9f5f21",
+      "accent": "#d39d68",
+      "letterboxd_url": "https://letterboxd.com/film/the-lady-eve/",
+      "letterboxd_rating": 3.96
     },
     {
       "id": "growing-pains-2",
@@ -3139,10 +3255,40 @@
         "Celebrating 70 years of LFS"
       ],
       "partner": "London Film School",
-      "color": "#a6309d",
-      "accent": "#d684d0",
+      "color": "#4730a6",
+      "accent": "#9484d6",
       "letterboxd_url": "https://letterboxd.com/film/growing-pains-2026/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "the-thin-man",
+      "title": "The Thin Man",
+      "rating": "U",
+      "runtime": 91,
+      "genre": "Other",
+      "year": "1934",
+      "director": "W. S. Van Dyke",
+      "cast": null,
+      "description": "The Thin Man (1934) is the first installment of a popular series of six films casting a sophisticated, glamorous, pleasure-seeking, and urbane…",
+      "film_url": "https://www.thegardencinema.co.uk/film/the-thin-man/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5390367.jpg",
+      "showtimes": {
+        "2026-06-01": [
+          {
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5413934.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#26971a",
+      "accent": "#5fd453",
+      "letterboxd_url": "https://letterboxd.com/film/the-thin-man/",
+      "letterboxd_rating": 3.96
     },
     {
       "id": "el-secreto-de-sus-ojos-the-secret-in-their-eyes",
@@ -3180,8 +3326,8 @@
       "seasons": [
         "50 Years of Argentina on Film"
       ],
-      "color": "#1a977c",
-      "accent": "#53d4b8",
+      "color": "#9f2152",
+      "accent": "#d36891",
       "letterboxd_url": "https://letterboxd.com/film/the-secret-in-their-eyes/",
       "letterboxd_rating": 4.24
     },
@@ -3221,10 +3367,86 @@
       "seasons": [
         "50 Years of Argentina on Film"
       ],
-      "color": "#9f5f21",
-      "accent": "#d39d68",
+      "color": "#307fa6",
+      "accent": "#84bbd6",
       "letterboxd_url": "https://letterboxd.com/film/zama/",
       "letterboxd_rating": 3.65
+    },
+    {
+      "id": "adams-rib",
+      "title": "Adam's Rib",
+      "rating": "U",
+      "runtime": 101,
+      "genre": "Other",
+      "year": "1949",
+      "director": "George Cukor",
+      "cast": null,
+      "description": "A courtroom rivalry finds its way into the household when prosecuting lawyer Adam Bonner (Spencer Tracy) faces off against his wife,…",
+      "film_url": "https://www.thegardencinema.co.uk/film/adams-rib/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5452731.jpg",
+      "showtimes": {
+        "2026-06-02": [
+          {
+            "time": "20:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5413940.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-19": [
+          {
+            "time": "13:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414172.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#93971a",
+      "accent": "#cfd453",
+      "letterboxd_url": "https://letterboxd.com/film/adams-rib/",
+      "letterboxd_rating": 3.75
+    },
+    {
+      "id": "arsenic-and-old-lace",
+      "title": "Arsenic and Old Lace",
+      "rating": "PG",
+      "runtime": 118,
+      "genre": "Other",
+      "year": "1944",
+      "director": "Frank Capra",
+      "cast": null,
+      "description": "Directed by George Cuckor, Adam’s Rib (1949), was a vehicle for the powerhouse pairing of Spencer Tracy and Katharine Hepburn in…",
+      "film_url": "https://www.thegardencinema.co.uk/film/arsenic-and-old-lace/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/1829530.jpg",
+      "showtimes": {
+        "2026-06-05": [
+          {
+            "time": "18:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5413975.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-03": [
+          {
+            "time": "15:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414087.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#7f219f",
+      "accent": "#b768d3",
+      "letterboxd_url": "https://letterboxd.com/film/arsenic-and-old-lace/",
+      "letterboxd_rating": 3.97
     },
     {
       "id": "la-pelicula-del-rey-a-king-and-his-movie",
@@ -3262,10 +3484,48 @@
       "seasons": [
         "50 Years of Argentina on Film"
       ],
-      "color": "#4730a6",
-      "accent": "#9484d6",
+      "color": "#30a665",
+      "accent": "#84d6a9",
       "letterboxd_url": "https://letterboxd.com/film/a-king-and-his-movie/",
       "letterboxd_rating": 3.6
+    },
+    {
+      "id": "sullivans-travels",
+      "title": "Sullivan's Travels",
+      "rating": "PG",
+      "runtime": 90,
+      "genre": "Other",
+      "year": "1941",
+      "director": "Preston Sturges",
+      "cast": null,
+      "description": "Tired of churning out lightweight comedies, Hollywood director John L. Sullivan (Joel McCrea) decides to make O Brother, Where Art Thou?—a…",
+      "film_url": "https://www.thegardencinema.co.uk/film/sullivans-travels/",
+      "poster_url": "https://www.thegardencinema.co.uk/wp-content/uploads/films/Sullivan-s-Travels.jpg",
+      "showtimes": {
+        "2026-06-08": [
+          {
+            "time": "15:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5413981.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-29": [
+          {
+            "time": "18:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414194.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#972e1a",
+      "accent": "#d46753",
+      "letterboxd_url": "https://letterboxd.com/film/sullivans-travels/",
+      "letterboxd_rating": 3.99
     },
     {
       "id": "les-equilibristes",
@@ -3295,10 +3555,48 @@
       "seasons": [
         "Greek Salad"
       ],
-      "color": "#26971a",
-      "accent": "#5fd453",
+      "color": "#21329f",
+      "accent": "#6877d3",
       "letterboxd_url": "https://letterboxd.com/film/walking-a-tightrope/",
       "letterboxd_rating": 3.5
+    },
+    {
+      "id": "to-be-or-not-to-be",
+      "title": "To Be or Not to Be",
+      "rating": "U",
+      "runtime": 99,
+      "genre": "Other",
+      "year": "1942",
+      "director": "Ernst Lubitsch",
+      "cast": null,
+      "description": "As nervy as it is hilarious, this screwball masterpiece from Ernst Lubitsch stars Jack Benny and, in her final screen appearance,…",
+      "film_url": "https://www.thegardencinema.co.uk/film/to-be-or-not-to-be/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5391235.jpg",
+      "showtimes": {
+        "2026-06-12": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5413995.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-08-09": [
+          {
+            "time": "13:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414238.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#62a630",
+      "accent": "#a7d684",
+      "letterboxd_url": "https://letterboxd.com/film/to-be-or-not-to-be/",
+      "letterboxd_rating": 4.34
     },
     {
       "id": "the-london-international-animation-festival-presents-12-brilliant-animated-shorts-for-3-12-year-ol",
@@ -3340,8 +3638,8 @@
         "Films for the Family"
       ],
       "partner": "London International Animation Festival",
-      "color": "#9f2152",
-      "accent": "#d36891"
+      "color": "#971a74",
+      "accent": "#d453af"
     },
     {
       "id": "flemish-film-classics-malpertuis-qa",
@@ -3369,8 +3667,8 @@
           }
         ]
       },
-      "color": "#307fa6",
-      "accent": "#84bbd6"
+      "color": "#219f9e",
+      "accent": "#68d3d2"
     },
     {
       "id": "flemish-film-classics-kid",
@@ -3394,8 +3692,38 @@
           }
         ]
       },
-      "color": "#93971a",
-      "accent": "#cfd453"
+      "color": "#a68230",
+      "accent": "#d6bd84"
+    },
+    {
+      "id": "live-music-some-like-it-hot",
+      "title": "Some Like It Hot",
+      "rating": "12A",
+      "runtime": 122,
+      "genre": "Other",
+      "year": "1959",
+      "director": "Billy Wilder",
+      "cast": null,
+      "description": "One of the most beloved films of all time, this sizzling masterpiece by Billy Wilder set a new standard for Hollywood…",
+      "film_url": "https://www.thegardencinema.co.uk/film/live-music-some-like-it-hot/",
+      "poster_url": "https://www.thegardencinema.co.uk/wp-content/uploads/films/Live-music---Some-Like-It-Hot.jpg",
+      "showtimes": {
+        "2026-06-15": [
+          {
+            "time": "15:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414001.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#4d1a97",
+      "accent": "#8753d4",
+      "letterboxd_url": "https://letterboxd.com/film/some-like-it-hot/",
+      "letterboxd_rating": 4.27
     },
     {
       "id": "uk-premiere-identitad-identity-qa",
@@ -3437,8 +3765,125 @@
         "50 Years of Argentina on Film"
       ],
       "partner": "Alborada Films",
-      "color": "#7f219f",
-      "accent": "#b768d3"
+      "color": "#219f30",
+      "accent": "#68d375"
+    },
+    {
+      "id": "she-done-him-wrong",
+      "title": "She Done Him Wrong",
+      "rating": "PG",
+      "runtime": 66,
+      "genre": "Other",
+      "year": "1933",
+      "director": "Lowell Sherman",
+      "cast": null,
+      "description": "The screening on Friday 19 June will be introduced by film programmer, Caroline Cassin. She Done Him Wrong is centered around Lady…",
+      "film_url": "https://www.thegardencinema.co.uk/film/she-done-him-wrong/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5390251.jpg",
+      "showtimes": {
+        "2026-06-19": [
+          {
+            "time": "18:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414007.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "Intro"
+            ]
+          }
+        ],
+        "2026-08-05": [
+          {
+            "time": "16:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414222.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#a63044",
+      "accent": "#d68493",
+      "letterboxd_url": "https://letterboxd.com/film/she-done-him-wrong/",
+      "letterboxd_rating": 3.12
+    },
+    {
+      "id": "the-awful-truth",
+      "title": "The Awful Truth",
+      "rating": "U",
+      "runtime": 93,
+      "genre": "Other",
+      "year": "1937",
+      "director": "Leo McCarey",
+      "cast": null,
+      "description": "In this Oscar-winning farce, Cary Grant (in the role that first defined the Cary Grant persona) and Irene Dunne exude charm,…",
+      "film_url": "https://www.thegardencinema.co.uk/film/the-awful-truth/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5390383.jpg",
+      "showtimes": {
+        "2026-06-22": [
+          {
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414013.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-08-08": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414232.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#1a5597",
+      "accent": "#538fd4",
+      "letterboxd_url": "https://letterboxd.com/film/the-awful-truth/",
+      "letterboxd_rating": 3.89
+    },
+    {
+      "id": "midnight",
+      "title": "Midnight",
+      "rating": "U",
+      "runtime": 94,
+      "genre": "Other",
+      "year": "1939",
+      "director": "Mitchell Leisen",
+      "cast": null,
+      "description": "Screwball comedy doesn’t get any more effortlessly elegant and gleefully irreverent than this roulette wheel of romantic deception, gleaming with cunning…",
+      "film_url": "https://www.thegardencinema.co.uk/film/midnight/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5390536.jpg",
+      "showtimes": {
+        "2026-06-24": [
+          {
+            "time": "15:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414019.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-24": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414182.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#819f21",
+      "accent": "#b9d368",
+      "letterboxd_url": "https://letterboxd.com/film/midnight-1939/",
+      "letterboxd_rating": 3.94
     },
     {
       "id": "lessons-in-love",
@@ -3469,10 +3914,184 @@
         "Celebrating 70 years of LFS"
       ],
       "partner": "London Film School",
-      "color": "#30a665",
-      "accent": "#84d6a9",
+      "color": "#9f30a6",
+      "accent": "#d184d6",
       "letterboxd_url": "https://letterboxd.com/film/lessons-in-love/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "it-happened-one-night-90th-anniversary",
+      "title": "It Happened One Night (90th Anniversary)",
+      "rating": "U",
+      "runtime": 105,
+      "genre": "Other",
+      "year": "1934",
+      "director": "Frank Capra",
+      "cast": null,
+      "description": "Released just as the Hays Office was beginning to enforce the Production Code censoring ‘immoral’ movies, Frank Capra’s impish, daring comedy…",
+      "film_url": "https://www.thegardencinema.co.uk/film/it-happened-one-night-90th-anniversary/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/1690197.jpg",
+      "showtimes": {
+        "2026-06-28": [
+          {
+            "time": "17:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414046.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-26": [
+          {
+            "time": "14:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414188.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#1a976c",
+      "accent": "#53d4a7",
+      "letterboxd_url": "https://letterboxd.com/film/it-happened-one-night/",
+      "letterboxd_rating": 4.17
+    },
+    {
+      "id": "whats-up-doc",
+      "title": "What's Up, Doc?",
+      "rating": "U",
+      "runtime": 94,
+      "genre": "Other",
+      "year": "1972",
+      "director": "Peter Bogdanovich",
+      "cast": null,
+      "description": "On a trip to San Francisco to compete for a music grant, a young researcher meets a zany college dropout. Their…",
+      "film_url": "https://www.thegardencinema.co.uk/film/whats-up-doc/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5391272.jpg",
+      "showtimes": {
+        "2026-06-29": [
+          {
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414052.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#9f4f21",
+      "accent": "#d38f68",
+      "letterboxd_url": "https://letterboxd.com/film/whats-up-doc-1972/",
+      "letterboxd_rating": 4.11
+    },
+    {
+      "id": "the-palm-beach-story",
+      "title": "The Palm Beach Story",
+      "rating": "U",
+      "runtime": 88,
+      "genre": "Other",
+      "year": "1942",
+      "director": "Preston Sturges",
+      "cast": null,
+      "description": "This wild tale of wacky wedlock from Preston Sturges takes off like a rocket and never lets up. Joel McCrea and…",
+      "film_url": "https://www.thegardencinema.co.uk/film/the-palm-beach-story/",
+      "poster_url": "https://www.thegardencinema.co.uk/wp-content/uploads/films/The-Palm-Beach-Story.jpg",
+      "showtimes": {
+        "2026-07-06": [
+          {
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414093.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-08-18": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414272.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#3830a6",
+      "accent": "#8a84d6",
+      "letterboxd_url": "https://letterboxd.com/film/the-palm-beach-story/",
+      "letterboxd_rating": 3.8
+    },
+    {
+      "id": "the-philadelphia-story",
+      "title": "The Philadelphia Story",
+      "rating": "U",
+      "runtime": 112,
+      "genre": "Other",
+      "year": "1941",
+      "director": "George Cukor",
+      "cast": null,
+      "description": "Katharine Hepburn is Tracy Lord, the breezy socialite whose looming wedding to a dull self-made millionaire brings her ex-husband C.K. Dexter…",
+      "film_url": "https://www.thegardencinema.co.uk/film/the-philadelphia-story/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5390772.jpg",
+      "showtimes": {
+        "2026-07-08": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5447413.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-08-01": [
+          {
+            "time": "13:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414210.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#36971a",
+      "accent": "#6fd453",
+      "letterboxd_url": "https://letterboxd.com/film/the-philadelphia-story/",
+      "letterboxd_rating": 4.0
+    },
+    {
+      "id": "ball-of-fire",
+      "title": "Ball of Fire",
+      "rating": "U",
+      "runtime": 111,
+      "genre": "Other",
+      "year": "1941",
+      "director": "Howard Hawks",
+      "cast": null,
+      "description": "Barbara Stanwyck and Gary Cooper make sparks in this snappy screwball take on the Snow White tale. She’s a burlesque queen…",
+      "film_url": "https://www.thegardencinema.co.uk/film/ball-of-fire/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/4597785.jpg",
+      "showtimes": {
+        "2026-07-10": [
+          {
+            "time": "15:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414118.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Screwball Summer"
+      ],
+      "color": "#9f2162",
+      "accent": "#d3689f",
+      "letterboxd_url": "https://letterboxd.com/film/ball-of-fire/",
+      "letterboxd_rating": 3.99
     },
     {
       "id": "tutti-fruiti-lfs-favourites",
@@ -3503,8 +4122,8 @@
         "Celebrating 70 years of LFS"
       ],
       "partner": "London Film School",
-      "color": "#972e1a",
-      "accent": "#d46753"
+      "color": "#308ea6",
+      "accent": "#84c6d6"
     }
   ]
 }
