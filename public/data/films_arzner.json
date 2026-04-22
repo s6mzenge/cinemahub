@@ -1,7 +1,39 @@
 {
-  "scraped_at": "2026-04-22T13:03:42.487138+00:00",
+  "scraped_at": "2026-04-22T13:32:24.134271+00:00",
   "source": "thearzner.com",
   "films": [
+    {
+      "id": "night-stage-107368",
+      "title": "Night Stage",
+      "rating": "18",
+      "runtime": 117,
+      "genre": "New Release",
+      "description": "An actor and a politician start a secret affair and together discover their fetish for having sex in public places. The closer they get to their dream of fame, the more they feel the urge to put themselves at risk.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=107368",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/173573.jpg",
+      "showtimes": {
+        "2026-04-22": [
+          {
+            "time": "15:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176354.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-04-23": [
+          {
+            "time": "12:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176831.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/night-stage/",
+      "letterboxd_rating": 3.31
+    },
     {
       "id": "departures-174589",
       "title": "Departures",
@@ -13,12 +45,6 @@
       "poster_url": "https://images.savoysystems.co.uk/TAL/174584.jpg",
       "showtimes": {
         "2026-04-22": [
-          {
-            "time": "13:45",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176355.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
           {
             "time": "18:45",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176314.TcsSection_963",
@@ -90,42 +116,10 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/departures-2025/",
-      "letterboxd_rating": 3.36
-    },
-    {
-      "id": "night-stage-107368",
-      "title": "Night Stage",
-      "rating": "18",
-      "runtime": 117,
-      "genre": "New Release",
-      "description": "An actor and a politician start a secret affair and together discover their fetish for having sex in public places. The closer they get to their dream of fame, the more they feel the urge to put themselves at risk.",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=107368",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/173573.jpg",
-      "showtimes": {
-        "2026-04-22": [
-          {
-            "time": "15:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176354.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-04-23": [
-          {
-            "time": "12:45",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176831.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
       "color": "#e53935",
       "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/night-stage/",
-      "letterboxd_rating": 3.31
+      "letterboxd_url": "https://letterboxd.com/film/departures-2025/",
+      "letterboxd_rating": 3.36
     },
     {
       "id": "exclusive-preview-love-me-tender-176312",
