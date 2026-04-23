@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-23T11:05:04.746340+00:00",
+  "scraped_at": "2026-04-23T11:34:33.441276+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -186,12 +186,6 @@
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10667",
             "screen": null,
             "hoh": false
-          },
-          {
-            "time": "20:40",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10668",
-            "screen": null,
-            "hoh": false
           }
         ],
         "2026-04-26": [
@@ -226,12 +220,6 @@
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10695",
             "screen": null,
             "hoh": false
-          },
-          {
-            "time": "20:55",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10696",
-            "screen": null,
-            "hoh": false
           }
         ],
         "2026-04-28": [
@@ -264,12 +252,6 @@
           {
             "time": "18:00",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10698",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:45",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10699",
             "screen": null,
             "hoh": false
           }
@@ -618,14 +600,6 @@
             "hoh": false
           }
         ],
-        "2026-04-26": [
-          {
-            "time": "17:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10710",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-04-27": [
           {
             "time": "18:00",
@@ -702,6 +676,12 @@
           {
             "time": "18:15",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10713",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:55",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10768",
             "screen": null,
             "hoh": false
           }
@@ -867,6 +847,50 @@
       "letterboxd_rating": 3.43
     },
     {
+      "id": "akira",
+      "title": "AKIRA",
+      "rating": "15",
+      "runtime": 125,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Iconic and game-changing, AKIRA is the definitive anime masterpiece! Katsuhiro Otomo's landmark cyberpunk classic obliterated the boundaries of Japanese animation and forced the world to look into the future. AKIRA's arrival shattered traditional thinking, creating space for future generations of ground-breaking movies. July, 1988  World War III breaks loose. Then, in 2019, in megalopolis Tokyo... As the leader of a group of young robust delinquents, Kaneda spent his nights tearing through the ",
+      "film_url": "https://www.genesiscinema.co.uk/event/109047",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/109047_0.jpg",
+      "showtimes": {
+        "2026-04-25": [
+          {
+            "time": "20:40",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10767",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-04-26": [
+          {
+            "time": "17:10",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10765",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-04-29": [
+          {
+            "time": "20:45",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10766",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#ad1457",
+      "accent": "#f06292",
+      "letterboxd_url": "https://letterboxd.com/film/akira/",
+      "letterboxd_rating": 4.28
+    },
+    {
       "id": "exit-8",
       "title": "Exit 8",
       "rating": "15",
@@ -921,8 +945,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292",
+      "color": "#37474f",
+      "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/exit-8/",
       "letterboxd_rating": 3.14
     },
@@ -969,8 +993,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#4e342e",
+      "accent": "#8d6e63",
       "letterboxd_url": "https://letterboxd.com/film/hitpig/",
       "letterboxd_rating": 2.38
     },
@@ -1017,8 +1041,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/the-super-mario-galaxy-movie/",
       "letterboxd_rating": 2.93
     },
@@ -1045,8 +1069,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/the-wicker-man/",
       "letterboxd_rating": 3.97
     },
@@ -1099,8 +1123,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": null
     },
@@ -1127,8 +1151,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "shorts-showcase-block-1",
@@ -1153,8 +1177,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6",
+      "color": "#63971a",
+      "accent": "#9ed453",
       "letterboxd_url": "https://letterboxd.com/film/block-1/",
       "letterboxd_rating": null
     },
@@ -1181,8 +1205,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#9f2190",
+      "accent": "#d368c6",
       "letterboxd_url": "https://letterboxd.com/film/the-journey-within/",
       "letterboxd_rating": null
     },
@@ -1209,8 +1233,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6",
+      "color": "#30a692",
+      "accent": "#84d6c8",
       "letterboxd_url": "https://letterboxd.com/film/flip-the-script/",
       "letterboxd_rating": null
     },
@@ -1237,8 +1261,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#975e1a",
+      "accent": "#d49953"
     },
     {
       "id": "script-showcase",
@@ -1263,8 +1287,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#41219f",
+      "accent": "#8368d3"
     },
     {
       "id": "made-in-the-uk",
@@ -1289,8 +1313,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3"
+      "color": "#35a630",
+      "accent": "#88d684"
     },
     {
       "id": "through-a-queer-lens",
@@ -1315,8 +1339,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684"
+      "color": "#971a44",
+      "accent": "#d4537e"
     },
     {
       "id": "the-female-gaze",
@@ -1341,8 +1365,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e"
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "made-in-the-uk",
@@ -1367,8 +1391,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#9ca630",
+      "accent": "#cfd684"
     },
     {
       "id": "american-psycho-birthday-season",
@@ -1393,8 +1417,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#7d1a97",
+      "accent": "#b953d4"
     },
     {
       "id": "community-activism",
@@ -1419,8 +1443,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "this-is-africa",
@@ -1445,8 +1469,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "enter-the-void-birthday-season",
@@ -1471,8 +1495,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584"
+      "color": "#1a2597",
+      "accent": "#535ed4"
     },
     {
       "id": "8-1-2-birthday-season",
@@ -1497,8 +1521,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "crash-birthday-season",
@@ -1523,8 +1547,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#a6307e",
+      "accent": "#d684bb"
     },
     {
       "id": "the-seventh-seal-birthday-season",
@@ -1549,8 +1573,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     },
     {
       "id": "from-cable-street-to-brick-lane",
@@ -1575,8 +1599,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4",
+      "color": "#9f8021",
+      "accent": "#d3b868",
       "letterboxd_url": "https://letterboxd.com/film/from-cable-street-to-brick-lane/",
       "letterboxd_rating": null
     },
@@ -1603,8 +1627,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868",
+      "color": "#6530a6",
+      "accent": "#a984d6",
       "letterboxd_url": "https://letterboxd.com/film/preview/",
       "letterboxd_rating": null
     },
@@ -1631,8 +1655,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6"
+      "color": "#1a972f",
+      "accent": "#53d468"
     },
     {
       "id": "nil-by-mouth-birthday-season",
@@ -1657,8 +1681,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468"
+      "color": "#9f2132",
+      "accent": "#d36876"
     },
     {
       "id": "metropolis-birthday-season",
@@ -1683,8 +1707,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "flow-birthday-season",
@@ -1709,8 +1733,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6"
+      "color": "#73971a",
+      "accent": "#afd453"
     },
     {
       "id": "genesis-writers-group",
@@ -1735,8 +1759,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "the-holy-mountain-birthday-season",
@@ -1761,8 +1785,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "it-was-just-an-accident-birthday-season",
@@ -1787,8 +1811,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be"
+      "color": "#974e1a",
+      "accent": "#d48853"
     },
     {
       "id": "the-gleaners-i-birthday-season",
@@ -1813,8 +1837,8 @@
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853"
+      "color": "#31219f",
+      "accent": "#7568d3"
     },
     {
       "id": "big-trouble-in-little-china-birthday-season",
@@ -1839,8 +1863,8 @@
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3"
+      "color": "#44a630",
+      "accent": "#92d684"
     },
     {
       "id": "who-framed-roger-rabbit-birthday-season",
@@ -1865,8 +1889,8 @@
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#971a54",
+      "accent": "#d4538f"
     },
     {
       "id": "audition-birthday-season",
@@ -1891,8 +1915,8 @@
           }
         ]
       },
-      "color": "#971a54",
-      "accent": "#d4538f"
+      "color": "#21809f",
+      "accent": "#68b9d3"
     },
     {
       "id": "transformers-birthday-season",
@@ -1917,8 +1941,8 @@
           }
         ]
       },
-      "color": "#21809f",
-      "accent": "#68b9d3"
+      "color": "#a6a030",
+      "accent": "#d6d284"
     },
     {
       "id": "la-haine-birthday-season",
@@ -1943,8 +1967,8 @@
           }
         ]
       },
-      "color": "#a6a030",
-      "accent": "#d6d284"
+      "color": "#6d1a97",
+      "accent": "#a853d4"
     },
     {
       "id": "stalker-birthday-season",
@@ -1969,8 +1993,8 @@
           }
         ]
       },
-      "color": "#6d1a97",
-      "accent": "#a853d4"
+      "color": "#219f50",
+      "accent": "#68d390"
     },
     {
       "id": "good-time-birthday-season",
@@ -1995,8 +2019,8 @@
           }
         ]
       },
-      "color": "#219f50",
-      "accent": "#68d390"
+      "color": "#a63930",
+      "accent": "#d68b84"
     },
     {
       "id": "shrek-birthday-season",
@@ -2021,8 +2045,8 @@
           }
         ]
       },
-      "color": "#a63930",
-      "accent": "#d68b84"
+      "color": "#1a3597",
+      "accent": "#536ed4"
     },
     {
       "id": "spice-world-the-movie-birthday-season",
@@ -2047,8 +2071,8 @@
           }
         ]
       },
-      "color": "#1a3597",
-      "accent": "#536ed4"
+      "color": "#619f21",
+      "accent": "#9ed368"
     },
     {
       "id": "fist-of-fury-birthday-screening",
@@ -2073,8 +2097,8 @@
           }
         ]
       },
-      "color": "#619f21",
-      "accent": "#9ed368"
+      "color": "#a6308e",
+      "accent": "#d684c5"
     },
     {
       "id": "seven-samurai-birthday-season",
@@ -2099,8 +2123,8 @@
           }
         ]
       },
-      "color": "#a6308e",
-      "accent": "#d684c5"
+      "color": "#1a978c",
+      "accent": "#53d4c8"
     },
     {
       "id": "space-jam-birthday-season",
@@ -2125,8 +2149,8 @@
           }
         ]
       },
-      "color": "#1a978c",
-      "accent": "#53d4c8"
+      "color": "#9f7021",
+      "accent": "#d3aa68"
     },
     {
       "id": "how-to-have-sex-birthday-season",
@@ -2151,8 +2175,8 @@
           }
         ]
       },
-      "color": "#9f7021",
-      "accent": "#d3aa68"
+      "color": "#5630a6",
+      "accent": "#9f84d6"
     },
     {
       "id": "watership-down-birthday-season",
@@ -2177,8 +2201,8 @@
           }
         ]
       },
-      "color": "#5630a6",
-      "accent": "#9f84d6"
+      "color": "#1a971f",
+      "accent": "#53d458"
     },
     {
       "id": "toyko-story-birthday-season",
@@ -2203,8 +2227,8 @@
           }
         ]
       },
-      "color": "#1a971f",
-      "accent": "#53d458"
+      "color": "#9f2142",
+      "accent": "#d36884"
     },
     {
       "id": "weekend-birthday-season",
@@ -2229,8 +2253,8 @@
           }
         ]
       },
-      "color": "#9f2142",
-      "accent": "#d36884"
+      "color": "#3070a6",
+      "accent": "#84b1d6"
     },
     {
       "id": "yi-yi-birthday-season",
@@ -2255,8 +2279,8 @@
           }
         ]
       },
-      "color": "#3070a6",
-      "accent": "#84b1d6"
+      "color": "#83971a",
+      "accent": "#bfd453"
     },
     {
       "id": "petite-maman-birthday-season",
@@ -2281,8 +2305,8 @@
           }
         ]
       },
-      "color": "#83971a",
-      "accent": "#bfd453"
+      "color": "#8f219f",
+      "accent": "#c568d3"
     },
     {
       "id": "paris-texas-presented-by-the-cult-classic-collective-birthday-season",
@@ -2307,8 +2331,8 @@
           }
         ]
       },
-      "color": "#8f219f",
-      "accent": "#c568d3"
+      "color": "#30a674",
+      "accent": "#84d6b3"
     },
     {
       "id": "the-skin-i-live-in-birthday-seaon",
@@ -2333,8 +2357,8 @@
           }
         ]
       },
-      "color": "#30a674",
-      "accent": "#84d6b3"
+      "color": "#973e1a",
+      "accent": "#d47853"
     },
     {
       "id": "pather-panchali-birthday-season",
@@ -2359,8 +2383,8 @@
           }
         ]
       },
-      "color": "#973e1a",
-      "accent": "#d47853"
+      "color": "#21229f",
+      "accent": "#6869d3"
     },
     {
       "id": "scarface-birthday-season",
@@ -2385,8 +2409,8 @@
           }
         ]
       },
-      "color": "#21229f",
-      "accent": "#6869d3"
+      "color": "#53a630",
+      "accent": "#9cd684"
     },
     {
       "id": "star-wars-the-mandalorian-and-grogu",
@@ -2455,8 +2479,8 @@
           }
         ]
       },
-      "color": "#53a630",
-      "accent": "#9cd684",
+      "color": "#971a64",
+      "accent": "#d4539f",
       "letterboxd_url": "https://letterboxd.com/film/star-wars-the-mandalorian-and-grogu/",
       "letterboxd_rating": null
     },
@@ -2483,8 +2507,8 @@
           }
         ]
       },
-      "color": "#971a64",
-      "accent": "#d4539f",
+      "color": "#21909f",
+      "accent": "#68c6d3",
       "letterboxd_url": "https://letterboxd.com/film/super-8-1994/",
       "letterboxd_rating": 3.45
     },
@@ -2511,8 +2535,8 @@
           }
         ]
       },
-      "color": "#21909f",
-      "accent": "#68c6d3"
+      "color": "#a69130",
+      "accent": "#d6c884"
     },
     {
       "id": "out-of-the-shadows-into-the-streets",
@@ -2537,8 +2561,8 @@
           }
         ]
       },
-      "color": "#a69130",
-      "accent": "#d6c884"
+      "color": "#5d1a97",
+      "accent": "#9853d4"
     },
     {
       "id": "the-outsiders",
@@ -2563,8 +2587,8 @@
           }
         ]
       },
-      "color": "#5d1a97",
-      "accent": "#9853d4",
+      "color": "#219f40",
+      "accent": "#68d382",
       "letterboxd_url": "https://letterboxd.com/film/the-outsiders/",
       "letterboxd_rating": 3.68
     },
@@ -2591,8 +2615,8 @@
           }
         ]
       },
-      "color": "#219f40",
-      "accent": "#68d382",
+      "color": "#a63035",
+      "accent": "#d68488",
       "letterboxd_url": "https://letterboxd.com/film/ties-that-bind/",
       "letterboxd_rating": null
     },
@@ -2619,8 +2643,8 @@
           }
         ]
       },
-      "color": "#a63035",
-      "accent": "#d68488",
+      "color": "#1a4597",
+      "accent": "#537fd4",
       "letterboxd_url": "https://letterboxd.com/film/khartoum-2025/",
       "letterboxd_rating": 3.63
     },
@@ -2647,8 +2671,8 @@
           }
         ]
       },
-      "color": "#1a4597",
-      "accent": "#537fd4"
+      "color": "#719f21",
+      "accent": "#acd368"
     }
   ]
 }
