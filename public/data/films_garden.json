@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-24T14:05:57.979851+00:00",
+  "scraped_at": "2026-04-24T14:35:17.464273+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
     {
@@ -596,8 +596,8 @@
       },
       "color": "#6a1b9a",
       "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
-      "letterboxd_rating": 3.64
+      "letterboxd_url": "https://letterboxd.com/film/surviving-earth/",
+      "letterboxd_rating": null
     },
     {
       "id": "mary-poppins",
@@ -1069,6 +1069,14 @@
             ],
             "sold_out": true
           }
+        ],
+        "2026-05-30": [
+          {
+            "time": "15:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5465775.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
         ]
       },
       "seasons": [
@@ -1317,6 +1325,14 @@
             "screen": null,
             "hoh": false,
             "sold_out": true
+          }
+        ],
+        "2026-05-22": [
+          {
+            "time": "18:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5465689.TcsSection_638",
+            "screen": null,
+            "hoh": false
           }
         ]
       },
@@ -1632,6 +1648,17 @@
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5344130.TcsSection_638",
             "screen": null,
             "hoh": false
+          }
+        ],
+        "2026-05-22": [
+          {
+            "time": "16:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452243.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "Intro"
+            ]
           }
         ]
       },
@@ -2925,6 +2952,36 @@
       "letterboxd_rating": 3.48
     },
     {
+      "id": "i-wish-i-knew-2",
+      "title": "I Wish I Knew",
+      "rating": "18",
+      "runtime": 119,
+      "genre": "Other",
+      "year": "2010",
+      "director": "Jia Zhangke",
+      "cast": null,
+      "description": "The screening on 5 April was introduced by Chris Berry (KCL). After exploring China's social and historical transformations for over a…",
+      "film_url": "https://www.thegardencinema.co.uk/film/i-wish-i-knew-2/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/4966444.jpg",
+      "showtimes": {
+        "2026-05-23": [
+          {
+            "time": "15:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5465746.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Time Capsule: The Films of Jia Zhangke"
+      ],
+      "color": "#a69130",
+      "accent": "#d6c884",
+      "letterboxd_url": "https://letterboxd.com/film/i-wish-i-knew/",
+      "letterboxd_rating": 3.59
+    },
+    {
       "id": "bringing-up-baby",
       "title": "Bringing Up Baby",
       "rating": "U",
@@ -2957,8 +3014,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#a69130",
-      "accent": "#d6c884",
+      "color": "#5d1a97",
+      "accent": "#9853d4",
       "letterboxd_url": "https://letterboxd.com/film/bringing-up-baby/",
       "letterboxd_rating": 4.0
     },
@@ -2991,8 +3048,8 @@
         "50 Years of Argentina on Film"
       ],
       "partner": "Cinema Mentiré",
-      "color": "#5d1a97",
-      "accent": "#9853d4",
+      "color": "#219f40",
+      "accent": "#68d382",
       "letterboxd_url": "https://letterboxd.com/film/miss-mary/",
       "letterboxd_rating": 3.49
     },
@@ -3033,8 +3090,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#219f40",
-      "accent": "#68d382",
+      "color": "#a63035",
+      "accent": "#d68488",
       "letterboxd_url": "https://letterboxd.com/film/his-girl-friday/",
       "letterboxd_rating": 4.03
     },
@@ -3088,8 +3145,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#a63035",
-      "accent": "#d68488",
+      "color": "#1a4597",
+      "accent": "#537fd4",
       "letterboxd_url": "https://letterboxd.com/film/ernest-celestine/",
       "letterboxd_rating": 4.18
     },
@@ -3137,8 +3194,8 @@
       "seasons": [
         "50 Years of Argentina on Film"
       ],
-      "color": "#1a4597",
-      "accent": "#537fd4",
+      "color": "#719f21",
+      "accent": "#acd368",
       "letterboxd_url": "https://letterboxd.com/film/nine-queens/",
       "letterboxd_rating": 4.15
     },
@@ -3175,8 +3232,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#719f21",
-      "accent": "#acd368",
+      "color": "#a6309d",
+      "accent": "#d684d0",
       "letterboxd_url": "https://letterboxd.com/film/the-lady-eve/",
       "letterboxd_rating": 3.96
     },
@@ -3208,8 +3265,8 @@
       "seasons": [
         "Planting Seeds"
       ],
-      "color": "#a6309d",
-      "accent": "#d684d0",
+      "color": "#1a977c",
+      "accent": "#53d4b8",
       "letterboxd_url": "https://letterboxd.com/film/yanuni/",
       "letterboxd_rating": 3.53
     },
@@ -3242,8 +3299,8 @@
         "Celebrating 70 years of LFS"
       ],
       "partner": "London Film School",
-      "color": "#1a977c",
-      "accent": "#53d4b8",
+      "color": "#9f5f21",
+      "accent": "#d39d68",
       "letterboxd_url": "https://letterboxd.com/film/growing-pains-2026/",
       "letterboxd_rating": null
     },
@@ -3272,8 +3329,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#9f5f21",
-      "accent": "#d39d68",
+      "color": "#4730a6",
+      "accent": "#9484d6",
       "letterboxd_url": "https://letterboxd.com/film/the-thin-man/",
       "letterboxd_rating": 3.96
     },
@@ -3313,8 +3370,8 @@
       "seasons": [
         "50 Years of Argentina on Film"
       ],
-      "color": "#4730a6",
-      "accent": "#9484d6",
+      "color": "#26971a",
+      "accent": "#5fd453",
       "letterboxd_url": "https://letterboxd.com/film/the-secret-in-their-eyes/",
       "letterboxd_rating": 4.24
     },
@@ -3354,8 +3411,8 @@
       "seasons": [
         "50 Years of Argentina on Film"
       ],
-      "color": "#26971a",
-      "accent": "#5fd453",
+      "color": "#9f2152",
+      "accent": "#d36891",
       "letterboxd_url": "https://letterboxd.com/film/zama/",
       "letterboxd_rating": 3.65
     },
@@ -3392,8 +3449,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#9f2152",
-      "accent": "#d36891",
+      "color": "#307fa6",
+      "accent": "#84bbd6",
       "letterboxd_url": "https://letterboxd.com/film/adams-rib/",
       "letterboxd_rating": 3.75
     },
@@ -3430,8 +3487,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#307fa6",
-      "accent": "#84bbd6",
+      "color": "#93971a",
+      "accent": "#cfd453",
       "letterboxd_url": "https://letterboxd.com/film/arsenic-and-old-lace/",
       "letterboxd_rating": 3.97
     },
@@ -3471,8 +3528,8 @@
       "seasons": [
         "50 Years of Argentina on Film"
       ],
-      "color": "#93971a",
-      "accent": "#cfd453",
+      "color": "#7f219f",
+      "accent": "#b768d3",
       "letterboxd_url": "https://letterboxd.com/film/a-king-and-his-movie/",
       "letterboxd_rating": 3.6
     },
@@ -3502,8 +3559,8 @@
         ]
       },
       "partner": "CinemaItaliaUK",
-      "color": "#7f219f",
-      "accent": "#b768d3",
+      "color": "#30a665",
+      "accent": "#84d6a9",
       "letterboxd_url": "https://letterboxd.com/film/bellepoker/",
       "letterboxd_rating": null
     },
@@ -3540,8 +3597,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#30a665",
-      "accent": "#84d6a9",
+      "color": "#972e1a",
+      "accent": "#d46753",
       "letterboxd_url": "https://letterboxd.com/film/sullivans-travels/",
       "letterboxd_rating": 3.99
     },
@@ -3573,8 +3630,8 @@
       "seasons": [
         "Greek Salad"
       ],
-      "color": "#972e1a",
-      "accent": "#d46753",
+      "color": "#21329f",
+      "accent": "#6877d3",
       "letterboxd_url": "https://letterboxd.com/film/walking-a-tightrope/",
       "letterboxd_rating": 3.5
     },
@@ -3611,8 +3668,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#21329f",
-      "accent": "#6877d3",
+      "color": "#62a630",
+      "accent": "#a7d684",
       "letterboxd_url": "https://letterboxd.com/film/to-be-or-not-to-be/",
       "letterboxd_rating": 4.34
     },
@@ -3656,8 +3713,8 @@
         "Films for the Family"
       ],
       "partner": "London International Animation Festival",
-      "color": "#62a630",
-      "accent": "#a7d684"
+      "color": "#971a74",
+      "accent": "#d453af"
     },
     {
       "id": "flemish-film-classics-malpertuis-qa",
@@ -3685,8 +3742,8 @@
           }
         ]
       },
-      "color": "#971a74",
-      "accent": "#d453af"
+      "color": "#219f9e",
+      "accent": "#68d3d2"
     },
     {
       "id": "flemish-film-classics-kid",
@@ -3710,8 +3767,8 @@
           }
         ]
       },
-      "color": "#219f9e",
-      "accent": "#68d3d2"
+      "color": "#a68230",
+      "accent": "#d6bd84"
     },
     {
       "id": "live-music-some-like-it-hot",
@@ -3749,8 +3806,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#a68230",
-      "accent": "#d6bd84",
+      "color": "#4d1a97",
+      "accent": "#8753d4",
       "letterboxd_url": "https://letterboxd.com/film/some-like-it-hot/",
       "letterboxd_rating": 4.27
     },
@@ -3794,8 +3851,8 @@
         "50 Years of Argentina on Film"
       ],
       "partner": "Alborada Films",
-      "color": "#4d1a97",
-      "accent": "#8753d4"
+      "color": "#219f30",
+      "accent": "#68d375"
     },
     {
       "id": "she-done-him-wrong",
@@ -3833,8 +3890,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#219f30",
-      "accent": "#68d375",
+      "color": "#a63044",
+      "accent": "#d68493",
       "letterboxd_url": "https://letterboxd.com/film/she-done-him-wrong/",
       "letterboxd_rating": 3.12
     },
@@ -3871,8 +3928,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#a63044",
-      "accent": "#d68493",
+      "color": "#1a5597",
+      "accent": "#538fd4",
       "letterboxd_url": "https://letterboxd.com/film/the-awful-truth/",
       "letterboxd_rating": 3.89
     },
@@ -3909,8 +3966,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#1a5597",
-      "accent": "#538fd4",
+      "color": "#819f21",
+      "accent": "#b9d368",
       "letterboxd_url": "https://letterboxd.com/film/midnight-1939/",
       "letterboxd_rating": 3.94
     },
@@ -3943,8 +4000,8 @@
         "Celebrating 70 years of LFS"
       ],
       "partner": "London Film School",
-      "color": "#819f21",
-      "accent": "#b9d368",
+      "color": "#9f30a6",
+      "accent": "#d184d6",
       "letterboxd_url": "https://letterboxd.com/film/lessons-in-love/",
       "letterboxd_rating": null
     },
@@ -3981,8 +4038,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#9f30a6",
-      "accent": "#d184d6",
+      "color": "#1a976c",
+      "accent": "#53d4a7",
       "letterboxd_url": "https://letterboxd.com/film/it-happened-one-night/",
       "letterboxd_rating": 4.17
     },
@@ -4011,8 +4068,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#1a976c",
-      "accent": "#53d4a7",
+      "color": "#9f4f21",
+      "accent": "#d38f68",
       "letterboxd_url": "https://letterboxd.com/film/whats-up-doc-1972/",
       "letterboxd_rating": 4.11
     },
@@ -4049,8 +4106,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#9f4f21",
-      "accent": "#d38f68",
+      "color": "#3830a6",
+      "accent": "#8a84d6",
       "letterboxd_url": "https://letterboxd.com/film/the-palm-beach-story/",
       "letterboxd_rating": 3.8
     },
@@ -4087,8 +4144,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#3830a6",
-      "accent": "#8a84d6",
+      "color": "#36971a",
+      "accent": "#6fd453",
       "letterboxd_url": "https://letterboxd.com/film/the-philadelphia-story/",
       "letterboxd_rating": 4.0
     },
@@ -4117,8 +4174,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#36971a",
-      "accent": "#6fd453",
+      "color": "#9f2162",
+      "accent": "#d3689f",
       "letterboxd_url": "https://letterboxd.com/film/ball-of-fire/",
       "letterboxd_rating": 3.99
     },
@@ -4151,8 +4208,8 @@
         "Celebrating 70 years of LFS"
       ],
       "partner": "London Film School",
-      "color": "#9f2162",
-      "accent": "#d3689f"
+      "color": "#308ea6",
+      "accent": "#84c6d6"
     }
   ]
 }
