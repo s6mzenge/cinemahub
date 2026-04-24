@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-24T09:02:57.599713+00:00",
+  "scraped_at": "2026-04-24T09:32:45.217371+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
@@ -405,18 +405,6 @@
           {
             "time": "17:55",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626117",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K",
-              "SUB"
-            ]
-          }
-        ],
-        "2026-05-21": [
-          {
-            "time": "17:45",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626120",
             "screen": null,
             "hoh": false,
             "tags": [
@@ -11011,6 +10999,38 @@
       "accent": "#87d368",
       "letterboxd_url": "https://letterboxd.com/film/haxan/",
       "letterboxd_rating": 4.04
+    },
+    {
+      "id": "private-hire",
+      "title": "Private Hire",
+      "rating": "NOT RATED",
+      "runtime": 110,
+      "genre": "Other",
+      "year": null,
+      "country": null,
+      "director": null,
+      "cast": null,
+      "description": "",
+      "film_url": "https://princecharlescinema.com/film/31616961/private-hire",
+      "poster_url": "https://princecharlescinema.com/wp-content/plugins/jacro-plugin/images/default.png",
+      "showtimes": {
+        "2026-12-02": [
+          {
+            "time": "12:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626384",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "14:55",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626385",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#a63074",
+      "accent": "#d684b3"
     }
   ]
 }
