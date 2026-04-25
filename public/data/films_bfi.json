@@ -1,7 +1,37 @@
 {
-  "scraped_at": "2026-04-25T05:03:42.363595+00:00",
+  "scraped_at": "2026-04-25T05:33:49.298740+00:00",
   "source": "whatson.bfi.org.uk",
   "films": [
+    {
+      "id": "25-and-under-introduction-to-guillermo-del-toro",
+      "title": "25 and Under: An Introduction to Guillermo del Toro",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "Aged 25 or under? Join us for a free introduction to Academy Award-winning director Guillermo del Toro.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=25-and-under-introduction-to-guillermo-del-toro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/pans-labyrinth-03.jpeg",
+      "showtimes": {
+        "2026-05-13": [
+          {
+            "time": "18:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EE83FE60-CC72-4E63-A4EA-5B63B6ADA02E&BOparam::WScontent::loadArticle::context_id=3EB904A4-FE78-4D53-A1CD-15D06434F44B",
+            "screen": "Blue Room",
+            "hoh": false,
+            "tags": [
+              "25&Under",
+              "Guillermo del Toro",
+              "Discussion"
+            ]
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60"
+    },
     {
       "id": "all-about-eve-may-2026",
       "title": "All About Eve",
@@ -22,8 +52,8 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Big screen classics",
-              "Digital"
+              "Digital",
+              "Big screen classics"
             ]
           }
         ],
@@ -52,40 +82,41 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/all-about-eve/",
       "letterboxd_rating": 4.36
     },
     {
-      "id": "25-and-under-introduction-to-guillermo-del-toro",
-      "title": "25 and Under: An Introduction to Guillermo del Toro",
-      "rating": "TBC",
-      "runtime": null,
+      "id": "arco-funday",
+      "title": "Funday: Arco",
+      "rating": "PG",
+      "runtime": 89,
       "genre": "Other",
-      "year": null,
-      "director": null,
+      "year": 2025,
+      "director": "Ugo Bienvenu",
       "cast": null,
-      "description": "Aged 25 or under? Join us for a free introduction to Academy Award-winning director Guillermo del Toro.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=25-and-under-introduction-to-guillermo-del-toro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/pans-labyrinth-03.jpeg",
+      "description": "A wildly colourful adventure that is one of this year’s Oscar-nominated animated features.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=arco-funday&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/arco-01.jpeg",
       "showtimes": {
-        "2026-05-13": [
+        "2026-05-30": [
           {
-            "time": "18:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EE83FE60-CC72-4E63-A4EA-5B63B6ADA02E&BOparam::WScontent::loadArticle::context_id=3EB904A4-FE78-4D53-A1CD-15D06434F44B",
-            "screen": "Blue Room",
+            "time": "12:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D4D5471A-AF54-46E1-BC86-F1E3EE4904E5&BOparam::WScontent::loadArticle::context_id=9918EF29-C303-4DCC-9DD8-3874E303D71F",
+            "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "25&Under",
-              "Guillermo del Toro",
-              "Discussion"
+              "Digital",
+              "Families"
             ]
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff"
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/arco/",
+      "letterboxd_rating": 3.89
     },
     {
       "id": "an-american-tail-40th-anniversary",
@@ -113,41 +144,10 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/an-american-tail/",
-      "letterboxd_rating": 3.54
-    },
-    {
-      "id": "arco-funday",
-      "title": "Funday: Arco",
-      "rating": "PG",
-      "runtime": 89,
-      "genre": "Other",
-      "year": 2025,
-      "director": "Ugo Bienvenu",
-      "cast": null,
-      "description": "A wildly colourful adventure that is one of this year’s Oscar-nominated animated features.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=arco-funday&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/arco-01.jpeg",
-      "showtimes": {
-        "2026-05-30": [
-          {
-            "time": "12:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D4D5471A-AF54-46E1-BC86-F1E3EE4904E5&BOparam::WScontent::loadArticle::context_id=9918EF29-C303-4DCC-9DD8-3874E303D71F",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Families",
-              "Digital"
-            ]
-          }
-        ]
-      },
       "color": "#00897b",
       "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/arco/",
-      "letterboxd_rating": 3.89
+      "letterboxd_url": "https://letterboxd.com/film/an-american-tail/",
+      "letterboxd_rating": 3.54
     },
     {
       "id": "at-midnight-ill-take-your-soul-intro",
@@ -169,10 +169,10 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Digital",
               "Introduction",
-              "Brazil on Film",
-              "English subtitles"
+              "English subtitles",
+              "Digital",
+              "Brazil on Film"
             ]
           }
         ]
@@ -202,8 +202,8 @@
             "screen": "Screen NFT4",
             "hoh": false,
             "tags": [
-              "Big screen classics",
-              "Digital"
+              "Digital",
+              "Big screen classics"
             ]
           }
         ],
@@ -226,8 +226,8 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Digital",
-              "Big screen classics"
+              "Big screen classics",
+              "Digital"
             ]
           }
         ]
@@ -257,9 +257,9 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "English subtitles",
               "Brazil on Film",
-              "Digital"
+              "Digital",
+              "English subtitles"
             ]
           }
         ]
@@ -268,6 +268,38 @@
       "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/at-midnight-ill-take-your-soul/",
       "letterboxd_rating": 3.57
+    },
+    {
+      "id": "bait-2026",
+      "title": "Bait",
+      "rating": "15",
+      "runtime": 89,
+      "genre": "Other",
+      "year": 2019,
+      "director": "Mark Jenkin",
+      "cast": "Edward Rowe, Mary Woodvine, Simon Shepherd",
+      "description": "The debut film from Cornish auteur Mark Jenkin explores gentrification through 16mm monochrome.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=bait-2026&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/bait-02.jpeg",
+      "showtimes": {
+        "2026-05-02": [
+          {
+            "time": "12:20",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B2073FF5-3E40-41AA-9595-D158E657F4BB&BOparam::WScontent::loadArticle::context_id=A83EB9F2-7BE1-4778-BD7D-FF7F94B21C23",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Mark Jenkin’s Cornish trilogy",
+              "35mm",
+              "Cornish trilogy"
+            ]
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/bait-2019/",
+      "letterboxd_rating": 3.86
     },
     {
       "id": "bait-intro",
@@ -297,8 +329,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/bait-2019/",
       "letterboxd_rating": 3.86
     },
@@ -327,40 +359,51 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
-      "id": "bait-2026",
-      "title": "Bait",
+      "id": "being-john-malkovich",
+      "title": "Being John Malkovich",
       "rating": "15",
-      "runtime": 89,
+      "runtime": 113,
       "genre": "Other",
-      "year": 2019,
-      "director": "Mark Jenkin",
-      "cast": "Edward Rowe, Mary Woodvine, Simon Shepherd",
-      "description": "The debut film from Cornish auteur Mark Jenkin explores gentrification through 16mm monochrome.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=bait-2026&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/bait-02.jpeg",
+      "year": 1999,
+      "director": "Spike Jonze",
+      "cast": "John Cusack, Cameron Diaz, Catherine Keener, John Malkovich",
+      "description": "A secret doorway into a movie star’s mind turns fantasy into moral chaos in this deliriously inventive satire of identity, ambition and control.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=being-john-malkovich&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/being-john-malkovich-01.jpeg",
       "showtimes": {
-        "2026-05-02": [
+        "2026-05-10": [
           {
-            "time": "12:20",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B2073FF5-3E40-41AA-9595-D158E657F4BB&BOparam::WScontent::loadArticle::context_id=A83EB9F2-7BE1-4778-BD7D-FF7F94B21C23",
+            "time": "18:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EA2576F5-8EFE-477F-85EA-969A5F353606&BOparam::WScontent::loadArticle::context_id=E1F52685-161B-4078-9752-5C8E81190D66",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "35mm",
+              "Big screen classics"
+            ]
+          }
+        ],
+        "2026-05-28": [
+          {
+            "time": "20:45",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EA2576F5-8EFE-477F-85EA-969A5F353606&BOparam::WScontent::loadArticle::context_id=424D2990-1B4D-47C0-B3E8-C1AC533822E0",
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Mark Jenkin’s Cornish trilogy",
-              "35mm",
-              "Cornish trilogy"
+              "Big screen classics",
+              "35mm"
             ]
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
-      "letterboxd_url": "https://letterboxd.com/film/bait-2019/",
-      "letterboxd_rating": 3.86
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
+      "letterboxd_url": "https://letterboxd.com/film/being-john-malkovich/",
+      "letterboxd_rating": 4.07
     },
     {
       "id": "bend-it-like-beckham-2026",
@@ -388,8 +431,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#ad1457",
+      "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/bend-it-like-beckham/",
       "letterboxd_rating": 3.47
     },
@@ -415,60 +458,17 @@
             "tags": [
               "Queer East Festival",
               "Introduction",
-              "English subtitles",
               "Digital",
-              "Queer East 2026"
-            ]
-          }
-        ]
-      },
-      "color": "#ad1457",
-      "accent": "#f06292",
-      "letterboxd_url": "https://letterboxd.com/film/between-goodbyes/",
-      "letterboxd_rating": 3.72
-    },
-    {
-      "id": "being-john-malkovich",
-      "title": "Being John Malkovich",
-      "rating": "15",
-      "runtime": 113,
-      "genre": "Other",
-      "year": 1999,
-      "director": "Spike Jonze",
-      "cast": "John Cusack, Cameron Diaz, Catherine Keener, John Malkovich",
-      "description": "A secret doorway into a movie star’s mind turns fantasy into moral chaos in this deliriously inventive satire of identity, ambition and control.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=being-john-malkovich&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/being-john-malkovich-01.jpeg",
-      "showtimes": {
-        "2026-05-10": [
-          {
-            "time": "18:10",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EA2576F5-8EFE-477F-85EA-969A5F353606&BOparam::WScontent::loadArticle::context_id=E1F52685-161B-4078-9752-5C8E81190D66",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Big screen classics",
-              "35mm"
-            ]
-          }
-        ],
-        "2026-05-28": [
-          {
-            "time": "20:45",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EA2576F5-8EFE-477F-85EA-969A5F353606&BOparam::WScontent::loadArticle::context_id=424D2990-1B4D-47C0-B3E8-C1AC533822E0",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Big screen classics",
-              "35mm"
+              "Queer East 2026",
+              "English subtitles"
             ]
           }
         ]
       },
       "color": "#37474f",
       "accent": "#78909c",
-      "letterboxd_url": "https://letterboxd.com/film/being-john-malkovich/",
-      "letterboxd_rating": 4.07
+      "letterboxd_url": "https://letterboxd.com/film/between-goodbyes/",
+      "letterboxd_rating": 3.72
     },
     {
       "id": "black-god-white-devil",
@@ -561,8 +561,8 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Digital",
-              "Guillermo del Toro"
+              "Guillermo del Toro",
+              "Digital"
             ]
           }
         ],
@@ -619,9 +619,9 @@
             "hoh": false,
             "tags": [
               "New releases",
-              "Digital",
+              "releases",
               "English subtitles",
-              "releases"
+              "Digital"
             ]
           }
         ],
@@ -666,8 +666,8 @@
             "hoh": false,
             "tags": [
               "Previews and events",
-              "Introduction",
-              "Digital"
+              "Digital",
+              "Introduction"
             ]
           }
         ]
@@ -697,12 +697,12 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
+              "English subtitles",
+              "Audio description",
               "Digital",
               "Closed captions",
-              "Audio description",
               "Families",
-              "Brazil on Film",
-              "English subtitles"
+              "Brazil on Film"
             ]
           }
         ],
@@ -713,12 +713,12 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "Closed captions",
               "Digital",
+              "Families",
+              "Audio description",
               "Brazil on Film",
               "English subtitles",
-              "Audio description",
-              "Families"
+              "Closed captions"
             ]
           }
         ]
@@ -748,10 +748,10 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Brazil on Film",
               "Introduction",
+              "Digital",
               "English subtitles",
-              "Digital"
+              "Brazil on Film"
             ]
           }
         ]
@@ -760,6 +760,118 @@
       "accent": "#9ed453",
       "letterboxd_url": "https://letterboxd.com/film/bye-bye-brazil/",
       "letterboxd_rating": 3.77
+    },
+    {
+      "id": "bye-bye-brazil",
+      "title": "Bye Bye Brazil",
+      "rating": "TBC",
+      "runtime": 100,
+      "genre": "Other",
+      "year": 1979,
+      "director": "Carlos Diegues",
+      "cast": "José Wilker, Betty Faria, Fábio Jr",
+      "description": "A bittersweet journey through a nation where modernity erases popular traditions.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=bye-bye-brazil&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/bye-bye-brazil-01.jpeg",
+      "showtimes": {
+        "2026-05-09": [
+          {
+            "time": "18:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AEC3E0A3-4C82-46D9-9765-0AC19E633E8D&BOparam::WScontent::loadArticle::context_id=3CDB13A3-9EC7-41A7-B53B-435D80EFE96A",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Brazil on Film",
+              "Digital",
+              "English subtitles"
+            ]
+          }
+        ]
+      },
+      "color": "#9f2190",
+      "accent": "#d368c6",
+      "letterboxd_url": "https://letterboxd.com/film/bye-bye-brazil/",
+      "letterboxd_rating": 3.77
+    },
+    {
+      "id": "cannibals-4k-restoration-uk-premiere",
+      "title": "UK Premiere of 4K Restoration: The Cannibals",
+      "rating": "15",
+      "runtime": 88,
+      "genre": "Other",
+      "year": 1969,
+      "director": "Liliana Cavani",
+      "cast": "Britt Ekland, Pierre Clémenti, Tomas Milian",
+      "description": "A young woman rebels against the established power in this newly restored widescreen piece, saturated by counterculture aesthetic and Ennio Morricone’s powerful score.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=cannibals-4k-restoration-uk-premiere&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/cannibals-01.jpeg",
+      "showtimes": {
+        "2026-05-26": [
+          {
+            "time": "18:25",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=63F2421F-CB19-4C17-B7DD-19747970F077&BOparam::WScontent::loadArticle::context_id=9521AB77-8E21-4622-8671-A1335BD68251",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Regular programme",
+              "Restored",
+              "English subtitles",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#30a692",
+      "accent": "#84d6c8",
+      "letterboxd_url": "https://letterboxd.com/film/the-year-of-the-cannibals/",
+      "letterboxd_rating": 3.4
+    },
+    {
+      "id": "chuck-billy-marvelous-guava-tree",
+      "title": "Chuck Billy and the Marvelous Guava Tree",
+      "rating": "Advised U",
+      "runtime": 99,
+      "genre": "Other",
+      "year": 2024,
+      "director": "Fernando Fraiha",
+      "cast": "Isaac Amendoim, Pedro Dantas, Anna Julia Dias",
+      "description": "A young boy decides to protect a beloved tree from an avaricious property developer.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=chuck-billy-marvelous-guava-tree&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/chuck-billy-and-marvelous-guava-tree-01.jpeg",
+      "showtimes": {
+        "2026-05-10": [
+          {
+            "time": "12:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4B0566C7-344F-44E4-8F47-792E3A553350&BOparam::WScontent::loadArticle::context_id=9EE02CCE-3E71-4AF4-9E2C-25902D5EE3A1",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Brazil on Film",
+              "Families",
+              "English subtitles"
+            ]
+          }
+        ],
+        "2026-05-23": [
+          {
+            "time": "12:20",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4B0566C7-344F-44E4-8F47-792E3A553350&BOparam::WScontent::loadArticle::context_id=6FD89DA8-E6B1-4526-96DD-98BF0269AD67",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Families",
+              "English subtitles",
+              "Brazil on Film"
+            ]
+          }
+        ]
+      },
+      "color": "#975e1a",
+      "accent": "#d49953",
+      "letterboxd_url": "https://letterboxd.com/film/chuck-billy-and-the-marvelous-guava-tree/",
+      "letterboxd_rating": 3.88
     },
     {
       "id": "cinema-novo",
@@ -794,96 +906,17 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "English subtitles",
               "Digital",
+              "English subtitles",
               "Brazil on Film"
             ]
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6",
+      "color": "#41219f",
+      "accent": "#8368d3",
       "letterboxd_url": "https://letterboxd.com/film/cinema-novo-2016/",
       "letterboxd_rating": 3.55
-    },
-    {
-      "id": "chuck-billy-marvelous-guava-tree",
-      "title": "Chuck Billy and the Marvelous Guava Tree",
-      "rating": "Advised U",
-      "runtime": 99,
-      "genre": "Other",
-      "year": 2024,
-      "director": "Fernando Fraiha",
-      "cast": "Isaac Amendoim, Pedro Dantas, Anna Julia Dias",
-      "description": "A young boy decides to protect a beloved tree from an avaricious property developer.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=chuck-billy-marvelous-guava-tree&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/chuck-billy-and-marvelous-guava-tree-01.jpeg",
-      "showtimes": {
-        "2026-05-10": [
-          {
-            "time": "12:15",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4B0566C7-344F-44E4-8F47-792E3A553350&BOparam::WScontent::loadArticle::context_id=9EE02CCE-3E71-4AF4-9E2C-25902D5EE3A1",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "English subtitles",
-              "Families",
-              "Digital",
-              "Brazil on Film"
-            ]
-          }
-        ],
-        "2026-05-23": [
-          {
-            "time": "12:20",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4B0566C7-344F-44E4-8F47-792E3A553350&BOparam::WScontent::loadArticle::context_id=6FD89DA8-E6B1-4526-96DD-98BF0269AD67",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "English subtitles",
-              "Digital",
-              "Families",
-              "Brazil on Film"
-            ]
-          }
-        ]
-      },
-      "color": "#30a692",
-      "accent": "#84d6c8",
-      "letterboxd_url": "https://letterboxd.com/film/chuck-billy-and-the-marvelous-guava-tree/",
-      "letterboxd_rating": 3.88
-    },
-    {
-      "id": "bye-bye-brazil",
-      "title": "Bye Bye Brazil",
-      "rating": "TBC",
-      "runtime": 100,
-      "genre": "Other",
-      "year": 1979,
-      "director": "Carlos Diegues",
-      "cast": "José Wilker, Betty Faria, Fábio Jr",
-      "description": "A bittersweet journey through a nation where modernity erases popular traditions.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=bye-bye-brazil&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/bye-bye-brazil-01.jpeg",
-      "showtimes": {
-        "2026-05-09": [
-          {
-            "time": "18:15",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AEC3E0A3-4C82-46D9-9765-0AC19E633E8D&BOparam::WScontent::loadArticle::context_id=3CDB13A3-9EC7-41A7-B53B-435D80EFE96A",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "Digital",
-              "Brazil on Film",
-              "English subtitles"
-            ]
-          }
-        ]
-      },
-      "color": "#975e1a",
-      "accent": "#d49953",
-      "letterboxd_url": "https://letterboxd.com/film/bye-bye-brazil/",
-      "letterboxd_rating": 3.77
     },
     {
       "id": "city-of-god-2026",
@@ -905,9 +938,9 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "English subtitles",
+              "Digital",
               "Brazil on Film",
-              "Digital"
+              "English subtitles"
             ]
           }
         ],
@@ -918,8 +951,8 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Brazil on Film",
               "Digital",
+              "Brazil on Film",
               "English subtitles"
             ]
           }
@@ -931,15 +964,15 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Brazil on Film",
+              "English subtitles",
               "Digital",
-              "English subtitles"
+              "Brazil on Film"
             ]
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#35a630",
+      "accent": "#88d684",
       "letterboxd_url": "https://letterboxd.com/film/city-of-god/",
       "letterboxd_rating": 4.57
     },
@@ -964,14 +997,14 @@
             "hoh": false,
             "tags": [
               "UK Asian Film Festival",
-              "Discussion",
-              "UKAFF 2026"
+              "UKAFF 2026",
+              "Discussion"
             ]
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684"
+      "color": "#971a44",
+      "accent": "#d4537e"
     },
     {
       "id": "creed-2026",
@@ -994,49 +1027,17 @@
             "hoh": false,
             "tags": [
               "The Cinematic Life of Boxing",
-              "Descriptive subtitles (open captions)",
+              "Cinematic Life of Boxing",
               "Digital",
-              "Cinematic Life of Boxing"
-            ]
-          }
-        ]
-      },
-      "color": "#971a44",
-      "accent": "#d4537e",
-      "letterboxd_url": "https://letterboxd.com/film/creed/",
-      "letterboxd_rating": 3.81
-    },
-    {
-      "id": "crimson-peak-qanda",
-      "title": "Crimson Peak",
-      "rating": "15",
-      "runtime": 119,
-      "genre": "Other",
-      "year": 2015,
-      "director": "Guillermo del Toro",
-      "cast": "Mia Wasikowska, Tom Hiddleston, Jessica Chastain, Charlie Hunnam",
-      "description": "An under-appreciated gothic gem ripe for reappraisal and a companion piece to Frankenstein.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=crimson-peak-qanda&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/crimson-peak-01.jpeg",
-      "showtimes": {
-        "2026-05-09": [
-          {
-            "time": "14:45",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7D6334EF-91AD-40B2-897C-D2C274847E3C&BOparam::WScontent::loadArticle::context_id=9F7B8F94-5D84-45CF-B430-DBB6F55A7FD8",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Q&A",
-              "Guillermo del Toro",
-              "Digital"
+              "Descriptive subtitles (open captions)"
             ]
           }
         ]
       },
       "color": "#21709f",
       "accent": "#68abd3",
-      "letterboxd_url": "https://letterboxd.com/film/crimson-peak/",
-      "letterboxd_rating": 3.46
+      "letterboxd_url": "https://letterboxd.com/film/creed/",
+      "letterboxd_rating": 3.81
     },
     {
       "id": "crimson-peak",
@@ -1058,14 +1059,46 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Digital",
-              "Guillermo del Toro"
+              "Guillermo del Toro",
+              "Digital"
             ]
           }
         ]
       },
       "color": "#9ca630",
       "accent": "#cfd684",
+      "letterboxd_url": "https://letterboxd.com/film/crimson-peak/",
+      "letterboxd_rating": 3.46
+    },
+    {
+      "id": "crimson-peak-qanda",
+      "title": "Crimson Peak",
+      "rating": "15",
+      "runtime": 119,
+      "genre": "Other",
+      "year": 2015,
+      "director": "Guillermo del Toro",
+      "cast": "Mia Wasikowska, Tom Hiddleston, Jessica Chastain, Charlie Hunnam",
+      "description": "An under-appreciated gothic gem ripe for reappraisal and a companion piece to Frankenstein.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=crimson-peak-qanda&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/crimson-peak-01.jpeg",
+      "showtimes": {
+        "2026-05-09": [
+          {
+            "time": "14:45",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7D6334EF-91AD-40B2-897C-D2C274847E3C&BOparam::WScontent::loadArticle::context_id=9F7B8F94-5D84-45CF-B430-DBB6F55A7FD8",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Guillermo del Toro",
+              "Digital",
+              "Q&A"
+            ]
+          }
+        ]
+      },
+      "color": "#7d1a97",
+      "accent": "#b953d4",
       "letterboxd_url": "https://letterboxd.com/film/crimson-peak/",
       "letterboxd_rating": 3.46
     },
@@ -1090,18 +1123,101 @@
             "hoh": false,
             "tags": [
               "Re-releases",
-              "British Sign Language (BSL) events",
-              "Releases",
-              "Descriptive subtitles (open captions)",
-              "Digital",
               "Introduction",
+              "Descriptive subtitles (open captions)",
+              "Releases",
+              "British Sign Language (BSL) events",
+              "English subtitles",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#219f60",
+      "accent": "#68d39d",
+      "letterboxd_url": "https://letterboxd.com/film/cronos/",
+      "letterboxd_rating": 3.42
+    },
+    {
+      "id": "cronos-2026",
+      "title": "Cronos",
+      "rating": "15",
+      "runtime": 92,
+      "genre": "Other",
+      "year": 1992,
+      "director": "Guillermo del Toro",
+      "cast": "Federico Luppi, Ron Perlman, Claudio Brook, Margarita Isabel",
+      "description": "Del Toro’s debut is a stylish, original and politically potent vampire fable.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=cronos-2026&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/cronos-01.jpeg",
+      "showtimes": {
+        "2026-05-15": [
+          {
+            "time": "14:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AA0C92CE-3931-478A-9A04-D7734C702C5C&BOparam::WScontent::loadArticle::context_id=38AAF094-18D4-4D60-8A4F-201D167202F6",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Re-releases",
+              "Digital",
+              "English subtitles",
+              "Releases"
+            ]
+          },
+          {
+            "time": "18:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AA0C92CE-3931-478A-9A04-D7734C702C5C&BOparam::WScontent::loadArticle::context_id=AB2B756B-3A11-45F0-BB95-0B778FE46126",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Re-releases",
+              "English subtitles",
+              "Releases",
+              "Digital"
+            ]
+          },
+          {
+            "time": "21:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AA0C92CE-3931-478A-9A04-D7734C702C5C&BOparam::WScontent::loadArticle::context_id=2590E86B-3984-4A32-B514-B46CFA9F7CEF",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Re-releases",
+              "Digital",
+              "English subtitles",
+              "Releases"
+            ]
+          }
+        ],
+        "2026-05-16": [
+          {
+            "time": "12:05",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AA0C92CE-3931-478A-9A04-D7734C702C5C&BOparam::WScontent::loadArticle::context_id=CE09AA3B-A281-4563-A31B-E94D9177733A",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Re-releases",
+              "Digital",
+              "English subtitles",
+              "Releases"
+            ]
+          },
+          {
+            "time": "15:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AA0C92CE-3931-478A-9A04-D7734C702C5C&BOparam::WScontent::loadArticle::context_id=12C9C271-42F7-4ACA-936B-6C6B2825458D",
+            "screen": "Screen NFT4",
+            "hoh": false,
+            "tags": [
+              "Re-releases",
+              "Digital",
+              "Releases",
               "English subtitles"
             ]
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4",
+      "color": "#a64830",
+      "accent": "#d69584",
       "letterboxd_url": "https://letterboxd.com/film/cronos/",
       "letterboxd_rating": 3.42
     },
@@ -1126,17 +1242,17 @@
             "hoh": false,
             "tags": [
               "Re-releases",
-              "Digital",
-              "English subtitles",
-              "Releases",
               "Descriptive subtitles (open captions)",
-              "Relaxed (sensory) screenings"
+              "Relaxed (sensory) screenings",
+              "Releases",
+              "Digital",
+              "English subtitles"
             ]
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d",
+      "color": "#1a2597",
+      "accent": "#535ed4",
       "letterboxd_url": "https://letterboxd.com/film/cronos/",
       "letterboxd_rating": 3.42
     },
@@ -1170,91 +1286,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584",
-      "letterboxd_url": "https://letterboxd.com/film/cronos/",
-      "letterboxd_rating": 3.42
-    },
-    {
-      "id": "cronos-2026",
-      "title": "Cronos",
-      "rating": "15",
-      "runtime": 92,
-      "genre": "Other",
-      "year": 1992,
-      "director": "Guillermo del Toro",
-      "cast": "Federico Luppi, Ron Perlman, Claudio Brook, Margarita Isabel",
-      "description": "Del Toro’s debut is a stylish, original and politically potent vampire fable.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=cronos-2026&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/cronos-01.jpeg",
-      "showtimes": {
-        "2026-05-15": [
-          {
-            "time": "14:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AA0C92CE-3931-478A-9A04-D7734C702C5C&BOparam::WScontent::loadArticle::context_id=38AAF094-18D4-4D60-8A4F-201D167202F6",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Re-releases",
-              "Releases",
-              "Digital",
-              "English subtitles"
-            ]
-          },
-          {
-            "time": "18:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AA0C92CE-3931-478A-9A04-D7734C702C5C&BOparam::WScontent::loadArticle::context_id=AB2B756B-3A11-45F0-BB95-0B778FE46126",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Re-releases",
-              "English subtitles",
-              "Digital",
-              "Releases"
-            ]
-          },
-          {
-            "time": "21:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AA0C92CE-3931-478A-9A04-D7734C702C5C&BOparam::WScontent::loadArticle::context_id=2590E86B-3984-4A32-B514-B46CFA9F7CEF",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "Re-releases",
-              "English subtitles",
-              "Digital",
-              "Releases"
-            ]
-          }
-        ],
-        "2026-05-16": [
-          {
-            "time": "12:05",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AA0C92CE-3931-478A-9A04-D7734C702C5C&BOparam::WScontent::loadArticle::context_id=CE09AA3B-A281-4563-A31B-E94D9177733A",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Re-releases",
-              "English subtitles",
-              "Digital",
-              "Releases"
-            ]
-          },
-          {
-            "time": "15:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AA0C92CE-3931-478A-9A04-D7734C702C5C&BOparam::WScontent::loadArticle::context_id=12C9C271-42F7-4ACA-936B-6C6B2825458D",
-            "screen": "Screen NFT4",
-            "hoh": false,
-            "tags": [
-              "Re-releases",
-              "Releases",
-              "English subtitles",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#1a2597",
-      "accent": "#535ed4",
+      "color": "#519f21",
+      "accent": "#90d368",
       "letterboxd_url": "https://letterboxd.com/film/cronos/",
       "letterboxd_rating": 3.42
     },
@@ -1279,8 +1312,8 @@
             "hoh": false,
             "tags": [
               "Re-releases",
-              "releases",
               "Digital",
+              "releases",
               "English subtitles"
             ]
           }
@@ -1293,9 +1326,9 @@
             "hoh": false,
             "tags": [
               "Re-releases",
-              "releases",
+              "English subtitles",
               "Digital",
-              "English subtitles"
+              "releases"
             ]
           }
         ],
@@ -1321,9 +1354,9 @@
             "hoh": false,
             "tags": [
               "Re-releases",
-              "releases",
               "Digital",
-              "English subtitles"
+              "English subtitles",
+              "releases"
             ]
           }
         ],
@@ -1335,17 +1368,49 @@
             "hoh": false,
             "tags": [
               "Re-releases",
-              "English subtitles",
               "releases",
+              "English subtitles",
               "Digital"
             ]
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368",
+      "color": "#a6307e",
+      "accent": "#d684bb",
       "letterboxd_url": "https://letterboxd.com/film/days-and-nights-in-the-forest/",
       "letterboxd_rating": 3.99
+    },
+    {
+      "id": "doctor-who-movie-4k-restoration-qanda",
+      "title": "Doctor Who: The Movie – 4K Restoration",
+      "rating": "Courtesy of BBC Studios",
+      "runtime": 90,
+      "genre": "Other",
+      "year": 1996,
+      "director": "Geoffrey Sax",
+      "cast": "Paul McGann, Daphne Ashbrook, Eric Roberts, Sylvester McCoy",
+      "description": "The Doctor arrives in San Francisco and must confront an old adversary in this feature version of the heroic time traveller’s adventures.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=doctor-who-movie-4k-restoration-qanda&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/doctor-who-movie-01.jpeg",
+      "showtimes": {
+        "2026-05-17": [
+          {
+            "time": "11:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8E2367A3-BDB2-464F-9C11-26D4DBB27F64&BOparam::WScontent::loadArticle::context_id=29551806-BAB4-4932-B7C5-39700C742067",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Previews and events",
+              "Q&A",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#1a9297",
+      "accent": "#53cfd4",
+      "letterboxd_url": "https://letterboxd.com/film/doctor-who/",
+      "letterboxd_rating": 3.29
     },
     {
       "id": "devils-backbone",
@@ -1367,9 +1432,9 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "English subtitles",
               "Guillermo del Toro",
-              "Digital"
+              "Digital",
+              "English subtitles"
             ]
           }
         ],
@@ -1381,8 +1446,8 @@
             "hoh": false,
             "tags": [
               "Guillermo del Toro",
-              "Digital",
-              "English subtitles"
+              "English subtitles",
+              "Digital"
             ]
           }
         ],
@@ -1394,14 +1459,14 @@
             "hoh": false,
             "tags": [
               "Digital",
-              "English subtitles",
-              "Guillermo del Toro"
+              "Guillermo del Toro",
+              "English subtitles"
             ]
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb",
+      "color": "#9f8021",
+      "accent": "#d3b868",
       "letterboxd_url": "https://letterboxd.com/film/the-devils-backbone/",
       "letterboxd_rating": 3.83
     },
@@ -1445,42 +1510,10 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4",
+      "color": "#6530a6",
+      "accent": "#a984d6",
       "letterboxd_url": "https://letterboxd.com/film/dolores-2025/",
       "letterboxd_rating": null
-    },
-    {
-      "id": "doctor-who-movie-4k-restoration-qanda",
-      "title": "Doctor Who: The Movie – 4K Restoration",
-      "rating": "Courtesy of BBC Studios",
-      "runtime": 90,
-      "genre": "Other",
-      "year": 1996,
-      "director": "Geoffrey Sax",
-      "cast": "Paul McGann, Daphne Ashbrook, Eric Roberts, Sylvester McCoy",
-      "description": "The Doctor arrives in San Francisco and must confront an old adversary in this feature version of the heroic time traveller’s adventures.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=doctor-who-movie-4k-restoration-qanda&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/doctor-who-movie-01.jpeg",
-      "showtimes": {
-        "2026-05-17": [
-          {
-            "time": "11:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8E2367A3-BDB2-464F-9C11-26D4DBB27F64&BOparam::WScontent::loadArticle::context_id=29551806-BAB4-4932-B7C5-39700C742067",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Previews and events",
-              "Q&A",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#9f8021",
-      "accent": "#d3b868",
-      "letterboxd_url": "https://letterboxd.com/film/doctor-who/",
-      "letterboxd_rating": 3.29
     },
     {
       "id": "enys-men-2026",
@@ -1509,8 +1542,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6",
+      "color": "#1a972f",
+      "accent": "#53d468",
       "letterboxd_url": "https://letterboxd.com/film/enys-men/",
       "letterboxd_rating": 3.07
     },
@@ -1542,8 +1575,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468",
+      "color": "#9f2132",
+      "accent": "#d36876",
       "letterboxd_url": "https://letterboxd.com/film/enys-men/",
       "letterboxd_rating": 3.07
     },
@@ -1568,8 +1601,8 @@
             "hoh": false,
             "tags": [
               "Great Expectations: British Postwar Cinema 1945-1960",
-              "35mm",
-              "Postwar British Cinema"
+              "Postwar British Cinema",
+              "35mm"
             ]
           }
         ],
@@ -1587,10 +1620,44 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876",
+      "color": "#3061a6",
+      "accent": "#84a6d6",
       "letterboxd_url": "https://letterboxd.com/film/the-fallen-idol/",
       "letterboxd_rating": 3.81
+    },
+    {
+      "id": "farewell-to-spring-intro",
+      "title": "Farewell to Spring",
+      "rating": "TBC",
+      "runtime": 102,
+      "genre": "Other",
+      "year": 1959,
+      "director": "Keisuke Kinoshita",
+      "cast": "Keiji Sada, Ineko Arima",
+      "description": "Keisuke Kinoshita’s achingly beautiful film is about the intense feelings between five young men who return to their Aizu hometown.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=farewell-to-spring-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/farewell-to-spring-01.jpeg",
+      "showtimes": {
+        "2026-05-30": [
+          {
+            "time": "18:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=229D6DDF-D5EC-43D5-BB0E-438DFD5DB8A0&BOparam::WScontent::loadArticle::context_id=D89E3F90-4840-46EF-B4BE-06E87A3016E8",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Queer East Festival",
+              "Introduction",
+              "35mm",
+              "Queer East 2026",
+              "English subtitles"
+            ]
+          }
+        ]
+      },
+      "color": "#73971a",
+      "accent": "#afd453",
+      "letterboxd_url": "https://letterboxd.com/film/farewell-to-spring/",
+      "letterboxd_rating": 3.45
     },
     {
       "id": "fat-city",
@@ -1619,8 +1686,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6",
+      "color": "#9f219f",
+      "accent": "#d368d3",
       "letterboxd_url": "https://letterboxd.com/film/fat-city/",
       "letterboxd_rating": 3.85
     },
@@ -1650,8 +1717,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "fighters-qanda",
@@ -1674,15 +1741,15 @@
             "hoh": false,
             "tags": [
               "The Cinematic Life of Boxing",
-              "Q&A",
               "Video",
+              "Q&A",
               "Cinematic Life of Boxing"
             ]
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3",
+      "color": "#974e1a",
+      "accent": "#d48853",
       "letterboxd_url": "https://letterboxd.com/film/fighters-1991/",
       "letterboxd_rating": null
     },
@@ -1714,8 +1781,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be",
+      "color": "#31219f",
+      "accent": "#7568d3",
       "letterboxd_url": "https://letterboxd.com/film/a-fish-in-the-bathtub/",
       "letterboxd_rating": 3.28
     },
@@ -1753,14 +1820,14 @@
             "hoh": false,
             "tags": [
               "Great Expectations: British Postwar Cinema 1945-1960",
-              "Digital",
-              "Postwar British Cinema"
+              "Postwar British Cinema",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853",
+      "color": "#44a630",
+      "accent": "#92d684",
       "letterboxd_url": "https://letterboxd.com/film/the-flying-scot/",
       "letterboxd_rating": null
     },
@@ -1784,16 +1851,16 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Digital",
-              "Q&A",
+              "English subtitles",
               "Brazil on Film",
-              "English subtitles"
+              "Digital",
+              "Q&A"
             ]
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3",
+      "color": "#971a54",
+      "accent": "#d4538f",
       "letterboxd_url": "https://letterboxd.com/film/foreign-land/",
       "letterboxd_rating": 4.01
     },
@@ -1817,17 +1884,74 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
+              "Brazil on Film",
               "Digital",
-              "English subtitles",
-              "Brazil on Film"
+              "English subtitles"
             ]
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684",
+      "color": "#21809f",
+      "accent": "#68b9d3",
       "letterboxd_url": "https://letterboxd.com/film/foreign-land/",
       "letterboxd_rating": 4.01
+    },
+    {
+      "id": "frankenstein-may-2026",
+      "title": "Frankenstein",
+      "rating": "15",
+      "runtime": 150,
+      "genre": "Other",
+      "year": 2025,
+      "director": "Guillermo del Toro",
+      "cast": "Oscar Isaac, Jacob Elordi, Mia Goth, Christoph Waltz",
+      "description": "Mary Shelley’s classic novel is brought to life by Guillermo del Toro in this award-winning tour de force.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=frankenstein-may-2026&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/frankenstein-01.jpeg",
+      "showtimes": {
+        "2026-05-17": [
+          {
+            "time": "17:55",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B02D90B9-D710-4D48-B46F-F36357CB8C80&BOparam::WScontent::loadArticle::context_id=1E62930F-783A-429D-995F-A59C12C58EBA",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Guillermo del Toro",
+              "35mm"
+            ]
+          }
+        ],
+        "2026-05-27": [
+          {
+            "time": "17:50",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B02D90B9-D710-4D48-B46F-F36357CB8C80&BOparam::WScontent::loadArticle::context_id=98E74B53-F193-493F-9282-40F140277AE5",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Guillermo del Toro",
+              "Audio description",
+              "Descriptive subtitles (open captions)",
+              "Digital"
+            ]
+          }
+        ],
+        "2026-05-31": [
+          {
+            "time": "15:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B02D90B9-D710-4D48-B46F-F36357CB8C80&BOparam::WScontent::loadArticle::context_id=3031E4E8-9A95-418E-A6BA-A876B8D62EAB",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "35mm",
+              "Guillermo del Toro"
+            ]
+          }
+        ]
+      },
+      "color": "#a6a030",
+      "accent": "#d6d284",
+      "letterboxd_url": "https://letterboxd.com/film/frankenstein-2025/",
+      "letterboxd_rating": 3.82
     },
     {
       "id": "free-nelson-mandela-tv-preview-qanda",
@@ -1850,71 +1974,14 @@
             "hoh": false,
             "tags": [
               "Previews and events",
-              "Preview",
-              "Q&A"
+              "Q&A",
+              "Preview"
             ]
           }
         ]
       },
-      "color": "#971a54",
-      "accent": "#d4538f"
-    },
-    {
-      "id": "frankenstein-may-2026",
-      "title": "Frankenstein",
-      "rating": "15",
-      "runtime": 150,
-      "genre": "Other",
-      "year": 2025,
-      "director": "Guillermo del Toro",
-      "cast": "Oscar Isaac, Jacob Elordi, Mia Goth, Christoph Waltz",
-      "description": "Mary Shelley’s classic novel is brought to life by Guillermo del Toro in this award-winning tour de force.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=frankenstein-may-2026&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/frankenstein-01.jpeg",
-      "showtimes": {
-        "2026-05-17": [
-          {
-            "time": "17:55",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B02D90B9-D710-4D48-B46F-F36357CB8C80&BOparam::WScontent::loadArticle::context_id=1E62930F-783A-429D-995F-A59C12C58EBA",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "35mm",
-              "Guillermo del Toro"
-            ]
-          }
-        ],
-        "2026-05-27": [
-          {
-            "time": "17:50",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B02D90B9-D710-4D48-B46F-F36357CB8C80&BOparam::WScontent::loadArticle::context_id=98E74B53-F193-493F-9282-40F140277AE5",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "Guillermo del Toro",
-              "Digital",
-              "Descriptive subtitles (open captions)",
-              "Audio description"
-            ]
-          }
-        ],
-        "2026-05-31": [
-          {
-            "time": "15:10",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B02D90B9-D710-4D48-B46F-F36357CB8C80&BOparam::WScontent::loadArticle::context_id=3031E4E8-9A95-418E-A6BA-A876B8D62EAB",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Guillermo del Toro",
-              "35mm"
-            ]
-          }
-        ]
-      },
-      "color": "#21809f",
-      "accent": "#68b9d3",
-      "letterboxd_url": "https://letterboxd.com/film/frankenstein-2025/",
-      "letterboxd_rating": 3.82
+      "color": "#6d1a97",
+      "accent": "#a853d4"
     },
     {
       "id": "future-forward-ukaff-2026",
@@ -1943,8 +2010,8 @@
           }
         ]
       },
-      "color": "#a6a030",
-      "accent": "#d6d284"
+      "color": "#219f50",
+      "accent": "#68d390"
     },
     {
       "id": "gallivant-qanda",
@@ -1973,8 +2040,8 @@
           }
         ]
       },
-      "color": "#6d1a97",
-      "accent": "#a853d4",
+      "color": "#a63930",
+      "accent": "#d68b84",
       "letterboxd_url": "https://letterboxd.com/film/gallivant/",
       "letterboxd_rating": 3.82
     },
@@ -2006,8 +2073,8 @@
           }
         ]
       },
-      "color": "#219f50",
-      "accent": "#68d390",
+      "color": "#1a3597",
+      "accent": "#536ed4",
       "letterboxd_url": "https://letterboxd.com/film/gallipoli/",
       "letterboxd_rating": 3.81
     },
@@ -2031,14 +2098,14 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Big screen classics",
-              "35mm"
+              "35mm",
+              "Big screen classics"
             ]
           }
         ]
       },
-      "color": "#a63930",
-      "accent": "#d68b84",
+      "color": "#619f21",
+      "accent": "#9ed368",
       "letterboxd_url": "https://letterboxd.com/film/gallivant/",
       "letterboxd_rating": 3.82
     },
@@ -2062,14 +2129,14 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Member exclusives",
-              "Digital"
+              "Digital",
+              "Member exclusives"
             ]
           }
         ]
       },
-      "color": "#1a3597",
-      "accent": "#536ed4",
+      "color": "#a6308e",
+      "accent": "#d684c5",
       "letterboxd_url": "https://letterboxd.com/film/gattaca/",
       "letterboxd_rating": 3.81
     },
@@ -2095,15 +2162,15 @@
             "tags": [
               "UK Asian Film Festival",
               "Q&A",
+              "Digital",
               "English subtitles",
-              "UKAFF 2026",
-              "Digital"
+              "UKAFF 2026"
             ]
           }
         ]
       },
-      "color": "#619f21",
-      "accent": "#9ed368",
+      "color": "#1a978c",
+      "accent": "#53d4c8",
       "letterboxd_url": "https://letterboxd.com/film/ghost-school-2025/",
       "letterboxd_rating": 3.34
     },
@@ -2128,18 +2195,46 @@
             "hoh": false,
             "tags": [
               "Regular programme",
-              "Digital",
               "Silent",
-              "Introduction",
-              "Live captioned"
+              "Digital",
+              "Live captioned",
+              "Introduction"
             ]
           }
         ]
       },
-      "color": "#a6308e",
-      "accent": "#d684c5",
+      "color": "#9f7021",
+      "accent": "#d3aa68",
       "letterboxd_url": "https://letterboxd.com/film/the-gold-rush/",
       "letterboxd_rating": 4.15
+    },
+    {
+      "id": "guillermo-del-toro-quiz",
+      "title": "Guillermo del Toro Quiz",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "Join us for a quiz celebrating del Toro’s unique cinematic visions.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=guillermo-del-toro-quiz&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/hellboy-02.jpeg",
+      "showtimes": {
+        "2026-05-27": [
+          {
+            "time": "18:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=FF7328C7-FE19-4618-9CEA-E076274DB422&BOparam::WScontent::loadArticle::context_id=8ED9EB73-A208-41DF-96E6-C3F44374C02E",
+            "screen": "Blue Room",
+            "hoh": false,
+            "tags": [
+              "Guillermo del Toro"
+            ]
+          }
+        ]
+      },
+      "color": "#5630a6",
+      "accent": "#9f84d6"
     },
     {
       "id": "guillermo-del-toro-in-conversation",
@@ -2168,36 +2263,8 @@
           }
         ]
       },
-      "color": "#1a978c",
-      "accent": "#53d4c8"
-    },
-    {
-      "id": "guillermo-del-toro-quiz",
-      "title": "Guillermo del Toro Quiz",
-      "rating": "TBC",
-      "runtime": null,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "description": "Join us for a quiz celebrating del Toro’s unique cinematic visions.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=guillermo-del-toro-quiz&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/hellboy-02.jpeg",
-      "showtimes": {
-        "2026-05-27": [
-          {
-            "time": "18:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=FF7328C7-FE19-4618-9CEA-E076274DB422&BOparam::WScontent::loadArticle::context_id=8ED9EB73-A208-41DF-96E6-C3F44374C02E",
-            "screen": "Blue Room",
-            "hoh": false,
-            "tags": [
-              "Guillermo del Toro"
-            ]
-          }
-        ]
-      },
-      "color": "#9f7021",
-      "accent": "#d3aa68"
+      "color": "#1a971f",
+      "accent": "#53d458"
     },
     {
       "id": "guillermo-del-toro-sip-and-paint",
@@ -2224,41 +2291,8 @@
           }
         ]
       },
-      "color": "#5630a6",
-      "accent": "#9f84d6"
-    },
-    {
-      "id": "happiest-day-in-the-life-of-olli-maki",
-      "title": "The Happiest Day in the Life of Olli Mäki",
-      "rating": "12A",
-      "runtime": 93,
-      "genre": "Other",
-      "year": 2016,
-      "director": "Juho Kuosmanen",
-      "cast": "Jarkko Lahti, Oona Airola, Eero Milonoff",
-      "description": "Juho Kuosmanen’s delightful biographical comedy-drama focuses on the life of the unassuming Finnish boxer Olli Mäki.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=happiest-day-in-the-life-of-olli-maki&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/happiest-day-in-the-life-of-olli-maki-01.jpeg",
-      "showtimes": {
-        "2026-04-25": [
-          {
-            "time": "15:15",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=10AD2F08-98D8-4DF6-A445-8C570CD5695B&BOparam::WScontent::loadArticle::context_id=C0BF3D94-6637-415A-AF4A-BB19E5C38219",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "The Cinematic Life of Boxing",
-              "English subtitles",
-              "Digital",
-              "Cinematic Life of Boxing"
-            ]
-          }
-        ]
-      },
-      "color": "#1a971f",
-      "accent": "#53d458",
-      "letterboxd_url": "https://letterboxd.com/film/the-happiest-day-in-the-life-of-olli-maki/",
-      "letterboxd_rating": 3.67
+      "color": "#9f2142",
+      "accent": "#d36884"
     },
     {
       "id": "guillermo-del-toros-pinocchio-2026",
@@ -2300,10 +2334,43 @@
           }
         ]
       },
-      "color": "#9f2142",
-      "accent": "#d36884",
+      "color": "#3070a6",
+      "accent": "#84b1d6",
       "letterboxd_url": "https://letterboxd.com/film/guillermo-del-toros-pinocchio/",
       "letterboxd_rating": 3.99
+    },
+    {
+      "id": "happiest-day-in-the-life-of-olli-maki",
+      "title": "The Happiest Day in the Life of Olli Mäki",
+      "rating": "12A",
+      "runtime": 93,
+      "genre": "Other",
+      "year": 2016,
+      "director": "Juho Kuosmanen",
+      "cast": "Jarkko Lahti, Oona Airola, Eero Milonoff",
+      "description": "Juho Kuosmanen’s delightful biographical comedy-drama focuses on the life of the unassuming Finnish boxer Olli Mäki.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=happiest-day-in-the-life-of-olli-maki&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/happiest-day-in-the-life-of-olli-maki-01.jpeg",
+      "showtimes": {
+        "2026-04-25": [
+          {
+            "time": "15:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=10AD2F08-98D8-4DF6-A445-8C570CD5695B&BOparam::WScontent::loadArticle::context_id=C0BF3D94-6637-415A-AF4A-BB19E5C38219",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "The Cinematic Life of Boxing",
+              "Digital",
+              "English subtitles",
+              "Cinematic Life of Boxing"
+            ]
+          }
+        ]
+      },
+      "color": "#83971a",
+      "accent": "#bfd453",
+      "letterboxd_url": "https://letterboxd.com/film/the-happiest-day-in-the-life-of-olli-maki/",
+      "letterboxd_rating": 3.67
     },
     {
       "id": "happiest-days-of-your-life-intro",
@@ -2333,8 +2400,8 @@
           }
         ]
       },
-      "color": "#3070a6",
-      "accent": "#84b1d6",
+      "color": "#8f219f",
+      "accent": "#c568d3",
       "letterboxd_url": "https://letterboxd.com/film/the-happiest-days-of-your-life/",
       "letterboxd_rating": 3.5
     },
@@ -2359,14 +2426,14 @@
             "hoh": false,
             "tags": [
               "Great Expectations: British Postwar Cinema 1945-1960",
-              "Digital",
-              "Postwar British Cinema"
+              "Postwar British Cinema",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#83971a",
-      "accent": "#bfd453",
+      "color": "#30a674",
+      "accent": "#84d6b3",
       "letterboxd_url": "https://letterboxd.com/film/the-happiest-days-of-your-life/",
       "letterboxd_rating": 3.5
     },
@@ -2390,15 +2457,15 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "Festival of Britain",
               "Introduction",
-              "Digital"
+              "Digital",
+              "Festival of Britain"
             ]
           }
         ]
       },
-      "color": "#8f219f",
-      "accent": "#c568d3",
+      "color": "#973e1a",
+      "accent": "#d47853",
       "letterboxd_url": "https://letterboxd.com/film/the-happy-family/",
       "letterboxd_rating": null
     },
@@ -2424,14 +2491,14 @@
             "tags": [
               "Great Expectations: British Postwar Cinema 1945-1960",
               "35mm",
-              "Postwar British Cinema",
-              "Discussion"
+              "Discussion",
+              "Postwar British Cinema"
             ]
           }
         ]
       },
-      "color": "#30a674",
-      "accent": "#84d6b3",
+      "color": "#21229f",
+      "accent": "#6869d3",
       "letterboxd_url": "https://letterboxd.com/film/hell-is-a-city/",
       "letterboxd_rating": 3.49
     },
@@ -2456,14 +2523,14 @@
             "hoh": false,
             "tags": [
               "Great Expectations: British Postwar Cinema 1945-1960",
-              "Postwar British Cinema",
-              "35mm"
+              "35mm",
+              "Postwar British Cinema"
             ]
           }
         ]
       },
-      "color": "#973e1a",
-      "accent": "#d47853",
+      "color": "#53a630",
+      "accent": "#9cd684",
       "letterboxd_url": "https://letterboxd.com/film/hell-is-a-city/",
       "letterboxd_rating": 3.49
     },
@@ -2487,8 +2554,8 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Guillermo del Toro",
-              "Digital"
+              "Digital",
+              "Guillermo del Toro"
             ]
           }
         ],
@@ -2499,49 +2566,16 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Digital",
-              "Guillermo del Toro"
-            ]
-          }
-        ]
-      },
-      "color": "#21229f",
-      "accent": "#6869d3",
-      "letterboxd_url": "https://letterboxd.com/film/hellboy-ii-the-golden-army/",
-      "letterboxd_rating": 3.45
-    },
-    {
-      "id": "the-hero-intro",
-      "title": "The Hero",
-      "rating": "12A",
-      "runtime": 117,
-      "genre": "Other",
-      "year": 1966,
-      "director": "Satyajit Ray",
-      "cast": "Uttam Kumar, Sharmila Tagore, Bireswar Sen, Somen Bose",
-      "description": "A movie star, on a train to collect an honour, confronts the private costs of fame, in Satyajit Ray’s quietly devastating portrait of celebrity and conscience.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=the-hero-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/hero-01.jpeg",
-      "showtimes": {
-        "2026-05-13": [
-          {
-            "time": "18:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E5BF9828-2923-41E9-8275-9415B5E237E4&BOparam::WScontent::loadArticle::context_id=B32BE386-9483-42A6-8FF9-12B7F349E4C5",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "English subtitles",
-              "Big screen classics",
-              "Introduction",
+              "Guillermo del Toro",
               "Digital"
             ]
           }
         ]
       },
-      "color": "#53a630",
-      "accent": "#9cd684",
-      "letterboxd_url": "https://letterboxd.com/film/the-hero-1966/",
-      "letterboxd_rating": 4.13
+      "color": "#971a64",
+      "accent": "#d4539f",
+      "letterboxd_url": "https://letterboxd.com/film/hellboy-ii-the-golden-army/",
+      "letterboxd_rating": 3.45
     },
     {
       "id": "hellboy",
@@ -2575,14 +2609,14 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Guillermo del Toro",
-              "Digital"
+              "Digital",
+              "Guillermo del Toro"
             ]
           }
         ]
       },
-      "color": "#971a64",
-      "accent": "#d4539f",
+      "color": "#21909f",
+      "accent": "#68c6d3",
       "letterboxd_url": "https://letterboxd.com/film/hellboy/",
       "letterboxd_rating": 3.43
     },
@@ -2607,17 +2641,50 @@
             "hoh": false,
             "tags": [
               "Previews and events",
-              "Preview",
               "English subtitles",
+              "Preview",
               "Digital"
             ]
           }
         ]
       },
-      "color": "#21909f",
-      "accent": "#68c6d3",
+      "color": "#a69130",
+      "accent": "#d6c884",
       "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
       "letterboxd_rating": 3.52
+    },
+    {
+      "id": "the-hero-intro",
+      "title": "The Hero",
+      "rating": "12A",
+      "runtime": 117,
+      "genre": "Other",
+      "year": 1966,
+      "director": "Satyajit Ray",
+      "cast": "Uttam Kumar, Sharmila Tagore, Bireswar Sen, Somen Bose",
+      "description": "A movie star, on a train to collect an honour, confronts the private costs of fame, in Satyajit Ray’s quietly devastating portrait of celebrity and conscience.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=the-hero-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/hero-01.jpeg",
+      "showtimes": {
+        "2026-05-13": [
+          {
+            "time": "18:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E5BF9828-2923-41E9-8275-9415B5E237E4&BOparam::WScontent::loadArticle::context_id=B32BE386-9483-42A6-8FF9-12B7F349E4C5",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "English subtitles",
+              "Introduction",
+              "Big screen classics",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#5d1a97",
+      "accent": "#9853d4",
+      "letterboxd_url": "https://letterboxd.com/film/the-hero-1966/",
+      "letterboxd_rating": 4.13
     },
     {
       "id": "the-hero",
@@ -2639,9 +2706,9 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
+              "English subtitles",
               "Digital",
-              "Big screen classics",
-              "English subtitles"
+              "Big screen classics"
             ]
           }
         ],
@@ -2652,60 +2719,17 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Digital",
+              "Big screen classics",
               "English subtitles",
-              "Big screen classics"
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#a69130",
-      "accent": "#d6c884",
+      "color": "#219f40",
+      "accent": "#68d382",
       "letterboxd_url": "https://letterboxd.com/film/the-hero-1966/",
       "letterboxd_rating": 4.13
-    },
-    {
-      "id": "hollywood-shuffle",
-      "title": "Hollywood Shuffle",
-      "rating": "15",
-      "runtime": 81,
-      "genre": "Other",
-      "year": 1987,
-      "director": "Robert Townsend",
-      "cast": "Robert Townsend, Keenen Ivory Wayans, John Witherspoon",
-      "description": "Breaking into Hollywood is easy. Keeping your dignity is the hard part. Experience Robert Townsend’s comedy classic in 35mm.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=hollywood-shuffle&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/hollywood-shuffle-01.jpeg",
-      "showtimes": {
-        "2026-05-22": [
-          {
-            "time": "21:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EAD5DA24-2365-459D-9E41-F4F34D4BCA82&BOparam::WScontent::loadArticle::context_id=4A33877A-076E-4551-BEE3-4471004B9A27",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Big screen classics",
-              "35mm"
-            ]
-          }
-        ],
-        "2026-05-31": [
-          {
-            "time": "12:15",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EAD5DA24-2365-459D-9E41-F4F34D4BCA82&BOparam::WScontent::loadArticle::context_id=D3AFAB01-24FD-418E-97E3-DF9887E1F258",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "35mm",
-              "Big screen classics"
-            ]
-          }
-        ]
-      },
-      "color": "#5d1a97",
-      "accent": "#9853d4",
-      "letterboxd_url": "https://letterboxd.com/film/hollywood-shuffle/",
-      "letterboxd_rating": 3.65
     },
     {
       "id": "hollywood-shuffle-intro",
@@ -2727,50 +2751,60 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Big screen classics",
               "35mm",
+              "Big screen classics",
               "Introduction"
-            ]
-          }
-        ]
-      },
-      "color": "#219f40",
-      "accent": "#68d382",
-      "letterboxd_url": "https://letterboxd.com/film/hollywood-shuffle/",
-      "letterboxd_rating": 3.65
-    },
-    {
-      "id": "hunted-intro",
-      "title": "Hunted",
-      "rating": "PG",
-      "runtime": 85,
-      "genre": "Other",
-      "year": 1952,
-      "director": "Charles Crichton",
-      "cast": "Dirk Bogarde, Jon Whiteley, Elizabeth Sellars, Kay Walsh",
-      "description": "A cinematic milestone blending the anguish of film noir with the pathos of neorealism.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=hunted-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/hunted-01.jpeg",
-      "showtimes": {
-        "2026-05-11": [
-          {
-            "time": "17:55",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=30061B5A-2294-4E7B-8EE0-D544644D684B&BOparam::WScontent::loadArticle::context_id=A5FD84CA-3CE7-459B-AE58-1B99709CA290",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Great Expectations: British Postwar Cinema 1945-1960",
-              "Introduction",
-              "Postwar British Cinema",
-              "35mm"
             ]
           }
         ]
       },
       "color": "#a63035",
       "accent": "#d68488",
-      "letterboxd_url": "https://letterboxd.com/film/hunted-1952/",
-      "letterboxd_rating": 3.63
+      "letterboxd_url": "https://letterboxd.com/film/hollywood-shuffle/",
+      "letterboxd_rating": 3.65
+    },
+    {
+      "id": "hollywood-shuffle",
+      "title": "Hollywood Shuffle",
+      "rating": "15",
+      "runtime": 81,
+      "genre": "Other",
+      "year": 1987,
+      "director": "Robert Townsend",
+      "cast": "Robert Townsend, Keenen Ivory Wayans, John Witherspoon",
+      "description": "Breaking into Hollywood is easy. Keeping your dignity is the hard part. Experience Robert Townsend’s comedy classic in 35mm.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=hollywood-shuffle&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/hollywood-shuffle-01.jpeg",
+      "showtimes": {
+        "2026-05-22": [
+          {
+            "time": "21:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EAD5DA24-2365-459D-9E41-F4F34D4BCA82&BOparam::WScontent::loadArticle::context_id=4A33877A-076E-4551-BEE3-4471004B9A27",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "35mm",
+              "Big screen classics"
+            ]
+          }
+        ],
+        "2026-05-31": [
+          {
+            "time": "12:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EAD5DA24-2365-459D-9E41-F4F34D4BCA82&BOparam::WScontent::loadArticle::context_id=D3AFAB01-24FD-418E-97E3-DF9887E1F258",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "35mm",
+              "Big screen classics"
+            ]
+          }
+        ]
+      },
+      "color": "#1a4597",
+      "accent": "#537fd4",
+      "letterboxd_url": "https://letterboxd.com/film/hollywood-shuffle/",
+      "letterboxd_rating": 3.65
     },
     {
       "id": "hunted",
@@ -2793,14 +2827,47 @@
             "hoh": false,
             "tags": [
               "Great Expectations: British Postwar Cinema 1945-1960",
-              "35mm",
-              "Postwar British Cinema"
+              "Postwar British Cinema",
+              "35mm"
             ]
           }
         ]
       },
-      "color": "#1a4597",
-      "accent": "#537fd4",
+      "color": "#719f21",
+      "accent": "#acd368",
+      "letterboxd_url": "https://letterboxd.com/film/hunted-1952/",
+      "letterboxd_rating": 3.63
+    },
+    {
+      "id": "hunted-intro",
+      "title": "Hunted",
+      "rating": "PG",
+      "runtime": 85,
+      "genre": "Other",
+      "year": 1952,
+      "director": "Charles Crichton",
+      "cast": "Dirk Bogarde, Jon Whiteley, Elizabeth Sellars, Kay Walsh",
+      "description": "A cinematic milestone blending the anguish of film noir with the pathos of neorealism.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=hunted-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/hunted-01.jpeg",
+      "showtimes": {
+        "2026-05-11": [
+          {
+            "time": "17:55",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=30061B5A-2294-4E7B-8EE0-D544644D684B&BOparam::WScontent::loadArticle::context_id=A5FD84CA-3CE7-459B-AE58-1B99709CA290",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Great Expectations: British Postwar Cinema 1945-1960",
+              "35mm",
+              "Postwar British Cinema",
+              "Introduction"
+            ]
+          }
+        ]
+      },
+      "color": "#a6309d",
+      "accent": "#d684d0",
       "letterboxd_url": "https://letterboxd.com/film/hunted-1952/",
       "letterboxd_rating": 3.63
     },
@@ -2831,8 +2898,8 @@
           }
         ]
       },
-      "color": "#719f21",
-      "accent": "#acd368"
+      "color": "#1a977c",
+      "accent": "#53d4b8"
     },
     {
       "id": "introduction-to-brazil-on-film",
@@ -2854,14 +2921,14 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Discussion",
-              "Brazil on Film"
+              "Brazil on Film",
+              "Discussion"
             ]
           }
         ]
       },
-      "color": "#a6309d",
-      "accent": "#d684d0"
+      "color": "#9f5f21",
+      "accent": "#d39d68"
     },
     {
       "id": "irma-vep-2026",
@@ -2896,15 +2963,15 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
+              "Digital",
               "English subtitles",
-              "Big screen classics",
-              "Digital"
+              "Big screen classics"
             ]
           }
         ]
       },
-      "color": "#1a977c",
-      "accent": "#53d4b8",
+      "color": "#4730a6",
+      "accent": "#9484d6",
       "letterboxd_url": "https://letterboxd.com/film/irma-vep/",
       "letterboxd_rating": 3.9
     },
@@ -2935,8 +3002,8 @@
           }
         ]
       },
-      "color": "#9f5f21",
-      "accent": "#d39d68",
+      "color": "#26971a",
+      "accent": "#5fd453",
       "letterboxd_url": "https://letterboxd.com/film/journeyman-2017/",
       "letterboxd_rating": 3.56
     },
@@ -2967,85 +3034,8 @@
           }
         ]
       },
-      "color": "#4730a6",
-      "accent": "#9484d6"
-    },
-    {
-      "id": "lost-in-translation",
-      "title": "Lost in Translation",
-      "rating": "15",
-      "runtime": 101,
-      "genre": "Other",
-      "year": 2003,
-      "director": "Sofia Coppola",
-      "cast": "Bill Murray, Scarlett Johansson, Giovanni Ribisi, Anna Faris",
-      "description": "In a neon-lit city far from home, two lost souls stumble into each other, finding laughter, comfort and a fleeting escape from life’s disconnection.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=lost-in-translation&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/lost-in-translation-01.jpeg",
-      "showtimes": {
-        "2026-05-08": [
-          {
-            "time": "14:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7E03C584-ED88-45A3-8B08-10B07D84F8C7&BOparam::WScontent::loadArticle::context_id=CE81C07B-F710-4249-B48B-D03B41D432B2",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Big screen classics",
-              "Digital"
-            ]
-          }
-        ],
-        "2026-05-19": [
-          {
-            "time": "20:55",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7E03C584-ED88-45A3-8B08-10B07D84F8C7&BOparam::WScontent::loadArticle::context_id=06F2503D-33E2-4BEB-ACEA-ACB5F602817D",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Big screen classics",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#26971a",
-      "accent": "#5fd453",
-      "letterboxd_url": "https://letterboxd.com/film/lost-in-translation/",
-      "letterboxd_rating": 3.76
-    },
-    {
-      "id": "macho-dancer-intro",
-      "title": "Macho Dancer",
-      "rating": "TBC",
-      "runtime": 136,
-      "genre": "Other",
-      "year": 1988,
-      "director": "Lino Brocka",
-      "cast": "Allan Paule, Daniel Fernando",
-      "description": "A young man travels to Manila to work as a dancer, stripper and rent boy in Lino Brocka’s acclaimed gay drama.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=macho-dancer-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/macho-dancer-01.jpeg",
-      "showtimes": {
-        "2026-05-21": [
-          {
-            "time": "18:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=FFF319A0-155A-4179-A0D8-A7196D6FC2B8&BOparam::WScontent::loadArticle::context_id=6B8C983A-CE2C-4269-99DE-B039C7AA8DF8",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Queer East Festival",
-              "Digital",
-              "Introduction",
-              "Queer East 2026",
-              "English subtitles"
-            ]
-          }
-        ]
-      },
       "color": "#9f2152",
-      "accent": "#d36891",
-      "letterboxd_url": "https://letterboxd.com/film/macho-dancer/",
-      "letterboxd_rating": 3.61
+      "accent": "#d36891"
     },
     {
       "id": "lower-city",
@@ -3067,9 +3057,9 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "Digital",
+              "English subtitles",
               "Brazil on Film",
-              "English subtitles"
+              "Digital"
             ]
           }
         ]
@@ -3099,10 +3089,10 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "Brazil on Film",
+              "Introduction",
               "English subtitles",
               "Digital",
-              "Introduction"
+              "Brazil on Film"
             ]
           }
         ]
@@ -3111,6 +3101,180 @@
       "accent": "#cfd453",
       "letterboxd_url": "https://letterboxd.com/film/lower-city/",
       "letterboxd_rating": 3.46
+    },
+    {
+      "id": "lost-in-translation",
+      "title": "Lost in Translation",
+      "rating": "15",
+      "runtime": 101,
+      "genre": "Other",
+      "year": 2003,
+      "director": "Sofia Coppola",
+      "cast": "Bill Murray, Scarlett Johansson, Giovanni Ribisi, Anna Faris",
+      "description": "In a neon-lit city far from home, two lost souls stumble into each other, finding laughter, comfort and a fleeting escape from life’s disconnection.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=lost-in-translation&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/lost-in-translation-01.jpeg",
+      "showtimes": {
+        "2026-05-08": [
+          {
+            "time": "14:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7E03C584-ED88-45A3-8B08-10B07D84F8C7&BOparam::WScontent::loadArticle::context_id=CE81C07B-F710-4249-B48B-D03B41D432B2",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Big screen classics"
+            ]
+          }
+        ],
+        "2026-05-19": [
+          {
+            "time": "20:55",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7E03C584-ED88-45A3-8B08-10B07D84F8C7&BOparam::WScontent::loadArticle::context_id=06F2503D-33E2-4BEB-ACEA-ACB5F602817D",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Big screen classics"
+            ]
+          }
+        ]
+      },
+      "color": "#7f219f",
+      "accent": "#b768d3",
+      "letterboxd_url": "https://letterboxd.com/film/lost-in-translation/",
+      "letterboxd_rating": 3.76
+    },
+    {
+      "id": "macho-dancer-intro",
+      "title": "Macho Dancer",
+      "rating": "TBC",
+      "runtime": 136,
+      "genre": "Other",
+      "year": 1988,
+      "director": "Lino Brocka",
+      "cast": "Allan Paule, Daniel Fernando",
+      "description": "A young man travels to Manila to work as a dancer, stripper and rent boy in Lino Brocka’s acclaimed gay drama.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=macho-dancer-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/macho-dancer-01.jpeg",
+      "showtimes": {
+        "2026-05-21": [
+          {
+            "time": "18:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=FFF319A0-155A-4179-A0D8-A7196D6FC2B8&BOparam::WScontent::loadArticle::context_id=6B8C983A-CE2C-4269-99DE-B039C7AA8DF8",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Queer East Festival",
+              "Introduction",
+              "Digital",
+              "English subtitles",
+              "Queer East 2026"
+            ]
+          }
+        ]
+      },
+      "color": "#30a665",
+      "accent": "#84d6a9",
+      "letterboxd_url": "https://letterboxd.com/film/macho-dancer/",
+      "letterboxd_rating": 3.61
+    },
+    {
+      "id": "mandy-2026",
+      "title": "Mandy",
+      "rating": "PG",
+      "runtime": 93,
+      "genre": "Other",
+      "year": 1952,
+      "director": "Alexander Mackendrick",
+      "cast": "Phyllis Calvert, Jack Hawkins, Terence Morgan, Mandy Miller",
+      "description": "This shattering portrait of childhood is acted and directed with astonishing mastery.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=mandy-2026&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/mandy-01.jpeg",
+      "showtimes": {
+        "2026-05-09": [
+          {
+            "time": "18:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C92052AF-CDB6-471B-8D71-F81EEF23CE3A&BOparam::WScontent::loadArticle::context_id=1164CAE1-3A0A-45AF-82B1-598F4AE56D24",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Great Expectations: British Postwar Cinema 1945-1960",
+              "Digital",
+              "Postwar British Cinema"
+            ]
+          }
+        ]
+      },
+      "color": "#972e1a",
+      "accent": "#d46753",
+      "letterboxd_url": "https://letterboxd.com/film/mandy/",
+      "letterboxd_rating": 3.59
+    },
+    {
+      "id": "manas",
+      "title": "Manas",
+      "rating": "TBC",
+      "runtime": 107,
+      "genre": "Other",
+      "year": 2024,
+      "director": "Marianna Brennand",
+      "cast": "Jamilli Correa, Fátima Macedo, Rômulo Braga, Dira Paes",
+      "description": "An Amazonian teenager challenges the violent structures shaping the lives of women around her.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=manas&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/manas-01.jpeg",
+      "showtimes": {
+        "2026-05-31": [
+          {
+            "time": "18:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1E30C552-32CA-4F3A-9E7F-4FE4F08F76FD&BOparam::WScontent::loadArticle::context_id=D022ADE7-8DF7-4103-9910-6D8A80A3D0A7",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "English subtitles",
+              "Brazil on Film"
+            ]
+          }
+        ]
+      },
+      "color": "#21329f",
+      "accent": "#6877d3",
+      "letterboxd_url": "https://letterboxd.com/film/manas/",
+      "letterboxd_rating": 4.09
+    },
+    {
+      "id": "manas-intro",
+      "title": "Manas",
+      "rating": "TBC",
+      "runtime": 107,
+      "genre": "Other",
+      "year": 2024,
+      "director": "Marianna Brennand",
+      "cast": "Jamilli Correa, Fátima Macedo, Rômulo Braga, Dira Paes",
+      "description": "An Amazonian teenager challenges the violent structures shaping the lives of women around her.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=manas-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/manas-01.jpeg",
+      "showtimes": {
+        "2026-05-11": [
+          {
+            "time": "18:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=07D9E087-7463-4E69-A24F-F52B17D2C673&BOparam::WScontent::loadArticle::context_id=53575198-D500-47D7-B26E-6802CF311AD6",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "English subtitles",
+              "Brazil on Film",
+              "Introduction",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#62a630",
+      "accent": "#a7d684",
+      "letterboxd_url": "https://letterboxd.com/film/manas/",
+      "letterboxd_rating": 4.09
     },
     {
       "id": "man-marked-for-death-twenty-years-later",
@@ -3145,114 +3309,17 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Digital",
               "Brazil on Film",
+              "Digital",
               "English subtitles"
             ]
           }
         ]
       },
-      "color": "#7f219f",
-      "accent": "#b768d3",
+      "color": "#971a74",
+      "accent": "#d453af",
       "letterboxd_url": "https://letterboxd.com/film/twenty-years-later/",
       "letterboxd_rating": 4.35
-    },
-    {
-      "id": "manas-intro",
-      "title": "Manas",
-      "rating": "TBC",
-      "runtime": 107,
-      "genre": "Other",
-      "year": 2024,
-      "director": "Marianna Brennand",
-      "cast": "Jamilli Correa, Fátima Macedo, Rômulo Braga, Dira Paes",
-      "description": "An Amazonian teenager challenges the violent structures shaping the lives of women around her.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=manas-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/manas-01.jpeg",
-      "showtimes": {
-        "2026-05-11": [
-          {
-            "time": "18:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=07D9E087-7463-4E69-A24F-F52B17D2C673&BOparam::WScontent::loadArticle::context_id=53575198-D500-47D7-B26E-6802CF311AD6",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "English subtitles",
-              "Brazil on Film",
-              "Introduction",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#30a665",
-      "accent": "#84d6a9",
-      "letterboxd_url": "https://letterboxd.com/film/manas/",
-      "letterboxd_rating": 4.09
-    },
-    {
-      "id": "manas",
-      "title": "Manas",
-      "rating": "TBC",
-      "runtime": 107,
-      "genre": "Other",
-      "year": 2024,
-      "director": "Marianna Brennand",
-      "cast": "Jamilli Correa, Fátima Macedo, Rômulo Braga, Dira Paes",
-      "description": "An Amazonian teenager challenges the violent structures shaping the lives of women around her.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=manas&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/manas-01.jpeg",
-      "showtimes": {
-        "2026-05-31": [
-          {
-            "time": "18:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1E30C552-32CA-4F3A-9E7F-4FE4F08F76FD&BOparam::WScontent::loadArticle::context_id=D022ADE7-8DF7-4103-9910-6D8A80A3D0A7",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Brazil on Film",
-              "English subtitles",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#972e1a",
-      "accent": "#d46753",
-      "letterboxd_url": "https://letterboxd.com/film/manas/",
-      "letterboxd_rating": 4.09
-    },
-    {
-      "id": "mandy-2026",
-      "title": "Mandy",
-      "rating": "PG",
-      "runtime": 93,
-      "genre": "Other",
-      "year": 1952,
-      "director": "Alexander Mackendrick",
-      "cast": "Phyllis Calvert, Jack Hawkins, Terence Morgan, Mandy Miller",
-      "description": "This shattering portrait of childhood is acted and directed with astonishing mastery.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=mandy-2026&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/mandy-01.jpeg",
-      "showtimes": {
-        "2026-05-09": [
-          {
-            "time": "18:10",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C92052AF-CDB6-471B-8D71-F81EEF23CE3A&BOparam::WScontent::loadArticle::context_id=1164CAE1-3A0A-45AF-82B1-598F4AE56D24",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Great Expectations: British Postwar Cinema 1945-1960",
-              "Postwar British Cinema",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#21329f",
-      "accent": "#6877d3",
-      "letterboxd_url": "https://letterboxd.com/film/mandy/",
-      "letterboxd_rating": 3.59
     },
     {
       "id": "mandy-intro",
@@ -3275,17 +3342,92 @@
             "hoh": false,
             "tags": [
               "Great Expectations: British Postwar Cinema 1945-1960",
-              "Digital",
               "Postwar British Cinema",
+              "Digital",
               "Introduction"
             ]
           }
         ]
       },
-      "color": "#62a630",
-      "accent": "#a7d684",
+      "color": "#219f9e",
+      "accent": "#68d3d2",
       "letterboxd_url": "https://letterboxd.com/film/mandy/",
       "letterboxd_rating": 3.59
+    },
+    {
+      "id": "kermode-live-may-2026",
+      "title": "Mark Kermode Live in 3D at the BFI",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "The critic presents the latest episode of his live discussion, on stage in NFT1.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=kermode-live-may-2026&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/kermode-live-in-3d-01.jpeg",
+      "showtimes": {
+        "2026-04-27": [
+          {
+            "time": "18:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=14AA49C7-1E7F-4FD2-9707-1F81C340F1A2&BOparam::WScontent::loadArticle::context_id=757D7A27-632E-45B1-8D5D-3B1614E1D9E9",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Previews and events",
+              "Q&A",
+              "Discussion"
+            ]
+          }
+        ],
+        "2026-05-11": [
+          {
+            "time": "18:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=184C0059-C395-433C-8A81-8C0E4A63BC0F&BOparam::WScontent::loadArticle::context_id=51D31A45-79F0-49D3-A190-9CA38291B93E",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Previews and events",
+              "Discussion",
+              "Q&A"
+            ]
+          }
+        ]
+      },
+      "color": "#a68230",
+      "accent": "#d6bd84"
+    },
+    {
+      "id": "mars-one",
+      "title": "Mars One",
+      "rating": "15",
+      "runtime": 116,
+      "genre": "Other",
+      "year": 2022,
+      "director": "Gabriel Martins",
+      "cast": "Cícero Lucas, Carlos Francisco, Camilla Damião, Rejane Faria",
+      "description": "A tender family portrait where everyday struggle meets cosmic ambition.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=mars-one&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/mars-one-01.jpeg",
+      "showtimes": {
+        "2026-05-23": [
+          {
+            "time": "20:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=9C92271F-325B-4320-A606-E349DBFC4EC6&BOparam::WScontent::loadArticle::context_id=A5F477AE-D1E4-4EF9-9445-C0A0E72C95B0",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Brazil on Film",
+              "Digital",
+              "English subtitles"
+            ]
+          }
+        ]
+      },
+      "color": "#4d1a97",
+      "accent": "#8753d4",
+      "letterboxd_url": "https://letterboxd.com/film/mars-one/",
+      "letterboxd_rating": 3.89
     },
     {
       "id": "margin-2026",
@@ -3320,92 +3462,17 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "Brazil on Film",
               "Digital",
+              "Brazil on Film",
               "English subtitles"
             ]
           }
         ]
       },
-      "color": "#971a74",
-      "accent": "#d453af",
+      "color": "#219f30",
+      "accent": "#68d375",
       "letterboxd_url": "https://letterboxd.com/film/the-margin/",
       "letterboxd_rating": 3.88
-    },
-    {
-      "id": "kermode-live-may-2026",
-      "title": "Mark Kermode Live in 3D at the BFI",
-      "rating": "TBC",
-      "runtime": null,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "description": "The critic presents the latest episode of his live discussion, on stage in NFT1.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=kermode-live-may-2026&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/kermode-live-in-3d-01.jpeg",
-      "showtimes": {
-        "2026-04-27": [
-          {
-            "time": "18:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=14AA49C7-1E7F-4FD2-9707-1F81C340F1A2&BOparam::WScontent::loadArticle::context_id=757D7A27-632E-45B1-8D5D-3B1614E1D9E9",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Previews and events",
-              "Discussion",
-              "Q&A"
-            ]
-          }
-        ],
-        "2026-05-11": [
-          {
-            "time": "18:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=184C0059-C395-433C-8A81-8C0E4A63BC0F&BOparam::WScontent::loadArticle::context_id=51D31A45-79F0-49D3-A190-9CA38291B93E",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Previews and events",
-              "Q&A",
-              "Discussion"
-            ]
-          }
-        ]
-      },
-      "color": "#219f9e",
-      "accent": "#68d3d2"
-    },
-    {
-      "id": "mars-one",
-      "title": "Mars One",
-      "rating": "15",
-      "runtime": 116,
-      "genre": "Other",
-      "year": 2022,
-      "director": "Gabriel Martins",
-      "cast": "Cícero Lucas, Carlos Francisco, Camilla Damião, Rejane Faria",
-      "description": "A tender family portrait where everyday struggle meets cosmic ambition.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=mars-one&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/mars-one-01.jpeg",
-      "showtimes": {
-        "2026-05-23": [
-          {
-            "time": "20:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=9C92271F-325B-4320-A606-E349DBFC4EC6&BOparam::WScontent::loadArticle::context_id=A5F477AE-D1E4-4EF9-9445-C0A0E72C95B0",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Brazil on Film",
-              "English subtitles",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#a68230",
-      "accent": "#d6bd84",
-      "letterboxd_url": "https://letterboxd.com/film/mars-one/",
-      "letterboxd_rating": 3.89
     },
     {
       "id": "mars-one-intro",
@@ -3427,16 +3494,16 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "Brazil on Film",
               "Digital",
+              "Brazil on Film",
               "English subtitles",
               "Introduction"
             ]
           }
         ]
       },
-      "color": "#4d1a97",
-      "accent": "#8753d4",
+      "color": "#a63044",
+      "accent": "#d68493",
       "letterboxd_url": "https://letterboxd.com/film/mars-one/",
       "letterboxd_rating": 3.89
     },
@@ -3460,9 +3527,9 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Audio description",
               "Digital",
-              "Big screen classics"
+              "Big screen classics",
+              "Audio description"
             ]
           }
         ],
@@ -3473,9 +3540,9 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Digital",
               "Audio description",
-              "Big screen classics"
+              "Big screen classics",
+              "Digital"
             ]
           }
         ],
@@ -3486,16 +3553,16 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "Descriptive subtitles (open captions)",
-              "Digital",
               "Big screen classics",
-              "Audio description"
+              "Audio description",
+              "Descriptive subtitles (open captions)",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#219f30",
-      "accent": "#68d375",
+      "color": "#1a5597",
+      "accent": "#538fd4",
       "letterboxd_url": "https://letterboxd.com/film/may-december/",
       "letterboxd_rating": 3.64
     },
@@ -3524,8 +3591,8 @@
           }
         ]
       },
-      "color": "#a63044",
-      "accent": "#d68493"
+      "color": "#819f21",
+      "accent": "#b9d368"
     },
     {
       "id": "guillermo-del-toro-member-library-lates",
@@ -3552,8 +3619,8 @@
           }
         ]
       },
-      "color": "#1a5597",
-      "accent": "#538fd4"
+      "color": "#9f30a6",
+      "accent": "#d184d6"
     },
     {
       "id": "mera-lyari-qanda",
@@ -3576,16 +3643,16 @@
             "hoh": false,
             "tags": [
               "UK Asian Film Festival",
-              "UKAFF 2026",
+              "Digital",
               "English subtitles",
               "Q&A",
-              "Digital"
+              "UKAFF 2026"
             ]
           }
         ]
       },
-      "color": "#819f21",
-      "accent": "#b9d368"
+      "color": "#1a976c",
+      "accent": "#53d4a7"
     },
     {
       "id": "mike-figgis-mark-jenkin-in-conversation",
@@ -3613,8 +3680,8 @@
           }
         ]
       },
-      "color": "#9f30a6",
-      "accent": "#d184d6"
+      "color": "#9f4f21",
+      "accent": "#d38f68"
     },
     {
       "id": "mimic-directors-cut",
@@ -3642,8 +3709,8 @@
           }
         ]
       },
-      "color": "#1a976c",
-      "accent": "#53d4a7",
+      "color": "#3830a6",
+      "accent": "#8a84d6",
       "letterboxd_url": "https://letterboxd.com/film/mimic/",
       "letterboxd_rating": 2.99
     },
@@ -3673,8 +3740,8 @@
           }
         ]
       },
-      "color": "#9f4f21",
-      "accent": "#d38f68",
+      "color": "#36971a",
+      "accent": "#6fd453",
       "letterboxd_url": "https://letterboxd.com/film/mimic/",
       "letterboxd_rating": 2.99
     },
@@ -3699,16 +3766,16 @@
             "hoh": false,
             "tags": [
               "Regular programme",
-              "Discussion",
               "Relaxed (sensory) screenings",
-              "Digital",
-              "Introduction"
+              "Discussion",
+              "Introduction",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#3830a6",
-      "accent": "#8a84d6",
+      "color": "#9f2162",
+      "accent": "#d3689f",
       "letterboxd_url": "https://letterboxd.com/film/multiple-maniacs/",
       "letterboxd_rating": 3.62
     },
@@ -3738,8 +3805,40 @@
           }
         ]
       },
-      "color": "#36971a",
-      "accent": "#6fd453",
+      "color": "#308ea6",
+      "accent": "#84c6d6",
+      "letterboxd_url": "https://letterboxd.com/film/naked-acts/",
+      "letterboxd_rating": 3.76
+    },
+    {
+      "id": "naked-acts-intro",
+      "title": "Naked Acts",
+      "rating": "TBC",
+      "runtime": 87,
+      "genre": "Other",
+      "year": 1996,
+      "director": "Bridgett M. Davis",
+      "cast": "Jake-Ann Jones, Patricia DeArcy, John McKie, Ron Cephas Jones",
+      "description": "Celebrated as a key film in the canon of African-American independent cinema in the 1990s, Bridgett M. Davis’s first and only feature is a fresh, sensitive exploration of a Black actress attempting to reclaim her sexuality.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=naked-acts-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/naked-acts-01.jpeg",
+      "showtimes": {
+        "2026-05-20": [
+          {
+            "time": "18:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=755C4FD2-3729-458E-AB00-F200DB45F051&BOparam::WScontent::loadArticle::context_id=F61AA2A8-918A-4F9D-BFE2-6D7AAD5BD0B7",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Introduction",
+              "Big screen classics",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#978b1a",
+      "accent": "#d4c853",
       "letterboxd_url": "https://letterboxd.com/film/naked-acts/",
       "letterboxd_rating": 3.76
     },
@@ -3796,42 +3895,42 @@
           }
         ]
       },
-      "color": "#9f2162",
-      "accent": "#d3689f",
+      "color": "#6f219f",
+      "accent": "#aa68d3",
       "letterboxd_url": "https://letterboxd.com/film/neighboring-sounds/",
       "letterboxd_rating": 3.78
     },
     {
-      "id": "naked-acts-intro",
-      "title": "Naked Acts",
-      "rating": "TBC",
-      "runtime": 87,
+      "id": "never-let-go-2026",
+      "title": "Never Let Go",
+      "rating": "PG",
+      "runtime": 92,
       "genre": "Other",
-      "year": 1996,
-      "director": "Bridgett M. Davis",
-      "cast": "Jake-Ann Jones, Patricia DeArcy, John McKie, Ron Cephas Jones",
-      "description": "Celebrated as a key film in the canon of African-American independent cinema in the 1990s, Bridgett M. Davis’s first and only feature is a fresh, sensitive exploration of a Black actress attempting to reclaim her sexuality.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=naked-acts-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/naked-acts-01.jpeg",
+      "year": 1960,
+      "director": "John Guillermin",
+      "cast": "Richard Todd, Peter Sellers, Elizabeth Sellars, Adam Faith",
+      "description": "A tough and psychologically nuanced British take on The Bicycle Thieves.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=never-let-go-2026&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/never-let-go-01.jpeg",
       "showtimes": {
-        "2026-05-20": [
+        "2026-05-17": [
           {
-            "time": "18:15",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=755C4FD2-3729-458E-AB00-F200DB45F051&BOparam::WScontent::loadArticle::context_id=F61AA2A8-918A-4F9D-BFE2-6D7AAD5BD0B7",
+            "time": "12:20",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7F407DA3-416A-4CE2-9E25-237598EDE3F3&BOparam::WScontent::loadArticle::context_id=5DACD5DC-3C7E-4EAF-9659-2996F3C681E0",
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Big screen classics",
-              "Digital",
-              "Introduction"
+              "Great Expectations: British Postwar Cinema 1945-1960",
+              "35mm",
+              "Postwar British Cinema"
             ]
           }
         ]
       },
-      "color": "#308ea6",
-      "accent": "#84c6d6",
-      "letterboxd_url": "https://letterboxd.com/film/naked-acts/",
-      "letterboxd_rating": 3.76
+      "color": "#30a656",
+      "accent": "#84d69e",
+      "letterboxd_url": "https://letterboxd.com/film/never-let-go/",
+      "letterboxd_rating": 3.51
     },
     {
       "id": "never-let-go-intro",
@@ -3861,40 +3960,8 @@
           }
         ]
       },
-      "color": "#978b1a",
-      "accent": "#d4c853",
-      "letterboxd_url": "https://letterboxd.com/film/never-let-go/",
-      "letterboxd_rating": 3.51
-    },
-    {
-      "id": "never-let-go-2026",
-      "title": "Never Let Go",
-      "rating": "PG",
-      "runtime": 92,
-      "genre": "Other",
-      "year": 1960,
-      "director": "John Guillermin",
-      "cast": "Richard Todd, Peter Sellers, Elizabeth Sellars, Adam Faith",
-      "description": "A tough and psychologically nuanced British take on The Bicycle Thieves.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=never-let-go-2026&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/never-let-go-01.jpeg",
-      "showtimes": {
-        "2026-05-17": [
-          {
-            "time": "12:20",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7F407DA3-416A-4CE2-9E25-237598EDE3F3&BOparam::WScontent::loadArticle::context_id=5DACD5DC-3C7E-4EAF-9659-2996F3C681E0",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Great Expectations: British Postwar Cinema 1945-1960",
-              "Postwar British Cinema",
-              "35mm"
-            ]
-          }
-        ]
-      },
-      "color": "#6f219f",
-      "accent": "#aa68d3",
+      "color": "#971e1a",
+      "accent": "#d45753",
       "letterboxd_url": "https://letterboxd.com/film/never-let-go/",
       "letterboxd_rating": 3.51
     },
@@ -3925,70 +3992,8 @@
           }
         ]
       },
-      "color": "#30a656",
-      "accent": "#84d69e"
-    },
-    {
-      "id": "new-writings-hitchcock-and-herrmann",
-      "title": "Hitchcock & Herrmann – The Friendship & Film Scores that Changed Cinema",
-      "rating": "TBC",
-      "runtime": null,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "description": "Join author Steven C. Smith and discover the iconic partnership of Bernard Herrmann and Alfred Hitchcock, which still resonates in pop culture today.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=new-writings-hitchcock-and-herrmann&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/hitchcock-and-herrmann-01.jpeg",
-      "showtimes": {
-        "2026-04-27": [
-          {
-            "time": "18:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B05B8056-802A-4FA2-A184-992880F1233E&BOparam::WScontent::loadArticle::context_id=DA3272A5-AF3C-4B41-91A4-180DFAD79F3F",
-            "screen": "BFI Reuben Library",
-            "hoh": false,
-            "tags": [
-              "BFI Reuben Library",
-              "BFI Reuben library events",
-              "Discussion"
-            ]
-          }
-        ]
-      },
-      "color": "#971e1a",
-      "accent": "#d45753"
-    },
-    {
-      "id": "agnes-varda-new-writings",
-      "title": "In the Scene: Agnès Varda",
-      "rating": "TBC",
-      "runtime": null,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "description": "Author and film scholar Dr Paul Sutton presents his new book on Agnès Varda, which explores the filmmaker’s key films of in the context of her life.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=agnes-varda-new-writings&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/in-the-scene-agnes-varda-01.jpeg",
-      "showtimes": {
-        "2026-05-27": [
-          {
-            "time": "20:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8D0C7FEC-183C-4C24-92C7-B10A9492ED9E&BOparam::WScontent::loadArticle::context_id=E915C273-4ECF-48A6-8018-BABFC5C38CD8",
-            "screen": "BFI Reuben Library",
-            "hoh": false,
-            "tags": [
-              "BFI Reuben Library",
-              "BFI Reuben library events",
-              "Discussion"
-            ]
-          }
-        ]
-      },
       "color": "#21429f",
-      "accent": "#6884d3",
-      "letterboxd_url": "https://letterboxd.com/film/agnes-varda/",
-      "letterboxd_rating": null
+      "accent": "#6884d3"
     },
     {
       "id": "laura-mulvey-peter-wollen-new-writings",
@@ -4011,14 +4016,76 @@
             "hoh": false,
             "tags": [
               "BFI Reuben Library",
-              "Discussion",
-              "BFI Reuben library events"
+              "BFI Reuben library events",
+              "Discussion"
             ]
           }
         ]
       },
       "color": "#71a630",
       "accent": "#b1d684"
+    },
+    {
+      "id": "new-writings-hitchcock-and-herrmann",
+      "title": "Hitchcock & Herrmann – The Friendship & Film Scores that Changed Cinema",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "Join author Steven C. Smith and discover the iconic partnership of Bernard Herrmann and Alfred Hitchcock, which still resonates in pop culture today.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=new-writings-hitchcock-and-herrmann&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/hitchcock-and-herrmann-01.jpeg",
+      "showtimes": {
+        "2026-04-27": [
+          {
+            "time": "18:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B05B8056-802A-4FA2-A184-992880F1233E&BOparam::WScontent::loadArticle::context_id=DA3272A5-AF3C-4B41-91A4-180DFAD79F3F",
+            "screen": "BFI Reuben Library",
+            "hoh": false,
+            "tags": [
+              "BFI Reuben Library",
+              "Discussion",
+              "BFI Reuben library events"
+            ]
+          }
+        ]
+      },
+      "color": "#971a84",
+      "accent": "#d453c0"
+    },
+    {
+      "id": "agnes-varda-new-writings",
+      "title": "In the Scene: Agnès Varda",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "Author and film scholar Dr Paul Sutton presents his new book on Agnès Varda, which explores the filmmaker’s key films of in the context of her life.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=agnes-varda-new-writings&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/in-the-scene-agnes-varda-01.jpeg",
+      "showtimes": {
+        "2026-05-27": [
+          {
+            "time": "20:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8D0C7FEC-183C-4C24-92C7-B10A9492ED9E&BOparam::WScontent::loadArticle::context_id=E915C273-4ECF-48A6-8018-BABFC5C38CD8",
+            "screen": "BFI Reuben Library",
+            "hoh": false,
+            "tags": [
+              "BFI Reuben Library",
+              "Discussion",
+              "BFI Reuben library events"
+            ]
+          }
+        ]
+      },
+      "color": "#219f8e",
+      "accent": "#68d3c4",
+      "letterboxd_url": "https://letterboxd.com/film/agnes-varda/",
+      "letterboxd_rating": null
     },
     {
       "id": "nightmare-alley-black-and-white",
@@ -4040,14 +4107,14 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Guillermo del Toro",
-              "Digital"
+              "Digital",
+              "Guillermo del Toro"
             ]
           }
         ]
       },
-      "color": "#971a84",
-      "accent": "#d453c0",
+      "color": "#a67330",
+      "accent": "#d6b384",
       "letterboxd_url": "https://letterboxd.com/film/nightmare-alley-2021/",
       "letterboxd_rating": 3.45
     },
@@ -4077,43 +4144,10 @@
           }
         ]
       },
-      "color": "#219f8e",
-      "accent": "#68d3c4",
+      "color": "#3d1a97",
+      "accent": "#7753d4",
       "letterboxd_url": "https://letterboxd.com/film/nightmare-alley-2021/",
       "letterboxd_rating": 3.45
-    },
-    {
-      "id": "normal-preview-qanda",
-      "title": "Normal",
-      "rating": "TBC",
-      "runtime": 90,
-      "genre": "Other",
-      "year": 2025,
-      "director": "Ben Wheatley",
-      "cast": "Bob Odenkirk, Henry Winkler, Lena Headey",
-      "description": "A sheriff realises he doesn’t know his smalltown quite as well as he should, in this belter starring Bob Odenkirk and directed by Ben Wheatley.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=normal-preview-qanda&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/normal-01.jpeg",
-      "showtimes": {
-        "2026-05-11": [
-          {
-            "time": "20:40",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=CA3088C4-5A3E-4CA5-99DF-8BFD4D93463F&BOparam::WScontent::loadArticle::context_id=B2689B3D-BE3D-4169-89DA-0D5038046FC2",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Previews and events",
-              "Preview",
-              "Digital",
-              "Q&A"
-            ]
-          }
-        ]
-      },
-      "color": "#a67330",
-      "accent": "#d6b384",
-      "letterboxd_url": "https://letterboxd.com/film/normal-2025/",
-      "letterboxd_rating": 3.01
     },
     {
       "id": "not-a-pretty-picture-4k-restoration-uk-premiere-intro",
@@ -4136,17 +4170,82 @@
             "hoh": false,
             "tags": [
               "Regular programme",
+              "Introduction",
               "Digital",
-              "Woman with a Movie Camera",
+              "Woman with a Movie Camera"
+            ]
+          }
+        ]
+      },
+      "color": "#239f21",
+      "accent": "#6ad368",
+      "letterboxd_url": "https://letterboxd.com/film/not-a-pretty-picture/",
+      "letterboxd_rating": 4.03
+    },
+    {
+      "id": "normal-preview-qanda",
+      "title": "Normal",
+      "rating": "TBC",
+      "runtime": 90,
+      "genre": "Other",
+      "year": 2025,
+      "director": "Ben Wheatley",
+      "cast": "Bob Odenkirk, Henry Winkler, Lena Headey",
+      "description": "A sheriff realises he doesn’t know his smalltown quite as well as he should, in this belter starring Bob Odenkirk and directed by Ben Wheatley.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=normal-preview-qanda&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/normal-01.jpeg",
+      "showtimes": {
+        "2026-05-11": [
+          {
+            "time": "20:40",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=CA3088C4-5A3E-4CA5-99DF-8BFD4D93463F&BOparam::WScontent::loadArticle::context_id=B2689B3D-BE3D-4169-89DA-0D5038046FC2",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Previews and events",
+              "Digital",
+              "Preview",
+              "Q&A"
+            ]
+          }
+        ]
+      },
+      "color": "#a63054",
+      "accent": "#d6849d",
+      "letterboxd_url": "https://letterboxd.com/film/normal-2025/",
+      "letterboxd_rating": 3.01
+    },
+    {
+      "id": "opening-night-intro",
+      "title": "Opening Night",
+      "rating": "15",
+      "runtime": 144,
+      "genre": "Other",
+      "year": 1977,
+      "director": "John Cassavetes",
+      "cast": "Gena Rowlands, Ben Gazzara, Joan Blondell, Paul Stewart",
+      "description": "Haunted by death and terrified of ageing, a fragile star stumbles towards opening night, where grief, booze and brilliance collide – and the stage demands she survive it.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=opening-night-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/opening-night-01.jpeg",
+      "showtimes": {
+        "2026-05-27": [
+          {
+            "time": "17:55",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B45AF044-FFBE-4B6B-8395-18183E78836F&BOparam::WScontent::loadArticle::context_id=D82926BD-17EF-4321-8CBE-D77442A20474",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Big screen classics",
               "Introduction"
             ]
           }
         ]
       },
-      "color": "#3d1a97",
-      "accent": "#7753d4",
-      "letterboxd_url": "https://letterboxd.com/film/not-a-pretty-picture/",
-      "letterboxd_rating": 4.03
+      "color": "#1a6597",
+      "accent": "#53a0d4",
+      "letterboxd_url": "https://letterboxd.com/film/opening-night/",
+      "letterboxd_rating": 4.3
     },
     {
       "id": "open-endings-uk-premiere-intro",
@@ -4171,14 +4270,14 @@
               "Queer East Festival",
               "Queer East 2026",
               "Introduction",
-              "Digital",
-              "English subtitles"
+              "English subtitles",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#239f21",
-      "accent": "#6ad368",
+      "color": "#919f21",
+      "accent": "#c7d368",
       "letterboxd_url": "https://letterboxd.com/film/open-endings/",
       "letterboxd_rating": 3.61
     },
@@ -4202,46 +4301,14 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Digital",
-              "Big screen classics"
-            ]
-          }
-        ]
-      },
-      "color": "#a63054",
-      "accent": "#d6849d",
-      "letterboxd_url": "https://letterboxd.com/film/opening-night/",
-      "letterboxd_rating": 4.3
-    },
-    {
-      "id": "opening-night-intro",
-      "title": "Opening Night",
-      "rating": "15",
-      "runtime": 144,
-      "genre": "Other",
-      "year": 1977,
-      "director": "John Cassavetes",
-      "cast": "Gena Rowlands, Ben Gazzara, Joan Blondell, Paul Stewart",
-      "description": "Haunted by death and terrified of ageing, a fragile star stumbles towards opening night, where grief, booze and brilliance collide – and the stage demands she survive it.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=opening-night-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/opening-night-01.jpeg",
-      "showtimes": {
-        "2026-05-27": [
-          {
-            "time": "17:55",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B45AF044-FFBE-4B6B-8395-18183E78836F&BOparam::WScontent::loadArticle::context_id=D82926BD-17EF-4321-8CBE-D77442A20474",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
               "Big screen classics",
-              "Digital",
-              "Introduction"
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#1a6597",
-      "accent": "#53a0d4",
+      "color": "#9030a6",
+      "accent": "#c784d6",
       "letterboxd_url": "https://letterboxd.com/film/opening-night/",
       "letterboxd_rating": 4.3
     },
@@ -4277,14 +4344,14 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Digital",
-              "Guillermo del Toro"
+              "Guillermo del Toro",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#919f21",
-      "accent": "#c7d368",
+      "color": "#1a975c",
+      "accent": "#53d497",
       "letterboxd_url": "https://letterboxd.com/film/pacific-rim/",
       "letterboxd_rating": 3.48
     },
@@ -4308,9 +4375,9 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
+              "Digital",
               "Guillermo del Toro",
-              "English subtitles",
-              "Digital"
+              "English subtitles"
             ]
           }
         ],
@@ -4328,8 +4395,41 @@
           }
         ]
       },
-      "color": "#9030a6",
-      "accent": "#c784d6",
+      "color": "#9f3f21",
+      "accent": "#d38268",
+      "letterboxd_url": "https://letterboxd.com/film/pans-labyrinth/",
+      "letterboxd_rating": 4.15
+    },
+    {
+      "id": "pans-labyrinth-qanda",
+      "title": "Pan’s Labyrinth",
+      "rating": "15",
+      "runtime": 120,
+      "genre": "Other",
+      "year": 2006,
+      "director": "Guillermo del Toro",
+      "cast": "Ivana Baquero, Sergi López, Maribel Verdú, Ariadna Gil",
+      "description": "Fascism as the ultimate horror in one of the director’s greatest triumphs.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=pans-labyrinth-qanda&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/pans-labyrinth-02.jpeg",
+      "showtimes": {
+        "2026-05-10": [
+          {
+            "time": "13:45",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=76BAA691-BBEF-4E1A-B2A4-8CF67177686E&BOparam::WScontent::loadArticle::context_id=653C5CC5-7CD9-4B6B-8047-1EFECC5510FE",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Q&A",
+              "Digital",
+              "English subtitles",
+              "Guillermo del Toro"
+            ]
+          }
+        ]
+      },
+      "color": "#3036a6",
+      "accent": "#8489d6",
       "letterboxd_url": "https://letterboxd.com/film/pans-labyrinth/",
       "letterboxd_rating": 4.15
     },
@@ -4353,50 +4453,17 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
+              "Introduction",
               "35mm",
-              "Big screen classics",
-              "Introduction"
+              "Big screen classics"
             ]
           }
         ]
       },
-      "color": "#1a975c",
-      "accent": "#53d497",
+      "color": "#46971a",
+      "accent": "#80d453",
       "letterboxd_url": "https://letterboxd.com/film/the-perfect-storm/",
       "letterboxd_rating": 3.17
-    },
-    {
-      "id": "pans-labyrinth-qanda",
-      "title": "Pan’s Labyrinth",
-      "rating": "15",
-      "runtime": 120,
-      "genre": "Other",
-      "year": 2006,
-      "director": "Guillermo del Toro",
-      "cast": "Ivana Baquero, Sergi López, Maribel Verdú, Ariadna Gil",
-      "description": "Fascism as the ultimate horror in one of the director’s greatest triumphs.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=pans-labyrinth-qanda&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/pans-labyrinth-02.jpeg",
-      "showtimes": {
-        "2026-05-10": [
-          {
-            "time": "13:45",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=76BAA691-BBEF-4E1A-B2A4-8CF67177686E&BOparam::WScontent::loadArticle::context_id=653C5CC5-7CD9-4B6B-8047-1EFECC5510FE",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Guillermo del Toro",
-              "English subtitles",
-              "Q&A",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#9f3f21",
-      "accent": "#d38268",
-      "letterboxd_url": "https://letterboxd.com/film/pans-labyrinth/",
-      "letterboxd_rating": 4.15
     },
     {
       "id": "pickpocket-apr-2026",
@@ -4418,15 +4485,15 @@
             "screen": "Screen NFT4",
             "hoh": false,
             "tags": [
-              "Digital",
               "Big screen classics",
+              "Digital",
               "English subtitles"
             ]
           }
         ]
       },
-      "color": "#3036a6",
-      "accent": "#8489d6",
+      "color": "#9f2172",
+      "accent": "#d368ac",
       "letterboxd_url": "https://letterboxd.com/film/pickpocket/",
       "letterboxd_rating": 3.94
     },
@@ -4457,8 +4524,8 @@
           }
         ]
       },
-      "color": "#46971a",
-      "accent": "#80d453",
+      "color": "#309da6",
+      "accent": "#84d0d6",
       "letterboxd_url": "https://letterboxd.com/film/the-plumber/",
       "letterboxd_rating": 3.44
     },
@@ -4488,8 +4555,41 @@
           }
         ]
       },
-      "color": "#9f2172",
-      "accent": "#d368ac"
+      "color": "#977b1a",
+      "accent": "#d4b753"
+    },
+    {
+      "id": "rip-it-up",
+      "title": "Rip It Up",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "Young curators and speakers lead a takeover, exhibiting work by and about young people.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=rip-it-up&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/rip-it-up-01.jpeg",
+      "showtimes": {
+        "2026-05-03": [
+          {
+            "time": "12:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=9E74E81F-2E81-4E98-922B-B2F963BD5C8B&BOparam::WScontent::loadArticle::context_id=6A0E7187-1234-409B-8292-479B07A12E79",
+            "screen": "BFI Southbank",
+            "hoh": false,
+            "tags": [
+              "Workshop",
+              "Talk",
+              "Festival of Britain",
+              "Exhibition"
+            ]
+          }
+        ]
+      },
+      "color": "#5f219f",
+      "accent": "#9c68d3",
+      "letterboxd_url": "https://letterboxd.com/film/rip-it-up/",
+      "letterboxd_rating": null
     },
     {
       "id": "rocco-and-his-brothers-2026",
@@ -4512,17 +4612,50 @@
             "hoh": false,
             "tags": [
               "The Cinematic Life of Boxing",
-              "Digital",
+              "English subtitles",
               "Cinematic Life of Boxing",
-              "English subtitles"
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#309da6",
-      "accent": "#84d0d6",
+      "color": "#30a647",
+      "accent": "#84d694",
       "letterboxd_url": "https://letterboxd.com/film/rocco-and-his-brothers/",
       "letterboxd_rating": 4.32
+    },
+    {
+      "id": "rocky-intro",
+      "title": "Rocky",
+      "rating": "12A",
+      "runtime": 121,
+      "genre": "Other",
+      "year": 1976,
+      "director": "John G. Avildsen",
+      "cast": "Sylvester Stallone, Talia Shire, Burt Young",
+      "description": "This Oscar-winning drama finds a journeyman boxer from Philadelphia with a surprise shot at the heavyweight world championship.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=rocky-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/rocky-01.jpeg",
+      "showtimes": {
+        "2026-04-30": [
+          {
+            "time": "18:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=476D95A7-F459-4E8B-B80C-78B8C379A801&BOparam::WScontent::loadArticle::context_id=1C349AFE-E231-4792-93B0-4643B4D0C1C1",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "The Cinematic Life of Boxing",
+              "Introduction",
+              "Cinematic Life of Boxing",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#971a26",
+      "accent": "#d45360",
+      "letterboxd_url": "https://letterboxd.com/film/rocky/",
+      "letterboxd_rating": 4.1
     },
     {
       "id": "rose-of-nevada-intro",
@@ -4552,76 +4685,10 @@
           }
         ]
       },
-      "color": "#977b1a",
-      "accent": "#d4b753",
+      "color": "#21529f",
+      "accent": "#6892d3",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.44
-    },
-    {
-      "id": "rocky-intro",
-      "title": "Rocky",
-      "rating": "12A",
-      "runtime": 121,
-      "genre": "Other",
-      "year": 1976,
-      "director": "John G. Avildsen",
-      "cast": "Sylvester Stallone, Talia Shire, Burt Young",
-      "description": "This Oscar-winning drama finds a journeyman boxer from Philadelphia with a surprise shot at the heavyweight world championship.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=rocky-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/rocky-01.jpeg",
-      "showtimes": {
-        "2026-04-30": [
-          {
-            "time": "18:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=476D95A7-F459-4E8B-B80C-78B8C379A801&BOparam::WScontent::loadArticle::context_id=1C349AFE-E231-4792-93B0-4643B4D0C1C1",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "The Cinematic Life of Boxing",
-              "Cinematic Life of Boxing",
-              "Introduction",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#5f219f",
-      "accent": "#9c68d3",
-      "letterboxd_url": "https://letterboxd.com/film/rocky/",
-      "letterboxd_rating": 4.1
-    },
-    {
-      "id": "rip-it-up",
-      "title": "Rip It Up",
-      "rating": "TBC",
-      "runtime": null,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "description": "Young curators and speakers lead a takeover, exhibiting work by and about young people.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=rip-it-up&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/rip-it-up-01.jpeg",
-      "showtimes": {
-        "2026-05-03": [
-          {
-            "time": "12:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=9E74E81F-2E81-4E98-922B-B2F963BD5C8B&BOparam::WScontent::loadArticle::context_id=6A0E7187-1234-409B-8292-479B07A12E79",
-            "screen": "BFI Southbank",
-            "hoh": false,
-            "tags": [
-              "Exhibition",
-              "Workshop",
-              "Talk",
-              "Festival of Britain"
-            ]
-          }
-        ]
-      },
-      "color": "#30a647",
-      "accent": "#84d694",
-      "letterboxd_url": "https://letterboxd.com/film/rip-it-up/",
-      "letterboxd_rating": null
     },
     {
       "id": "rose-of-nevada-member-exclusive",
@@ -4643,51 +4710,16 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
+              "Digital",
               "Closed captions",
               "Audio description",
-              "Digital",
               "Member exclusives"
             ]
           }
         ]
       },
-      "color": "#971a26",
-      "accent": "#d45360",
-      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
-      "letterboxd_rating": 3.44
-    },
-    {
-      "id": "rose-of-nevada-seniors-intro",
-      "title": "Rose of Nevada",
-      "rating": "15",
-      "runtime": 114,
-      "genre": "Other",
-      "year": 2025,
-      "director": "Mark Jenkin",
-      "cast": "George MacKay, Callum Turner, Rosalind Eleazar, Mary Woodvine",
-      "description": "Cornish auteur Mark Jenkin returns with a political folktale of two fishermen locked in a time-loop.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=rose-of-nevada-seniors-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/rose-of-nevada-02.jpeg",
-      "showtimes": {
-        "2026-04-29": [
-          {
-            "time": "14:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=71F5CBC5-F2DF-470A-93BD-F217C8BA2796&BOparam::WScontent::loadArticle::context_id=7B645071-D137-4F7F-992B-76641780FF4F",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Mark Jenkin’s Cornish trilogy",
-              "Introduction",
-              "Closed captions",
-              "Digital",
-              "Audio description",
-              "Seniors’ matinee"
-            ]
-          }
-        ]
-      },
-      "color": "#21529f",
-      "accent": "#6892d3",
+      "color": "#80a630",
+      "accent": "#bcd684",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.44
     },
@@ -4712,17 +4744,52 @@
             "hoh": false,
             "tags": [
               "Mark Jenkin’s Cornish trilogy",
-              "Audio description",
-              "Digital",
-              "Closed captions",
               "Descriptive subtitles (open captions)",
-              "Relaxed (sensory) screenings"
+              "Relaxed (sensory) screenings",
+              "Audio description",
+              "Closed captions",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#80a630",
-      "accent": "#bcd684",
+      "color": "#971a94",
+      "accent": "#d453d0",
+      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
+      "letterboxd_rating": 3.44
+    },
+    {
+      "id": "rose-of-nevada-seniors-intro",
+      "title": "Rose of Nevada",
+      "rating": "15",
+      "runtime": 114,
+      "genre": "Other",
+      "year": 2025,
+      "director": "Mark Jenkin",
+      "cast": "George MacKay, Callum Turner, Rosalind Eleazar, Mary Woodvine",
+      "description": "Cornish auteur Mark Jenkin returns with a political folktale of two fishermen locked in a time-loop.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=rose-of-nevada-seniors-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/rose-of-nevada-02.jpeg",
+      "showtimes": {
+        "2026-04-29": [
+          {
+            "time": "14:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=71F5CBC5-F2DF-470A-93BD-F217C8BA2796&BOparam::WScontent::loadArticle::context_id=7B645071-D137-4F7F-992B-76641780FF4F",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Mark Jenkin’s Cornish trilogy",
+              "Audio description",
+              "Introduction",
+              "Closed captions",
+              "Digital",
+              "Seniors’ matinee"
+            ]
+          }
+        ]
+      },
+      "color": "#219f7e",
+      "accent": "#68d3b7",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.44
     },
@@ -4747,10 +4814,10 @@
             "hoh": false,
             "tags": [
               "Mark Jenkin’s Cornish trilogy",
-              "Releases",
-              "Audio description",
               "Closed captions",
-              "Digital"
+              "Digital",
+              "Releases",
+              "Audio description"
             ]
           },
           {
@@ -4760,10 +4827,10 @@
             "hoh": false,
             "tags": [
               "Mark Jenkin’s Cornish trilogy",
-              "Descriptive subtitles (open captions)",
-              "Digital",
               "Releases",
-              "Audio description"
+              "Descriptive subtitles (open captions)",
+              "Audio description",
+              "Digital"
             ]
           },
           {
@@ -4773,10 +4840,10 @@
             "hoh": false,
             "tags": [
               "Mark Jenkin’s Cornish trilogy",
-              "Releases",
               "Audio description",
               "Closed captions",
-              "Digital"
+              "Digital",
+              "Releases"
             ]
           }
         ],
@@ -4788,10 +4855,10 @@
             "hoh": false,
             "tags": [
               "Mark Jenkin’s Cornish trilogy",
-              "Releases",
+              "Digital",
               "Descriptive subtitles (open captions)",
               "Audio description",
-              "Digital"
+              "Releases"
             ]
           },
           {
@@ -4801,16 +4868,16 @@
             "hoh": false,
             "tags": [
               "Mark Jenkin’s Cornish trilogy",
+              "Closed captions",
               "Audio description",
               "Releases",
-              "Digital",
-              "Closed captions"
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#971a94",
-      "accent": "#d453d0",
+      "color": "#a66430",
+      "accent": "#d6a884",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.44
     },
@@ -4835,15 +4902,15 @@
             "hoh": false,
             "tags": [
               "Trash! The Wildest Films You’ve Ever Seen",
-              "Trash",
               "Introduction",
-              "Digital"
+              "Digital",
+              "Trash"
             ]
           }
         ]
       },
-      "color": "#219f7e",
-      "accent": "#68d3b7"
+      "color": "#2d1a97",
+      "accent": "#6753d4"
     },
     {
       "id": "sao-paulo-incorporated",
@@ -4865,8 +4932,8 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "Brazil on Film",
               "English subtitles",
+              "Brazil on Film",
               "Digital"
             ]
           }
@@ -4878,15 +4945,15 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
+              "English subtitles",
               "Brazil on Film",
-              "Digital",
-              "English subtitles"
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#a66430",
-      "accent": "#d6a884",
+      "color": "#339f21",
+      "accent": "#77d368",
       "letterboxd_url": "https://letterboxd.com/film/sao-paulo-incorporated/",
       "letterboxd_rating": 4.05
     },
@@ -4911,16 +4978,16 @@
             "hoh": false,
             "tags": [
               "UK Asian Film Festival",
-              "English subtitles",
-              "Q&A",
               "UKAFF 2026",
+              "Q&A",
+              "English subtitles",
               "Digital"
             ]
           }
         ]
       },
-      "color": "#2d1a97",
-      "accent": "#6753d4",
+      "color": "#a63063",
+      "accent": "#d684a7",
       "letterboxd_url": "https://letterboxd.com/film/shadowbox-2025/",
       "letterboxd_rating": 3.36
     },
@@ -4951,8 +5018,8 @@
           }
         ]
       },
-      "color": "#339f21",
-      "accent": "#77d368",
+      "color": "#1a7597",
+      "accent": "#53b0d4",
       "letterboxd_url": "https://letterboxd.com/film/the-shape-of-water/",
       "letterboxd_rating": 3.67
     },
@@ -4976,16 +5043,48 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Guillermo del Toro",
-              "Digital"
+              "Digital",
+              "Guillermo del Toro"
             ]
           }
         ]
       },
-      "color": "#a63063",
-      "accent": "#d684a7",
+      "color": "#9f9d21",
+      "accent": "#d3d168",
       "letterboxd_url": "https://letterboxd.com/film/the-shape-of-water/",
       "letterboxd_rating": 3.67
+    },
+    {
+      "id": "small-axe-lovers-rock-intro",
+      "title": "Small Axe: Lovers Rock",
+      "rating": "15",
+      "runtime": 70,
+      "genre": "Other",
+      "year": 2020,
+      "director": "Steve McQueen",
+      "cast": "Micheal Ward, Amarah-Jae St Aubyn",
+      "description": "The jubilant high point of Steve McQueen’s Small Axe series recreates the blossoming romance between two people attending a house party in West London at the start of the 1980s.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=small-axe-lovers-rock-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/lovers-rock-01.jpeg",
+      "showtimes": {
+        "2026-04-29": [
+          {
+            "time": "18:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=79581E8B-534F-466F-A1AE-218F80C45D49&BOparam::WScontent::loadArticle::context_id=3CF85A72-4C5C-43EE-ADCA-0826DC51690E",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Big screen classics",
+              "Digital",
+              "Introduction"
+            ]
+          }
+        ]
+      },
+      "color": "#8130a6",
+      "accent": "#bd84d6",
+      "letterboxd_url": "https://letterboxd.com/film/lovers-rock-2020/",
+      "letterboxd_rating": 4.05
     },
     {
       "id": "singin-in-the-rain-2026",
@@ -5007,8 +5106,8 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Digital",
-              "Big screen classics"
+              "Big screen classics",
+              "Digital"
             ]
           }
         ],
@@ -5037,85 +5136,10 @@
           }
         ]
       },
-      "color": "#1a7597",
-      "accent": "#53b0d4",
+      "color": "#1a974c",
+      "accent": "#53d487",
       "letterboxd_url": "https://letterboxd.com/film/singin-in-the-rain/",
       "letterboxd_rating": 4.34
-    },
-    {
-      "id": "small-axe-lovers-rock-intro",
-      "title": "Small Axe: Lovers Rock",
-      "rating": "15",
-      "runtime": 70,
-      "genre": "Other",
-      "year": 2020,
-      "director": "Steve McQueen",
-      "cast": "Micheal Ward, Amarah-Jae St Aubyn",
-      "description": "The jubilant high point of Steve McQueen’s Small Axe series recreates the blossoming romance between two people attending a house party in West London at the start of the 1980s.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=small-axe-lovers-rock-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/lovers-rock-01.jpeg",
-      "showtimes": {
-        "2026-04-29": [
-          {
-            "time": "18:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=79581E8B-534F-466F-A1AE-218F80C45D49&BOparam::WScontent::loadArticle::context_id=3CF85A72-4C5C-43EE-ADCA-0826DC51690E",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Big screen classics",
-              "Introduction",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#9f9d21",
-      "accent": "#d3d168",
-      "letterboxd_url": "https://letterboxd.com/film/lovers-rock-2020/",
-      "letterboxd_rating": 4.05
-    },
-    {
-      "id": "star-is-born",
-      "title": "A Star is Born",
-      "rating": "U",
-      "runtime": 186,
-      "genre": "Other",
-      "year": 1954,
-      "director": "George Cukor",
-      "cast": "Judy Garland, James Mason, Jack Carson, Charles Bickford",
-      "description": "Hollywood crowns a new star while quietly burying another, in a film that features Judy Garland’s finest performance.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=star-is-born&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/star-is-born-01.jpeg",
-      "showtimes": {
-        "2026-05-16": [
-          {
-            "time": "14:10",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=5204AE00-C8F4-45EB-A016-3649861D65B5&BOparam::WScontent::loadArticle::context_id=BD6F38DD-0C5B-48B6-94AF-D6858C90CAC8",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Big screen classics",
-              "Digital"
-            ]
-          }
-        ],
-        "2026-05-25": [
-          {
-            "time": "11:40",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=5204AE00-C8F4-45EB-A016-3649861D65B5&BOparam::WScontent::loadArticle::context_id=53BA9E2C-3DD4-49A2-B1DB-9B8A05D54EAE",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Big screen classics",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#8130a6",
-      "accent": "#bd84d6",
-      "letterboxd_url": "https://letterboxd.com/film/a-star-is-born-1954/",
-      "letterboxd_rating": 3.89
     },
     {
       "id": "spring-outside-the-fence-intro",
@@ -5138,18 +5162,61 @@
             "hoh": false,
             "tags": [
               "Queer East Festival",
-              "Digital",
-              "Introduction",
+              "English subtitles",
               "Queer East 2026",
-              "English subtitles"
+              "Introduction",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#1a974c",
-      "accent": "#53d487",
+      "color": "#9f2f21",
+      "accent": "#d37468",
       "letterboxd_url": "https://letterboxd.com/film/the-spring-outside-the-fence/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "star-is-born",
+      "title": "A Star is Born",
+      "rating": "U",
+      "runtime": 186,
+      "genre": "Other",
+      "year": 1954,
+      "director": "George Cukor",
+      "cast": "Judy Garland, James Mason, Jack Carson, Charles Bickford",
+      "description": "Hollywood crowns a new star while quietly burying another, in a film that features Judy Garland’s finest performance.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=star-is-born&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/star-is-born-01.jpeg",
+      "showtimes": {
+        "2026-05-16": [
+          {
+            "time": "14:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=5204AE00-C8F4-45EB-A016-3649861D65B5&BOparam::WScontent::loadArticle::context_id=BD6F38DD-0C5B-48B6-94AF-D6858C90CAC8",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Big screen classics"
+            ]
+          }
+        ],
+        "2026-05-25": [
+          {
+            "time": "11:40",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=5204AE00-C8F4-45EB-A016-3649861D65B5&BOparam::WScontent::loadArticle::context_id=53BA9E2C-3DD4-49A2-B1DB-9B8A05D54EAE",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Big screen classics",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#3045a6",
+      "accent": "#8493d6",
+      "letterboxd_url": "https://letterboxd.com/film/a-star-is-born-1954/",
+      "letterboxd_rating": 3.89
     },
     {
       "id": "super-8-and-a-half",
@@ -5172,14 +5239,14 @@
             "hoh": false,
             "tags": [
               "Trash! The Wildest Films You’ve Ever Seen",
-              "Digital",
-              "Trash"
+              "Trash",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#9f2f21",
-      "accent": "#d37468",
+      "color": "#56971a",
+      "accent": "#90d453",
       "letterboxd_url": "https://letterboxd.com/film/super-8-1994/",
       "letterboxd_rating": 3.45
     },
@@ -5233,10 +5300,102 @@
           }
         ]
       },
-      "color": "#3045a6",
-      "accent": "#8493d6",
+      "color": "#9f2182",
+      "accent": "#d368ba",
       "letterboxd_url": "https://letterboxd.com/film/sunset-boulevard/",
       "letterboxd_rating": 4.43
+    },
+    {
+      "id": "surviving-earth",
+      "title": "Surviving Earth",
+      "rating": "15",
+      "runtime": 96,
+      "genre": "Other",
+      "year": 2025,
+      "director": "Thea Gajić",
+      "cast": "Slavko Sobin, Olive Gray",
+      "description": "In Thea Gajic’s social realist feature debut, we follow Yugoslavian refugee Vlad as he embraces a life in Bristol and battles addiction.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=surviving-earth&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/surviving-earth-01.jpeg",
+      "showtimes": {
+        "2026-04-25": [
+          {
+            "time": "18:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1D58A78A-5927-4065-94E5-8844526B4E8A&BOparam::WScontent::loadArticle::context_id=3D0F3C6C-26AB-4652-81C4-7C01DA6F2375",
+            "screen": "Screen NFT4",
+            "hoh": false,
+            "tags": [
+              "Descriptive subtitles (open captions)",
+              "Digital",
+              "New releases",
+              "Audio description",
+              "English subtitles"
+            ]
+          },
+          {
+            "time": "20:50",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1D58A78A-5927-4065-94E5-8844526B4E8A&BOparam::WScontent::loadArticle::context_id=7FCFA31A-1094-4CA4-8BAA-72C9FB8EF880",
+            "screen": "Screen NFT4",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "Releases",
+              "Digital",
+              "Audio description",
+              "English subtitles"
+            ]
+          }
+        ],
+        "2026-04-26": [
+          {
+            "time": "15:20",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1D58A78A-5927-4065-94E5-8844526B4E8A&BOparam::WScontent::loadArticle::context_id=3589A137-D276-4C06-BD03-78656AC4DC9C",
+            "screen": "Screen NFT4",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "Digital",
+              "releases",
+              "English subtitles",
+              "Audio description"
+            ]
+          }
+        ],
+        "2026-04-27": [
+          {
+            "time": "20:50",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1D58A78A-5927-4065-94E5-8844526B4E8A&BOparam::WScontent::loadArticle::context_id=07BDE36F-24C2-43C6-8DC3-7AF8547B9C09",
+            "screen": "Screen NFT4",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "English subtitles",
+              "releases",
+              "Audio description",
+              "Digital"
+            ]
+          }
+        ],
+        "2026-04-28": [
+          {
+            "time": "20:50",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1D58A78A-5927-4065-94E5-8844526B4E8A&BOparam::WScontent::loadArticle::context_id=40E99BAA-8ABA-4CCD-AFE9-35059211B949",
+            "screen": "Screen NFT4",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "English subtitles",
+              "Releases",
+              "Audio description",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#30a69f",
+      "accent": "#84d6d1",
+      "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
+      "letterboxd_rating": 3.65
     },
     {
       "id": "tales-of-arcadia-qanda",
@@ -5264,100 +5423,53 @@
           }
         ]
       },
-      "color": "#56971a",
-      "accent": "#90d453"
+      "color": "#976c1a",
+      "accent": "#d4a753"
     },
     {
-      "id": "surviving-earth",
-      "title": "Surviving Earth",
-      "rating": "15",
-      "runtime": 96,
+      "id": "three-weird-sisters",
+      "title": "The Three Weird Sisters",
+      "rating": "PG",
+      "runtime": 83,
       "genre": "Other",
-      "year": 2025,
-      "director": "Thea Gajić",
-      "cast": "Slavko Sobin, Olive Gray",
-      "description": "In Thea Gajic’s social realist feature debut, we follow Yugoslavian refugee Vlad as he embraces a life in Bristol and battles addiction.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=surviving-earth&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/surviving-earth-01.jpeg",
+      "year": 1948,
+      "director": "Daniel Birt",
+      "cast": "Nancy Price, Mary Clare, Mary Merrall, Nova Pilbeam",
+      "description": "Dylan Thomas’s finest original screenplay is an eccentric blend of sharp wit and gothic shudder.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=three-weird-sisters&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/three-weird-sisters-01.jpeg",
       "showtimes": {
-        "2026-04-25": [
+        "2026-05-06": [
           {
-            "time": "18:15",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1D58A78A-5927-4065-94E5-8844526B4E8A&BOparam::WScontent::loadArticle::context_id=3D0F3C6C-26AB-4652-81C4-7C01DA6F2375",
-            "screen": "Screen NFT4",
+            "time": "20:40",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D72B3511-CAF9-45D1-A44E-376E358FBB82&BOparam::WScontent::loadArticle::context_id=A7F19032-22F3-437D-85D4-B4332DD4014B",
+            "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "Descriptive subtitles (open captions)",
-              "Audio description",
-              "English subtitles",
-              "New releases",
-              "Digital"
-            ]
-          },
-          {
-            "time": "20:50",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1D58A78A-5927-4065-94E5-8844526B4E8A&BOparam::WScontent::loadArticle::context_id=7FCFA31A-1094-4CA4-8BAA-72C9FB8EF880",
-            "screen": "Screen NFT4",
-            "hoh": false,
-            "tags": [
-              "New releases",
-              "Audio description",
-              "English subtitles",
-              "Releases",
-              "Digital"
+              "Great Expectations: British Postwar Cinema 1945-1960",
+              "Postwar British Cinema",
+              "35mm"
             ]
           }
         ],
-        "2026-04-26": [
+        "2026-05-12": [
           {
-            "time": "15:20",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1D58A78A-5927-4065-94E5-8844526B4E8A&BOparam::WScontent::loadArticle::context_id=3589A137-D276-4C06-BD03-78656AC4DC9C",
-            "screen": "Screen NFT4",
+            "time": "18:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D72B3511-CAF9-45D1-A44E-376E358FBB82&BOparam::WScontent::loadArticle::context_id=A28F1297-4E7B-4B44-A3B0-01AAD825AA91",
+            "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "New releases",
-              "releases",
-              "Digital",
-              "English subtitles",
-              "Audio description"
-            ]
-          }
-        ],
-        "2026-04-27": [
-          {
-            "time": "20:50",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1D58A78A-5927-4065-94E5-8844526B4E8A&BOparam::WScontent::loadArticle::context_id=07BDE36F-24C2-43C6-8DC3-7AF8547B9C09",
-            "screen": "Screen NFT4",
-            "hoh": false,
-            "tags": [
-              "New releases",
-              "Audio description",
-              "English subtitles",
-              "releases",
-              "Digital"
-            ]
-          }
-        ],
-        "2026-04-28": [
-          {
-            "time": "20:50",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1D58A78A-5927-4065-94E5-8844526B4E8A&BOparam::WScontent::loadArticle::context_id=40E99BAA-8ABA-4CCD-AFE9-35059211B949",
-            "screen": "Screen NFT4",
-            "hoh": false,
-            "tags": [
-              "New releases",
-              "Audio description",
-              "Releases",
-              "Digital",
-              "English subtitles"
+              "Great Expectations: British Postwar Cinema 1945-1960",
+              "Postwar British Cinema",
+              "35mm"
             ]
           }
         ]
       },
-      "color": "#9f2182",
-      "accent": "#d368ba",
-      "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
-      "letterboxd_rating": 3.65
+      "color": "#4f219f",
+      "accent": "#8e68d3",
+      "letterboxd_url": "https://letterboxd.com/film/the-three-weird-sisters/",
+      "letterboxd_rating": null
     },
     {
       "id": "thundercrack-2026",
@@ -5386,55 +5498,42 @@
           }
         ]
       },
-      "color": "#30a69f",
-      "accent": "#84d6d1",
+      "color": "#30a638",
+      "accent": "#84d68a",
       "letterboxd_url": "https://letterboxd.com/film/thundercrack/",
       "letterboxd_rating": 3.65
     },
     {
-      "id": "three-weird-sisters",
-      "title": "The Three Weird Sisters",
-      "rating": "PG",
-      "runtime": 83,
+      "id": "timecode-live-intro",
+      "title": "Timecode Live",
+      "rating": "15",
+      "runtime": 97,
       "genre": "Other",
-      "year": 1948,
-      "director": "Daniel Birt",
-      "cast": "Nancy Price, Mary Clare, Mary Merrall, Nova Pilbeam",
-      "description": "Dylan Thomas’s finest original screenplay is an eccentric blend of sharp wit and gothic shudder.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=three-weird-sisters&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/three-weird-sisters-01.jpeg",
+      "year": 2000,
+      "director": "Mike Figgis",
+      "cast": "Jeanne Tripplehorn, Stellan Skarsgård, Salma Hayek",
+      "description": "Mike Figgis remixes his all-star, experimental, split screen, single-shot (times four) Hollywood-set drama.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=timecode-live-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/timecode-01.jpeg",
       "showtimes": {
-        "2026-05-06": [
+        "2026-04-28": [
           {
-            "time": "20:40",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D72B3511-CAF9-45D1-A44E-376E358FBB82&BOparam::WScontent::loadArticle::context_id=A7F19032-22F3-437D-85D4-B4332DD4014B",
-            "screen": "Screen NFT3",
+            "time": "20:45",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EAA13707-2DA9-4C9B-A99F-F676089A4BC6&BOparam::WScontent::loadArticle::context_id=4B84B5C0-5D4E-451E-BB74-E06FFD1C8DAE",
+            "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Great Expectations: British Postwar Cinema 1945-1960",
-              "35mm",
-              "Postwar British Cinema"
-            ]
-          }
-        ],
-        "2026-05-12": [
-          {
-            "time": "18:10",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D72B3511-CAF9-45D1-A44E-376E358FBB82&BOparam::WScontent::loadArticle::context_id=A28F1297-4E7B-4B44-A3B0-01AAD825AA91",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Great Expectations: British Postwar Cinema 1945-1960",
-              "35mm",
-              "Postwar British Cinema"
+              "Previews and events",
+              "Introduction",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#976c1a",
-      "accent": "#d4a753",
-      "letterboxd_url": "https://letterboxd.com/film/the-three-weird-sisters/",
-      "letterboxd_rating": null
+      "color": "#971a36",
+      "accent": "#d45370",
+      "letterboxd_url": "https://letterboxd.com/film/timecode/",
+      "letterboxd_rating": 3.19
     },
     {
       "id": "time-without-pity",
@@ -5476,42 +5575,10 @@
           }
         ]
       },
-      "color": "#4f219f",
-      "accent": "#8e68d3",
+      "color": "#21639f",
+      "accent": "#689fd3",
       "letterboxd_url": "https://letterboxd.com/film/time-without-pity/",
       "letterboxd_rating": 3.59
-    },
-    {
-      "id": "timecode-live-intro",
-      "title": "Timecode Live",
-      "rating": "15",
-      "runtime": 97,
-      "genre": "Other",
-      "year": 2000,
-      "director": "Mike Figgis",
-      "cast": "Jeanne Tripplehorn, Stellan Skarsgård, Salma Hayek",
-      "description": "Mike Figgis remixes his all-star, experimental, split screen, single-shot (times four) Hollywood-set drama.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=timecode-live-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/timecode-01.jpeg",
-      "showtimes": {
-        "2026-04-28": [
-          {
-            "time": "20:45",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EAA13707-2DA9-4C9B-A99F-F676089A4BC6&BOparam::WScontent::loadArticle::context_id=4B84B5C0-5D4E-451E-BB74-E06FFD1C8DAE",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Previews and events",
-              "Digital",
-              "Introduction"
-            ]
-          }
-        ]
-      },
-      "color": "#30a638",
-      "accent": "#84d68a",
-      "letterboxd_url": "https://letterboxd.com/film/timecode/",
-      "letterboxd_rating": 3.19
     },
     {
       "id": "tip-toe-preview",
@@ -5534,15 +5601,15 @@
             "hoh": false,
             "tags": [
               "Previews and events",
-              "Events",
+              "Q&A",
               "TV preview",
-              "Q&A"
+              "Events"
             ]
           }
         ]
       },
-      "color": "#971a36",
-      "accent": "#d45370"
+      "color": "#8fa630",
+      "accent": "#c6d684"
     },
     {
       "id": "train-of-events",
@@ -5565,8 +5632,8 @@
             "hoh": false,
             "tags": [
               "Great Expectations: British Postwar Cinema 1945-1960",
-              "Postwar British Cinema",
-              "35mm"
+              "35mm",
+              "Postwar British Cinema"
             ]
           }
         ],
@@ -5578,14 +5645,14 @@
             "hoh": false,
             "tags": [
               "Great Expectations: British Postwar Cinema 1945-1960",
-              "35mm",
-              "Postwar British Cinema"
+              "Postwar British Cinema",
+              "35mm"
             ]
           }
         ]
       },
-      "color": "#21639f",
-      "accent": "#689fd3",
+      "color": "#8b1a97",
+      "accent": "#c753d4",
       "letterboxd_url": "https://letterboxd.com/film/train-of-events/",
       "letterboxd_rating": 3.3
     },
@@ -5610,16 +5677,16 @@
             "hoh": false,
             "tags": [
               "Regular programme",
+              "Seniors’ matinee",
               "Introduction",
-              "Digital",
               "Closed captions",
-              "Seniors’ matinee"
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#8fa630",
-      "accent": "#c6d684",
+      "color": "#219f6e",
+      "accent": "#68d3a9",
       "letterboxd_url": "https://letterboxd.com/film/the-trouble-with-harry/",
       "letterboxd_rating": 3.47
     },
@@ -5644,9 +5711,9 @@
             "hoh": false,
             "tags": [
               "New releases",
-              "Releases",
-              "Digital",
               "Audio description",
+              "Digital",
+              "Releases",
               "Closed captions"
             ]
           },
@@ -5657,10 +5724,10 @@
             "hoh": false,
             "tags": [
               "New releases",
-              "Releases",
-              "Descriptive subtitles (open captions)",
               "Digital",
-              "Audio description"
+              "Releases",
+              "Audio description",
+              "Descriptive subtitles (open captions)"
             ]
           },
           {
@@ -5685,9 +5752,9 @@
             "hoh": false,
             "tags": [
               "New releases",
-              "Releases",
               "Digital",
               "Audio description",
+              "Releases",
               "Closed captions"
             ]
           },
@@ -5698,16 +5765,16 @@
             "hoh": false,
             "tags": [
               "New releases",
-              "Releases",
-              "Digital",
               "Audio description",
+              "Digital",
+              "Releases",
               "Closed captions"
             ]
           }
         ]
       },
-      "color": "#8b1a97",
-      "accent": "#c753d4",
+      "color": "#a65530",
+      "accent": "#d69e84",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
       "letterboxd_rating": 3.68
     },
@@ -5739,8 +5806,8 @@
           }
         ]
       },
-      "color": "#219f6e",
-      "accent": "#68d3a9",
+      "color": "#1d1a97",
+      "accent": "#5653d4",
       "letterboxd_url": "https://letterboxd.com/film/turn-the-key-softly/",
       "letterboxd_rating": 3.43
     },
@@ -5765,16 +5832,46 @@
             "hoh": false,
             "tags": [
               "Great Expectations: British Postwar Cinema 1945-1960",
-              "35mm",
-              "Postwar British Cinema"
+              "Postwar British Cinema",
+              "35mm"
             ]
           }
         ]
       },
-      "color": "#a65530",
-      "accent": "#d69e84",
+      "color": "#439f21",
+      "accent": "#85d368",
       "letterboxd_url": "https://letterboxd.com/film/turn-the-key-softly/",
       "letterboxd_rating": 3.43
+    },
+    {
+      "id": "ukaff-2026-short-film-showcase-qanda",
+      "title": "Short Film Showcase",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "UK Asian Film Festival showcases ten distinctive shorts spotlighting the range and vitality of South Asian and British Asian filmmaking.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=ukaff-2026-short-film-showcase-qanda&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/masterclass-with-seemab-gul-01.jpeg",
+      "showtimes": {
+        "2026-05-02": [
+          {
+            "time": "17:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8DA3AA1C-B378-49A8-BFC7-6BD3F22C2104&BOparam::WScontent::loadArticle::context_id=B0233D5E-00BF-4D86-A7F4-875CC4FF1080",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "UK Asian Film Festival",
+              "UKAFF 2026",
+              "Q&A"
+            ]
+          }
+        ]
+      },
+      "color": "#a63072",
+      "accent": "#d684b2"
     },
     {
       "id": "way-back",
@@ -5816,40 +5913,10 @@
           }
         ]
       },
-      "color": "#1d1a97",
-      "accent": "#5653d4",
+      "color": "#1a8597",
+      "accent": "#53c1d4",
       "letterboxd_url": "https://letterboxd.com/film/the-way-back/",
       "letterboxd_rating": 3.51
-    },
-    {
-      "id": "ukaff-2026-short-film-showcase-qanda",
-      "title": "Short Film Showcase",
-      "rating": "TBC",
-      "runtime": null,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "description": "UK Asian Film Festival showcases ten distinctive shorts spotlighting the range and vitality of South Asian and British Asian filmmaking.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=ukaff-2026-short-film-showcase-qanda&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/masterclass-with-seemab-gul-01.jpeg",
-      "showtimes": {
-        "2026-05-02": [
-          {
-            "time": "17:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8DA3AA1C-B378-49A8-BFC7-6BD3F22C2104&BOparam::WScontent::loadArticle::context_id=B0233D5E-00BF-4D86-A7F4-875CC4FF1080",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "UK Asian Film Festival",
-              "UKAFF 2026",
-              "Q&A"
-            ]
-          }
-        ]
-      },
-      "color": "#439f21",
-      "accent": "#85d368"
     },
     {
       "id": "chris-paul-daniels-tierney-walk-tina-grace-films-qanda",
@@ -5872,14 +5939,14 @@
             "hoh": false,
             "tags": [
               "Regular programme",
-              "Q&A",
-              "Experimenta"
+              "Experimenta",
+              "Q&A"
             ]
           }
         ]
       },
-      "color": "#a63072",
-      "accent": "#d684b2"
+      "color": "#9f8d21",
+      "accent": "#d3c468"
     },
     {
       "id": "we-are-also-brothers-intro",
@@ -5909,8 +5976,8 @@
           }
         ]
       },
-      "color": "#1a8597",
-      "accent": "#53c1d4"
+      "color": "#7230a6",
+      "accent": "#b284d6"
     },
     {
       "id": "we-are-also-brothers",
@@ -5932,15 +5999,15 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
+              "Digital",
               "Brazil on Film",
-              "English subtitles",
-              "Digital"
+              "English subtitles"
             ]
           }
         ]
       },
-      "color": "#9f8d21",
-      "accent": "#d3c468"
+      "color": "#1a973c",
+      "accent": "#53d476"
     },
     {
       "id": "when-we-were-kings",
@@ -5969,8 +6036,8 @@
           }
         ]
       },
-      "color": "#7230a6",
-      "accent": "#b284d6",
+      "color": "#9f2124",
+      "accent": "#d3686a",
       "letterboxd_url": "https://letterboxd.com/film/when-we-were-kings/",
       "letterboxd_rating": 4.13
     },
@@ -6002,43 +6069,10 @@
           }
         ]
       },
-      "color": "#1a973c",
-      "accent": "#53d476",
+      "color": "#3054a6",
+      "accent": "#849dd6",
       "letterboxd_url": "https://letterboxd.com/film/wild-foxes/",
       "letterboxd_rating": 3.65
-    },
-    {
-      "id": "woman-with-no-name-intro",
-      "title": "The Woman with No Name",
-      "rating": "PG",
-      "runtime": 84,
-      "genre": "Other",
-      "year": 1950,
-      "director": "Ladislao Vajda",
-      "cast": "Phyllis Calvert, Edward Underdown, Richard Burton, Helen Cherry",
-      "description": "In this post-war British melodrama, Phyllis Calvert stars as a young woman with amnesia who gradually uncovers her own dark past.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=woman-with-no-name-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/woman-with-no-name-01.jpeg",
-      "showtimes": {
-        "2026-05-05": [
-          {
-            "time": "18:15",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=6C796806-0291-493B-918F-E8EA0DBAF855&BOparam::WScontent::loadArticle::context_id=18ECFD96-9801-4793-9E09-9FC1F32740AA",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Regular programme",
-              "35mm",
-              "Introduction",
-              "Projecting the archive"
-            ]
-          }
-        ]
-      },
-      "color": "#9f2124",
-      "accent": "#d3686a",
-      "letterboxd_url": "https://letterboxd.com/film/the-woman-with-no-name/",
-      "letterboxd_rating": null
     },
     {
       "id": "seemab-gul-masterclass",
@@ -6067,8 +6101,41 @@
           }
         ]
       },
-      "color": "#3054a6",
-      "accent": "#849dd6"
+      "color": "#66971a",
+      "accent": "#a1d453"
+    },
+    {
+      "id": "woman-with-no-name-intro",
+      "title": "The Woman with No Name",
+      "rating": "PG",
+      "runtime": 84,
+      "genre": "Other",
+      "year": 1950,
+      "director": "Ladislao Vajda",
+      "cast": "Phyllis Calvert, Edward Underdown, Richard Burton, Helen Cherry",
+      "description": "In this post-war British melodrama, Phyllis Calvert stars as a young woman with amnesia who gradually uncovers her own dark past.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=woman-with-no-name-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/woman-with-no-name-01.jpeg",
+      "showtimes": {
+        "2026-05-05": [
+          {
+            "time": "18:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=6C796806-0291-493B-918F-E8EA0DBAF855&BOparam::WScontent::loadArticle::context_id=18ECFD96-9801-4793-9E09-9FC1F32740AA",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Regular programme",
+              "Projecting the archive",
+              "Introduction",
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#9f2192",
+      "accent": "#d368c8",
+      "letterboxd_url": "https://letterboxd.com/film/the-woman-with-no-name/",
+      "letterboxd_rating": null
     },
     {
       "id": "yellow-balloon",
@@ -6104,14 +6171,14 @@
             "hoh": false,
             "tags": [
               "Great Expectations: British Postwar Cinema 1945-1960",
-              "Postwar British Cinema",
-              "35mm"
+              "35mm",
+              "Postwar British Cinema"
             ]
           }
         ]
       },
-      "color": "#66971a",
-      "accent": "#a1d453",
+      "color": "#30a690",
+      "accent": "#84d6c7",
       "letterboxd_url": "https://letterboxd.com/film/the-yellow-balloon/",
       "letterboxd_rating": 3.45
     }
