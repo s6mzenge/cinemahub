@@ -1,51 +1,7 @@
 {
-  "scraped_at": "2026-04-25T10:34:15.803509+00:00",
+  "scraped_at": "2026-04-25T11:04:16.080501+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "mary-poppins",
-      "title": "Mary Poppins",
-      "rating": "U",
-      "runtime": 139,
-      "genre": "Other",
-      "year": "1964",
-      "director": "Robert Stevenson",
-      "cast": null,
-      "description": "“Practically Perfect In Every Way” Mary Poppins (Julie Andrews) flies out of the windy London skies and into the home of…",
-      "film_url": "https://www.thegardencinema.co.uk/film/mary-poppins/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/4885872.jpg",
-      "showtimes": {
-        "2026-04-25": [
-          {
-            "time": "11:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4879821.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ],
-        "2026-04-26": [
-          {
-            "time": "11:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4879823.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ]
-      },
-      "seasons": [
-        "Films for the Family"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/mary-poppins/",
-      "letterboxd_rating": 3.93
-    },
     {
       "id": "rose-of-nevada",
       "title": "Rose of Nevada",
@@ -76,7 +32,8 @@
             "hoh": false,
             "tags": [
               "Q&A"
-            ]
+            ],
+            "sold_out": true
           }
         ],
         "2026-04-26": [
@@ -181,8 +138,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.44
     },
@@ -233,8 +190,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/father-mother-sister-brother/",
       "letterboxd_rating": 3.12
     },
@@ -284,8 +241,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/rebuilding/",
       "letterboxd_rating": 3.62
     },
@@ -314,8 +271,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/my-fathers-shadow-2025/",
       "letterboxd_rating": 4.12
     },
@@ -349,8 +306,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/amelie/",
       "letterboxd_rating": 4.19
     },
@@ -408,8 +365,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
       "letterboxd_rating": 3.48
     },
@@ -493,8 +450,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
       "letterboxd_rating": 3.65
     },
@@ -544,8 +501,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/miroirs-no-3/",
       "letterboxd_rating": 3.48
     },
@@ -574,8 +531,8 @@
       "seasons": [
         "Celebrating Jeanne Moreau"
       ],
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/querelle/",
       "letterboxd_rating": 3.68
     },
@@ -633,8 +590,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/akira/",
       "letterboxd_rating": 4.28
     },
@@ -674,10 +631,43 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
       "letterboxd_url": "https://letterboxd.com/film/the-drama/",
       "letterboxd_rating": 3.75
+    },
+    {
+      "id": "mary-poppins",
+      "title": "Mary Poppins",
+      "rating": "U",
+      "runtime": 139,
+      "genre": "Other",
+      "year": "1964",
+      "director": "Robert Stevenson",
+      "cast": null,
+      "description": "“Practically Perfect In Every Way” Mary Poppins (Julie Andrews) flies out of the windy London skies and into the home of…",
+      "film_url": "https://www.thegardencinema.co.uk/film/mary-poppins/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/4885872.jpg",
+      "showtimes": {
+        "2026-04-26": [
+          {
+            "time": "11:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4879823.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ]
+      },
+      "seasons": [
+        "Films for the Family"
+      ],
+      "color": "#ad1457",
+      "accent": "#f06292",
+      "letterboxd_url": "https://letterboxd.com/film/mary-poppins/",
+      "letterboxd_rating": 3.93
     },
     {
       "id": "mademoiselle",
