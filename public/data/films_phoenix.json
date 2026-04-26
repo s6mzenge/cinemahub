@@ -1,43 +1,7 @@
 {
-  "scraped_at": "2026-04-26T18:33:30.235648+00:00",
+  "scraped_at": "2026-04-26T19:03:58.766665+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
-    {
-      "id": "the-drama",
-      "title": "The Drama",
-      "rating": "15",
-      "runtime": 105,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Kristoffer Borgli",
-      "cast": "Robert Pattinson, Mamoudou Athie, Michael Abbott Jr., Damon Gupton, Ken Cheeseman",
-      "country": "US",
-      "description": "A happily engaged couple is put to the test when an unexpected turn sends their wedding week off the rails.",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=437524",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/437518.jpg",
-      "showtimes": {
-        "2026-04-26": [
-          {
-            "time": "19:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_475629.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-04-28": [
-          {
-            "time": "20:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_475674.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/the-drama/",
-      "letterboxd_rating": 3.75
-    },
     {
       "id": "primavera",
       "title": "Primavera",
@@ -111,8 +75,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/primavera-2025/",
       "letterboxd_rating": 3.52
     },
@@ -147,8 +111,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-north/",
       "letterboxd_rating": 3.32
     },
@@ -178,8 +142,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/the-conspiracists/",
       "letterboxd_rating": null
     },
@@ -231,8 +195,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
       "letterboxd_rating": 3.48
     },
@@ -262,10 +226,38 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/colours-of-time/",
       "letterboxd_rating": 3.56
+    },
+    {
+      "id": "the-drama",
+      "title": "The Drama",
+      "rating": "15",
+      "runtime": 105,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Kristoffer Borgli",
+      "cast": "Robert Pattinson, Mamoudou Athie, Michael Abbott Jr., Damon Gupton, Ken Cheeseman",
+      "country": "US",
+      "description": "A happily engaged couple is put to the test when an unexpected turn sends their wedding week off the rails.",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=437524",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/437518.jpg",
+      "showtimes": {
+        "2026-04-28": [
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_475674.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/the-drama/",
+      "letterboxd_rating": 3.75
     },
     {
       "id": "power-to-the-people-john-yoko-live-in-nyc",
