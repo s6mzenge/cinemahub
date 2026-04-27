@@ -1,73 +1,7 @@
 {
-  "scraped_at": "2026-04-27T16:33:57.492880+00:00",
+  "scraped_at": "2026-04-27T17:04:03.300292+00:00",
   "source": "thearzner.com",
   "films": [
-    {
-      "id": "the-activist-172788",
-      "title": "The Activist",
-      "rating": "18",
-      "runtime": 94,
-      "genre": "New Release",
-      "description": "Saturday's screening at 16:30 will be introduced by actor Vaslov Goom and director Romas Zabarauskas.  The Arzner is the only UK cinema to be screening The Activist.  A young man infiltrates a radical neo-Nazi group to find the killer of his LGBT+ activist boyfriend.  Content Warning: Contains distr…",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=172788",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/172784.jpg",
-      "showtimes": {
-        "2026-04-27": [
-          {
-            "time": "18:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175609.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-04-28": [
-          {
-            "time": "13:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175625.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
-          {
-            "time": "17:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175662.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-04-29": [
-          {
-            "time": "11:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176174.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
-          {
-            "time": "15:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176173.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
-          {
-            "time": "19:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176129.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-04-30": [
-          {
-            "time": "17:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175632.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/the-activist-2025/",
-      "letterboxd_rating": 2.91
-    },
     {
       "id": "mother-mary-175362",
       "title": "Mother Mary",
@@ -79,6 +13,15 @@
       "poster_url": "https://images.savoysystems.co.uk/TAL/175361.jpg",
       "showtimes": {
         "2026-04-27": [
+          {
+            "time": "14:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175612.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": true,
+            "tags": [
+              "CC"
+            ]
+          },
           {
             "time": "20:30",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175608.TcsSection_963",
@@ -141,8 +84,8 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60"
+      "color": "#6a1b9a",
+      "accent": "#ba68c8"
     },
     {
       "id": "departures-174589",
@@ -154,6 +97,14 @@
       "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=174589",
       "poster_url": "https://images.savoysystems.co.uk/TAL/174584.jpg",
       "showtimes": {
+        "2026-04-27": [
+          {
+            "time": "16:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175613.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
         "2026-04-28": [
           {
             "time": "11:15",
@@ -179,10 +130,76 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/departures-2025/",
       "letterboxd_rating": 3.35
+    },
+    {
+      "id": "the-activist-172788",
+      "title": "The Activist",
+      "rating": "18",
+      "runtime": 94,
+      "genre": "New Release",
+      "description": "Saturday's screening at 16:30 will be introduced by actor Vaslov Goom and director Romas Zabarauskas.  The Arzner is the only UK cinema to be screening The Activist.  A young man infiltrates a radical neo-Nazi group to find the killer of his LGBT+ activist boyfriend.  Content Warning: Contains distr…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=172788",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/172784.jpg",
+      "showtimes": {
+        "2026-04-27": [
+          {
+            "time": "18:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175609.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-04-28": [
+          {
+            "time": "13:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175625.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "17:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175662.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-04-29": [
+          {
+            "time": "11:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176174.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "15:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176173.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "19:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176129.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-04-30": [
+          {
+            "time": "17:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175632.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/the-activist-2025/",
+      "letterboxd_rating": 2.91
     },
     {
       "id": "uk-premiere-ultimate-boys-trip-special-intro-177642",
