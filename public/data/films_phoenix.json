@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-27T12:33:28.119382+00:00",
+  "scraped_at": "2026-04-27T13:04:24.851018+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -671,6 +671,42 @@
       "letterboxd_rating": null
     },
     {
+      "id": "rose-of-nevada",
+      "title": "Rose of Nevada",
+      "rating": "15",
+      "runtime": 114,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Mark Jenkin",
+      "cast": "George MacKay, Callum Turner, Rosalind Eleazar",
+      "country": "UK",
+      "description": "Some 30 years after the Rose of Nevada fishing trawler disappeared, it mysteriously returns to its old harbour in a small Cornish village. Two young men join the Rose’s new crew, hoping to pull themselves out of hardship. But when they return to the harbour, the men realise they have slipped back in...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=487907",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/487892.jpg",
+      "showtimes": {
+        "2026-05-01": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487910.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-05-03": [
+          {
+            "time": "19:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487912.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#ad1457",
+      "accent": "#f06292",
+      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
+      "letterboxd_rating": 3.43
+    },
+    {
       "id": "the-metropolitan-opera-eugene-onegin",
       "title": "The Metropolitan Opera: Eugene Onegin",
       "rating": "12A",
@@ -693,8 +729,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "national-theatre-live-all-my-sons",
@@ -719,8 +755,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "top-gun",
@@ -745,8 +781,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/top-gun/",
       "letterboxd_rating": 3.5
     },
@@ -776,8 +812,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/theatre-of-blood/",
       "letterboxd_rating": 3.65
     },
@@ -804,8 +840,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#9f2121",
+      "accent": "#d36868"
     },
     {
       "id": "star-wars-the-mandalorian-and-grogu",
@@ -930,8 +966,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868",
+      "color": "#3052a6",
+      "accent": "#849cd6",
       "letterboxd_url": "https://letterboxd.com/film/star-wars-the-mandalorian-and-grogu/",
       "letterboxd_rating": null
     },
@@ -958,8 +994,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "the-metropolitan-opera-el-ltimo-sue-o-de-frida-y-diego",
@@ -984,8 +1020,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453"
+      "color": "#9f2190",
+      "accent": "#d368c6"
     },
     {
       "id": "national-theatre-live-les-liaisons-dangereuses",
@@ -1010,8 +1046,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#30a692",
+      "accent": "#84d6c8"
     }
   ]
 }
