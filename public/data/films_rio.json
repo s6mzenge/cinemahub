@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-27T08:33:24.239535+00:00",
+  "scraped_at": "2026-04-27T09:03:38.219194+00:00",
   "source": "riocinema.org.uk",
   "films": [
     {
@@ -458,7 +458,10 @@
             "time": "14:00",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495102.TcsSection_936",
             "screen": "S1",
-            "hoh": false
+            "hoh": true,
+            "tags": [
+              "HoH"
+            ]
           },
           {
             "time": "17:00",
@@ -517,6 +520,7 @@
         ]
       },
       "season_tags": [
+        "Hard of Hearing",
         "Main Features"
       ],
       "color": "#546e7a",
@@ -629,7 +633,7 @@
         ],
         "2026-05-02": [
           {
-            "time": "20:00",
+            "time": "20:15",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495075.TcsSection_1299",
             "screen": "S2",
             "hoh": false
