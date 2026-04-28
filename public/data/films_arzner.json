@@ -1,47 +1,7 @@
 {
-  "scraped_at": "2026-04-28T14:34:04.899110+00:00",
+  "scraped_at": "2026-04-28T15:06:33.493643+00:00",
   "source": "thearzner.com",
   "films": [
-    {
-      "id": "departures-174589",
-      "title": "Departures",
-      "rating": "18",
-      "runtime": 82,
-      "genre": "New Release",
-      "description": "It's instant chemistry when Benji encounters Jake at an airport departures gate. Their on-going relationship unfolds through intimate trips to Amsterdam, revealing a complex power dynamic.",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=174589",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/174584.jpg",
-      "showtimes": {
-        "2026-04-28": [
-          {
-            "time": "11:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175626.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-04-29": [
-          {
-            "time": "17:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176169.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-04-30": [
-          {
-            "time": "21:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176163.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/departures-2025/",
-      "letterboxd_rating": 3.35
-    },
     {
       "id": "the-activist-172788",
       "title": "The Activist",
@@ -53,12 +13,6 @@
       "poster_url": "https://images.savoysystems.co.uk/TAL/172784.jpg",
       "showtimes": {
         "2026-04-28": [
-          {
-            "time": "13:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175625.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
           {
             "time": "17:15",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175662.TcsSection_963",
@@ -95,8 +49,8 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/the-activist-2025/",
       "letterboxd_rating": 2.91
     },
@@ -111,12 +65,6 @@
       "poster_url": "https://images.savoysystems.co.uk/TAL/175361.jpg",
       "showtimes": {
         "2026-04-28": [
-          {
-            "time": "15:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175624.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
           {
             "time": "19:15",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175618.TcsSection_963",
@@ -162,10 +110,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/mother-mary-2026/",
-      "letterboxd_rating": 3.03
+      "color": "#e53935",
+      "accent": "#ff6f60"
     },
     {
       "id": "uk-premiere-ultimate-boys-trip-special-intro-177642",
@@ -191,6 +137,38 @@
       },
       "color": "#0277bd",
       "accent": "#4fc3f7"
+    },
+    {
+      "id": "departures-174589",
+      "title": "Departures",
+      "rating": "18",
+      "runtime": 82,
+      "genre": "New Release",
+      "description": "It's instant chemistry when Benji encounters Jake at an airport departures gate. Their on-going relationship unfolds through intimate trips to Amsterdam, revealing a complex power dynamic.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=174589",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/174584.jpg",
+      "showtimes": {
+        "2026-04-29": [
+          {
+            "time": "17:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176169.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-04-30": [
+          {
+            "time": "21:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176163.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/departures-2025/",
+      "letterboxd_rating": 3.35
     },
     {
       "id": "the-devil-wears-prada-2-133637",
