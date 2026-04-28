@@ -1,51 +1,7 @@
 {
-  "scraped_at": "2026-04-28T17:35:40.795427+00:00",
+  "scraped_at": "2026-04-28T18:05:35.446187+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
-    {
-      "id": "exit-8",
-      "title": "Exit 8",
-      "rating": "15",
-      "runtime": 95,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "A man trapped in an endless sterile subway passageway sets out to find Exit 8. The rules of his quest are simple: do not overlook anything out of the ordinary. If you discover an anomaly, turn back immediately. If you dont, carry on. Then leave from Exit 8. But even a single oversight will send him back to the beginning. Will he ever reach his goal and escape this infinite corridor?More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/108194",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/108194_0.jpg",
-      "showtimes": {
-        "2026-04-28": [
-          {
-            "time": "18:25",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10750",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-04-29": [
-          {
-            "time": "18:10",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10751",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-04-30": [
-          {
-            "time": "21:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10752",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/exit-8/",
-      "letterboxd_rating": 3.14
-    },
     {
       "id": "michael",
       "title": "Michael",
@@ -201,8 +157,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
       "letterboxd_rating": 3.59
     },
@@ -251,8 +207,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/mother-mary-2026/",
       "letterboxd_rating": 3.03
     },
@@ -325,8 +281,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/project-hail-mary/",
       "letterboxd_rating": 4.32
     },
@@ -375,8 +331,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.43
     },
@@ -395,12 +351,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/106035_0.jpg",
       "showtimes": {
         "2026-04-28": [
-          {
-            "time": "18:25",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10737",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "20:45",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10738",
@@ -553,8 +503,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/the-drama/",
       "letterboxd_rating": 3.74
     },
@@ -581,10 +531,46 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/akira/",
       "letterboxd_rating": 4.28
+    },
+    {
+      "id": "exit-8",
+      "title": "Exit 8",
+      "rating": "15",
+      "runtime": 95,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "A man trapped in an endless sterile subway passageway sets out to find Exit 8. The rules of his quest are simple: do not overlook anything out of the ordinary. If you discover an anomaly, turn back immediately. If you dont, carry on. Then leave from Exit 8. But even a single oversight will send him back to the beginning. Will he ever reach his goal and escape this infinite corridor?More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/108194",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/108194_0.jpg",
+      "showtimes": {
+        "2026-04-29": [
+          {
+            "time": "18:10",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10751",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-04-30": [
+          {
+            "time": "21:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10752",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#c62828",
+      "accent": "#ef5350",
+      "letterboxd_url": "https://letterboxd.com/film/exit-8/",
+      "letterboxd_rating": 3.14
     },
     {
       "id": "the-wicker-man",
