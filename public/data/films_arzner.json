@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-29T18:33:50.245450+00:00",
+  "scraped_at": "2026-04-29T19:03:55.893959+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -430,13 +430,19 @@
         ],
         "2026-05-11": [
           {
-            "time": "13:00",
+            "time": "11:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_190754.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "13:30",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175562.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
           },
           {
-            "time": "15:30",
+            "time": "16:00",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175561.TcsSection_963",
             "screen": "Screening Room",
             "hoh": true,
@@ -493,7 +499,7 @@
         ],
         "2026-05-14": [
           {
-            "time": "12:30",
+            "time": "12:45",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176985.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
@@ -978,7 +984,7 @@
       "title": "Shrek (25th Anniversary)",
       "rating": "U",
       "runtime": 90,
-      "genre": "Shrek Summer",
+      "genre": "Anniversary Screening",
       "description": "It ain't easy bein' green -- especially if you're a likable (albeit smelly) ogre named Shrek. On a mission to retrieve a gorgeous princess from the clutches of a fire-breathing dragon, Shrek teams up with an unlikely compatriot -- a wisecracking donkey.",
       "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=46576",
       "poster_url": "https://images.savoysystems.co.uk/TAL/190179.jpg",
@@ -990,7 +996,7 @@
             "screen": "Screening Room",
             "hoh": false,
             "tags": [
-              "Shrek Summer"
+              "Anniversary Screening"
             ]
           }
         ]
