@@ -1,64 +1,7 @@
 {
-  "scraped_at": "2026-04-29T18:06:08.683474+00:00",
+  "scraped_at": "2026-04-29T18:35:53.320254+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "surviving-earth",
-      "title": "Surviving Earth",
-      "rating": "15",
-      "runtime": 96,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Thea Gajić",
-      "cast": null,
-      "description": "Based on a true story, Surviving Earth follows Vlad, a Yugoslav refugee and gifted musician who fled to the UK in the…",
-      "film_url": "https://www.thegardencinema.co.uk/film/surviving-earth/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5381975.jpg",
-      "showtimes": {
-        "2026-04-29": [
-          {
-            "time": "18:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5341683.TcsSection_971",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ],
-        "2026-04-30": [
-          {
-            "time": "15:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5341685.TcsSection_971",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ],
-        "2026-05-06": [
-          {
-            "time": "14:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5480591.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-07": [
-          {
-            "time": "20:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5480584.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
-      "letterboxd_rating": 3.66
-    },
     {
       "id": "father-mother-sister-brother",
       "title": "Father Mother Sister Brother",
@@ -84,8 +27,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/father-mother-sister-brother/",
       "letterboxd_rating": 3.11
     },
@@ -143,8 +86,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
       "letterboxd_rating": 3.49
     },
@@ -276,10 +219,56 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.44
+    },
+    {
+      "id": "surviving-earth",
+      "title": "Surviving Earth",
+      "rating": "15",
+      "runtime": 96,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Thea Gajić",
+      "cast": null,
+      "description": "Based on a true story, Surviving Earth follows Vlad, a Yugoslav refugee and gifted musician who fled to the UK in the…",
+      "film_url": "https://www.thegardencinema.co.uk/film/surviving-earth/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5381975.jpg",
+      "showtimes": {
+        "2026-04-30": [
+          {
+            "time": "15:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5341685.TcsSection_971",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ],
+        "2026-05-06": [
+          {
+            "time": "14:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5480591.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-07": [
+          {
+            "time": "20:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5480584.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#00897b",
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
+      "letterboxd_rating": 3.66
     },
     {
       "id": "faces-places",

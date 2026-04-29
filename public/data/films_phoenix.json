@@ -1,63 +1,7 @@
 {
-  "scraped_at": "2026-04-29T18:06:17.025654+00:00",
+  "scraped_at": "2026-04-29T18:36:00.900139+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
-    {
-      "id": "power-to-the-people-john-yoko-live-in-nyc",
-      "title": "Power To The People: John & Yoko Live in NYC",
-      "rating": "PG",
-      "runtime": 81,
-      "genre": "Other",
-      "year": null,
-      "director": "Simon Hilton",
-      "cast": null,
-      "country": null,
-      "description": null,
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=420660",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/420648.jpg",
-      "showtimes": {
-        "2026-04-29": [
-          {
-            "time": "19:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_420661.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/power-to-the-people-john-yoko-live-in-nyc/",
-      "letterboxd_rating": null
-    },
-    {
-      "id": "the-north",
-      "title": "The North",
-      "rating": "15",
-      "runtime": 130,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "Bart Schrijver’s acclaimed drama follows former best friends and roommates Chris (Bart Harder) and Lluis (Carles Pulido), who meet up after a decade to hike Scotland’s West Highland Way and Cape Wrath Trail.  Having taken the same 350-mile walk in their youth, the pair hope to rekindle their once-st...",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=475638",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/423153.jpg",
-      "showtimes": {
-        "2026-04-29": [
-          {
-            "time": "20:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_475686.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/the-north/",
-      "letterboxd_rating": 3.32
-    },
     {
       "id": "primavera",
       "title": "Primavera",
@@ -72,6 +16,17 @@
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=475573",
       "poster_url": "https://images.savoysystems.co.uk/PXL/475580.jpg",
       "showtimes": {
+        "2026-04-29": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_475688.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ],
         "2026-04-30": [
           {
             "time": "14:45",
@@ -112,10 +67,66 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/primavera-2025/",
       "letterboxd_rating": 3.51
+    },
+    {
+      "id": "power-to-the-people-john-yoko-live-in-nyc",
+      "title": "Power To The People: John & Yoko Live in NYC",
+      "rating": "PG",
+      "runtime": 81,
+      "genre": "Other",
+      "year": null,
+      "director": "Simon Hilton",
+      "cast": null,
+      "country": null,
+      "description": null,
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=420660",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/420648.jpg",
+      "showtimes": {
+        "2026-04-29": [
+          {
+            "time": "19:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_420661.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/power-to-the-people-john-yoko-live-in-nyc/",
+      "letterboxd_rating": null
+    },
+    {
+      "id": "the-north",
+      "title": "The North",
+      "rating": "15",
+      "runtime": 130,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Bart Schrijver’s acclaimed drama follows former best friends and roommates Chris (Bart Harder) and Lluis (Carles Pulido), who meet up after a decade to hike Scotland’s West Highland Way and Cape Wrath Trail.  Having taken the same 350-mile walk in their youth, the pair hope to rekindle their once-st...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=475638",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/423153.jpg",
+      "showtimes": {
+        "2026-04-29": [
+          {
+            "time": "20:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_475686.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/the-north/",
+      "letterboxd_rating": 3.32
     },
     {
       "id": "the-stranger",
