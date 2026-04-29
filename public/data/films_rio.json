@@ -1,82 +1,7 @@
 {
-  "scraped_at": "2026-04-29T20:05:27.470631+00:00",
+  "scraped_at": "2026-04-29T20:34:52.850079+00:00",
   "source": "riocinema.org.uk",
   "films": [
-    {
-      "id": "the-drama",
-      "title": "The Drama",
-      "rating": "15",
-      "runtime": 105,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Kristoffer Borgli",
-      "cast": "Zendaya, Robert Pattinson, Alana Haim, Mamoudou Athie",
-      "country": "USA",
-      "description": "A happily engaged couple is put to the test when an unexpected turn sends their wedding week off the rails...  &quot;The cringe-inducing observations about human behaviour when confronted with uncomfortable truths make for a skin-crawlingly fun time&quot; Hannah Strong, Little White Lies.",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2428781",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2428778.png",
-      "showtimes": {
-        "2026-04-29": [
-          {
-            "time": "20:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2489404.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-04-30": [
-          {
-            "time": "20:40",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2489414.TcsSection_936",
-            "screen": "S1",
-            "hoh": false
-          }
-        ]
-      },
-      "season_tags": [
-        "Main Features"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/the-drama/",
-      "letterboxd_rating": 3.74
-    },
-    {
-      "id": "rebuilding",
-      "title": "Rebuilding",
-      "rating": "PG",
-      "runtime": 95,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Max Walker-Silverman",
-      "cast": null,
-      "country": "USA",
-      "description": "After a wildfire destroys his home, divorced father and ranch owner Dusty (Josh O’Connor) must plant new roots. Now living in a close-knit trailer community, he quietly reassembles his life, reconnecting with his estranged young daughter and ex-wife (Meghann Fahy). From filmmaker Max Walker-Silverma...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2489205",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2489204.jpg",
-      "showtimes": {
-        "2026-04-29": [
-          {
-            "time": "21:00",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2489400.TcsSection_936",
-            "screen": "S1",
-            "hoh": false
-          }
-        ],
-        "2026-04-30": [
-          {
-            "time": "18:20",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2489412.TcsSection_936",
-            "screen": "S1",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/rebuilding/",
-      "letterboxd_rating": 3.62
-    },
     {
       "id": "surviving-earth",
       "title": "Surviving Earth",
@@ -103,10 +28,38 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
       "letterboxd_rating": 3.66
+    },
+    {
+      "id": "rebuilding",
+      "title": "Rebuilding",
+      "rating": "PG",
+      "runtime": 95,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Max Walker-Silverman",
+      "cast": null,
+      "country": "USA",
+      "description": "After a wildfire destroys his home, divorced father and ranch owner Dusty (Josh O’Connor) must plant new roots. Now living in a close-knit trailer community, he quietly reassembles his life, reconnecting with his estranged young daughter and ex-wife (Meghann Fahy). From filmmaker Max Walker-Silverma...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2489205",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2489204.jpg",
+      "showtimes": {
+        "2026-04-30": [
+          {
+            "time": "18:20",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2489412.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/rebuilding/",
+      "letterboxd_rating": 3.62
     },
     {
       "id": "dressed-to-kill",
@@ -138,8 +91,8 @@
       "season_tags": [
         "Pink Palace"
       ],
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/dressed-to-kill-1980/",
       "letterboxd_rating": 3.63
     },
@@ -169,10 +122,41 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/departures-2025/",
       "letterboxd_rating": 3.35
+    },
+    {
+      "id": "the-drama",
+      "title": "The Drama",
+      "rating": "15",
+      "runtime": 105,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Kristoffer Borgli",
+      "cast": "Zendaya, Robert Pattinson, Alana Haim, Mamoudou Athie",
+      "country": "USA",
+      "description": "A happily engaged couple is put to the test when an unexpected turn sends their wedding week off the rails...  &quot;The cringe-inducing observations about human behaviour when confronted with uncomfortable truths make for a skin-crawlingly fun time&quot; Hannah Strong, Little White Lies.",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2428781",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2428778.png",
+      "showtimes": {
+        "2026-04-30": [
+          {
+            "time": "20:40",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2489414.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          }
+        ]
+      },
+      "season_tags": [
+        "Main Features"
+      ],
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/the-drama/",
+      "letterboxd_rating": 3.74
     },
     {
       "id": "the-devil-wears-prada-2",
