@@ -1,46 +1,7 @@
 {
-  "scraped_at": "2026-04-29T17:05:20.426435+00:00",
+  "scraped_at": "2026-04-29T17:35:44.964182+00:00",
   "source": "riocinema.org.uk",
   "films": [
-    {
-      "id": "surviving-earth",
-      "title": "Surviving Earth",
-      "rating": "15",
-      "runtime": 100,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Thea Gajic",
-      "cast": "Slavko Sobin, Olive Gray, Peter Coonan, Stuart Martin",
-      "country": "UK",
-      "description": "Based on a true story, Surviving Earth follows Vlad, a Yugoslav refugee and gifted musician who fled to the UK in the 90s. Now rebuilding his life in Bristol, he longs to be the father his daughter Maria deserves, but the shadows of his past refuse to fade. When he forms a band to reconnect with his...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2447609",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2447608.jpg",
-      "showtimes": {
-        "2026-04-29": [
-          {
-            "time": "18:15",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2489402.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-04-30": [
-          {
-            "time": "18:10",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2489416.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ]
-      },
-      "season_tags": [
-        "Main Features"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
-      "letterboxd_rating": 3.66
-    },
     {
       "id": "uncommon-voices",
       "title": "Uncommon Voices",
@@ -70,8 +31,8 @@
       "season_tags": [
         "Rio Forever"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff"
+      "color": "#e53935",
+      "accent": "#ff6f60"
     },
     {
       "id": "the-drama",
@@ -107,8 +68,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-drama/",
       "letterboxd_rating": 3.74
     },
@@ -143,10 +104,41 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/rebuilding/",
       "letterboxd_rating": 3.62
+    },
+    {
+      "id": "surviving-earth",
+      "title": "Surviving Earth",
+      "rating": "15",
+      "runtime": 100,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Thea Gajic",
+      "cast": "Slavko Sobin, Olive Gray, Peter Coonan, Stuart Martin",
+      "country": "UK",
+      "description": "Based on a true story, Surviving Earth follows Vlad, a Yugoslav refugee and gifted musician who fled to the UK in the 90s. Now rebuilding his life in Bristol, he longs to be the father his daughter Maria deserves, but the shadows of his past refuse to fade. When he forms a band to reconnect with his...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2447609",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2447608.jpg",
+      "showtimes": {
+        "2026-04-30": [
+          {
+            "time": "18:10",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2489416.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ]
+      },
+      "season_tags": [
+        "Main Features"
+      ],
+      "color": "#00897b",
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
+      "letterboxd_rating": 3.66
     },
     {
       "id": "dressed-to-kill",
