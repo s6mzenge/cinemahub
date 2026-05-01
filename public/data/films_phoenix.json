@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-01T18:35:28.172246+00:00",
+  "scraped_at": "2026-05-01T19:05:59.419174+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -17,12 +17,6 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/414734.jpg",
       "showtimes": {
         "2026-05-01": [
-          {
-            "time": "17:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_415221.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": false
-          },
           {
             "time": "20:00",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_415220.TcsSection_543",
@@ -205,58 +199,6 @@
       "letterboxd_rating": 3.47
     },
     {
-      "id": "rose-of-nevada",
-      "title": "Rose of Nevada",
-      "rating": "15",
-      "runtime": 114,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Mark Jenkin",
-      "cast": "George MacKay, Callum Turner, Rosalind Eleazar",
-      "country": "UK",
-      "description": "Some 30 years after the Rose of Nevada fishing trawler disappeared, it mysteriously returns to its old harbour in a small Cornish village. Two young men join the Rose’s new crew, hoping to pull themselves out of hardship. But when they return to the harbour, the men realise they have slipped back in...",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=487907",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/487892.jpg",
-      "showtimes": {
-        "2026-05-01": [
-          {
-            "time": "17:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487910.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-05-03": [
-          {
-            "time": "19:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487912.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-05-05": [
-          {
-            "time": "17:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487914.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-05-07": [
-          {
-            "time": "14:45",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487915.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
-      "letterboxd_rating": 3.43
-    },
-    {
       "id": "father-mother-sister-brother",
       "title": "Father Mother Sister Brother",
       "rating": "15",
@@ -298,8 +240,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/father-mother-sister-brother/",
       "letterboxd_rating": 3.11
     },
@@ -348,8 +290,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
       "letterboxd_rating": 3.49
     },
@@ -376,8 +318,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6"
+      "color": "#00897b",
+      "accent": "#4db6ac"
     },
     {
       "id": "ada-my-mother-the-architect-director-q-a",
@@ -426,10 +368,54 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/ada-my-mother-the-architect/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "rose-of-nevada",
+      "title": "Rose of Nevada",
+      "rating": "15",
+      "runtime": 114,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Mark Jenkin",
+      "cast": "George MacKay, Callum Turner, Rosalind Eleazar",
+      "country": "UK",
+      "description": "Some 30 years after the Rose of Nevada fishing trawler disappeared, it mysteriously returns to its old harbour in a small Cornish village. Two young men join the Rose’s new crew, hoping to pull themselves out of hardship. But when they return to the harbour, the men realise they have slipped back in...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=487907",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/487892.jpg",
+      "showtimes": {
+        "2026-05-03": [
+          {
+            "time": "19:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487912.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-05-05": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487914.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-05-07": [
+          {
+            "time": "14:45",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487915.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
+      "letterboxd_rating": 3.43
     },
     {
       "id": "primavera",
