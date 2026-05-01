@@ -1,115 +1,7 @@
 {
-  "scraped_at": "2026-05-01T10:33:21.447723+00:00",
+  "scraped_at": "2026-05-01T11:02:01.673117+00:00",
   "source": "princecharlescinema.com",
   "films": [
-    {
-      "id": "north-by-northwest",
-      "title": "North By Northwest",
-      "rating": "PG",
-      "runtime": 136,
-      "genre": "Thriller/Suspense",
-      "year": "1959",
-      "country": null,
-      "director": "Alfred Hitchcock",
-      "cast": "James Mason, Cary Grant, Eva Marie Saint",
-      "description": "This classic suspense film finds New York City ad executive Roger O. Thornhill (Cary Grant) pursued by ruthless spy Phillip Vandamm (James Mason) after Thornhill is mistaken for a government agent. Hunted relentlessly by Vandamm's associates, the harried Thornhill ends up on a cross-country journey, meeting the beautiful and mysterious Eve Kendall (Eva Marie Saint) along the way. Soon Vandamm's henchmen close in on Thornhill, resulting in a number of iconic action sequences.",
-      "film_url": "https://princecharlescinema.com/film/11736406/north-by-northwest",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/11736406.jpg",
-      "showtimes": {
-        "2026-05-01": [
-          {
-            "time": "12:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625718",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "70mm"
-            ]
-          }
-        ],
-        "2026-05-02": [
-          {
-            "time": "14:40",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625719",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "70mm"
-            ]
-          }
-        ],
-        "2026-05-05": [
-          {
-            "time": "14:30",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625720",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "70mm"
-            ]
-          }
-        ],
-        "2026-05-06": [
-          {
-            "time": "20:45",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625721",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "70mm"
-            ]
-          }
-        ],
-        "2026-05-07": [
-          {
-            "time": "14:45",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625722",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "70mm"
-            ]
-          }
-        ],
-        "2026-05-08": [
-          {
-            "time": "14:45",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "70mm"
-            ]
-          }
-        ],
-        "2026-05-10": [
-          {
-            "time": "17:05",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625744",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "70mm"
-            ]
-          }
-        ],
-        "2026-05-12": [
-          {
-            "time": "14:45",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625758",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "70mm"
-            ]
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/north-by-northwest/",
-      "letterboxd_rating": 4.19
-    },
     {
       "id": "picnic-at-hanging-rock",
       "title": "Picnic at Hanging Rock",
@@ -133,8 +25,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/picnic-at-hanging-rock/",
       "letterboxd_rating": 3.82
     },
@@ -345,8 +237,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/akira/",
       "letterboxd_rating": 4.28
     },
@@ -559,8 +451,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/apocalypse-now/",
       "letterboxd_rating": 4.43
     },
@@ -590,8 +482,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "color": "#1565c0",
+      "accent": "#64b5f6"
     },
     {
       "id": "all-the-presidents-men-50th-anniversary",
@@ -624,8 +516,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/all-the-presidents-men/",
       "letterboxd_rating": 4.18
     },
@@ -655,10 +547,107 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/the-dark-crystal/",
       "letterboxd_rating": 3.73
+    },
+    {
+      "id": "north-by-northwest",
+      "title": "North By Northwest",
+      "rating": "PG",
+      "runtime": 136,
+      "genre": "Thriller/Suspense",
+      "year": "1959",
+      "country": null,
+      "director": "Alfred Hitchcock",
+      "cast": "James Mason, Cary Grant, Eva Marie Saint",
+      "description": "This classic suspense film finds New York City ad executive Roger O. Thornhill (Cary Grant) pursued by ruthless spy Phillip Vandamm (James Mason) after Thornhill is mistaken for a government agent. Hunted relentlessly by Vandamm's associates, the harried Thornhill ends up on a cross-country journey, meeting the beautiful and mysterious Eve Kendall (Eva Marie Saint) along the way. Soon Vandamm's henchmen close in on Thornhill, resulting in a number of iconic action sequences.",
+      "film_url": "https://princecharlescinema.com/film/11736406/north-by-northwest",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/11736406.jpg",
+      "showtimes": {
+        "2026-05-02": [
+          {
+            "time": "14:40",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625719",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "70mm"
+            ]
+          }
+        ],
+        "2026-05-05": [
+          {
+            "time": "14:30",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625720",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "70mm"
+            ]
+          }
+        ],
+        "2026-05-06": [
+          {
+            "time": "20:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625721",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "70mm"
+            ]
+          }
+        ],
+        "2026-05-07": [
+          {
+            "time": "14:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625722",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "70mm"
+            ]
+          }
+        ],
+        "2026-05-08": [
+          {
+            "time": "14:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "70mm"
+            ]
+          }
+        ],
+        "2026-05-10": [
+          {
+            "time": "17:05",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625744",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "70mm"
+            ]
+          }
+        ],
+        "2026-05-12": [
+          {
+            "time": "14:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625758",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "70mm"
+            ]
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/north-by-northwest/",
+      "letterboxd_rating": 4.19
     },
     {
       "id": "almost-famous",
@@ -4734,6 +4723,14 @@
             "screen": null,
             "hoh": false
           }
+        ],
+        "2026-06-18": [
+          {
+            "time": "18:20",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626423",
+            "screen": null,
+            "hoh": false
+          }
         ]
       },
       "color": "#1a6597",
@@ -6210,6 +6207,14 @@
             "screen": null,
             "hoh": false
           }
+        ],
+        "2026-06-15": [
+          {
+            "time": "12:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626424",
+            "screen": null,
+            "hoh": false
+          }
         ]
       },
       "color": "#9f2124",
@@ -6257,6 +6262,61 @@
       "letterboxd_rating": 3.83
     },
     {
+      "id": "paprika",
+      "title": "Paprika",
+      "rating": "15",
+      "runtime": 90,
+      "genre": "Adventure / Drama",
+      "year": "2006",
+      "country": null,
+      "director": "Satoshi Kon| Toshi",
+      "cast": "Megumi Hayashibara, Tôru Emori, Katsunosuke Hori",
+      "description": "When a machine that allows therapists to enter their patients' dreams is stolen, all hell breaks loose. Only a young female therapist, Paprika, can stop it.",
+      "film_url": "https://princecharlescinema.com/film/2168416/paprika",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/2168416.jpg",
+      "showtimes": {
+        "2026-05-28": [
+          {
+            "time": "18:25",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626422",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "SUB"
+            ]
+          }
+        ],
+        "2026-06-10": [
+          {
+            "time": "12:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626146",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K",
+              "SUB"
+            ]
+          }
+        ],
+        "2026-06-22": [
+          {
+            "time": "12:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626338",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K",
+              "SUB"
+            ]
+          }
+        ]
+      },
+      "color": "#66971a",
+      "accent": "#a1d453",
+      "letterboxd_url": "https://letterboxd.com/film/paprika-2006/",
+      "letterboxd_rating": 4.1
+    },
+    {
       "id": "vampires-kiss-4k-restoration-premiere",
       "title": "Vampire's Kiss : 4K Restoration Premiere",
       "rating": "18",
@@ -6282,8 +6342,8 @@
           }
         ]
       },
-      "color": "#66971a",
-      "accent": "#a1d453",
+      "color": "#9f2192",
+      "accent": "#d368c8",
       "letterboxd_url": "https://letterboxd.com/film/vampires-kiss/",
       "letterboxd_rating": 3.42
     },
@@ -6310,8 +6370,8 @@
           }
         ]
       },
-      "color": "#9f2192",
-      "accent": "#d368c8",
+      "color": "#30a690",
+      "accent": "#84d6c7",
       "letterboxd_url": "https://letterboxd.com/film/the-color-of-pomegranates/",
       "letterboxd_rating": 4.13
     },
@@ -6338,8 +6398,8 @@
           }
         ]
       },
-      "color": "#30a690",
-      "accent": "#84d6c7",
+      "color": "#975c1a",
+      "accent": "#d49653",
       "letterboxd_url": "https://letterboxd.com/film/fargo/",
       "letterboxd_rating": 4.15
     },
@@ -6374,8 +6434,8 @@
           }
         ]
       },
-      "color": "#975c1a",
-      "accent": "#d49653",
+      "color": "#3e219f",
+      "accent": "#8168d3",
       "letterboxd_url": "https://letterboxd.com/film/taipei-story/",
       "letterboxd_rating": 4.05
     },
@@ -6418,8 +6478,8 @@
           }
         ]
       },
-      "color": "#3e219f",
-      "accent": "#8168d3",
+      "color": "#37a630",
+      "accent": "#89d684",
       "letterboxd_url": "https://letterboxd.com/film/bullet-in-the-head/",
       "letterboxd_rating": 4.05
     },
@@ -6449,8 +6509,8 @@
           }
         ]
       },
-      "color": "#37a630",
-      "accent": "#89d684",
+      "color": "#971a46",
+      "accent": "#d45381",
       "letterboxd_url": "https://letterboxd.com/film/mars-attacks/",
       "letterboxd_rating": 3.26
     },
@@ -6488,8 +6548,8 @@
           }
         ]
       },
-      "color": "#971a46",
-      "accent": "#d45381",
+      "color": "#21739f",
+      "accent": "#68add3",
       "letterboxd_url": "https://letterboxd.com/film/the-room/",
       "letterboxd_rating": 2.61
     },
@@ -6519,8 +6579,8 @@
           }
         ]
       },
-      "color": "#21739f",
-      "accent": "#68add3",
+      "color": "#9ea630",
+      "accent": "#d1d684",
       "letterboxd_url": "https://letterboxd.com/film/romeo-juliet-1996/",
       "letterboxd_rating": 3.46
     },
@@ -6547,8 +6607,8 @@
           }
         ]
       },
-      "color": "#9ea630",
-      "accent": "#d1d684",
+      "color": "#7b1a97",
+      "accent": "#b653d4",
       "letterboxd_url": "https://letterboxd.com/film/the-neverending-story/",
       "letterboxd_rating": 3.62
     },
@@ -6578,8 +6638,8 @@
           }
         ]
       },
-      "color": "#7b1a97",
-      "accent": "#b653d4",
+      "color": "#219f5e",
+      "accent": "#68d39b",
       "letterboxd_url": "https://letterboxd.com/film/munich/",
       "letterboxd_rating": 3.81
     },
@@ -6609,8 +6669,8 @@
           }
         ]
       },
-      "color": "#219f5e",
-      "accent": "#68d39b",
+      "color": "#a64630",
+      "accent": "#d69384",
       "letterboxd_url": "https://letterboxd.com/film/california-split/",
       "letterboxd_rating": 3.92
     },
@@ -6640,8 +6700,8 @@
           }
         ]
       },
-      "color": "#a64630",
-      "accent": "#d69384",
+      "color": "#1a2797",
+      "accent": "#5360d4",
       "letterboxd_url": "https://letterboxd.com/film/hard-eight/",
       "letterboxd_rating": 3.62
     },
@@ -6668,8 +6728,8 @@
           }
         ]
       },
-      "color": "#1a2797",
-      "accent": "#5360d4"
+      "color": "#539f21",
+      "accent": "#92d368"
     },
     {
       "id": "who-framed-roger-rabbit",
@@ -6694,8 +6754,8 @@
           }
         ]
       },
-      "color": "#539f21",
-      "accent": "#92d368",
+      "color": "#a63081",
+      "accent": "#d684bc",
       "letterboxd_url": "https://letterboxd.com/film/who-framed-roger-rabbit/",
       "letterboxd_rating": 3.97
     },
@@ -6722,8 +6782,8 @@
           }
         ]
       },
-      "color": "#a63081",
-      "accent": "#d684bc",
+      "color": "#1a9597",
+      "accent": "#53d1d4",
       "letterboxd_url": "https://letterboxd.com/film/goodbye-dragon-inn/",
       "letterboxd_rating": 3.97
     },
@@ -6750,8 +6810,8 @@
           }
         ]
       },
-      "color": "#1a9597",
-      "accent": "#53d1d4",
+      "color": "#9f7d21",
+      "accent": "#d3b668",
       "letterboxd_url": "https://letterboxd.com/film/fantastic-planet/",
       "letterboxd_rating": 4.02
     },
@@ -6786,8 +6846,8 @@
           }
         ]
       },
-      "color": "#9f7d21",
-      "accent": "#d3b668",
+      "color": "#6330a6",
+      "accent": "#a884d6",
       "letterboxd_url": "https://letterboxd.com/film/perfect-days-2023/",
       "letterboxd_rating": 4.31
     },
@@ -6830,8 +6890,8 @@
           }
         ]
       },
-      "color": "#6330a6",
-      "accent": "#a884d6",
+      "color": "#1a972c",
+      "accent": "#53d466",
       "letterboxd_url": "https://letterboxd.com/film/sinners-2025/",
       "letterboxd_rating": 4.1
     },
@@ -6858,8 +6918,8 @@
           }
         ]
       },
-      "color": "#1a972c",
-      "accent": "#53d466",
+      "color": "#9f2134",
+      "accent": "#d36878",
       "letterboxd_url": "https://letterboxd.com/film/persepolis/",
       "letterboxd_rating": 4.21
     },
@@ -6889,8 +6949,8 @@
           }
         ]
       },
-      "color": "#9f2134",
-      "accent": "#d36878",
+      "color": "#3063a6",
+      "accent": "#84a8d6",
       "letterboxd_url": "https://letterboxd.com/film/klute/",
       "letterboxd_rating": 3.86
     },
@@ -6920,8 +6980,8 @@
           }
         ]
       },
-      "color": "#3063a6",
-      "accent": "#84a8d6",
+      "color": "#75971a",
+      "accent": "#b1d453",
       "letterboxd_url": "https://letterboxd.com/film/flirting-with-disaster/",
       "letterboxd_rating": 3.42
     },
@@ -6948,8 +7008,8 @@
           }
         ]
       },
-      "color": "#75971a",
-      "accent": "#b1d453",
+      "color": "#9d219f",
+      "accent": "#d168d3",
       "letterboxd_url": "https://letterboxd.com/film/men-in-black/",
       "letterboxd_rating": 3.7
     },
@@ -6976,8 +7036,8 @@
           }
         ]
       },
-      "color": "#9d219f",
-      "accent": "#d168d3",
+      "color": "#30a681",
+      "accent": "#84d6bc",
       "letterboxd_url": "https://letterboxd.com/film/the-parallax-view/",
       "letterboxd_rating": 3.84
     },
@@ -7007,8 +7067,8 @@
           }
         ]
       },
-      "color": "#30a681",
-      "accent": "#84d6bc",
+      "color": "#974c1a",
+      "accent": "#d48653",
       "letterboxd_url": "https://letterboxd.com/film/the-angelic-conversation/",
       "letterboxd_rating": 3.43
     },
@@ -7038,8 +7098,8 @@
           }
         ]
       },
-      "color": "#974c1a",
-      "accent": "#d48653",
+      "color": "#2e219f",
+      "accent": "#7368d3",
       "letterboxd_url": "https://letterboxd.com/film/hackers/",
       "letterboxd_rating": 3.31
     },
@@ -7066,8 +7126,8 @@
           }
         ]
       },
-      "color": "#2e219f",
-      "accent": "#7368d3",
+      "color": "#46a630",
+      "accent": "#94d684",
       "letterboxd_url": "https://letterboxd.com/film/ashes-and-diamonds/",
       "letterboxd_rating": 4.06
     },
@@ -7094,8 +7154,8 @@
           }
         ]
       },
-      "color": "#46a630",
-      "accent": "#94d684",
+      "color": "#971a56",
+      "accent": "#d45391",
       "letterboxd_url": "https://letterboxd.com/film/climax-2018/",
       "letterboxd_rating": 3.76
     },
@@ -7126,8 +7186,8 @@
           }
         ]
       },
-      "color": "#971a56",
-      "accent": "#d45391",
+      "color": "#21839f",
+      "accent": "#68bbd3",
       "letterboxd_url": "https://letterboxd.com/film/ghost-in-the-shell/",
       "letterboxd_rating": 4.1
     },
@@ -7170,8 +7230,8 @@
           }
         ]
       },
-      "color": "#21839f",
-      "accent": "#68bbd3",
+      "color": "#a69e30",
+      "accent": "#d6d084",
       "letterboxd_url": "https://letterboxd.com/film/the-amazing-digital-circus-the-last-act/",
       "letterboxd_rating": null
     },
@@ -7198,8 +7258,8 @@
           }
         ]
       },
-      "color": "#a69e30",
-      "accent": "#d6d084",
+      "color": "#6b1a97",
+      "accent": "#a653d4",
       "letterboxd_url": "https://letterboxd.com/film/i-saw-the-tv-glow/",
       "letterboxd_rating": 3.52
     },
@@ -7226,8 +7286,8 @@
           }
         ]
       },
-      "color": "#6b1a97",
-      "accent": "#a653d4",
+      "color": "#219f4e",
+      "accent": "#68d38e",
       "letterboxd_url": "https://letterboxd.com/film/goldeneye/",
       "letterboxd_rating": 3.57
     },
@@ -7254,8 +7314,8 @@
           }
         ]
       },
-      "color": "#219f4e",
-      "accent": "#68d38e",
+      "color": "#a63730",
+      "accent": "#d68984",
       "letterboxd_url": "https://letterboxd.com/film/rashomon/",
       "letterboxd_rating": 4.2
     },
@@ -7282,8 +7342,8 @@
           }
         ]
       },
-      "color": "#a63730",
-      "accent": "#d68984",
+      "color": "#1a3797",
+      "accent": "#5371d4",
       "letterboxd_url": "https://letterboxd.com/film/paris-texas/",
       "letterboxd_rating": 4.37
     },
@@ -7310,8 +7370,8 @@
           }
         ]
       },
-      "color": "#1a3797",
-      "accent": "#5371d4",
+      "color": "#639f21",
+      "accent": "#a0d368",
       "letterboxd_url": "https://letterboxd.com/film/pickpocket/",
       "letterboxd_rating": 3.94
     },
@@ -7338,8 +7398,8 @@
           }
         ]
       },
-      "color": "#639f21",
-      "accent": "#a0d368",
+      "color": "#a63090",
+      "accent": "#d684c7",
       "letterboxd_url": "https://letterboxd.com/film/hellraiser/",
       "letterboxd_rating": 3.54
     },
@@ -7398,8 +7458,8 @@
           }
         ]
       },
-      "color": "#a63090",
-      "accent": "#d684c7",
+      "color": "#1a978a",
+      "accent": "#53d4c6",
       "letterboxd_url": "https://letterboxd.com/film/the-fifth-element/",
       "letterboxd_rating": 3.78
     },
@@ -7426,8 +7486,8 @@
           }
         ]
       },
-      "color": "#1a978a",
-      "accent": "#53d4c6",
+      "color": "#9f6d21",
+      "accent": "#d3a868",
       "letterboxd_url": "https://letterboxd.com/film/ferris-buellers-day-off/",
       "letterboxd_rating": 3.96
     },
@@ -7458,8 +7518,8 @@
           }
         ]
       },
-      "color": "#9f6d21",
-      "accent": "#d3a868",
+      "color": "#5430a6",
+      "accent": "#9d84d6",
       "letterboxd_url": "https://letterboxd.com/film/perfect-blue/",
       "letterboxd_rating": 4.38
     },
@@ -7489,8 +7549,8 @@
           }
         ]
       },
-      "color": "#5430a6",
-      "accent": "#9d84d6",
+      "color": "#1a971c",
+      "accent": "#53d455",
       "letterboxd_url": "https://letterboxd.com/film/punch-drunk-love/",
       "letterboxd_rating": 3.96
     },
@@ -7531,8 +7591,8 @@
           }
         ]
       },
-      "color": "#1a971c",
-      "accent": "#53d455",
+      "color": "#9f2144",
+      "accent": "#d36886",
       "letterboxd_url": "https://letterboxd.com/film/magnolia/",
       "letterboxd_rating": 4.23
     },
@@ -7559,8 +7619,8 @@
           }
         ]
       },
-      "color": "#9f2144",
-      "accent": "#d36886",
+      "color": "#3072a6",
+      "accent": "#84b2d6",
       "letterboxd_url": "https://letterboxd.com/film/ugetsu/",
       "letterboxd_rating": 4.26
     },
@@ -7590,8 +7650,8 @@
           }
         ]
       },
-      "color": "#3072a6",
-      "accent": "#84b2d6",
+      "color": "#85971a",
+      "accent": "#c1d453",
       "letterboxd_url": "https://letterboxd.com/film/the-conversation/",
       "letterboxd_rating": 4.15
     },
@@ -7618,8 +7678,8 @@
           }
         ]
       },
-      "color": "#85971a",
-      "accent": "#c1d453",
+      "color": "#8d219f",
+      "accent": "#c368d3",
       "letterboxd_url": "https://letterboxd.com/film/the-ascent/",
       "letterboxd_rating": 4.43
     },
@@ -7649,8 +7709,8 @@
           }
         ]
       },
-      "color": "#8d219f",
-      "accent": "#c368d3",
+      "color": "#30a672",
+      "accent": "#84d6b2",
       "letterboxd_url": "https://letterboxd.com/film/solaris/",
       "letterboxd_rating": 4.22
     },
@@ -7680,8 +7740,8 @@
           }
         ]
       },
-      "color": "#30a672",
-      "accent": "#84d6b2",
+      "color": "#973c1a",
+      "accent": "#d47553",
       "letterboxd_url": "https://letterboxd.com/film/citizen-kane/",
       "letterboxd_rating": 4.19
     },
@@ -7711,8 +7771,8 @@
           }
         ]
       },
-      "color": "#973c1a",
-      "accent": "#d47553",
+      "color": "#21259f",
+      "accent": "#686bd3",
       "letterboxd_url": "https://letterboxd.com/film/jo-jo-dancer-your-life-is-calling/",
       "letterboxd_rating": 3.38
     },
@@ -7739,8 +7799,8 @@
           }
         ]
       },
-      "color": "#21259f",
-      "accent": "#686bd3",
+      "color": "#55a630",
+      "accent": "#9ed684",
       "letterboxd_url": "https://letterboxd.com/film/naked/",
       "letterboxd_rating": 4.01
     },
@@ -7767,8 +7827,8 @@
           }
         ]
       },
-      "color": "#55a630",
-      "accent": "#9ed684",
+      "color": "#971a66",
+      "accent": "#d453a1",
       "letterboxd_url": "https://letterboxd.com/film/breathless/",
       "letterboxd_rating": 3.9
     },
@@ -7795,54 +7855,10 @@
           }
         ]
       },
-      "color": "#971a66",
-      "accent": "#d453a1",
-      "letterboxd_url": "https://letterboxd.com/film/branded-to-kill/",
-      "letterboxd_rating": 3.87
-    },
-    {
-      "id": "paprika",
-      "title": "Paprika",
-      "rating": "15",
-      "runtime": 90,
-      "genre": "Adventure / Drama",
-      "year": "2006",
-      "country": null,
-      "director": "Satoshi Kon| Toshi",
-      "cast": "Megumi Hayashibara, Tôru Emori, Katsunosuke Hori",
-      "description": "When a machine that allows therapists to enter their patients' dreams is stolen, all hell breaks loose. Only a young female therapist, Paprika, can stop it.",
-      "film_url": "https://princecharlescinema.com/film/2168416/paprika",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/2168416.jpg",
-      "showtimes": {
-        "2026-06-10": [
-          {
-            "time": "12:15",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626146",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K",
-              "SUB"
-            ]
-          }
-        ],
-        "2026-06-22": [
-          {
-            "time": "12:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626338",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K",
-              "SUB"
-            ]
-          }
-        ]
-      },
       "color": "#21939f",
       "accent": "#68c8d3",
-      "letterboxd_url": "https://letterboxd.com/film/paprika-2006/",
-      "letterboxd_rating": 4.1
+      "letterboxd_url": "https://letterboxd.com/film/branded-to-kill/",
+      "letterboxd_rating": 3.87
     },
     {
       "id": "sunset-boulevard",
