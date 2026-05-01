@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-01T15:32:50.588859+00:00",
+  "scraped_at": "2026-05-01T16:02:55.392365+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
@@ -216,7 +216,7 @@
         "2026-05-01": [
           {
             "time": "20:30",
-            "booking_url": "",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625305",
             "screen": null,
             "hoh": false,
             "tags": [
@@ -482,7 +482,7 @@
         "2026-05-02": [
           {
             "time": "18:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626106",
+            "booking_url": "",
             "screen": null,
             "hoh": false,
             "tags": [
@@ -7000,6 +7000,14 @@
             "screen": null,
             "hoh": false
           }
+        ],
+        "2026-07-02": [
+          {
+            "time": "20:40",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626481",
+            "screen": null,
+            "hoh": false
+          }
         ]
       },
       "color": "#9f7d21",
@@ -10224,6 +10232,62 @@
       "letterboxd_rating": 4.17
     },
     {
+      "id": "kingdom-of-heaven-directors-cut",
+      "title": "Kingdom of Heaven: Director's Cut",
+      "rating": "15",
+      "runtime": 194,
+      "genre": "War",
+      "year": "2005",
+      "country": null,
+      "director": "Ridley Scott",
+      "cast": "Orlando Bloom, Liam Neeson, Eva Green",
+      "description": "Ridley Scott's extended cut of an epic adventure about a common man who finds himself thrust into a decades-long war. Orlando Bloom plays a humble blacksmith who discovers that he is the son of a knght, and travels to the Holy Land to fight in the crusades. A stranger in a strange land, he serves a doomed King, falls in love with an exotic and forbidden Queen, and rises to knighthood. Ultimately, he must protect the people of Jerusalem from overwhelming forces, while striving to keep a fragile peace.",
+      "film_url": "https://princecharlescinema.com/film/3225884/kingdom-of-heaven-directors-cut",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/PlOjhxxqJbLPJPft-uoJffGEvX5jDOBoCcF3H76iG1c.jpg",
+      "showtimes": {
+        "2026-07-02": [
+          {
+            "time": "14:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626479",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#9f2d21",
+      "accent": "#d37268",
+      "letterboxd_url": "https://letterboxd.com/film/kingdom-of-heaven/",
+      "letterboxd_rating": 3.71
+    },
+    {
+      "id": "slacker",
+      "title": "Slacker",
+      "rating": "15",
+      "runtime": 100,
+      "genre": "Comedy / Drama",
+      "year": null,
+      "country": null,
+      "director": "Richard Linklater",
+      "cast": "Richard Linklater, Rudy Basquez, Jean Caffeine",
+      "description": "Austin, Texas, is an Eden for the young and unambitious, from the enthusiastically eccentric to the dangerously apathetic. Here, the nobly lazy can eschew responsibility in favor of nursing their esoteric obsessions. The locals include a backseat philosopher who passionately expounds on his dream theories to a seemingly comatose cabbie, a young woman who tries to hawk Madonna's Pap test to anyone who will listen and a kindly old anarchist looking for recruits.",
+      "film_url": "https://princecharlescinema.com/film/31616993/slacker",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/31616993.jpg",
+      "showtimes": {
+        "2026-07-02": [
+          {
+            "time": "18:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626480",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#3047a6",
+      "accent": "#8495d6",
+      "letterboxd_url": "https://letterboxd.com/film/slacker/",
+      "letterboxd_rating": 3.69
+    },
+    {
       "id": "blade-runner-double-feature",
       "title": "Blade Runner : Double Feature",
       "rating": "15",
@@ -10249,8 +10313,8 @@
           }
         ]
       },
-      "color": "#9f2d21",
-      "accent": "#d37268"
+      "color": "#58971a",
+      "accent": "#93d453"
     },
     {
       "id": "the-human-condition-part-1-no-greater-love",
@@ -10275,8 +10339,8 @@
           }
         ]
       },
-      "color": "#3047a6",
-      "accent": "#8495d6",
+      "color": "#9f2184",
+      "accent": "#d368bc",
       "letterboxd_url": "https://letterboxd.com/film/the-human-condition-i-no-greater-love/",
       "letterboxd_rating": 4.58
     },
@@ -10306,8 +10370,8 @@
           }
         ]
       },
-      "color": "#58971a",
-      "accent": "#93d453",
+      "color": "#30a69c",
+      "accent": "#84d6cf",
       "letterboxd_url": "https://letterboxd.com/film/sleepers/",
       "letterboxd_rating": 3.78
     },
@@ -10334,8 +10398,8 @@
           }
         ]
       },
-      "color": "#9f2184",
-      "accent": "#d368bc",
+      "color": "#97691a",
+      "accent": "#d4a453",
       "letterboxd_url": "https://letterboxd.com/film/o-brother-where-art-thou/",
       "letterboxd_rating": 3.96
     },
@@ -10409,8 +10473,8 @@
           }
         ]
       },
-      "color": "#30a69c",
-      "accent": "#84d6cf",
+      "color": "#4c219f",
+      "accent": "#8d68d3",
       "letterboxd_url": "https://letterboxd.com/film/the-searchers/",
       "letterboxd_rating": 3.94
     },
@@ -10437,8 +10501,8 @@
           }
         ]
       },
-      "color": "#97691a",
-      "accent": "#d4a453",
+      "color": "#30a635",
+      "accent": "#84d688",
       "letterboxd_url": "https://letterboxd.com/film/the-human-condition-ii-road-to-eternity/",
       "letterboxd_rating": 4.49
     },
@@ -10465,8 +10529,8 @@
           }
         ]
       },
-      "color": "#4c219f",
-      "accent": "#8d68d3",
+      "color": "#971a39",
+      "accent": "#d45372",
       "letterboxd_url": "https://letterboxd.com/film/the-human-condition-iii-a-soldiers-prayer/",
       "letterboxd_rating": 4.65
     },
@@ -10563,8 +10627,8 @@
           }
         ]
       },
-      "color": "#30a635",
-      "accent": "#84d688",
+      "color": "#21659f",
+      "accent": "#68a1d3",
       "letterboxd_url": "https://letterboxd.com/film/the-room/",
       "letterboxd_rating": 2.61
     },
@@ -10652,8 +10716,8 @@
           }
         ]
       },
-      "color": "#971a39",
-      "accent": "#d45372",
+      "color": "#91a630",
+      "accent": "#c8d684",
       "letterboxd_url": "https://letterboxd.com/film/big-shark/",
       "letterboxd_rating": 2.96
     },
@@ -10716,8 +10780,8 @@
           }
         ]
       },
-      "color": "#21659f",
-      "accent": "#68a1d3",
+      "color": "#881a97",
+      "accent": "#c453d4",
       "letterboxd_url": "https://letterboxd.com/film/nosferatu/",
       "letterboxd_rating": 3.82
     },
@@ -10758,8 +10822,8 @@
           }
         ]
       },
-      "color": "#91a630",
-      "accent": "#c8d684",
+      "color": "#219f6c",
+      "accent": "#68d3a7",
       "letterboxd_url": "https://letterboxd.com/film/the-cabinet-of-dr-caligari-1920/",
       "letterboxd_rating": 4.06
     },
@@ -10789,8 +10853,8 @@
           }
         ]
       },
-      "color": "#881a97",
-      "accent": "#c453d4",
+      "color": "#a65330",
+      "accent": "#d69c84",
       "letterboxd_url": "https://letterboxd.com/film/haxan/",
       "letterboxd_rating": 4.05
     },
@@ -10817,8 +10881,8 @@
           }
         ]
       },
-      "color": "#219f6c",
-      "accent": "#68d3a7"
+      "color": "#1b1a97",
+      "accent": "#5453d4"
     }
   ]
 }
