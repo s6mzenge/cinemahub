@@ -1,7 +1,57 @@
 {
-  "scraped_at": "2026-05-02T15:05:00.012171+00:00",
+  "scraped_at": "2026-05-02T15:36:06.756668+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
+    {
+      "id": "the-stranger",
+      "title": "The Stranger",
+      "rating": "15",
+      "runtime": 122,
+      "genre": "Other",
+      "year": "2025",
+      "director": "François Ozon",
+      "cast": "Benjamin Voisin, Rebecca Marder, Pierre Lottin",
+      "country": "France",
+      "description": "In French Algeria, Meursault drifts through life and love with mysterious detachment. When he stands accused of murdering an Arab man, indifference is his only alibi in François Ozon's fresh take on Albert Camus's classic novel.",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=431962",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/431959.jpg",
+      "showtimes": {
+        "2026-05-02": [
+          {
+            "time": "14:45",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487823.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ],
+        "2026-05-03": [
+          {
+            "time": "16:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487850.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ],
+        "2026-05-04": [
+          {
+            "time": "19:45",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487868.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
+      "letterboxd_rating": 3.49
+    },
     {
       "id": "the-devil-wears-prada-2",
       "title": "The Devil Wears Prada 2",
@@ -17,6 +67,12 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/414734.jpg",
       "showtimes": {
         "2026-05-02": [
+          {
+            "time": "15:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_415227.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          },
           {
             "time": "17:30",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_415228.TcsSection_720",
@@ -179,8 +235,8 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.44
     },
@@ -207,8 +263,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff"
+      "color": "#d81b60",
+      "accent": "#ff6090"
     },
     {
       "id": "ada-my-mother-the-architect-director-q-a",
@@ -257,49 +313,10 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/ada-my-mother-the-architect/",
-      "letterboxd_rating": null
-    },
-    {
-      "id": "the-stranger",
-      "title": "The Stranger",
-      "rating": "15",
-      "runtime": 122,
-      "genre": "Other",
-      "year": "2025",
-      "director": "François Ozon",
-      "cast": "Benjamin Voisin, Rebecca Marder, Pierre Lottin",
-      "country": "France",
-      "description": "In French Algeria, Meursault drifts through life and love with mysterious detachment. When he stands accused of murdering an Arab man, indifference is his only alibi in François Ozon's fresh take on Albert Camus's classic novel.",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=431962",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/431959.jpg",
-      "showtimes": {
-        "2026-05-03": [
-          {
-            "time": "16:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487850.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false,
-            "tags": [
-              "Subtitled"
-            ]
-          }
-        ],
-        "2026-05-04": [
-          {
-            "time": "19:45",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487868.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
       "color": "#00897b",
       "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
-      "letterboxd_rating": 3.49
+      "letterboxd_url": "https://letterboxd.com/film/ada-my-mother-the-architect/",
+      "letterboxd_rating": null
     },
     {
       "id": "rose-of-nevada",
