@@ -1,62 +1,7 @@
 {
-  "scraped_at": "2026-05-02T10:35:29.523444+00:00",
+  "scraped_at": "2026-05-02T11:04:29.946156+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "up",
-      "title": "Up",
-      "rating": "U",
-      "runtime": 98,
-      "genre": "Other",
-      "year": "2009",
-      "director": "Pete Docter",
-      "cast": null,
-      "description": "A 78-year-old curmudgeonly balloon salesman, is not your average hero. When he ties thousands of balloons to his house and flies…",
-      "film_url": "https://www.thegardencinema.co.uk/film/up/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/946073.jpg",
-      "showtimes": {
-        "2026-05-02": [
-          {
-            "time": "11:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235711.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ],
-        "2026-05-03": [
-          {
-            "time": "11:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235750.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ],
-        "2026-05-04": [
-          {
-            "time": "11:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235752.TcsSection_638",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ]
-      },
-      "seasons": [
-        "Films for the Family"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/up/",
-      "letterboxd_rating": 4.1
-    },
     {
       "id": "akira",
       "title": "Akira",
@@ -87,8 +32,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/akira/",
       "letterboxd_rating": 4.28
     },
@@ -157,8 +102,8 @@
       "seasons": [
         "Planting Seeds"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/david-attenborough-a-life-on-our-planet/",
       "letterboxd_rating": 4.22
     },
@@ -248,8 +193,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.43
     },
@@ -345,8 +290,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/wild-foxes/",
       "letterboxd_rating": 3.65
     },
@@ -388,8 +333,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/miroirs-no-3/",
       "letterboxd_rating": 3.48
     },
@@ -419,8 +364,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/a-bigger-splash/",
       "letterboxd_rating": 3.33
     },
@@ -453,8 +398,8 @@
       "seasons": [
         "Select Japan"
       ],
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/a-new-love-in-tokyo/",
       "letterboxd_rating": 3.92
     },
@@ -491,8 +436,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/amelie/",
       "letterboxd_rating": 4.19
     },
@@ -534,10 +479,54 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
       "letterboxd_rating": 3.49
+    },
+    {
+      "id": "up",
+      "title": "Up",
+      "rating": "U",
+      "runtime": 98,
+      "genre": "Other",
+      "year": "2009",
+      "director": "Pete Docter",
+      "cast": null,
+      "description": "A 78-year-old curmudgeonly balloon salesman, is not your average hero. When he ties thousands of balloons to his house and flies…",
+      "film_url": "https://www.thegardencinema.co.uk/film/up/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/946073.jpg",
+      "showtimes": {
+        "2026-05-03": [
+          {
+            "time": "11:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235750.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ],
+        "2026-05-04": [
+          {
+            "time": "11:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235752.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ]
+      },
+      "seasons": [
+        "Films for the Family"
+      ],
+      "color": "#546e7a",
+      "accent": "#90a4ae",
+      "letterboxd_url": "https://letterboxd.com/film/up/",
+      "letterboxd_rating": 4.1
     },
     {
       "id": "diary-of-a-chambermaid",
