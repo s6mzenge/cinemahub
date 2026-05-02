@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-02T16:34:40.930727+00:00",
+  "scraped_at": "2026-05-02T17:04:48.671092+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -99,9 +99,10 @@
         "2026-05-02": [
           {
             "time": "17:45",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10799",
+            "booking_url": "",
             "screen": null,
-            "hoh": false
+            "hoh": false,
+            "sold_out": true
           }
         ],
         "2026-05-03": [
@@ -173,42 +174,6 @@
       "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
       "letterboxd_rating": 3.59
-    },
-    {
-      "id": "project-hail-mary",
-      "title": "Project Hail Mary",
-      "rating": "12A",
-      "runtime": 157,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "Science teacher Ryland Grace (Ryan Gosling) wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction but an unexpected friendship means he may not have to do it alone.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/100576",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/100576_1.jpg",
-      "showtimes": {
-        "2026-05-02": [
-          {
-            "time": "17:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10794",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-03": [
-          {
-            "time": "17:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10816",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/project-hail-mary/",
-      "letterboxd_rating": 4.32
     },
     {
       "id": "the-devil-wears-prada-2",
@@ -405,8 +370,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.44
     },
@@ -515,10 +480,38 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/the-drama/",
       "letterboxd_rating": 3.74
+    },
+    {
+      "id": "project-hail-mary",
+      "title": "Project Hail Mary",
+      "rating": "12A",
+      "runtime": 157,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Science teacher Ryland Grace (Ryan Gosling) wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction but an unexpected friendship means he may not have to do it alone.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/100576",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/100576_1.jpg",
+      "showtimes": {
+        "2026-05-03": [
+          {
+            "time": "17:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10816",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/project-hail-mary/",
+      "letterboxd_rating": 4.32
     },
     {
       "id": "the-sheep-detectives",
