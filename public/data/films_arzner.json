@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-03T20:02:19.225276+00:00",
+  "scraped_at": "2026-05-03T20:32:11.477867+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -12,6 +12,26 @@
       "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=133637",
       "poster_url": "https://images.savoysystems.co.uk/TAL/165159.jpg",
       "showtimes": {
+        "2026-05-03": [
+          {
+            "time": "11:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_165083.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "17:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_165084.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "19:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_165085.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
         "2026-05-04": [
           {
             "time": "13:00",
@@ -433,6 +453,33 @@
       "letterboxd_rating": 3.4
     },
     {
+      "id": "dog-friendly-the-devil-wears-prada-2-165371",
+      "title": "Dog-Friendly: The Devil Wears Prada 2",
+      "rating": "12A",
+      "runtime": 125,
+      "genre": "Dog-Friendly",
+      "description": "This screening's theme is FASHION . We encourage dogs (and owners) to dress up and strut the dogwalk in our bar. There will be a prize for best-dressed dog!  If your dog requires a seat, please book them a Dog seat free of charge. Dogs must be kept on leads at all times in the bar and screening room…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=165371",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/165364.jpg",
+      "showtimes": {
+        "2026-05-03": [
+          {
+            "time": "14:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_165372.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Dog-Friendly"
+            ]
+          }
+        ]
+      },
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
+      "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
+      "letterboxd_rating": 3.4
+    },
+    {
       "id": "premiere-the-slowest-landslide-190314",
       "title": "Premiere: The Slowest Landslide",
       "rating": "TBC",
@@ -825,8 +872,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "madfabulous-164269",
@@ -866,8 +913,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#4e342e",
+      "accent": "#8d6e63",
       "letterboxd_url": "https://letterboxd.com/film/madfabulous/",
       "letterboxd_rating": null
     },
@@ -893,8 +940,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/madfabulous/",
       "letterboxd_rating": null
     },
@@ -920,8 +967,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/pink-narcissus/",
       "letterboxd_rating": 3.65
     },
@@ -947,8 +994,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#9f2121",
+      "accent": "#d36868"
     },
     {
       "id": "cactus-pears-director-q-a-183173",
@@ -972,8 +1019,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868",
+      "color": "#3052a6",
+      "accent": "#849cd6",
       "letterboxd_url": "https://letterboxd.com/film/cactus-pears/",
       "letterboxd_rating": 3.87
     },
@@ -999,8 +1046,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "the-powerpuff-girls-movie-intro-from-nyongbella-147482",
@@ -1024,8 +1071,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#9f2190",
+      "accent": "#d368c6",
       "letterboxd_url": "https://letterboxd.com/film/the-powerpuff-girls-movie/",
       "letterboxd_rating": 3.49
     },
@@ -1051,8 +1098,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#30a692",
+      "accent": "#84d6c8"
     }
   ]
 }
