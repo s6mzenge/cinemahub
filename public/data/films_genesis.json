@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-03T13:05:12.728987+00:00",
+  "scraped_at": "2026-05-03T13:35:00.052498+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -201,12 +201,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/105261_0.jpg",
       "showtimes": {
         "2026-05-03": [
-          {
-            "time": "14:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10834",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "15:00",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10807",
@@ -463,48 +457,6 @@
       "letterboxd_rating": 3.74
     },
     {
-      "id": "the-sheep-detectives",
-      "title": "The Sheep Detectives",
-      "rating": "PG",
-      "runtime": 105,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "Every night a shepherd reads aloud a murder mystery, pretending his sheep can understand. When he is found dead, the sheep realize at once that it was a murder and think they know everything about how to go about solving it.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/106218",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/106218_0.jpg",
-      "showtimes": {
-        "2026-05-03": [
-          {
-            "time": "14:20",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10863",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-04": [
-          {
-            "time": "12:45",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10864",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "15:35",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10865",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
-      "letterboxd_rating": 3.65
-    },
-    {
       "id": "the-super-mario-galaxy-movie",
       "title": "The Super Mario Galaxy Movie",
       "rating": "PG",
@@ -535,8 +487,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/the-super-mario-galaxy-movie/",
       "letterboxd_rating": 2.91
     },
@@ -563,8 +515,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
+      "color": "#c62828",
+      "accent": "#ef5350"
     },
     {
       "id": "shorts-showcase-block-1",
@@ -590,8 +542,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/block-1/",
       "letterboxd_rating": null
     },
@@ -618,10 +570,44 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/the-journey-within/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "the-sheep-detectives",
+      "title": "The Sheep Detectives",
+      "rating": "PG",
+      "runtime": 105,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Every night a shepherd reads aloud a murder mystery, pretending his sheep can understand. When he is found dead, the sheep realize at once that it was a murder and think they know everything about how to go about solving it.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/106218",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/106218_0.jpg",
+      "showtimes": {
+        "2026-05-04": [
+          {
+            "time": "12:45",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10864",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "15:35",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10865",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#546e7a",
+      "accent": "#90a4ae",
+      "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
+      "letterboxd_rating": 3.65
     },
     {
       "id": "flip-the-script",
