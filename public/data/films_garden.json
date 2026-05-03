@@ -1,51 +1,7 @@
 {
-  "scraped_at": "2026-05-03T10:34:35.113347+00:00",
+  "scraped_at": "2026-05-03T11:04:32.417644+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "up",
-      "title": "Up",
-      "rating": "U",
-      "runtime": 98,
-      "genre": "Other",
-      "year": "2009",
-      "director": "Pete Docter",
-      "cast": null,
-      "description": "A 78-year-old curmudgeonly balloon salesman, is not your average hero. When he ties thousands of balloons to his house and flies…",
-      "film_url": "https://www.thegardencinema.co.uk/film/up/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/946073.jpg",
-      "showtimes": {
-        "2026-05-03": [
-          {
-            "time": "11:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235750.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ],
-        "2026-05-04": [
-          {
-            "time": "11:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235752.TcsSection_638",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ]
-      },
-      "seasons": [
-        "Films for the Family"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/up/",
-      "letterboxd_rating": 4.1
-    },
     {
       "id": "wild-foxes",
       "title": "Wild Foxes",
@@ -124,8 +80,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/wild-foxes/",
       "letterboxd_rating": 3.65
     },
@@ -154,8 +110,8 @@
       "seasons": [
         "Celebrating Jeanne Moreau"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/diary-of-a-chambermaid/",
       "letterboxd_rating": 3.69
     },
@@ -188,8 +144,8 @@
         "UK Asian Film Festival"
       ],
       "partner": "UK Asian Film Festival",
-      "color": "#00897b",
-      "accent": "#4db6ac"
+      "color": "#d81b60",
+      "accent": "#ff6090"
     },
     {
       "id": "rose-of-nevada",
@@ -266,8 +222,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.43
     },
@@ -297,8 +253,8 @@
       "seasons": [
         "Time Capsule: The Films of Jia Zhangke"
       ],
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/ash-is-purest-white/",
       "letterboxd_rating": 3.83
     },
@@ -331,8 +287,8 @@
         "UK Asian Film Festival"
       ],
       "partner": "UK Asian Film Festival",
-      "color": "#c62828",
-      "accent": "#ef5350"
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
     },
     {
       "id": "the-wicker-man",
@@ -364,8 +320,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/the-wicker-man/",
       "letterboxd_rating": 3.97
     },
@@ -426,8 +382,8 @@
       "seasons": [
         "Planting Seeds"
       ],
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/david-attenborough-a-life-on-our-planet/",
       "letterboxd_rating": 4.22
     },
@@ -457,10 +413,43 @@
       "seasons": [
         "Greek Salad"
       ],
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
       "letterboxd_rating": 3.52
+    },
+    {
+      "id": "up",
+      "title": "Up",
+      "rating": "U",
+      "runtime": 98,
+      "genre": "Other",
+      "year": "2009",
+      "director": "Pete Docter",
+      "cast": null,
+      "description": "A 78-year-old curmudgeonly balloon salesman, is not your average hero. When he ties thousands of balloons to his house and flies…",
+      "film_url": "https://www.thegardencinema.co.uk/film/up/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/946073.jpg",
+      "showtimes": {
+        "2026-05-04": [
+          {
+            "time": "11:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235752.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ]
+      },
+      "seasons": [
+        "Films for the Family"
+      ],
+      "color": "#546e7a",
+      "accent": "#90a4ae",
+      "letterboxd_url": "https://letterboxd.com/film/up/",
+      "letterboxd_rating": 4.1
     },
     {
       "id": "the-secret-agent",
