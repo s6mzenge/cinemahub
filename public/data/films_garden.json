@@ -1,42 +1,7 @@
 {
-  "scraped_at": "2026-05-03T17:07:24.675893+00:00",
+  "scraped_at": "2026-05-03T17:34:33.527727+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "the-wicker-man",
-      "title": "The Wicker Man",
-      "rating": "15",
-      "runtime": 95,
-      "genre": "Other",
-      "year": "1973",
-      "director": "Robin Hardy",
-      "cast": null,
-      "description": "The Wicker Man returns to mark May Day in hope of bringing a good harvest. In the 50 years since its…",
-      "film_url": "https://www.thegardencinema.co.uk/film/the-wicker-man/",
-      "poster_url": "https://www.thegardencinema.co.uk/wp-content/uploads/films/The-Wicker-Man.jpg",
-      "showtimes": {
-        "2026-05-03": [
-          {
-            "time": "17:25",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411187.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-04": [
-          {
-            "time": "18:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411224.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/the-wicker-man/",
-      "letterboxd_rating": 3.97
-    },
     {
       "id": "david-attenborough-a-life-on-our-planet",
       "title": "David Attenborough: A Life on Our Planet",
@@ -94,8 +59,8 @@
       "seasons": [
         "Planting Seeds"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/david-attenborough-a-life-on-our-planet/",
       "letterboxd_rating": 4.22
     },
@@ -125,8 +90,8 @@
       "seasons": [
         "Greek Salad"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
       "letterboxd_rating": 3.52
     },
@@ -202,8 +167,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/wild-foxes/",
       "letterboxd_rating": 3.65
     },
@@ -235,8 +200,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/up/",
       "letterboxd_rating": 4.1
     },
@@ -265,8 +230,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/the-secret-agent-2025/",
       "letterboxd_rating": 3.81
     },
@@ -334,8 +299,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.43
     },
@@ -375,8 +340,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/la-grazia/",
       "letterboxd_rating": 3.72
     },
@@ -405,10 +370,37 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/amelie/",
       "letterboxd_rating": 4.19
+    },
+    {
+      "id": "the-wicker-man",
+      "title": "The Wicker Man",
+      "rating": "15",
+      "runtime": 95,
+      "genre": "Other",
+      "year": "1973",
+      "director": "Robin Hardy",
+      "cast": null,
+      "description": "The Wicker Man returns to mark May Day in hope of bringing a good harvest. In the 50 years since its…",
+      "film_url": "https://www.thegardencinema.co.uk/film/the-wicker-man/",
+      "poster_url": "https://www.thegardencinema.co.uk/wp-content/uploads/films/The-Wicker-Man.jpg",
+      "showtimes": {
+        "2026-05-04": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411224.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#00838f",
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/the-wicker-man/",
+      "letterboxd_rating": 3.97
     },
     {
       "id": "the-conformist",
