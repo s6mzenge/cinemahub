@@ -1,70 +1,7 @@
 {
-  "scraped_at": "2026-05-04T20:03:49.338795+00:00",
+  "scraped_at": "2026-05-04T20:33:57.827577+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "wild-foxes",
-      "title": "Wild Foxes",
-      "rating": "15",
-      "runtime": 92,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Valéry Carnoy",
-      "cast": null,
-      "description": "At a sports boarding school, talented young boxer Camille narrowly survives a fatal accident, saved by his best friend Matteo. After…",
-      "film_url": "https://www.thegardencinema.co.uk/film/wild-foxes/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5388349.jpg",
-      "showtimes": {
-        "2026-05-04": [
-          {
-            "time": "20:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5388398.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-05": [
-          {
-            "time": "15:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5388402.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-06": [
-          {
-            "time": "15:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5388406.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "17:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5388404.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-07": [
-          {
-            "time": "15:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5388410.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "18:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5388408.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/wild-foxes/",
-      "letterboxd_rating": 3.65
-    },
     {
       "id": "miroirs-no-3",
       "title": "Miroirs No. 3",
@@ -95,8 +32,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/miroirs-no-3/",
       "letterboxd_rating": 3.48
     },
@@ -153,10 +90,65 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.43
+    },
+    {
+      "id": "wild-foxes",
+      "title": "Wild Foxes",
+      "rating": "15",
+      "runtime": 92,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Valéry Carnoy",
+      "cast": null,
+      "description": "At a sports boarding school, talented young boxer Camille narrowly survives a fatal accident, saved by his best friend Matteo. After…",
+      "film_url": "https://www.thegardencinema.co.uk/film/wild-foxes/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5388349.jpg",
+      "showtimes": {
+        "2026-05-05": [
+          {
+            "time": "15:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5388402.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-06": [
+          {
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5388406.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "17:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5388404.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-07": [
+          {
+            "time": "15:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5388410.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "18:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5388408.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/wild-foxes/",
+      "letterboxd_rating": 3.65
     },
     {
       "id": "lift-to-the-scaffold-2",
