@@ -1,7 +1,139 @@
 {
-  "scraped_at": "2026-05-04T15:34:39.246451+00:00",
+  "scraped_at": "2026-05-04T16:04:50.065381+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
+    {
+      "id": "amelie-25th-anniversary",
+      "title": "Amélie (25th Anniversary)",
+      "rating": "15",
+      "runtime": 123,
+      "genre": "Other",
+      "year": "2001",
+      "director": "Jean-Pierre Jeunet",
+      "cast": null,
+      "description": "23-year-old Amélie is lonely. After an isolating childhood, she moves to Paris and becomes a waitress at the Café des Deux…",
+      "film_url": "https://www.thegardencinema.co.uk/film/amelie-25th-anniversary/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5230722.jpg",
+      "showtimes": {
+        "2026-05-04": [
+          {
+            "time": "17:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5480563.TcsSection_971",
+            "screen": null,
+            "hoh": true,
+            "tags": [
+              "HoH"
+            ]
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/amelie/",
+      "letterboxd_rating": 4.19
+    },
+    {
+      "id": "the-wicker-man",
+      "title": "The Wicker Man",
+      "rating": "15",
+      "runtime": 95,
+      "genre": "Other",
+      "year": "1973",
+      "director": "Robin Hardy",
+      "cast": null,
+      "description": "The Wicker Man returns to mark May Day in hope of bringing a good harvest. In the 50 years since its…",
+      "film_url": "https://www.thegardencinema.co.uk/film/the-wicker-man/",
+      "poster_url": "https://www.thegardencinema.co.uk/wp-content/uploads/films/The-Wicker-Man.jpg",
+      "showtimes": {
+        "2026-05-04": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411224.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/the-wicker-man/",
+      "letterboxd_rating": 3.97
+    },
+    {
+      "id": "the-conformist",
+      "title": "The Conformist",
+      "rating": "15",
+      "runtime": 113,
+      "genre": "Other",
+      "year": "1970",
+      "director": "Bernardo Bertolucci",
+      "cast": null,
+      "description": "The Conformist was suggested by our member Colin Marsh, who says, 'Please show Bernardo Bertolucci’s 1970 political thriller masterpiece. Starring Jean-Louis Trintignant…",
+      "film_url": "https://www.thegardencinema.co.uk/film/the-conformist/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5411574.jpg",
+      "showtimes": {
+        "2026-05-04": [
+          {
+            "time": "18:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411765.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "Members",
+              "Free (Members)"
+            ],
+            "sold_out": true
+          }
+        ],
+        "2026-05-13": [
+          {
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411811.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Members' Events"
+      ],
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/the-conformist/",
+      "letterboxd_rating": 4.2
+    },
+    {
+      "id": "offbeat-folk-film-festival-our-stories",
+      "title": "OffBeat Folk Film Festival: Our Stories",
+      "rating": "18",
+      "runtime": 113,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "Join us at The Garden Cinema for an evening of films sharing the intimate stories of OffBeat people. This event includes…",
+      "film_url": "https://www.thegardencinema.co.uk/film/offbeat-folk-film-festival-our-stories/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5249273.jpg",
+      "showtimes": {
+        "2026-05-04": [
+          {
+            "time": "20:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5249472.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "Intro"
+            ]
+          }
+        ]
+      },
+      "seasons": [
+        "OffBeat Folk Film Festival 2026"
+      ],
+      "partner": "OffBeat",
+      "color": "#00897b",
+      "accent": "#4db6ac"
+    },
     {
       "id": "wild-foxes",
       "title": "Wild Foxes",
@@ -16,12 +148,6 @@
       "poster_url": "https://images.savoysystems.co.uk/GCL/5388349.jpg",
       "showtimes": {
         "2026-05-04": [
-          {
-            "time": "15:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5388400.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "20:15",
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5388398.TcsSection_971",
@@ -66,196 +192,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/wild-foxes/",
-      "letterboxd_rating": 3.65
-    },
-    {
-      "id": "david-attenborough-a-life-on-our-planet",
-      "title": "David Attenborough: A Life on Our Planet",
-      "rating": "PG",
-      "runtime": 115,
-      "genre": "Other",
-      "year": "2020",
-      "director": "Alastair Fothergill, Jonnie Hughes, Keith Scholey",
-      "cast": null,
-      "description": "To celebrate David Attenborough's 100th birthday on 8 May, we are screening A Life on Our Planet during the first week of…",
-      "film_url": "https://www.thegardencinema.co.uk/film/david-attenborough-a-life-on-our-planet/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5411056.jpg",
-      "showtimes": {
-        "2026-05-04": [
-          {
-            "time": "16:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411189.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-05": [
-          {
-            "time": "17:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411191.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-06": [
-          {
-            "time": "20:35",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411193.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-07": [
-          {
-            "time": "15:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411195.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "seasons": [
-        "Planting Seeds"
-      ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/david-attenborough-a-life-on-our-planet/",
-      "letterboxd_rating": 4.22
-    },
-    {
-      "id": "amelie-25th-anniversary",
-      "title": "Amélie (25th Anniversary)",
-      "rating": "15",
-      "runtime": 123,
-      "genre": "Other",
-      "year": "2001",
-      "director": "Jean-Pierre Jeunet",
-      "cast": null,
-      "description": "23-year-old Amélie is lonely. After an isolating childhood, she moves to Paris and becomes a waitress at the Café des Deux…",
-      "film_url": "https://www.thegardencinema.co.uk/film/amelie-25th-anniversary/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5230722.jpg",
-      "showtimes": {
-        "2026-05-04": [
-          {
-            "time": "17:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5480563.TcsSection_971",
-            "screen": null,
-            "hoh": true,
-            "tags": [
-              "HoH"
-            ]
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/amelie/",
-      "letterboxd_rating": 4.19
-    },
-    {
-      "id": "the-wicker-man",
-      "title": "The Wicker Man",
-      "rating": "15",
-      "runtime": 95,
-      "genre": "Other",
-      "year": "1973",
-      "director": "Robin Hardy",
-      "cast": null,
-      "description": "The Wicker Man returns to mark May Day in hope of bringing a good harvest. In the 50 years since its…",
-      "film_url": "https://www.thegardencinema.co.uk/film/the-wicker-man/",
-      "poster_url": "https://www.thegardencinema.co.uk/wp-content/uploads/films/The-Wicker-Man.jpg",
-      "showtimes": {
-        "2026-05-04": [
-          {
-            "time": "18:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411224.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#00897b",
-      "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/the-wicker-man/",
-      "letterboxd_rating": 3.97
-    },
-    {
-      "id": "the-conformist",
-      "title": "The Conformist",
-      "rating": "15",
-      "runtime": 113,
-      "genre": "Other",
-      "year": "1970",
-      "director": "Bernardo Bertolucci",
-      "cast": null,
-      "description": "The Conformist was suggested by our member Colin Marsh, who says, 'Please show Bernardo Bertolucci’s 1970 political thriller masterpiece. Starring Jean-Louis Trintignant…",
-      "film_url": "https://www.thegardencinema.co.uk/film/the-conformist/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5411574.jpg",
-      "showtimes": {
-        "2026-05-04": [
-          {
-            "time": "18:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411765.TcsSection_638",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "Members",
-              "Free (Members)"
-            ],
-            "sold_out": true
-          }
-        ],
-        "2026-05-13": [
-          {
-            "time": "15:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411811.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "seasons": [
-        "Members' Events"
-      ],
       "color": "#1565c0",
       "accent": "#64b5f6",
-      "letterboxd_url": "https://letterboxd.com/film/the-conformist/",
-      "letterboxd_rating": 4.2
-    },
-    {
-      "id": "offbeat-folk-film-festival-our-stories",
-      "title": "OffBeat Folk Film Festival: Our Stories",
-      "rating": "18",
-      "runtime": 113,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "description": "Join us at The Garden Cinema for an evening of films sharing the intimate stories of OffBeat people. This event includes…",
-      "film_url": "https://www.thegardencinema.co.uk/film/offbeat-folk-film-festival-our-stories/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5249273.jpg",
-      "showtimes": {
-        "2026-05-04": [
-          {
-            "time": "20:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5249472.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "Intro"
-            ]
-          }
-        ]
-      },
-      "seasons": [
-        "OffBeat Folk Film Festival 2026"
-      ],
-      "partner": "OffBeat",
-      "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "letterboxd_url": "https://letterboxd.com/film/wild-foxes/",
+      "letterboxd_rating": 3.65
     },
     {
       "id": "miroirs-no-3",
@@ -287,8 +227,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/miroirs-no-3/",
       "letterboxd_rating": 3.48
     },
@@ -345,8 +285,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.43
     },
@@ -376,10 +316,56 @@
       "seasons": [
         "Celebrating Jeanne Moreau"
       ],
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/elevator-to-the-gallows/",
       "letterboxd_rating": 4.1
+    },
+    {
+      "id": "david-attenborough-a-life-on-our-planet",
+      "title": "David Attenborough: A Life on Our Planet",
+      "rating": "PG",
+      "runtime": 115,
+      "genre": "Other",
+      "year": "2020",
+      "director": "Alastair Fothergill, Jonnie Hughes, Keith Scholey",
+      "cast": null,
+      "description": "To celebrate David Attenborough's 100th birthday on 8 May, we are screening A Life on Our Planet during the first week of…",
+      "film_url": "https://www.thegardencinema.co.uk/film/david-attenborough-a-life-on-our-planet/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5411056.jpg",
+      "showtimes": {
+        "2026-05-05": [
+          {
+            "time": "17:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411191.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-06": [
+          {
+            "time": "20:35",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411193.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-07": [
+          {
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5411195.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Planting Seeds"
+      ],
+      "color": "#00838f",
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/david-attenborough-a-life-on-our-planet/",
+      "letterboxd_rating": 4.22
     },
     {
       "id": "caught-by-the-tides",

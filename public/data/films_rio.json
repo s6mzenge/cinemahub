@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-04T15:34:41.127560+00:00",
+  "scraped_at": "2026-05-04T16:04:51.520473+00:00",
   "source": "riocinema.org.uk",
   "films": [
     {
@@ -17,6 +17,15 @@
       "poster_url": "https://images.savoysystems.co.uk/RIL/2494985.jpg",
       "showtimes": {
         "2026-05-04": [
+          {
+            "time": "14:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495102.TcsSection_936",
+            "screen": "S1",
+            "hoh": true,
+            "tags": [
+              "HoH"
+            ]
+          },
           {
             "time": "17:00",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495104.TcsSection_936",
@@ -74,6 +83,7 @@
         ]
       },
       "season_tags": [
+        "Hard of Hearing",
         "Main Features"
       ],
       "color": "#e53935",
@@ -96,6 +106,12 @@
       "poster_url": "https://images.savoysystems.co.uk/RIL/2494997.jpg",
       "showtimes": {
         "2026-05-04": [
+          {
+            "time": "14:30",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495108.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          },
           {
             "time": "17:15",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495110.TcsSection_1299",
