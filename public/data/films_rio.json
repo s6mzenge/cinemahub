@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-04T17:04:34.248422+00:00",
+  "scraped_at": "2026-05-04T17:34:22.752422+00:00",
   "source": "riocinema.org.uk",
   "films": [
     {
@@ -17,21 +17,6 @@
       "poster_url": "https://images.savoysystems.co.uk/RIL/2494985.jpg",
       "showtimes": {
         "2026-05-04": [
-          {
-            "time": "14:00",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495102.TcsSection_936",
-            "screen": "S1",
-            "hoh": true,
-            "tags": [
-              "HoH"
-            ]
-          },
-          {
-            "time": "17:00",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495104.TcsSection_936",
-            "screen": "S1",
-            "hoh": false
-          },
           {
             "time": "20:00",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495106.TcsSection_936",
@@ -83,58 +68,12 @@
         ]
       },
       "season_tags": [
-        "Hard of Hearing",
         "Main Features"
       ],
       "color": "#e53935",
       "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.38
-    },
-    {
-      "id": "rose-of-nevada",
-      "title": "Rose of Nevada",
-      "rating": "15",
-      "runtime": 114,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Mark Jenkin",
-      "cast": "Callum Turner, George MacKay",
-      "country": "UK",
-      "description": "When a fishing boat, the Rose  of  Nevada , lost with all hands 30 years ago, mysteriously reappears in the old harbour of a forgotten Cornish village, for those who remember, it’s surely a sign. The boat must go out to sea again and maybe then the luck of the devastated village will turn. Young fat...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2494999",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2494997.jpg",
-      "showtimes": {
-        "2026-05-04": [
-          {
-            "time": "14:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495108.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          },
-          {
-            "time": "17:15",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495110.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-05-05": [
-          {
-            "time": "18:00",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495122.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ]
-      },
-      "season_tags": [
-        "Main Features"
-      ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
-      "letterboxd_rating": 3.43
     },
     {
       "id": "exit-8",
@@ -186,10 +125,41 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/exit-8/",
       "letterboxd_rating": 3.14
+    },
+    {
+      "id": "rose-of-nevada",
+      "title": "Rose of Nevada",
+      "rating": "15",
+      "runtime": 114,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Mark Jenkin",
+      "cast": "Callum Turner, George MacKay",
+      "country": "UK",
+      "description": "When a fishing boat, the Rose  of  Nevada , lost with all hands 30 years ago, mysteriously reappears in the old harbour of a forgotten Cornish village, for those who remember, it’s surely a sign. The boat must go out to sea again and maybe then the luck of the devastated village will turn. Young fat...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2494999",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2494997.jpg",
+      "showtimes": {
+        "2026-05-05": [
+          {
+            "time": "18:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495122.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ]
+      },
+      "season_tags": [
+        "Main Features"
+      ],
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
+      "letterboxd_rating": 3.43
     },
     {
       "id": "honeymoon",
