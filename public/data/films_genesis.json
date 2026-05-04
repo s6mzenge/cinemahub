@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-04T11:34:45.665419+00:00",
+  "scraped_at": "2026-05-04T12:04:50.798324+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -165,16 +165,17 @@
       "showtimes": {
         "2026-05-04": [
           {
-            "time": "14:45",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10877",
-            "screen": null,
-            "hoh": false
-          },
-          {
             "time": "17:45",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10886",
             "screen": null,
             "hoh": false
+          },
+          {
+            "time": "14:45",
+            "booking_url": "",
+            "screen": null,
+            "hoh": false,
+            "sold_out": true
           }
         ],
         "2026-05-05": [
@@ -458,12 +459,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/106218_0.jpg",
       "showtimes": {
         "2026-05-04": [
-          {
-            "time": "12:45",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10864",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "15:35",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10865",
@@ -812,9 +807,10 @@
         "2026-05-08": [
           {
             "time": "15:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=10889",
+            "booking_url": "",
             "screen": null,
-            "hoh": false
+            "hoh": false,
+            "sold_out": true
           }
         ]
       },
@@ -1927,7 +1923,9 @@
         ]
       },
       "color": "#83971a",
-      "accent": "#bfd453"
+      "accent": "#bfd453",
+      "letterboxd_url": "https://letterboxd.com/film/star-wars-the-mandalorian-and-grogu/",
+      "letterboxd_rating": null
     },
     {
       "id": "super-8-1-2",
@@ -2059,7 +2057,9 @@
         ]
       },
       "color": "#53a630",
-      "accent": "#9cd684"
+      "accent": "#9cd684",
+      "letterboxd_url": "https://letterboxd.com/film/the-outsiders/",
+      "letterboxd_rating": 3.68
     },
     {
       "id": "ties-that-bind",
@@ -2085,7 +2085,9 @@
         ]
       },
       "color": "#971a64",
-      "accent": "#d4539f"
+      "accent": "#d4539f",
+      "letterboxd_url": "https://letterboxd.com/film/ties-that-bind/",
+      "letterboxd_rating": null
     },
     {
       "id": "khartoum",
