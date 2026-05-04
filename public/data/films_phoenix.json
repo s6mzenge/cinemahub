@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-04T14:34:36.877468+00:00",
+  "scraped_at": "2026-05-04T15:05:38.153647+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -17,12 +17,6 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/414734.jpg",
       "showtimes": {
         "2026-05-04": [
-          {
-            "time": "14:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487817.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": false
-          },
           {
             "time": "17:15",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_415236.TcsSection_543",
@@ -151,45 +145,6 @@
       "letterboxd_rating": 3.38
     },
     {
-      "id": "primavera",
-      "title": "Primavera",
-      "rating": "15",
-      "runtime": 111,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Damiano Michieletto",
-      "cast": "Michele Riondino, Andrea Pennacchi, Stefano Accorsi, Miko Jarry, Alessandro Bressanello",
-      "country": "Italy",
-      "description": "In his feature debut, world-renowned opera director Damiano Michieletto gives a fictionalised account of Antonio Vivaldi's time as resident composer and violin teacher at the Ospedale della Pietà in Venice, where he composed most of his major works, told from the perspective of one of his most talen...",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=475573",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/475580.jpg",
-      "showtimes": {
-        "2026-05-04": [
-          {
-            "time": "15:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487872.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false,
-            "tags": [
-              "Subtitled"
-            ]
-          }
-        ],
-        "2026-05-07": [
-          {
-            "time": "17:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487886.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/primavera-2025/",
-      "letterboxd_rating": 3.54
-    },
-    {
       "id": "ada-my-mother-the-architect-director-q-a",
       "title": "ADA – MY MOTHER THE ARCHITECT + Director Q&A",
       "rating": "12A",
@@ -228,8 +183,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/ada-my-mother-the-architect/",
       "letterboxd_rating": null
     },
@@ -256,8 +211,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
       "letterboxd_rating": 3.49
     },
@@ -292,8 +247,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.43
     },
@@ -320,8 +275,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/orphan-2025/",
       "letterboxd_rating": 3.17
     },
@@ -359,10 +314,38 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/father-mother-sister-brother/",
       "letterboxd_rating": 3.11
+    },
+    {
+      "id": "primavera",
+      "title": "Primavera",
+      "rating": "15",
+      "runtime": 111,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Damiano Michieletto",
+      "cast": "Michele Riondino, Andrea Pennacchi, Stefano Accorsi, Miko Jarry, Alessandro Bressanello",
+      "country": "Italy",
+      "description": "In his feature debut, world-renowned opera director Damiano Michieletto gives a fictionalised account of Antonio Vivaldi's time as resident composer and violin teacher at the Ospedale della Pietà in Venice, where he composed most of his major works, told from the perspective of one of his most talen...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=475573",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/475580.jpg",
+      "showtimes": {
+        "2026-05-07": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487886.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#c62828",
+      "accent": "#ef5350",
+      "letterboxd_url": "https://letterboxd.com/film/primavera-2025/",
+      "letterboxd_rating": 3.54
     },
     {
       "id": "national-theatre-live-all-my-sons",
