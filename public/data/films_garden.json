@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-05T16:40:17.639431+00:00",
+  "scraped_at": "2026-05-05T17:06:39.582114+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
     {
@@ -443,7 +443,8 @@
             "time": "17:30",
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5365909.TcsSection_638",
             "screen": null,
-            "hoh": false
+            "hoh": false,
+            "sold_out": true
           }
         ]
       },
@@ -3628,7 +3629,7 @@
         ]
       },
       "seasons": [
-        "Planting Seeds"
+        "Films for the Family"
       ],
       "color": "#21329f",
       "accent": "#6877d3",
@@ -3890,14 +3891,14 @@
     },
     {
       "id": "james-and-the-giant-peach",
-      "title": "James and the Giant Peach",
+      "title": "James and the Giant Peach- 30th anniversary",
       "rating": "U",
       "runtime": 79,
       "genre": "Other",
       "year": "1996",
       "director": "Henry Selick",
       "cast": null,
-      "description": "The strange world of Roald Dahl's book is perfectly rendered using the painstaking craft of stop-motion animation. Young orphan James (whose…",
+      "description": "Join us for the 30th anniversary of James and the Giant Peach. A great opportunity to introduce younger audiences to a…",
       "film_url": "https://www.thegardencinema.co.uk/film/james-and-the-giant-peach/",
       "poster_url": "https://images.savoysystems.co.uk/GCL/587209.jpg",
       "showtimes": {
@@ -3905,6 +3906,17 @@
           {
             "time": "11:00",
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5525419.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ],
+        "2026-07-12": [
+          {
+            "time": "11:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5525425.TcsSection_3060731",
             "screen": null,
             "hoh": false,
             "tags": [
@@ -3952,6 +3964,105 @@
       "partner": "London Film School",
       "color": "#819f21",
       "accent": "#b9d368"
+    },
+    {
+      "id": "bugsy-malone",
+      "title": "Bugsy Malone- 50th anniversary",
+      "rating": "U",
+      "runtime": 89,
+      "genre": "Other",
+      "year": "1976",
+      "director": "Alan Parker",
+      "cast": null,
+      "description": "Alan Parker’s BAFTA-winning ganster musical Bugsy Malone might seem an unlikely idea for a film- a musical comedy set in the 1930s…",
+      "film_url": "https://www.thegardencinema.co.uk/film/bugsy-malone/",
+      "poster_url": "https://www.thegardencinema.co.uk/wp-content/uploads/films/Bugsy-Malone.jpg",
+      "showtimes": {
+        "2026-07-18": [
+          {
+            "time": "11:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5525443.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ],
+        "2026-07-19": [
+          {
+            "time": "11:05",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5525458.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ]
+      },
+      "seasons": [
+        "Films for the Family"
+      ],
+      "color": "#9f30a6",
+      "accent": "#d184d6",
+      "letterboxd_url": "https://letterboxd.com/film/bugsy-malone/",
+      "letterboxd_rating": 3.5
+    },
+    {
+      "id": "labyrinth",
+      "title": "Labyrinth- 40th anniversary",
+      "rating": "U",
+      "runtime": 102,
+      "genre": "Other",
+      "year": "1986",
+      "director": "Jim Henson",
+      "cast": null,
+      "description": "Celebrate the 40th anniversary of Jim Henson cult fantasy fairy tale Labyrinth. Sarah (Jennifer Connelly) races against time to navigate the…",
+      "film_url": "https://www.thegardencinema.co.uk/film/labyrinth/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5525634.jpg",
+      "showtimes": {
+        "2026-08-01": [
+          {
+            "time": "11:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5525470.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ],
+        "2026-08-02": [
+          {
+            "time": "11:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5525477.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ],
+        "2026-08-05": [
+          {
+            "time": "12:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5525480.TcsSection_971",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ]
+      },
+      "seasons": [
+        "Films for the Family"
+      ],
+      "color": "#1a976c",
+      "accent": "#53d4a7",
+      "letterboxd_url": "https://letterboxd.com/film/labyrinth/",
+      "letterboxd_rating": 3.76
     }
   ]
 }

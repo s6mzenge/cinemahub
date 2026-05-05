@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-05T16:40:24.157857+00:00",
+  "scraped_at": "2026-05-05T17:06:49.864316+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -17,15 +17,6 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/414734.jpg",
       "showtimes": {
         "2026-05-05": [
-          {
-            "time": "17:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_415240.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": true,
-            "tags": [
-              "Closed Captions"
-            ]
-          },
           {
             "time": "20:00",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_415239.TcsSection_543",
@@ -223,42 +214,6 @@
       "letterboxd_rating": 3.36
     },
     {
-      "id": "rose-of-nevada",
-      "title": "Rose of Nevada",
-      "rating": "15",
-      "runtime": 114,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Mark Jenkin",
-      "cast": "George MacKay, Callum Turner, Rosalind Eleazar",
-      "country": "UK",
-      "description": "Some 30 years after the Rose of Nevada fishing trawler disappeared, it mysteriously returns to its old harbour in a small Cornish village. Two young men join the Rose’s new crew, hoping to pull themselves out of hardship. But when they return to the harbour, the men realise they have slipped back in...",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=487907",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/487892.jpg",
-      "showtimes": {
-        "2026-05-05": [
-          {
-            "time": "17:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487914.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-05-07": [
-          {
-            "time": "14:45",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487915.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
-      "letterboxd_rating": 3.43
-    },
-    {
       "id": "ada-my-mother-the-architect",
       "title": "Ada: My Mother the Architect",
       "rating": "12A",
@@ -289,8 +244,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/ada-my-mother-the-architect/",
       "letterboxd_rating": null
     },
@@ -317,8 +272,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/orphan-2025/",
       "letterboxd_rating": 3.16
     },
@@ -364,10 +319,38 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/father-mother-sister-brother/",
       "letterboxd_rating": 3.11
+    },
+    {
+      "id": "rose-of-nevada",
+      "title": "Rose of Nevada",
+      "rating": "15",
+      "runtime": 114,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Mark Jenkin",
+      "cast": "George MacKay, Callum Turner, Rosalind Eleazar",
+      "country": "UK",
+      "description": "Some 30 years after the Rose of Nevada fishing trawler disappeared, it mysteriously returns to its old harbour in a small Cornish village. Two young men join the Rose’s new crew, hoping to pull themselves out of hardship. But when they return to the harbour, the men realise they have slipped back in...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=487907",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/487892.jpg",
+      "showtimes": {
+        "2026-05-07": [
+          {
+            "time": "14:45",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487915.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
+      "letterboxd_rating": 3.43
     },
     {
       "id": "primavera",
