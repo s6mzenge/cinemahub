@@ -1,42 +1,7 @@
 {
-  "scraped_at": "2026-05-04T20:33:57.827577+00:00",
+  "scraped_at": "2026-05-05T04:04:15.761816+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "miroirs-no-3",
-      "title": "Miroirs No. 3",
-      "rating": "15",
-      "runtime": 86,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Christian Petzold",
-      "cast": null,
-      "description": "On a weekend trip to the countryside, Laura, a piano student from Berlin, miraculously survives an accident. Physically unhurt but deeply…",
-      "film_url": "https://www.thegardencinema.co.uk/film/miroirs-no-3/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5197444.jpg",
-      "showtimes": {
-        "2026-05-04": [
-          {
-            "time": "20:55",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5480559.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-05": [
-          {
-            "time": "20:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5480572.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/miroirs-no-3/",
-      "letterboxd_rating": 3.48
-    },
     {
       "id": "rose-of-nevada",
       "title": "Rose of Nevada",
@@ -90,8 +55,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.43
     },
@@ -145,8 +110,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/wild-foxes/",
       "letterboxd_rating": 3.65
     },
@@ -176,8 +141,8 @@
       "seasons": [
         "Celebrating Jeanne Moreau"
       ],
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/elevator-to-the-gallows/",
       "letterboxd_rating": 4.1
     },
@@ -222,8 +187,8 @@
       "seasons": [
         "Planting Seeds"
       ],
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/david-attenborough-a-life-on-our-planet/",
       "letterboxd_rating": 4.22
     },
@@ -253,8 +218,8 @@
       "seasons": [
         "Time Capsule: The Films of Jia Zhangke"
       ],
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/caught-by-the-tides/",
       "letterboxd_rating": 3.68
     },
@@ -280,10 +245,37 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/akira/",
       "letterboxd_rating": 4.28
+    },
+    {
+      "id": "miroirs-no-3",
+      "title": "Miroirs No. 3",
+      "rating": "15",
+      "runtime": 86,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Christian Petzold",
+      "cast": null,
+      "description": "On a weekend trip to the countryside, Laura, a piano student from Berlin, miraculously survives an accident. Physically unhurt but deeply…",
+      "film_url": "https://www.thegardencinema.co.uk/film/miroirs-no-3/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5197444.jpg",
+      "showtimes": {
+        "2026-05-05": [
+          {
+            "time": "20:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5480572.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#c62828",
+      "accent": "#ef5350",
+      "letterboxd_url": "https://letterboxd.com/film/miroirs-no-3/",
+      "letterboxd_rating": 3.48
     },
     {
       "id": "surviving-earth",
@@ -1425,7 +1417,7 @@
       "color": "#519f21",
       "accent": "#90d368",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
-      "letterboxd_rating": 3.55
+      "letterboxd_rating": 3.54
     },
     {
       "id": "orphan",
