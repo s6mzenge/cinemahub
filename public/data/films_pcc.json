@@ -1,7 +1,78 @@
 {
-  "scraped_at": "2026-05-06T19:32:45.484018+00:00",
+  "scraped_at": "2026-05-06T20:02:53.090071+00:00",
   "source": "princecharlescinema.com",
   "films": [
+    {
+      "id": "rear-window",
+      "title": "Rear Window",
+      "rating": "PG",
+      "runtime": 111,
+      "genre": "Thriller / Mystery",
+      "year": "1954",
+      "country": null,
+      "director": "Alfred Hitchcock",
+      "cast": "James Stewart, Grace Kelly, Wendell Corey",
+      "description": "A wheelchair-bound photographer spies on his neighbors from his Greenwich Village courtyard apartment window and, despite the skepticism of his fashion-model girlfriend, becomes convinced one of them has committed murder.",
+      "film_url": "https://princecharlescinema.com/film/3217784/rear-window",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/3217784.jpg",
+      "showtimes": {
+        "2026-05-07": [
+          {
+            "time": "12:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626285",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K"
+            ]
+          }
+        ],
+        "2026-06-06": [
+          {
+            "time": "12:30",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626087",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/rear-window/",
+      "letterboxd_rating": 4.36
+    },
+    {
+      "id": "honeysuckle-rose",
+      "title": "Honeysuckle Rose",
+      "rating": "15",
+      "runtime": 119,
+      "genre": "Musical / Romance",
+      "year": "1980",
+      "country": null,
+      "director": "Jerry Schatzberg",
+      "cast": "Willie Nelson, Dyan Cannon, Amy Irving",
+      "description": "Country music star Buck Bonham (Willie Nelson) has spent a lot of years on the road, but despite his wife Viv's (Dyan Cannon) entreaties that he stay put, he just can't give up the lifestyle. When his guitar player and best friend, Garland Ramsey (Slim Pickens), decides to retire, Buck replaces him with Garland's daughter, Lily (Amy Irving), and heads back out on tour. The two begin an affair which Viv quickly picks up on, and Buck is forced to choose between the two women he loves.•NOTE ON 35MM PRINT: SIGINIFICANTLY COLOUR FADED",
+      "film_url": "https://princecharlescinema.com/film/31617351/honeysuckle-rose",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/z7LMajL5RLhVgU6xbZ1B5bQiCig2h7sutIQhx8mcqCw.jpg",
+      "showtimes": {
+        "2026-05-07": [
+          {
+            "time": "12:20",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626024",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm",
+              "£1 MEM"
+            ]
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/honeysuckle-rose/",
+      "letterboxd_rating": 3.22
+    },
     {
       "id": "north-by-northwest",
       "title": "North By Northwest",
@@ -16,17 +87,6 @@
       "film_url": "https://princecharlescinema.com/film/11736406/north-by-northwest",
       "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/11736406.jpg",
       "showtimes": {
-        "2026-05-06": [
-          {
-            "time": "20:45",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625721",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "70mm"
-            ]
-          }
-        ],
         "2026-05-07": [
           {
             "time": "14:45",
@@ -72,81 +132,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/north-by-northwest/",
-      "letterboxd_rating": 4.19
-    },
-    {
-      "id": "rear-window",
-      "title": "Rear Window",
-      "rating": "PG",
-      "runtime": 111,
-      "genre": "Thriller / Mystery",
-      "year": "1954",
-      "country": null,
-      "director": "Alfred Hitchcock",
-      "cast": "James Stewart, Grace Kelly, Wendell Corey",
-      "description": "A wheelchair-bound photographer spies on his neighbors from his Greenwich Village courtyard apartment window and, despite the skepticism of his fashion-model girlfriend, becomes convinced one of them has committed murder.",
-      "film_url": "https://princecharlescinema.com/film/3217784/rear-window",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/3217784.jpg",
-      "showtimes": {
-        "2026-05-07": [
-          {
-            "time": "12:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626285",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K"
-            ]
-          }
-        ],
-        "2026-06-06": [
-          {
-            "time": "12:30",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626087",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/rear-window/",
-      "letterboxd_rating": 4.36
-    },
-    {
-      "id": "honeysuckle-rose",
-      "title": "Honeysuckle Rose",
-      "rating": "15",
-      "runtime": 119,
-      "genre": "Musical / Romance",
-      "year": "1980",
-      "country": null,
-      "director": "Jerry Schatzberg",
-      "cast": "Willie Nelson, Dyan Cannon, Amy Irving",
-      "description": "Country music star Buck Bonham (Willie Nelson) has spent a lot of years on the road, but despite his wife Viv's (Dyan Cannon) entreaties that he stay put, he just can't give up the lifestyle. When his guitar player and best friend, Garland Ramsey (Slim Pickens), decides to retire, Buck replaces him with Garland's daughter, Lily (Amy Irving), and heads back out on tour. The two begin an affair which Viv quickly picks up on, and Buck is forced to choose between the two women he loves.•NOTE ON 35MM PRINT: SIGINIFICANTLY COLOUR FADED",
-      "film_url": "https://princecharlescinema.com/film/31617351/honeysuckle-rose",
-      "poster_url": "https://cdn.taposapp.com/poster/600x900/z7LMajL5RLhVgU6xbZ1B5bQiCig2h7sutIQhx8mcqCw.jpg",
-      "showtimes": {
-        "2026-05-07": [
-          {
-            "time": "12:20",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626024",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm",
-              "£1 MEM"
-            ]
-          }
-        ]
-      },
       "color": "#d81b60",
       "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/honeysuckle-rose/",
-      "letterboxd_rating": 3.22
+      "letterboxd_url": "https://letterboxd.com/film/north-by-northwest/",
+      "letterboxd_rating": 4.19
     },
     {
       "id": "labyrinth-40th-anniversary",
