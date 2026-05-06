@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-06T12:02:58.543482+00:00",
+  "scraped_at": "2026-05-06T12:32:57.351096+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
@@ -1084,6 +1084,17 @@
             "screen": null,
             "hoh": false
           }
+        ],
+        "2026-07-13": [
+          {
+            "time": "20:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626552",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K"
+            ]
+          }
         ]
       },
       "color": "#3052a6",
@@ -1856,6 +1867,14 @@
           {
             "time": "20:00",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626389",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-13": [
+          {
+            "time": "15:05",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626558",
             "screen": null,
             "hoh": false
           }
@@ -5716,6 +5735,18 @@
               "SUB"
             ]
           }
+        ],
+        "2026-07-13": [
+          {
+            "time": "18:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626553",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K",
+              "SUB"
+            ]
+          }
         ]
       },
       "color": "#1a974c",
@@ -7416,6 +7447,14 @@
             "screen": null,
             "hoh": false
           }
+        ],
+        "2026-07-13": [
+          {
+            "time": "12:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626557",
+            "screen": null,
+            "hoh": false
+          }
         ]
       },
       "color": "#46a630",
@@ -8924,6 +8963,14 @@
           {
             "time": "14:40",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626544",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-13": [
+          {
+            "time": "14:40",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626555",
             "screen": null,
             "hoh": false
           }
@@ -10879,6 +10926,65 @@
       "letterboxd_rating": 3.86
     },
     {
+      "id": "whiplash",
+      "title": "Whiplash",
+      "rating": "15",
+      "runtime": 106,
+      "genre": "Drama",
+      "year": "2014",
+      "country": null,
+      "director": "Damien Chazelle",
+      "cast": "Miles Teller, J.K. Simmons, Melissa Benoist",
+      "description": "Andrew Neiman (Miles Teller) is an ambitious young jazz drummer, in pursuit of rising to the top of his elite music conservatory. Terence Fletcher (J.K. Simmons), an instructor known for his terrifying teaching methods, discovers Andrew and transfers the aspiring drummer into the top jazz ensemble, forever changing the young man's life. But Andrew's passion to achieve perfection quickly spirals into obsession, as his ruthless teacher pushes him to the brink of his ability and his sanity.",
+      "film_url": "https://princecharlescinema.com/film/14753635/whiplash",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/14753635.jpg",
+      "showtimes": {
+        "2026-07-13": [
+          {
+            "time": "12:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626556",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#a63074",
+      "accent": "#d684b3",
+      "letterboxd_url": "https://letterboxd.com/film/whiplash-2014/",
+      "letterboxd_rating": 4.42
+    },
+    {
+      "id": "forty-guns",
+      "title": "Forty Guns",
+      "rating": "PG",
+      "runtime": 80,
+      "genre": "Western",
+      "year": "1957",
+      "country": null,
+      "director": "Samuel Fuller",
+      "cast": "Barbara Stanwyck, Barry Sullivan, Dean Jagger",
+      "description": "* ON SALE 29th JUNE *An authoritarian rancher rules an Arizona county with her private posse of hired guns. When a new Marshall arrives to set things straight, the cattle queen finds herself falling for the avowedly non-violent lawman. Both have itchy-fingered brothers, a female gunman enters the picture, and things go desperately wrong.",
+      "film_url": "https://princecharlescinema.com/film/31617388/forty-guns",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/H2vHOB6uSQLdNn7a_FQe8S13DBbXc5QsT6mKswA1FIY.jpg",
+      "showtimes": {
+        "2026-07-13": [
+          {
+            "time": "17:25",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626554",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "£1 MEM"
+            ]
+          }
+        ]
+      },
+      "color": "#1a8797",
+      "accent": "#53c3d4",
+      "letterboxd_url": "https://letterboxd.com/film/forty-guns/",
+      "letterboxd_rating": 3.7
+    },
+    {
       "id": "the-human-condition-part-1-no-greater-love",
       "title": "The Human Condition - Part 1 - No Greater Love",
       "rating": "15",
@@ -10898,17 +11004,11 @@
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626168",
             "screen": null,
             "hoh": false
-          },
-          {
-            "time": "19:30",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626549",
-            "screen": null,
-            "hoh": false
           }
         ]
       },
-      "color": "#a63074",
-      "accent": "#d684b3",
+      "color": "#9f8b21",
+      "accent": "#d3c268",
       "letterboxd_url": "https://letterboxd.com/film/the-human-condition-i-no-greater-love/",
       "letterboxd_rating": 4.58
     },
@@ -10938,8 +11038,8 @@
           }
         ]
       },
-      "color": "#1a8797",
-      "accent": "#53c3d4",
+      "color": "#7030a6",
+      "accent": "#b184d6",
       "letterboxd_url": "https://letterboxd.com/film/sleepers/",
       "letterboxd_rating": 3.78
     },
@@ -10966,8 +11066,8 @@
           }
         ]
       },
-      "color": "#9f8b21",
-      "accent": "#d3c268",
+      "color": "#1a973a",
+      "accent": "#53d474",
       "letterboxd_url": "https://letterboxd.com/film/o-brother-where-art-thou/",
       "letterboxd_rating": 3.96
     },
@@ -11041,8 +11141,8 @@
           }
         ]
       },
-      "color": "#7030a6",
-      "accent": "#b184d6",
+      "color": "#9f2126",
+      "accent": "#d3686c",
       "letterboxd_url": "https://letterboxd.com/film/the-searchers/",
       "letterboxd_rating": 3.94
     },
@@ -11069,8 +11169,8 @@
           }
         ]
       },
-      "color": "#1a973a",
-      "accent": "#53d474",
+      "color": "#3056a6",
+      "accent": "#849fd6",
       "letterboxd_url": "https://letterboxd.com/film/the-human-condition-ii-road-to-eternity/",
       "letterboxd_rating": 4.49
     },
@@ -11097,8 +11197,8 @@
           }
         ]
       },
-      "color": "#9f2126",
-      "accent": "#d3686c",
+      "color": "#68971a",
+      "accent": "#a3d453",
       "letterboxd_url": "https://letterboxd.com/film/the-human-condition-iii-a-soldiers-prayer/",
       "letterboxd_rating": 4.65
     },
@@ -11195,8 +11295,8 @@
           }
         ]
       },
-      "color": "#3056a6",
-      "accent": "#849fd6",
+      "color": "#9f2194",
+      "accent": "#d368ca",
       "letterboxd_url": "https://letterboxd.com/film/the-room/",
       "letterboxd_rating": 2.61
     },
@@ -11284,8 +11384,8 @@
           }
         ]
       },
-      "color": "#68971a",
-      "accent": "#a3d453",
+      "color": "#30a68d",
+      "accent": "#84d6c5",
       "letterboxd_url": "https://letterboxd.com/film/big-shark/",
       "letterboxd_rating": 2.96
     },
@@ -11348,8 +11448,8 @@
           }
         ]
       },
-      "color": "#9f2194",
-      "accent": "#d368ca",
+      "color": "#97591a",
+      "accent": "#d49453",
       "letterboxd_url": "https://letterboxd.com/film/nosferatu/",
       "letterboxd_rating": 3.82
     },
@@ -11390,8 +11490,8 @@
           }
         ]
       },
-      "color": "#30a68d",
-      "accent": "#84d6c5",
+      "color": "#3c219f",
+      "accent": "#7f68d3",
       "letterboxd_url": "https://letterboxd.com/film/the-cabinet-of-dr-caligari-1920/",
       "letterboxd_rating": 4.06
     },
@@ -11421,8 +11521,8 @@
           }
         ]
       },
-      "color": "#97591a",
-      "accent": "#d49453",
+      "color": "#39a630",
+      "accent": "#8bd684",
       "letterboxd_url": "https://letterboxd.com/film/haxan/",
       "letterboxd_rating": 4.05
     },
@@ -11449,8 +11549,8 @@
           }
         ]
       },
-      "color": "#3c219f",
-      "accent": "#7f68d3"
+      "color": "#971a49",
+      "accent": "#d45383"
     }
   ]
 }
