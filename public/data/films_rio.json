@@ -1,40 +1,7 @@
 {
-  "scraped_at": "2026-05-06T19:11:11.307934+00:00",
+  "scraped_at": "2026-05-06T19:35:38.935034+00:00",
   "source": "riocinema.org.uk",
   "films": [
-    {
-      "id": "honeymoon",
-      "title": "Honeymoon",
-      "rating": "12A",
-      "runtime": 110,
-      "genre": "Other",
-      "year": "2024",
-      "director": "Zhanna Ozirna",
-      "cast": "Ira Nirsha, Roman Lutskyi, Artem Shutko",
-      "country": "Ukraine",
-      "description": "A small town near Kyiv. Taras and Olya spend their first night in their new apartment after a party with friends. At dawn, their lives change irrevocably. They don’t have time to leave on time, and squatters have already appeared under the house. The couple finds themselves trapped in their own apar...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2432842",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2432816.png",
-      "showtimes": {
-        "2026-05-06": [
-          {
-            "time": "18:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2432858.TcsSection_936",
-            "screen": "S1",
-            "hoh": false,
-            "tags": [
-              "Special Event",
-              "NoAds"
-            ]
-          }
-        ]
-      },
-      "season_tags": [
-        "Special Events"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60"
-    },
     {
       "id": "the-devil-wears-prada-2",
       "title": "The Devil Wears Prada 2",
@@ -50,6 +17,12 @@
       "poster_url": "https://images.savoysystems.co.uk/RIL/2494985.jpg",
       "showtimes": {
         "2026-05-06": [
+          {
+            "time": "18:10",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495142.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          },
           {
             "time": "20:50",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2495140.TcsSection_936",
@@ -195,10 +168,43 @@
         "Hard of Hearing",
         "Main Features"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.35
+    },
+    {
+      "id": "honeymoon",
+      "title": "Honeymoon",
+      "rating": "12A",
+      "runtime": 110,
+      "genre": "Other",
+      "year": "2024",
+      "director": "Zhanna Ozirna",
+      "cast": "Ira Nirsha, Roman Lutskyi, Artem Shutko",
+      "country": "Ukraine",
+      "description": "A small town near Kyiv. Taras and Olya spend their first night in their new apartment after a party with friends. At dawn, their lives change irrevocably. They don’t have time to leave on time, and squatters have already appeared under the house. The couple finds themselves trapped in their own apar...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2432842",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2432816.png",
+      "showtimes": {
+        "2026-05-06": [
+          {
+            "time": "18:30",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2432858.TcsSection_936",
+            "screen": "S1",
+            "hoh": false,
+            "tags": [
+              "Special Event",
+              "NoAds"
+            ]
+          }
+        ]
+      },
+      "season_tags": [
+        "Special Events"
+      ],
+      "color": "#7c4dff",
+      "accent": "#b388ff"
     },
     {
       "id": "exit-8",
