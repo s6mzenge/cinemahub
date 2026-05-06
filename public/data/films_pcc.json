@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-06T08:32:00.125411+00:00",
+  "scraped_at": "2026-05-06T09:02:50.704409+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
@@ -903,6 +903,17 @@
               "35mm"
             ]
           }
+        ],
+        "2026-07-11": [
+          {
+            "time": "12:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626534",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
         ]
       },
       "color": "#0277bd",
@@ -1515,7 +1526,7 @@
       "year": "1963",
       "country": null,
       "director": "Federico Fellini",
-      "cast": "Anouk Aimée, Claudia Cardinale, Marcello Mastroianni",
+      "cast": "Marcello Mastroianni, Anouk Aimée, Claudia Cardinale",
       "description": "Troubled Italian filmmaker Guido Anselmi (Marcello Mastroianni) struggles with creative stasis as he attempts to get a new movie off the ground. Overwhelmed by his work and personal life, the director retreats into his thoughts, which often focus on his loves, both past and present, and frequently wander into fantastical territory. As he tries to sort out his many entanglements, romantic and otherwise, Anselmi finds his production becoming more and more autobiographical.",
       "film_url": "https://princecharlescinema.com/film/8002205/8-12",
       "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/8002205.jpg",
@@ -3608,6 +3619,17 @@
           {
             "time": "20:35",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625909",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-07-10": [
+          {
+            "time": "20:55",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626533",
             "screen": null,
             "hoh": false,
             "tags": [
@@ -6312,6 +6334,14 @@
             "screen": null,
             "hoh": false
           }
+        ],
+        "2026-07-10": [
+          {
+            "time": "12:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626529",
+            "screen": null,
+            "hoh": false
+          }
         ]
       },
       "color": "#7230a6",
@@ -6905,6 +6935,14 @@
           {
             "time": "14:40",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626440",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-10": [
+          {
+            "time": "14:50",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626530",
             "screen": null,
             "hoh": false
           }
@@ -10530,6 +10568,37 @@
       "letterboxd_rating": 4.03
     },
     {
+      "id": "the-last-of-the-mohicans",
+      "title": "The Last of the Mohicans",
+      "rating": "15",
+      "runtime": 112,
+      "genre": "Action",
+      "year": "1992",
+      "country": null,
+      "director": "Michael Mann",
+      "cast": "Daniel Day-Lewis, Eric Schweig, Jodhi May, Madeleine Stowe",
+      "description": "The last members of a dying Native American tribe, the Mohicans -- Uncas (Eric Schweig), his father Chingachgook (Russell Means), and his adopted half-white brother Hawkeye (Daniel Day-Lewis) -- live in peace alongside British colonists. But when the daughters (Madeleine Stowe, Jodhi May) of a British colonel are kidnapped by a traitorous scout, Hawkeye and Uncas must rescue them in the crossfire of a gruesome military conflict of which they wanted no part: the French and Indian War.",
+      "film_url": "https://princecharlescinema.com/film/21883584/the-last-of-the-mohicans",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/21883584.jpg",
+      "showtimes": {
+        "2026-07-10": [
+          {
+            "time": "12:30",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626531",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#971a39",
+      "accent": "#d45372",
+      "letterboxd_url": "https://letterboxd.com/film/the-last-of-the-mohicans-1992/",
+      "letterboxd_rating": 3.68
+    },
+    {
       "id": "blade-runner-double-feature",
       "title": "Blade Runner : Double Feature",
       "rating": "15",
@@ -10555,8 +10624,36 @@
           }
         ]
       },
-      "color": "#971a39",
-      "accent": "#d45372"
+      "color": "#21659f",
+      "accent": "#68a1d3"
+    },
+    {
+      "id": "manhunter",
+      "title": "Manhunter",
+      "rating": "18",
+      "runtime": 117,
+      "genre": "Horror / Crime",
+      "year": "1986",
+      "country": null,
+      "director": "Michael Mann",
+      "cast": "Brian Cox, Joan Allen, Kim Greist, William Petersen",
+      "description": "An FBI Agent is called out of early retirement to catch a serial killer. He asks for the help of his arch-nemesis, Dr Hannibal Lecter.",
+      "film_url": "https://princecharlescinema.com/film/19285371/manhunter",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/19285371.jpg",
+      "showtimes": {
+        "2026-07-10": [
+          {
+            "time": "18:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626532",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#91a630",
+      "accent": "#c8d684",
+      "letterboxd_url": "https://letterboxd.com/film/manhunter/",
+      "letterboxd_rating": 3.86
     },
     {
       "id": "the-human-condition-part-1-no-greater-love",
@@ -10581,8 +10678,8 @@
           }
         ]
       },
-      "color": "#21659f",
-      "accent": "#68a1d3",
+      "color": "#881a97",
+      "accent": "#c453d4",
       "letterboxd_url": "https://letterboxd.com/film/the-human-condition-i-no-greater-love/",
       "letterboxd_rating": 4.58
     },
@@ -10612,8 +10709,8 @@
           }
         ]
       },
-      "color": "#91a630",
-      "accent": "#c8d684",
+      "color": "#219f6c",
+      "accent": "#68d3a7",
       "letterboxd_url": "https://letterboxd.com/film/sleepers/",
       "letterboxd_rating": 3.78
     },
@@ -10640,8 +10737,8 @@
           }
         ]
       },
-      "color": "#881a97",
-      "accent": "#c453d4",
+      "color": "#a65330",
+      "accent": "#d69c84",
       "letterboxd_url": "https://letterboxd.com/film/o-brother-where-art-thou/",
       "letterboxd_rating": 3.96
     },
@@ -10715,8 +10812,8 @@
           }
         ]
       },
-      "color": "#219f6c",
-      "accent": "#68d3a7",
+      "color": "#1b1a97",
+      "accent": "#5453d4",
       "letterboxd_url": "https://letterboxd.com/film/the-searchers/",
       "letterboxd_rating": 3.94
     },
@@ -10743,8 +10840,8 @@
           }
         ]
       },
-      "color": "#a65330",
-      "accent": "#d69c84",
+      "color": "#469f21",
+      "accent": "#87d368",
       "letterboxd_url": "https://letterboxd.com/film/the-human-condition-ii-road-to-eternity/",
       "letterboxd_rating": 4.49
     },
@@ -10771,8 +10868,8 @@
           }
         ]
       },
-      "color": "#1b1a97",
-      "accent": "#5453d4",
+      "color": "#a63074",
+      "accent": "#d684b3",
       "letterboxd_url": "https://letterboxd.com/film/the-human-condition-iii-a-soldiers-prayer/",
       "letterboxd_rating": 4.65
     },
@@ -10869,8 +10966,8 @@
           }
         ]
       },
-      "color": "#469f21",
-      "accent": "#87d368",
+      "color": "#1a8797",
+      "accent": "#53c3d4",
       "letterboxd_url": "https://letterboxd.com/film/the-room/",
       "letterboxd_rating": 2.61
     },
@@ -10958,8 +11055,8 @@
           }
         ]
       },
-      "color": "#a63074",
-      "accent": "#d684b3",
+      "color": "#9f8b21",
+      "accent": "#d3c268",
       "letterboxd_url": "https://letterboxd.com/film/big-shark/",
       "letterboxd_rating": 2.96
     },
@@ -11022,8 +11119,8 @@
           }
         ]
       },
-      "color": "#1a8797",
-      "accent": "#53c3d4",
+      "color": "#7030a6",
+      "accent": "#b184d6",
       "letterboxd_url": "https://letterboxd.com/film/nosferatu/",
       "letterboxd_rating": 3.82
     },
@@ -11064,8 +11161,8 @@
           }
         ]
       },
-      "color": "#9f8b21",
-      "accent": "#d3c268",
+      "color": "#1a973a",
+      "accent": "#53d474",
       "letterboxd_url": "https://letterboxd.com/film/the-cabinet-of-dr-caligari-1920/",
       "letterboxd_rating": 4.06
     },
@@ -11095,8 +11192,8 @@
           }
         ]
       },
-      "color": "#7030a6",
-      "accent": "#b184d6",
+      "color": "#9f2126",
+      "accent": "#d3686c",
       "letterboxd_url": "https://letterboxd.com/film/haxan/",
       "letterboxd_rating": 4.05
     },
@@ -11123,8 +11220,8 @@
           }
         ]
       },
-      "color": "#1a973a",
-      "accent": "#53d474"
+      "color": "#3056a6",
+      "accent": "#849fd6"
     }
   ]
 }
