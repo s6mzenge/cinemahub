@@ -1,43 +1,7 @@
 {
-  "scraped_at": "2026-05-07T19:35:27.666953+00:00",
+  "scraped_at": "2026-05-07T20:05:07.812984+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
-    {
-      "id": "father-mother-sister-brother",
-      "title": "Father Mother Sister Brother",
-      "rating": "15",
-      "runtime": 111,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Jim Jarmusch",
-      "cast": "Tom Waits, Adam Driver, Vicky Krieps, Philippe Azoury, Luka Sabbat, Stephen Ostrowski",
-      "country": "US",
-      "description": "Estranged siblings reunite after years apart, forced to confront unresolved tensions and reevaluate their strained relationships with their emotionally distant parents.",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=475585",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/475584.jpg",
-      "showtimes": {
-        "2026-05-07": [
-          {
-            "time": "20:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487832.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-05-09": [
-          {
-            "time": "20:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_505600.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/father-mother-sister-brother/",
-      "letterboxd_rating": 3.11
-    },
     {
       "id": "the-devil-wears-prada-2",
       "title": "The Devil Wears Prada 2",
@@ -52,6 +16,29 @@
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=414735",
       "poster_url": "https://images.savoysystems.co.uk/PXL/414734.jpg",
       "showtimes": {
+        "2026-05-07": [
+          {
+            "time": "14:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487819.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": true,
+            "tags": [
+              "Closed Captions"
+            ]
+          },
+          {
+            "time": "17:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_415248.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_415247.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ],
         "2026-05-08": [
           {
             "time": "17:15",
@@ -187,10 +174,113 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.34
+    },
+    {
+      "id": "rose-of-nevada",
+      "title": "Rose of Nevada",
+      "rating": "15",
+      "runtime": 114,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Mark Jenkin",
+      "cast": "George MacKay, Callum Turner, Rosalind Eleazar",
+      "country": "UK",
+      "description": "Some 30 years after the Rose of Nevada fishing trawler disappeared, it mysteriously returns to its old harbour in a small Cornish village. Two young men join the Rose’s new crew, hoping to pull themselves out of hardship. But when they return to the harbour, the men realise they have slipped back in...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=487907",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/487892.jpg",
+      "showtimes": {
+        "2026-05-07": [
+          {
+            "time": "14:45",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487915.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
+      "letterboxd_rating": 3.43
+    },
+    {
+      "id": "primavera",
+      "title": "Primavera",
+      "rating": "15",
+      "runtime": 111,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Damiano Michieletto",
+      "cast": "Michele Riondino, Andrea Pennacchi, Stefano Accorsi, Miko Jarry, Alessandro Bressanello",
+      "country": "Italy",
+      "description": "In his feature debut, world-renowned opera director Damiano Michieletto gives a fictionalised account of Antonio Vivaldi's time as resident composer and violin teacher at the Ospedale della Pietà in Venice, where he composed most of his major works, told from the perspective of one of his most talen...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=475573",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/475580.jpg",
+      "showtimes": {
+        "2026-05-07": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487886.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-05-12": [
+          {
+            "time": "17:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_505618.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/primavera-2025/",
+      "letterboxd_rating": 3.55
+    },
+    {
+      "id": "father-mother-sister-brother",
+      "title": "Father Mother Sister Brother",
+      "rating": "15",
+      "runtime": 111,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Jim Jarmusch",
+      "cast": "Tom Waits, Adam Driver, Vicky Krieps, Philippe Azoury, Luka Sabbat, Stephen Ostrowski",
+      "country": "US",
+      "description": "Estranged siblings reunite after years apart, forced to confront unresolved tensions and reevaluate their strained relationships with their emotionally distant parents.",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=475585",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/475584.jpg",
+      "showtimes": {
+        "2026-05-07": [
+          {
+            "time": "20:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_487832.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-05-09": [
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_505600.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#00897b",
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/father-mother-sister-brother/",
+      "letterboxd_rating": 3.11
     },
     {
       "id": "our-land",
@@ -263,8 +353,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/our-land-2025/",
       "letterboxd_rating": 3.45
     },
@@ -360,8 +450,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/kokuho/",
       "letterboxd_rating": 3.83
     },
@@ -402,41 +492,10 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
       "letterboxd_rating": 3.49
-    },
-    {
-      "id": "primavera",
-      "title": "Primavera",
-      "rating": "15",
-      "runtime": 111,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Damiano Michieletto",
-      "cast": "Michele Riondino, Andrea Pennacchi, Stefano Accorsi, Miko Jarry, Alessandro Bressanello",
-      "country": "Italy",
-      "description": "In his feature debut, world-renowned opera director Damiano Michieletto gives a fictionalised account of Antonio Vivaldi's time as resident composer and violin teacher at the Ospedale della Pietà in Venice, where he composed most of his major works, told from the perspective of one of his most talen...",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=475573",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/475580.jpg",
-      "showtimes": {
-        "2026-05-12": [
-          {
-            "time": "17:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_505618.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false,
-            "tags": [
-              "Subtitled"
-            ]
-          }
-        ]
-      },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/primavera-2025/",
-      "letterboxd_rating": 3.55
     },
     {
       "id": "national-theatre-live-all-my-sons",
@@ -461,8 +520,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350"
+      "color": "#6a1b9a",
+      "accent": "#ba68c8"
     },
     {
       "id": "top-gun",
@@ -487,8 +546,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/top-gun/",
       "letterboxd_rating": 3.51
     },
@@ -518,8 +577,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "exhibition-on-screen-frida-kahlo",
@@ -544,8 +603,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae"
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "star-wars-the-mandalorian-and-grogu",
@@ -670,8 +729,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#ad1457",
+      "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/star-wars-the-mandalorian-and-grogu/",
       "letterboxd_rating": null
     },
@@ -698,8 +757,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "the-metropolitan-opera-el-ltimo-sue-o-de-frida-y-diego",
@@ -724,8 +783,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "journey-through-irish-cinema-the-quiet-man-john-ford-dreaming-the-quiet-man-plus-q-a",
@@ -750,8 +809,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63"
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "journey-through-irish-cinema-anne-devlin",
@@ -776,8 +835,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#558b2f",
+      "accent": "#9ccc65"
     },
     {
       "id": "london-festival-of-architecture-affr-present-renovation",
@@ -802,8 +861,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#9f2121",
+      "accent": "#d36868"
     },
     {
       "id": "journey-through-irish-cinema-rocky-roads-to-dublin",
@@ -828,8 +887,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "london-festival-of-architecture-lfa-affr-present-living-together-the-story-of-de-warren",
@@ -854,8 +913,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "national-theatre-live-les-liaisons-dangereuses",
@@ -880,8 +939,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453"
+      "color": "#9f2190",
+      "accent": "#d368c6"
     },
     {
       "id": "david-attenborough-a-life-on-our-planet-michael-palin-live-intro",
@@ -906,8 +965,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "journey-through-irish-cinema-my-left-foot-the-story-of-christy-brown-q-a-with-jim-sheridan",
@@ -932,8 +991,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#975e1a",
+      "accent": "#d49953"
     },
     {
       "id": "journey-through-irish-cinema-michael-collins",
@@ -958,8 +1017,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#41219f",
+      "accent": "#8368d3"
     },
     {
       "id": "journey-through-irish-cinema-kings",
@@ -984,8 +1043,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3"
+      "color": "#35a630",
+      "accent": "#88d684"
     }
   ]
 }
