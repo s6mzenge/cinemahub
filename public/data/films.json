@@ -1,7 +1,31 @@
 {
-  "scraped_at": "2026-05-07T15:06:14.035195+00:00",
+  "scraped_at": "2026-05-07T15:32:55.638601+00:00",
   "source": "peckhamplex.london",
   "films": [
+    {
+      "id": "california-schemin",
+      "title": "California Schemin'",
+      "rating": "15",
+      "runtime": 107,
+      "genre": "Comedy",
+      "film_url": "https://www.peckhamplex.london/film/california-schemin",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/california-schemin.jpg",
+      "showtimes": {
+        "2026-05-07": [
+          {
+            "time": "18:20",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79891?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "James McAvoy",
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/california-schemin/",
+      "letterboxd_rating": 3.46
+    },
     {
       "id": "exit-8",
       "title": "Exit 8",
@@ -27,28 +51,28 @@
       "letterboxd_rating": 3.14
     },
     {
-      "id": "california-schemin",
-      "title": "California Schemin'",
-      "rating": "15",
-      "runtime": 107,
-      "genre": "Comedy",
-      "film_url": "https://www.peckhamplex.london/film/california-schemin",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/california-schemin.jpg",
+      "id": "lee-cronins-the-mummy",
+      "title": "Lee Cronin's The Mummy",
+      "rating": "18",
+      "runtime": 133,
+      "genre": "Fantasy",
+      "film_url": "https://www.peckhamplex.london/film/lee-cronins-the-mummy",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/lee-cronins-the-mummy.jpg",
       "showtimes": {
         "2026-05-07": [
           {
-            "time": "18:20",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79891?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79897?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": true
           }
         ]
       },
-      "director": "James McAvoy",
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/california-schemin/",
-      "letterboxd_rating": 3.46
+      "director": "Lee Cronin",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/lee-cronins-the-mummy/",
+      "letterboxd_rating": 2.72
     },
     {
       "id": "hokum",
@@ -131,6 +155,30 @@
       "letterboxd_rating": 3.52
     },
     {
+      "id": "surviving-earth",
+      "title": "Surviving Earth",
+      "rating": "15",
+      "runtime": 96,
+      "genre": "Drama",
+      "film_url": "https://www.peckhamplex.london/film/surviving-earth",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/surviving-earth.jpg",
+      "showtimes": {
+        "2026-05-07": [
+          {
+            "time": "17:50",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79893?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Thea Gajic",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
+      "letterboxd_rating": 3.68
+    },
+    {
       "id": "hitpig",
       "title": "Hitpig!",
       "rating": "PG",
@@ -161,6 +209,86 @@
       "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/hitpig/",
       "letterboxd_rating": 2.37
+    },
+    {
+      "id": "mother-mary",
+      "title": "Mother Mary",
+      "rating": "15",
+      "runtime": 112,
+      "genre": "Drama",
+      "film_url": "https://www.peckhamplex.london/film/mother-mary",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/mother-mary.jpg",
+      "showtimes": {
+        "2026-05-07": [
+          {
+            "time": "20:20",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79899?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": true
+          }
+        ],
+        "2026-05-08": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79945?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": true
+          }
+        ],
+        "2026-05-09": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79921?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": true
+          }
+        ],
+        "2026-05-10": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79969?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": true
+          }
+        ],
+        "2026-05-11": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80013?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": true
+          }
+        ],
+        "2026-05-12": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80025?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": true
+          }
+        ],
+        "2026-05-13": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80037?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": true
+          }
+        ],
+        "2026-05-14": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80049?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": true
+          }
+        ]
+      },
+      "director": "David Lowery",
+      "color": "#00897b",
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/mother-mary-2026/",
+      "letterboxd_rating": 2.99
     },
     {
       "id": "michael",
@@ -201,7 +329,7 @@
           {
             "time": "20:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79948?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -209,7 +337,7 @@
           {
             "time": "12:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79905?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           },
           {
@@ -281,7 +409,7 @@
           {
             "time": "20:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80026?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           }
         ],
@@ -289,7 +417,7 @@
           {
             "time": "18:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80032?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           },
           {
@@ -315,10 +443,10 @@
         ]
       },
       "director": "Antoine Fuqua",
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
-      "letterboxd_rating": 3.61
+      "letterboxd_rating": 3.6
     },
     {
       "id": "the-devil-wears-prada-2",
@@ -339,7 +467,7 @@
           {
             "time": "20:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79895?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -393,7 +521,7 @@
           {
             "time": "12:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79950?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "screen": null,
             "hoh": false
           },
           {
@@ -419,7 +547,7 @@
           {
             "time": "17:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80005?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "screen": null,
             "hoh": false
           },
           {
@@ -473,8 +601,8 @@
         ]
       },
       "director": "David Frankel",
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.34
     },
@@ -499,13 +627,13 @@
           {
             "time": "14:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79934?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "screen": null,
             "hoh": false
           },
           {
             "time": "17:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79938?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -519,7 +647,7 @@
           {
             "time": "17:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79915?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -557,7 +685,7 @@
           {
             "time": "17:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80028?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -571,138 +699,10 @@
         ]
       },
       "director": "Phil Lord",
-      "color": "#1565c0",
-      "accent": "#64b5f6",
-      "letterboxd_url": "https://letterboxd.com/film/project-hail-mary/",
-      "letterboxd_rating": 4.32
-    },
-    {
-      "id": "lee-cronins-the-mummy",
-      "title": "Lee Cronin's The Mummy",
-      "rating": "18",
-      "runtime": 133,
-      "genre": "Fantasy",
-      "film_url": "https://www.peckhamplex.london/film/lee-cronins-the-mummy",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/lee-cronins-the-mummy.jpg",
-      "showtimes": {
-        "2026-05-07": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79897?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": true
-          }
-        ]
-      },
-      "director": "Lee Cronin",
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/lee-cronins-the-mummy/",
-      "letterboxd_rating": 2.72
-    },
-    {
-      "id": "surviving-earth",
-      "title": "Surviving Earth",
-      "rating": "15",
-      "runtime": 96,
-      "genre": "Drama",
-      "film_url": "https://www.peckhamplex.london/film/surviving-earth",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/surviving-earth.jpg",
-      "showtimes": {
-        "2026-05-07": [
-          {
-            "time": "17:50",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79893?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Thea Gajic",
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/surviving-earth-2025/",
-      "letterboxd_rating": 3.69
-    },
-    {
-      "id": "mother-mary",
-      "title": "Mother Mary",
-      "rating": "15",
-      "runtime": 112,
-      "genre": "Drama",
-      "film_url": "https://www.peckhamplex.london/film/mother-mary",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/mother-mary.jpg",
-      "showtimes": {
-        "2026-05-07": [
-          {
-            "time": "20:20",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79899?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": true
-          }
-        ],
-        "2026-05-08": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79945?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": true
-          }
-        ],
-        "2026-05-09": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79921?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": true
-          }
-        ],
-        "2026-05-10": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79969?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": true
-          }
-        ],
-        "2026-05-11": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80013?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": true
-          }
-        ],
-        "2026-05-12": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80025?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": true
-          }
-        ],
-        "2026-05-13": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80037?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": true
-          }
-        ],
-        "2026-05-14": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80049?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": true
-          }
-        ]
-      },
-      "director": "David Lowery",
       "color": "#00838f",
       "accent": "#4dd0e1",
-      "letterboxd_url": "https://letterboxd.com/film/mother-mary-2026/",
-      "letterboxd_rating": 2.99
+      "letterboxd_url": "https://letterboxd.com/film/project-hail-mary/",
+      "letterboxd_rating": 4.32
     },
     {
       "id": "the-drama",
@@ -725,7 +725,7 @@
           {
             "time": "15:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79937?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 2",
             "hoh": false
           },
           {
@@ -773,7 +773,7 @@
           {
             "time": "20:45",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80011?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 2",
             "hoh": false
           }
         ],
@@ -795,13 +795,13 @@
           {
             "time": "17:55",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80031?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": false
           },
           {
             "time": "20:45",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80035?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -833,7 +833,7 @@
           {
             "time": "11:45",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79906?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -851,6 +851,38 @@
       "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/the-magic-faraway-tree/",
       "letterboxd_rating": 3.08
+    },
+    {
+      "id": "the-super-mario-galaxy-movie",
+      "title": "The Super Mario Galaxy Movie",
+      "rating": "PG",
+      "runtime": 98,
+      "genre": "Action",
+      "film_url": "https://www.peckhamplex.london/film/the-super-mario-galaxy-movie",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-super-mario-galaxy-movie.jpg",
+      "showtimes": {
+        "2026-05-09": [
+          {
+            "time": "13:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79908?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ],
+        "2026-05-10": [
+          {
+            "time": "13:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79955?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Michael Jelenic",
+      "color": "#37474f",
+      "accent": "#78909c",
+      "letterboxd_url": "https://letterboxd.com/film/the-super-mario-galaxy-movie/",
+      "letterboxd_rating": 2.91
     },
     {
       "id": "the-sheep-detectives",
@@ -871,7 +903,7 @@
           {
             "time": "18:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79943?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": true
           }
         ],
@@ -943,48 +975,16 @@
           {
             "time": "18:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80045?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": true
           }
         ]
       },
       "director": "Kyle Balda",
-      "color": "#37474f",
-      "accent": "#78909c",
-      "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
-      "letterboxd_rating": 3.71
-    },
-    {
-      "id": "the-super-mario-galaxy-movie",
-      "title": "The Super Mario Galaxy Movie",
-      "rating": "PG",
-      "runtime": 98,
-      "genre": "Action",
-      "film_url": "https://www.peckhamplex.london/film/the-super-mario-galaxy-movie",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-super-mario-galaxy-movie.jpg",
-      "showtimes": {
-        "2026-05-09": [
-          {
-            "time": "13:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79908?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-10": [
-          {
-            "time": "13:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79955?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Michael Jelenic",
       "color": "#4e342e",
       "accent": "#8d6e63",
-      "letterboxd_url": "https://letterboxd.com/film/the-super-mario-galaxy-movie/",
-      "letterboxd_rating": 2.91
+      "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
+      "letterboxd_rating": 3.71
     },
     {
       "id": "billie-eilish-hit-me-hard-and-soft-the-tou-3d",
@@ -1025,28 +1025,6 @@
       "accent": "#4fc3f7"
     },
     {
-      "id": "national-theatre-live-the-playboy-of-the-western",
-      "title": "National Theatre Live: The Playboy of the Western",
-      "rating": "15",
-      "runtime": 170,
-      "genre": "Live Theatre",
-      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-the-playboy-of-the-western",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-the-playboy-of-the-western.jpg",
-      "showtimes": {
-        "2026-05-28": [
-          {
-            "time": "19:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/77601?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Caitríona McLaughlin",
-      "color": "#558b2f",
-      "accent": "#9ccc65"
-    },
-    {
       "id": "exhibition-on-screen-frida-kahlo",
       "title": "EXHIBITION ON SCREEN: Frida Kahlo",
       "rating": "12A",
@@ -1073,53 +1051,30 @@
         ]
       },
       "director": "Ali Ray",
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#558b2f",
+      "accent": "#9ccc65"
     },
     {
-      "id": "national-theatre-live-les-liaisons-dangereuses",
-      "title": "National Theatre Live: Les Liaisons Dangereuses",
-      "rating": "TBC",
-      "runtime": 180,
-      "genre": "Opera",
-      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-les-liaisons-dangereuses",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-les-liaisons-dangereuses.jpg",
+      "id": "national-theatre-live-the-playboy-of-the-western",
+      "title": "National Theatre Live: The Playboy of the Western",
+      "rating": "15",
+      "runtime": 170,
+      "genre": "Live Theatre",
+      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-the-playboy-of-the-western",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-the-playboy-of-the-western.jpg",
       "showtimes": {
-        "2026-06-25": [
+        "2026-05-28": [
           {
             "time": "19:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/77602?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/77601?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
             "hoh": false
           }
         ]
       },
-      "director": "Marianne Elliott",
-      "color": "#3052a6",
-      "accent": "#849cd6"
-    },
-    {
-      "id": "riverdance-25th-anniversary-show",
-      "title": "Riverdance - 25th Anniversary Show",
-      "rating": "U",
-      "runtime": 120,
-      "genre": "Live Concert",
-      "film_url": "https://www.peckhamplex.london/film/riverdance-25th-anniversary-show",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/riverdance-25th-anniversary-show.jpg",
-      "showtimes": {
-        "2026-06-07": [
-          {
-            "time": "16:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79758?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#63971a",
-      "accent": "#9ed453",
-      "letterboxd_url": "https://letterboxd.com/film/riverdance-25th-anniversary-show/",
-      "letterboxd_rating": null
+      "director": "Caitríona McLaughlin",
+      "color": "#9f2121",
+      "accent": "#d36868"
     },
     {
       "id": "mortal-kombat-2",
@@ -1154,7 +1109,7 @@
           {
             "time": "15:10",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79909?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "screen": null,
             "hoh": false
           },
           {
@@ -1186,7 +1141,7 @@
           {
             "time": "20:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/79971?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -1248,10 +1203,55 @@
         ]
       },
       "director": "Simon McQuoid",
-      "color": "#9f2190",
-      "accent": "#d368c6",
+      "color": "#3052a6",
+      "accent": "#849cd6",
       "letterboxd_url": "https://letterboxd.com/film/mortal-kombat-ii/",
       "letterboxd_rating": 3.12
+    },
+    {
+      "id": "national-theatre-live-les-liaisons-dangereuses",
+      "title": "National Theatre Live: Les Liaisons Dangereuses",
+      "rating": "TBC",
+      "runtime": 180,
+      "genre": "Opera",
+      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-les-liaisons-dangereuses",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-les-liaisons-dangereuses.jpg",
+      "showtimes": {
+        "2026-06-25": [
+          {
+            "time": "19:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/77602?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Marianne Elliott",
+      "color": "#63971a",
+      "accent": "#9ed453"
+    },
+    {
+      "id": "riverdance-25th-anniversary-show",
+      "title": "Riverdance - 25th Anniversary Show",
+      "rating": "U",
+      "runtime": 120,
+      "genre": "Live Concert",
+      "film_url": "https://www.peckhamplex.london/film/riverdance-25th-anniversary-show",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/riverdance-25th-anniversary-show.jpg",
+      "showtimes": {
+        "2026-06-07": [
+          {
+            "time": "16:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79758?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#9f2190",
+      "accent": "#d368c6",
+      "letterboxd_url": "https://letterboxd.com/film/riverdance-25th-anniversary-show/",
+      "letterboxd_rating": null
     }
   ]
 }
