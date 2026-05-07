@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-07T17:03:00.888771+00:00",
+  "scraped_at": "2026-05-07T17:32:50.911603+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
@@ -931,6 +931,17 @@
           {
             "time": "20:10",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626599",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "w/ Short"
+            ]
+          }
+        ],
+        "2026-07-21": [
+          {
+            "time": "15:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626620",
             "screen": null,
             "hoh": false,
             "tags": [
@@ -6322,6 +6333,14 @@
             "screen": null,
             "hoh": false
           }
+        ],
+        "2026-07-20": [
+          {
+            "time": "15:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626618",
+            "screen": null,
+            "hoh": false
+          }
         ]
       },
       "color": "#219f6e",
@@ -8543,6 +8562,14 @@
             "screen": null,
             "hoh": false
           }
+        ],
+        "2026-07-21": [
+          {
+            "time": "12:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626621",
+            "screen": null,
+            "hoh": false
+          }
         ]
       },
       "color": "#1a977a",
@@ -9003,8 +9030,8 @@
         ],
         "2026-07-20": [
           {
-            "time": "20:40",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626615",
+            "time": "20:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626616",
             "screen": null,
             "hoh": false
           }
@@ -11719,6 +11746,37 @@
       "letterboxd_rating": 4.01
     },
     {
+      "id": "kes",
+      "title": "Kes",
+      "rating": "PG",
+      "runtime": 111,
+      "genre": "Drama",
+      "year": "1969",
+      "country": null,
+      "director": "Ken Loach",
+      "cast": "Colin Welland, David Bradley, Freddie Fletcher, Lynne Perrie",
+      "description": "Ken Loach's acclaimed British drama focuses on Billy Casper (David Bradley), a tormented working-class boy who is subjected to abuse both at school and at home. The son of a single mother (Lynne Perrie), Billy's existence is mostly bleak until he takes up an interest in falconry and begins training a kestrel that he finds on a nearby farm. While Billy forms a close bond with the falcon, his hardscrabble life and harsh environment prove to be a challenge to the boy and his bird.",
+      "film_url": "https://princecharlescinema.com/film/25079275/kes",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/25079275.jpg",
+      "showtimes": {
+        "2026-07-20": [
+          {
+            "time": "12:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626619",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#1a9797",
+      "accent": "#53d3d4",
+      "letterboxd_url": "https://letterboxd.com/film/kes/",
+      "letterboxd_rating": 4.25
+    },
+    {
       "id": "close-encounters-of-the-third-kind-directors-cut",
       "title": "Close Encounters of the Third Kind [Director's Cut]",
       "rating": "PG",
@@ -11744,10 +11802,41 @@
           }
         ]
       },
-      "color": "#1a9797",
-      "accent": "#53d3d4",
+      "color": "#9f7b21",
+      "accent": "#d3b468",
       "letterboxd_url": "https://letterboxd.com/film/close-encounters-of-the-third-kind/",
       "letterboxd_rating": 3.82
+    },
+    {
+      "id": "talladega-nights-the-ballad-of-ricky-bobby",
+      "title": "Talladega Nights: The Ballad of Ricky Bobby",
+      "rating": "12A",
+      "runtime": 108,
+      "genre": "Comedy / Sport",
+      "year": "2006",
+      "country": null,
+      "director": "Adam McKay",
+      "cast": "Will Ferrell, John C. Reilly, Sacha Baron Cohen",
+      "description": "*ON SALE 6th JULY *The story of NASCAR racing sensation Ricky Bobby, whose \"win at all costs\" approach has made him a national hero. He and his loyal racing partner and childhood friend, Cal Naughton, Jr., are a fearless duo that thrill their fans by finishing most races in the top spots - with Ricky Bobby always leading the pack. When a flamboyant French Formula One driver Jean Girard challenges him for the supremacy of NASCAR, Ricky Bobby must face his own demons and fight Girard for the right to be known as racing's top driver.",
+      "film_url": "https://princecharlescinema.com/film/114328/talladega-nights-the-ballad-of-ricky-bobby",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/Ds_kcS-Jen-J9PnulRhhwejWy86aAZBZsEOr1-r_-4o.jpg",
+      "showtimes": {
+        "2026-07-20": [
+          {
+            "time": "18:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626617",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "£1 MEM"
+            ]
+          }
+        ]
+      },
+      "color": "#6130a6",
+      "accent": "#a684d6",
+      "letterboxd_url": "https://letterboxd.com/film/talladega-nights-the-ballad-of-ricky-bobby/",
+      "letterboxd_rating": 3.36
     },
     {
       "id": "the-searchers",
@@ -11819,8 +11908,8 @@
           }
         ]
       },
-      "color": "#9f7b21",
-      "accent": "#d3b468",
+      "color": "#1a972a",
+      "accent": "#53d463",
       "letterboxd_url": "https://letterboxd.com/film/the-searchers/",
       "letterboxd_rating": 3.94
     },
@@ -11847,8 +11936,8 @@
           }
         ]
       },
-      "color": "#6130a6",
-      "accent": "#a684d6",
+      "color": "#9f2136",
+      "accent": "#d3687a",
       "letterboxd_url": "https://letterboxd.com/film/the-human-condition-ii-road-to-eternity/",
       "letterboxd_rating": 4.49
     },
@@ -11875,8 +11964,8 @@
           }
         ]
       },
-      "color": "#1a972a",
-      "accent": "#53d463",
+      "color": "#3066a6",
+      "accent": "#84a9d6",
       "letterboxd_url": "https://letterboxd.com/film/the-human-condition-iii-a-soldiers-prayer/",
       "letterboxd_rating": 4.66
     },
@@ -11973,8 +12062,8 @@
           }
         ]
       },
-      "color": "#9f2136",
-      "accent": "#d3687a",
+      "color": "#78971a",
+      "accent": "#b3d453",
       "letterboxd_url": "https://letterboxd.com/film/the-room/",
       "letterboxd_rating": 2.61
     },
@@ -12062,8 +12151,8 @@
           }
         ]
       },
-      "color": "#3066a6",
-      "accent": "#84a9d6",
+      "color": "#9a219f",
+      "accent": "#cf68d3",
       "letterboxd_url": "https://letterboxd.com/film/big-shark/",
       "letterboxd_rating": 2.96
     },
@@ -12126,8 +12215,8 @@
           }
         ]
       },
-      "color": "#78971a",
-      "accent": "#b3d453",
+      "color": "#30a67e",
+      "accent": "#84d6bb",
       "letterboxd_url": "https://letterboxd.com/film/nosferatu/",
       "letterboxd_rating": 3.82
     },
@@ -12168,8 +12257,8 @@
           }
         ]
       },
-      "color": "#9a219f",
-      "accent": "#cf68d3",
+      "color": "#97491a",
+      "accent": "#d48353",
       "letterboxd_url": "https://letterboxd.com/film/the-cabinet-of-dr-caligari-1920/",
       "letterboxd_rating": 4.06
     },
@@ -12199,8 +12288,8 @@
           }
         ]
       },
-      "color": "#30a67e",
-      "accent": "#84d6bb",
+      "color": "#2c219f",
+      "accent": "#7168d3",
       "letterboxd_url": "https://letterboxd.com/film/haxan/",
       "letterboxd_rating": 4.05
     },
@@ -12227,8 +12316,8 @@
           }
         ]
       },
-      "color": "#97491a",
-      "accent": "#d48353"
+      "color": "#48a630",
+      "accent": "#95d684"
     }
   ]
 }
