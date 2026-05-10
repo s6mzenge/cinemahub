@@ -1,32 +1,7 @@
 {
-  "scraped_at": "2026-05-10T15:34:12.376347+00:00",
+  "scraped_at": "2026-05-10T16:02:28.188456+00:00",
   "source": "thearzner.com",
   "films": [
-    {
-      "id": "premiere-the-slowest-landslide-190314",
-      "title": "Premiere: The Slowest Landslide",
-      "rating": "TBC",
-      "runtime": 40,
-      "genre": "Music Event",
-      "description": "Join Fred Roberts at The Arzner for the premiere of The Slowest Landslide - his new music video, followed by a live performance.  Fred Roberts debuts The Slowest Landslide. His first release through AWAL and the opening chapter of a trilogy about one summer. The song draws from the collapse of a nea…",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=190314",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/190311.jpg",
-      "showtimes": {
-        "2026-05-10": [
-          {
-            "time": "16:20",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_190394.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "Music Event"
-            ]
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60"
-    },
     {
       "id": "the-devil-wears-prada-2-133637",
       "title": "The Devil Wears Prada 2",
@@ -38,6 +13,21 @@
       "poster_url": "https://images.savoysystems.co.uk/TAL/165159.jpg",
       "showtimes": {
         "2026-05-10": [
+          {
+            "time": "11:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_167329.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "14:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_167328.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": true,
+            "tags": [
+              "CC"
+            ]
+          },
           {
             "time": "17:15",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_165290.TcsSection_963",
@@ -368,6 +358,31 @@
       "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.31
+    },
+    {
+      "id": "premiere-the-slowest-landslide-190314",
+      "title": "Premiere: The Slowest Landslide",
+      "rating": "TBC",
+      "runtime": 40,
+      "genre": "Music Event",
+      "description": "Join Fred Roberts at The Arzner for the premiere of The Slowest Landslide - his new music video, followed by a live performance.  Fred Roberts debuts The Slowest Landslide. His first release through AWAL and the opening chapter of a trilogy about one summer. The song draws from the collapse of a nea…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=190314",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/190311.jpg",
+      "showtimes": {
+        "2026-05-10": [
+          {
+            "time": "16:20",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_190394.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Music Event"
+            ]
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60"
     },
     {
       "id": "the-climb-meningitis-research-foundation-fundraiser-175464",
@@ -892,7 +907,7 @@
       "color": "#37474f",
       "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/mother-mary-2026/",
-      "letterboxd_rating": 2.99
+      "letterboxd_rating": 3.0
     },
     {
       "id": "choose-what-you-pay-the-christophers-197249",
