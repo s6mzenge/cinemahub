@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-11T12:02:21.828399+00:00",
+  "scraped_at": "2026-05-11T12:32:26.171953+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -310,10 +310,13 @@
         ],
         "2026-05-30": [
           {
-            "time": "13:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196636.TcsSection_963",
+            "time": "11:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_197630.TcsSection_963",
             "screen": "Screening Room",
-            "hoh": false
+            "hoh": true,
+            "tags": [
+              "CC"
+            ]
           }
         ],
         "2026-05-31": [
@@ -966,7 +969,7 @@
         ],
         "2026-05-30": [
           {
-            "time": "16:00",
+            "time": "16:15",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196634.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
@@ -1006,7 +1009,7 @@
         ],
         "2026-05-30": [
           {
-            "time": "11:15",
+            "time": "14:00",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_197617.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
@@ -1030,7 +1033,7 @@
       "showtimes": {
         "2026-05-30": [
           {
-            "time": "18:00",
+            "time": "18:15",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196632.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false,
@@ -1306,6 +1309,31 @@
       "accent": "#cfd684"
     },
     {
+      "id": "no-man-s-land-with-rosie-turner-q-a-197644",
+      "title": "No Man's Land with Rosie Turner + Q&A",
+      "rating": "15",
+      "runtime": 126,
+      "genre": "Q&A",
+      "description": "This screening will be followed by a panel Q&A with Rosie Turner (Director & Presenter), Maxine Heron (Not a Phase) & Lucy Davidson (Chair).  Join Rosie Turner for the first screening of No Man’s Land, a ground-breaking new docu-series exploring what it means to live, love, and survive as a member o…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=197644",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/197646.jpg",
+      "showtimes": {
+        "2026-07-05": [
+          {
+            "time": "16:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_197662.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Q&A"
+            ]
+          }
+        ]
+      },
+      "color": "#7d1a97",
+      "accent": "#b953d4"
+    },
+    {
       "id": "brat-summer-charli-xcx-marathon-166971",
       "title": "brat summer: Charli XCX Marathon",
       "rating": "18",
@@ -1327,8 +1355,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#219f60",
+      "accent": "#68d39d"
     }
   ]
 }
