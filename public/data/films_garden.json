@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-11T11:06:12.482746+00:00",
+  "scraped_at": "2026-05-11T11:34:05.165706+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
     {
@@ -386,6 +386,30 @@
               "AD"
             ]
           }
+        ],
+        "2026-05-15": [
+          {
+            "time": "18:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5555980.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-17": [
+          {
+            "time": "17:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5556010.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-20": [
+          {
+            "time": "20:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5556048.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
         ]
       },
       "color": "#1565c0",
@@ -533,6 +557,28 @@
           {
             "time": "20:20",
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5523430.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ],
+        "2026-05-17": [
+          {
+            "time": "13:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5555974.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ],
+        "2026-05-20": [
+          {
+            "time": "14:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5556073.TcsSection_971",
             "screen": null,
             "hoh": false,
             "tags": [
@@ -3145,6 +3191,39 @@
       "letterboxd_rating": 3.89
     },
     {
+      "id": "seance-on-a-wet-afternoon",
+      "title": "Séance on a Wet Afternoon",
+      "rating": "PG",
+      "runtime": 117,
+      "genre": "Other",
+      "year": "1964",
+      "director": "Bryan Forbes",
+      "cast": null,
+      "description": "This edition of Composing Cinema focuses on the giant of British Film composistion John Barry, and his score for Bryan Forbes's…",
+      "film_url": "https://www.thegardencinema.co.uk/film/seance-on-a-wet-afternoon/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5555988.jpg",
+      "showtimes": {
+        "2026-06-23": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5556178.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "Intro"
+            ]
+          }
+        ]
+      },
+      "seasons": [
+        "Composing Cinema"
+      ],
+      "color": "#1a4597",
+      "accent": "#537fd4",
+      "letterboxd_url": "https://letterboxd.com/film/seance-on-a-wet-afternoon/",
+      "letterboxd_rating": 3.85
+    },
+    {
       "id": "midnight",
       "title": "Midnight",
       "rating": "U",
@@ -3177,8 +3256,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#1a4597",
-      "accent": "#537fd4",
+      "color": "#719f21",
+      "accent": "#acd368",
       "letterboxd_url": "https://letterboxd.com/film/midnight-1939/",
       "letterboxd_rating": 3.93
     },
@@ -3221,8 +3300,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#719f21",
-      "accent": "#acd368",
+      "color": "#a6309d",
+      "accent": "#d684d0",
       "letterboxd_url": "https://letterboxd.com/film/how-to-train-your-dragon/",
       "letterboxd_rating": 4.14
     },
@@ -3255,8 +3334,8 @@
         "Celebrating 70 years of LFS"
       ],
       "partner": "London Film School",
-      "color": "#a6309d",
-      "accent": "#d684d0",
+      "color": "#1a977c",
+      "accent": "#53d4b8",
       "letterboxd_url": "https://letterboxd.com/film/lessons-in-love/",
       "letterboxd_rating": null
     },
@@ -3293,8 +3372,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#1a977c",
-      "accent": "#53d4b8",
+      "color": "#9f5f21",
+      "accent": "#d39d68",
       "letterboxd_url": "https://letterboxd.com/film/it-happened-one-night/",
       "letterboxd_rating": 4.18
     },
@@ -3323,8 +3402,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#9f5f21",
-      "accent": "#d39d68",
+      "color": "#4730a6",
+      "accent": "#9484d6",
       "letterboxd_url": "https://letterboxd.com/film/whats-up-doc-1972/",
       "letterboxd_rating": 4.11
     },
@@ -3367,8 +3446,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#4730a6",
-      "accent": "#9484d6"
+      "color": "#26971a",
+      "accent": "#5fd453"
     },
     {
       "id": "the-palm-beach-story",
@@ -3403,8 +3482,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#26971a",
-      "accent": "#5fd453",
+      "color": "#9f2152",
+      "accent": "#d36891",
       "letterboxd_url": "https://letterboxd.com/film/the-palm-beach-story/",
       "letterboxd_rating": 3.8
     },
@@ -3444,8 +3523,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#9f2152",
-      "accent": "#d36891",
+      "color": "#307fa6",
+      "accent": "#84bbd6",
       "letterboxd_url": "https://letterboxd.com/film/the-philadelphia-story/",
       "letterboxd_rating": 4.0
     },
@@ -3474,8 +3553,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#307fa6",
-      "accent": "#84bbd6",
+      "color": "#93971a",
+      "accent": "#cfd453",
       "letterboxd_url": "https://letterboxd.com/film/ball-of-fire/",
       "letterboxd_rating": 3.99
     },
@@ -3518,8 +3597,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#93971a",
-      "accent": "#cfd453",
+      "color": "#7f219f",
+      "accent": "#b768d3",
       "letterboxd_url": "https://letterboxd.com/film/james-and-the-giant-peach/",
       "letterboxd_rating": 3.4
     },
@@ -3552,8 +3631,8 @@
         "Celebrating 70 years of LFS"
       ],
       "partner": "London Film School",
-      "color": "#7f219f",
-      "accent": "#b768d3"
+      "color": "#30a665",
+      "accent": "#84d6a9"
     },
     {
       "id": "bugsy-malone",
@@ -3594,8 +3673,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#30a665",
-      "accent": "#84d6a9",
+      "color": "#972e1a",
+      "accent": "#d46753",
       "letterboxd_url": "https://letterboxd.com/film/bugsy-malone/",
       "letterboxd_rating": 3.5
     },
@@ -3649,8 +3728,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#972e1a",
-      "accent": "#d46753",
+      "color": "#21329f",
+      "accent": "#6877d3",
       "letterboxd_url": "https://letterboxd.com/film/labyrinth/",
       "letterboxd_rating": 3.76
     }
