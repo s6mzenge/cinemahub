@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-11T11:32:03.498834+00:00",
+  "scraped_at": "2026-05-11T12:02:21.828399+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -13,6 +13,12 @@
       "poster_url": "https://images.savoysystems.co.uk/TAL/165159.jpg",
       "showtimes": {
         "2026-05-11": [
+          {
+            "time": "11:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_190754.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
           {
             "time": "13:30",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_175562.TcsSection_963",
@@ -952,22 +958,13 @@
             "hoh": false
           },
           {
-            "time": "18:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_191104.TcsSection_963",
+            "time": "16:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_197614.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
           }
         ],
         "2026-05-30": [
-          {
-            "time": "11:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196637.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": true,
-            "tags": [
-              "CC"
-            ]
-          },
           {
             "time": "16:00",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196634.TcsSection_963",
@@ -990,6 +987,38 @@
       "letterboxd_rating": null
     },
     {
+      "id": "fairyland-197612",
+      "title": "Fairyland",
+      "rating": "18",
+      "runtime": 116,
+      "genre": "New Release",
+      "description": "A father-daughter relationship evolves through an era of bohemian decadence in 1970s San Francisco to the sober and heartbreaking era of the AIDS crisis in the 1980s.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=197612",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/197627.jpg",
+      "showtimes": {
+        "2026-05-29": [
+          {
+            "time": "18:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_197613.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-05-30": [
+          {
+            "time": "11:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_197617.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#9f2121",
+      "accent": "#d36868",
+      "letterboxd_url": "https://letterboxd.com/film/fairyland/",
+      "letterboxd_rating": 3.51
+    },
+    {
       "id": "portrait-of-a-lady-on-fire-4k-reissue-13469",
       "title": "Portrait of a Lady on Fire (4K Reissue)",
       "rating": "15",
@@ -999,17 +1028,6 @@
       "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=13469",
       "poster_url": "https://images.savoysystems.co.uk/TAL/116232.jpg",
       "showtimes": {
-        "2026-05-29": [
-          {
-            "time": "16:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196970.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "World Cinema"
-            ]
-          }
-        ],
         "2026-05-30": [
           {
             "time": "18:00",
@@ -1033,8 +1051,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "madfabulous-164269",
@@ -1074,8 +1092,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6",
+      "color": "#63971a",
+      "accent": "#9ed453",
       "letterboxd_url": "https://letterboxd.com/film/madfabulous/",
       "letterboxd_rating": null
     },
@@ -1101,8 +1119,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#9f2190",
+      "accent": "#d368c6",
       "letterboxd_url": "https://letterboxd.com/film/madfabulous/",
       "letterboxd_rating": null
     },
@@ -1128,8 +1146,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "pink-narcissus-4k-restoration-extended-intro-167369",
@@ -1153,8 +1171,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8",
+      "color": "#975e1a",
+      "accent": "#d49953",
       "letterboxd_url": "https://letterboxd.com/film/pink-narcissus/",
       "letterboxd_rating": 3.65
     },
@@ -1180,8 +1198,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#41219f",
+      "accent": "#8368d3"
     },
     {
       "id": "cactus-pears-director-q-a-183173",
@@ -1205,8 +1223,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#35a630",
+      "accent": "#88d684",
       "letterboxd_url": "https://letterboxd.com/film/cactus-pears/",
       "letterboxd_rating": 3.87
     },
@@ -1232,8 +1250,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684"
+      "color": "#971a44",
+      "accent": "#d4537e"
     },
     {
       "id": "the-powerpuff-girls-movie-intro-from-nyongbella-147482",
@@ -1257,8 +1275,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e",
+      "color": "#21709f",
+      "accent": "#68abd3",
       "letterboxd_url": "https://letterboxd.com/film/the-powerpuff-girls-movie/",
       "letterboxd_rating": 3.49
     },
@@ -1284,8 +1302,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#9ca630",
+      "accent": "#cfd684"
     },
     {
       "id": "brat-summer-charli-xcx-marathon-166971",
@@ -1309,8 +1327,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#7d1a97",
+      "accent": "#b953d4"
     }
   ]
 }
