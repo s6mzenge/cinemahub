@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-12T20:36:27.060336+00:00",
+  "scraped_at": "2026-05-13T04:06:15.814906+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -16,14 +16,6 @@
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=505567",
       "poster_url": "https://images.savoysystems.co.uk/PXL/505566.jpg",
       "showtimes": {
-        "2026-05-12": [
-          {
-            "time": "14:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_505622.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
         "2026-05-13": [
           {
             "time": "17:00",
@@ -44,7 +36,7 @@
       "color": "#e53935",
       "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/our-land-2025/",
-      "letterboxd_rating": 3.48
+      "letterboxd_rating": 3.47
     },
     {
       "id": "the-devil-wears-prada-2",
@@ -60,29 +52,6 @@
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=414735",
       "poster_url": "https://images.savoysystems.co.uk/PXL/414734.jpg",
       "showtimes": {
-        "2026-05-12": [
-          {
-            "time": "14:45",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_505596.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": true,
-            "tags": [
-              "Closed Captions"
-            ]
-          },
-          {
-            "time": "17:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_505595.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": false
-          },
-          {
-            "time": "20:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_505594.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": false
-          }
-        ],
         "2026-05-13": [
           {
             "time": "17:15",
@@ -234,37 +203,6 @@
       "letterboxd_rating": 3.29
     },
     {
-      "id": "primavera",
-      "title": "Primavera",
-      "rating": "15",
-      "runtime": 111,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Damiano Michieletto",
-      "cast": "Michele Riondino, Andrea Pennacchi, Stefano Accorsi, Miko Jarry, Alessandro Bressanello",
-      "country": "Italy",
-      "description": "In his feature debut, world-renowned opera director Damiano Michieletto gives a fictionalised account of Antonio Vivaldi's time as resident composer and violin teacher at the Ospedale della Piet� in Venice, where he composed most of his major works, told from the perspective of one of his most talen...",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=475573",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/475580.jpg",
-      "showtimes": {
-        "2026-05-12": [
-          {
-            "time": "17:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_505618.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false,
-            "tags": [
-              "Subtitled"
-            ]
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/primavera-2025/",
-      "letterboxd_rating": 3.55
-    },
-    {
       "id": "kokuho",
       "title": "Kokuho",
       "rating": "15",
@@ -278,17 +216,6 @@
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=505578",
       "poster_url": "https://images.savoysystems.co.uk/PXL/505575.jpg",
       "showtimes": {
-        "2026-05-12": [
-          {
-            "time": "19:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_505620.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false,
-            "tags": [
-              "Subtitled"
-            ]
-          }
-        ],
         "2026-05-13": [
           {
             "time": "19:15",
@@ -312,8 +239,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/kokuho/",
       "letterboxd_rating": 3.84
     },
@@ -340,8 +267,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6"
+      "color": "#00897b",
+      "accent": "#4db6ac"
     },
     {
       "id": "top-gun",
@@ -372,8 +299,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/top-gun/",
       "letterboxd_rating": 3.51
     },
@@ -469,8 +396,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/orphan-2025/",
       "letterboxd_rating": 3.16
     },
@@ -566,8 +493,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.54
     },
@@ -597,8 +524,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1"
+      "color": "#6a1b9a",
+      "accent": "#ba68c8"
     },
     {
       "id": "exhibition-on-screen-frida-kahlo",
@@ -623,8 +550,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae"
+      "color": "#00838f",
+      "accent": "#4dd0e1"
     },
     {
       "id": "star-wars-the-mandalorian-and-grogu",
@@ -749,8 +676,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/star-wars-the-mandalorian-and-grogu/",
       "letterboxd_rating": null
     },
@@ -777,8 +704,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "the-metropolitan-opera-el-ltimo-sue-o-de-frida-y-diego",
@@ -803,8 +730,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#ad1457",
+      "accent": "#f06292"
     },
     {
       "id": "journey-through-irish-cinema-john-ford-dreaming-the-quiet-man-plus-q-a",
@@ -829,8 +756,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "journey-through-irish-cinema-anne-devlin",
@@ -855,8 +782,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "london-festival-of-architecture-affr-present-renovation",
@@ -881,8 +808,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "journey-through-irish-cinema-rocky-roads-to-dublin",
@@ -894,7 +821,7 @@
       "director": "Peter Lennon",
       "cast": "Sean O'Faolian, Peter Lennon, Conor Cruise O'Brien, John Huston",
       "country": "Ireland",
-      "description": "&quot;Ireland�s cinematic history is one of resilience, poetry, and profound transformation. Journey Through Irish Cinema explores the themes of identity, land, and language that have shaped its national output. Featuring a mix of landmark dramas, biting comedies, and breathtaking documentaries, this sea...",
+      "description": "&quot;Ireland?s cinematic history is one of resilience, poetry, and profound transformation. Journey Through Irish Cinema explores the themes of identity, land, and language that have shaped its national output. Featuring a mix of landmark dramas, biting comedies, and breathtaking documentaries, this sea...",
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=494063",
       "poster_url": "https://images.savoysystems.co.uk/PXL/494062.JPG",
       "showtimes": {
@@ -907,8 +834,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#558b2f",
+      "accent": "#9ccc65"
     },
     {
       "id": "london-festival-of-architecture-lfa-affr-present-living-together-the-story-of-de-warren",
@@ -933,8 +860,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6"
+      "color": "#9f2121",
+      "accent": "#d36868"
     },
     {
       "id": "national-theatre-live-les-liaisons-dangereuses",
@@ -959,8 +886,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453"
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "david-attenborough-a-life-on-our-planet-michael-palin-live-intro",
@@ -985,8 +912,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "journey-through-irish-cinema-my-left-foot-the-story-of-christy-brown-q-a-with-jim-sheridan",
@@ -1011,8 +938,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#9f2190",
+      "accent": "#d368c6"
     },
     {
       "id": "journey-through-irish-cinema-michael-collins",
@@ -1024,7 +951,7 @@
       "director": "Neil Jordan",
       "cast": "Liam Neeson, Julia Roberts, Aidan Quinn",
       "country": "Ireland",
-      "description": "Ireland�s cinematic history is one of resilience, poetry, and profound transformation. Journey Through Irish Cinema explores the themes of identity, land, and language that have shaped its national output. Featuring a mix of landmark dramas, biting comedies, and breathtaking documentaries, this seas...",
+      "description": "Ireland?s cinematic history is one of resilience, poetry, and profound transformation. Journey Through Irish Cinema explores the themes of identity, land, and language that have shaped its national output. Featuring a mix of landmark dramas, biting comedies, and breathtaking documentaries, this seas...",
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=494035",
       "poster_url": "https://images.savoysystems.co.uk/PXL/494034.jpg",
       "showtimes": {
@@ -1037,8 +964,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "journey-through-irish-cinema-kings",
@@ -1050,7 +977,7 @@
       "director": "Tom Collins",
       "cast": "Colm Meaney, Donal O'Kelly, Brendan Conroy, Donncha Crowley, Barry Barnes, Sean O'Tarpaigh, Peader O'Treasaigh, Sean O'Meallaigh",
       "country": "Ireland",
-      "description": "Ireland�s cinematic history is one of resilience, poetry, and profound transformation. Journey Through Irish Cinema explores the themes of identity, land, and language that have shaped its national output. Featuring a mix of landmark dramas, biting comedies, and breathtaking documentaries, this seas...",
+      "description": "Ireland?s cinematic history is one of resilience, poetry, and profound transformation. Journey Through Irish Cinema explores the themes of identity, land, and language that have shaped its national output. Featuring a mix of landmark dramas, biting comedies, and breathtaking documentaries, this seas...",
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=494057",
       "poster_url": "https://images.savoysystems.co.uk/PXL/494050.jpg",
       "showtimes": {
@@ -1063,8 +990,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3"
+      "color": "#975e1a",
+      "accent": "#d49953"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-12T20:33:19.647701+00:00",
+  "scraped_at": "2026-05-13T04:03:32.342178+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -12,6 +12,32 @@
       "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=133637",
       "poster_url": "https://images.savoysystems.co.uk/TAL/165159.jpg",
       "showtimes": {
+        "2026-05-12": [
+          {
+            "time": "13:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_168031.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "15:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_168030.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "18:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_168028.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_168034.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
         "2026-05-13": [
           {
             "time": "13:00",
@@ -885,7 +911,7 @@
       "color": "#0277bd",
       "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/departures-2025/",
-      "letterboxd_rating": 3.33
+      "letterboxd_rating": 3.34
     },
     {
       "id": "moss-freud-191103",
