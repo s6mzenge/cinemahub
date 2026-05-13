@@ -1,39 +1,7 @@
 {
-  "scraped_at": "2026-05-13T17:35:57.615136+00:00",
+  "scraped_at": "2026-05-13T18:05:38.567550+00:00",
   "source": "riocinema.org.uk",
   "films": [
-    {
-      "id": "fantasy-of-deer-warrior",
-      "title": "Fantasy of Deer Warrior",
-      "rating": "TBC",
-      "runtime": 90,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "RIO FOREVER: QUEER EAST PRESENTS: THE FANTASY OF DEER WARRIOR Actors dress up as animals in this inventive Taiwanese curiosity from 1961, in which the happy lives of the forest animals are shaken when a pack of wolves suddenly attacks. Amidst this threat, the Sika Deer is busy fighting with the Elk ...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2384027",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2384026.png",
-      "showtimes": {
-        "2026-05-13": [
-          {
-            "time": "18:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2391961.TcsSection_936",
-            "screen": "S1",
-            "hoh": false,
-            "tags": [
-              "Rio Forever"
-            ]
-          }
-        ]
-      },
-      "season_tags": [
-        "Rio Forever"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60"
-    },
     {
       "id": "the-devil-wears-prada-2",
       "title": "The Devil Wears Prada 2",
@@ -49,6 +17,12 @@
       "poster_url": "https://images.savoysystems.co.uk/RIL/2494985.jpg",
       "showtimes": {
         "2026-05-13": [
+          {
+            "time": "18:10",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2535672.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          },
           {
             "time": "20:35",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2535670.TcsSection_936",
@@ -136,10 +110,42 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.28
+    },
+    {
+      "id": "fantasy-of-deer-warrior",
+      "title": "Fantasy of Deer Warrior",
+      "rating": "TBC",
+      "runtime": 90,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "RIO FOREVER: QUEER EAST PRESENTS: THE FANTASY OF DEER WARRIOR Actors dress up as animals in this inventive Taiwanese curiosity from 1961, in which the happy lives of the forest animals are shaken when a pack of wolves suddenly attacks. Amidst this threat, the Sika Deer is busy fighting with the Elk ...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2384027",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2384026.png",
+      "showtimes": {
+        "2026-05-13": [
+          {
+            "time": "18:30",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2391961.TcsSection_936",
+            "screen": "S1",
+            "hoh": false,
+            "tags": [
+              "Rio Forever"
+            ]
+          }
+        ]
+      },
+      "season_tags": [
+        "Rio Forever"
+      ],
+      "color": "#7c4dff",
+      "accent": "#b388ff"
     },
     {
       "id": "exit-8",
