@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-14T17:33:05.039424+00:00",
+  "scraped_at": "2026-05-14T18:03:19.611309+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -13,6 +13,27 @@
       "poster_url": "https://images.savoysystems.co.uk/TAL/165159.jpg",
       "showtimes": {
         "2026-05-14": [
+          {
+            "time": "12:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176985.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "15:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176988.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": true,
+            "tags": [
+              "CC"
+            ]
+          },
+          {
+            "time": "18:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176986.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
           {
             "time": "20:30",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176987.TcsSection_963",
@@ -497,7 +518,7 @@
       "color": "#7c4dff",
       "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/queer-as-punk/",
-      "letterboxd_rating": 3.64
+      "letterboxd_rating": 3.63
     },
     {
       "id": "adult-only-shrek-184757",
@@ -675,7 +696,7 @@
       "color": "#00838f",
       "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/queer-as-punk/",
-      "letterboxd_rating": 3.64
+      "letterboxd_rating": 3.63
     },
     {
       "id": "mother-mary-175362",
