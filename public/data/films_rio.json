@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-14T19:05:33.839063+00:00",
+  "scraped_at": "2026-05-14T19:35:36.000976+00:00",
   "source": "riocinema.org.uk",
   "films": [
     {
@@ -17,12 +17,6 @@
       "poster_url": "https://images.savoysystems.co.uk/RIL/2494985.jpg",
       "showtimes": {
         "2026-05-14": [
-          {
-            "time": "17:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2535691.TcsSection_936",
-            "screen": "S1",
-            "hoh": false
-          },
           {
             "time": "20:50",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2535695.TcsSection_1299",
@@ -102,104 +96,6 @@
       "letterboxd_rating": 3.28
     },
     {
-      "id": "rose-of-nevada",
-      "title": "Rose of Nevada",
-      "rating": "15",
-      "runtime": 114,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Mark Jenkin",
-      "cast": "Callum Turner, George MacKay",
-      "country": "UK",
-      "description": "When a fishing boat, the Rose  of  Nevada , lost with all hands 30 years ago, mysteriously reappears in the old harbour of a forgotten Cornish village, for those who remember, it’s surely a sign. The boat must go out to sea again and maybe then the luck of the devastated village will turn. Young fat...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2494999",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2494997.jpg",
-      "showtimes": {
-        "2026-05-14": [
-          {
-            "time": "18:15",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2535693.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-05-16": [
-          {
-            "time": "15:00",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2554731.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-05-17": [
-          {
-            "time": "20:25",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2554974.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-05-18": [
-          {
-            "time": "18:10",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2554755.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-05-21": [
-          {
-            "time": "20:50",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2554795.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ]
-      },
-      "season_tags": [
-        "Main Features"
-      ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
-      "letterboxd_rating": 3.44
-    },
-    {
-      "id": "beneath-the-valley-of-the-ultra-vixens",
-      "title": "Beneath the Valley of the Ultra Vixens",
-      "rating": "18",
-      "runtime": 93,
-      "genre": "Other",
-      "year": "1979",
-      "director": "Russ Meyer",
-      "cast": null,
-      "country": "USA",
-      "description": "Pink Palace presents a glorious night of Russ Meyer sexploitation trash, his last sex satire the joyfully offensive Beneath The Valley Of The Ultra Vixens, written by none other than Roger Ebert! This bad taste epic was a regular late show feature at the Rio in the early 80’s.  Made in 1979 and star...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2510914",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2510913.jpg",
-      "showtimes": {
-        "2026-05-14": [
-          {
-            "time": "19:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2510921.TcsSection_94575",
-            "screen": "Ludski",
-            "hoh": false,
-            "tags": [
-              "Pink Palace",
-              "NoAds"
-            ]
-          }
-        ]
-      },
-      "season_tags": [
-        "Pink Palace"
-      ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/beneath-the-valley-of-the-ultra-vixens/",
-      "letterboxd_rating": 2.94
-    },
-    {
       "id": "romer-a",
       "title": "Romería",
       "rating": "15",
@@ -262,8 +158,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/romeria/",
       "letterboxd_rating": 3.59
     },
@@ -368,10 +264,65 @@
       "season_tags": [
         "Hard of Hearing"
       ],
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.54
+    },
+    {
+      "id": "rose-of-nevada",
+      "title": "Rose of Nevada",
+      "rating": "15",
+      "runtime": 114,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Mark Jenkin",
+      "cast": "Callum Turner, George MacKay",
+      "country": "UK",
+      "description": "When a fishing boat, the Rose  of  Nevada , lost with all hands 30 years ago, mysteriously reappears in the old harbour of a forgotten Cornish village, for those who remember, it’s surely a sign. The boat must go out to sea again and maybe then the luck of the devastated village will turn. Young fat...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2494999",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2494997.jpg",
+      "showtimes": {
+        "2026-05-16": [
+          {
+            "time": "15:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2554731.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ],
+        "2026-05-17": [
+          {
+            "time": "20:25",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2554974.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ],
+        "2026-05-18": [
+          {
+            "time": "18:10",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2554755.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ],
+        "2026-05-21": [
+          {
+            "time": "20:50",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2554795.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ]
+      },
+      "season_tags": [
+        "Main Features"
+      ],
+      "color": "#00897b",
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
+      "letterboxd_rating": 3.44
     },
     {
       "id": "flower-girl",
@@ -403,8 +354,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/flower-girl-2025/",
       "letterboxd_rating": 3.07
     },
@@ -437,8 +388,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/burning-an-illusion/",
       "letterboxd_rating": 3.67
     },
@@ -471,8 +422,8 @@
       "season_tags": [
         "Carers &amp; Babies"
       ],
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
+      "color": "#c62828",
+      "accent": "#ef5350"
     },
     {
       "id": "hard-truths",
@@ -504,8 +455,8 @@
       "season_tags": [
         "Classic Matinee"
       ],
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/hard-truths-2024/",
       "letterboxd_rating": 3.82
     },
@@ -538,8 +489,8 @@
       "season_tags": [
         "Rio Forever"
       ],
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/punch-drunk-love/",
       "letterboxd_rating": 3.96
     },
@@ -574,8 +525,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "orphan",
@@ -622,8 +573,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
       "letterboxd_url": "https://letterboxd.com/film/orphan-2025/",
       "letterboxd_rating": 3.16
     },
@@ -656,8 +607,8 @@
       "season_tags": [
         "Rio Forever"
       ],
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#ad1457",
+      "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/bound-2026/",
       "letterboxd_rating": null
     },
@@ -716,8 +667,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#37474f",
+      "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/northern-soul-still-burning/",
       "letterboxd_rating": null
     },
@@ -751,8 +702,8 @@
       "season_tags": [
         "Family Flicks"
       ],
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
+      "color": "#4e342e",
+      "accent": "#8d6e63",
       "letterboxd_url": "https://letterboxd.com/film/fantastic-mr-fox/",
       "letterboxd_rating": 4.3
     },
@@ -786,8 +737,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "pink-palace-4th-birthday-the-birdcage-in-conversation-dj-party",
@@ -821,8 +772,8 @@
         "Pink Palace",
         "Rio Forever"
       ],
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#558b2f",
+      "accent": "#9ccc65"
     },
     {
       "id": "cazenove-ward-stories",
@@ -854,8 +805,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#3052a6",
-      "accent": "#849cd6"
+      "color": "#9f2121",
+      "accent": "#d36868"
     },
     {
       "id": "ashes-and-diamonds",
@@ -887,8 +838,8 @@
       "season_tags": [
         "Rio Forever"
       ],
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#3052a6",
+      "accent": "#849cd6",
       "letterboxd_url": "https://letterboxd.com/film/ashes-and-diamonds/",
       "letterboxd_rating": 4.06
     },
@@ -923,8 +874,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#9f2190",
-      "accent": "#d368c6",
+      "color": "#63971a",
+      "accent": "#9ed453",
       "letterboxd_url": "https://letterboxd.com/film/paradise-2025/",
       "letterboxd_rating": 3.65
     },
@@ -958,8 +909,8 @@
       "season_tags": [
         "Pink Palace"
       ],
-      "color": "#30a692",
-      "accent": "#84d6c8",
+      "color": "#9f2190",
+      "accent": "#d368c6",
       "letterboxd_url": "https://letterboxd.com/film/decoder/",
       "letterboxd_rating": 3.51
     },
@@ -1037,8 +988,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#975e1a",
-      "accent": "#d49953",
+      "color": "#30a692",
+      "accent": "#84d6c8",
       "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
       "letterboxd_rating": null
     },
@@ -1071,8 +1022,8 @@
       "season_tags": [
         "Rio Forever"
       ],
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#975e1a",
+      "accent": "#d49953",
       "letterboxd_url": "https://letterboxd.com/film/appropriate-behavior/",
       "letterboxd_rating": 3.39
     },
@@ -1107,8 +1058,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#35a630",
-      "accent": "#88d684",
+      "color": "#41219f",
+      "accent": "#8368d3",
       "letterboxd_url": "https://letterboxd.com/film/dear-mr-manley/",
       "letterboxd_rating": null
     },
@@ -1143,8 +1094,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#971a44",
-      "accent": "#d4537e"
+      "color": "#35a630",
+      "accent": "#88d684"
     },
     {
       "id": "women-from-hackneys-history",
@@ -1177,8 +1128,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#971a44",
+      "accent": "#d4537e"
     },
     {
       "id": "big-mama-thornton-i-cant-be-anyone-but-me",
@@ -1211,8 +1162,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#9ca630",
-      "accent": "#cfd684",
+      "color": "#21709f",
+      "accent": "#68abd3",
       "letterboxd_url": "https://letterboxd.com/film/big-mama-thornton-i-cant-be-anyone-but-me/",
       "letterboxd_rating": null
     },
@@ -1246,8 +1197,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#9ca630",
+      "accent": "#cfd684"
     },
     {
       "id": "faces-places",
@@ -1280,8 +1231,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#219f60",
-      "accent": "#68d39d",
+      "color": "#7d1a97",
+      "accent": "#b953d4",
       "letterboxd_url": "https://letterboxd.com/film/faces-places/",
       "letterboxd_rating": 4.15
     },
@@ -1315,8 +1266,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#a64830",
-      "accent": "#d69584",
+      "color": "#219f60",
+      "accent": "#68d39d",
       "letterboxd_url": "https://letterboxd.com/film/the-beaches-of-agnes/",
       "letterboxd_rating": 4.34
     },
@@ -1351,8 +1302,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "jaws",
@@ -1384,8 +1335,8 @@
       "season_tags": [
         "Classic Matinee"
       ],
-      "color": "#519f21",
-      "accent": "#90d368",
+      "color": "#1a2597",
+      "accent": "#535ed4",
       "letterboxd_url": "https://letterboxd.com/film/jaws/",
       "letterboxd_rating": 3.92
     },
@@ -1420,8 +1371,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "spy-kids",
@@ -1453,8 +1404,8 @@
       "season_tags": [
         "Family Flicks"
       ],
-      "color": "#1a9297",
-      "accent": "#53cfd4",
+      "color": "#a6307e",
+      "accent": "#d684bb",
       "letterboxd_url": "https://letterboxd.com/film/spy-kids/",
       "letterboxd_rating": 3.06
     },
@@ -1496,8 +1447,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#9f8021",
-      "accent": "#d3b868",
+      "color": "#1a9297",
+      "accent": "#53cfd4",
       "letterboxd_url": "https://letterboxd.com/film/my-chemical-romance-life-on-the-murder-scene/",
       "letterboxd_rating": 4.45
     },
@@ -1531,8 +1482,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#6530a6",
-      "accent": "#a984d6"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "the-full-monty",
@@ -1564,8 +1515,8 @@
       "season_tags": [
         "Classic Matinee"
       ],
-      "color": "#1a972f",
-      "accent": "#53d468",
+      "color": "#6530a6",
+      "accent": "#a984d6",
       "letterboxd_url": "https://letterboxd.com/film/the-full-monty/",
       "letterboxd_rating": 3.73
     },
@@ -1599,8 +1550,8 @@
       "season_tags": [
         "Pink Palace"
       ],
-      "color": "#9f2132",
-      "accent": "#d36876",
+      "color": "#1a972f",
+      "accent": "#53d468",
       "letterboxd_url": "https://letterboxd.com/film/saturday-night-at-the-baths/",
       "letterboxd_rating": 3.22
     }
