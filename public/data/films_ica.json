@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-14T12:35:18.926654+00:00",
+  "scraped_at": "2026-05-14T13:05:02.584446+00:00",
   "source": "ica.art",
   "films": [
     {
@@ -19,7 +19,7 @@
           {
             "time": "13:40",
             "booking_url": "https://www.ica.art/book/718401",
-            "screen": "Cinema 1",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -1923,6 +1923,31 @@
       "letterboxd_rating": 3.52
     },
     {
+      "id": "an-evening-with-butch-bastard",
+      "title": "Screening + PerformanceAn Evening with Butch Bastard",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "country": null,
+      "director": null,
+      "description": "Songwriter, multi-instrumentalist, and producer Butch Bastard joins us for an evening of live music and cinema, one rich in counterculture mythologies, weathered landscapes and drifting americana. Featuring a live performance from Butch Bastard alongside a screening ofCandy Mountain, the cult 1987 road movie by Robert Frank and Rudy Wurlitzer.",
+      "film_url": "https://www.ica.art/films/an-evening-with-butch-bastard",
+      "poster_url": "https://www.ica.art/media/13230.jpeg",
+      "showtimes": {
+        "2026-06-05": [
+          {
+            "time": "19:00",
+            "booking_url": "https://www.ica.art/book/727801",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#9f219f",
+      "accent": "#d368d3"
+    },
+    {
       "id": "mares-nest-q-a",
       "title": "Mare's Nest + Q&A",
       "rating": "TBC",
@@ -1944,8 +1969,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3",
+      "color": "#30a683",
+      "accent": "#84d6be",
       "letterboxd_url": "https://letterboxd.com/film/mares-nest-2025/",
       "letterboxd_rating": 3.12
     },
@@ -1995,8 +2020,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be",
+      "color": "#974e1a",
+      "accent": "#d48853",
       "letterboxd_url": "https://letterboxd.com/film/mares-nest-2025/",
       "letterboxd_rating": 3.12
     },
@@ -2022,8 +2047,8 @@
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853"
+      "color": "#31219f",
+      "accent": "#7568d3"
     }
   ]
 }
