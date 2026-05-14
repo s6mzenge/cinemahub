@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-14T14:32:45.228129+00:00",
+  "scraped_at": "2026-05-14T15:02:10.499639+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
@@ -659,6 +659,14 @@
           {
             "time": "12:00",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625913",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-22": [
+          {
+            "time": "15:05",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626723",
             "screen": null,
             "hoh": false
           }
@@ -2735,50 +2743,6 @@
       "letterboxd_rating": 3.86
     },
     {
-      "id": "amadeus-directors-cut",
-      "title": "Amadeus: Director's Cut",
-      "rating": "PG",
-      "runtime": 180,
-      "genre": "Drama",
-      "year": "1984",
-      "country": null,
-      "director": "Milos Forman",
-      "cast": "F. Murray Abraham, Tom Hulce, Elizabeth Berridge",
-      "description": "Wolfgang Amadeus Mozart (Tom Hulce) is a remarkably talented young Viennese composer who unwittingly finds a fierce rival in the disciplined and determined Antonio Salieri (F. Murray Abraham). Resenting Mozart for both his hedonistic lifestyle and his undeniable talent, the highly religious Salieri is gradually consumed by his jealousy and becomes obsessed with Mozart's downfall, leading to a devious scheme that has dire consequences for both men.",
-      "film_url": "https://princecharlescinema.com/film/2186340/amadeus-directors-cut",
-      "poster_url": "https://cdn.taposapp.com/poster/600x900/Ksy4J2tT923la8jhV8zCw7cqALOdoFqe2SPjeIFYAy8.jpg",
-      "showtimes": {
-        "2026-05-22": [
-          {
-            "time": "14:20",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625956",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-02": [
-          {
-            "time": "20:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626048",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-29": [
-          {
-            "time": "20:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626460",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#1a971f",
-      "accent": "#53d458",
-      "letterboxd_url": "https://letterboxd.com/film/amadeus/",
-      "letterboxd_rating": 4.36
-    },
-    {
       "id": "the-young-girls-of-rochefort-les-demoiselles-de-rochefort",
       "title": "The Young Girls of Rochefort [Les demoiselles de Rochefort]",
       "rating": "U",
@@ -2795,14 +2759,17 @@
         "2026-05-22": [
           {
             "time": "14:45",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31625958",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626721",
             "screen": null,
-            "hoh": false
+            "hoh": false,
+            "tags": [
+              "Unreserved"
+            ]
           }
         ]
       },
-      "color": "#9f2142",
-      "accent": "#d36884",
+      "color": "#1a971f",
+      "accent": "#53d458",
       "letterboxd_url": "https://letterboxd.com/film/the-young-girls-of-rochefort/",
       "letterboxd_rating": 4.32
     },
@@ -2832,8 +2799,8 @@
           }
         ]
       },
-      "color": "#3070a6",
-      "accent": "#84b1d6"
+      "color": "#9f2142",
+      "accent": "#d36884"
     },
     {
       "id": "crash-1996",
@@ -2858,8 +2825,8 @@
           }
         ]
       },
-      "color": "#83971a",
-      "accent": "#bfd453",
+      "color": "#3070a6",
+      "accent": "#84b1d6",
       "letterboxd_url": "https://letterboxd.com/film/crash/",
       "letterboxd_rating": 3.65
     },
@@ -2886,8 +2853,8 @@
           }
         ]
       },
-      "color": "#8f219f",
-      "accent": "#c568d3",
+      "color": "#83971a",
+      "accent": "#bfd453",
       "letterboxd_url": "https://letterboxd.com/film/titane/",
       "letterboxd_rating": 3.55
     },
@@ -2914,8 +2881,8 @@
           }
         ]
       },
-      "color": "#30a674",
-      "accent": "#84d6b3",
+      "color": "#8f219f",
+      "accent": "#c568d3",
       "letterboxd_url": "https://letterboxd.com/film/the-princess-bride/",
       "letterboxd_rating": 4.1
     },
@@ -2945,8 +2912,8 @@
           }
         ]
       },
-      "color": "#973e1a",
-      "accent": "#d47853",
+      "color": "#30a674",
+      "accent": "#84d6b3",
       "letterboxd_url": "https://letterboxd.com/film/et-the-extra-terrestrial/",
       "letterboxd_rating": 3.84
     },
@@ -2973,8 +2940,8 @@
           }
         ]
       },
-      "color": "#21229f",
-      "accent": "#6869d3",
+      "color": "#973e1a",
+      "accent": "#d47853",
       "letterboxd_url": "https://letterboxd.com/film/rope/",
       "letterboxd_rating": 4.14
     },
@@ -3026,8 +2993,8 @@
           }
         ]
       },
-      "color": "#53a630",
-      "accent": "#9cd684",
+      "color": "#21229f",
+      "accent": "#6869d3",
       "letterboxd_url": "https://letterboxd.com/film/blue-velvet/",
       "letterboxd_rating": 4.06
     },
@@ -3054,8 +3021,8 @@
           }
         ]
       },
-      "color": "#971a64",
-      "accent": "#d4539f",
+      "color": "#53a630",
+      "accent": "#9cd684",
       "letterboxd_url": "https://letterboxd.com/film/monsieur-hulots-holiday/",
       "letterboxd_rating": 3.73
     },
@@ -3098,8 +3065,8 @@
           }
         ]
       },
-      "color": "#21909f",
-      "accent": "#68c6d3",
+      "color": "#971a64",
+      "accent": "#d4539f",
       "letterboxd_url": "https://letterboxd.com/film/the-worst-person-in-the-world/",
       "letterboxd_rating": 4.08
     },
@@ -3162,8 +3129,8 @@
           }
         ]
       },
-      "color": "#a69130",
-      "accent": "#d6c884",
+      "color": "#21909f",
+      "accent": "#68c6d3",
       "letterboxd_url": "https://letterboxd.com/film/there-will-be-blood/",
       "letterboxd_rating": 4.46
     },
@@ -3190,8 +3157,8 @@
           }
         ]
       },
-      "color": "#5d1a97",
-      "accent": "#9853d4",
+      "color": "#a69130",
+      "accent": "#d6c884",
       "letterboxd_url": "https://letterboxd.com/film/treasure-planet/",
       "letterboxd_rating": 3.93
     },
@@ -3218,8 +3185,8 @@
           }
         ]
       },
-      "color": "#219f40",
-      "accent": "#68d382",
+      "color": "#5d1a97",
+      "accent": "#9853d4",
       "letterboxd_url": "https://letterboxd.com/film/12-angry-men/",
       "letterboxd_rating": 4.63
     },
@@ -3271,8 +3238,8 @@
           }
         ]
       },
-      "color": "#a63035",
-      "accent": "#d68488",
+      "color": "#219f40",
+      "accent": "#68d382",
       "letterboxd_url": "https://letterboxd.com/film/the-matrix/",
       "letterboxd_rating": 4.18
     },
@@ -3299,8 +3266,8 @@
           }
         ]
       },
-      "color": "#1a4597",
-      "accent": "#537fd4",
+      "color": "#a63035",
+      "accent": "#d68488",
       "letterboxd_url": "https://letterboxd.com/film/bill-teds-excellent-adventure/",
       "letterboxd_rating": 3.68
     },
@@ -3385,8 +3352,8 @@
           }
         ]
       },
-      "color": "#719f21",
-      "accent": "#acd368",
+      "color": "#1a4597",
+      "accent": "#537fd4",
       "letterboxd_url": "https://letterboxd.com/film/barry-lyndon/",
       "letterboxd_rating": 4.41
     },
@@ -3460,8 +3427,8 @@
           }
         ]
       },
-      "color": "#a6309d",
-      "accent": "#d684d0"
+      "color": "#719f21",
+      "accent": "#acd368"
     },
     {
       "id": "robin-hood-1973",
@@ -3486,8 +3453,8 @@
           }
         ]
       },
-      "color": "#1a977c",
-      "accent": "#53d4b8",
+      "color": "#a6309d",
+      "accent": "#d684d0",
       "letterboxd_url": "https://letterboxd.com/film/robin-hood/",
       "letterboxd_rating": 3.77
     },
@@ -3517,8 +3484,8 @@
           }
         ]
       },
-      "color": "#9f5f21",
-      "accent": "#d39d68",
+      "color": "#1a977c",
+      "accent": "#53d4b8",
       "letterboxd_url": "https://letterboxd.com/film/little-amelie-or-the-character-of-rain/",
       "letterboxd_rating": 4.11
     },
@@ -3553,8 +3520,8 @@
           }
         ]
       },
-      "color": "#4730a6",
-      "accent": "#9484d6",
+      "color": "#9f5f21",
+      "accent": "#d39d68",
       "letterboxd_url": "https://letterboxd.com/film/mean-streets/",
       "letterboxd_rating": 3.72
     },
@@ -3589,8 +3556,8 @@
           }
         ]
       },
-      "color": "#26971a",
-      "accent": "#5fd453",
+      "color": "#4730a6",
+      "accent": "#9484d6",
       "letterboxd_url": "https://letterboxd.com/film/raging-bull/",
       "letterboxd_rating": 4.21
     },
@@ -3642,8 +3609,8 @@
           }
         ]
       },
-      "color": "#9f2152",
-      "accent": "#d36891",
+      "color": "#26971a",
+      "accent": "#5fd453",
       "letterboxd_url": "https://letterboxd.com/film/goodfellas/",
       "letterboxd_rating": 4.46
     },
@@ -3686,8 +3653,8 @@
           }
         ]
       },
-      "color": "#307fa6",
-      "accent": "#84bbd6",
+      "color": "#9f2152",
+      "accent": "#d36891",
       "letterboxd_url": "https://letterboxd.com/film/the-fall/",
       "letterboxd_rating": 4.25
     },
@@ -3714,8 +3681,8 @@
           }
         ]
       },
-      "color": "#93971a",
-      "accent": "#cfd453",
+      "color": "#307fa6",
+      "accent": "#84bbd6",
       "letterboxd_url": "https://letterboxd.com/film/escape-from-new-york/",
       "letterboxd_rating": 3.63
     },
@@ -3756,8 +3723,8 @@
           }
         ]
       },
-      "color": "#7f219f",
-      "accent": "#b768d3",
+      "color": "#93971a",
+      "accent": "#cfd453",
       "letterboxd_url": "https://letterboxd.com/film/the-master-2012/",
       "letterboxd_rating": 3.98
     },
@@ -3798,8 +3765,8 @@
           }
         ]
       },
-      "color": "#30a665",
-      "accent": "#84d6a9",
+      "color": "#7f219f",
+      "accent": "#b768d3",
       "letterboxd_url": "https://letterboxd.com/film/when-harry-met-sally/",
       "letterboxd_rating": 4.07
     },
@@ -3829,8 +3796,8 @@
           }
         ]
       },
-      "color": "#972e1a",
-      "accent": "#d46753",
+      "color": "#30a665",
+      "accent": "#84d6a9",
       "letterboxd_url": "https://letterboxd.com/film/bull-durham/",
       "letterboxd_rating": 3.52
     },
@@ -3865,8 +3832,8 @@
           }
         ]
       },
-      "color": "#21329f",
-      "accent": "#6877d3"
+      "color": "#972e1a",
+      "accent": "#d46753"
     },
     {
       "id": "the-red-shoes",
@@ -3905,8 +3872,8 @@
           }
         ]
       },
-      "color": "#62a630",
-      "accent": "#a7d684",
+      "color": "#21329f",
+      "accent": "#6877d3",
       "letterboxd_url": "https://letterboxd.com/film/the-red-shoes/",
       "letterboxd_rating": 4.41
     },
@@ -3947,8 +3914,8 @@
           }
         ]
       },
-      "color": "#971a74",
-      "accent": "#d453af",
+      "color": "#62a630",
+      "accent": "#a7d684",
       "letterboxd_url": "https://letterboxd.com/film/dead-poets-society/",
       "letterboxd_rating": 4.35
     },
@@ -3983,8 +3950,8 @@
           }
         ]
       },
-      "color": "#219f9e",
-      "accent": "#68d3d2",
+      "color": "#971a74",
+      "accent": "#d453af",
       "letterboxd_url": "https://letterboxd.com/film/cure/",
       "letterboxd_rating": 4.28
     },
@@ -4014,8 +3981,8 @@
           }
         ]
       },
-      "color": "#a68230",
-      "accent": "#d6bd84",
+      "color": "#219f9e",
+      "accent": "#68d3d2",
       "letterboxd_url": "https://letterboxd.com/film/good-will-hunting/",
       "letterboxd_rating": 4.38
     },
@@ -4042,8 +4009,8 @@
           }
         ]
       },
-      "color": "#4d1a97",
-      "accent": "#8753d4",
+      "color": "#a68230",
+      "accent": "#d6bd84",
       "letterboxd_url": "https://letterboxd.com/film/american-movie/",
       "letterboxd_rating": 4.2
     },
@@ -4081,8 +4048,8 @@
           }
         ]
       },
-      "color": "#219f30",
-      "accent": "#68d375",
+      "color": "#4d1a97",
+      "accent": "#8753d4",
       "letterboxd_url": "https://letterboxd.com/film/no-country-for-old-men/",
       "letterboxd_rating": 4.31
     },
@@ -4125,8 +4092,8 @@
           }
         ]
       },
-      "color": "#a63044",
-      "accent": "#d68493",
+      "color": "#219f30",
+      "accent": "#68d375",
       "letterboxd_url": "https://letterboxd.com/film/sentimental-value-2025/",
       "letterboxd_rating": 4.15
     },
@@ -4156,8 +4123,8 @@
           }
         ]
       },
-      "color": "#1a5597",
-      "accent": "#538fd4",
+      "color": "#a63044",
+      "accent": "#d68493",
       "letterboxd_url": "https://letterboxd.com/film/enter-the-dragon/",
       "letterboxd_rating": 3.83
     },
@@ -4217,8 +4184,8 @@
           }
         ]
       },
-      "color": "#819f21",
-      "accent": "#b9d368",
+      "color": "#1a5597",
+      "accent": "#538fd4",
       "letterboxd_url": "https://letterboxd.com/film/chungking-express/",
       "letterboxd_rating": 4.28
     },
@@ -4284,8 +4251,8 @@
           }
         ]
       },
-      "color": "#9f30a6",
-      "accent": "#d184d6",
+      "color": "#819f21",
+      "accent": "#b9d368",
       "letterboxd_url": "https://letterboxd.com/film/paprika-2006/",
       "letterboxd_rating": 4.1
     },
@@ -4316,8 +4283,8 @@
           }
         ]
       },
-      "color": "#1a976c",
-      "accent": "#53d4a7",
+      "color": "#9f30a6",
+      "accent": "#d184d6",
       "letterboxd_url": "https://letterboxd.com/film/vampires-kiss/",
       "letterboxd_rating": 3.42
     },
@@ -4391,8 +4358,8 @@
           }
         ]
       },
-      "color": "#9f4f21",
-      "accent": "#d38f68",
+      "color": "#1a976c",
+      "accent": "#53d4a7",
       "letterboxd_url": "https://letterboxd.com/film/amelie/",
       "letterboxd_rating": 4.19
     },
@@ -4435,8 +4402,8 @@
           }
         ]
       },
-      "color": "#3830a6",
-      "accent": "#8a84d6",
+      "color": "#9f4f21",
+      "accent": "#d38f68",
       "letterboxd_url": "https://letterboxd.com/film/the-color-of-pomegranates/",
       "letterboxd_rating": 4.13
     },
@@ -4471,8 +4438,8 @@
           }
         ]
       },
-      "color": "#36971a",
-      "accent": "#6fd453",
+      "color": "#3830a6",
+      "accent": "#8a84d6",
       "letterboxd_url": "https://letterboxd.com/film/fargo/",
       "letterboxd_rating": 4.15
     },
@@ -4507,8 +4474,8 @@
           }
         ]
       },
-      "color": "#9f2162",
-      "accent": "#d3689f",
+      "color": "#36971a",
+      "accent": "#6fd453",
       "letterboxd_url": "https://letterboxd.com/film/taipei-story/",
       "letterboxd_rating": 4.05
     },
@@ -4551,8 +4518,8 @@
           }
         ]
       },
-      "color": "#308ea6",
-      "accent": "#84c6d6",
+      "color": "#9f2162",
+      "accent": "#d3689f",
       "letterboxd_url": "https://letterboxd.com/film/bullet-in-the-head/",
       "letterboxd_rating": 4.05
     },
@@ -4582,8 +4549,8 @@
           }
         ]
       },
-      "color": "#978b1a",
-      "accent": "#d4c853",
+      "color": "#308ea6",
+      "accent": "#84c6d6",
       "letterboxd_url": "https://letterboxd.com/film/mars-attacks/",
       "letterboxd_rating": 3.26
     },
@@ -4629,8 +4596,8 @@
           }
         ]
       },
-      "color": "#6f219f",
-      "accent": "#aa68d3",
+      "color": "#978b1a",
+      "accent": "#d4c853",
       "letterboxd_url": "https://letterboxd.com/film/the-room/",
       "letterboxd_rating": 2.61
     },
@@ -4660,8 +4627,8 @@
           }
         ]
       },
-      "color": "#30a656",
-      "accent": "#84d69e",
+      "color": "#6f219f",
+      "accent": "#aa68d3",
       "letterboxd_url": "https://letterboxd.com/film/romeo-juliet-1996/",
       "letterboxd_rating": 3.46
     },
@@ -4688,8 +4655,8 @@
           }
         ]
       },
-      "color": "#971e1a",
-      "accent": "#d45753",
+      "color": "#30a656",
+      "accent": "#84d69e",
       "letterboxd_url": "https://letterboxd.com/film/the-neverending-story/",
       "letterboxd_rating": 3.62
     },
@@ -4719,8 +4686,8 @@
           }
         ]
       },
-      "color": "#21429f",
-      "accent": "#6884d3",
+      "color": "#971e1a",
+      "accent": "#d45753",
       "letterboxd_url": "https://letterboxd.com/film/munich/",
       "letterboxd_rating": 3.81
     },
@@ -4761,8 +4728,8 @@
           }
         ]
       },
-      "color": "#71a630",
-      "accent": "#b1d684",
+      "color": "#21429f",
+      "accent": "#6884d3",
       "letterboxd_url": "https://letterboxd.com/film/stop-making-sense/",
       "letterboxd_rating": 4.68
     },
@@ -4789,8 +4756,8 @@
           }
         ]
       },
-      "color": "#971a84",
-      "accent": "#d453c0",
+      "color": "#71a630",
+      "accent": "#b1d684",
       "letterboxd_url": "https://letterboxd.com/film/california-split/",
       "letterboxd_rating": 3.92
     },
@@ -4825,8 +4792,8 @@
           }
         ]
       },
-      "color": "#219f8e",
-      "accent": "#68d3c4"
+      "color": "#971a84",
+      "accent": "#d453c0"
     },
     {
       "id": "who-framed-roger-rabbit",
@@ -4851,8 +4818,8 @@
           }
         ]
       },
-      "color": "#a67330",
-      "accent": "#d6b384",
+      "color": "#219f8e",
+      "accent": "#68d3c4",
       "letterboxd_url": "https://letterboxd.com/film/who-framed-roger-rabbit/",
       "letterboxd_rating": 3.97
     },
@@ -4887,8 +4854,8 @@
           }
         ]
       },
-      "color": "#3d1a97",
-      "accent": "#7753d4",
+      "color": "#a67330",
+      "accent": "#d6b384",
       "letterboxd_url": "https://letterboxd.com/film/goodbye-dragon-inn/",
       "letterboxd_rating": 3.97
     },
@@ -4923,8 +4890,8 @@
           }
         ]
       },
-      "color": "#239f21",
-      "accent": "#6ad368",
+      "color": "#3d1a97",
+      "accent": "#7753d4",
       "letterboxd_url": "https://letterboxd.com/film/fantastic-planet/",
       "letterboxd_rating": 4.02
     },
@@ -4967,8 +4934,8 @@
           }
         ]
       },
-      "color": "#a63054",
-      "accent": "#d6849d",
+      "color": "#239f21",
+      "accent": "#6ad368",
       "letterboxd_url": "https://letterboxd.com/film/perfect-days-2023/",
       "letterboxd_rating": 4.31
     },
@@ -4995,8 +4962,8 @@
           }
         ]
       },
-      "color": "#1a6597",
-      "accent": "#53a0d4",
+      "color": "#a63054",
+      "accent": "#d6849d",
       "letterboxd_url": "https://letterboxd.com/film/persepolis/",
       "letterboxd_rating": 4.21
     },
@@ -5026,8 +4993,8 @@
           }
         ]
       },
-      "color": "#919f21",
-      "accent": "#c7d368",
+      "color": "#1a6597",
+      "accent": "#53a0d4",
       "letterboxd_url": "https://letterboxd.com/film/klute/",
       "letterboxd_rating": 3.86
     },
@@ -5057,8 +5024,8 @@
           }
         ]
       },
-      "color": "#9030a6",
-      "accent": "#c784d6",
+      "color": "#919f21",
+      "accent": "#c7d368",
       "letterboxd_url": "https://letterboxd.com/film/flirting-with-disaster/",
       "letterboxd_rating": 3.42
     },
@@ -5110,8 +5077,8 @@
           }
         ]
       },
-      "color": "#1a975c",
-      "accent": "#53d497",
+      "color": "#9030a6",
+      "accent": "#c784d6",
       "letterboxd_url": "https://letterboxd.com/film/casablanca/",
       "letterboxd_rating": 4.28
     },
@@ -5138,8 +5105,8 @@
           }
         ]
       },
-      "color": "#9f3f21",
-      "accent": "#d38268",
+      "color": "#1a975c",
+      "accent": "#53d497",
       "letterboxd_url": "https://letterboxd.com/film/men-in-black/",
       "letterboxd_rating": 3.7
     },
@@ -5213,8 +5180,8 @@
           }
         ]
       },
-      "color": "#3036a6",
-      "accent": "#8489d6",
+      "color": "#9f3f21",
+      "accent": "#d38268",
       "letterboxd_url": "https://letterboxd.com/film/mulholland-dr/",
       "letterboxd_rating": null
     },
@@ -5241,8 +5208,8 @@
           }
         ]
       },
-      "color": "#46971a",
-      "accent": "#80d453",
+      "color": "#3036a6",
+      "accent": "#8489d6",
       "letterboxd_url": "https://letterboxd.com/film/the-parallax-view/",
       "letterboxd_rating": 3.84
     },
@@ -5272,10 +5239,38 @@
           }
         ]
       },
-      "color": "#9f2172",
-      "accent": "#d368ac",
+      "color": "#46971a",
+      "accent": "#80d453",
       "letterboxd_url": "https://letterboxd.com/film/the-angelic-conversation/",
       "letterboxd_rating": 3.43
+    },
+    {
+      "id": "amadeus-directors-cut",
+      "title": "Amadeus: Director's Cut",
+      "rating": "PG",
+      "runtime": 180,
+      "genre": "Drama",
+      "year": "1984",
+      "country": null,
+      "director": "Milos Forman",
+      "cast": "F. Murray Abraham, Tom Hulce, Elizabeth Berridge",
+      "description": "Wolfgang Amadeus Mozart (Tom Hulce) is a remarkably talented young Viennese composer who unwittingly finds a fierce rival in the disciplined and determined Antonio Salieri (F. Murray Abraham). Resenting Mozart for both his hedonistic lifestyle and his undeniable talent, the highly religious Salieri is gradually consumed by his jealousy and becomes obsessed with Mozart's downfall, leading to a devious scheme that has dire consequences for both men.",
+      "film_url": "https://princecharlescinema.com/film/2186340/amadeus-directors-cut",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/Ksy4J2tT923la8jhV8zCw7cqALOdoFqe2SPjeIFYAy8.jpg",
+      "showtimes": {
+        "2026-06-02": [
+          {
+            "time": "20:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626048",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#9f2172",
+      "accent": "#d368ac",
+      "letterboxd_url": "https://letterboxd.com/film/amadeus/",
+      "letterboxd_rating": 4.36
     },
     {
       "id": "hackers",
@@ -6097,6 +6092,17 @@
             ]
           }
         ],
+        "2026-06-29": [
+          {
+            "time": "20:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626724",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
         "2026-07-22": [
           {
             "time": "14:05",
@@ -6132,14 +6138,6 @@
           {
             "time": "12:45",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626073",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-18": [
-          {
-            "time": "12:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626597",
             "screen": null,
             "hoh": false
           }
