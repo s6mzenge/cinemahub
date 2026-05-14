@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-13T20:33:17.133382+00:00",
+  "scraped_at": "2026-05-14T04:03:19.651471+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -12,6 +12,14 @@
       "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=133637",
       "poster_url": "https://images.savoysystems.co.uk/TAL/165159.jpg",
       "showtimes": {
+        "2026-05-13": [
+          {
+            "time": "18:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_176979.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
         "2026-05-14": [
           {
             "time": "12:45",
@@ -257,6 +265,31 @@
       "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.28
+    },
+    {
+      "id": "short-com-laugh-out-proud-190085",
+      "title": "Short Com: Laugh Out Proud",
+      "rating": "18",
+      "runtime": 90,
+      "genre": "Comedy Night",
+      "description": "Short Com Presents Laugh Out Proud.  This is a collection of comedy short films made by LGBTQ+ and female filmmakers.  50% of all ticket sales will be donated to Queerwell.  Queerwell are the national community led mental health charity for people aged 18 and over who identify as LGBTQ+. They offer …",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=190085",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/190316.jpg",
+      "showtimes": {
+        "2026-05-13": [
+          {
+            "time": "20:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_190086.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Comedy Night"
+            ]
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090"
     },
     {
       "id": "the-christophers-182518",
@@ -518,7 +551,7 @@
       "color": "#7c4dff",
       "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/queer-as-punk/",
-      "letterboxd_rating": 3.63
+      "letterboxd_rating": 3.64
     },
     {
       "id": "adult-only-shrek-184757",
@@ -542,8 +575,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090"
+      "color": "#00897b",
+      "accent": "#4db6ac"
     },
     {
       "id": "shrek-25th-anniversary-46576",
@@ -567,8 +600,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/shrek/",
       "letterboxd_rating": 4.12
     },
@@ -594,8 +627,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6"
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
     },
     {
       "id": "sunset-boulevard-intro-from-norma-desperate-16200",
@@ -646,8 +679,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "color": "#c62828",
+      "accent": "#ef5350"
     },
     {
       "id": "world-goth-day-double-bill-goth-drag-intro-181510",
@@ -671,8 +704,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350"
+      "color": "#00838f",
+      "accent": "#4dd0e1"
     },
     {
       "id": "queer-as-punk-director-q-a-200430",
@@ -680,9 +713,9 @@
       "rating": "15",
       "runtime": 110,
       "genre": "New Release",
-      "description": "This screening will be followed by a pre-recorded Q&A with director Yihwen Chen.  Being LGBT is criminalised in Muslim-majority Malaysia. Trans man Faris and his punk band still travel the country playing gigs and protesting on the streets. A documentary portrait of courageous people, humorous frien…",
+      "description": "This screening will be followed by a pre-recorded Q&A between Tom from The Oozes & director Yihwen Chen.  Being LGBT is criminalised in Muslim-majority Malaysia. Trans man Faris and his punk band still travel the country playing gigs and protesting on the streets. A documentary portrait of courageou…",
       "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=200430",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/200432.jpg",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/201794.jpg",
       "showtimes": {
         "2026-05-23": [
           {
@@ -693,10 +726,10 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/queer-as-punk/",
-      "letterboxd_rating": 3.63
+      "letterboxd_rating": 3.64
     },
     {
       "id": "mother-mary-175362",
@@ -752,8 +785,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
       "letterboxd_url": "https://letterboxd.com/film/mother-mary-2026/",
       "letterboxd_rating": 2.99
     },
@@ -776,8 +809,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "queercore-our-heroes-bleed-glitter-183841",
@@ -801,8 +834,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "departures-174589",
@@ -837,10 +870,10 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/departures-2025/",
-      "letterboxd_rating": 3.33
+      "letterboxd_rating": 3.34
     },
     {
       "id": "moss-freud-191103",
@@ -891,8 +924,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/moss-freud/",
       "letterboxd_rating": null
     },
@@ -931,10 +964,37 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/fairyland/",
       "letterboxd_rating": 3.51
+    },
+    {
+      "id": "legally-blonde-intro-25th-anniversary-191096",
+      "title": "Legally Blonde + Intro (25th Anniversary)",
+      "rating": "15",
+      "runtime": 96,
+      "genre": "Anniversary Screening",
+      "description": "This screening will be introduced by Femmi.  Fashionable sorority queen Elle Woods has it all, but, she wants nothing more than to be Mrs. Warner Huntington III. But he dumps her before heading to Harvard Law School. Elle rallies all of her resources and gets into Harvard, determined to win him back…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=191096",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/200405.jpg",
+      "showtimes": {
+        "2026-05-29": [
+          {
+            "time": "20:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_191097.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Anniversary Screening"
+            ]
+          }
+        ]
+      },
+      "color": "#3052a6",
+      "accent": "#849cd6",
+      "letterboxd_url": "https://letterboxd.com/film/legally-blonde/",
+      "letterboxd_rating": 3.83
     },
     {
       "id": "portrait-of-a-lady-on-fire-4k-reissue-13469",
@@ -969,8 +1029,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "tethered-wings-200417",
@@ -997,10 +1057,35 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6",
+      "color": "#9f2190",
+      "accent": "#d368c6",
       "letterboxd_url": "https://letterboxd.com/film/tethered-wings/",
       "letterboxd_rating": 3.13
+    },
+    {
+      "id": "fairyland-q-a-with-scoot-mcnairy-201799",
+      "title": "Fairyland + Q&A with Scoot McNairy",
+      "rating": "18",
+      "runtime": 140,
+      "genre": "Pride Month",
+      "description": "This screening will be followed by a pre-recorded Q&A with lead actor Scoot McNairy.  A father-daughter relationship evolves through an era of bohemian decadence in 1970s San Francisco to the sober and heartbreaking era of the AIDS crisis in the 1980s.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=201799",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/201796.jpg",
+      "showtimes": {
+        "2026-06-02": [
+          {
+            "time": "20:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_201800.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Pride Month"
+            ]
+          }
+        ]
+      },
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "madfabulous-164269",
@@ -1046,10 +1131,42 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#975e1a",
+      "accent": "#d49953",
       "letterboxd_url": "https://letterboxd.com/film/madfabulous/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "enzo-200444",
+      "title": "Enzo",
+      "rating": "15",
+      "runtime": 102,
+      "genre": "New Release",
+      "description": "Enzo, 16, defies his bourgeois family's expectations by starting a masonry apprenticeship, a path far removed from the prestigious life they had envisioned for him. In their chic villa in the sun-drenched South of France, tensions simmer as relentless questions and pressures weigh on Enzo's future a…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=200444",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/201790.jpg",
+      "showtimes": {
+        "2026-06-05": [
+          {
+            "time": "15:20",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_200450.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-06-06": [
+          {
+            "time": "13:35",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_200445.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#41219f",
+      "accent": "#8368d3",
+      "letterboxd_url": "https://letterboxd.com/film/enzo-2025/",
+      "letterboxd_rating": 3.07
     },
     {
       "id": "spectrum-201006",
@@ -1073,8 +1190,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6",
+      "color": "#35a630",
+      "accent": "#88d684",
       "letterboxd_url": "https://letterboxd.com/film/spectrum/",
       "letterboxd_rating": null
     },
@@ -1100,8 +1217,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#971a44",
+      "accent": "#d4537e"
     },
     {
       "id": "pink-narcissus-4k-restoration-extended-intro-167369",
@@ -1125,10 +1242,35 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953",
+      "color": "#21709f",
+      "accent": "#68abd3",
       "letterboxd_url": "https://letterboxd.com/film/pink-narcissus/",
       "letterboxd_rating": 3.64
+    },
+    {
+      "id": "dog-friendly-legendary-children-all-of-them-queer-q-a-201786",
+      "title": "Dog-Friendly: Legendary Children (All of Them Queer) + Q&A",
+      "rating": "15",
+      "runtime": 90,
+      "genre": "Pride Month",
+      "description": "To coincide with the Dog Pride event in Bermondsey Square, we are hosting a dog-friendly screening of the documentary Legendary Children followed by a Q&A with director, Rob Falconer, and some of the cast.  Titled after Holly Johnson's iconic anthem, Legendary Children (All Of Them Queer) follows ma…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=201786",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/201783.jpg",
+      "showtimes": {
+        "2026-06-13": [
+          {
+            "time": "16:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_201787.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Pride Month"
+            ]
+          }
+        ]
+      },
+      "color": "#9ca630",
+      "accent": "#cfd684"
     },
     {
       "id": "exclusive-preview-she-s-the-he-director-q-a-201630",
@@ -1152,8 +1294,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#7d1a97",
+      "accent": "#b953d4",
       "letterboxd_url": "https://letterboxd.com/film/shes-the-he/",
       "letterboxd_rating": 3.63
     },
@@ -1179,8 +1321,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "cactus-pears-director-q-a-183173",
@@ -1204,8 +1346,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e",
+      "color": "#a64830",
+      "accent": "#d69584",
       "letterboxd_url": "https://letterboxd.com/film/cactus-pears/",
       "letterboxd_rating": 3.87
     },
@@ -1221,7 +1363,7 @@
       "showtimes": {
         "2026-06-18": [
           {
-            "time": "20:15",
+            "time": "20:45",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_186849.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false,
@@ -1231,8 +1373,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#1a2597",
+      "accent": "#535ed4"
     },
     {
       "id": "the-powerpuff-girls-movie-intro-from-nyongbella-147482",
@@ -1256,8 +1398,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684",
+      "color": "#519f21",
+      "accent": "#90d368",
       "letterboxd_url": "https://letterboxd.com/film/the-powerpuff-girls-movie/",
       "letterboxd_rating": 3.49
     },
@@ -1283,8 +1425,33 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#a6307e",
+      "accent": "#d684bb"
+    },
+    {
+      "id": "her-will-be-done-english-premiere-201623",
+      "title": "Her Will Be Done (English Premiere)",
+      "rating": "18",
+      "runtime": 105,
+      "genre": "Soho Horror Pride",
+      "description": "Official Selection of Soho Horror Pride Film Festival 2026. Day passes available to purchases on our Members page.  This screening will be introduced by the short film Stay With Me (10 mins).  Her Will Be Done (95 mins)  Nawojka, 20, dreams of escaping her harsh life working at the family farm. Unde…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=201623",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/201810.jpg",
+      "showtimes": {
+        "2026-06-27": [
+          {
+            "time": "11:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_201821.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Soho Horror Pride"
+            ]
+          }
+        ]
+      },
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     },
     {
       "id": "double-bill-q-a-two-black-boys-in-paradise-a-friend-of-dorothy-201036",
@@ -1308,8 +1475,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "no-man-s-land-with-rosie-turner-q-a-197644",
@@ -1333,8 +1500,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584"
+      "color": "#6530a6",
+      "accent": "#a984d6"
     },
     {
       "id": "brat-summer-charli-xcx-marathon-166971",
@@ -1358,8 +1525,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#1a972f",
+      "accent": "#53d468"
     }
   ]
 }
