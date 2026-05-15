@@ -1,41 +1,7 @@
 {
-  "scraped_at": "2026-05-15T15:05:44.085483+00:00",
+  "scraped_at": "2026-05-15T15:34:52.880732+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
-    {
-      "id": "top-gun",
-      "title": "Top Gun",
-      "rating": "12A",
-      "runtime": 110,
-      "genre": "Other",
-      "year": "1986",
-      "director": "Tony Scott",
-      "cast": "Tom Cruise, Kelly McGillis, Val Kilmer, Anthony Edwards, Tom Skerritt, Michael Ironside",
-      "country": "US",
-      "description": "For Lieutenant Pete 'Maverick' Mitchell and his friend and co-pilot Nick 'Goose' Bradshaw, being accepted into an elite training school for fighter pilots is a dream come true. But a tragedy, as well as personal demons, will threaten Pete's dreams of becoming an ace pilot.",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=476288",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/476287.jpg",
-      "showtimes": {
-        "2026-05-15": [
-          {
-            "time": "06:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_476289.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": false
-          },
-          {
-            "time": "20:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_515254.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/top-gun/",
-      "letterboxd_rating": 3.51
-    },
     {
       "id": "orphan",
       "title": "Orphan",
@@ -128,8 +94,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/orphan-2025/",
       "letterboxd_rating": 3.16
     },
@@ -225,8 +191,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.54
     },
@@ -352,10 +318,38 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.27
+    },
+    {
+      "id": "top-gun",
+      "title": "Top Gun",
+      "rating": "12A",
+      "runtime": 110,
+      "genre": "Other",
+      "year": "1986",
+      "director": "Tony Scott",
+      "cast": "Tom Cruise, Kelly McGillis, Val Kilmer, Anthony Edwards, Tom Skerritt, Michael Ironside",
+      "country": "US",
+      "description": "For Lieutenant Pete 'Maverick' Mitchell and his friend and co-pilot Nick 'Goose' Bradshaw, being accepted into an elite training school for fighter pilots is a dream come true. But a tragedy, as well as personal demons, will threaten Pete's dreams of becoming an ace pilot.",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=476288",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/476287.jpg",
+      "showtimes": {
+        "2026-05-15": [
+          {
+            "time": "20:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_515254.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#00897b",
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/top-gun/",
+      "letterboxd_rating": 3.51
     },
     {
       "id": "steve-pemberton-presents-theatre-of-blood",
