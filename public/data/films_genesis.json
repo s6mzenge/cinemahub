@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-17T14:34:24.737574+00:00",
+  "scraped_at": "2026-05-17T15:05:18.151576+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -265,12 +265,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/109481_0.jpg",
       "showtimes": {
         "2026-05-17": [
-          {
-            "time": "15:20",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11051",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "20:40",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11059",
@@ -539,50 +533,6 @@
       "letterboxd_rating": 3.72
     },
     {
-      "id": "the-sheep-detectives",
-      "title": "The Sheep Detectives",
-      "rating": "PG",
-      "runtime": 105,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "Every night a shepherd reads aloud a murder mystery, pretending his sheep can understand. When he is found dead, the sheep realize at once that it was a murder and think they know everything about how to go about solving it.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/106218",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/106218_0.jpg",
-      "showtimes": {
-        "2026-05-17": [
-          {
-            "time": "15:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11048",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-19": [
-          {
-            "time": "15:35",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11025",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-21": [
-          {
-            "time": "15:35",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11027",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
-      "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
-      "letterboxd_rating": 3.83
-    },
-    {
       "id": "how-to-have-sex-birthday-season",
       "title": "How to Have Sex- Birthday Season",
       "rating": "15",
@@ -605,8 +555,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae"
+      "color": "#00838f",
+      "accent": "#4dd0e1"
     },
     {
       "id": "watership-down-birthday-season",
@@ -631,8 +581,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "tokyo-story-birthday-season",
@@ -657,8 +607,44 @@
           }
         ]
       },
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
+    },
+    {
+      "id": "the-sheep-detectives",
+      "title": "The Sheep Detectives",
+      "rating": "PG",
+      "runtime": 105,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Every night a shepherd reads aloud a murder mystery, pretending his sheep can understand. When he is found dead, the sheep realize at once that it was a murder and think they know everything about how to go about solving it.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/106218",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/106218_0.jpg",
+      "showtimes": {
+        "2026-05-19": [
+          {
+            "time": "15:35",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11025",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-21": [
+          {
+            "time": "15:35",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11027",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
       "color": "#ad1457",
-      "accent": "#f06292"
+      "accent": "#f06292",
+      "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
+      "letterboxd_rating": 3.83
     },
     {
       "id": "weekend-birthday-season",
