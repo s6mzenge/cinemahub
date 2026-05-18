@@ -1,35 +1,7 @@
 {
-  "scraped_at": "2026-05-17T20:34:06.432170+00:00",
+  "scraped_at": "2026-05-18T04:04:37.790062+00:00",
   "source": "ica.art",
   "films": [
-    {
-      "id": "johanna-darc-of-mongolia",
-      "title": "Johanna d'Arc of Mongolia + conversation",
-      "rating": "TBC",
-      "runtime": 165,
-      "genre": "Other",
-      "year": "1989",
-      "country": "Mongolia/Germany/France",
-      "director": "Ulrike Ottinger",
-      "description": "Kidnapped on a journey through Mongolia, two European anthropologists become embroiled in a lesbian love triangle with their captor, the Mongolian warrior princess Ulan Iga. This resplendently eccentric film by lesbian cinema pioneer Ulrike Ottinger provides a subtly satirical commentary on the ethnographic tourist gaze.",
-      "film_url": "https://www.ica.art/films/johanna-darc-of-mongolia",
-      "poster_url": "https://www.ica.art/media/13012.jpg",
-      "showtimes": {
-        "2026-05-17": [
-          {
-            "time": "13:30",
-            "booking_url": "https://www.ica.art/book/713801",
-            "screen": "Cinema 1",
-            "hoh": false,
-            "tags": [
-              "Queer East Festival 2026"
-            ]
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60"
-    },
     {
       "id": "rose-of-nevada",
       "title": "Rose of Nevada",
@@ -43,14 +15,6 @@
       "film_url": "https://www.ica.art/films/rose-of-nevada",
       "poster_url": "https://www.ica.art/media/13048.jpg",
       "showtimes": {
-        "2026-05-17": [
-          {
-            "time": "13:40",
-            "booking_url": "https://www.ica.art/book/718401",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-05-19": [
           {
             "time": "12:40",
@@ -68,65 +32,41 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.44
     },
     {
-      "id": "phantoms-of-july",
-      "title": "Phantoms of July",
+      "id": "dracula",
+      "title": "Dracula",
       "rating": "TBC",
-      "runtime": 90,
+      "runtime": 170,
       "genre": "Other",
       "year": "2025",
-      "country": "Germany",
-      "director": "Julian Radlmaier",
-      "description": "Julian Radlmaier's fifth feature brings together an East German waitress with a broken heart and an Iranian YouTuber with a broken arm, in an enigmatic comedy about the ghosts of the past and the mysteries of the present.",
-      "film_url": "https://www.ica.art/films/phantoms-of-july",
-      "poster_url": "https://www.ica.art/media/12962.jpg",
+      "country": "Romania / Austria / Luxembourg",
+      "director": "Radu Jude",
+      "description": "Radu Jude resurrects Dracula, dissecting modern Europe and its myths through a collision of AI mischief and pornographic absurdity.",
+      "film_url": "https://www.ica.art/films/dracula",
+      "poster_url": "https://www.ica.art/media/12963.jpg",
       "showtimes": {
-        "2026-05-17": [
-          {
-            "time": "16:00",
-            "booking_url": "https://www.ica.art/book/704801",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "Off-Circuit",
-              "Uk Premiere"
-            ]
-          }
-        ],
         "2026-05-19": [
           {
-            "time": "16:30",
-            "booking_url": "https://www.ica.art/book/704801",
+            "time": "13:00",
+            "booking_url": "https://www.ica.art/book/704601",
             "screen": "Cinema 2",
             "hoh": false,
             "tags": [
               "Off-Circuit",
-              "Uk Premiere"
-            ]
-          }
-        ],
-        "2026-05-21": [
-          {
-            "time": "16:30",
-            "booking_url": "https://www.ica.art/book/704801",
-            "screen": "Cinema 2",
-            "hoh": false,
-            "tags": [
-              "Off-Circuit",
-              "Uk Premiere"
+              "London Premiere"
             ]
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/phantoms-of-july/",
-      "letterboxd_rating": 3.49
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/dracula/",
+      "letterboxd_rating": 3.55
     },
     {
       "id": "kokuho",
@@ -141,14 +81,6 @@
       "film_url": "https://www.ica.art/films/kokuho",
       "poster_url": "https://www.ica.art/media/13148.jpg",
       "showtimes": {
-        "2026-05-17": [
-          {
-            "time": "17:00",
-            "booking_url": "https://www.ica.art/book/721801",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-05-19": [
           {
             "time": "15:00",
@@ -174,10 +106,53 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/kokuho/",
       "letterboxd_rating": 3.84
+    },
+    {
+      "id": "phantoms-of-july",
+      "title": "Phantoms of July",
+      "rating": "TBC",
+      "runtime": 90,
+      "genre": "Other",
+      "year": "2025",
+      "country": "Germany",
+      "director": "Julian Radlmaier",
+      "description": "Julian Radlmaier's fifth feature brings together an East German waitress with a broken heart and an Iranian YouTuber with a broken arm, in an enigmatic comedy about the ghosts of the past and the mysteries of the present.",
+      "film_url": "https://www.ica.art/films/phantoms-of-july",
+      "poster_url": "https://www.ica.art/media/12962.jpg",
+      "showtimes": {
+        "2026-05-19": [
+          {
+            "time": "16:30",
+            "booking_url": "https://www.ica.art/book/704801",
+            "screen": "Cinema 2",
+            "hoh": false,
+            "tags": [
+              "Off-Circuit",
+              "Uk Premiere"
+            ]
+          }
+        ],
+        "2026-05-21": [
+          {
+            "time": "16:30",
+            "booking_url": "https://www.ica.art/book/704801",
+            "screen": "Cinema 2",
+            "hoh": false,
+            "tags": [
+              "Off-Circuit",
+              "Uk Premiere"
+            ]
+          }
+        ]
+      },
+      "color": "#00897b",
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/phantoms-of-july/",
+      "letterboxd_rating": 3.49
     },
     {
       "id": "queer-as-punk",
@@ -192,14 +167,6 @@
       "film_url": "https://www.ica.art/films/queer-as-punk",
       "poster_url": "https://www.ica.art/media/13209.png",
       "showtimes": {
-        "2026-05-17": [
-          {
-            "time": "18:00",
-            "booking_url": "https://www.ica.art/book/725001",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-05-19": [
           {
             "time": "18:30",
@@ -234,146 +201,7 @@
       "color": "#1565c0",
       "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/queer-as-punk/",
-      "letterboxd_rating": 3.64
-    },
-    {
-      "id": "romeria",
-      "title": "Romería",
-      "rating": "TBC",
-      "runtime": 112,
-      "genre": "Other",
-      "year": "2025",
-      "country": "Spain/Germany",
-      "director": "Carla Simón",
-      "description": "18-year-old Marina, travels to Vigo on the Galician coast in the early 2000s, in search of information about her biological father, seeking his death certificate to apply for a scholarship to film school. Reconnecting with her paternal side of the family, she discovers a huge amount of shame and secrecy around his death.",
-      "film_url": "https://www.ica.art/films/romeria",
-      "poster_url": "https://www.ica.art/media/13070.jpg",
-      "showtimes": {
-        "2026-05-17": [
-          {
-            "time": "20:00",
-            "booking_url": "https://www.ica.art/book/718801",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-19": [
-          {
-            "time": "20:30",
-            "booking_url": "https://www.ica.art/book/718801",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ],
-        "2026-05-20": [
-          {
-            "time": "16:00",
-            "booking_url": "https://www.ica.art/book/718801",
-            "screen": "Cinema 1",
-            "hoh": false
-          }
-        ],
-        "2026-05-21": [
-          {
-            "time": "14:00",
-            "booking_url": "https://www.ica.art/book/718801",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/romeria/",
-      "letterboxd_rating": 3.59
-    },
-    {
-      "id": "reflection-in-a-dead-diamond",
-      "title": "Reflection in a Dead Diamond",
-      "rating": "TBC",
-      "runtime": 87,
-      "genre": "Other",
-      "year": "2025",
-      "country": "Belgium/Luxembourg/Italy/France",
-      "director": "Hélène Cattet and Bruno Forzani",
-      "description": "When the mysterious woman in the room next door disappears, a debonair 70-year-old ex-spy living in a luxury hotel on the Côte d’Azur is confronted by the demons of a lurid past in which moviemaking, memories and madness collide.",
-      "film_url": "https://www.ica.art/films/reflection-in-a-dead-diamond",
-      "poster_url": "https://www.ica.art/media/13212.jpg",
-      "showtimes": {
-        "2026-05-17": [
-          {
-            "time": "20:30",
-            "booking_url": "https://www.ica.art/book/725601",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-19": [
-          {
-            "time": "20:45",
-            "booking_url": "https://www.ica.art/book/725601",
-            "screen": "Cinema 1",
-            "hoh": false
-          }
-        ],
-        "2026-05-20": [
-          {
-            "time": "20:45",
-            "booking_url": "https://www.ica.art/book/725601",
-            "screen": "Cinema 1",
-            "hoh": false
-          }
-        ],
-        "2026-05-21": [
-          {
-            "time": "13:15",
-            "booking_url": "https://www.ica.art/book/725601",
-            "screen": "Cinema 1",
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://www.ica.art/book/725601",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/reflection-in-a-dead-diamond/",
-      "letterboxd_rating": 3.59
-    },
-    {
-      "id": "dracula",
-      "title": "Dracula",
-      "rating": "TBC",
-      "runtime": 170,
-      "genre": "Other",
-      "year": "2025",
-      "country": "Romania / Austria / Luxembourg",
-      "director": "Radu Jude",
-      "description": "Radu Jude resurrects Dracula, dissecting modern Europe and its myths through a collision of AI mischief and pornographic absurdity.",
-      "film_url": "https://www.ica.art/films/dracula",
-      "poster_url": "https://www.ica.art/media/12963.jpg",
-      "showtimes": {
-        "2026-05-19": [
-          {
-            "time": "13:00",
-            "booking_url": "https://www.ica.art/book/704601",
-            "screen": "Cinema 2",
-            "hoh": false,
-            "tags": [
-              "Off-Circuit",
-              "London Premiere"
-            ]
-          }
-        ]
-      },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/dracula/",
-      "letterboxd_rating": 3.55
+      "letterboxd_rating": 3.65
     },
     {
       "id": "we-are-making-a-film-about-mark-fisher",
@@ -417,10 +245,102 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/we-are-making-a-film-about-mark-fisher/",
       "letterboxd_rating": 2.9
+    },
+    {
+      "id": "romeria",
+      "title": "Romería",
+      "rating": "TBC",
+      "runtime": 112,
+      "genre": "Other",
+      "year": "2025",
+      "country": "Spain/Germany",
+      "director": "Carla Simón",
+      "description": "18-year-old Marina, travels to Vigo on the Galician coast in the early 2000s, in search of information about her biological father, seeking his death certificate to apply for a scholarship to film school. Reconnecting with her paternal side of the family, she discovers a huge amount of shame and secrecy around his death.",
+      "film_url": "https://www.ica.art/films/romeria",
+      "poster_url": "https://www.ica.art/media/13070.jpg",
+      "showtimes": {
+        "2026-05-19": [
+          {
+            "time": "20:30",
+            "booking_url": "https://www.ica.art/book/718801",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ],
+        "2026-05-20": [
+          {
+            "time": "16:00",
+            "booking_url": "https://www.ica.art/book/718801",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ],
+        "2026-05-21": [
+          {
+            "time": "14:00",
+            "booking_url": "https://www.ica.art/book/718801",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#c62828",
+      "accent": "#ef5350",
+      "letterboxd_url": "https://letterboxd.com/film/romeria/",
+      "letterboxd_rating": 3.59
+    },
+    {
+      "id": "reflection-in-a-dead-diamond",
+      "title": "Reflection in a Dead Diamond",
+      "rating": "TBC",
+      "runtime": 87,
+      "genre": "Other",
+      "year": "2025",
+      "country": "Belgium/Luxembourg/Italy/France",
+      "director": "Hélène Cattet and Bruno Forzani",
+      "description": "When the mysterious woman in the room next door disappears, a debonair 70-year-old ex-spy living in a luxury hotel on the Côte d’Azur is confronted by the demons of a lurid past in which moviemaking, memories and madness collide.",
+      "film_url": "https://www.ica.art/films/reflection-in-a-dead-diamond",
+      "poster_url": "https://www.ica.art/media/13212.jpg",
+      "showtimes": {
+        "2026-05-19": [
+          {
+            "time": "20:45",
+            "booking_url": "https://www.ica.art/book/725601",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ],
+        "2026-05-20": [
+          {
+            "time": "20:45",
+            "booking_url": "https://www.ica.art/book/725601",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ],
+        "2026-05-21": [
+          {
+            "time": "13:15",
+            "booking_url": "https://www.ica.art/book/725601",
+            "screen": "Cinema 1",
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://www.ica.art/book/725601",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/reflection-in-a-dead-diamond/",
+      "letterboxd_rating": 3.59
     },
     {
       "id": "miroirs-no-3",
@@ -444,8 +364,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/miroirs-no-3/",
       "letterboxd_rating": 3.48
     },
@@ -471,8 +391,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/wild-foxes/",
       "letterboxd_rating": 3.65
     },
@@ -501,8 +421,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "sun-ra-do-the-impossible",
@@ -526,8 +446,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#ad1457",
+      "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/sun-ra-do-the-impossible/",
       "letterboxd_rating": 3.56
     },
@@ -629,8 +549,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#37474f",
+      "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/eagles-of-the-republic/",
       "letterboxd_rating": 3.32
     },
@@ -720,8 +640,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
+      "color": "#4e342e",
+      "accent": "#8d6e63",
       "letterboxd_url": "https://letterboxd.com/film/tycoon-2026/",
       "letterboxd_rating": null
     },
@@ -787,8 +707,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
       "letterboxd_rating": 3.52
     },
@@ -817,8 +737,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/toscas-kiss/",
       "letterboxd_rating": 3.63
     },
@@ -847,8 +767,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/correspondences/",
       "letterboxd_rating": 3.53
     },
@@ -874,8 +794,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#3052a6",
+      "accent": "#849cd6",
       "letterboxd_url": "https://letterboxd.com/film/the-feeling-that-the-time-for-doing-something-has-passed/",
       "letterboxd_rating": 3.08
     },
@@ -904,8 +824,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "shasha-movies-phantom-beirut-a-few-moments-of-happiness",
@@ -929,8 +849,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#9f2190",
+      "accent": "#d368c6"
     },
     {
       "id": "the-magic-city-birmingham-according-to-sun-ra",
@@ -954,8 +874,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "rita-azevedo-gomes-danses-macabres-skeletons-and-other-fantasies",
@@ -982,8 +902,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#975e1a",
+      "accent": "#d49953",
       "letterboxd_url": "https://letterboxd.com/film/danses-macabres-skeletons-and-other-fantasies/",
       "letterboxd_rating": 3.47
     },
@@ -1049,8 +969,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684",
+      "color": "#41219f",
+      "accent": "#8368d3",
       "letterboxd_url": "https://letterboxd.com/film/leonora-in-the-morning-light/",
       "letterboxd_rating": 3.11
     },
@@ -1116,8 +1036,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e"
+      "color": "#35a630",
+      "accent": "#88d684"
     },
     {
       "id": "vhs-late-tapes-uniform",
@@ -1144,8 +1064,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3",
+      "color": "#971a44",
+      "accent": "#d4537e",
       "letterboxd_url": "https://letterboxd.com/film/uniform-2025/",
       "letterboxd_rating": null
     },
@@ -1174,8 +1094,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684",
+      "color": "#21709f",
+      "accent": "#68abd3",
       "letterboxd_url": "https://letterboxd.com/film/after-the-rehearsal/",
       "letterboxd_rating": 3.62
     },
@@ -1204,8 +1124,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4",
+      "color": "#9ca630",
+      "accent": "#cfd684",
       "letterboxd_url": "https://letterboxd.com/film/the-portuguese-woman/",
       "letterboxd_rating": 3.72
     },
@@ -1231,8 +1151,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#7d1a97",
+      "accent": "#b953d4"
     },
     {
       "id": "rita-azevedo-gomes-the-kegalstatt-trio",
@@ -1259,8 +1179,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "fuck-the-polis",
@@ -1360,8 +1280,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4",
+      "color": "#a64830",
+      "accent": "#d69584",
       "letterboxd_url": "https://letterboxd.com/film/fuck-the-polis/",
       "letterboxd_rating": 3.22
     },
@@ -1457,8 +1377,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368",
+      "color": "#1a2597",
+      "accent": "#535ed4",
       "letterboxd_url": "https://letterboxd.com/film/enzo-2025/",
       "letterboxd_rating": 3.07
     },
@@ -1530,8 +1450,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb",
+      "color": "#519f21",
+      "accent": "#90d368",
       "letterboxd_url": "https://letterboxd.com/film/the-misfits/",
       "letterboxd_rating": 3.7
     },
@@ -1597,8 +1517,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4",
+      "color": "#a6307e",
+      "accent": "#d684bb",
       "letterboxd_url": "https://letterboxd.com/film/koln-75/",
       "letterboxd_rating": 3.52
     },
@@ -1624,8 +1544,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868"
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     },
     {
       "id": "mares-nest-q-a",
@@ -1649,8 +1569,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6",
+      "color": "#9f8021",
+      "accent": "#d3b868",
       "letterboxd_url": "https://letterboxd.com/film/mares-nest-2025/",
       "letterboxd_rating": 3.12
     },
@@ -1700,8 +1620,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468",
+      "color": "#6530a6",
+      "accent": "#a984d6",
       "letterboxd_url": "https://letterboxd.com/film/mares-nest-2025/",
       "letterboxd_rating": 3.12
     },
@@ -1727,8 +1647,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#1a972f",
+      "accent": "#53d468"
     },
     {
       "id": "and-related-issues",
@@ -1752,8 +1672,35 @@
           }
         ]
       },
+      "color": "#9f2132",
+      "accent": "#d36876"
+    },
+    {
+      "id": "jukebox-film-club-after-dreaming",
+      "title": "After Dreaming",
+      "rating": "TBC",
+      "runtime": 105,
+      "genre": "Other",
+      "year": "2025",
+      "country": "Armenia/US/Mexico",
+      "director": null,
+      "description": "The Armenian Film Society London presents the UK premiere of Christine Haroutounian debut featureAfter Dreaming, that follows Claudette, the daughter of a mistakenly assassinated well-digger, and Atom, a tight-lipped soldier, as they drift across a country suspended in a state of limbo, neither at war nor at peace.",
+      "film_url": "https://www.ica.art/films/jukebox-film-club-after-dreaming",
+      "poster_url": "https://www.ica.art/media/13190.jpg",
+      "showtimes": {
+        "2026-06-16": [
+          {
+            "time": "18:30",
+            "booking_url": "https://www.ica.art/book/724001",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ]
+      },
       "color": "#3061a6",
-      "accent": "#84a6d6"
+      "accent": "#84a6d6",
+      "letterboxd_url": "https://letterboxd.com/film/after-dreaming/",
+      "letterboxd_rating": 3.1
     }
   ]
 }
