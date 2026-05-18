@@ -1,107 +1,7 @@
 {
-  "scraped_at": "2026-05-18T15:36:50.178861+00:00",
+  "scraped_at": "2026-05-18T16:06:24.690496+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "the-christophers",
-      "title": "The Christophers",
-      "rating": "15",
-      "runtime": 100,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Steven Soderbergh",
-      "cast": null,
-      "description": "A mainstay of the London art scene since his starry breakout in the creative explosion of the 1960’s, Julian Sklar (Ian…",
-      "film_url": "https://www.thegardencinema.co.uk/film/the-christophers/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5449196.jpg",
-      "showtimes": {
-        "2026-05-18": [
-          {
-            "time": "16:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452053.TcsSection_638",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452057.TcsSection_638",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ],
-        "2026-05-19": [
-          {
-            "time": "15:50",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452059.TcsSection_638",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          },
-          {
-            "time": "17:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452061.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ],
-        "2026-05-20": [
-          {
-            "time": "15:40",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452065.TcsSection_638",
-            "screen": null,
-            "hoh": true,
-            "tags": [
-              "HoH",
-              "AD"
-            ]
-          },
-          {
-            "time": "17:50",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452063.TcsSection_638",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ],
-        "2026-05-21": [
-          {
-            "time": "16:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452067.TcsSection_638",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          },
-          {
-            "time": "20:50",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5330434.TcsSection_971",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
-      "letterboxd_rating": 3.54
-    },
     {
       "id": "the-stranger",
       "title": "The Stranger",
@@ -140,8 +40,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
       "letterboxd_rating": 3.5
     },
@@ -178,8 +78,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/wake-in-fright/",
       "letterboxd_rating": 4.04
     },
@@ -204,15 +104,16 @@
             "hoh": false,
             "tags": [
               "Intro"
-            ]
+            ],
+            "sold_out": true
           }
         ]
       },
       "seasons": [
         "50 Years of Argentina on Film"
       ],
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/la-cienaga/",
       "letterboxd_rating": 3.87
     },
@@ -307,10 +208,101 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/orphan-2025/",
       "letterboxd_rating": 3.17
+    },
+    {
+      "id": "the-christophers",
+      "title": "The Christophers",
+      "rating": "15",
+      "runtime": 100,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Steven Soderbergh",
+      "cast": null,
+      "description": "A mainstay of the London art scene since his starry breakout in the creative explosion of the 1960’s, Julian Sklar (Ian…",
+      "film_url": "https://www.thegardencinema.co.uk/film/the-christophers/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5449196.jpg",
+      "showtimes": {
+        "2026-05-18": [
+          {
+            "time": "20:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452057.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ],
+        "2026-05-19": [
+          {
+            "time": "15:50",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452059.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          },
+          {
+            "time": "17:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452061.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ],
+        "2026-05-20": [
+          {
+            "time": "15:40",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452065.TcsSection_638",
+            "screen": null,
+            "hoh": true,
+            "tags": [
+              "HoH",
+              "AD"
+            ]
+          },
+          {
+            "time": "17:50",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452063.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ],
+        "2026-05-21": [
+          {
+            "time": "16:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452067.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          },
+          {
+            "time": "20:50",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5330434.TcsSection_971",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ]
+      },
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
+      "letterboxd_rating": 3.54
     },
     {
       "id": "kokuho",
@@ -351,6 +343,60 @@
           {
             "time": "17:00",
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5556069.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-23": [
+          {
+            "time": "12:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592558.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-24": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592578.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-25": [
+          {
+            "time": "13:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592683.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "19:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592607.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-26": [
+          {
+            "time": "13:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592635.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-27": [
+          {
+            "time": "17:35",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592646.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-28": [
+          {
+            "time": "20:20",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592672.TcsSection_3060731",
             "screen": null,
             "hoh": false
           }
