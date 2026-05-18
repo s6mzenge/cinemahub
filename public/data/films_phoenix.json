@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-18T10:35:21.928706+00:00",
+  "scraped_at": "2026-05-18T11:04:35.639589+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -113,8 +113,44 @@
         ],
         "2026-05-25": [
           {
+            "time": "15:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527281.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          },
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527279.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          },
+          {
             "time": "20:15",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527277.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-05-26": [
+          {
+            "time": "20:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527287.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-05-27": [
+          {
+            "time": "16:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527291.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ],
+        "2026-05-28": [
+          {
+            "time": "17:45",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527297.TcsSection_720",
             "screen": "Screen 2",
             "hoh": false
           }
@@ -400,17 +436,25 @@
             "hoh": false
           }
         ],
-        "2026-05-27": [
+        "2026-05-26": [
           {
-            "time": "14:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_467525.TcsSection_543",
-            "screen": "Screen 1",
+            "time": "17:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527285.TcsSection_720",
+            "screen": "Screen 2",
             "hoh": false
           },
           {
-            "time": "17:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_467524.TcsSection_543",
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527283.TcsSection_543",
             "screen": "Screen 1",
+            "hoh": false
+          }
+        ],
+        "2026-05-27": [
+          {
+            "time": "17:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527289.TcsSection_720",
+            "screen": "Screen 2",
             "hoh": false
           },
           {
@@ -422,9 +466,21 @@
         ],
         "2026-05-28": [
           {
+            "time": "13:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527293.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
             "time": "16:00",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_467529.TcsSection_543",
             "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527295.TcsSection_720",
+            "screen": "Screen 2",
             "hoh": false
           }
         ]
@@ -433,6 +489,34 @@
       "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/star-wars-the-mandalorian-and-grogu/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "kokuho",
+      "title": "Kokuho",
+      "rating": "15",
+      "runtime": 174,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Lee Sang-il",
+      "cast": "Ryô Yoshizawa, Ryûsei Yokohama, Takahiro Miura, Soya Kurokawa, Keitatsu Koshiyama",
+      "country": "Japan",
+      "description": "Nagasaki, 1964: Following the death of his yakuza father, 15-year-old Kikuo is taken under the wing of a famous kabuki actor. Alongside Shunsuke, the actor’s only son, he decides to dedicate himself to this traditional form of theatre. For decades, the two young men grow and evolve together – and on...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=505578",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/505575.jpg",
+      "showtimes": {
+        "2026-05-28": [
+          {
+            "time": "14:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527298.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/kokuho/",
+      "letterboxd_rating": 3.84
     },
     {
       "id": "national-theatre-live-the-playboy-of-the-western-world",
@@ -457,8 +541,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "color": "#c62828",
+      "accent": "#ef5350"
     },
     {
       "id": "the-metropolitan-opera-el-ltimo-sue-o-de-frida-y-diego",
@@ -483,8 +567,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350"
+      "color": "#6a1b9a",
+      "accent": "#ba68c8"
     },
     {
       "id": "journey-through-irish-cinema-john-ford-dreaming-the-quiet-man-plus-q-a",
@@ -509,8 +593,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
+      "color": "#00838f",
+      "accent": "#4dd0e1"
     },
     {
       "id": "journey-through-irish-cinema-anne-devlin",
@@ -535,8 +619,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "london-festival-of-architecture-affr-present-renovation",
@@ -561,8 +645,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae"
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "journey-through-irish-cinema-rocky-roads-to-dublin",
@@ -587,8 +671,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#ad1457",
+      "accent": "#f06292"
     },
     {
       "id": "london-festival-of-architecture-lfa-affr-present-living-together-the-story-of-de-warren",
@@ -613,8 +697,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "national-theatre-live-les-liaisons-dangereuses",
@@ -639,8 +723,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "david-attenborough-a-life-on-our-planet-michael-palin-live-intro",
@@ -665,8 +749,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63"
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "journey-through-irish-cinema-my-left-foot-the-story-of-christy-brown-q-a-with-jim-sheridan",
@@ -691,8 +775,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#558b2f",
+      "accent": "#9ccc65"
     },
     {
       "id": "journey-through-irish-cinema-michael-collins",
@@ -717,8 +801,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#9f2121",
+      "accent": "#d36868"
     },
     {
       "id": "journey-through-irish-cinema-kings",
@@ -743,8 +827,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#3052a6",
+      "accent": "#849cd6"
     }
   ]
 }
