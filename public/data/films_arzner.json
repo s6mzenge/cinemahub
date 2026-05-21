@@ -1,100 +1,7 @@
 {
-  "scraped_at": "2026-05-21T11:34:02.861003+00:00",
+  "scraped_at": "2026-05-21T12:04:28.418424+00:00",
   "source": "thearzner.com",
   "films": [
-    {
-      "id": "the-christophers-182518",
-      "title": "The Christophers",
-      "rating": "15",
-      "runtime": 100,
-      "genre": "New Release",
-      "description": "The estranged children of a once-famous artist hire a forger to complete his unfinished works so they can be \"discovered\" and sold after his death.",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=182518",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/182512.jpg",
-      "showtimes": {
-        "2026-05-21": [
-          {
-            "time": "11:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_190107.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
-          {
-            "time": "16:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_190089.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-05-22": [
-          {
-            "time": "12:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_192818.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-05-23": [
-          {
-            "time": "11:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196559.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": true,
-            "tags": [
-              "CC"
-            ]
-          },
-          {
-            "time": "13:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196558.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-05-25": [
-          {
-            "time": "19:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196573.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": true,
-            "tags": [
-              "CC"
-            ]
-          }
-        ],
-        "2026-05-26": [
-          {
-            "time": "13:45",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196583.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": true,
-            "tags": [
-              "CC"
-            ]
-          }
-        ],
-        "2026-05-27": [
-          {
-            "time": "14:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196599.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-05-28": [
-          {
-            "time": "17:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196603.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
-      "letterboxd_rating": 3.52
-    },
     {
       "id": "the-devil-wears-prada-2-133637",
       "title": "The Devil Wears Prada 2",
@@ -246,10 +153,97 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.24
+    },
+    {
+      "id": "the-christophers-182518",
+      "title": "The Christophers",
+      "rating": "15",
+      "runtime": 100,
+      "genre": "New Release",
+      "description": "The estranged children of a once-famous artist hire a forger to complete his unfinished works so they can be \"discovered\" and sold after his death.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=182518",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/182512.jpg",
+      "showtimes": {
+        "2026-05-21": [
+          {
+            "time": "16:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_190089.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-05-22": [
+          {
+            "time": "12:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_192818.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-05-23": [
+          {
+            "time": "11:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196559.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": true,
+            "tags": [
+              "CC"
+            ]
+          },
+          {
+            "time": "13:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196558.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-05-25": [
+          {
+            "time": "19:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196573.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": true,
+            "tags": [
+              "CC"
+            ]
+          }
+        ],
+        "2026-05-26": [
+          {
+            "time": "13:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196583.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": true,
+            "tags": [
+              "CC"
+            ]
+          }
+        ],
+        "2026-05-27": [
+          {
+            "time": "14:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196599.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-05-28": [
+          {
+            "time": "17:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196603.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
+      "letterboxd_rating": 3.52
     },
     {
       "id": "sunset-boulevard-intro-from-norma-desperate-16200",
@@ -835,31 +829,6 @@
       "letterboxd_rating": 3.13
     },
     {
-      "id": "queer-cinema-for-palestine-no-pride-in-genocide-panel-discussion-205299",
-      "title": "Queer Cinema for Palestine: No Pride in Genocide + Panel Discussion",
-      "rating": "18",
-      "runtime": 130,
-      "genre": "Pride Month",
-      "description": "There are five ticket/donation options to choose from. Please donate what you feel comfortable paying. All of the ticket money will be donated to MAP (Medical Aid for Palestine).  Queer Cinema for Palestine (QCP) and The Arzner presents No Pride in Genocide , a global film event, co-organized by the…",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=205299",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/205296.jpg",
-      "showtimes": {
-        "2026-06-01": [
-          {
-            "time": "20:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205313.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "Pride Month"
-            ]
-          }
-        ]
-      },
-      "color": "#3052a6",
-      "accent": "#849cd6"
-    },
-    {
       "id": "fairyland-q-a-with-scoot-mcnairy-201799",
       "title": "Fairyland + Q&A with Scoot McNairy",
       "rating": "18",
@@ -881,8 +850,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453"
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "dyke-night-rebel-dykes-intro-q-a-204264",
@@ -906,8 +875,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "madfabulous-164269",
@@ -953,8 +922,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8",
+      "color": "#9f2190",
+      "accent": "#d368c6",
       "letterboxd_url": "https://letterboxd.com/film/madfabulous/",
       "letterboxd_rating": null
     },
@@ -993,8 +962,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953",
+      "color": "#30a692",
+      "accent": "#84d6c8",
       "letterboxd_url": "https://letterboxd.com/film/enzo-2025/",
       "letterboxd_rating": 3.07
     },
@@ -1020,8 +989,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#975e1a",
+      "accent": "#d49953",
       "letterboxd_url": "https://letterboxd.com/film/erupcja/",
       "letterboxd_rating": 3.4
     },
@@ -1047,8 +1016,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684"
+      "color": "#41219f",
+      "accent": "#8368d3"
     },
     {
       "id": "erupcja-165260",
@@ -1069,8 +1038,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e",
+      "color": "#35a630",
+      "accent": "#88d684",
       "letterboxd_url": "https://letterboxd.com/film/erupcja/",
       "letterboxd_rating": 3.4
     },
@@ -1096,8 +1065,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3",
+      "color": "#971a44",
+      "accent": "#d4537e",
       "letterboxd_url": "https://letterboxd.com/film/spectrum/",
       "letterboxd_rating": null
     },
@@ -1123,8 +1092,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "pink-narcissus-4k-restoration-extended-intro-167369",
@@ -1148,8 +1117,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4",
+      "color": "#9ca630",
+      "accent": "#cfd684",
       "letterboxd_url": "https://letterboxd.com/film/pink-narcissus/",
       "letterboxd_rating": 3.64
     },
@@ -1175,8 +1144,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#7d1a97",
+      "accent": "#b953d4"
     },
     {
       "id": "exclusive-preview-she-s-the-he-director-q-a-201630",
@@ -1200,8 +1169,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584",
+      "color": "#219f60",
+      "accent": "#68d39d",
       "letterboxd_url": "https://letterboxd.com/film/shes-the-he/",
       "letterboxd_rating": 3.63
     },
@@ -1227,8 +1196,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "cactus-pears-director-q-a-183173",
@@ -1252,8 +1221,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368",
+      "color": "#1a2597",
+      "accent": "#535ed4",
       "letterboxd_url": "https://letterboxd.com/film/cactus-pears/",
       "letterboxd_rating": 3.87
     },
@@ -1279,8 +1248,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "the-powerpuff-girls-movie-intro-from-nyongbella-147482",
@@ -1304,8 +1273,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4",
+      "color": "#a6307e",
+      "accent": "#d684bb",
       "letterboxd_url": "https://letterboxd.com/film/the-powerpuff-girls-movie/",
       "letterboxd_rating": 3.49
     },
@@ -1331,8 +1300,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868"
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     },
     {
       "id": "her-will-be-done-english-premiere-201623",
@@ -1356,8 +1325,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "hag-international-premiere-201827",
@@ -1381,8 +1350,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468"
+      "color": "#6530a6",
+      "accent": "#a984d6"
     },
     {
       "id": "camp-q-a-english-premiere-201921",
@@ -1406,8 +1375,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#1a972f",
+      "accent": "#53d468"
     },
     {
       "id": "frigay-the-13th-live-podcast-202012",
@@ -1431,8 +1400,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6"
+      "color": "#9f2132",
+      "accent": "#d36876"
     },
     {
       "id": "the-restoration-at-grayson-manor-english-premiere-202061",
@@ -1456,8 +1425,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "anything-that-moves-uk-premiere-202066",
@@ -1481,8 +1450,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#73971a",
+      "accent": "#afd453"
     },
     {
       "id": "double-bill-q-a-two-black-boys-in-paradise-a-friend-of-dorothy-201036",
@@ -1506,8 +1475,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "no-man-s-land-with-rosie-turner-q-a-197644",
@@ -1531,8 +1500,8 @@
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "brat-summer-charli-xcx-marathon-166971",
@@ -1556,8 +1525,8 @@
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3"
+      "color": "#974e1a",
+      "accent": "#d48853"
     }
   ]
 }
