@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-22T12:35:15.704283+00:00",
+  "scraped_at": "2026-05-22T13:05:25.376139+00:00",
   "source": "whatson.bfi.org.uk",
   "films": [
     {
@@ -24,14 +24,59 @@
             "tags": [
               "Marilyn Monroe: Self-Made Star",
               "Marilyn Monroe",
-              "Discussion",
-              "25&Under"
+              "25&Under",
+              "Discussion"
             ]
           }
         ]
       },
       "color": "#e53935",
       "accent": "#ff6f60"
+    },
+    {
+      "id": "alien-nights",
+      "title": "Alien Nights",
+      "rating": "TBC",
+      "runtime": 91,
+      "genre": "Other",
+      "year": 2022,
+      "director": "Sérgio de Carvalho",
+      "cast": "Adanilo, Chica Arara, Arnaldo Barros",
+      "description": "An urgent Amazon-set drama of youth, violence and Indigenous identity.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=alien-nights&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202606/alien-nights-01.jpeg",
+      "showtimes": {
+        "2026-06-19": [
+          {
+            "time": "20:55",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=76FD9D81-D981-441C-ABC9-D607924F3EF9&BOparam::WScontent::loadArticle::context_id=EB970F72-0397-481A-9930-CFC8937CA7C5",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Brazil on Film",
+              "English subtitles"
+            ]
+          }
+        ],
+        "2026-06-28": [
+          {
+            "time": "15:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=76FD9D81-D981-441C-ABC9-D607924F3EF9&BOparam::WScontent::loadArticle::context_id=EE29D628-73C7-460B-99B1-656865C3F033",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Brazil on Film",
+              "English subtitles"
+            ]
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/alien-nights/",
+      "letterboxd_rating": 3.38
     },
     {
       "id": "allies-in-exile-london-premiere-qanda",
@@ -54,15 +99,15 @@
             "hoh": false,
             "tags": [
               "Q&A",
-              "English subtitles",
+              "Digital",
               "Refugee Week",
-              "Digital"
+              "English subtitles"
             ]
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/allies-in-exile/",
       "letterboxd_rating": null
     },
@@ -87,16 +132,16 @@
             "hoh": false,
             "tags": [
               "BFI Reuben Library",
-              "BFI Reuben Library events",
-              "Live captions",
               "Discussion",
-              "Live captioned"
+              "BFI Reuben Library events",
+              "Live captioned",
+              "Live captions"
             ]
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090"
+      "color": "#00897b",
+      "accent": "#4db6ac"
     },
     {
       "id": "arco-funday",
@@ -124,43 +169,10 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/arco/",
-      "letterboxd_rating": 3.89
-    },
-    {
-      "id": "babenco-tell-me-when-i-die-qanda",
-      "title": "Babenco: Tell Me When I Die",
-      "rating": "TBC",
-      "runtime": 73,
-      "genre": "Other",
-      "year": 2019,
-      "director": "Bárbara Paz",
-      "cast": null,
-      "description": "A tender portrait of one of Brazil’s most influential filmmakers, Héctor Babenco.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=babenco-tell-me-when-i-die-qanda&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202606/babenco-01.jpeg",
-      "showtimes": {
-        "2026-06-21": [
-          {
-            "time": "18:15",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=03FB3E7D-D224-4485-8A51-B13F00D046FB&BOparam::WScontent::loadArticle::context_id=084BE529-99FE-4008-978B-257FCD006C87",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "Digital",
-              "Q&A",
-              "English subtitles",
-              "Brazil on Film"
-            ]
-          }
-        ]
-      },
       "color": "#1565c0",
       "accent": "#64b5f6",
-      "letterboxd_url": "https://letterboxd.com/film/babenco-tell-me-when-i-die/",
-      "letterboxd_rating": 3.74
+      "letterboxd_url": "https://letterboxd.com/film/arco/",
+      "letterboxd_rating": 3.89
     }
   ]
 }
