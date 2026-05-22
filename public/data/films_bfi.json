@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-22T08:05:33.622296+00:00",
+  "scraped_at": "2026-05-22T08:35:20.515126+00:00",
   "source": "whatson.bfi.org.uk",
   "films": [
     {
@@ -64,51 +64,6 @@
       "accent": "#b388ff"
     },
     {
-      "id": "alien-nights",
-      "title": "Alien Nights",
-      "rating": "TBC",
-      "runtime": 91,
-      "genre": "Other",
-      "year": 2022,
-      "director": "Sérgio de Carvalho",
-      "cast": "Adanilo, Chica Arara, Arnaldo Barros",
-      "description": "An urgent Amazon-set drama of youth, violence and Indigenous identity.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=alien-nights&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202606/alien-nights-01.jpeg",
-      "showtimes": {
-        "2026-06-19": [
-          {
-            "time": "20:55",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=76FD9D81-D981-441C-ABC9-D607924F3EF9&BOparam::WScontent::loadArticle::context_id=EB970F72-0397-481A-9930-CFC8937CA7C5",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Digital",
-              "Brazil on Film",
-              "English subtitles"
-            ]
-          }
-        ],
-        "2026-06-28": [
-          {
-            "time": "15:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=76FD9D81-D981-441C-ABC9-D607924F3EF9&BOparam::WScontent::loadArticle::context_id=EE29D628-73C7-460B-99B1-656865C3F033",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Digital",
-              "Brazil on Film",
-              "English subtitles"
-            ]
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/alien-nights/",
-      "letterboxd_rating": 3.38
-    },
-    {
       "id": "allies-in-exile-london-premiere-qanda",
       "title": "Allies in Exile",
       "rating": "TBC",
@@ -136,8 +91,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/allies-in-exile/",
       "letterboxd_rating": null
     },
@@ -162,16 +117,47 @@
             "hoh": false,
             "tags": [
               "BFI Reuben Library",
-              "BFI Reuben Library events",
               "Live captions",
-              "Discussion",
-              "Live captioned"
+              "Live captioned",
+              "BFI Reuben Library events",
+              "Discussion"
+            ]
+          }
+        ]
+      },
+      "color": "#00897b",
+      "accent": "#4db6ac"
+    },
+    {
+      "id": "arco-funday",
+      "title": "Funday: Arco",
+      "rating": "PG",
+      "runtime": 89,
+      "genre": "Other",
+      "year": 2025,
+      "director": "Ugo Bienvenu",
+      "cast": null,
+      "description": "A wildly colourful adventure that is one of this year’s Oscar-nominated animated features.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=arco-funday&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202605/arco-01.jpeg",
+      "showtimes": {
+        "2026-05-30": [
+          {
+            "time": "12:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D4D5471A-AF54-46E1-BC86-F1E3EE4904E5&BOparam::WScontent::loadArticle::context_id=9918EF29-C303-4DCC-9DD8-3874E303D71F",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Families"
             ]
           }
         ]
       },
       "color": "#1565c0",
-      "accent": "#64b5f6"
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/arco/",
+      "letterboxd_rating": 3.89
     }
   ]
 }
