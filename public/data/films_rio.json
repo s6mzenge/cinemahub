@@ -1,7 +1,42 @@
 {
-  "scraped_at": "2026-05-22T20:06:13.274684+00:00",
+  "scraped_at": "2026-05-22T20:35:05.960442+00:00",
   "source": "riocinema.org.uk",
   "films": [
+    {
+      "id": "fantastic-mr-fox",
+      "title": "Fantastic Mr. Fox",
+      "rating": "PG",
+      "runtime": 83,
+      "genre": "Other",
+      "year": "2009",
+      "director": "Wes Anderson",
+      "cast": null,
+      "country": "UK / USA",
+      "description": "The Rio’s beloved and historic Saturday Morning Picture Club returns!    Join us from 10.15am for craft activities, before the film screening at 11am!    This month we’re diving into a witty and wonderfully crafted adventure with Wes Anderson’s FANTASTIC MR FOX. Before the screening, we will have ar...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2517231",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2517226.jpg",
+      "showtimes": {
+        "2026-05-23": [
+          {
+            "time": "10:15",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2517249.TcsSection_936",
+            "screen": "S1",
+            "hoh": false,
+            "tags": [
+              "Family Flicks",
+              "NoAds"
+            ]
+          }
+        ]
+      },
+      "season_tags": [
+        "Family Flicks"
+      ],
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/fantastic-mr-fox/",
+      "letterboxd_rating": 4.3
+    },
     {
       "id": "northern-soul-still-burning",
       "title": "Northern Soul: Still Burning",
@@ -16,14 +51,6 @@
       "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2554999",
       "poster_url": "https://images.savoysystems.co.uk/RIL/2554998.jpg",
       "showtimes": {
-        "2026-05-22": [
-          {
-            "time": "20:45",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2559731.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
         "2026-05-23": [
           {
             "time": "13:10",
@@ -65,45 +92,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/northern-soul-still-burning/",
-      "letterboxd_rating": null
-    },
-    {
-      "id": "fantastic-mr-fox",
-      "title": "Fantastic Mr. Fox",
-      "rating": "PG",
-      "runtime": 83,
-      "genre": "Other",
-      "year": "2009",
-      "director": "Wes Anderson",
-      "cast": null,
-      "country": "UK / USA",
-      "description": "The Rio’s beloved and historic Saturday Morning Picture Club returns!    Join us from 10.15am for craft activities, before the film screening at 11am!    This month we’re diving into a witty and wonderfully crafted adventure with Wes Anderson’s FANTASTIC MR FOX. Before the screening, we will have ar...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2517231",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2517226.jpg",
-      "showtimes": {
-        "2026-05-23": [
-          {
-            "time": "10:15",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2517249.TcsSection_936",
-            "screen": "S1",
-            "hoh": false,
-            "tags": [
-              "Family Flicks",
-              "NoAds"
-            ]
-          }
-        ]
-      },
-      "season_tags": [
-        "Family Flicks"
-      ],
       "color": "#7c4dff",
       "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/fantastic-mr-fox/",
-      "letterboxd_rating": 4.3
+      "letterboxd_url": "https://letterboxd.com/film/northern-soul-still-burning/",
+      "letterboxd_rating": null
     },
     {
       "id": "cosy-crafts-am-lie",

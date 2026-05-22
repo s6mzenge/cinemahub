@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-22T20:03:51.896167+00:00",
+  "scraped_at": "2026-05-22T20:33:34.275313+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -880,6 +880,14 @@
             "hoh": false
           }
         ],
+        "2026-06-09": [
+          {
+            "time": "14:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205940.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
         "2026-06-10": [
           {
             "time": "18:00",
@@ -893,6 +901,74 @@
       "accent": "#9ed453",
       "letterboxd_url": "https://letterboxd.com/film/madfabulous/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "erupcja-165260",
+      "title": "Erupcja",
+      "rating": "15",
+      "runtime": 71,
+      "genre": "New Release",
+      "description": "While on vacation in Poland, Bethany (Charli XCX) breaks away from a romantic itinerary planned by her doting boyfriend, Rob, fearing that a marriage proposal is imminent. Reuniting instead with an old friend, Nel, the two women rekindle a uniquely combustible chemistry over the course of a few days…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=165260",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/165257.jpg",
+      "showtimes": {
+        "2026-06-05": [
+          {
+            "time": "13:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_200449.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "17:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_165263.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-06-07": [
+          {
+            "time": "16:20",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_200459.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-06-08": [
+          {
+            "time": "14:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205447.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-06-09": [
+          {
+            "time": "12:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205941.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "20:40",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_204360.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-06-11": [
+          {
+            "time": "18:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196945.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#9f2190",
+      "accent": "#d368c6",
+      "letterboxd_url": "https://letterboxd.com/film/erupcja/",
+      "letterboxd_rating": 3.39
     },
     {
       "id": "enzo-200444",
@@ -935,59 +1011,11 @@
             "screen": "Screening Room",
             "hoh": false
           }
-        ]
-      },
-      "color": "#9f2190",
-      "accent": "#d368c6",
-      "letterboxd_url": "https://letterboxd.com/film/enzo-2025/",
-      "letterboxd_rating": 3.07
-    },
-    {
-      "id": "erupcja-165260",
-      "title": "Erupcja",
-      "rating": "15",
-      "runtime": 71,
-      "genre": "New Release",
-      "description": "While on vacation in Poland, Bethany (Charli XCX) breaks away from a romantic itinerary planned by her doting boyfriend, Rob, fearing that a marriage proposal is imminent. Reuniting instead with an old friend, Nel, the two women rekindle a uniquely combustible chemistry over the course of a few days…",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=165260",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/165257.jpg",
-      "showtimes": {
-        "2026-06-05": [
-          {
-            "time": "17:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_165263.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-06-07": [
-          {
-            "time": "16:20",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_200459.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-06-08": [
-          {
-            "time": "14:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205447.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
         ],
         "2026-06-09": [
           {
-            "time": "20:40",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_204360.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-06-11": [
-          {
-            "time": "18:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196945.TcsSection_963",
+            "time": "16:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205939.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
           }
@@ -995,8 +1023,33 @@
       },
       "color": "#30a692",
       "accent": "#84d6c8",
-      "letterboxd_url": "https://letterboxd.com/film/erupcja/",
-      "letterboxd_rating": 3.39
+      "letterboxd_url": "https://letterboxd.com/film/enzo-2025/",
+      "letterboxd_rating": 3.07
+    },
+    {
+      "id": "scary-movie-drag-intro-205933",
+      "title": "Scary Movie + Drag Intro",
+      "rating": "18",
+      "runtime": 105,
+      "genre": "Pride Month",
+      "description": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=205933",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/205932.jpg",
+      "showtimes": {
+        "2026-06-05": [
+          {
+            "time": "21:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205934.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Pride Month"
+            ]
+          }
+        ]
+      },
+      "color": "#975e1a",
+      "accent": "#d49953"
     },
     {
       "id": "scary-movie-200443",
@@ -1051,15 +1104,23 @@
         ],
         "2026-06-11": [
           {
-            "time": "22:30",
+            "time": "22:15",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205910.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-06-12": [
+          {
+            "time": "22:25",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205945.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953",
+      "color": "#41219f",
+      "accent": "#8368d3",
       "letterboxd_url": "https://letterboxd.com/film/scary-movie-2026/",
       "letterboxd_rating": null
     },
@@ -1085,8 +1146,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#35a630",
+      "accent": "#88d684",
       "letterboxd_url": "https://letterboxd.com/film/erupcja/",
       "letterboxd_rating": 3.39
     },
@@ -1112,8 +1173,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684",
+      "color": "#971a44",
+      "accent": "#d4537e",
       "letterboxd_url": "https://letterboxd.com/film/madfabulous/",
       "letterboxd_rating": null
     },
@@ -1139,8 +1200,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e"
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "spectrum-201006",
@@ -1164,8 +1225,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3",
+      "color": "#9ca630",
+      "accent": "#cfd684",
       "letterboxd_url": "https://letterboxd.com/film/spectrum/",
       "letterboxd_rating": null
     },
@@ -1173,7 +1234,7 @@
       "id": "biker-leather-night-scorpio-rising-pillion-196929",
       "title": "Biker & Leather Night: Scorpio Rising + Pillion",
       "rating": "18",
-      "runtime": 160,
+      "runtime": 146,
       "genre": "Pride Month",
       "description": "For Pride Month, we are celebrating biker and leather culture in LGBTQ+ communities. This event is in collaboration with London Leathermen & GBMCC (Gay Bikers Motorcycle Club). We will also be fundraising for Sussex Beacon on the night.  We will be screening a double bill of Scorpio Rising & Pillion…",
       "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=196929",
@@ -1191,8 +1252,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#7d1a97",
+      "accent": "#b953d4"
     },
     {
       "id": "pink-narcissus-4k-restoration-extended-intro-167369",
@@ -1216,8 +1277,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4",
+      "color": "#219f60",
+      "accent": "#68d39d",
       "letterboxd_url": "https://letterboxd.com/film/pink-narcissus/",
       "letterboxd_rating": 3.64
     },
@@ -1243,8 +1304,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "exclusive-preview-she-s-the-he-director-q-a-201630",
@@ -1268,8 +1329,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584",
+      "color": "#1a2597",
+      "accent": "#535ed4",
       "letterboxd_url": "https://letterboxd.com/film/shes-the-he/",
       "letterboxd_rating": 3.63
     },
@@ -1295,8 +1356,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "cactus-pears-director-q-a-183173",
@@ -1320,8 +1381,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368",
+      "color": "#a6307e",
+      "accent": "#d684bb",
       "letterboxd_url": "https://letterboxd.com/film/cactus-pears/",
       "letterboxd_rating": 3.87
     },
@@ -1347,8 +1408,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     },
     {
       "id": "stand-up-with-pride-lgbtq-comedy-184656",
@@ -1372,8 +1433,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "lesbian-space-princess-205469",
@@ -1394,8 +1455,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868",
+      "color": "#6530a6",
+      "accent": "#a984d6",
       "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
       "letterboxd_rating": 3.62
     },
@@ -1421,8 +1482,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6",
+      "color": "#1a972f",
+      "accent": "#53d468",
       "letterboxd_url": "https://letterboxd.com/film/the-powerpuff-girls-movie/",
       "letterboxd_rating": 3.49
     },
@@ -1449,8 +1510,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468"
+      "color": "#9f2132",
+      "accent": "#d36876"
     },
     {
       "id": "her-will-be-done-english-premiere-201623",
@@ -1474,8 +1535,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "hag-international-premiere-201827",
@@ -1499,8 +1560,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6"
+      "color": "#73971a",
+      "accent": "#afd453"
     },
     {
       "id": "camp-q-a-english-premiere-201921",
@@ -1524,8 +1585,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "frigay-the-13th-live-podcast-202012",
@@ -1549,8 +1610,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "the-restoration-at-grayson-manor-english-premiere-202061",
@@ -1574,8 +1635,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be"
+      "color": "#974e1a",
+      "accent": "#d48853"
     },
     {
       "id": "anything-that-moves-uk-premiere-202066",
@@ -1599,8 +1660,8 @@
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853"
+      "color": "#31219f",
+      "accent": "#7568d3"
     },
     {
       "id": "double-bill-q-a-two-black-boys-in-paradise-a-friend-of-dorothy-201036",
@@ -1624,8 +1685,8 @@
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3"
+      "color": "#44a630",
+      "accent": "#92d684"
     },
     {
       "id": "no-man-s-land-with-rosie-turner-q-a-197644",
@@ -1649,8 +1710,8 @@
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#971a54",
+      "accent": "#d4538f"
     },
     {
       "id": "brat-summer-charli-xcx-marathon-166971",
@@ -1674,8 +1735,8 @@
           }
         ]
       },
-      "color": "#971a54",
-      "accent": "#d4538f"
+      "color": "#21809f",
+      "accent": "#68b9d3"
     }
   ]
 }
