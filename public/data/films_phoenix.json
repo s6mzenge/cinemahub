@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-22T15:04:54.787828+00:00",
+  "scraped_at": "2026-05-22T15:34:45.076985+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -17,12 +17,6 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/467489.jpg",
       "showtimes": {
         "2026-05-22": [
-          {
-            "time": "14:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_467494.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          },
           {
             "time": "17:00",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_467493.TcsSection_720",
@@ -171,12 +165,6 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/509940.jpg",
       "showtimes": {
         "2026-05-22": [
-          {
-            "time": "15:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527252.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": false
-          },
           {
             "time": "17:30",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_527253.TcsSection_543",
@@ -524,6 +512,32 @@
       "accent": "#66bb6a"
     },
     {
+      "id": "refugee-week-screening-everybody-to-kenmure-street",
+      "title": "Refugee Week Screening: Everybody to Kenmure Street",
+      "rating": "15",
+      "runtime": 98,
+      "genre": "Other",
+      "year": null,
+      "director": "Felipe Bustos Sierra",
+      "cast": null,
+      "country": "UK",
+      "description": "For the final day of Refugee Week, join Refugees at Home for a screening of EVERYBODY TO KENMURE  STREET followed by a panel discussion about hosting refugees.  Ticket link: https://www.eventbrite.co.uk/e/everybody-to-kenmure-street-film-screening-discussion-tickets-1987676903124?aff=oddtdtcreator  ...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=532186",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/532193.jpg",
+      "showtimes": {
+        "2026-06-21": [
+          {
+            "time": "14:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_532199.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#ad1457",
+      "accent": "#f06292"
+    },
+    {
       "id": "london-festival-of-architecture-lfa-affr-present-living-together-the-story-of-de-warren",
       "title": "London Festival of Architecture (LFA) & AFFR present Living Together: The Story of De Warren",
       "rating": "12A",
@@ -546,8 +560,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "national-theatre-live-les-liaisons-dangereuses",
@@ -572,8 +586,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "david-attenborough-a-life-on-our-planet-michael-palin-live-intro",
@@ -598,8 +612,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63"
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "journey-through-irish-cinema-my-left-foot-the-story-of-christy-brown-q-a-with-jim-sheridan",
@@ -624,8 +638,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#558b2f",
+      "accent": "#9ccc65"
     },
     {
       "id": "journey-through-irish-cinema-michael-collins",
@@ -650,8 +664,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#9f2121",
+      "accent": "#d36868"
     },
     {
       "id": "journey-through-irish-cinema-kings",
@@ -676,8 +690,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#3052a6",
+      "accent": "#849cd6"
     }
   ]
 }
