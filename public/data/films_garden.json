@@ -1,62 +1,7 @@
 {
-  "scraped_at": "2026-05-23T10:34:22.995191+00:00",
+  "scraped_at": "2026-05-23T11:05:07.908993+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "brave",
-      "title": "Brave",
-      "rating": "PG",
-      "runtime": 100,
-      "genre": "Other",
-      "year": "2012",
-      "director": "Mark Andrews, Brenda Chapman",
-      "cast": null,
-      "description": "Disney Pixar brings you the magical, mythical world of the Scottish Highlands. Rebellious Princess Merida doesn’t see why she needs to…",
-      "film_url": "https://www.thegardencinema.co.uk/film/brave/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/632107.jpg",
-      "showtimes": {
-        "2026-05-23": [
-          {
-            "time": "11:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235767.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ],
-        "2026-05-24": [
-          {
-            "time": "11:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235769.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ],
-        "2026-05-25": [
-          {
-            "time": "11:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235773.TcsSection_638",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ]
-      },
-      "seasons": [
-        "Films for the Family"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/brave-2012/",
-      "letterboxd_rating": 3.48
-    },
     {
       "id": "kokuho",
       "title": "Kokuho",
@@ -125,8 +70,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/kokuho/",
       "letterboxd_rating": 3.84
     },
@@ -213,8 +158,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/eagles-of-the-republic/",
       "letterboxd_rating": 3.32
     },
@@ -247,8 +192,8 @@
         "Focus Hong Kong 2026"
       ],
       "partner": "Focus Hong Kong",
-      "color": "#00897b",
-      "accent": "#4db6ac"
+      "color": "#d81b60",
+      "accent": "#ff6090"
     },
     {
       "id": "i-wish-i-knew-2",
@@ -275,8 +220,8 @@
       "seasons": [
         "Time Capsule: The Films of Jia Zhangke"
       ],
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/i-wish-i-knew/",
       "letterboxd_rating": 3.59
     },
@@ -308,8 +253,8 @@
       "seasons": [
         "50 Years of Argentina on Film"
       ],
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/olivia-2025/",
       "letterboxd_rating": null
     },
@@ -343,8 +288,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/romeria/",
       "letterboxd_rating": 3.59
     },
@@ -402,8 +347,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.44
     },
@@ -437,8 +382,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/our-land-2025/",
       "letterboxd_rating": 3.47
     },
@@ -522,8 +467,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
       "letterboxd_rating": 3.52
     },
@@ -589,10 +534,54 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.52
+    },
+    {
+      "id": "brave",
+      "title": "Brave",
+      "rating": "PG",
+      "runtime": 100,
+      "genre": "Other",
+      "year": "2012",
+      "director": "Mark Andrews, Brenda Chapman",
+      "cast": null,
+      "description": "Disney Pixar brings you the magical, mythical world of the Scottish Highlands. Rebellious Princess Merida doesn’t see why she needs to…",
+      "film_url": "https://www.thegardencinema.co.uk/film/brave/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/632107.jpg",
+      "showtimes": {
+        "2026-05-24": [
+          {
+            "time": "11:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235769.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ],
+        "2026-05-25": [
+          {
+            "time": "11:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235773.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ]
+      },
+      "seasons": [
+        "Films for the Family"
+      ],
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
+      "letterboxd_url": "https://letterboxd.com/film/brave-2012/",
+      "letterboxd_rating": 3.48
     },
     {
       "id": "la-grazia",
@@ -651,8 +640,7 @@
             "tags": [
               "Live Music",
               "Members"
-            ],
-            "sold_out": true
+            ]
           }
         ]
       },
