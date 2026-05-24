@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-24T19:33:04.143892+00:00",
+  "scraped_at": "2026-05-24T20:02:57.125719+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -13,12 +13,6 @@
       "poster_url": "https://images.savoysystems.co.uk/TAL/165159.jpg",
       "showtimes": {
         "2026-05-24": [
-          {
-            "time": "13:35",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196568.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
           {
             "time": "20:30",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_197255.TcsSection_963",
@@ -132,14 +126,6 @@
       "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=175362",
       "poster_url": "https://images.savoysystems.co.uk/TAL/175361.jpg",
       "showtimes": {
-        "2026-05-24": [
-          {
-            "time": "16:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_196567.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
         "2026-05-25": [
           {
             "time": "12:30",
@@ -177,29 +163,9 @@
         ]
       },
       "color": "#e53935",
-      "accent": "#ff6f60"
-    },
-    {
-      "id": "choose-what-you-pay-the-christophers-197249",
-      "title": "Choose What You Pay: The Christophers",
-      "rating": "15",
-      "runtime": 100,
-      "genre": "New Release",
-      "description": "This is a 'Choose What You Pay' screening. There are 4 price tiers to choose from; please pick whatever tier best suits you.  The estranged children of a once-famous artist hire a forger to complete his unfinished works so they can be \"discovered\" and sold after his death.",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=197249",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/197258.jpg",
-      "showtimes": {
-        "2026-05-24": [
-          {
-            "time": "18:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_197259.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff"
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/mother-mary-2026/",
+      "letterboxd_rating": 2.97
     },
     {
       "id": "queer-as-punk-182530",
@@ -236,8 +202,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/queer-as-punk/",
       "letterboxd_rating": 3.65
     },
@@ -290,10 +256,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
-      "letterboxd_rating": 3.52
+      "color": "#d81b60",
+      "accent": "#ff6090"
     },
     {
       "id": "queercore-our-heroes-bleed-glitter-183841",
@@ -353,10 +317,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
-      "letterboxd_url": "https://letterboxd.com/film/departures-2025/",
-      "letterboxd_rating": 3.32
+      "color": "#00897b",
+      "accent": "#4db6ac"
     },
     {
       "id": "moss-freud-191103",
@@ -423,8 +385,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/moss-freud/",
       "letterboxd_rating": null
     },
@@ -487,8 +449,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/fairyland/",
       "letterboxd_rating": 3.51
     },
@@ -514,8 +476,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/legally-blonde/",
       "letterboxd_rating": 3.83
     },
@@ -574,8 +536,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "fucktoys-sneak-peek-intro-201064",
@@ -599,8 +561,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "tethered-wings-200417",
@@ -643,8 +605,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#ad1457",
+      "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/tethered-wings/",
       "letterboxd_rating": 3.13
     },
@@ -670,8 +632,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "fairyland-q-a-with-scoot-mcnairy-201799",
@@ -695,8 +657,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "dyke-night-rebel-dykes-intro-q-a-204264",
@@ -720,8 +682,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "madfabulous-164269",
@@ -799,8 +761,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/madfabulous/",
       "letterboxd_rating": null
     },
@@ -881,10 +843,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6",
-      "letterboxd_url": "https://letterboxd.com/film/erupcja/",
-      "letterboxd_rating": 3.39
+      "color": "#9f2121",
+      "accent": "#d36868"
     },
     {
       "id": "enzo-200444",
@@ -945,8 +905,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#3052a6",
+      "accent": "#849cd6",
       "letterboxd_url": "https://letterboxd.com/film/enzo-2025/",
       "letterboxd_rating": 3.07
     },
@@ -972,8 +932,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "scary-movie-200443",
@@ -1043,8 +1003,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8",
+      "color": "#9f2190",
+      "accent": "#d368c6",
       "letterboxd_url": "https://letterboxd.com/film/scary-movie-2026/",
       "letterboxd_rating": null
     },
@@ -1070,10 +1030,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953",
-      "letterboxd_url": "https://letterboxd.com/film/erupcja/",
-      "letterboxd_rating": 3.39
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "dog-friendly-madfabulous-191274",
@@ -1097,8 +1055,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#975e1a",
+      "accent": "#d49953",
       "letterboxd_url": "https://letterboxd.com/film/madfabulous/",
       "letterboxd_rating": null
     },
@@ -1124,8 +1082,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684"
+      "color": "#41219f",
+      "accent": "#8368d3"
     },
     {
       "id": "spectrum-201006",
@@ -1149,10 +1107,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e",
-      "letterboxd_url": "https://letterboxd.com/film/spectrum/",
-      "letterboxd_rating": null
+      "color": "#35a630",
+      "accent": "#88d684"
     },
     {
       "id": "biker-leather-night-scorpio-rising-pillion-196929",
@@ -1176,8 +1132,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#971a44",
+      "accent": "#d4537e"
     },
     {
       "id": "pink-narcissus-4k-restoration-extended-intro-167369",
@@ -1201,8 +1157,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684",
+      "color": "#21709f",
+      "accent": "#68abd3",
       "letterboxd_url": "https://letterboxd.com/film/pink-narcissus/",
       "letterboxd_rating": 3.64
     },
@@ -1228,8 +1184,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#9ca630",
+      "accent": "#cfd684"
     },
     {
       "id": "exclusive-preview-she-s-the-he-director-q-a-201630",
@@ -1253,8 +1209,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d",
+      "color": "#7d1a97",
+      "accent": "#b953d4",
       "letterboxd_url": "https://letterboxd.com/film/shes-the-he/",
       "letterboxd_rating": 3.63
     },
@@ -1280,8 +1236,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "cactus-pears-director-q-a-183173",
@@ -1305,8 +1261,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4",
+      "color": "#a64830",
+      "accent": "#d69584",
       "letterboxd_url": "https://letterboxd.com/film/cactus-pears/",
       "letterboxd_rating": 3.87
     },
@@ -1332,8 +1288,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#1a2597",
+      "accent": "#535ed4"
     },
     {
       "id": "stand-up-with-pride-lgbtq-comedy-184656",
@@ -1357,8 +1313,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "lesbian-space-princess-205469",
@@ -1379,8 +1335,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4",
+      "color": "#a6307e",
+      "accent": "#d684bb",
       "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
       "letterboxd_rating": 3.61
     },
@@ -1406,8 +1362,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868",
+      "color": "#1a9297",
+      "accent": "#53cfd4",
       "letterboxd_url": "https://letterboxd.com/film/the-powerpuff-girls-movie/",
       "letterboxd_rating": 3.49
     },
@@ -1434,8 +1390,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "her-will-be-done-english-premiere-201623",
@@ -1459,8 +1415,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468"
+      "color": "#6530a6",
+      "accent": "#a984d6"
     },
     {
       "id": "hag-international-premiere-201827",
@@ -1484,8 +1440,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#1a972f",
+      "accent": "#53d468"
     },
     {
       "id": "camp-q-a-english-premiere-201921",
@@ -1509,8 +1465,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6"
+      "color": "#9f2132",
+      "accent": "#d36876"
     },
     {
       "id": "frigay-the-13th-live-podcast-202012",
@@ -1534,8 +1490,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "the-restoration-at-grayson-manor-english-premiere-202061",
@@ -1559,8 +1515,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#73971a",
+      "accent": "#afd453"
     },
     {
       "id": "anything-that-moves-uk-premiere-202066",
@@ -1584,8 +1540,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "double-bill-q-a-two-black-boys-in-paradise-a-friend-of-dorothy-201036",
@@ -1609,8 +1565,8 @@
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "no-man-s-land-with-rosie-turner-q-a-197644",
@@ -1634,8 +1590,8 @@
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3"
+      "color": "#974e1a",
+      "accent": "#d48853"
     },
     {
       "id": "brat-summer-charli-xcx-marathon-166971",
@@ -1659,8 +1615,8 @@
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#31219f",
+      "accent": "#7568d3"
     }
   ]
 }
