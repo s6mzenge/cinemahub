@@ -1,43 +1,7 @@
 {
-  "scraped_at": "2026-05-24T15:34:48.583618+00:00",
+  "scraped_at": "2026-05-24T16:04:40.669429+00:00",
   "source": "riocinema.org.uk",
   "films": [
-    {
-      "id": "am-lie",
-      "title": "Amélie",
-      "rating": "15",
-      "runtime": 123,
-      "genre": "Other",
-      "year": "2001",
-      "director": "Jean-Pierre Jeunet",
-      "cast": null,
-      "country": "France",
-      "description": "Get (re)acquainted with AMÉLIE as Jean-Pierre Jeunet’s Parisian classic returns to cinemas for its 25th anniversary.  23-year-old Amélie is lonely. After an isolating childhood, she moves to Paris and becomes a waitress at the Cafés des Deux Moulins, a bar restaurant filled with a colourful cast of ...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2572909",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2572908.jpg",
-      "showtimes": {
-        "2026-05-24": [
-          {
-            "time": "15:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2572929.TcsSection_936",
-            "screen": "S1",
-            "hoh": false
-          }
-        ],
-        "2026-05-25": [
-          {
-            "time": "15:00",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2572931.TcsSection_936",
-            "screen": "S1",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/amelie/",
-      "letterboxd_rating": 4.19
-    },
     {
       "id": "northern-soul-still-burning",
       "title": "Northern Soul: Still Burning",
@@ -85,8 +49,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/northern-soul-still-burning/",
       "letterboxd_rating": null
     },
@@ -157,8 +121,8 @@
       "season_tags": [
         "Hard of Hearing"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.52
     },
@@ -217,8 +181,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/orphan-2025/",
       "letterboxd_rating": 3.17
     },
@@ -272,10 +236,38 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.44
+    },
+    {
+      "id": "am-lie",
+      "title": "Amélie",
+      "rating": "15",
+      "runtime": 123,
+      "genre": "Other",
+      "year": "2001",
+      "director": "Jean-Pierre Jeunet",
+      "cast": null,
+      "country": "France",
+      "description": "Get (re)acquainted with AMÉLIE as Jean-Pierre Jeunet’s Parisian classic returns to cinemas for its 25th anniversary.  23-year-old Amélie is lonely. After an isolating childhood, she moves to Paris and becomes a waitress at the Cafés des Deux Moulins, a bar restaurant filled with a colourful cast of ...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2572909",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2572908.jpg",
+      "showtimes": {
+        "2026-05-25": [
+          {
+            "time": "15:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2572931.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/amelie/",
+      "letterboxd_rating": 4.19
     },
     {
       "id": "ashes-and-diamonds",
