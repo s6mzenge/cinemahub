@@ -1,50 +1,7 @@
 {
-  "scraped_at": "2026-05-25T15:04:41.303482+00:00",
+  "scraped_at": "2026-05-25T15:34:14.878507+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "orphan",
-      "title": "Orphan",
-      "rating": "15",
-      "runtime": 132,
-      "genre": "Other",
-      "year": "2025",
-      "director": "László Nemes",
-      "cast": null,
-      "description": "1957. In Budapest, after the uprising against the Communist regime, a young Jewish boy, Andor, raised by his mother with idealised…",
-      "film_url": "https://www.thegardencinema.co.uk/film/orphan/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5480514.jpg",
-      "showtimes": {
-        "2026-05-25": [
-          {
-            "time": "15:25",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592611.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-26": [
-          {
-            "time": "14:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592633.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-27": [
-          {
-            "time": "17:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592654.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/orphan-2025/",
-      "letterboxd_rating": 3.17
-    },
     {
       "id": "bringing-up-baby",
       "title": "Bringing Up Baby",
@@ -79,8 +36,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/bringing-up-baby/",
       "letterboxd_rating": 4.0
     },
@@ -109,8 +66,8 @@
       "seasons": [
         "Members' Events"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/dracula/",
       "letterboxd_rating": 3.55
     },
@@ -160,8 +117,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.52
     },
@@ -203,8 +160,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.44
     },
@@ -254,8 +211,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/kokuho/",
       "letterboxd_rating": 3.84
     },
@@ -314,8 +271,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/eagles-of-the-republic/",
       "letterboxd_rating": 3.32
     },
@@ -371,10 +328,45 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
       "letterboxd_rating": 3.52
+    },
+    {
+      "id": "orphan",
+      "title": "Orphan",
+      "rating": "15",
+      "runtime": 132,
+      "genre": "Other",
+      "year": "2025",
+      "director": "László Nemes",
+      "cast": null,
+      "description": "1957. In Budapest, after the uprising against the Communist regime, a young Jewish boy, Andor, raised by his mother with idealised…",
+      "film_url": "https://www.thegardencinema.co.uk/film/orphan/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5480514.jpg",
+      "showtimes": {
+        "2026-05-26": [
+          {
+            "time": "14:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592633.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-27": [
+          {
+            "time": "17:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592654.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/orphan-2025/",
+      "letterboxd_rating": 3.17
     },
     {
       "id": "the-stranger",
