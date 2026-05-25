@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-25T12:02:15.887123+00:00",
+  "scraped_at": "2026-05-25T12:32:02.978546+00:00",
   "source": "peckhamplex.london",
   "films": [
     {
@@ -123,7 +123,7 @@
           {
             "time": "20:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80259?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": true
           }
         ],
@@ -151,7 +151,7 @@
           {
             "time": "15:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80298?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
+            "screen": null,
             "hoh": true
           },
           {
@@ -171,13 +171,13 @@
           {
             "time": "15:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80324?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": true
           },
           {
             "time": "18:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80331?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": true
           },
           {
@@ -195,72 +195,44 @@
       "letterboxd_rating": 3.62
     },
     {
-      "id": "national-theatre-live-the-playboy-of-the-western",
-      "title": "National Theatre Live: The Playboy of the Western",
+      "id": "northern-soul-still-burning",
+      "title": "Northern Soul: Still Burning",
       "rating": "15",
-      "runtime": 170,
-      "genre": "Live Theatre",
-      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-the-playboy-of-the-western",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-the-playboy-of-the-western.jpg",
+      "runtime": 91,
+      "genre": "Documentary",
+      "film_url": "https://www.peckhamplex.london/film/northern-soul-still-burning",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/northern-soul-still-burning.jpg",
       "showtimes": {
-        "2026-05-28": [
-          {
-            "time": "19:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/77601?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Caitríona McLaughlin",
-      "color": "#7c4dff",
-      "accent": "#b388ff"
-    },
-    {
-      "id": "star-wars-the-mandalorian-and-grogu-3d",
-      "title": "Star Wars: The Mandalorian and Grogu 3D",
-      "rating": "12A",
-      "runtime": 132,
-      "genre": "Action",
-      "film_url": "https://www.peckhamplex.london/film/star-wars-the-mandalorian-and-grogu-3d",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/star-wars-the-mandalorian-and-grogu-3d.jpg",
-      "showtimes": {
-        "2026-05-25": [
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80260?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
         "2026-05-26": [
           {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80286?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "time": "12:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80266?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
             "hoh": false
           }
         ],
         "2026-05-27": [
           {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80312?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "time": "12:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80292?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
             "hoh": false
           }
         ],
         "2026-05-28": [
           {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80338?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "time": "12:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80318?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
             "hoh": false
           }
         ]
       },
-      "director": "Jon Favreau",
-      "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "director": "Alan Byron",
+      "color": "#c62828",
+      "accent": "#ef5350",
+      "letterboxd_url": "https://letterboxd.com/film/northern-soul-still-burning/",
+      "letterboxd_rating": null
     },
     {
       "id": "the-christophers",
@@ -317,56 +289,124 @@
           {
             "time": "13:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80320?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "screen": null,
             "hoh": false
           }
         ]
       },
       "director": "Steven Soderbergh",
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.52
     },
     {
-      "id": "northern-soul-still-burning",
-      "title": "Northern Soul: Still Burning",
+      "id": "mother-mary",
+      "title": "Mother Mary",
       "rating": "15",
-      "runtime": 91,
-      "genre": "Documentary",
-      "film_url": "https://www.peckhamplex.london/film/northern-soul-still-burning",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/northern-soul-still-burning.jpg",
+      "runtime": 112,
+      "genre": "Drama",
+      "film_url": "https://www.peckhamplex.london/film/mother-mary",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/mother-mary.jpg",
       "showtimes": {
+        "2026-05-25": [
+          {
+            "time": "13:35",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80242?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
         "2026-05-26": [
           {
-            "time": "12:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80266?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "time": "13:35",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80268?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
             "hoh": false
           }
         ],
         "2026-05-27": [
           {
-            "time": "12:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80292?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "time": "13:35",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80294?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "David Lowery",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/mother-mary-2026/",
+      "letterboxd_rating": 2.96
+    },
+    {
+      "id": "national-theatre-live-the-playboy-of-the-western",
+      "title": "National Theatre Live: The Playboy of the Western",
+      "rating": "15",
+      "runtime": 170,
+      "genre": "Live Theatre",
+      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-the-playboy-of-the-western",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-the-playboy-of-the-western.jpg",
+      "showtimes": {
+        "2026-05-28": [
+          {
+            "time": "19:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/77601?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Caitríona McLaughlin",
+      "color": "#00897b",
+      "accent": "#4db6ac"
+    },
+    {
+      "id": "star-wars-the-mandalorian-and-grogu-3d",
+      "title": "Star Wars: The Mandalorian and Grogu 3D",
+      "rating": "12A",
+      "runtime": 132,
+      "genre": "Action",
+      "film_url": "https://www.peckhamplex.london/film/star-wars-the-mandalorian-and-grogu-3d",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/star-wars-the-mandalorian-and-grogu-3d.jpg",
+      "showtimes": {
+        "2026-05-25": [
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80260?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-05-26": [
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80286?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-05-27": [
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80312?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
             "hoh": false
           }
         ],
         "2026-05-28": [
           {
-            "time": "12:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80318?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80338?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
             "hoh": false
           }
         ]
       },
-      "director": "Alan Byron",
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/northern-soul-still-burning/",
-      "letterboxd_rating": null
+      "director": "Jon Favreau",
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
     },
     {
       "id": "the-devil-wears-prada-2",
@@ -381,7 +421,7 @@
           {
             "time": "14:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80245?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": false
           },
           {
@@ -407,7 +447,7 @@
           {
             "time": "17:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80278?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "screen": null,
             "hoh": false
           },
           {
@@ -421,13 +461,13 @@
           {
             "time": "14:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80297?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": false
           },
           {
             "time": "17:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80304?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": false
           },
           {
@@ -453,7 +493,7 @@
           {
             "time": "20:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80336?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": false
           }
         ]
@@ -463,6 +503,54 @@
       "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.23
+    },
+    {
+      "id": "the-drama",
+      "title": "The Drama",
+      "rating": "15",
+      "runtime": 105,
+      "genre": "Comedy",
+      "film_url": "https://www.peckhamplex.london/film/the-drama",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-drama.jpg",
+      "showtimes": {
+        "2026-05-25": [
+          {
+            "time": "16:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80249?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-05-26": [
+          {
+            "time": "16:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80275?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-05-27": [
+          {
+            "time": "16:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80301?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-05-28": [
+          {
+            "time": "16:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80327?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Kristoffer Borgli",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/the-drama/",
+      "letterboxd_rating": 3.71
     },
     {
       "id": "passenger",
@@ -477,7 +565,7 @@
           {
             "time": "21:10",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80262?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": false
           }
         ],
@@ -547,98 +635,10 @@
         ]
       },
       "director": "Ben Gregor",
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/the-magic-faraway-tree/",
-      "letterboxd_rating": 3.05
-    },
-    {
-      "id": "the-drama",
-      "title": "The Drama",
-      "rating": "15",
-      "runtime": 105,
-      "genre": "Comedy",
-      "film_url": "https://www.peckhamplex.london/film/the-drama",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-drama.jpg",
-      "showtimes": {
-        "2026-05-25": [
-          {
-            "time": "16:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80249?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-05-26": [
-          {
-            "time": "16:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80275?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-05-27": [
-          {
-            "time": "16:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80301?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-28": [
-          {
-            "time": "16:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80327?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Kristoffer Borgli",
-      "color": "#00838f",
-      "accent": "#4dd0e1",
-      "letterboxd_url": "https://letterboxd.com/film/the-drama/",
-      "letterboxd_rating": 3.71
-    },
-    {
-      "id": "mother-mary",
-      "title": "Mother Mary",
-      "rating": "15",
-      "runtime": 112,
-      "genre": "Drama",
-      "film_url": "https://www.peckhamplex.london/film/mother-mary",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/mother-mary.jpg",
-      "showtimes": {
-        "2026-05-25": [
-          {
-            "time": "13:35",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80242?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-05-26": [
-          {
-            "time": "13:35",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80268?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-05-27": [
-          {
-            "time": "13:35",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80294?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "David Lowery",
       "color": "#2e7d32",
       "accent": "#66bb6a",
-      "letterboxd_url": "https://letterboxd.com/film/mother-mary-2026/",
-      "letterboxd_rating": 2.96
+      "letterboxd_url": "https://letterboxd.com/film/the-magic-faraway-tree/",
+      "letterboxd_rating": 3.05
     },
     {
       "id": "the-mandalorian-grogu",
@@ -687,7 +687,7 @@
           {
             "time": "11:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80290?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           },
           {
@@ -781,13 +781,13 @@
           {
             "time": "15:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80302?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": false
           },
           {
             "time": "18:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80308?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 2",
             "hoh": false
           }
         ],
@@ -867,14 +867,6 @@
       "film_url": "https://www.peckhamplex.london/film/tom-jerry-forbidden-compass",
       "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tom-jerry-forbidden-compass.jpg",
       "showtimes": {
-        "2026-05-25": [
-          {
-            "time": "13:25",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80241?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          }
-        ],
         "2026-05-26": [
           {
             "time": "11:15",
@@ -925,6 +917,29 @@
       "letterboxd_rating": 2.04
     },
     {
+      "id": "riverdance-25th-anniversary-show",
+      "title": "Riverdance - 25th Anniversary Show",
+      "rating": "U",
+      "runtime": 120,
+      "genre": "Live Concert",
+      "film_url": "https://www.peckhamplex.london/film/riverdance-25th-anniversary-show",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/riverdance-25th-anniversary-show.jpg",
+      "showtimes": {
+        "2026-06-07": [
+          {
+            "time": "16:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/79758?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#558b2f",
+      "accent": "#9ccc65",
+      "letterboxd_url": "https://letterboxd.com/film/riverdance-25th-anniversary-show/",
+      "letterboxd_rating": null
+    },
+    {
       "id": "national-theatre-live-les-liaisons-dangereuses",
       "title": "National Theatre Live: Les Liaisons Dangereuses",
       "rating": "TBC",
@@ -943,31 +958,8 @@
         ]
       },
       "director": "Marianne Elliott",
-      "color": "#558b2f",
-      "accent": "#9ccc65"
-    },
-    {
-      "id": "riverdance-25th-anniversary-show",
-      "title": "Riverdance - 25th Anniversary Show",
-      "rating": "U",
-      "runtime": 120,
-      "genre": "Live Concert",
-      "film_url": "https://www.peckhamplex.london/film/riverdance-25th-anniversary-show",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/riverdance-25th-anniversary-show.jpg",
-      "showtimes": {
-        "2026-06-07": [
-          {
-            "time": "16:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/79758?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
       "color": "#9f2121",
-      "accent": "#d36868",
-      "letterboxd_url": "https://letterboxd.com/film/riverdance-25th-anniversary-show/",
-      "letterboxd_rating": null
+      "accent": "#d36868"
     }
   ]
 }
