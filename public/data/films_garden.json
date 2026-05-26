@@ -1,48 +1,7 @@
 {
-  "scraped_at": "2026-05-26T14:36:00.808247+00:00",
+  "scraped_at": "2026-05-26T15:05:57.701360+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "orphan",
-      "title": "Orphan",
-      "rating": "15",
-      "runtime": 132,
-      "genre": "Other",
-      "year": "2025",
-      "director": "László Nemes",
-      "cast": null,
-      "description": "1957. In Budapest, after the uprising against the Communist regime, a young Jewish boy, Andor, raised by his mother with idealised…",
-      "film_url": "https://www.thegardencinema.co.uk/film/orphan/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5480514.jpg",
-      "showtimes": {
-        "2026-05-26": [
-          {
-            "time": "14:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592633.TcsSection_971",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ],
-        "2026-05-27": [
-          {
-            "time": "17:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592654.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/orphan-2025/",
-      "letterboxd_rating": 3.17
-    },
     {
       "id": "the-christophers",
       "title": "The Christophers",
@@ -165,8 +124,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.52
     },
@@ -200,8 +159,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
       "letterboxd_rating": 3.5
     },
@@ -276,8 +235,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/eagles-of-the-republic/",
       "letterboxd_rating": 3.33
     },
@@ -310,8 +269,8 @@
         "50 Years of Argentina on Film"
       ],
       "partner": "Cinema Mentiré",
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/miss-mary/",
       "letterboxd_rating": 3.48
     },
@@ -351,8 +310,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
       "letterboxd_rating": 3.44
     },
@@ -402,8 +361,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/romeria/",
       "letterboxd_rating": 3.59
     },
@@ -445,8 +404,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
       "letterboxd_rating": 3.52
     },
@@ -472,10 +431,40 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/our-land-2025/",
       "letterboxd_rating": 3.47
+    },
+    {
+      "id": "orphan",
+      "title": "Orphan",
+      "rating": "15",
+      "runtime": 132,
+      "genre": "Other",
+      "year": "2025",
+      "director": "László Nemes",
+      "cast": null,
+      "description": "1957. In Budapest, after the uprising against the Communist regime, a young Jewish boy, Andor, raised by his mother with idealised…",
+      "film_url": "https://www.thegardencinema.co.uk/film/orphan/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5480514.jpg",
+      "showtimes": {
+        "2026-05-27": [
+          {
+            "time": "17:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592654.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ]
+      },
+      "color": "#00838f",
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/orphan-2025/",
+      "letterboxd_rating": 3.17
     },
     {
       "id": "kokuho",
@@ -3120,6 +3109,39 @@
       "letterboxd_rating": 4.11
     },
     {
+      "id": "prickly-pear-cocktails-cactus-pears-qa",
+      "title": "Prickly pear cocktails, Cactus Pears + Q&A",
+      "rating": "15",
+      "runtime": 112,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Rohan Parashuram Kanawade",
+      "cast": null,
+      "description": "This special members-only screening of Cactus Pears will open our South Asian Heritage Month 2026 programme, and your ticket will include a…",
+      "film_url": "https://www.thegardencinema.co.uk/film/prickly-pear-cocktails-cactus-pears-qa/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5452190.jpg",
+      "showtimes": {
+        "2026-07-01": [
+          {
+            "time": "18:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5607984.TcsSection_5607900",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "Q&A",
+              "Members"
+            ]
+          }
+        ]
+      },
+      "seasons": [
+        "South Asian Heritage Month 2026",
+        "Members' Events"
+      ],
+      "color": "#1a977c",
+      "accent": "#53d4b8"
+    },
+    {
       "id": "dr-seuss-horton-hears-a-who",
       "title": "Dr. Seuss’ Horton Hears a Who!",
       "rating": "U",
@@ -3158,8 +3180,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#1a977c",
-      "accent": "#53d4b8"
+      "color": "#9f5f21",
+      "accent": "#d39d68"
     },
     {
       "id": "the-palm-beach-story",
@@ -3197,8 +3219,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#9f5f21",
-      "accent": "#d39d68",
+      "color": "#4730a6",
+      "accent": "#9484d6",
       "letterboxd_url": "https://letterboxd.com/film/the-palm-beach-story/",
       "letterboxd_rating": 3.8
     },
@@ -3230,8 +3252,8 @@
       "seasons": [
         "South Asian Heritage Month 2026"
       ],
-      "color": "#4730a6",
-      "accent": "#9484d6",
+      "color": "#26971a",
+      "accent": "#5fd453",
       "letterboxd_url": "https://letterboxd.com/film/the-warrior-2001/",
       "letterboxd_rating": 3.42
     },
@@ -3271,8 +3293,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#26971a",
-      "accent": "#5fd453",
+      "color": "#9f2152",
+      "accent": "#d36891",
       "letterboxd_url": "https://letterboxd.com/film/the-philadelphia-story/",
       "letterboxd_rating": 4.0
     },
@@ -3315,8 +3337,8 @@
       "seasons": [
         "South Asian Heritage Month 2026"
       ],
-      "color": "#9f2152",
-      "accent": "#d36891"
+      "color": "#307fa6",
+      "accent": "#84bbd6"
     },
     {
       "id": "ball-of-fire",
@@ -3343,8 +3365,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#307fa6",
-      "accent": "#84bbd6",
+      "color": "#93971a",
+      "accent": "#cfd453",
       "letterboxd_url": "https://letterboxd.com/film/ball-of-fire/",
       "letterboxd_rating": 3.99
     },
@@ -3387,8 +3409,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#93971a",
-      "accent": "#cfd453",
+      "color": "#7f219f",
+      "accent": "#b768d3",
       "letterboxd_url": "https://letterboxd.com/film/james-and-the-giant-peach/",
       "letterboxd_rating": 3.4
     },
@@ -3421,8 +3443,8 @@
         "Celebrating 70 years of LFS"
       ],
       "partner": "London Film School",
-      "color": "#7f219f",
-      "accent": "#b768d3"
+      "color": "#30a665",
+      "accent": "#84d6a9"
     },
     {
       "id": "bhowani-junction-70th-anniversary",
@@ -3463,8 +3485,8 @@
       "seasons": [
         "South Asian Heritage Month 2026"
       ],
-      "color": "#30a665",
-      "accent": "#84d6a9",
+      "color": "#972e1a",
+      "accent": "#d46753",
       "letterboxd_url": "https://letterboxd.com/film/bhowani-junction/",
       "letterboxd_rating": 3.33
     },
@@ -3518,8 +3540,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#972e1a",
-      "accent": "#d46753",
+      "color": "#21329f",
+      "accent": "#6877d3",
       "letterboxd_url": "https://letterboxd.com/film/bugsy-malone/",
       "letterboxd_rating": 3.5
     },
@@ -3551,8 +3573,8 @@
       "seasons": [
         "South Asian Heritage Month 2026"
       ],
-      "color": "#21329f",
-      "accent": "#6877d3",
+      "color": "#62a630",
+      "accent": "#a7d684",
       "letterboxd_url": "https://letterboxd.com/film/bend-it-like-beckham/",
       "letterboxd_rating": 3.47
     },
@@ -3584,8 +3606,8 @@
       "seasons": [
         "South Asian Heritage Month 2026"
       ],
-      "color": "#62a630",
-      "accent": "#a7d684"
+      "color": "#971a74",
+      "accent": "#d453af"
     },
     {
       "id": "london-boys-qa",
@@ -3615,8 +3637,8 @@
       "seasons": [
         "South Asian Heritage Month 2026"
       ],
-      "color": "#971a74",
-      "accent": "#d453af",
+      "color": "#219f9e",
+      "accent": "#68d3d2",
       "letterboxd_url": "https://letterboxd.com/film/london-boys/",
       "letterboxd_rating": null
     },
@@ -3649,8 +3671,8 @@
       "seasons": [
         "South Asian Heritage Month 2026"
       ],
-      "color": "#219f9e",
-      "accent": "#68d3d2"
+      "color": "#a68230",
+      "accent": "#d6bd84"
     },
     {
       "id": "labyrinth",
@@ -3702,8 +3724,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#a68230",
-      "accent": "#d6bd84",
+      "color": "#4d1a97",
+      "accent": "#8753d4",
       "letterboxd_url": "https://letterboxd.com/film/labyrinth/",
       "letterboxd_rating": 3.76
     },
@@ -3732,8 +3754,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#4d1a97",
-      "accent": "#8753d4",
+      "color": "#219f30",
+      "accent": "#68d375",
       "letterboxd_url": "https://letterboxd.com/film/bringing-up-baby/",
       "letterboxd_rating": 4.0
     },
@@ -3787,8 +3809,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#219f30",
-      "accent": "#68d375",
+      "color": "#a63044",
+      "accent": "#d68493",
       "letterboxd_url": "https://letterboxd.com/film/monsieur-hulots-holiday/",
       "letterboxd_rating": 3.73
     },
@@ -3820,8 +3842,8 @@
       "seasons": [
         "Greek Salad"
       ],
-      "color": "#a63044",
-      "accent": "#d68493"
+      "color": "#1a5597",
+      "accent": "#538fd4"
     },
     {
       "id": "john-the-violent",
@@ -3851,8 +3873,8 @@
       "seasons": [
         "Greek Salad"
       ],
-      "color": "#1a5597",
-      "accent": "#538fd4",
+      "color": "#819f21",
+      "accent": "#b9d368",
       "letterboxd_url": "https://letterboxd.com/film/john-the-violent/",
       "letterboxd_rating": 3.7
     }
