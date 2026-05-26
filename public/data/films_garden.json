@@ -1,48 +1,7 @@
 {
-  "scraped_at": "2026-05-26T19:35:30.948067+00:00",
+  "scraped_at": "2026-05-26T20:04:29.671994+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "rose-of-nevada",
-      "title": "Rose of Nevada",
-      "rating": "15",
-      "runtime": 114,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Mark Jenkin",
-      "cast": null,
-      "description": "When a fishing boat, the Rose of Nevada, lost with all hands 30 years ago, mysteriously reappears in the old harbour…",
-      "film_url": "https://www.thegardencinema.co.uk/film/rose-of-nevada/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5148972.jpg",
-      "showtimes": {
-        "2026-05-26": [
-          {
-            "time": "20:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592629.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ],
-        "2026-05-27": [
-          {
-            "time": "14:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592656.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
-      "letterboxd_rating": 3.44
-    },
     {
       "id": "romeria",
       "title": "Romería",
@@ -89,8 +48,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/romeria/",
       "letterboxd_rating": 3.59
     },
@@ -164,10 +123,40 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
       "letterboxd_rating": 3.52
+    },
+    {
+      "id": "rose-of-nevada",
+      "title": "Rose of Nevada",
+      "rating": "15",
+      "runtime": 114,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Mark Jenkin",
+      "cast": null,
+      "description": "When a fishing boat, the Rose of Nevada, lost with all hands 30 years ago, mysteriously reappears in the old harbour…",
+      "film_url": "https://www.thegardencinema.co.uk/film/rose-of-nevada/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5148972.jpg",
+      "showtimes": {
+        "2026-05-27": [
+          {
+            "time": "14:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5592656.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
+      "letterboxd_rating": 3.44
     },
     {
       "id": "our-land",
