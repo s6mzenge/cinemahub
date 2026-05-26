@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-26T09:03:58.945616+00:00",
+  "scraped_at": "2026-05-26T10:05:20.815298+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -76,9 +76,7 @@
         ]
       },
       "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
-      "letterboxd_rating": 3.62
+      "accent": "#b388ff"
     },
     {
       "id": "obsession",
@@ -346,9 +344,7 @@
         ]
       },
       "color": "#ef6c00",
-      "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
-      "letterboxd_rating": 3.23
+      "accent": "#ffb74d"
     },
     {
       "id": "the-drama",
@@ -390,9 +386,7 @@
         ]
       },
       "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/the-drama/",
-      "letterboxd_rating": 3.71
+      "accent": "#ef5350"
     },
     {
       "id": "the-sheep-detectives",
@@ -452,9 +446,7 @@
         ]
       },
       "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
-      "letterboxd_rating": 3.82
+      "accent": "#ba68c8"
     },
     {
       "id": "the-super-mario-galaxy-movie",
@@ -488,9 +480,7 @@
         ]
       },
       "color": "#00838f",
-      "accent": "#4dd0e1",
-      "letterboxd_url": "https://letterboxd.com/film/the-super-mario-galaxy-movie/",
-      "letterboxd_rating": 2.89
+      "accent": "#4dd0e1"
     },
     {
       "id": "the-amazon-film-festival",
@@ -955,6 +945,68 @@
       "accent": "#68abd3"
     },
     {
+      "id": "toy-story-5",
+      "title": "Toy Story 5",
+      "rating": "PG",
+      "runtime": 102,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "The toys are back in Disney and Pixar's \"Toy Story 5,\" and this time it's Toy meets Tech. Woody (voice of Tom Hanks), Buzz Lightyear (voice of Tim Allen), Jessie (voice of Joan Cusack) and the rest of the gang's jobs are challenged when they come face-to-face with Lilypad (voice of Greta Lee), a brand-new tablet device that arrives with her own disruptive ideas about what is best for their kid, Bonnie. Will playtime ever be the same?More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/104999",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/104999_0.jpg",
+      "showtimes": {
+        "2026-06-18": [
+          {
+            "time": "18:15",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11219",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-19": [
+          {
+            "time": "17:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11221",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "19:30",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11220",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-20": [
+          {
+            "time": "14:30",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11226",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "17:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11225",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "19:30",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11224",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#9ca630",
+      "accent": "#cfd684",
+      "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
+      "letterboxd_rating": null
+    },
+    {
       "id": "no-time-for-goodbye",
       "title": "No Time for Goodbye",
       "rating": "15",
@@ -977,8 +1029,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684",
+      "color": "#7d1a97",
+      "accent": "#b953d4",
       "letterboxd_url": "https://letterboxd.com/film/no-time-for-goodbye/",
       "letterboxd_rating": null
     },
@@ -1005,8 +1057,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "nt-live-les-liaisons-dangereuses",
@@ -1031,8 +1083,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "glastonbury-the-movie-30th-anniversary",
@@ -1057,8 +1109,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584"
+      "color": "#1a2597",
+      "accent": "#535ed4"
     },
     {
       "id": "sinners-presented-by-wabj",
@@ -1083,8 +1135,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#519f21",
+      "accent": "#90d368"
     }
   ]
 }
