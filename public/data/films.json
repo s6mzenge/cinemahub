@@ -1,7 +1,39 @@
 {
-  "scraped_at": "2026-05-27T05:03:04.125654+00:00",
+  "scraped_at": "2026-05-27T05:32:55.949519+00:00",
   "source": "peckhamplex.london",
   "films": [
+    {
+      "id": "the-drama",
+      "title": "The Drama",
+      "rating": "15",
+      "runtime": 105,
+      "genre": "Comedy",
+      "film_url": "https://www.peckhamplex.london/film/the-drama",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-drama.jpg",
+      "showtimes": {
+        "2026-05-27": [
+          {
+            "time": "16:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80301?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-28": [
+          {
+            "time": "16:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80327?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Kristoffer Borgli",
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/the-drama/",
+      "letterboxd_rating": 3.71
+    },
     {
       "id": "michael",
       "title": "Michael",
@@ -27,7 +59,7 @@
           {
             "time": "20:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80311?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "screen": null,
             "hoh": true
           }
         ],
@@ -35,7 +67,7 @@
           {
             "time": "15:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80324?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": true
           },
           {
@@ -55,7 +87,7 @@
           {
             "time": "20:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80384?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": true
           }
         ],
@@ -63,7 +95,7 @@
           {
             "time": "20:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80408?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "screen": null,
             "hoh": true
           }
         ],
@@ -71,7 +103,7 @@
           {
             "time": "20:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80432?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": true
           }
         ],
@@ -79,7 +111,7 @@
           {
             "time": "20:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80456?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "screen": null,
             "hoh": true
           }
         ],
@@ -113,6 +145,94 @@
       "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
       "letterboxd_rating": 3.62
+    },
+    {
+      "id": "passenger",
+      "title": "Passenger",
+      "rating": "15",
+      "runtime": 94,
+      "genre": "Horror",
+      "film_url": "https://www.peckhamplex.london/film/passenger",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/passenger.jpg",
+      "showtimes": {
+        "2026-05-27": [
+          {
+            "time": "21:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80314?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": true
+          }
+        ],
+        "2026-05-28": [
+          {
+            "time": "21:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80340?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": true
+          }
+        ],
+        "2026-05-29": [
+          {
+            "time": "17:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80383?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": true
+          }
+        ],
+        "2026-05-30": [
+          {
+            "time": "17:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80407?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": true
+          }
+        ],
+        "2026-05-31": [
+          {
+            "time": "17:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80431?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": true
+          }
+        ],
+        "2026-06-01": [
+          {
+            "time": "17:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80455?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": true
+          }
+        ],
+        "2026-06-02": [
+          {
+            "time": "17:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80469?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": true
+          }
+        ],
+        "2026-06-03": [
+          {
+            "time": "17:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80481?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": true
+          }
+        ],
+        "2026-06-04": [
+          {
+            "time": "17:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80494?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": true
+          }
+        ]
+      },
+      "director": "André Øvredal",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
+      "letterboxd_url": "https://letterboxd.com/film/passenger-2026/",
+      "letterboxd_rating": 2.35
     },
     {
       "id": "finding-emily",
@@ -217,7 +337,7 @@
           {
             "time": "20:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80468?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": true
           }
         ],
@@ -233,48 +353,16 @@
           {
             "time": "20:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80493?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": true
           }
         ]
       },
       "director": "Alicia MacDonald",
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/finding-emily/",
-      "letterboxd_rating": 3.72
-    },
-    {
-      "id": "the-drama",
-      "title": "The Drama",
-      "rating": "15",
-      "runtime": 105,
-      "genre": "Comedy",
-      "film_url": "https://www.peckhamplex.london/film/the-drama",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-drama.jpg",
-      "showtimes": {
-        "2026-05-27": [
-          {
-            "time": "16:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80301?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-05-28": [
-          {
-            "time": "16:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80327?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Kristoffer Borgli",
       "color": "#7c4dff",
       "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/the-drama/",
-      "letterboxd_rating": 3.71
+      "letterboxd_url": "https://letterboxd.com/film/finding-emily/",
+      "letterboxd_rating": 3.72
     },
     {
       "id": "northern-soul-still-burning",
@@ -353,7 +441,7 @@
           {
             "time": "12:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80416?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           }
         ]
@@ -363,92 +451,6 @@
       "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/the-magic-faraway-tree/",
       "letterboxd_rating": 3.05
-    },
-    {
-      "id": "star-wars-the-mandalorian-and-grogu-3d",
-      "title": "Star Wars: The Mandalorian and Grogu 3D",
-      "rating": "12A",
-      "runtime": 132,
-      "genre": "Action",
-      "film_url": "https://www.peckhamplex.london/film/star-wars-the-mandalorian-and-grogu-3d",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/star-wars-the-mandalorian-and-grogu-3d.jpg",
-      "showtimes": {
-        "2026-05-27": [
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80312?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-05-28": [
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80338?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-05-29": [
-          {
-            "time": "17:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80372?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-05-30": [
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80396?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-05-31": [
-          {
-            "time": "17:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80420?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-01": [
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80444?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-02": [
-          {
-            "time": "17:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80463?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-03": [
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80475?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-04": [
-          {
-            "time": "17:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80488?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Jon Favreau",
-      "color": "#ef6c00",
-      "accent": "#ffb74d"
     },
     {
       "id": "the-devil-wears-prada-2",
@@ -489,7 +491,7 @@
           {
             "time": "17:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80330?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "screen": null,
             "hoh": false
           },
           {
@@ -517,7 +519,7 @@
           {
             "time": "14:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80414?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "screen": null,
             "hoh": false
           },
           {
@@ -531,7 +533,7 @@
           {
             "time": "14:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80438?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 6",
             "hoh": false
           },
           {
@@ -553,7 +555,7 @@
           {
             "time": "17:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80473?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -561,7 +563,7 @@
           {
             "time": "17:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80485?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 6",
             "hoh": false
           }
         ],
@@ -579,28 +581,6 @@
       "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.23
-    },
-    {
-      "id": "national-theatre-live-the-playboy-of-the-western",
-      "title": "National Theatre Live: The Playboy of the Western",
-      "rating": "15",
-      "runtime": 170,
-      "genre": "Live Theatre",
-      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-the-playboy-of-the-western",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-the-playboy-of-the-western.jpg",
-      "showtimes": {
-        "2026-05-28": [
-          {
-            "time": "19:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/77601?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Caitríona McLaughlin",
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
     },
     {
       "id": "the-christophers",
@@ -675,98 +655,96 @@
         ]
       },
       "director": "Steven Soderbergh",
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.52
     },
     {
-      "id": "passenger",
-      "title": "Passenger",
-      "rating": "15",
-      "runtime": 94,
-      "genre": "Horror",
-      "film_url": "https://www.peckhamplex.london/film/passenger",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/passenger.jpg",
+      "id": "star-wars-the-mandalorian-and-grogu-3d",
+      "title": "Star Wars: The Mandalorian and Grogu 3D",
+      "rating": "12A",
+      "runtime": 132,
+      "genre": "Action",
+      "film_url": "https://www.peckhamplex.london/film/star-wars-the-mandalorian-and-grogu-3d",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/star-wars-the-mandalorian-and-grogu-3d.jpg",
       "showtimes": {
         "2026-05-27": [
           {
-            "time": "21:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80314?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": true
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80312?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
           }
         ],
         "2026-05-28": [
           {
-            "time": "21:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80340?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": true
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80338?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
           }
         ],
         "2026-05-29": [
           {
-            "time": "17:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80383?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": true
+            "time": "17:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80372?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
           }
         ],
         "2026-05-30": [
           {
-            "time": "17:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80407?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": true
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80396?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
           }
         ],
         "2026-05-31": [
           {
-            "time": "17:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80431?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": true
+            "time": "17:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80420?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
           }
         ],
         "2026-06-01": [
           {
-            "time": "17:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80455?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": true
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80444?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
           }
         ],
         "2026-06-02": [
           {
-            "time": "17:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80469?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": true
+            "time": "17:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80463?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
           }
         ],
         "2026-06-03": [
           {
-            "time": "17:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80481?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": true
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80475?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
           }
         ],
         "2026-06-04": [
           {
-            "time": "17:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80494?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": true
+            "time": "17:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80488?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
           }
         ]
       },
-      "director": "André Øvredal",
-      "color": "#546e7a",
-      "accent": "#90a4ae",
-      "letterboxd_url": "https://letterboxd.com/film/passenger-2026/",
-      "letterboxd_rating": 2.35
+      "director": "Jon Favreau",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8"
     },
     {
       "id": "the-sheep-detectives",
@@ -781,13 +759,13 @@
           {
             "time": "12:45",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80295?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 2",
             "hoh": false
           },
           {
             "time": "15:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80302?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 2",
             "hoh": false
           },
           {
@@ -801,7 +779,7 @@
           {
             "time": "12:45",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80321?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": false
           },
           {
@@ -835,7 +813,7 @@
           {
             "time": "12:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80411?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": false
           },
           {
@@ -855,16 +833,38 @@
           {
             "time": "15:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80434?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": false
           }
         ]
       },
       "director": "Kyle Balda",
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
       "letterboxd_rating": 3.82
+    },
+    {
+      "id": "national-theatre-live-the-playboy-of-the-western",
+      "title": "National Theatre Live: The Playboy of the Western",
+      "rating": "15",
+      "runtime": 170,
+      "genre": "Live Theatre",
+      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-the-playboy-of-the-western",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-the-playboy-of-the-western.jpg",
+      "showtimes": {
+        "2026-05-28": [
+          {
+            "time": "19:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/77601?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Caitríona McLaughlin",
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "the-mandalorian-grogu",
@@ -905,7 +905,7 @@
           {
             "time": "14:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80326?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "screen": null,
             "hoh": false
           },
           {
@@ -979,7 +979,7 @@
           {
             "time": "17:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80446?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -995,7 +995,7 @@
           {
             "time": "17:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80477?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 2",
             "hoh": false
           }
         ],
@@ -1003,7 +1003,7 @@
           {
             "time": "20:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80490?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 2",
             "hoh": false
           }
         ]
@@ -1011,6 +1011,163 @@
       "director": "Taika Waititi",
       "color": "#ad1457",
       "accent": "#f06292"
+    },
+    {
+      "id": "fairyland",
+      "title": "Fairyland",
+      "rating": "15",
+      "runtime": 116,
+      "genre": "Drama",
+      "film_url": "https://www.peckhamplex.london/film/fairyland",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/fairyland.jpg",
+      "showtimes": {
+        "2026-05-29": [
+          {
+            "time": "11:50",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80391?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          },
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80388?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-05-30": [
+          {
+            "time": "11:50",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80415?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          },
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80412?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-05-31": [
+          {
+            "time": "11:50",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80439?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80436?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-06-01": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80460?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-06-02": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80472?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-03": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80484?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-06-04": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80496?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#37474f",
+      "accent": "#78909c",
+      "letterboxd_url": "https://letterboxd.com/film/fairyland/",
+      "letterboxd_rating": 3.51
+    },
+    {
+      "id": "tom-jerry-forbidden-compass",
+      "title": "Tom & Jerry: Forbidden Compass",
+      "rating": "PG",
+      "runtime": 99,
+      "genre": "Animated",
+      "film_url": "https://www.peckhamplex.london/film/tom-jerry-forbidden-compass",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tom-jerry-forbidden-compass.jpg",
+      "showtimes": {
+        "2026-05-27": [
+          {
+            "time": "11:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80291?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          },
+          {
+            "time": "13:25",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80293?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          }
+        ],
+        "2026-05-28": [
+          {
+            "time": "11:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80317?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          },
+          {
+            "time": "13:25",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80319?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-29": [
+          {
+            "time": "12:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80380?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-30": [
+          {
+            "time": "12:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80404?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          }
+        ],
+        "2026-05-31": [
+          {
+            "time": "12:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80428?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Zhang Gang",
+      "color": "#4e342e",
+      "accent": "#8d6e63",
+      "letterboxd_url": "https://letterboxd.com/film/tom-and-jerry-forbidden-compass/",
+      "letterboxd_rating": 1.99
     },
     {
       "id": "the-super-mario-galaxy-movie",
@@ -1063,108 +1220,10 @@
         ]
       },
       "director": "Michael Jelenic",
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/the-super-mario-galaxy-movie/",
       "letterboxd_rating": 2.89
-    },
-    {
-      "id": "tom-jerry-forbidden-compass",
-      "title": "Tom & Jerry: Forbidden Compass",
-      "rating": "PG",
-      "runtime": 99,
-      "genre": "Animated",
-      "film_url": "https://www.peckhamplex.london/film/tom-jerry-forbidden-compass",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tom-jerry-forbidden-compass.jpg",
-      "showtimes": {
-        "2026-05-27": [
-          {
-            "time": "11:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80291?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          },
-          {
-            "time": "13:25",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80293?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          }
-        ],
-        "2026-05-28": [
-          {
-            "time": "11:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80317?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          },
-          {
-            "time": "13:25",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80319?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          }
-        ],
-        "2026-05-29": [
-          {
-            "time": "12:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80380?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          }
-        ],
-        "2026-05-30": [
-          {
-            "time": "12:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80404?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-31": [
-          {
-            "time": "12:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80428?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Zhang Gang",
-      "color": "#4e342e",
-      "accent": "#8d6e63",
-      "letterboxd_url": "https://letterboxd.com/film/tom-and-jerry-forbidden-compass/",
-      "letterboxd_rating": 1.99
-    },
-    {
-      "id": "masters-of-the-universe",
-      "title": "Masters of the Universe",
-      "rating": "TBC",
-      "runtime": 141,
-      "genre": "Action",
-      "film_url": "https://www.peckhamplex.london/film/masters-of-the-universe",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/masters-of-the-universe.jpg",
-      "showtimes": {
-        "2026-06-03": [
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80486?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          }
-        ],
-        "2026-06-04": [
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80498?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Aaron Nee",
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
     },
     {
       "id": "backrooms",
@@ -1191,7 +1250,7 @@
           {
             "time": "20:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80377?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -1211,7 +1270,7 @@
           {
             "time": "20:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80401?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           }
         ],
@@ -1231,7 +1290,7 @@
           {
             "time": "20:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80425?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           }
         ],
@@ -1259,7 +1318,7 @@
           {
             "time": "20:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80466?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           }
         ],
@@ -1273,7 +1332,7 @@
           {
             "time": "20:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80478?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -1297,6 +1356,58 @@
       "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "masters-of-the-universe",
+      "title": "Masters of the Universe",
+      "rating": "TBC",
+      "runtime": 141,
+      "genre": "Action",
+      "film_url": "https://www.peckhamplex.london/film/masters-of-the-universe",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/masters-of-the-universe.jpg",
+      "showtimes": {
+        "2026-06-03": [
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80486?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-04": [
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80498?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Aaron Nee",
+      "color": "#9f2121",
+      "accent": "#d36868"
+    },
+    {
+      "id": "national-theatre-live-les-liaisons-dangereuses",
+      "title": "National Theatre Live: Les Liaisons Dangereuses",
+      "rating": "TBC",
+      "runtime": 180,
+      "genre": "Opera",
+      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-les-liaisons-dangereuses",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-les-liaisons-dangereuses.jpg",
+      "showtimes": {
+        "2026-06-25": [
+          {
+            "time": "19:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/77602?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Marianne Elliott",
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "power-ballad",
@@ -1331,13 +1442,13 @@
           {
             "time": "15:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80394?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "screen": null,
             "hoh": false
           },
           {
             "time": "18:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80395?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           },
           {
@@ -1425,121 +1536,10 @@
         ]
       },
       "director": "John Carney",
-      "color": "#9f2121",
-      "accent": "#d36868",
-      "letterboxd_url": "https://letterboxd.com/film/power-ballad/",
-      "letterboxd_rating": 3.34
-    },
-    {
-      "id": "national-theatre-live-les-liaisons-dangereuses",
-      "title": "National Theatre Live: Les Liaisons Dangereuses",
-      "rating": "TBC",
-      "runtime": 180,
-      "genre": "Opera",
-      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-les-liaisons-dangereuses",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-les-liaisons-dangereuses.jpg",
-      "showtimes": {
-        "2026-06-25": [
-          {
-            "time": "19:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/77602?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Marianne Elliott",
-      "color": "#3052a6",
-      "accent": "#849cd6"
-    },
-    {
-      "id": "fairyland",
-      "title": "Fairyland",
-      "rating": "15",
-      "runtime": 116,
-      "genre": "Drama",
-      "film_url": "https://www.peckhamplex.london/film/fairyland",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/fairyland.jpg",
-      "showtimes": {
-        "2026-05-29": [
-          {
-            "time": "11:50",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80391?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          },
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80388?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-05-30": [
-          {
-            "time": "11:50",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80415?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          },
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80412?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-05-31": [
-          {
-            "time": "11:50",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80439?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          },
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80436?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-06-01": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80460?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-06-02": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80472?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-06-03": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80484?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-06-04": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80496?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
       "color": "#63971a",
       "accent": "#9ed453",
-      "letterboxd_url": "https://letterboxd.com/film/fairyland/",
-      "letterboxd_rating": 3.51
+      "letterboxd_url": "https://letterboxd.com/film/power-ballad/",
+      "letterboxd_rating": 3.34
     },
     {
       "id": "riverdance-25th-anniversary-show",
