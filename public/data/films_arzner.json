@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-27T15:33:53.528779+00:00",
+  "scraped_at": "2026-05-27T16:04:01.407367+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -699,6 +699,14 @@
             "hoh": false
           }
         ],
+        "2026-06-15": [
+          {
+            "time": "14:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_209764.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
         "2026-06-16": [
           {
             "time": "18:15",
@@ -831,6 +839,14 @@
             "hoh": false
           }
         ],
+        "2026-06-15": [
+          {
+            "time": "12:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_209766.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
         "2026-06-19": [
           {
             "time": "11:30",
@@ -929,6 +945,14 @@
           {
             "time": "11:00",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205949.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-06-15": [
+          {
+            "time": "18:10",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_209761.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
           }
@@ -1035,6 +1059,14 @@
           {
             "time": "21:30",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205947.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-06-15": [
+          {
+            "time": "16:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_209765.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
           }
@@ -1287,6 +1319,31 @@
       "accent": "#68d39d"
     },
     {
+      "id": "queer-cinema-for-palestine-no-pride-in-genocide-panel-discussion-205299",
+      "title": "Queer Cinema for Palestine: No Pride in Genocide + Panel Discussion",
+      "rating": "18",
+      "runtime": 130,
+      "genre": "Pride Month",
+      "description": "There are five ticket/donation options to choose from. Please donate what you feel comfortable paying. All of the ticket money will be donated to MAP (Medical Aid for Palestine).  Queer Cinema for Palestine (QCP) and The Arzner presents No Pride in Genocide , a global film event, co-organized by the…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=205299",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/209751.jpg",
+      "showtimes": {
+        "2026-06-15": [
+          {
+            "time": "20:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_209760.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Pride Month"
+            ]
+          }
+        ]
+      },
+      "color": "#a64830",
+      "accent": "#d69584"
+    },
+    {
       "id": "cactus-pears-director-q-a-183173",
       "title": "Cactus Pears + Director Q&A",
       "rating": "15",
@@ -1308,8 +1365,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584",
+      "color": "#1a2597",
+      "accent": "#535ed4",
       "letterboxd_url": "https://letterboxd.com/film/cactus-pears/",
       "letterboxd_rating": 3.87
     },
@@ -1335,8 +1392,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "stand-up-with-pride-lgbtq-comedy-184656",
@@ -1360,8 +1417,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#a6307e",
+      "accent": "#d684bb"
     },
     {
       "id": "lesbian-space-princess-205469",
@@ -1388,8 +1445,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb",
+      "color": "#1a9297",
+      "accent": "#53cfd4",
       "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
       "letterboxd_rating": 3.61
     },
@@ -1428,8 +1485,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4",
+      "color": "#9f8021",
+      "accent": "#d3b868",
       "letterboxd_url": "https://letterboxd.com/film/cactus-pears/",
       "letterboxd_rating": 3.87
     },
@@ -1455,8 +1512,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868"
+      "color": "#6530a6",
+      "accent": "#a984d6"
     },
     {
       "id": "the-powerpuff-girls-movie-intro-from-nyongbella-147482",
@@ -1480,8 +1537,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6",
+      "color": "#1a972f",
+      "accent": "#53d468",
       "letterboxd_url": "https://letterboxd.com/film/the-powerpuff-girls-movie/",
       "letterboxd_rating": 3.49
     },
@@ -1508,8 +1565,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468"
+      "color": "#9f2132",
+      "accent": "#d36876"
     },
     {
       "id": "her-will-be-done-english-premiere-201623",
@@ -1533,8 +1590,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "hag-international-premiere-201827",
@@ -1558,8 +1615,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6"
+      "color": "#73971a",
+      "accent": "#afd453"
     },
     {
       "id": "camp-q-a-english-premiere-201921",
@@ -1583,8 +1640,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "frigay-the-13th-live-podcast-202012",
@@ -1608,8 +1665,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "the-restoration-at-grayson-manor-english-premiere-202061",
@@ -1633,8 +1690,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be"
+      "color": "#974e1a",
+      "accent": "#d48853"
     },
     {
       "id": "anything-that-moves-uk-premiere-202066",
@@ -1658,8 +1715,8 @@
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853"
+      "color": "#31219f",
+      "accent": "#7568d3"
     },
     {
       "id": "double-bill-q-a-two-black-boys-in-paradise-a-friend-of-dorothy-201036",
@@ -1683,8 +1740,8 @@
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3"
+      "color": "#44a630",
+      "accent": "#92d684"
     },
     {
       "id": "no-man-s-land-with-rosie-turner-q-a-197644",
@@ -1708,8 +1765,8 @@
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#971a54",
+      "accent": "#d4538f"
     },
     {
       "id": "brat-summer-charli-xcx-marathon-166971",
@@ -1733,8 +1790,8 @@
           }
         ]
       },
-      "color": "#971a54",
-      "accent": "#d4538f"
+      "color": "#21809f",
+      "accent": "#68b9d3"
     }
   ]
 }
