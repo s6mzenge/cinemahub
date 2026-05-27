@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-27T14:05:45.546701+00:00",
+  "scraped_at": "2026-05-27T14:35:06.025346+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -53,58 +53,6 @@
       },
       "color": "#7c4dff",
       "accent": "#b388ff"
-    },
-    {
-      "id": "michael",
-      "title": "Michael",
-      "rating": "12A",
-      "runtime": 127,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "A biopic exploring the life of Michael Jackson, from his Jackson 5 beginnings and extraordinary talent to his status as the biggest entertainer, promising an honest look at his triumphs, struggles, and iconic performances, starring his nephew Jaafar Jackson as Michael, with Colman Domingo & Nia Long as his parents, directed by Antoine Fuqua.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/93222",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/93222_0.jpg",
-      "showtimes": {
-        "2026-05-27": [
-          {
-            "time": "15:15",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11180",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-28": [
-          {
-            "time": "20:45",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11193",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-29": [
-          {
-            "time": "15:20",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11275",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-02": [
-          {
-            "time": "21:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11320",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
-      "letterboxd_rating": 3.62
     },
     {
       "id": "obsession",
@@ -247,8 +195,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2026/",
       "letterboxd_rating": null
     },
@@ -267,12 +215,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/102342_0.jpg",
       "showtimes": {
         "2026-05-27": [
-          {
-            "time": "15:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11199",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "16:30",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11158",
@@ -441,8 +383,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/star-wars-the-mandalorian-and-grogu/",
       "letterboxd_rating": 3.15
     },
@@ -505,8 +447,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.23
     },
@@ -541,8 +483,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/the-drama/",
       "letterboxd_rating": 3.71
     },
@@ -627,10 +569,54 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
       "letterboxd_rating": 3.82
+    },
+    {
+      "id": "michael",
+      "title": "Michael",
+      "rating": "12A",
+      "runtime": 127,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "A biopic exploring the life of Michael Jackson, from his Jackson 5 beginnings and extraordinary talent to his status as the biggest entertainer, promising an honest look at his triumphs, struggles, and iconic performances, starring his nephew Jaafar Jackson as Michael, with Colman Domingo & Nia Long as his parents, directed by Antoine Fuqua.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/93222",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/93222_0.jpg",
+      "showtimes": {
+        "2026-05-28": [
+          {
+            "time": "20:45",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11193",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-29": [
+          {
+            "time": "15:20",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11275",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-02": [
+          {
+            "time": "21:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11320",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
+      "letterboxd_rating": 3.62
     },
     {
       "id": "nt-live-the-playboy-of-the-western-world",
