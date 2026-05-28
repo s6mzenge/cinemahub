@@ -1,66 +1,7 @@
 {
-  "scraped_at": "2026-05-28T18:04:43.408663+00:00",
+  "scraped_at": "2026-05-28T18:35:07.116620+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "hen",
-      "title": "Hen",
-      "rating": "15",
-      "runtime": 96,
-      "genre": "Other",
-      "year": "2026",
-      "director": "György Pálfi",
-      "cast": null,
-      "description": "Told entirely from the perspective of its avian protagonist, Hen follows a chicken who escapes an industrial farm only to find…",
-      "film_url": "https://www.thegardencinema.co.uk/film/hen/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5572697.jpg",
-      "showtimes": {
-        "2026-05-28": [
-          {
-            "time": "18:20",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5452263.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-29": [
-          {
-            "time": "17:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628035.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-31": [
-          {
-            "time": "14:40",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628067.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-03": [
-          {
-            "time": "17:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628091.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-04": [
-          {
-            "time": "17:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628095.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
-      "letterboxd_rating": 3.52
-    },
     {
       "id": "kokuho",
       "title": "Kokuho",
@@ -123,8 +64,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/kokuho/",
       "letterboxd_rating": 3.84
     },
@@ -150,8 +91,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-stranger-2025-1/",
       "letterboxd_rating": 3.5
     },
@@ -205,8 +146,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/ernest-celestine/",
       "letterboxd_rating": 4.18
     },
@@ -255,8 +196,8 @@
       "seasons": [
         "50 Years of Argentina on Film"
       ],
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/nine-queens/",
       "letterboxd_rating": 4.15
     },
@@ -349,9 +290,60 @@
           }
         ]
       },
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
+      "letterboxd_rating": 3.52
+    },
+    {
+      "id": "hen",
+      "title": "Hen",
+      "rating": "15",
+      "runtime": 96,
+      "genre": "Other",
+      "year": "2026",
+      "director": "György Pálfi",
+      "cast": null,
+      "description": "Told entirely from the perspective of its avian protagonist, Hen follows a chicken who escapes an industrial farm only to find…",
+      "film_url": "https://www.thegardencinema.co.uk/film/hen/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5572697.jpg",
+      "showtimes": {
+        "2026-05-29": [
+          {
+            "time": "17:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628035.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-05-31": [
+          {
+            "time": "14:40",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628067.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-03": [
+          {
+            "time": "17:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628091.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-04": [
+          {
+            "time": "17:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628095.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
       "color": "#ef6c00",
       "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
+      "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
       "letterboxd_rating": 3.52
     },
     {
