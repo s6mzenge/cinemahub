@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-29T12:05:23.833163+00:00",
+  "scraped_at": "2026-05-29T12:35:50.589991+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -446,12 +446,6 @@
       "showtimes": {
         "2026-05-29": [
           {
-            "time": "13:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11273",
-            "screen": null,
-            "hoh": false
-          },
-          {
             "time": "15:35",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11234",
             "screen": null,
@@ -631,42 +625,6 @@
       "letterboxd_rating": 3.82
     },
     {
-      "id": "the-super-mario-galaxy-movie",
-      "title": "The Super Mario Galaxy Movie",
-      "rating": "PG",
-      "runtime": 98,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/102277",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/102277_0.jpg",
-      "showtimes": {
-        "2026-05-29": [
-          {
-            "time": "13:10",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11274",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-31": [
-          {
-            "time": "13:20",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11309",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
-      "letterboxd_url": "https://letterboxd.com/film/the-super-mario-galaxy-movie/",
-      "letterboxd_rating": 2.89
-    },
-    {
       "id": "tuner",
       "title": "Tuner",
       "rating": "12A",
@@ -803,8 +761,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
       "letterboxd_rating": 3.71
     },
@@ -831,8 +789,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/ties-that-bind/",
       "letterboxd_rating": null
     },
@@ -867,8 +825,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
       "letterboxd_url": "https://letterboxd.com/film/project-hail-mary/",
       "letterboxd_rating": 4.31
     },
@@ -903,8 +861,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#ad1457",
+      "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.22
     },
@@ -931,10 +889,38 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#37474f",
+      "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/samidoun-the-steadfast-women-of-palestine/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "the-super-mario-galaxy-movie",
+      "title": "The Super Mario Galaxy Movie",
+      "rating": "PG",
+      "runtime": 98,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/102277",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/102277_0.jpg",
+      "showtimes": {
+        "2026-05-31": [
+          {
+            "time": "13:20",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11309",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#4e342e",
+      "accent": "#8d6e63",
+      "letterboxd_url": "https://letterboxd.com/film/the-super-mario-galaxy-movie/",
+      "letterboxd_rating": 2.89
     },
     {
       "id": "in-haiti-voices-from-port-au-prince-panel-q-a",
