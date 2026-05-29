@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-29T11:33:01.797372+00:00",
+  "scraped_at": "2026-05-29T12:03:07.763932+00:00",
   "source": "thecastlecinema.com",
   "films": [
     {
@@ -42,16 +42,6 @@
       "showtimes": {
         "2026-05-29": [
           {
-            "time": "11:15",
-            "booking_url": "https://thecastlecinema.com/interstitial/free-guest/16769/show",
-            "screen": "S1",
-            "hoh": false,
-            "tags": [
-              "AD",
-              "+ free guest"
-            ]
-          },
-          {
             "time": "16:00",
             "booking_url": "https://thecastlecinema.com/bookings/16770/",
             "screen": "S1",
@@ -83,7 +73,7 @@
           {
             "time": "18:20",
             "booking_url": "https://thecastlecinema.com/bookings/16779/",
-            "screen": "S1",
+            "screen": "S2",
             "hoh": false,
             "tags": [
               "AD"
@@ -861,16 +851,6 @@
       "showtimes": {
         "2026-05-29": [
           {
-            "time": "11:45",
-            "booking_url": "https://thecastlecinema.com/interstitial/free-guest/16772/show",
-            "screen": "S2",
-            "hoh": false,
-            "tags": [
-              "AD",
-              "+ free guest"
-            ]
-          },
-          {
             "time": "16:30",
             "booking_url": "https://thecastlecinema.com/bookings/16773/",
             "screen": "S2",
@@ -1097,7 +1077,7 @@
           {
             "time": "15:45",
             "booking_url": "https://thecastlecinema.com/bookings/16782/",
-            "screen": "S1",
+            "screen": "S2",
             "hoh": false,
             "tags": [
               "AD"
@@ -1330,8 +1310,11 @@
           {
             "time": "16:00",
             "booking_url": "https://thecastlecinema.com/bookings/16630/",
-            "screen": "S2",
-            "hoh": false
+            "screen": "S1",
+            "hoh": false,
+            "tags": [
+              "film festival"
+            ]
           }
         ]
       },
@@ -1355,8 +1338,11 @@
           {
             "time": "18:10",
             "booking_url": "https://thecastlecinema.com/bookings/16631/",
-            "screen": "S2",
-            "hoh": false
+            "screen": "S1",
+            "hoh": false,
+            "tags": [
+              "film festival"
+            ]
           }
         ]
       },
