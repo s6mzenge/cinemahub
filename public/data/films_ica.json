@@ -1,7 +1,50 @@
 {
-  "scraped_at": "2026-05-28T20:34:02.816475+00:00",
+  "scraped_at": "2026-05-29T04:05:55.411219+00:00",
   "source": "ica.art",
   "films": [
+    {
+      "id": "kokuho",
+      "title": "Kokuho",
+      "rating": "TBC",
+      "runtime": 172,
+      "genre": "Other",
+      "year": "2025",
+      "country": "Japan",
+      "director": "Sang-il Lee",
+      "description": "In 1964 Nagasaki, an orphaned yakuza heir enters the world of Kabuki, growing up beside his mentor’s son as rivalry and ambition shape their destinies.",
+      "film_url": "https://www.ica.art/films/kokuho",
+      "poster_url": "https://www.ica.art/media/13148.jpg",
+      "showtimes": {
+        "2026-05-29": [
+          {
+            "time": "13:00",
+            "booking_url": "https://www.ica.art/book/721801",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ],
+        "2026-05-30": [
+          {
+            "time": "14:30",
+            "booking_url": "https://www.ica.art/book/721801",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-04": [
+          {
+            "time": "14:45",
+            "booking_url": "https://www.ica.art/book/721801",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/kokuho/",
+      "letterboxd_rating": 3.84
+    },
     {
       "id": "hen",
       "title": "Hen",
@@ -15,20 +58,6 @@
       "film_url": "https://www.ica.art/films/hen",
       "poster_url": "https://www.ica.art/media/13210.jpg",
       "showtimes": {
-        "2026-05-28": [
-          {
-            "time": "12:05",
-            "booking_url": "https://www.ica.art/book/725201",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "21:00",
-            "booking_url": "https://www.ica.art/book/725201",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-05-29": [
           {
             "time": "14:10",
@@ -62,10 +91,61 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
       "letterboxd_rating": 3.52
+    },
+    {
+      "id": "eagles-of-the-republic",
+      "title": "Eagles of the Republic",
+      "rating": "15",
+      "runtime": 129,
+      "genre": "Other",
+      "year": "2025",
+      "country": "Sweden/ France/ Denmark/ Finland",
+      "director": "Tarik Saleh",
+      "description": "A taut political thriller from the director ofCairo Conspiracy, Tarik Saleh's latest film centres upon Egypt’s most adored actor, George El-Nabawi, who on the verge of losing everything finds himself forced to accept an offer he can’t refuse.",
+      "film_url": "https://www.ica.art/films/eagles-of-the-republic",
+      "poster_url": "https://www.ica.art/media/13208.jpg",
+      "showtimes": {
+        "2026-05-29": [
+          {
+            "time": "16:00",
+            "booking_url": "https://www.ica.art/book/724801",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ],
+        "2026-05-31": [
+          {
+            "time": "16:00",
+            "booking_url": "https://www.ica.art/book/724801",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ],
+        "2026-06-02": [
+          {
+            "time": "15:45",
+            "booking_url": "https://www.ica.art/book/724801",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-03": [
+          {
+            "time": "13:00",
+            "booking_url": "https://www.ica.art/book/724801",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/eagles-of-the-republic/",
+      "letterboxd_rating": 3.33
     },
     {
       "id": "tycoon",
@@ -80,28 +160,6 @@
       "film_url": "https://www.ica.art/films/tycoon",
       "poster_url": "https://www.ica.art/media/12961.jpg",
       "showtimes": {
-        "2026-05-28": [
-          {
-            "time": "13:00",
-            "booking_url": "https://www.ica.art/book/706201",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "Off-Circuit",
-              "Uk Premiere"
-            ]
-          },
-          {
-            "time": "20:40",
-            "booking_url": "https://www.ica.art/book/706201",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "Off-Circuit",
-              "Uk Premiere"
-            ]
-          }
-        ],
         "2026-05-29": [
           {
             "time": "16:15",
@@ -175,199 +233,10 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/tycoon-2026/",
-      "letterboxd_rating": null
-    },
-    {
-      "id": "eagles-of-the-republic",
-      "title": "Eagles of the Republic",
-      "rating": "15",
-      "runtime": 129,
-      "genre": "Other",
-      "year": "2025",
-      "country": "Sweden/ France/ Denmark/ Finland",
-      "director": "Tarik Saleh",
-      "description": "A taut political thriller from the director ofCairo Conspiracy, Tarik Saleh's latest film centres upon Egypt’s most adored actor, George El-Nabawi, who on the verge of losing everything finds himself forced to accept an offer he can’t refuse.",
-      "film_url": "https://www.ica.art/films/eagles-of-the-republic",
-      "poster_url": "https://www.ica.art/media/13208.jpg",
-      "showtimes": {
-        "2026-05-28": [
-          {
-            "time": "14:00",
-            "booking_url": "https://www.ica.art/book/724801",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "18:15",
-            "booking_url": "https://www.ica.art/book/724801",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-29": [
-          {
-            "time": "16:00",
-            "booking_url": "https://www.ica.art/book/724801",
-            "screen": "Cinema 1",
-            "hoh": false
-          }
-        ],
-        "2026-05-31": [
-          {
-            "time": "16:00",
-            "booking_url": "https://www.ica.art/book/724801",
-            "screen": "Cinema 1",
-            "hoh": false
-          }
-        ],
-        "2026-06-02": [
-          {
-            "time": "15:45",
-            "booking_url": "https://www.ica.art/book/724801",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-03": [
-          {
-            "time": "13:00",
-            "booking_url": "https://www.ica.art/book/724801",
-            "screen": "Cinema 1",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/eagles-of-the-republic/",
-      "letterboxd_rating": 3.33
-    },
-    {
-      "id": "kokuho",
-      "title": "Kokuho",
-      "rating": "TBC",
-      "runtime": 172,
-      "genre": "Other",
-      "year": "2025",
-      "country": "Japan",
-      "director": "Sang-il Lee",
-      "description": "In 1964 Nagasaki, an orphaned yakuza heir enters the world of Kabuki, growing up beside his mentor’s son as rivalry and ambition shape their destinies.",
-      "film_url": "https://www.ica.art/films/kokuho",
-      "poster_url": "https://www.ica.art/media/13148.jpg",
-      "showtimes": {
-        "2026-05-28": [
-          {
-            "time": "14:50",
-            "booking_url": "https://www.ica.art/book/721801",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-29": [
-          {
-            "time": "13:00",
-            "booking_url": "https://www.ica.art/book/721801",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ],
-        "2026-05-30": [
-          {
-            "time": "14:30",
-            "booking_url": "https://www.ica.art/book/721801",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-04": [
-          {
-            "time": "14:45",
-            "booking_url": "https://www.ica.art/book/721801",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ]
-      },
       "color": "#00897b",
       "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/kokuho/",
-      "letterboxd_rating": 3.84
-    },
-    {
-      "id": "reflection-in-a-dead-diamond",
-      "title": "Reflection in a Dead Diamond",
-      "rating": "TBC",
-      "runtime": 87,
-      "genre": "Other",
-      "year": "2025",
-      "country": "Belgium/Luxembourg/Italy/France",
-      "director": "Hélène Cattet and Bruno Forzani",
-      "description": "When the mysterious woman in the room next door disappears, a debonair 70-year-old ex-spy living in a luxury hotel on the Côte d’Azur is confronted by the demons of a lurid past in which moviemaking, memories and madness collide.",
-      "film_url": "https://www.ica.art/films/reflection-in-a-dead-diamond",
-      "poster_url": "https://www.ica.art/media/13212.jpg",
-      "showtimes": {
-        "2026-05-28": [
-          {
-            "time": "16:30",
-            "booking_url": "https://www.ica.art/book/725601",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-05-30": [
-          {
-            "time": "12:30",
-            "booking_url": "https://www.ica.art/book/725601",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-03": [
-          {
-            "time": "21:00",
-            "booking_url": "https://www.ica.art/book/725601",
-            "screen": "Cinema 1",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
-      "letterboxd_url": "https://letterboxd.com/film/reflection-in-a-dead-diamond/",
-      "letterboxd_rating": 3.59
-    },
-    {
-      "id": "rita-azevedo-gomes-danses-macabres-skeletons-and-other-fantasies",
-      "title": "Danses Macabres, Skeletons and other Fantasies",
-      "rating": "TBC",
-      "runtime": null,
-      "genre": "Other",
-      "year": "2009",
-      "country": "Switzerland/Portugal",
-      "director": "Rita Azevedo Gomes",
-      "description": "Rita Azevedo Gomes and Pierre Léon’s roaming inquiry into the danse macabre as a turning point in European thought, that draws on Jean Louis Schefer’s writings to trace a quiet shift from medieval worldviews to modernity, moving between Paris and Portugal.",
-      "film_url": "https://www.ica.art/films/rita-azevedo-gomes-danses-macabres-skeletons-and-other-fantasies",
-      "poster_url": "https://www.ica.art/media/12964.jpg",
-      "showtimes": {
-        "2026-05-28": [
-          {
-            "time": "18:30",
-            "booking_url": "https://www.ica.art/book/678201",
-            "screen": "Cinema 1",
-            "hoh": false,
-            "tags": [
-              "Nothing But Life: The Cinema of Rita Azevedo Gomes"
-            ]
-          }
-        ]
-      },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/danses-macabres-skeletons-and-other-fantasies/",
-      "letterboxd_rating": 3.47
+      "letterboxd_url": "https://letterboxd.com/film/tycoon-2026/",
+      "letterboxd_rating": null
     },
     {
       "id": "leonora-in-the-morning-light",
@@ -431,8 +300,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/leonora-in-the-morning-light/",
       "letterboxd_rating": 3.1
     },
@@ -510,8 +379,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
     },
     {
       "id": "vhs-late-tapes-uniform",
@@ -538,8 +407,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/uniform-2025/",
       "letterboxd_rating": null
     },
@@ -565,10 +434,45 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/queer-as-punk/",
       "letterboxd_rating": 3.65
+    },
+    {
+      "id": "reflection-in-a-dead-diamond",
+      "title": "Reflection in a Dead Diamond",
+      "rating": "TBC",
+      "runtime": 87,
+      "genre": "Other",
+      "year": "2025",
+      "country": "Belgium/Luxembourg/Italy/France",
+      "director": "Hélène Cattet and Bruno Forzani",
+      "description": "When the mysterious woman in the room next door disappears, a debonair 70-year-old ex-spy living in a luxury hotel on the Côte d’Azur is confronted by the demons of a lurid past in which moviemaking, memories and madness collide.",
+      "film_url": "https://www.ica.art/films/reflection-in-a-dead-diamond",
+      "poster_url": "https://www.ica.art/media/13212.jpg",
+      "showtimes": {
+        "2026-05-30": [
+          {
+            "time": "12:30",
+            "booking_url": "https://www.ica.art/book/725601",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-03": [
+          {
+            "time": "21:00",
+            "booking_url": "https://www.ica.art/book/725601",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#00838f",
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/reflection-in-a-dead-diamond/",
+      "letterboxd_rating": 3.59
     },
     {
       "id": "azevedo-gomes-after-the-rehearsal",
@@ -595,8 +499,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/after-the-rehearsal/",
       "letterboxd_rating": 3.62
     },
@@ -625,8 +529,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
       "letterboxd_url": "https://letterboxd.com/film/the-portuguese-woman/",
       "letterboxd_rating": 3.72
     },
@@ -658,8 +562,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#ad1457",
+      "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/we-are-making-a-film-about-mark-fisher/",
       "letterboxd_rating": 2.89
     },
@@ -693,8 +597,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#37474f",
+      "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/romeria/",
       "letterboxd_rating": 3.59
     },
@@ -720,8 +624,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "rita-azevedo-gomes-the-kegalstatt-trio",
@@ -748,8 +652,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "do-not-expect-too-much-from-the-end-of-the-world",
@@ -779,8 +683,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/do-not-expect-too-much-from-the-end-of-the-world/",
       "letterboxd_rating": 3.96
     },
@@ -882,8 +786,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/fuck-the-polis/",
       "letterboxd_rating": 3.22
     },
@@ -979,8 +883,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#3052a6",
+      "accent": "#849cd6",
       "letterboxd_url": "https://letterboxd.com/film/enzo-2025/",
       "letterboxd_rating": 3.07
     },
@@ -1052,8 +956,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6",
+      "color": "#63971a",
+      "accent": "#9ed453",
       "letterboxd_url": "https://letterboxd.com/film/the-misfits/",
       "letterboxd_rating": 3.7
     },
@@ -1119,8 +1023,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8",
+      "color": "#9f2190",
+      "accent": "#d368c6",
       "letterboxd_url": "https://letterboxd.com/film/koln-75/",
       "letterboxd_rating": 3.53
     },
@@ -1146,8 +1050,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "mares-nest-q-a",
@@ -1171,8 +1075,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#975e1a",
+      "accent": "#d49953",
       "letterboxd_url": "https://letterboxd.com/film/mares-nest-2025/",
       "letterboxd_rating": 3.12
     },
@@ -1201,8 +1105,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684"
+      "color": "#41219f",
+      "accent": "#8368d3"
     },
     {
       "id": "mares-nest",
@@ -1250,8 +1154,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e",
+      "color": "#35a630",
+      "accent": "#88d684",
       "letterboxd_url": "https://letterboxd.com/film/mares-nest-2025/",
       "letterboxd_rating": 3.12
     },
@@ -1277,8 +1181,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#971a44",
+      "accent": "#d4537e"
     },
     {
       "id": "pink-narcissus",
@@ -1342,8 +1246,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "and-related-issues",
@@ -1367,8 +1271,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#9ca630",
+      "accent": "#cfd684"
     },
     {
       "id": "jukebox-film-club-after-dreaming",
@@ -1392,8 +1296,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d",
+      "color": "#7d1a97",
+      "accent": "#b953d4",
       "letterboxd_url": "https://letterboxd.com/film/after-dreaming/",
       "letterboxd_rating": 3.1
     },
@@ -1488,8 +1392,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584",
+      "color": "#219f60",
+      "accent": "#68d39d",
       "letterboxd_url": "https://letterboxd.com/film/dry-leaf/",
       "letterboxd_rating": 3.84
     },
@@ -1555,8 +1459,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4",
+      "color": "#a64830",
+      "accent": "#d69584",
       "letterboxd_url": "https://letterboxd.com/film/familiar-touch/",
       "letterboxd_rating": 3.75
     }
