@@ -1,7 +1,33 @@
 {
-  "scraped_at": "2026-05-30T19:33:09.665583+00:00",
+  "scraped_at": "2026-05-30T20:03:40.022986+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
+    {
+      "id": "journey-through-irish-cinema-john-ford-dreaming-the-quiet-man-plus-q-a",
+      "title": "Journey Through Irish Cinema: John Ford: Dreaming the Quiet Man plus Q&A",
+      "rating": "U",
+      "runtime": 90,
+      "genre": "Other",
+      "year": "2009",
+      "director": "Se Merry Doyle",
+      "cast": "Narrated by Gabriel Byrne",
+      "country": "US",
+      "description": "Ireland's cinematic history is one of resilience, poetry, and profound transformation. Journey Through Irish Cinema explores the themes of identity, land, and language that have shaped its national output. Featuring a mix of landmark dramas, biting comedies, and breath-taking documentaries, this sea...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=494044",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/509973.jpg",
+      "showtimes": {
+        "2026-05-31": [
+          {
+            "time": "14:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_494065.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60"
+    },
     {
       "id": "star-wars-the-mandalorian-and-grogu",
       "title": "Star Wars: The Mandalorian and Grogu",
@@ -16,14 +42,6 @@
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=467487",
       "poster_url": "https://images.savoysystems.co.uk/PXL/467489.jpg",
       "showtimes": {
-        "2026-05-30": [
-          {
-            "time": "20:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_535841.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
         "2026-05-31": [
           {
             "time": "14:15",
@@ -104,36 +122,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/star-wars-the-mandalorian-and-grogu/",
       "letterboxd_rating": 3.13
-    },
-    {
-      "id": "journey-through-irish-cinema-john-ford-dreaming-the-quiet-man-plus-q-a",
-      "title": "Journey Through Irish Cinema: John Ford: Dreaming the Quiet Man plus Q&A",
-      "rating": "U",
-      "runtime": 90,
-      "genre": "Other",
-      "year": "2009",
-      "director": "Se Merry Doyle",
-      "cast": "Narrated by Gabriel Byrne",
-      "country": "US",
-      "description": "Ireland's cinematic history is one of resilience, poetry, and profound transformation. Journey Through Irish Cinema explores the themes of identity, land, and language that have shaped its national output. Featuring a mix of landmark dramas, biting comedies, and breath-taking documentaries, this sea...",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=494044",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/509973.jpg",
-      "showtimes": {
-        "2026-05-31": [
-          {
-            "time": "14:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_494065.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff"
     },
     {
       "id": "tuner",
@@ -202,7 +194,7 @@
       "color": "#d81b60",
       "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
-      "letterboxd_rating": 3.71
+      "letterboxd_rating": 3.72
     },
     {
       "id": "the-christophers",
