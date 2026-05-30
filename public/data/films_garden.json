@@ -1,51 +1,7 @@
 {
-  "scraped_at": "2026-05-30T10:33:57.845121+00:00",
+  "scraped_at": "2026-05-30T11:03:59.956002+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "ernest-and-celestine",
-      "title": "Ernest & Celestine",
-      "rating": "U",
-      "runtime": 79,
-      "genre": "Other",
-      "year": "2012",
-      "director": "Stephane Aubier",
-      "cast": null,
-      "description": "The screening on Friday & Saturday will be in French with English subtitles. The screening on Sunday will be dubbed in…",
-      "film_url": "https://www.thegardencinema.co.uk/film/ernest-and-celestine/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/443572.jpg",
-      "showtimes": {
-        "2026-05-30": [
-          {
-            "time": "11:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235779.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ],
-        "2026-05-31": [
-          {
-            "time": "11:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235781.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ]
-      },
-      "seasons": [
-        "Films for the Family"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/ernest-celestine/",
-      "letterboxd_rating": 4.18
-    },
     {
       "id": "the-lady-eve",
       "title": "The Lady Eve",
@@ -79,8 +35,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-lady-eve/",
       "letterboxd_rating": 3.96
     },
@@ -130,8 +86,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/portrait-of-a-lady-on-fire/",
       "letterboxd_rating": 4.42
     },
@@ -181,8 +137,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/kokuho/",
       "letterboxd_rating": 3.84
     },
@@ -214,8 +170,8 @@
       "seasons": [
         "Time Capsule: The Films of Jia Zhangke"
       ],
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/a-touch-of-sin/",
       "letterboxd_rating": 3.9
     },
@@ -297,8 +253,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.51
     },
@@ -340,8 +296,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/romeria/",
       "letterboxd_rating": 3.59
     },
@@ -391,8 +347,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/cronos/",
       "letterboxd_rating": 3.42
     },
@@ -528,8 +484,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
       "letterboxd_rating": 3.43
     },
@@ -563,8 +519,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/bullet-in-the-head/",
       "letterboxd_rating": 4.06
     },
@@ -593,8 +549,41 @@
           }
         ]
       },
+      "color": "#546e7a",
+      "accent": "#90a4ae"
+    },
+    {
+      "id": "ernest-and-celestine",
+      "title": "Ernest & Celestine",
+      "rating": "U",
+      "runtime": 79,
+      "genre": "Other",
+      "year": "2012",
+      "director": "Stephane Aubier",
+      "cast": null,
+      "description": "The screening on Friday & Saturday will be in French with English subtitles. The screening on Sunday will be dubbed in…",
+      "film_url": "https://www.thegardencinema.co.uk/film/ernest-and-celestine/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/443572.jpg",
+      "showtimes": {
+        "2026-05-31": [
+          {
+            "time": "11:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5235781.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ]
+      },
+      "seasons": [
+        "Films for the Family"
+      ],
       "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "accent": "#66bb6a",
+      "letterboxd_url": "https://letterboxd.com/film/ernest-celestine/",
+      "letterboxd_rating": 4.18
     },
     {
       "id": "hen",
