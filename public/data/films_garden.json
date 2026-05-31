@@ -1,50 +1,7 @@
 {
-  "scraped_at": "2026-05-31T16:32:53.567166+00:00",
+  "scraped_at": "2026-05-31T17:02:50.436295+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "cronos",
-      "title": "Cronos",
-      "rating": "15",
-      "runtime": 92,
-      "genre": "Other",
-      "year": "1992",
-      "director": "Guillermo del Toro",
-      "cast": null,
-      "description": "Now digitally restored. When antiques dealer Jesús Gris (Federico Luppi) discovers an ancient artefact in the form of a golden mechanical…",
-      "film_url": "https://www.thegardencinema.co.uk/film/cronos/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5572494.jpg",
-      "showtimes": {
-        "2026-05-31": [
-          {
-            "time": "16:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5523483.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-01": [
-          {
-            "time": "15:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5523485.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-03": [
-          {
-            "time": "20:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5523487.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/cronos/",
-      "letterboxd_rating": 3.42
-    },
     {
       "id": "portrait-of-a-lady-on-fire",
       "title": "Portrait of a Lady on Fire",
@@ -83,8 +40,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/portrait-of-a-lady-on-fire/",
       "letterboxd_rating": 4.42
     },
@@ -117,8 +74,8 @@
         "Celebrating 70 years of LFS"
       ],
       "partner": "London Film School",
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/growing-pains-2026/",
       "letterboxd_rating": null
     },
@@ -228,8 +185,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
       "letterboxd_rating": 3.41
     },
@@ -258,10 +215,45 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/the-thin-man/",
       "letterboxd_rating": 3.96
+    },
+    {
+      "id": "cronos",
+      "title": "Cronos",
+      "rating": "15",
+      "runtime": 92,
+      "genre": "Other",
+      "year": "1992",
+      "director": "Guillermo del Toro",
+      "cast": null,
+      "description": "Now digitally restored. When antiques dealer Jesús Gris (Federico Luppi) discovers an ancient artefact in the form of a golden mechanical…",
+      "film_url": "https://www.thegardencinema.co.uk/film/cronos/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5572494.jpg",
+      "showtimes": {
+        "2026-06-01": [
+          {
+            "time": "15:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5523485.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-03": [
+          {
+            "time": "20:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5523487.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/cronos/",
+      "letterboxd_rating": 3.42
     },
     {
       "id": "mystery-of-the-first-temple",
