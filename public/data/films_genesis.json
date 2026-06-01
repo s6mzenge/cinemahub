@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-01T14:33:13.954449+00:00",
+  "scraped_at": "2026-06-01T15:04:59.972985+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -17,12 +17,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/108592_0.jpg",
       "showtimes": {
         "2026-06-01": [
-          {
-            "time": "15:40",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11276",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "18:10",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11267",
@@ -651,56 +645,6 @@
       "letterboxd_rating": 3.21
     },
     {
-      "id": "the-sheep-detectives",
-      "title": "The Sheep Detectives",
-      "rating": "PG",
-      "runtime": 105,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "Every night a shepherd reads aloud a murder mystery, pretending his sheep can understand. When he is found dead, the sheep realize at once that it was a murder and think they know everything about how to go about solving it.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/106218",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/106218_0.jpg",
-      "showtimes": {
-        "2026-06-01": [
-          {
-            "time": "15:35",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11308",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-06": [
-          {
-            "time": "12:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11362",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "15:40",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11373",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-07": [
-          {
-            "time": "12:05",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11387",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
-      "letterboxd_rating": 3.82
-    },
-    {
       "id": "tuner",
       "title": "Tuner",
       "rating": "12A",
@@ -789,8 +733,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
       "letterboxd_rating": 3.73
     },
@@ -817,8 +761,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1"
+      "color": "#6a1b9a",
+      "accent": "#ba68c8"
     },
     {
       "id": "khartoum",
@@ -843,8 +787,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/khartoum-2025/",
       "letterboxd_rating": 3.65
     },
@@ -871,8 +815,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "masters-of-the-universe",
@@ -1069,8 +1013,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "poetic-justice-presented-by-the-culture-crypt",
@@ -1095,8 +1039,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#ad1457",
+      "accent": "#f06292"
     },
     {
       "id": "worm",
@@ -1121,8 +1065,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#37474f",
+      "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/worm-2026/",
       "letterboxd_rating": null
     },
@@ -1281,10 +1225,52 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
+      "color": "#4e342e",
+      "accent": "#8d6e63",
       "letterboxd_url": "https://letterboxd.com/film/scary-movie-2026/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "the-sheep-detectives",
+      "title": "The Sheep Detectives",
+      "rating": "PG",
+      "runtime": 105,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Every night a shepherd reads aloud a murder mystery, pretending his sheep can understand. When he is found dead, the sheep realize at once that it was a murder and think they know everything about how to go about solving it.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/106218",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/106218_0.jpg",
+      "showtimes": {
+        "2026-06-06": [
+          {
+            "time": "12:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11362",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "15:40",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11373",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-07": [
+          {
+            "time": "12:05",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11387",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
+      "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
+      "letterboxd_rating": 3.82
     },
     {
       "id": "disclosure-day",
