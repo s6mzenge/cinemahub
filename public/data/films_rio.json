@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-01T15:33:53.475784+00:00",
+  "scraped_at": "2026-06-01T16:05:38.000750+00:00",
   "source": "riocinema.org.uk",
   "films": [
     {
@@ -264,7 +264,10 @@
             "time": "15:30",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2604129.TcsSection_936",
             "screen": "S1",
-            "hoh": false
+            "hoh": true,
+            "tags": [
+              "HoH"
+            ]
           },
           {
             "time": "18:45",
@@ -305,6 +308,7 @@
         ]
       },
       "season_tags": [
+        "Hard of Hearing",
         "Main Features"
       ],
       "color": "#00897b",
@@ -666,8 +670,8 @@
       "accent": "#f06292"
     },
     {
-      "id": "7-days-in-may",
-      "title": "7 Days in May",
+      "id": "mac-demarco-7-days-in-may",
+      "title": "Mac Demarco: 7 Days in May",
       "rating": "18",
       "runtime": 89,
       "genre": "Other",
