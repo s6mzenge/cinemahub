@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-01T11:32:15.240145+00:00",
+  "scraped_at": "2026-06-01T12:02:44.116508+00:00",
   "source": "thecastlecinema.com",
   "films": [
     {
@@ -41,16 +41,6 @@
       "poster_url": "/optimised-images/c_crop",
       "showtimes": {
         "2026-06-01": [
-          {
-            "time": "11:20",
-            "booking_url": "https://thecastlecinema.com/bookings/16795/",
-            "screen": "S1",
-            "hoh": false,
-            "tags": [
-              "AD",
-              "£6 Monday"
-            ]
-          },
           {
             "time": "16:00",
             "booking_url": "https://thecastlecinema.com/bookings/16796/",
@@ -253,16 +243,16 @@
       "letterboxd_rating": 3.88
     },
     {
-      "id": "cine-real-presents-jaws-12a",
-      "title": "Cine-real presents: Jaws (12A)",
+      "id": "cine-real-presents-jaws",
+      "title": "Cine-real presents: Jaws",
       "rating": "12A",
       "runtime": 124,
       "genre": "Other",
       "year": "1975",
       "director": "Steven Spielberg",
       "cast": "Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary, Murray Hamilton",
-      "description": "When a young woman is killed by a great white shark off the coast of Amity Island, local police chief Martin Brody seeks to close the beaches and protect the town. Facing pressure from local officials worried about the tourist season, Brody joins forces with marine biologist Matt Hooper and seasoned shark hunter Quint to hunt down the deadly predator. Steven Spielberg’s landmark thriller became the first summer blockbuster and remains one of cinema’s most enduring classics.",
-      "film_url": "https://thecastlecinema.com/programme/111067/cine-real-presents-jaws-12a/",
+      "description": "When a young woman is killed by a great white shark off the coast of Amity Island, local police chief Martin Brody seeks to close the beaches and protect the town. Facing pressure from local officials worried about the tourist season, Brody joins forces with marine biologist Matt Hooper and seasoned shark hunter Quint to hunt down the deadly predator. Steven Spielberg’s landmark thriller became the first summer blockbuster and remains one of cinema’s most enduring classics.Ciné-Real is one of the only film clubs in the UK to exclusively play films from original 16mm prints. They are a non-profit organisation which aims to unite film makers and enthusiasts in their appreciation of classic film.",
+      "film_url": "https://thecastlecinema.com/programme/111067/cine-real-presents-jaws/",
       "poster_url": "/optimised-images/c_crop",
       "showtimes": {
         "2026-06-18": [
@@ -279,7 +269,9 @@
         ]
       },
       "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/jaws/",
+      "letterboxd_rating": 3.92
     },
     {
       "id": "fist-club-x-the-castle-bottoms",
@@ -310,6 +302,34 @@
       "accent": "#ef5350"
     },
     {
+      "id": "glastonbury-the-movie-30th-anniversary-cut-q-a",
+      "title": "Glastonbury the Movie - 30th Anniversary Cut + Q&A",
+      "rating": "15",
+      "runtime": 88,
+      "genre": "Other",
+      "year": "1996",
+      "director": "Robin Mahoney",
+      "cast": null,
+      "description": "The 1993 festival. Unfiltered, unnarrated, and unlike anything else in British music film.The year is 1993 - the last of the great old-school Glastonburys, before the BBC arrived, before phone masts, biometric tickets and wall-to-wall coverage. A hundred thousand people in a Somerset field, completely unobserved, completely themselves.A group of young film-makers captured the whole thing in rich, glorious Cinemascope: not the headline acts on the Pyramid Stage, but the real festival -  the stone circle at sunrise, the rave tents and wandering performers, the parachute games and the Krishna food queues. The Verve in their very first festival appearance. Spiritualized spending their entire fee on a fireworks display. Porno For Pyros. The Orb. The Lemonheads. The music, the magic, the midsummer madness. No voiceover. No talking heads. No presenter telling you how to feel.Just Glastonbury, as it was.With a Q&A from Director Robin Mahoney, this event will take you right back to 1993. Grab tickets now.",
+      "film_url": "https://thecastlecinema.com/programme/111068/glastonbury-the-movie-30th-anniversary-cut-q-a/",
+      "poster_url": "/optimised-images/c_crop",
+      "showtimes": {
+        "2026-07-08": [
+          {
+            "time": "18:30",
+            "booking_url": "https://thecastlecinema.com/bookings/16835/",
+            "screen": "S1",
+            "hoh": false,
+            "tags": [
+              "live Q&A"
+            ]
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8"
+    },
+    {
       "id": "hedwig-and-the-angry-inch-singalong-with-rebelle-voices",
       "title": "Hedwig and the Angry Inch Singalong with Rebelle Voices!",
       "rating": "15",
@@ -334,8 +354,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
+      "color": "#00838f",
+      "accent": "#4dd0e1"
     },
     {
       "id": "hitchcock-s-rope-1948-q-a",
@@ -367,8 +387,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "hotel-transylvania-origami-workshop",
@@ -395,8 +415,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae"
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "kiki",
@@ -423,8 +443,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#ad1457",
+      "accent": "#f06292"
     },
     {
       "id": "nt-live-les-liaisons-dangereuses",
@@ -451,8 +471,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "pitchblack-playback-bob-dylan-blonde-on-blonde-60th-anniversary",
@@ -509,8 +529,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "pitchblack-playback-marvin-gaye-what-s-going-on-55th-anniversary",
@@ -538,8 +558,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63"
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "power-ballad",
@@ -572,7 +592,7 @@
             "hoh": false,
             "tags": [
               "AD",
-              "£6 Monday"
+              "HOH subtitles"
             ]
           }
         ],
@@ -640,8 +660,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/power-ballad/",
       "letterboxd_rating": 3.33
     },
@@ -670,8 +690,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "queer-cinema-for-palestine-no-pride-in-genocide",
@@ -695,8 +715,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "the-birdcage-1996-drag-tea-party",
@@ -723,8 +743,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453"
+      "color": "#9f2190",
+      "accent": "#d368c6"
     },
     {
       "id": "the-christophers",
@@ -814,8 +834,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6",
+      "color": "#30a692",
+      "accent": "#84d6c8",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.52
     },
@@ -844,8 +864,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#975e1a",
+      "accent": "#d49953"
     },
     {
       "id": "the-matrix-reloaded-dj-set",
@@ -872,8 +892,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#41219f",
+      "accent": "#8368d3"
     },
     {
       "id": "tuner",
@@ -889,16 +909,6 @@
       "poster_url": "/optimised-images/c_crop",
       "showtimes": {
         "2026-06-01": [
-          {
-            "time": "11:30",
-            "booking_url": "https://thecastlecinema.com/bookings/16798/",
-            "screen": "S2",
-            "hoh": false,
-            "tags": [
-              "AD",
-              "£6 Monday"
-            ]
-          },
           {
             "time": "16:15",
             "booking_url": "https://thecastlecinema.com/bookings/16799/",
@@ -984,8 +994,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#35a630",
+      "accent": "#88d684",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
       "letterboxd_rating": 3.73
     },
@@ -1014,8 +1024,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684",
+      "color": "#971a44",
+      "accent": "#d4537e",
       "letterboxd_url": "https://letterboxd.com/film/two-times-joao-liberada/",
       "letterboxd_rating": 3.46
     },
@@ -1044,8 +1054,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e",
+      "color": "#21709f",
+      "accent": "#68abd3",
       "letterboxd_url": "https://letterboxd.com/film/mulholland-dr/",
       "letterboxd_rating": null
     },
@@ -1074,8 +1084,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#9ca630",
+      "accent": "#cfd684"
     }
   ]
 }
