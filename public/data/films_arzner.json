@@ -1,114 +1,7 @@
 {
-  "scraped_at": "2026-06-02T16:02:53.278294+00:00",
+  "scraped_at": "2026-06-02T16:33:36.830965+00:00",
   "source": "thearzner.com",
   "films": [
-    {
-      "id": "tethered-wings-200417",
-      "title": "Tethered Wings",
-      "rating": "15",
-      "runtime": 89,
-      "genre": "New Release",
-      "description": "On his wedding day, Paul is confronted by the sudden return of Joseph, a boy he lost touch with twenty years ago. The burning memories of that summer of 1983 resurface, overwhelming him with doubts about a lifetime of choices and the emotions of a forbidden love. As teenagers, their dazzling romance…",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=200417",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/200414.jpg",
-      "showtimes": {
-        "2026-06-02": [
-          {
-            "time": "11:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_204273.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-06-04": [
-          {
-            "time": "13:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205288.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/tethered-wings/",
-      "letterboxd_rating": 3.13
-    },
-    {
-      "id": "fairyland-197612",
-      "title": "Fairyland",
-      "rating": "18",
-      "runtime": 116,
-      "genre": "New Release",
-      "description": "A father-daughter relationship evolves through an era of bohemian decadence in 1970s San Francisco to the sober and heartbreaking era of the AIDS crisis in the 1980s.",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=197612",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/197627.jpg",
-      "showtimes": {
-        "2026-06-02": [
-          {
-            "time": "13:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_204269.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-06-03": [
-          {
-            "time": "13:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205285.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-06-04": [
-          {
-            "time": "18:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205278.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/fairyland/",
-      "letterboxd_rating": 3.52
-    },
-    {
-      "id": "the-devil-wears-prada-2-133637",
-      "title": "The Devil Wears Prada 2",
-      "rating": "12A",
-      "runtime": 120,
-      "genre": "New Release",
-      "description": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive for a luxury group, with advertising dollars that Priestly desperately needs.",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=133637",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/165159.jpg",
-      "showtimes": {
-        "2026-06-02": [
-          {
-            "time": "15:45",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_204268.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": true,
-            "tags": [
-              "CC"
-            ]
-          }
-        ],
-        "2026-06-03": [
-          {
-            "time": "15:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205284.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
-      "letterboxd_rating": 3.21
-    },
     {
       "id": "moss-freud-191103",
       "title": "Moss & Freud",
@@ -136,8 +29,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/moss-freud/",
       "letterboxd_rating": 3.1
     },
@@ -163,8 +56,64 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac"
+      "color": "#e53935",
+      "accent": "#ff6f60"
+    },
+    {
+      "id": "fairyland-197612",
+      "title": "Fairyland",
+      "rating": "18",
+      "runtime": 116,
+      "genre": "New Release",
+      "description": "A father-daughter relationship evolves through an era of bohemian decadence in 1970s San Francisco to the sober and heartbreaking era of the AIDS crisis in the 1980s.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=197612",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/197627.jpg",
+      "showtimes": {
+        "2026-06-03": [
+          {
+            "time": "13:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205285.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-06-04": [
+          {
+            "time": "18:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205278.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/fairyland/",
+      "letterboxd_rating": 3.52
+    },
+    {
+      "id": "the-devil-wears-prada-2-133637",
+      "title": "The Devil Wears Prada 2",
+      "rating": "12A",
+      "runtime": 120,
+      "genre": "New Release",
+      "description": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive for a luxury group, with advertising dollars that Priestly desperately needs.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=133637",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/165159.jpg",
+      "showtimes": {
+        "2026-06-03": [
+          {
+            "time": "15:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205284.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
+      "letterboxd_rating": 3.21
     },
     {
       "id": "portrait-of-a-lady-on-fire-4k-reissue-13469",
@@ -221,8 +170,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6"
+      "color": "#00897b",
+      "accent": "#4db6ac"
     },
     {
       "id": "special-preview-erupcja-q-a-200440",
@@ -246,8 +195,32 @@
           }
         ]
       },
+      "color": "#1565c0",
+      "accent": "#64b5f6"
+    },
+    {
+      "id": "tethered-wings-200417",
+      "title": "Tethered Wings",
+      "rating": "15",
+      "runtime": 89,
+      "genre": "New Release",
+      "description": "On his wedding day, Paul is confronted by the sudden return of Joseph, a boy he lost touch with twenty years ago. The burning memories of that summer of 1983 resurface, overwhelming him with doubts about a lifetime of choices and the emotions of a forbidden love. As teenagers, their dazzling romance…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=200417",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/200414.jpg",
+      "showtimes": {
+        "2026-06-04": [
+          {
+            "time": "13:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205288.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
       "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/tethered-wings/",
+      "letterboxd_rating": 3.13
     },
     {
       "id": "dyke-night-rebel-dykes-intro-q-a-204264",
