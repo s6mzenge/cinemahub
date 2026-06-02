@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-02T17:05:46.809859+00:00",
+  "scraped_at": "2026-06-02T17:35:44.620754+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -332,12 +332,6 @@
       "showtimes": {
         "2026-06-02": [
           {
-            "time": "18:10",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11323",
-            "screen": null,
-            "hoh": false
-          },
-          {
             "time": "20:50",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11319",
             "screen": null,
@@ -477,50 +471,6 @@
       "letterboxd_rating": null
     },
     {
-      "id": "star-wars-the-mandalorian-and-grogu",
-      "title": "Star Wars: The Mandalorian and Grogu",
-      "rating": "12A",
-      "runtime": 132,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "The Mandalorian and Grogu embark on their most thrilling mission yet in Lucasfilms all-new Star Wars adventure. The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Djin Djarin and his young apprentice Grogu.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/102342",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/102342_0.jpg",
-      "showtimes": {
-        "2026-06-02": [
-          {
-            "time": "18:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11315",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-03": [
-          {
-            "time": "17:55",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11288",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-04": [
-          {
-            "time": "20:45",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11303",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
-      "letterboxd_url": "https://letterboxd.com/film/star-wars-the-mandalorian-and-grogu/",
-      "letterboxd_rating": 3.12
-    },
-    {
       "id": "the-devil-wears-prada-2",
       "title": "The Devil Wears Prada 2",
       "rating": "12A",
@@ -583,8 +533,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.21
     },
@@ -699,8 +649,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
       "letterboxd_rating": 3.73
     },
@@ -727,8 +677,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/khartoum-2025/",
       "letterboxd_rating": 3.65
     },
@@ -756,8 +706,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1"
+      "color": "#6a1b9a",
+      "accent": "#ba68c8"
     },
     {
       "id": "masters-of-the-universe",
@@ -954,8 +904,44 @@
           }
         ]
       },
+      "color": "#00838f",
+      "accent": "#4dd0e1"
+    },
+    {
+      "id": "star-wars-the-mandalorian-and-grogu",
+      "title": "Star Wars: The Mandalorian and Grogu",
+      "rating": "12A",
+      "runtime": 132,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "The Mandalorian and Grogu embark on their most thrilling mission yet in Lucasfilms all-new Star Wars adventure. The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Djin Djarin and his young apprentice Grogu.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/102342",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/102342_0.jpg",
+      "showtimes": {
+        "2026-06-03": [
+          {
+            "time": "17:55",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11288",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-04": [
+          {
+            "time": "20:45",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11303",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
       "color": "#546e7a",
-      "accent": "#90a4ae"
+      "accent": "#90a4ae",
+      "letterboxd_url": "https://letterboxd.com/film/star-wars-the-mandalorian-and-grogu/",
+      "letterboxd_rating": 3.12
     },
     {
       "id": "poetic-justice-presented-by-the-culture-crypt",
