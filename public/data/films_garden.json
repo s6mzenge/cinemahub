@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-02T12:34:06.873962+00:00",
+  "scraped_at": "2026-06-02T13:03:57.332569+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
     {
@@ -246,7 +246,8 @@
             "time": "18:00",
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5572243.TcsSection_971",
             "screen": null,
-            "hoh": false
+            "hoh": false,
+            "sold_out": true
           }
         ]
       },
@@ -560,7 +561,8 @@
             "tags": [
               "Members",
               "Free (Members)"
-            ]
+            ],
+            "sold_out": true
           }
         ],
         "2026-06-09": [
@@ -803,7 +805,9 @@
         ]
       },
       "color": "#9f2121",
-      "accent": "#d36868"
+      "accent": "#d36868",
+      "letterboxd_url": "https://letterboxd.com/film/the-misfits/",
+      "letterboxd_rating": 3.69
     },
     {
       "id": "enzo",
@@ -1087,8 +1091,7 @@
             "hoh": false,
             "tags": [
               "Members"
-            ],
-            "sold_out": true
+            ]
           }
         ]
       },
@@ -3021,7 +3024,7 @@
       "year": "1978",
       "director": "Sumitra Peries, Sri Lanka",
       "cast": null,
-      "description": "The screening on 27 July will be preceded by a drink reception courtesy of the High Commission of Sri Lanka, London…",
+      "description": "Courtesy of the High Commission of Sri Lanka, London, our screening on Monday 27 July will be preceded by a drinks…",
       "film_url": "https://www.thegardencinema.co.uk/film/the-girls-gehenu-lamai/",
       "poster_url": "https://images.savoysystems.co.uk/GCL/5562789.jpg",
       "showtimes": {
