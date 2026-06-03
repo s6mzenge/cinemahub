@@ -1,65 +1,7 @@
 {
-  "scraped_at": "2026-06-03T18:02:45.850917+00:00",
+  "scraped_at": "2026-06-03T18:33:14.905611+00:00",
   "source": "thearzner.com",
   "films": [
-    {
-      "id": "portrait-of-a-lady-on-fire-4k-reissue-13469",
-      "title": "Portrait of a Lady on Fire (4K Reissue)",
-      "rating": "15",
-      "runtime": 121,
-      "genre": "World Cinema",
-      "description": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=13469",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/116232.jpg",
-      "showtimes": {
-        "2026-06-03": [
-          {
-            "time": "18:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205276.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "World Cinema"
-            ]
-          }
-        ],
-        "2026-06-04": [
-          {
-            "time": "15:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205279.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "World Cinema"
-            ]
-          }
-        ],
-        "2026-06-23": [
-          {
-            "time": "14:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_210058.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "World Cinema"
-            ]
-          }
-        ],
-        "2026-06-24": [
-          {
-            "time": "15:45",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_211085.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "World Cinema"
-            ]
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60"
-    },
     {
       "id": "special-preview-erupcja-q-a-200440",
       "title": "Special Preview: Erupcja + Q&A",
@@ -82,8 +24,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff"
+      "color": "#e53935",
+      "accent": "#ff6f60"
     },
     {
       "id": "moss-freud-191103",
@@ -128,10 +70,57 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/tethered-wings/",
       "letterboxd_rating": 3.13
+    },
+    {
+      "id": "portrait-of-a-lady-on-fire-4k-reissue-13469",
+      "title": "Portrait of a Lady on Fire (4K Reissue)",
+      "rating": "15",
+      "runtime": 121,
+      "genre": "World Cinema",
+      "description": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=13469",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/116232.jpg",
+      "showtimes": {
+        "2026-06-04": [
+          {
+            "time": "15:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_205279.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "World Cinema"
+            ]
+          }
+        ],
+        "2026-06-23": [
+          {
+            "time": "14:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_210058.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "World Cinema"
+            ]
+          }
+        ],
+        "2026-06-24": [
+          {
+            "time": "15:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_211085.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "World Cinema"
+            ]
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090"
     },
     {
       "id": "fairyland-197612",
