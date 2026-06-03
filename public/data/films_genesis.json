@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-03T17:04:30.959917+00:00",
+  "scraped_at": "2026-06-03T17:33:58.915337+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -273,12 +273,6 @@
       "showtimes": {
         "2026-06-03": [
           {
-            "time": "18:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11290",
-            "screen": null,
-            "hoh": false
-          },
-          {
             "time": "20:45",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11292",
             "screen": null,
@@ -529,13 +523,6 @@
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11291",
             "screen": null,
             "hoh": false
-          },
-          {
-            "time": "18:10",
-            "booking_url": "",
-            "screen": null,
-            "hoh": false,
-            "sold_out": true
           }
         ],
         "2026-06-04": [
@@ -669,42 +656,6 @@
       "letterboxd_rating": null
     },
     {
-      "id": "star-wars-the-mandalorian-and-grogu",
-      "title": "Star Wars: The Mandalorian and Grogu",
-      "rating": "12A",
-      "runtime": 132,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "The Mandalorian and Grogu embark on their most thrilling mission yet in Lucasfilms all-new Star Wars adventure. The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Djin Djarin and his young apprentice Grogu.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/102342",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/102342_0.jpg",
-      "showtimes": {
-        "2026-06-03": [
-          {
-            "time": "17:55",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11288",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-04": [
-          {
-            "time": "20:45",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11303",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/star-wars-the-mandalorian-and-grogu/",
-      "letterboxd_rating": 3.12
-    },
-    {
       "id": "tuner",
       "title": "Tuner",
       "rating": "12A",
@@ -795,10 +746,38 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
       "letterboxd_rating": 3.74
+    },
+    {
+      "id": "star-wars-the-mandalorian-and-grogu",
+      "title": "Star Wars: The Mandalorian and Grogu",
+      "rating": "12A",
+      "runtime": 132,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "The Mandalorian and Grogu embark on their most thrilling mission yet in Lucasfilms all-new Star Wars adventure. The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Djin Djarin and his young apprentice Grogu.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/102342",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/102342_0.jpg",
+      "showtimes": {
+        "2026-06-04": [
+          {
+            "time": "20:45",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11303",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/star-wars-the-mandalorian-and-grogu/",
+      "letterboxd_rating": 3.12
     },
     {
       "id": "the-devil-wears-prada-2",
@@ -1048,7 +1027,7 @@
       "color": "#ad1457",
       "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/scary-movie-2026/",
-      "letterboxd_rating": 3.24
+      "letterboxd_rating": 3.14
     },
     {
       "id": "the-sheep-detectives",
