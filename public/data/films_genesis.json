@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-04T17:03:31.265872+00:00",
+  "scraped_at": "2026-06-04T17:34:37.471380+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -192,12 +192,6 @@
       "showtimes": {
         "2026-06-04": [
           {
-            "time": "18:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11298",
-            "screen": null,
-            "hoh": false
-          },
-          {
             "time": "20:40",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11299",
             "screen": null,
@@ -364,12 +358,6 @@
       "showtimes": {
         "2026-06-04": [
           {
-            "time": "18:10",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11325",
-            "screen": null,
-            "hoh": false
-          },
-          {
             "time": "21:05",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11304",
             "screen": null,
@@ -521,66 +509,6 @@
       "letterboxd_rating": 3.12
     },
     {
-      "id": "the-devil-wears-prada-2",
-      "title": "The Devil Wears Prada 2",
-      "rating": "12A",
-      "runtime": 120,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive for a luxury group, with advertising dollars that Priestly desperately needs.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/105261",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/105261_0.jpg",
-      "showtimes": {
-        "2026-06-04": [
-          {
-            "time": "18:05",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11450",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-06": [
-          {
-            "time": "17:15",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11428",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-07": [
-          {
-            "time": "17:35",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11429",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-08": [
-          {
-            "time": "20:50",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11436",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-09": [
-          {
-            "time": "18:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11440",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
-      "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
-      "letterboxd_rating": 3.21
-    },
-    {
       "id": "tuner",
       "title": "Tuner",
       "rating": "12A",
@@ -595,12 +523,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/108497_0.jpg",
       "showtimes": {
         "2026-06-04": [
-          {
-            "time": "18:15",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11300",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "20:50",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11301",
@@ -657,10 +579,10 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
-      "letterboxd_rating": 3.74
+      "letterboxd_rating": 3.73
     },
     {
       "id": "poetic-justice-presented-by-the-culture-crypt",
@@ -685,8 +607,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350"
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
     },
     {
       "id": "worm",
@@ -711,8 +633,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/worm-2026/",
       "letterboxd_rating": null
     },
@@ -847,10 +769,10 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/scary-movie-2026/",
-      "letterboxd_rating": 2.99
+      "letterboxd_rating": 2.98
     },
     {
       "id": "michael",
@@ -899,10 +821,62 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
       "letterboxd_rating": 3.62
+    },
+    {
+      "id": "the-devil-wears-prada-2",
+      "title": "The Devil Wears Prada 2",
+      "rating": "12A",
+      "runtime": 120,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive for a luxury group, with advertising dollars that Priestly desperately needs.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/105261",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/105261_0.jpg",
+      "showtimes": {
+        "2026-06-06": [
+          {
+            "time": "17:15",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11428",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-07": [
+          {
+            "time": "17:35",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11429",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-08": [
+          {
+            "time": "20:50",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11436",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-09": [
+          {
+            "time": "18:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11440",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#546e7a",
+      "accent": "#90a4ae",
+      "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
+      "letterboxd_rating": 3.21
     },
     {
       "id": "the-sheep-detectives",
