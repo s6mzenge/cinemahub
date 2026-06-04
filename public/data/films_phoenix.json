@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-04T14:36:04.338247+00:00",
+  "scraped_at": "2026-06-04T15:04:34.129697+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -425,7 +425,10 @@
             "time": "14:00",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_494077.TcsSection_543",
             "screen": "Screen 1",
-            "hoh": false
+            "hoh": false,
+            "tags": [
+              "Q&A"
+            ]
           }
         ]
       },
@@ -643,7 +646,10 @@
             "time": "14:00",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_494079.TcsSection_543",
             "screen": "Screen 1",
-            "hoh": false
+            "hoh": false,
+            "tags": [
+              "Q&A"
+            ]
           }
         ]
       },
@@ -827,7 +833,10 @@
             "time": "14:00",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_494081.TcsSection_543",
             "screen": "Screen 1",
-            "hoh": false
+            "hoh": false,
+            "tags": [
+              "Q&A"
+            ]
           }
         ]
       },
@@ -991,6 +1000,32 @@
       "accent": "#d4537e"
     },
     {
+      "id": "twenty-years-of-the-met-in-cinemas-an-anniversary-celebration",
+      "title": "Twenty Years of the Met in Cinemas: An Anniversary Celebration",
+      "rating": "12A",
+      "runtime": 120,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Presented by Renée Fleming",
+      "cast": "Lise Davidsen,Natalie Dessay,Joyce DiDonato, Juan Diego Florez, Elina Garanca, Dmitri Hvorostovsky, Jonas Kaufmann, Peter Mattei",
+      "country": "US",
+      "description": "Twenty Years of the Met in Cinemas is a celebration of the Met’s two decades of onstage glory as experienced in cinemas, featuring highlights from the company’s collection of more than 185 extraordinary onscreen performances. Hosted by star soprano Renée Fleming, this special presentation will showc...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=549629",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/549626.jpg",
+      "showtimes": {
+        "2026-09-19": [
+          {
+            "time": "18:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_549636.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#21709f",
+      "accent": "#68abd3"
+    },
+    {
       "id": "playing-the-changes-tracking-darius-brubeck",
       "title": "Playing the Changes - Tracking Darius Brubeck",
       "rating": "12A",
@@ -1016,10 +1051,36 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3",
+      "color": "#9ca630",
+      "accent": "#cfd684",
       "letterboxd_url": "https://letterboxd.com/film/playing-the-changes-tracking-darius-brubeck/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "met-opera-2026-27-cosi-fan-tutte",
+      "title": "Met Opera 2026-27: Cosi fan tutte",
+      "rating": "12A",
+      "runtime": 237,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Phelim McDermott",
+      "cast": "Federica Lombardi, Samantha Hankey, Duke Kim, Andrey Zhilikhovsky",
+      "country": "US",
+      "description": "The Met: Live in HD season continues with Mozart’s satirical comedy of fickle young love. Phelim McDermott’s “colourful, inventive” (The New York Times) staging, inspired by Coney Island in the 1950s, sets the uproarious story at a boardwalk amusement park, where the two pairs of lovers at the heart...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=549648",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/549647.jpg",
+      "showtimes": {
+        "2026-10-03": [
+          {
+            "time": "18:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_549649.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7d1a97",
+      "accent": "#b953d4"
     }
   ]
 }
