@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-05T14:34:16.963737+00:00",
+  "scraped_at": "2026-06-05T15:05:27.537647+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -17,12 +17,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/108592_0.jpg",
       "showtimes": {
         "2026-06-05": [
-          {
-            "time": "15:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11357",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "18:25",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11350",
@@ -231,12 +225,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/107143_0.jpg",
       "showtimes": {
         "2026-06-05": [
-          {
-            "time": "15:20",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11356",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "18:00",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11348",
@@ -641,74 +629,6 @@
       "letterboxd_rating": 2.76
     },
     {
-      "id": "tuner",
-      "title": "Tuner",
-      "rating": "12A",
-      "runtime": 99,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "A gifted piano tuner's meticulous skills for tuning pianos lead him to discover an unexpected aptitude for cracking safes, turning his life upside down.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/108497",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/108497_0.jpg",
-      "showtimes": {
-        "2026-06-05": [
-          {
-            "time": "15:45",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11444",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-07": [
-          {
-            "time": "13:10",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11445",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-08": [
-          {
-            "time": "15:35",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11446",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-09": [
-          {
-            "time": "16:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11447",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-10": [
-          {
-            "time": "15:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11448",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-11": [
-          {
-            "time": "15:55",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11449",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/tuner/",
-      "letterboxd_rating": 3.73
-    },
-    {
       "id": "michael",
       "title": "Michael",
       "rating": "12A",
@@ -755,8 +675,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
       "letterboxd_rating": 3.62
     },
@@ -807,8 +727,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-wears-prada-2/",
       "letterboxd_rating": 3.21
     },
@@ -849,8 +769,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
       "letterboxd_rating": 3.81
     },
@@ -877,10 +797,70 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/the-super-mario-galaxy-movie/",
       "letterboxd_rating": 2.89
+    },
+    {
+      "id": "tuner",
+      "title": "Tuner",
+      "rating": "12A",
+      "runtime": 99,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "A gifted piano tuner's meticulous skills for tuning pianos lead him to discover an unexpected aptitude for cracking safes, turning his life upside down.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/108497",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/108497_0.jpg",
+      "showtimes": {
+        "2026-06-07": [
+          {
+            "time": "13:10",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11445",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-08": [
+          {
+            "time": "15:35",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11446",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-09": [
+          {
+            "time": "16:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11447",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-10": [
+          {
+            "time": "15:30",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11448",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-11": [
+          {
+            "time": "15:55",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11449",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
+      "letterboxd_url": "https://letterboxd.com/film/tuner/",
+      "letterboxd_rating": 3.73
     },
     {
       "id": "disclosure-day",
