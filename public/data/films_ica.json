@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-05T13:04:18.344656+00:00",
+  "scraped_at": "2026-06-05T13:34:28.690348+00:00",
   "source": "ica.art",
   "films": [
     {
@@ -167,7 +167,7 @@
           {
             "time": "14:30",
             "booking_url": "https://www.ica.art/book/726602",
-            "screen": "Cinema 1",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -1090,6 +1090,34 @@
       },
       "color": "#30a692",
       "accent": "#84d6c8"
+    },
+    {
+      "id": "rozier-adieu-phillipine",
+      "title": "Adieu Phillipine",
+      "rating": "TBC",
+      "runtime": 111,
+      "genre": "Other",
+      "year": "1962",
+      "country": "France",
+      "director": "Jacques Rozier",
+      "description": "Capturing both the giddy thrill of innocent flirtation and the anguish of youth faced with an uncertain future, Jacques Rozier's debut feature was championed by his contemporaries François Truffaut and Jean-Luc Godard.",
+      "film_url": "https://www.ica.art/films/rozier-adieu-phillipine",
+      "poster_url": "https://www.ica.art/media/13265.jpg",
+      "showtimes": {
+        "2026-07-01": [
+          {
+            "time": "18:30",
+            "booking_url": "https://www.ica.art/book/732801",
+            "screen": "Cinema 1",
+            "hoh": false,
+            "tags": [
+              "Time to Play: Films by Jacques Rozier"
+            ]
+          }
+        ]
+      },
+      "color": "#975e1a",
+      "accent": "#d49953"
     }
   ]
 }
