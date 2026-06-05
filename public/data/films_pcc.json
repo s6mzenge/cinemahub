@@ -1,75 +1,7 @@
 {
-  "scraped_at": "2026-06-05T19:02:44.798792+00:00",
+  "scraped_at": "2026-06-05T19:32:20.233491+00:00",
   "source": "princecharlescinema.com",
   "films": [
-    {
-      "id": "the-fifth-element",
-      "title": "The Fifth Element",
-      "rating": "PG",
-      "runtime": 126,
-      "genre": "Sci-Fi / Action",
-      "year": "1997",
-      "country": null,
-      "director": "Luc Besson",
-      "cast": "Bruce Willis, Milla Jovovich, Gary Oldman",
-      "description": "The Earth is about to be destroyed by a huge ball of fire racing toward the planet. Cornelius, an old monk, knows how to stop the burning sphere with the help of Korben Dallas, a taxi driver and former secret agent and a woman named Leeloo.",
-      "film_url": "https://princecharlescinema.com/film/31617354/the-fifth-element",
-      "poster_url": "https://cdn.taposapp.com/poster/600x900/1ezzTJs62_t3P3XA7Gk0ibtvQGck_1ewIsSW7zwMdE4.jpg",
-      "showtimes": {
-        "2026-06-05": [
-          {
-            "time": "20:25",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626085",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-06": [
-          {
-            "time": "15:15",
-            "booking_url": "",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-07": [
-          {
-            "time": "17:35",
-            "booking_url": "",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-09": [
-          {
-            "time": "15:30",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626137",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-11": [
-          {
-            "time": "17:05",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626129",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-26": [
-          {
-            "time": "17:30",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626682",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/the-fifth-element/",
-      "letterboxd_rating": 3.77
-    },
     {
       "id": "ferris-buellers-day-off",
       "title": "Ferris Bueller's Day Off",
@@ -137,8 +69,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/ghost-in-the-shell/",
       "letterboxd_rating": 4.09
     },
@@ -176,8 +108,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/rear-window/",
       "letterboxd_rating": 4.36
     },
@@ -240,10 +172,70 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/amelie/",
       "letterboxd_rating": 4.19
+    },
+    {
+      "id": "the-fifth-element",
+      "title": "The Fifth Element",
+      "rating": "PG",
+      "runtime": 126,
+      "genre": "Sci-Fi / Action",
+      "year": "1997",
+      "country": null,
+      "director": "Luc Besson",
+      "cast": "Bruce Willis, Milla Jovovich, Gary Oldman",
+      "description": "The Earth is about to be destroyed by a huge ball of fire racing toward the planet. Cornelius, an old monk, knows how to stop the burning sphere with the help of Korben Dallas, a taxi driver and former secret agent and a woman named Leeloo.",
+      "film_url": "https://princecharlescinema.com/film/31617354/the-fifth-element",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/1ezzTJs62_t3P3XA7Gk0ibtvQGck_1ewIsSW7zwMdE4.jpg",
+      "showtimes": {
+        "2026-06-06": [
+          {
+            "time": "15:15",
+            "booking_url": "",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-07": [
+          {
+            "time": "17:35",
+            "booking_url": "",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-09": [
+          {
+            "time": "15:30",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626137",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-11": [
+          {
+            "time": "17:05",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626129",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-26": [
+          {
+            "time": "17:30",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626682",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/the-fifth-element/",
+      "letterboxd_rating": 3.77
     },
     {
       "id": "perfect-blue",
