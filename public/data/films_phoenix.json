@@ -1,7 +1,36 @@
 {
-  "scraped_at": "2026-06-06T15:33:52.913663+00:00",
+  "scraped_at": "2026-06-06T16:05:27.141051+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
+    {
+      "id": "national-theatre-live-all-my-sons",
+      "title": "National Theatre Live: All My Sons",
+      "rating": "12A",
+      "runtime": 131,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Ivo Van Hove",
+      "cast": "Bryan Cranston, Marianne Jean-Baptiste",
+      "country": "UK",
+      "description": "Bryan Cranston (Breaking Bad) and Marianne Jean-Baptiste (Hard Truths) feature in a five-star, triumphantly acclaimed new production of Arthur Miller's classic play, from visionary director Ivo Van Hove (A View from the Bridge). One family, the heart of the American dream. When wartime delivers prof...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=364085",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/364063.jpg",
+      "showtimes": {
+        "2026-06-06": [
+          {
+            "time": "17:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_536785.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": true,
+            "tags": [
+              "Closed Captions"
+            ]
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60"
+    },
     {
       "id": "the-christophers",
       "title": "The Christophers",
@@ -17,12 +46,6 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/509940.jpg",
       "showtimes": {
         "2026-06-06": [
-          {
-            "time": "14:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_545100.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": false
-          },
           {
             "time": "17:30",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_545104.TcsSection_720",
@@ -66,8 +89,8 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.51
     },
@@ -86,12 +109,6 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/535823.jpg",
       "showtimes": {
         "2026-06-06": [
-          {
-            "time": "15:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_545106.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          },
           {
             "time": "20:00",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_545102.TcsSection_720",
@@ -161,39 +178,10 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
       "letterboxd_rating": 3.74
-    },
-    {
-      "id": "national-theatre-live-all-my-sons",
-      "title": "National Theatre Live: All My Sons",
-      "rating": "12A",
-      "runtime": 131,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Ivo Van Hove",
-      "cast": "Bryan Cranston, Marianne Jean-Baptiste",
-      "country": "UK",
-      "description": "Bryan Cranston (Breaking Bad) and Marianne Jean-Baptiste (Hard Truths) feature in a five-star, triumphantly acclaimed new production of Arthur Miller's classic play, from visionary director Ivo Van Hove (A View from the Bridge). One family, the heart of the American dream. When wartime delivers prof...",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=364085",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/364063.jpg",
-      "showtimes": {
-        "2026-06-06": [
-          {
-            "time": "17:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_536785.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": true,
-            "tags": [
-              "Closed Captions"
-            ]
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090"
     },
     {
       "id": "savage-house",
