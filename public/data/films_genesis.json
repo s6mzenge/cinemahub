@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-08T14:35:29.224004+00:00",
+  "scraped_at": "2026-06-08T15:05:47.660211+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -17,12 +17,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/108592_0.jpg",
       "showtimes": {
         "2026-06-08": [
-          {
-            "time": "15:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11432",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "18:25",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11393",
@@ -117,12 +111,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/107143_0.jpg",
       "showtimes": {
         "2026-06-08": [
-          {
-            "time": "15:20",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11431",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "18:00",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11389",
@@ -377,12 +365,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/108497_0.jpg",
       "showtimes": {
         "2026-06-08": [
-          {
-            "time": "15:35",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11446",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "20:50",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11464",
@@ -1052,6 +1034,32 @@
       },
       "color": "#21709f",
       "accent": "#68abd3"
+    },
+    {
+      "id": "indie-film-showcase",
+      "title": "Indie Film Showcase",
+      "rating": "18",
+      "runtime": 180,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "The Independent Horror Society has been dedicated to supporting grassroots horror cinema for over 10 years, and we're so proud to have nearly 2,500 committed horror fans and filmmakers in our ranks.We have launched the Indie Film Showcase to do what we love best -- bringing incredible short genre films from hugely talented filmmakers, to the wonderful UK horror community.So join us at the wonderful Genesis Cinema for another evening of fun, meeting new friends, networking, and of course -- over ",
+      "film_url": "https://www.genesiscinema.co.uk/event/93414",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/93414_0.jpg",
+      "showtimes": {
+        "2026-07-04": [
+          {
+            "time": "15:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11558",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#9ca630",
+      "accent": "#cfd684"
     }
   ]
 }
