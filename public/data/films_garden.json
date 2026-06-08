@@ -1,7 +1,58 @@
 {
-  "scraped_at": "2026-06-08T20:04:30.489635+00:00",
+  "scraped_at": "2026-06-08T20:35:04.658008+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
+    {
+      "id": "kokuho",
+      "title": "Kokuho",
+      "rating": "15",
+      "runtime": 175,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Lee Sang-il",
+      "cast": null,
+      "description": "After the death of his father, the leader of a yakuza gang, fourteen-year-old Kikuo is taken in by a renowned Kabuki…",
+      "film_url": "https://www.thegardencinema.co.uk/film/kokuho/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5493728.jpg",
+      "showtimes": {
+        "2026-06-09": [
+          {
+            "time": "14:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5655867.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-12": [
+          {
+            "time": "15:20",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696366.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-14": [
+          {
+            "time": "13:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696402.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-18": [
+          {
+            "time": "14:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696467.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/kokuho/",
+      "letterboxd_rating": 3.84
+    },
     {
       "id": "koln-75",
       "title": "Köln 75",
@@ -15,14 +66,6 @@
       "film_url": "https://www.thegardencinema.co.uk/film/koln-75/",
       "poster_url": "https://images.savoysystems.co.uk/GCL/5572489.jpg",
       "showtimes": {
-        "2026-06-08": [
-          {
-            "time": "20:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5461196.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-06-09": [
           {
             "time": "15:15",
@@ -80,61 +123,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/koln-75/",
-      "letterboxd_rating": 3.53
-    },
-    {
-      "id": "kokuho",
-      "title": "Kokuho",
-      "rating": "15",
-      "runtime": 175,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Lee Sang-il",
-      "cast": null,
-      "description": "After the death of his father, the leader of a yakuza gang, fourteen-year-old Kikuo is taken in by a renowned Kabuki…",
-      "film_url": "https://www.thegardencinema.co.uk/film/kokuho/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5493728.jpg",
-      "showtimes": {
-        "2026-06-09": [
-          {
-            "time": "14:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5655867.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-12": [
-          {
-            "time": "15:20",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696366.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-14": [
-          {
-            "time": "13:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696402.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-18": [
-          {
-            "time": "14:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696467.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
       "color": "#7c4dff",
       "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/kokuho/",
-      "letterboxd_rating": 3.84
+      "letterboxd_url": "https://letterboxd.com/film/koln-75/",
+      "letterboxd_rating": 3.53
     },
     {
       "id": "enzo",
