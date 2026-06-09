@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-09T11:05:31.953057+00:00",
+  "scraped_at": "2026-06-09T11:35:25.290747+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
     {
@@ -3630,6 +3630,50 @@
       "letterboxd_rating": 3.04
     },
     {
+      "id": "harry-and-the-hendersons",
+      "title": "Harry and the Hendersons",
+      "rating": "PG",
+      "runtime": 110,
+      "genre": "Other",
+      "year": "1987",
+      "director": "William Dear",
+      "cast": null,
+      "description": "Academy Award nominee John Lithgow stars in this big-hearted, big-footed family comedy. While returning from a trip to the woods, George…",
+      "film_url": "https://www.thegardencinema.co.uk/film/harry-and-the-hendersons/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5700934.jpg",
+      "showtimes": {
+        "2026-09-26": [
+          {
+            "time": "11:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5700957.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ],
+        "2026-09-27": [
+          {
+            "time": "11:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5700959.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ]
+      },
+      "seasons": [
+        "Films for the Family"
+      ],
+      "color": "#62a630",
+      "accent": "#a7d684",
+      "letterboxd_url": "https://letterboxd.com/film/harry-and-the-hendersons/",
+      "letterboxd_rating": 3.03
+    },
+    {
       "id": "john-the-violent",
       "title": "John the Violent",
       "rating": "18",
@@ -3657,8 +3701,8 @@
       "seasons": [
         "Greek Salad"
       ],
-      "color": "#62a630",
-      "accent": "#a7d684",
+      "color": "#971a74",
+      "accent": "#d453af",
       "letterboxd_url": "https://letterboxd.com/film/john-the-violent/",
       "letterboxd_rating": 3.7
     }
