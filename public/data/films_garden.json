@@ -1,66 +1,7 @@
 {
-  "scraped_at": "2026-06-09T18:05:27.368756+00:00",
+  "scraped_at": "2026-06-09T18:35:18.635159+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "ghost-in-the-machine",
-      "title": "Ghost in the Machine",
-      "rating": "12A",
-      "runtime": 96,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Valerie Veatch",
-      "cast": null,
-      "description": "The screening on Saturday 6 June at 15:45 will be followed by a Q&A with the director. Ghost in the Machine is…",
-      "film_url": "https://www.thegardencinema.co.uk/film/ghost-in-the-machine/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5533491.jpg",
-      "showtimes": {
-        "2026-06-09": [
-          {
-            "time": "18:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5533518.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-11": [
-          {
-            "time": "15:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5533520.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-13": [
-          {
-            "time": "15:25",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696387.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-15": [
-          {
-            "time": "18:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696408.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-17": [
-          {
-            "time": "20:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696465.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/ghost-in-the-machine-2026/",
-      "letterboxd_rating": 3.22
-    },
     {
       "id": "wuthering-heights",
       "title": "Wuthering Heights",
@@ -86,8 +27,8 @@
       "seasons": [
         "Members' Events"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/wuthering-heights-2011/",
       "letterboxd_rating": 3.2
     },
@@ -143,8 +84,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/enzo-2025/",
       "letterboxd_rating": 3.08
     },
@@ -218,8 +159,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.51
     },
@@ -285,8 +226,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/koln-75/",
       "letterboxd_rating": 3.53
     },
@@ -316,8 +257,59 @@
         ]
       },
       "partner": "Site & Sound",
+      "color": "#1565c0",
+      "accent": "#64b5f6"
+    },
+    {
+      "id": "ghost-in-the-machine",
+      "title": "Ghost in the Machine",
+      "rating": "12A",
+      "runtime": 96,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Valerie Veatch",
+      "cast": null,
+      "description": "The screening on Saturday 6 June at 15:45 will be followed by a Q&A with the director. Ghost in the Machine is…",
+      "film_url": "https://www.thegardencinema.co.uk/film/ghost-in-the-machine/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5533491.jpg",
+      "showtimes": {
+        "2026-06-11": [
+          {
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5533520.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-13": [
+          {
+            "time": "15:25",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696387.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-15": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696408.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-17": [
+          {
+            "time": "20:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696465.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
       "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/ghost-in-the-machine-2026/",
+      "letterboxd_rating": 3.22
     },
     {
       "id": "the-misfits",
