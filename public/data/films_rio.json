@@ -1,54 +1,7 @@
 {
-  "scraped_at": "2026-06-09T19:33:50.370506+00:00",
+  "scraped_at": "2026-06-09T20:04:23.304194+00:00",
   "source": "riocinema.org.uk",
   "films": [
-    {
-      "id": "erupcja",
-      "title": "Erupcja",
-      "rating": "12A",
-      "runtime": 71,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Pete Ohs",
-      "cast": null,
-      "country": "USA / Poland",
-      "description": "Set in Poland, ERUPCJA follows Bethany, who abandons a romantic holiday with her boyfriend after becoming convinced a marriage proposal is imminent. Reuniting instead with her childhood friend Nel, the pair drift through Warsaw’s clubs, apartments and late-night streets, rekindling a chemistry that ...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2603709",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2603699.jpg",
-      "showtimes": {
-        "2026-06-09": [
-          {
-            "time": "20:35",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2604144.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-06-10": [
-          {
-            "time": "18:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2604146.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-06-11": [
-          {
-            "time": "18:45",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2604152.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ]
-      },
-      "season_tags": [
-        "Main Features"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/erupcja/",
-      "letterboxd_rating": 3.37
-    },
     {
       "id": "backrooms",
       "title": "Backrooms",
@@ -137,10 +90,49 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
       "letterboxd_rating": 3.38
+    },
+    {
+      "id": "erupcja",
+      "title": "Erupcja",
+      "rating": "12A",
+      "runtime": 71,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Pete Ohs",
+      "cast": null,
+      "country": "USA / Poland",
+      "description": "Set in Poland, ERUPCJA follows Bethany, who abandons a romantic holiday with her boyfriend after becoming convinced a marriage proposal is imminent. Reuniting instead with her childhood friend Nel, the pair drift through Warsaw’s clubs, apartments and late-night streets, rekindling a chemistry that ...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2603709",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2603699.jpg",
+      "showtimes": {
+        "2026-06-10": [
+          {
+            "time": "18:30",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2604146.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ],
+        "2026-06-11": [
+          {
+            "time": "18:45",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2604152.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ]
+      },
+      "season_tags": [
+        "Main Features"
+      ],
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/erupcja/",
+      "letterboxd_rating": 3.37
     },
     {
       "id": "tv-party-tonight-dogme-95",
