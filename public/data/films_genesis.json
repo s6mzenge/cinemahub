@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-10T15:34:52.615009+00:00",
+  "scraped_at": "2026-06-10T16:04:45.482437+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -570,16 +570,17 @@
       "showtimes": {
         "2026-06-10": [
           {
-            "time": "18:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11453",
-            "screen": null,
-            "hoh": false
-          },
-          {
             "time": "21:00",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11404",
             "screen": null,
             "hoh": false
+          },
+          {
+            "time": "18:00",
+            "booking_url": "",
+            "screen": null,
+            "hoh": false,
+            "sold_out": true
           }
         ],
         "2026-06-11": [
@@ -1562,6 +1563,60 @@
       "accent": "#d69584"
     },
     {
+      "id": "moana",
+      "title": "Moana",
+      "rating": "PG",
+      "runtime": 115,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with the infamous demigod Maui on an unforgettable journey to restore prosperity to her people.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/105535",
+      "poster_url": "https://www.genesiscinema.co.uk/filmimages/small/105535.jpg",
+      "showtimes": {
+        "2026-07-10": [
+          {
+            "time": "15:15",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11586",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "18:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11585",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-11": [
+          {
+            "time": "12:55",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11587",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "15:35",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11588",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "18:15",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11589",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#1a2597",
+      "accent": "#535ed4",
+      "letterboxd_url": "https://letterboxd.com/film/moana/",
+      "letterboxd_rating": null
+    },
+    {
       "id": "if-i-could-tell-you-closed-caption-relax-screening-london-indian-film-festival",
       "title": "If I Could Tell You (Closed Caption, Relax Screening) - London Indian Film Festival",
       "rating": "18",
@@ -1584,8 +1639,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "britain-through-south-asian-eyes-london-indian-film-festival",
@@ -1610,8 +1665,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#a6307e",
+      "accent": "#d684bb"
     }
   ]
 }
