@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-10T13:34:52.492198+00:00",
+  "scraped_at": "2026-06-10T14:04:57.912073+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -582,16 +582,17 @@
       "showtimes": {
         "2026-06-10": [
           {
-            "time": "18:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11453",
-            "screen": null,
-            "hoh": false
-          },
-          {
             "time": "21:00",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11404",
             "screen": null,
             "hoh": false
+          },
+          {
+            "time": "18:00",
+            "booking_url": "",
+            "screen": null,
+            "hoh": false,
+            "sold_out": true
           }
         ],
         "2026-06-11": [
@@ -1484,7 +1485,7 @@
     {
       "id": "coming-up-roses-40th-year-anniversary-screening-and-filmmaker-q-a",
       "title": "Coming Up Roses - 40th Year Anniversary Screening and Filmmaker Q&A",
-      "rating": "18",
+      "rating": "PG",
       "runtime": 93,
       "genre": "Other",
       "year": null,

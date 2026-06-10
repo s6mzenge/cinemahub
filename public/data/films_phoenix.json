@@ -1,65 +1,7 @@
 {
-  "scraped_at": "2026-06-10T13:34:54.488139+00:00",
+  "scraped_at": "2026-06-10T14:04:59.596682+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
-    {
-      "id": "the-christophers",
-      "title": "The Christophers",
-      "rating": "15",
-      "runtime": 100,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Steven Soderbergh",
-      "cast": "Ian McKellen, Michaela Coel, Daniel Fearn, James Corden",
-      "country": "UK",
-      "description": null,
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=509944",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/509940.jpg",
-      "showtimes": {
-        "2026-06-10": [
-          {
-            "time": "14:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_545144.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": true,
-            "tags": [
-              "Closed Captions"
-            ]
-          }
-        ],
-        "2026-06-12": [
-          {
-            "time": "17:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556335.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": true,
-            "tags": [
-              "Closed Captions"
-            ]
-          }
-        ],
-        "2026-06-13": [
-          {
-            "time": "14:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556343.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-16": [
-          {
-            "time": "20:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556359.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
-      "letterboxd_rating": 3.51
-    },
     {
       "id": "tuner",
       "title": "Tuner",
@@ -171,8 +113,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
       "letterboxd_rating": 3.74
     },
@@ -344,8 +286,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
       "letterboxd_rating": 3.57
     },
@@ -413,8 +355,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/savage-house/",
       "letterboxd_rating": 3.13
     },
@@ -441,8 +383,55 @@
           }
         ]
       },
+      "color": "#00897b",
+      "accent": "#4db6ac"
+    },
+    {
+      "id": "the-christophers",
+      "title": "The Christophers",
+      "rating": "15",
+      "runtime": 100,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Steven Soderbergh",
+      "cast": "Ian McKellen, Michaela Coel, Daniel Fearn, James Corden",
+      "country": "UK",
+      "description": null,
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=509944",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/509940.jpg",
+      "showtimes": {
+        "2026-06-12": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556335.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": true,
+            "tags": [
+              "Closed Captions"
+            ]
+          }
+        ],
+        "2026-06-13": [
+          {
+            "time": "14:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556343.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-16": [
+          {
+            "time": "20:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556359.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
       "color": "#1565c0",
-      "accent": "#64b5f6"
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
+      "letterboxd_rating": 3.51
     },
     {
       "id": "london-festival-of-architecture-affr-present-renovation",
