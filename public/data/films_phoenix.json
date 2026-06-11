@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-11T10:34:35.831053+00:00",
+  "scraped_at": "2026-06-11T11:05:38.756760+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -317,6 +317,14 @@
             "screen": "Screen 1",
             "hoh": false
           }
+        ],
+        "2026-06-25": [
+          {
+            "time": "19:45",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_559990.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
         ]
       },
       "color": "#d81b60",
@@ -453,6 +461,50 @@
       "accent": "#ef5350"
     },
     {
+      "id": "backrooms",
+      "title": "Backrooms",
+      "rating": "15",
+      "runtime": 111,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Kane Parsons",
+      "cast": "Chiwetel Ejiofor, Renate Reinsve, Mark Duplass, Finn Bennett, Lukita Maxwell, Avan Jogia, Robert Bobroczkyi, Ember Ambrose, Kris",
+      "country": "US",
+      "description": "A strange doorway appears in the basement of a furniture showroom. Clark, a struggling furniture store owner who discovers a mysterious, reality-bending portal in his basement. He enters an endless, claustrophobic labyrinth of drab, yellow-wallpapered rooms and flickering fluorescent lights. As Clar...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=559970",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/559969.jpg",
+      "showtimes": {
+        "2026-06-19": [
+          {
+            "time": "17:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_559974.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ],
+        "2026-06-21": [
+          {
+            "time": "19:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_559983.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-23": [
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_559987.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
+      "letterboxd_rating": 3.38
+    },
+    {
       "id": "unless-water-is-safer-than-the-land",
       "title": "Unless Water is Safer than the Land",
       "rating": "PG",
@@ -475,8 +527,34 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
+      "color": "#00838f",
+      "accent": "#4dd0e1"
+    },
+    {
+      "id": "national-theatre-live-all-my-sons",
+      "title": "National Theatre Live: All My Sons",
+      "rating": "12A",
+      "runtime": 131,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Ivo Van Hove",
+      "cast": "Bryan Cranston, Marianne Jean-Baptiste",
+      "country": "UK",
+      "description": "Bryan Cranston (Breaking Bad) and Marianne Jean-Baptiste (Hard Truths) feature in a five-star, triumphantly acclaimed new production of Arthur Miller's classic play, from visionary director Ivo Van Hove (A View from the Bridge). One family, the heart of the American dream. When wartime delivers prof...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=364085",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/364063.jpg",
+      "showtimes": {
+        "2026-06-20": [
+          {
+            "time": "14:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_559993.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "tampopo",
@@ -501,10 +579,52 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
       "letterboxd_url": "https://letterboxd.com/film/tampopo/",
       "letterboxd_rating": 4.31
+    },
+    {
+      "id": "obsession",
+      "title": "Obsession",
+      "rating": "15",
+      "runtime": 108,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Curry Barker",
+      "cast": "Michael Johnston, Inde Navarrette, Cooper Tomlinson, Megan Lawless, Andy Richter, Haley Fitzgerald, Darin Toonder, Anthony Pavon",
+      "country": "US",
+      "description": "After breaking the mysterious &quot;One Wish Willow&quot; to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=559973",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/559972.jpg",
+      "showtimes": {
+        "2026-06-20": [
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_559981.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ],
+        "2026-06-22": [
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_559985.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-25": [
+          {
+            "time": "17:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_559989.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#ad1457",
+      "accent": "#f06292"
     },
     {
       "id": "refugee-week-screening-everybody-to-kenmure-street",
@@ -529,8 +649,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "london-festival-of-architecture-lfa-affr-present-living-together-the-story-of-de-warren",
@@ -555,14 +675,14 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "national-theatre-live-les-liaisons-dangereuses",
       "title": "National Theatre Live: Les Liaisons Dangereuses",
       "rating": "U",
-      "runtime": 150,
+      "runtime": 180,
       "genre": "Other",
       "year": null,
       "director": "Marianne Elliott",
@@ -579,10 +699,18 @@
             "screen": "Screen 1",
             "hoh": false
           }
+        ],
+        "2026-07-11": [
+          {
+            "time": "13:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_559997.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "david-attenborough-a-life-on-our-planet-michael-palin-live-intro",
@@ -607,8 +735,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#558b2f",
+      "accent": "#9ccc65"
     },
     {
       "id": "journey-through-irish-cinema-my-left-foot-the-story-of-christy-brown-q-a-with-jim-sheridan",
@@ -636,8 +764,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63"
+      "color": "#9f2121",
+      "accent": "#d36868"
     },
     {
       "id": "pride-classics-portrait-of-a-lady-on-fire",
@@ -662,8 +790,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "fight-like-a-girl",
@@ -688,8 +816,34 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#63971a",
+      "accent": "#9ed453"
+    },
+    {
+      "id": "national-theatre-live-the-playboy-of-the-western-world",
+      "title": "National Theatre Live: The Playboy Of The Western World",
+      "rating": "U",
+      "runtime": 150,
+      "genre": "Other",
+      "year": null,
+      "director": "Caitríona McLaughlin",
+      "cast": "Nicola Coughlan, Éanna Hardwicke, Siobhán McSweeney.",
+      "country": null,
+      "description": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father....",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=279888",
+      "poster_url": "https://phoenixcinemalondon.demo01.savoysystems.co.uk/PhoenixCinemaLondon/img/films/posters/playboy.jpg",
+      "showtimes": {
+        "2026-07-04": [
+          {
+            "time": "14:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_559995.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#9f2190",
+      "accent": "#d368c6"
     },
     {
       "id": "journey-through-irish-cinema-michael-collins",
@@ -717,8 +871,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "the-day-innocence-died-bloody-sunday-q-a-and-the-fight-for-justice",
@@ -746,8 +900,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6"
+      "color": "#975e1a",
+      "accent": "#d49953"
     },
     {
       "id": "mares-nest-director-q-a",
@@ -772,8 +926,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#41219f",
+      "accent": "#8368d3",
       "letterboxd_url": "https://letterboxd.com/film/mares-nest-2025/",
       "letterboxd_rating": 3.11
     },
@@ -803,8 +957,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#35a630",
+      "accent": "#88d684"
     },
     {
       "id": "almodovar-season-all-about-my-mother",
@@ -832,8 +986,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#971a44",
+      "accent": "#d4537e"
     },
     {
       "id": "almodovar-season-talk-to-her",
@@ -861,8 +1015,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "almodovar-season-bad-education",
@@ -890,8 +1044,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3"
+      "color": "#9ca630",
+      "accent": "#cfd684"
     },
     {
       "id": "almodovar-season-volver",
@@ -919,8 +1073,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684"
+      "color": "#7d1a97",
+      "accent": "#b953d4"
     },
     {
       "id": "75-years-of-contemporary-films-working-girls",
@@ -948,8 +1102,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "twenty-years-of-the-met-in-cinemas-an-anniversary-celebration",
@@ -974,8 +1128,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "75-years-of-contemporary-films-a-bigger-splash",
@@ -1003,8 +1157,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#1a2597",
+      "accent": "#535ed4"
     },
     {
       "id": "playing-the-changes-tracking-darius-brubeck",
@@ -1032,8 +1186,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4",
+      "color": "#519f21",
+      "accent": "#90d368",
       "letterboxd_url": "https://letterboxd.com/film/playing-the-changes-tracking-darius-brubeck/",
       "letterboxd_rating": null
     },
@@ -1060,8 +1214,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#a6307e",
+      "accent": "#d684bb"
     },
     {
       "id": "gentle-angry-women",
@@ -1086,8 +1240,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584",
+      "color": "#1a9297",
+      "accent": "#53cfd4",
       "letterboxd_url": "https://letterboxd.com/film/gentle-angry-women/",
       "letterboxd_rating": null
     },
@@ -1114,8 +1268,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "met-opera-2026-27-macbeth",
@@ -1140,8 +1294,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#6530a6",
+      "accent": "#a984d6"
     },
     {
       "id": "met-opera-2026-27-samson-et-dalila",
@@ -1166,8 +1320,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#1a972f",
+      "accent": "#53d468"
     },
     {
       "id": "met-opera-2026-27-la-fanciulla-del-west",
@@ -1192,8 +1346,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4"
+      "color": "#9f2132",
+      "accent": "#d36876"
     },
     {
       "id": "met-opera-2026-27-silent-night",
@@ -1218,8 +1372,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "met-opera-2026-27-manon",
@@ -1244,8 +1398,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6"
+      "color": "#73971a",
+      "accent": "#afd453"
     },
     {
       "id": "met-opera-2026-27-otello",
@@ -1270,8 +1424,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "met-opera-2026-27-parsifal",
@@ -1296,8 +1450,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#30a683",
+      "accent": "#84d6be"
     }
   ]
 }
