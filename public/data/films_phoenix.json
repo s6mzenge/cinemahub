@@ -1,92 +1,7 @@
 {
-  "scraped_at": "2026-06-12T19:04:43.292380+00:00",
+  "scraped_at": "2026-06-12T19:33:56.841944+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
-    {
-      "id": "tuner",
-      "title": "Tuner",
-      "rating": "15",
-      "runtime": 107,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Daniel Roher",
-      "cast": "Leo Woodall, Dustin Hoffman, Alisen Richmond-Peck, Ellyn Jameson, Tim Blair, Tovah Feldshuh, Jean Yoon, Havana Rose Liu",
-      "country": "US",
-      "description": "A talented piano tuner's life is turned upside down when he discovers that his meticulous skills for tuning pianos can equally be applied to cracking safes.",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=535831",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/535823.jpg",
-      "showtimes": {
-        "2026-06-12": [
-          {
-            "time": "20:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556333.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-13": [
-          {
-            "time": "20:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556339.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-14": [
-          {
-            "time": "17:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556346.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-15": [
-          {
-            "time": "14:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556357.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          },
-          {
-            "time": "20:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556353.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-16": [
-          {
-            "time": "17:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556361.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": true,
-            "tags": [
-              "Closed Captions"
-            ]
-          }
-        ],
-        "2026-06-17": [
-          {
-            "time": "20:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556367.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-18": [
-          {
-            "time": "17:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556365.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/tuner/",
-      "letterboxd_rating": 3.75
-    },
     {
       "id": "disclosure-day",
       "title": "Disclosure Day",
@@ -102,6 +17,18 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/536755.jpg",
       "showtimes": {
         "2026-06-12": [
+          {
+            "time": "14:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556337.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          },
+          {
+            "time": "17:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_536760.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          },
           {
             "time": "20:15",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_536759.TcsSection_543",
@@ -223,10 +150,36 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
       "letterboxd_rating": 3.41
+    },
+    {
+      "id": "exhibition-on-screen-frida-kahlo",
+      "title": "Exhibition On Screen: Frida Kahlo",
+      "rating": "12A",
+      "runtime": 101,
+      "genre": "Other",
+      "year": null,
+      "director": "Ali Ray",
+      "cast": null,
+      "country": null,
+      "description": "Frida Kahlo is a phenomenon. She is arguably the world’s favourite female artist – beloved by young and old.    Exhibition on Screen’s award-winning film – first released during covid to a restricted audience – is back by popular demand with an exciting new addition from the blockbuster transatlanti...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=279893",
+      "poster_url": "https://phoenixcinemalondon.demo01.savoysystems.co.uk/PhoenixCinemaLondon/img/films/posters/frida.jpg",
+      "showtimes": {
+        "2026-06-12": [
+          {
+            "time": "14:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_545172.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff"
     },
     {
       "id": "the-christophers",
@@ -242,6 +195,17 @@
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=509944",
       "poster_url": "https://images.savoysystems.co.uk/PXL/509940.jpg",
       "showtimes": {
+        "2026-06-12": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556335.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": true,
+            "tags": [
+              "Closed Captions"
+            ]
+          }
+        ],
         "2026-06-13": [
           {
             "time": "14:15",
@@ -263,6 +227,91 @@
       "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.51
+    },
+    {
+      "id": "tuner",
+      "title": "Tuner",
+      "rating": "15",
+      "runtime": 107,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Daniel Roher",
+      "cast": "Leo Woodall, Dustin Hoffman, Alisen Richmond-Peck, Ellyn Jameson, Tim Blair, Tovah Feldshuh, Jean Yoon, Havana Rose Liu",
+      "country": "US",
+      "description": "A talented piano tuner's life is turned upside down when he discovers that his meticulous skills for tuning pianos can equally be applied to cracking safes.",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=535831",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/535823.jpg",
+      "showtimes": {
+        "2026-06-12": [
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556333.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-13": [
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556339.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-14": [
+          {
+            "time": "17:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556346.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-15": [
+          {
+            "time": "14:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556357.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          },
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556353.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-16": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556361.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": true,
+            "tags": [
+              "Closed Captions"
+            ]
+          }
+        ],
+        "2026-06-17": [
+          {
+            "time": "20:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556367.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-18": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556365.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#00897b",
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/tuner/",
+      "letterboxd_rating": 3.75
     },
     {
       "id": "london-festival-of-architecture-affr-present-renovation",
@@ -287,8 +336,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac"
+      "color": "#1565c0",
+      "accent": "#64b5f6"
     },
     {
       "id": "journey-through-irish-cinema-rocky-road-to-dublin",
@@ -316,8 +365,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6"
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
     },
     {
       "id": "savage-house",
@@ -361,8 +410,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/savage-house/",
       "letterboxd_rating": 3.13
     },
@@ -405,8 +454,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
       "letterboxd_rating": 3.38
     },
@@ -433,8 +482,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
+      "color": "#00838f",
+      "accent": "#4dd0e1"
     },
     {
       "id": "national-theatre-live-all-my-sons",
@@ -459,8 +508,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "tampopo",
@@ -485,8 +534,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
       "letterboxd_url": "https://letterboxd.com/film/tampopo/",
       "letterboxd_rating": 4.31
     },
@@ -529,8 +578,10 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#ad1457",
+      "accent": "#f06292",
+      "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
+      "letterboxd_rating": 4.15
     },
     {
       "id": "refugee-week-screening-everybody-to-kenmure-street",
@@ -555,8 +606,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "london-festival-of-architecture-lfa-affr-present-living-together-the-story-of-de-warren",
@@ -581,8 +632,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "national-theatre-live-les-liaisons-dangereuses",
@@ -615,8 +666,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63"
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "david-attenborough-a-life-on-our-planet-michael-palin-live-intro",
@@ -641,8 +692,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#558b2f",
+      "accent": "#9ccc65"
     },
     {
       "id": "journey-through-irish-cinema-my-left-foot-the-story-of-christy-brown-q-a-with-jim-sheridan",
@@ -670,8 +721,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#9f2121",
+      "accent": "#d36868"
     },
     {
       "id": "pride-classics-portrait-of-a-lady-on-fire",
@@ -696,8 +747,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "fight-like-a-girl",
@@ -722,8 +773,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "bend-it-like-beckham",
@@ -748,8 +799,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#9f2190",
+      "accent": "#d368c6",
       "letterboxd_url": "https://letterboxd.com/film/bend-it-like-beckham/",
       "letterboxd_rating": 3.47
     },
@@ -776,8 +827,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "journey-through-irish-cinema-michael-collins",
@@ -805,8 +856,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#975e1a",
+      "accent": "#d49953"
     },
     {
       "id": "the-day-innocence-died-bloody-sunday-q-a-and-the-fight-for-justice",
@@ -834,8 +885,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#41219f",
+      "accent": "#8368d3"
     },
     {
       "id": "mares-nest-director-q-a",
@@ -860,8 +911,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#35a630",
+      "accent": "#88d684",
       "letterboxd_url": "https://letterboxd.com/film/mares-nest-2025/",
       "letterboxd_rating": 3.11
     },
@@ -978,8 +1029,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684",
+      "color": "#971a44",
+      "accent": "#d4537e",
       "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
       "letterboxd_rating": null
     },
@@ -1009,8 +1060,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e"
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "exhibition-on-screen-cezanne-portraits-of-a-life",
@@ -1035,8 +1086,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#9ca630",
+      "accent": "#cfd684"
     },
     {
       "id": "almodovar-season-all-about-my-mother",
@@ -1064,8 +1115,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#7d1a97",
+      "accent": "#b953d4"
     },
     {
       "id": "exhibition-on-screen-hopper-an-american-love-story",
@@ -1090,8 +1141,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "almodovar-season-talk-to-her",
@@ -1119,8 +1170,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "exhibition-on-screen-david-hockney-at-the-royal-academy-of-arts",
@@ -1145,8 +1196,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584"
+      "color": "#1a2597",
+      "accent": "#535ed4"
     },
     {
       "id": "almodovar-season-bad-education",
@@ -1174,8 +1225,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "exhibition-on-screen-leonardo-the-works",
@@ -1200,8 +1251,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#a6307e",
+      "accent": "#d684bb"
     },
     {
       "id": "almodovar-season-volver",
@@ -1229,8 +1280,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     },
     {
       "id": "75-years-of-contemporary-films-working-girls",
@@ -1258,8 +1309,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "twenty-years-of-the-met-in-cinemas-an-anniversary-celebration",
@@ -1284,8 +1335,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868"
+      "color": "#6530a6",
+      "accent": "#a984d6"
     },
     {
       "id": "75-years-of-contemporary-films-a-bigger-splash",
@@ -1313,8 +1364,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6"
+      "color": "#1a972f",
+      "accent": "#53d468"
     },
     {
       "id": "playing-the-changes-tracking-darius-brubeck",
@@ -1342,8 +1393,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468",
+      "color": "#9f2132",
+      "accent": "#d36876",
       "letterboxd_url": "https://letterboxd.com/film/playing-the-changes-tracking-darius-brubeck/",
       "letterboxd_rating": null
     },
@@ -1370,8 +1421,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "gentle-angry-women",
@@ -1396,8 +1447,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6",
+      "color": "#73971a",
+      "accent": "#afd453",
       "letterboxd_url": "https://letterboxd.com/film/gentle-angry-women/",
       "letterboxd_rating": null
     },
@@ -1424,8 +1475,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "met-opera-2026-27-macbeth",
@@ -1450,8 +1501,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "met-opera-2026-27-samson-et-dalila",
@@ -1476,8 +1527,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be"
+      "color": "#974e1a",
+      "accent": "#d48853"
     },
     {
       "id": "met-opera-2026-27-la-fanciulla-del-west",
@@ -1502,8 +1553,8 @@
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853"
+      "color": "#31219f",
+      "accent": "#7568d3"
     },
     {
       "id": "met-opera-2026-27-silent-night",
@@ -1528,8 +1579,8 @@
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3"
+      "color": "#44a630",
+      "accent": "#92d684"
     },
     {
       "id": "met-opera-2026-27-manon",
@@ -1554,8 +1605,8 @@
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#971a54",
+      "accent": "#d4538f"
     },
     {
       "id": "met-opera-2026-27-otello",
@@ -1580,8 +1631,8 @@
           }
         ]
       },
-      "color": "#971a54",
-      "accent": "#d4538f"
+      "color": "#21809f",
+      "accent": "#68b9d3"
     },
     {
       "id": "met-opera-2026-27-parsifal",
@@ -1606,8 +1657,8 @@
           }
         ]
       },
-      "color": "#21809f",
-      "accent": "#68b9d3"
+      "color": "#a6a030",
+      "accent": "#d6d284"
     }
   ]
 }
