@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-13T12:33:54.317398+00:00",
+  "scraped_at": "2026-06-13T13:04:36.160037+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -379,50 +379,6 @@
       "accent": "#ff6090"
     },
     {
-      "id": "michael",
-      "title": "Michael",
-      "rating": "12A",
-      "runtime": 127,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "A biopic exploring the life of Michael Jackson, from his Jackson 5 beginnings and extraordinary talent to his status as the biggest entertainer, promising an honest look at his triumphs, struggles, and iconic performances, starring his nephew Jaafar Jackson as Michael, with Colman Domingo & Nia Long as his parents, directed by Antoine Fuqua.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/93222",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/93222_0.jpg",
-      "showtimes": {
-        "2026-06-13": [
-          {
-            "time": "13:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11552",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-15": [
-          {
-            "time": "20:45",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11547",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-17": [
-          {
-            "time": "15:05",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11535",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#00897b",
-      "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
-      "letterboxd_rating": 3.61
-    },
-    {
       "id": "obsession",
       "title": "Obsession",
       "rating": "18",
@@ -437,12 +393,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/109526_0.jpg",
       "showtimes": {
         "2026-06-13": [
-          {
-            "time": "13:25",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11553",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "15:55",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11492",
@@ -557,8 +507,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
       "letterboxd_rating": 4.15
     },
@@ -617,46 +567,10 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/scary-movie-2026/",
       "letterboxd_rating": 2.5
-    },
-    {
-      "id": "the-sheep-detectives",
-      "title": "The Sheep Detectives",
-      "rating": "PG",
-      "runtime": 105,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "Every night a shepherd reads aloud a murder mystery, pretending his sheep can understand. When he is found dead, the sheep realize at once that it was a murder and think they know everything about how to go about solving it.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/106218",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/106218_0.jpg",
-      "showtimes": {
-        "2026-06-13": [
-          {
-            "time": "13:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11493",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-14": [
-          {
-            "time": "13:20",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11481",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
-      "letterboxd_rating": 3.81
     },
     {
       "id": "on-the-edge-of-your-seat-lvsff",
@@ -681,8 +595,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
     },
     {
       "id": "try-not-to-laugh-lvsff",
@@ -707,8 +621,72 @@
           }
         ]
       },
+      "color": "#c62828",
+      "accent": "#ef5350"
+    },
+    {
+      "id": "the-sheep-detectives",
+      "title": "The Sheep Detectives",
+      "rating": "PG",
+      "runtime": 105,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Every night a shepherd reads aloud a murder mystery, pretending his sheep can understand. When he is found dead, the sheep realize at once that it was a murder and think they know everything about how to go about solving it.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/106218",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/106218_0.jpg",
+      "showtimes": {
+        "2026-06-14": [
+          {
+            "time": "13:20",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11481",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
+      "letterboxd_rating": 3.81
+    },
+    {
+      "id": "michael",
+      "title": "Michael",
+      "rating": "12A",
+      "runtime": 127,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "A biopic exploring the life of Michael Jackson, from his Jackson 5 beginnings and extraordinary talent to his status as the biggest entertainer, promising an honest look at his triumphs, struggles, and iconic performances, starring his nephew Jaafar Jackson as Michael, with Colman Domingo & Nia Long as his parents, directed by Antoine Fuqua.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/93222",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/93222_0.jpg",
+      "showtimes": {
+        "2026-06-15": [
+          {
+            "time": "20:45",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11547",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-17": [
+          {
+            "time": "15:05",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11535",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
       "color": "#00838f",
-      "accent": "#4dd0e1"
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
+      "letterboxd_rating": 3.61
     },
     {
       "id": "the-devil-wears-prada-2",
