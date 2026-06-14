@@ -1,7 +1,93 @@
 {
-  "scraped_at": "2026-06-14T14:01:53.706167+00:00",
+  "scraped_at": "2026-06-14T14:31:52.893929+00:00",
   "source": "peckhamplex.london",
   "films": [
+    {
+      "id": "disclosure-day",
+      "title": "Disclosure Day",
+      "rating": "12A",
+      "runtime": 145,
+      "genre": "Drama",
+      "film_url": "https://www.peckhamplex.london/film/disclosure-day",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/disclosure-day.jpg",
+      "showtimes": {
+        "2026-06-14": [
+          {
+            "time": "17:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80852?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80856?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-15": [
+          {
+            "time": "17:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80893?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80897?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-16": [
+          {
+            "time": "17:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80905?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80909?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-17": [
+          {
+            "time": "17:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80917?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80921?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-18": [
+          {
+            "time": "17:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80929?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80933?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Steven Spielberg",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
+      "letterboxd_rating": 3.33
+    },
     {
       "id": "backrooms",
       "title": "Backrooms",
@@ -12,12 +98,6 @@
       "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/backrooms.jpg",
       "showtimes": {
         "2026-06-14": [
-          {
-            "time": "15:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80845?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "18:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80851?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
@@ -41,7 +121,7 @@
           {
             "time": "21:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80899?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -49,13 +129,13 @@
           {
             "time": "18:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80904?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           },
           {
             "time": "21:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80911?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           }
         ],
@@ -63,13 +143,13 @@
           {
             "time": "18:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80916?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           },
           {
             "time": "21:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80923?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           }
         ],
@@ -77,13 +157,13 @@
           {
             "time": "18:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80928?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           },
           {
             "time": "21:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80935?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           }
         ]
@@ -93,289 +173,6 @@
       "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
       "letterboxd_rating": 3.37
-    },
-    {
-      "id": "disclosure-day",
-      "title": "Disclosure Day",
-      "rating": "12A",
-      "runtime": 145,
-      "genre": "Drama",
-      "film_url": "https://www.peckhamplex.london/film/disclosure-day",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/disclosure-day.jpg",
-      "showtimes": {
-        "2026-06-14": [
-          {
-            "time": "17:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80852?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          },
-          {
-            "time": "20:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80856?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          }
-        ],
-        "2026-06-15": [
-          {
-            "time": "17:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80893?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          },
-          {
-            "time": "20:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80897?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          }
-        ],
-        "2026-06-16": [
-          {
-            "time": "17:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80905?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          },
-          {
-            "time": "20:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80909?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          }
-        ],
-        "2026-06-17": [
-          {
-            "time": "17:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80917?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          },
-          {
-            "time": "20:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80921?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          }
-        ],
-        "2026-06-18": [
-          {
-            "time": "17:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80929?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          },
-          {
-            "time": "20:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80933?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Steven Spielberg",
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
-      "letterboxd_rating": 3.33
-    },
-    {
-      "id": "scary-movie-6",
-      "title": "Scary Movie 6",
-      "rating": "15",
-      "runtime": 100,
-      "genre": "Comedy",
-      "film_url": "https://www.peckhamplex.london/film/scary-movie-6",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/scary-movie-6.jpg",
-      "showtimes": {
-        "2026-06-14": [
-          {
-            "time": "16:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80847?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": true
-          },
-          {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80853?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": true
-          },
-          {
-            "time": "21:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80859?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": true
-          }
-        ],
-        "2026-06-15": [
-          {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80894?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": true
-          },
-          {
-            "time": "21:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80900?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": true
-          }
-        ],
-        "2026-06-16": [
-          {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80906?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": true
-          },
-          {
-            "time": "21:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80912?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": true
-          }
-        ],
-        "2026-06-17": [
-          {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80918?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": true
-          },
-          {
-            "time": "21:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80924?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": true
-          }
-        ],
-        "2026-06-18": [
-          {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80930?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": true
-          },
-          {
-            "time": "21:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80936?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": true
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090"
-    },
-    {
-      "id": "savage-house",
-      "title": "Savage House",
-      "rating": "15",
-      "runtime": 114,
-      "genre": "Comedy",
-      "film_url": "https://www.peckhamplex.london/film/savage-house",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/savage-house.jpg",
-      "showtimes": {
-        "2026-06-14": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80855?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          }
-        ],
-        "2026-06-15": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80896?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          }
-        ],
-        "2026-06-16": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80908?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          }
-        ],
-        "2026-06-17": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80920?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Peter Glanz",
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/savage-house/",
-      "letterboxd_rating": 3.11
-    },
-    {
-      "id": "the-mandalorian-grogu",
-      "title": "The Mandalorian & Grogu",
-      "rating": "12A",
-      "runtime": 132,
-      "genre": "Action",
-      "film_url": "https://www.peckhamplex.london/film/the-mandalorian-grogu",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-mandalorian-grogu.jpg",
-      "showtimes": {
-        "2026-06-14": [
-          {
-            "time": "15:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80843?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          },
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80849?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-06-15": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80890?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-06-16": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80902?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-06-17": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80914?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-06-18": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80926?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Taika Waititi",
-      "color": "#ef6c00",
-      "accent": "#ffb74d"
     },
     {
       "id": "masters-of-the-universe",
@@ -432,7 +229,7 @@
           {
             "time": "17:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80913?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": false
           },
           {
@@ -458,6 +255,197 @@
         ]
       },
       "director": "Aaron Nee",
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
+    },
+    {
+      "id": "savage-house",
+      "title": "Savage House",
+      "rating": "15",
+      "runtime": 114,
+      "genre": "Comedy",
+      "film_url": "https://www.peckhamplex.london/film/savage-house",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/savage-house.jpg",
+      "showtimes": {
+        "2026-06-14": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80855?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ],
+        "2026-06-15": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80896?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ],
+        "2026-06-16": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80908?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ],
+        "2026-06-17": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80920?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Peter Glanz",
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/savage-house/",
+      "letterboxd_rating": 3.11
+    },
+    {
+      "id": "the-mandalorian-grogu",
+      "title": "The Mandalorian & Grogu",
+      "rating": "12A",
+      "runtime": 132,
+      "genre": "Action",
+      "film_url": "https://www.peckhamplex.london/film/the-mandalorian-grogu",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-mandalorian-grogu.jpg",
+      "showtimes": {
+        "2026-06-14": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80849?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-06-15": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80890?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-06-16": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80902?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-17": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80914?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-06-18": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80926?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Taika Waititi",
+      "color": "#e53935",
+      "accent": "#ff6f60"
+    },
+    {
+      "id": "scary-movie-6",
+      "title": "Scary Movie 6",
+      "rating": "15",
+      "runtime": 100,
+      "genre": "Comedy",
+      "film_url": "https://www.peckhamplex.london/film/scary-movie-6",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/scary-movie-6.jpg",
+      "showtimes": {
+        "2026-06-14": [
+          {
+            "time": "16:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80847?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": true
+          },
+          {
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80853?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": true
+          },
+          {
+            "time": "21:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80859?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": true
+          }
+        ],
+        "2026-06-15": [
+          {
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80894?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": true
+          },
+          {
+            "time": "21:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80900?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": true
+          }
+        ],
+        "2026-06-16": [
+          {
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80906?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": true
+          },
+          {
+            "time": "21:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80912?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": true
+          }
+        ],
+        "2026-06-17": [
+          {
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80918?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": true
+          },
+          {
+            "time": "21:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80924?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": true
+          }
+        ],
+        "2026-06-18": [
+          {
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80930?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": true
+          },
+          {
+            "time": "21:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80936?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": true
+          }
+        ]
+      },
       "color": "#7c4dff",
       "accent": "#b388ff"
     },
@@ -616,6 +604,29 @@
       "letterboxd_rating": null
     },
     {
+      "id": "mystery-of-the-first-temple",
+      "title": "Mystery of the First Temple",
+      "rating": "PG",
+      "runtime": 88,
+      "genre": "Documentary",
+      "film_url": "https://www.peckhamplex.london/film/mystery-of-the-first-temple",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/mystery-of-the-first-temple.jpg",
+      "showtimes": {
+        "2026-06-29": [
+          {
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80786?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#00838f",
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/mystery-of-the-first-temple/",
+      "letterboxd_rating": null
+    },
+    {
       "id": "national-theatre-live-les-liaisons-dangereuses",
       "title": "National Theatre Live: Les Liaisons Dangereuses",
       "rating": "15",
@@ -634,31 +645,8 @@
         ]
       },
       "director": "Marianne Elliott",
-      "color": "#00838f",
-      "accent": "#4dd0e1"
-    },
-    {
-      "id": "rain-bomb",
-      "title": "Rain Bomb",
-      "rating": "12A",
-      "runtime": 89,
-      "genre": "Documentary",
-      "film_url": "https://www.peckhamplex.london/film/rain-bomb",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/rain-bomb.jpg",
-      "showtimes": {
-        "2026-06-22": [
-          {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80785?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
       "color": "#2e7d32",
-      "accent": "#66bb6a",
-      "letterboxd_url": "https://letterboxd.com/film/rain-bomb/",
-      "letterboxd_rating": null
+      "accent": "#66bb6a"
     },
     {
       "id": "la-traviata",
@@ -684,6 +672,29 @@
       "letterboxd_rating": null
     },
     {
+      "id": "rain-bomb",
+      "title": "Rain Bomb",
+      "rating": "12A",
+      "runtime": 89,
+      "genre": "Documentary",
+      "film_url": "https://www.peckhamplex.london/film/rain-bomb",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/rain-bomb.jpg",
+      "showtimes": {
+        "2026-06-22": [
+          {
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80785?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
+      "letterboxd_url": "https://letterboxd.com/film/rain-bomb/",
+      "letterboxd_rating": null
+    },
+    {
       "id": "turandot",
       "title": "Turandot",
       "rating": "PG",
@@ -701,32 +712,9 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
-      "letterboxd_url": "https://letterboxd.com/film/turandot/",
-      "letterboxd_rating": null
-    },
-    {
-      "id": "mystery-of-the-first-temple",
-      "title": "Mystery of the First Temple",
-      "rating": "PG",
-      "runtime": 88,
-      "genre": "Documentary",
-      "film_url": "https://www.peckhamplex.london/film/mystery-of-the-first-temple",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/mystery-of-the-first-temple.jpg",
-      "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80786?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
       "color": "#558b2f",
       "accent": "#9ccc65",
-      "letterboxd_url": "https://letterboxd.com/film/mystery-of-the-first-temple/",
+      "letterboxd_url": "https://letterboxd.com/film/turandot/",
       "letterboxd_rating": null
     }
   ]
