@@ -1,50 +1,7 @@
 {
-  "scraped_at": "2026-06-14T15:33:54.775163+00:00",
+  "scraped_at": "2026-06-14T16:03:50.301140+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "hen",
-      "title": "Hen",
-      "rating": "15",
-      "runtime": 96,
-      "genre": "Other",
-      "year": "2026",
-      "director": "György Pálfi",
-      "cast": null,
-      "description": "Told entirely from the perspective of its avian protagonist, Hen follows a chicken who escapes an industrial farm only to find…",
-      "film_url": "https://www.thegardencinema.co.uk/film/hen/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5572697.jpg",
-      "showtimes": {
-        "2026-06-14": [
-          {
-            "time": "15:50",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5424302.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-15": [
-          {
-            "time": "20:40",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696412.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-16": [
-          {
-            "time": "18:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696433.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
-      "letterboxd_rating": 3.5
-    },
     {
       "id": "backrooms",
       "title": "Backrooms",
@@ -89,8 +46,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
       "letterboxd_rating": 3.37
     },
@@ -170,8 +127,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-fall-of-sir-douglas-weatherford/",
       "letterboxd_rating": 3.38
     },
@@ -213,8 +170,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/boogie-nights/",
       "letterboxd_rating": 4.2
     },
@@ -243,8 +200,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6"
+      "color": "#00897b",
+      "accent": "#4db6ac"
     },
     {
       "id": "the-misfits",
@@ -284,8 +241,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/the-misfits/",
       "letterboxd_rating": 3.69
     },
@@ -327,8 +284,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/strictly-ballroom/",
       "letterboxd_rating": 3.78
     },
@@ -378,8 +335,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/koln-75/",
       "letterboxd_rating": 3.53
     },
@@ -419,8 +376,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/some-like-it-hot/",
       "letterboxd_rating": 4.28
     },
@@ -454,8 +411,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/ghost-in-the-machine-2026/",
       "letterboxd_rating": 3.22
     },
@@ -500,8 +457,8 @@
         "50 Years of Argentina on Film"
       ],
       "partner": "Alborada Films",
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/identity-2026/",
       "letterboxd_rating": null
     },
@@ -531,8 +488,43 @@
         ]
       },
       "partner": "Bar Shorts",
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
+    },
+    {
+      "id": "hen",
+      "title": "Hen",
+      "rating": "15",
+      "runtime": 96,
+      "genre": "Other",
+      "year": "2026",
+      "director": "György Pálfi",
+      "cast": null,
+      "description": "Told entirely from the perspective of its avian protagonist, Hen follows a chicken who escapes an industrial farm only to find…",
+      "film_url": "https://www.thegardencinema.co.uk/film/hen/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5572697.jpg",
+      "showtimes": {
+        "2026-06-15": [
+          {
+            "time": "20:40",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696412.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-16": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5696433.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
       "color": "#ad1457",
-      "accent": "#f06292"
+      "accent": "#f06292",
+      "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
+      "letterboxd_rating": 3.5
     },
     {
       "id": "el-secreto-de-sus-ojos-the-secret-in-their-eyes",
