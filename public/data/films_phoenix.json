@@ -1,7 +1,54 @@
 {
-  "scraped_at": "2026-06-14T17:34:20.882005+00:00",
+  "scraped_at": "2026-06-14T18:03:53.936570+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
+    {
+      "id": "savage-house",
+      "title": "Savage House",
+      "rating": "15",
+      "runtime": 114,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Peter Glanz",
+      "cast": "Richard E. Grant, Sebastian Armesto, Roger Ashton-Griffiths, Dominic Charman, Michael Culkin",
+      "country": "UK",
+      "description": "Against the backdrop of 18th century England, a massive pox outbreak, and Jacobite uprising, Sir Chauncey Savage and Lady Savage blindly pursue a better life. It's not without a tinge of irony that their family name is the Savages, for this is a Savage House indeed, filled with duels, decadence, and...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=545085",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/545084.jpg",
+      "showtimes": {
+        "2026-06-14": [
+          {
+            "time": "19:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556345.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-15": [
+          {
+            "time": "17:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556355.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-18": [
+          {
+            "time": "20:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556363.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": true,
+            "tags": [
+              "Closed Captions"
+            ]
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/savage-house/",
+      "letterboxd_rating": 3.11
+    },
     {
       "id": "disclosure-day",
       "title": "Disclosure Day",
@@ -17,18 +64,6 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/536755.jpg",
       "showtimes": {
         "2026-06-14": [
-          {
-            "time": "13:45",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556503.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          },
-          {
-            "time": "16:45",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_536767.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": false
-          },
           {
             "time": "19:45",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_536769.TcsSection_543",
@@ -110,39 +145,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
       "letterboxd_rating": 3.33
-    },
-    {
-      "id": "journey-through-irish-cinema-rocky-road-to-dublin",
-      "title": "Journey Through Irish Cinema: Rocky Road To Dublin",
-      "rating": "12A",
-      "runtime": 97,
-      "genre": "Other",
-      "year": "1967",
-      "director": "Peter Lennon",
-      "cast": "Sean O'Faolian, Peter Lennon, Conor Cruise O'Brien, John Huston",
-      "country": "Ireland",
-      "description": "Made in 1968, a collaboration between firebrand Irish journalist  Peter Lennon  and the French New Wave's cinematographer-in-chief  Raoul Coutard ,  ( Luc Godard's Director of Photography ),  explores the legacy of the Easter Rising and the compromises made in the decades since the establishment of ...",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=494063",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/494062.JPG",
-      "showtimes": {
-        "2026-06-14": [
-          {
-            "time": "14:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_494079.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": false,
-            "tags": [
-              "Q&A"
-            ]
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff"
     },
     {
       "id": "tuner",
@@ -158,14 +164,6 @@
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=535831",
       "poster_url": "https://images.savoysystems.co.uk/PXL/535823.jpg",
       "showtimes": {
-        "2026-06-14": [
-          {
-            "time": "17:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556346.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
         "2026-06-15": [
           {
             "time": "14:30",
@@ -214,53 +212,6 @@
       "letterboxd_rating": 3.75
     },
     {
-      "id": "savage-house",
-      "title": "Savage House",
-      "rating": "15",
-      "runtime": 114,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Peter Glanz",
-      "cast": "Richard E. Grant, Sebastian Armesto, Roger Ashton-Griffiths, Dominic Charman, Michael Culkin",
-      "country": "UK",
-      "description": "Against the backdrop of 18th century England, a massive pox outbreak, and Jacobite uprising, Sir Chauncey Savage and Lady Savage blindly pursue a better life. It's not without a tinge of irony that their family name is the Savages, for this is a Savage House indeed, filled with duels, decadence, and...",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=545085",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/545084.jpg",
-      "showtimes": {
-        "2026-06-14": [
-          {
-            "time": "19:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556345.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-15": [
-          {
-            "time": "17:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556355.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-18": [
-          {
-            "time": "20:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_556363.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": true,
-            "tags": [
-              "Closed Captions"
-            ]
-          }
-        ]
-      },
-      "color": "#00897b",
-      "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/savage-house/",
-      "letterboxd_rating": 3.11
-    },
-    {
       "id": "the-christophers",
       "title": "The Christophers",
       "rating": "15",
@@ -283,8 +234,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.51
     },
@@ -327,8 +278,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
       "letterboxd_rating": 3.37
     },
@@ -355,8 +306,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350"
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
     },
     {
       "id": "national-theatre-live-all-my-sons",
@@ -381,8 +332,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
+      "color": "#c62828",
+      "accent": "#ef5350"
     },
     {
       "id": "tampopo",
@@ -407,8 +358,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/tampopo/",
       "letterboxd_rating": 4.31
     },
@@ -451,8 +402,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
       "letterboxd_rating": 4.15
     },
@@ -479,8 +430,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "london-festival-of-architecture-lfa-affr-present-living-together-the-story-of-de-warren",
@@ -505,8 +456,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "national-theatre-live-les-liaisons-dangereuses",
@@ -539,8 +490,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#ad1457",
+      "accent": "#f06292"
     },
     {
       "id": "david-attenborough-a-life-on-our-planet-michael-palin-live-intro",
@@ -565,8 +516,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "journey-through-irish-cinema-my-left-foot-the-story-of-christy-brown-q-a-with-jim-sheridan",
@@ -594,8 +545,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "pride-classics-portrait-of-a-lady-on-fire",
@@ -620,8 +571,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "fight-like-a-girl",
@@ -646,8 +597,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#558b2f",
+      "accent": "#9ccc65"
     },
     {
       "id": "bend-it-like-beckham",
@@ -672,8 +623,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/bend-it-like-beckham/",
       "letterboxd_rating": 3.47
     },
@@ -700,8 +651,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453"
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "journey-through-irish-cinema-michael-collins",
@@ -729,8 +680,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "the-day-innocence-died-bloody-sunday-q-a-and-the-fight-for-justice",
@@ -758,8 +709,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#9f2190",
+      "accent": "#d368c6"
     },
     {
       "id": "mares-nest-director-q-a",
@@ -784,8 +735,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953",
+      "color": "#30a692",
+      "accent": "#84d6c8",
       "letterboxd_url": "https://letterboxd.com/film/mares-nest-2025/",
       "letterboxd_rating": 3.11
     },
@@ -902,8 +853,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#975e1a",
+      "accent": "#d49953",
       "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
       "letterboxd_rating": null
     },
@@ -933,8 +884,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684"
+      "color": "#41219f",
+      "accent": "#8368d3"
     },
     {
       "id": "exhibition-on-screen-cezanne-portraits-of-a-life",
@@ -959,8 +910,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e"
+      "color": "#35a630",
+      "accent": "#88d684"
     },
     {
       "id": "almodovar-season-all-about-my-mother",
@@ -988,8 +939,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#971a44",
+      "accent": "#d4537e"
     },
     {
       "id": "exhibition-on-screen-hopper-an-american-love-story",
@@ -1014,8 +965,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "almodovar-season-talk-to-her",
@@ -1043,8 +994,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#9ca630",
+      "accent": "#cfd684"
     },
     {
       "id": "exhibition-on-screen-david-hockney-at-the-royal-academy-of-arts",
@@ -1069,8 +1020,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#7d1a97",
+      "accent": "#b953d4"
     },
     {
       "id": "almodovar-season-bad-education",
@@ -1098,8 +1049,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "exhibition-on-screen-leonardo-the-works",
@@ -1124,8 +1075,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "almodovar-season-volver",
@@ -1153,8 +1104,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#1a2597",
+      "accent": "#535ed4"
     },
     {
       "id": "75-years-of-contemporary-films-working-girls",
@@ -1182,8 +1133,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "twenty-years-of-the-met-in-cinemas-an-anniversary-celebration",
@@ -1208,8 +1159,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4"
+      "color": "#a6307e",
+      "accent": "#d684bb"
     },
     {
       "id": "75-years-of-contemporary-films-a-bigger-splash",
@@ -1237,8 +1188,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868"
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     },
     {
       "id": "playing-the-changes-tracking-darius-brubeck",
@@ -1266,8 +1217,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6",
+      "color": "#9f8021",
+      "accent": "#d3b868",
       "letterboxd_url": "https://letterboxd.com/film/playing-the-changes-tracking-darius-brubeck/",
       "letterboxd_rating": null
     },
@@ -1294,8 +1245,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468"
+      "color": "#6530a6",
+      "accent": "#a984d6"
     },
     {
       "id": "gentle-angry-women",
@@ -1320,8 +1271,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876",
+      "color": "#1a972f",
+      "accent": "#53d468",
       "letterboxd_url": "https://letterboxd.com/film/gentle-angry-women/",
       "letterboxd_rating": null
     },
@@ -1348,8 +1299,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6"
+      "color": "#9f2132",
+      "accent": "#d36876"
     },
     {
       "id": "met-opera-2026-27-macbeth",
@@ -1374,8 +1325,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "met-opera-2026-27-samson-et-dalila",
@@ -1400,8 +1351,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#73971a",
+      "accent": "#afd453"
     },
     {
       "id": "met-opera-2026-27-la-fanciulla-del-west",
@@ -1426,8 +1377,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "met-opera-2026-27-silent-night",
@@ -1452,8 +1403,8 @@
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "met-opera-2026-27-manon",
@@ -1478,8 +1429,8 @@
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3"
+      "color": "#974e1a",
+      "accent": "#d48853"
     },
     {
       "id": "met-opera-2026-27-otello",
@@ -1504,8 +1455,8 @@
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#31219f",
+      "accent": "#7568d3"
     },
     {
       "id": "met-opera-2026-27-parsifal",
@@ -1530,8 +1481,8 @@
           }
         ]
       },
-      "color": "#971a54",
-      "accent": "#d4538f"
+      "color": "#44a630",
+      "accent": "#92d684"
     }
   ]
 }
