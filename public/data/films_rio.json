@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-15T14:33:43.248456+00:00",
+  "scraped_at": "2026-06-15T15:06:28.399519+00:00",
   "source": "riocinema.org.uk",
   "films": [
     {
@@ -171,7 +171,7 @@
         ],
         "2026-06-22": [
           {
-            "time": "15:20",
+            "time": "14:00",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2650621.TcsSection_1299",
             "screen": "S2",
             "hoh": false
@@ -545,7 +545,10 @@
             "time": "17:00",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2640738.TcsSection_936",
             "screen": "S1",
-            "hoh": false
+            "hoh": false,
+            "tags": [
+              "Special Event"
+            ]
           }
         ],
         "2026-06-22": [
@@ -574,6 +577,7 @@
         ]
       },
       "season_tags": [
+        "Special Events",
         "Main Features"
       ],
       "color": "#546e7a",
@@ -810,8 +814,8 @@
       "accent": "#9ccc65"
     },
     {
-      "id": "club-des-femmes-x-peccadillo-lesbian-space-princess-zine-workshop",
-      "title": "CLUB DES FEMMES x PECCADILLO: LESBIAN SPACE PRINCESS ZINE WORKSHOP",
+      "id": "lesbian-space-princess-zine-workshop",
+      "title": "Lesbian Space Princess Zine Workshop",
       "rating": "15",
       "runtime": 90,
       "genre": "Other",
@@ -1150,6 +1154,39 @@
       "letterboxd_rating": 3.63
     },
     {
+      "id": "paul-mccarthy-selected-video-works-1970-2025",
+      "title": "Paul McCarthy: Selected Video Works (1970-2025)",
+      "rating": "TBC",
+      "runtime": 160,
+      "genre": "Other",
+      "year": "1970-2025",
+      "director": "Paul McCarthy",
+      "cast": null,
+      "country": "USA",
+      "description": "Seminal American visual artist Paul McCarthy introduces a selection of his pioneering video performance works from the early Black and White Tapes to the UK premiere of a new episode from the ongoing A&amp;E project.  Conceived as both a survey and a point of entry, this one-night event offers a rare op...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2651190",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2651189.jpg",
+      "showtimes": {
+        "2026-07-09": [
+          {
+            "time": "19:00",
+            "booking_url": "https://www.eventbrite.co.uk/e/paul-mccarthy-selected-video-works-1970-2025-tickets-1990318277546",
+            "screen": "S1",
+            "hoh": false,
+            "tags": [
+              "Special Event",
+              "NoAds"
+            ]
+          }
+        ]
+      },
+      "season_tags": [
+        "Special Events"
+      ],
+      "color": "#9ca630",
+      "accent": "#cfd684"
+    },
+    {
       "id": "rio-forever-x-queer-horror-nights-little-shop-of-horrors-director-s-cut",
       "title": "Rio Forever X Queer Horror Nights: Little Shop of Horrors (director’s Cut)",
       "rating": "18",
@@ -1179,8 +1216,8 @@
       "season_tags": [
         "Rio Forever"
       ],
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#7d1a97",
+      "accent": "#b953d4"
     },
     {
       "id": "how-to-get-on-with-everybody",
@@ -1203,14 +1240,18 @@
             "screen": "S1",
             "hoh": false,
             "tags": [
+              "Special Event",
               "Q&A",
               "NoAds"
             ]
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4",
+      "season_tags": [
+        "Special Events"
+      ],
+      "color": "#219f60",
+      "accent": "#68d39d",
       "letterboxd_url": "https://letterboxd.com/film/how-to-get-on-with-everybody/",
       "letterboxd_rating": null
     },
@@ -1244,8 +1285,8 @@
       "season_tags": [
         "Classic Matinee"
       ],
-      "color": "#219f60",
-      "accent": "#68d39d",
+      "color": "#a64830",
+      "accent": "#d69584",
       "letterboxd_url": "https://letterboxd.com/film/the-full-monty/",
       "letterboxd_rating": 3.73
     },
@@ -1279,8 +1320,8 @@
       "season_tags": [
         "Rio Forever"
       ],
-      "color": "#a64830",
-      "accent": "#d69584"
+      "color": "#1a2597",
+      "accent": "#535ed4"
     },
     {
       "id": "slacker-shakespeare-shakespeare-in-love",
@@ -1312,8 +1353,8 @@
       "season_tags": [
         "Rio Forever"
       ],
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "divine-hammer-uk-premiere",
@@ -1344,8 +1385,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#a6307e",
+      "accent": "#d684bb"
     },
     {
       "id": "saturday-night-at-the-baths",
@@ -1377,8 +1418,8 @@
       "season_tags": [
         "Pink Palace"
       ],
-      "color": "#a6307e",
-      "accent": "#d684bb",
+      "color": "#1a9297",
+      "accent": "#53cfd4",
       "letterboxd_url": "https://letterboxd.com/film/saturday-night-at-the-baths/",
       "letterboxd_rating": 3.22
     },
@@ -1412,8 +1453,8 @@
       "season_tags": [
         "Classic Matinee"
       ],
-      "color": "#1a9297",
-      "accent": "#53cfd4",
+      "color": "#9f8021",
+      "accent": "#d3b868",
       "letterboxd_url": "https://letterboxd.com/film/thelma-louise/",
       "letterboxd_rating": 4.22
     },
@@ -1447,8 +1488,8 @@
       "season_tags": [
         "Rio Forever"
       ],
-      "color": "#9f8021",
-      "accent": "#d3b868",
+      "color": "#6530a6",
+      "accent": "#a984d6",
       "letterboxd_url": "https://letterboxd.com/film/ida/",
       "letterboxd_rating": 4.05
     },
@@ -1482,8 +1523,8 @@
       "season_tags": [
         "Classic Matinee"
       ],
-      "color": "#6530a6",
-      "accent": "#a984d6",
+      "color": "#1a972f",
+      "accent": "#53d468",
       "letterboxd_url": "https://letterboxd.com/film/local-hero/",
       "letterboxd_rating": 3.88
     }
