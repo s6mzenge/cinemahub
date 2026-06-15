@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-15T08:33:31.556665+00:00",
+  "scraped_at": "2026-06-15T09:03:58.639278+00:00",
   "source": "ica.art",
   "films": [
     {
@@ -392,6 +392,14 @@
             "hoh": false
           }
         ],
+        "2026-06-19": [
+          {
+            "time": "13:30",
+            "booking_url": "https://www.ica.art/book/726201",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ],
         "2026-06-23": [
           {
             "time": "12:15",
@@ -704,47 +712,6 @@
       "letterboxd_rating": 3.84
     },
     {
-      "id": "leonora-in-the-morning-light",
-      "title": "Leonora in the Morning Light",
-      "rating": "TBC",
-      "runtime": 103,
-      "genre": "Other",
-      "year": "2025",
-      "country": "Germany/Mexico/Romania/UK",
-      "director": "Lena Vurma and Thor Klein",
-      "description": "The story of artist Leonora Carrington, a womanwho turned trauma into transcendence, creatingbeauty from chaos and forging a legacy that changedthe history of modern art.",
-      "film_url": "https://www.ica.art/films/leonora-in-the-morning-light",
-      "poster_url": "https://www.ica.art/media/13214.jpg",
-      "showtimes": {
-        "2026-06-19": [
-          {
-            "time": "13:15",
-            "booking_url": "https://www.ica.art/book/725401",
-            "screen": "Cinema 1",
-            "hoh": false
-          },
-          {
-            "time": "16:30",
-            "booking_url": "https://www.ica.art/book/725401",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-24": [
-          {
-            "time": "16:00",
-            "booking_url": "https://www.ica.art/book/725401",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#37474f",
-      "accent": "#78909c",
-      "letterboxd_url": "https://letterboxd.com/film/leonora-in-the-morning-light/",
-      "letterboxd_rating": 3.06
-    },
-    {
       "id": "nino",
       "title": "Nino",
       "rating": "TBC",
@@ -842,10 +809,45 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#37474f",
+      "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/nino-2025/",
       "letterboxd_rating": 3.82
+    },
+    {
+      "id": "leonora-in-the-morning-light",
+      "title": "Leonora in the Morning Light",
+      "rating": "TBC",
+      "runtime": 103,
+      "genre": "Other",
+      "year": "2025",
+      "country": "Germany/Mexico/Romania/UK",
+      "director": "Lena Vurma and Thor Klein",
+      "description": "The story of artist Leonora Carrington, a womanwho turned trauma into transcendence, creatingbeauty from chaos and forging a legacy that changedthe history of modern art.",
+      "film_url": "https://www.ica.art/films/leonora-in-the-morning-light",
+      "poster_url": "https://www.ica.art/media/13214.jpg",
+      "showtimes": {
+        "2026-06-19": [
+          {
+            "time": "16:30",
+            "booking_url": "https://www.ica.art/book/725401",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-24": [
+          {
+            "time": "16:00",
+            "booking_url": "https://www.ica.art/book/725401",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#4e342e",
+      "accent": "#8d6e63",
+      "letterboxd_url": "https://letterboxd.com/film/leonora-in-the-morning-light/",
+      "letterboxd_rating": 3.06
     },
     {
       "id": "familiar-touch",
