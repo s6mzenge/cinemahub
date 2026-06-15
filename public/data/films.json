@@ -1,79 +1,7 @@
 {
-  "scraped_at": "2026-06-15T14:02:18.364125+00:00",
+  "scraped_at": "2026-06-15T14:31:48.447951+00:00",
   "source": "peckhamplex.london",
   "films": [
-    {
-      "id": "disclosure-day",
-      "title": "Disclosure Day",
-      "rating": "12A",
-      "runtime": 145,
-      "genre": "Drama",
-      "film_url": "https://www.peckhamplex.london/film/disclosure-day",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/disclosure-day.jpg",
-      "showtimes": {
-        "2026-06-15": [
-          {
-            "time": "17:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80893?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80897?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-16": [
-          {
-            "time": "17:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80905?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80909?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-17": [
-          {
-            "time": "17:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80917?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80921?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-18": [
-          {
-            "time": "17:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80929?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80933?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Steven Spielberg",
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
-      "letterboxd_rating": 3.29
-    },
     {
       "id": "backrooms",
       "title": "Backrooms",
@@ -87,13 +15,13 @@
           {
             "time": "18:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80892?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           },
           {
             "time": "21:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80899?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           }
         ],
@@ -101,13 +29,13 @@
           {
             "time": "18:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80904?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           },
           {
             "time": "21:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80911?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           }
         ],
@@ -147,6 +75,118 @@
       "letterboxd_rating": 3.37
     },
     {
+      "id": "disclosure-day",
+      "title": "Disclosure Day",
+      "rating": "12A",
+      "runtime": 145,
+      "genre": "Drama",
+      "film_url": "https://www.peckhamplex.london/film/disclosure-day",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/disclosure-day.jpg",
+      "showtimes": {
+        "2026-06-15": [
+          {
+            "time": "17:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80893?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "20:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80897?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ],
+        "2026-06-16": [
+          {
+            "time": "17:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80905?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "20:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80909?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ],
+        "2026-06-17": [
+          {
+            "time": "17:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80917?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "20:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80921?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ],
+        "2026-06-18": [
+          {
+            "time": "17:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80929?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "20:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80933?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Steven Spielberg",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
+      "letterboxd_rating": 3.29
+    },
+    {
+      "id": "savage-house",
+      "title": "Savage House",
+      "rating": "15",
+      "runtime": 114,
+      "genre": "Comedy",
+      "film_url": "https://www.peckhamplex.london/film/savage-house",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/savage-house.jpg",
+      "showtimes": {
+        "2026-06-15": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80896?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ],
+        "2026-06-16": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80908?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-17": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80920?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Peter Glanz",
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/savage-house/",
+      "letterboxd_rating": 3.11
+    },
+    {
       "id": "scary-movie-6",
       "title": "Scary Movie 6",
       "rating": "15",
@@ -173,7 +213,7 @@
           {
             "time": "18:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80906?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": true
           },
           {
@@ -187,7 +227,7 @@
           {
             "time": "18:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80918?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": true
           },
           {
@@ -212,48 +252,54 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090"
+      "color": "#e53935",
+      "accent": "#ff6f60"
     },
     {
-      "id": "savage-house",
-      "title": "Savage House",
-      "rating": "15",
-      "runtime": 114,
-      "genre": "Comedy",
-      "film_url": "https://www.peckhamplex.london/film/savage-house",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/savage-house.jpg",
+      "id": "the-mandalorian-grogu",
+      "title": "The Mandalorian & Grogu",
+      "rating": "12A",
+      "runtime": 132,
+      "genre": "Action",
+      "film_url": "https://www.peckhamplex.london/film/the-mandalorian-grogu",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-mandalorian-grogu.jpg",
       "showtimes": {
         "2026-06-15": [
           {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80896?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80890?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
             "hoh": false
           }
         ],
         "2026-06-16": [
           {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80908?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80902?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
             "hoh": false
           }
         ],
         "2026-06-17": [
           {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80920?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80914?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-06-18": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80926?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
             "hoh": false
           }
         ]
       },
-      "director": "Peter Glanz",
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/savage-house/",
-      "letterboxd_rating": 3.11
+      "director": "Taika Waititi",
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
     },
     {
       "id": "masters-of-the-universe",
@@ -274,7 +320,7 @@
           {
             "time": "20:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80895?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": false
           }
         ],
@@ -282,7 +328,7 @@
           {
             "time": "17:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80901?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": false
           },
           {
@@ -322,52 +368,6 @@
         ]
       },
       "director": "Aaron Nee",
-      "color": "#ef6c00",
-      "accent": "#ffb74d"
-    },
-    {
-      "id": "the-mandalorian-grogu",
-      "title": "The Mandalorian & Grogu",
-      "rating": "12A",
-      "runtime": 132,
-      "genre": "Action",
-      "film_url": "https://www.peckhamplex.london/film/the-mandalorian-grogu",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-mandalorian-grogu.jpg",
-      "showtimes": {
-        "2026-06-15": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80890?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-06-16": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80902?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-06-17": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80914?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-18": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80926?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Taika Waititi",
       "color": "#7c4dff",
       "accent": "#b388ff"
     },
@@ -384,7 +384,7 @@
           {
             "time": "17:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80927?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": false
           },
           {
@@ -449,29 +449,6 @@
       "letterboxd_rating": 3.75
     },
     {
-      "id": "bat-out-of-hell-the-musical",
-      "title": "Bat Out of Hell - The Musical",
-      "rating": "12A",
-      "runtime": 135,
-      "genre": "Musical",
-      "film_url": "https://www.peckhamplex.london/film/bat-out-of-hell-the-musical",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/bat-out-of-hell-the-musical.jpg",
-      "showtimes": {
-        "2026-07-01": [
-          {
-            "time": "20:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80784?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#ad1457",
-      "accent": "#f06292",
-      "letterboxd_url": "https://letterboxd.com/film/bat-out-of-hell-the-musical/",
-      "letterboxd_rating": 3.13
-    },
-    {
       "id": "aida",
       "title": "Aida",
       "rating": "U",
@@ -493,6 +470,29 @@
       "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/aida/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "bat-out-of-hell-the-musical",
+      "title": "Bat Out of Hell - The Musical",
+      "rating": "12A",
+      "runtime": 135,
+      "genre": "Musical",
+      "film_url": "https://www.peckhamplex.london/film/bat-out-of-hell-the-musical",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/bat-out-of-hell-the-musical.jpg",
+      "showtimes": {
+        "2026-07-01": [
+          {
+            "time": "20:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80784?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#ad1457",
+      "accent": "#f06292",
+      "letterboxd_url": "https://letterboxd.com/film/bat-out-of-hell-the-musical/",
+      "letterboxd_rating": 3.13
     },
     {
       "id": "mystery-of-the-first-temple",
@@ -518,28 +518,6 @@
       "letterboxd_rating": null
     },
     {
-      "id": "national-theatre-live-les-liaisons-dangereuses",
-      "title": "National Theatre Live: Les Liaisons Dangereuses",
-      "rating": "15",
-      "runtime": 180,
-      "genre": "Opera",
-      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-les-liaisons-dangereuses",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-les-liaisons-dangereuses.jpg",
-      "showtimes": {
-        "2026-06-25": [
-          {
-            "time": "19:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/77602?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Marianne Elliott",
-      "color": "#00838f",
-      "accent": "#4dd0e1"
-    },
-    {
       "id": "beyond-the-silk-road",
       "title": "Beyond the Silk Road",
       "rating": "12A",
@@ -557,8 +535,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/beyond-the-silk-road/",
       "letterboxd_rating": null
     },
@@ -580,10 +558,53 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
       "letterboxd_url": "https://letterboxd.com/film/la-traviata-2025/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "national-theatre-live-les-liaisons-dangereuses",
+      "title": "National Theatre Live: Les Liaisons Dangereuses",
+      "rating": "15",
+      "runtime": 180,
+      "genre": "Opera",
+      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-les-liaisons-dangereuses",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-les-liaisons-dangereuses.jpg",
+      "showtimes": {
+        "2026-06-25": [
+          {
+            "time": "19:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/77602?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Marianne Elliott",
+      "color": "#37474f",
+      "accent": "#78909c"
+    },
+    {
+      "id": "radiohead-x-nosferatu-a-symphony-of-horror",
+      "title": "Radiohead X Nosferatu: A Symphony of Horror",
+      "rating": "PG",
+      "runtime": 94,
+      "genre": "Music",
+      "film_url": "https://www.peckhamplex.london/film/radiohead-x-nosferatu-a-symphony-of-horror",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/radiohead-x-nosferatu-a-symphony-of-horror.jpg",
+      "showtimes": {
+        "2026-10-01": [
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80185?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "rain-bomb",
@@ -603,8 +624,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/rain-bomb/",
       "letterboxd_rating": null
     },
@@ -626,31 +647,10 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/turandot/",
       "letterboxd_rating": null
-    },
-    {
-      "id": "radiohead-x-nosferatu-a-symphony-of-horror",
-      "title": "Radiohead X Nosferatu: A Symphony of Horror",
-      "rating": "PG",
-      "runtime": 94,
-      "genre": "Music",
-      "film_url": "https://www.peckhamplex.london/film/radiohead-x-nosferatu-a-symphony-of-horror",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/radiohead-x-nosferatu-a-symphony-of-horror.jpg",
-      "showtimes": {
-        "2026-10-01": [
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80185?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#9f2121",
-      "accent": "#d36868"
     }
   ]
 }
