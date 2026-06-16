@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-16T19:35:09.465722+00:00",
+  "scraped_at": "2026-06-16T20:04:28.878397+00:00",
   "source": "riocinema.org.uk",
   "films": [
     {
@@ -16,14 +16,6 @@
       "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2604053",
       "poster_url": "https://images.savoysystems.co.uk/RIL/2604052.jpg",
       "showtimes": {
-        "2026-06-16": [
-          {
-            "time": "20:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2629277.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
         "2026-06-17": [
           {
             "time": "17:30",
@@ -142,45 +134,6 @@
       "letterboxd_rating": 3.26
     },
     {
-      "id": "backrooms",
-      "title": "Backrooms",
-      "rating": "15",
-      "runtime": 110,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Kane Parsons",
-      "cast": null,
-      "country": "USA",
-      "description": "One of the defining pieces of internet horror folklore of the last decade, BACKROOMS sees viral creator Kane Parsons expand his hugely influential found-footage nightmare into a feature film for A24 and producer James Wan, starring Renate Reinsve, Chiwetel Ejiofor and Mark Duplass.    When a therapi...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2554477",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2589848.jpg",
-      "showtimes": {
-        "2026-06-16": [
-          {
-            "time": "21:00",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2629273.TcsSection_936",
-            "screen": "S1",
-            "hoh": false
-          }
-        ],
-        "2026-06-17": [
-          {
-            "time": "20:50",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2629285.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ]
-      },
-      "season_tags": [
-        "Main Features"
-      ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
-      "letterboxd_rating": 3.37
-    },
-    {
       "id": "obsession",
       "title": "Obsession",
       "rating": "18",
@@ -252,8 +205,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
       "letterboxd_rating": 4.14
     },
@@ -287,8 +240,39 @@
       "season_tags": [
         "Special Events"
       ],
+      "color": "#d81b60",
+      "accent": "#ff6090"
+    },
+    {
+      "id": "backrooms",
+      "title": "Backrooms",
+      "rating": "15",
+      "runtime": 110,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Kane Parsons",
+      "cast": null,
+      "country": "USA",
+      "description": "One of the defining pieces of internet horror folklore of the last decade, BACKROOMS sees viral creator Kane Parsons expand his hugely influential found-footage nightmare into a feature film for A24 and producer James Wan, starring Renate Reinsve, Chiwetel Ejiofor and Mark Duplass.    When a therapi...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2554477",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2589848.jpg",
+      "showtimes": {
+        "2026-06-17": [
+          {
+            "time": "20:50",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2629285.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ]
+      },
+      "season_tags": [
+        "Main Features"
+      ],
       "color": "#00897b",
-      "accent": "#4db6ac"
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
+      "letterboxd_rating": 3.37
     },
     {
       "id": "arabic-cinema-club-presented-by-nihal-el-aasar",
