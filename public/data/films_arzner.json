@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-16T15:32:48.612734+00:00",
+  "scraped_at": "2026-06-16T16:03:46.009576+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -221,14 +221,6 @@
           {
             "time": "12:15",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_210060.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-07-09": [
-          {
-            "time": "16:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_219462.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
           }
@@ -1331,6 +1323,37 @@
               "Pride Month"
             ]
           }
+        ],
+        "2026-07-08": [
+          {
+            "time": "13:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_219474.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Pride Month"
+            ]
+          },
+          {
+            "time": "17:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_219480.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Pride Month"
+            ]
+          }
+        ],
+        "2026-07-09": [
+          {
+            "time": "17:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_219484.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Pride Month"
+            ]
+          }
         ]
       },
       "color": "#6530a6",
@@ -1475,6 +1498,12 @@
         ],
         "2026-07-08": [
           {
+            "time": "15:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_219473.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
             "time": "21:15",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_219469.TcsSection_963",
             "screen": "Screening Room",
@@ -1609,8 +1638,8 @@
             ]
           },
           {
-            "time": "15:45",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_211853.TcsSection_963",
+            "time": "20:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_219493.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
           }
@@ -1621,12 +1650,6 @@
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_211862.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
-          },
-          {
-            "time": "20:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_211861.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
           }
         ]
       },
@@ -1634,6 +1657,33 @@
       "accent": "#7568d3",
       "letterboxd_url": "https://letterboxd.com/film/rosebush-pruning/",
       "letterboxd_rating": 2.73
+    },
+    {
+      "id": "singin-in-the-rain-219490",
+      "title": "Singin' in the Rain",
+      "rating": "PG",
+      "runtime": 103,
+      "genre": "Summer Lovin'",
+      "description": "Part of our Summer Lovin' season of feel-good musicals.  In 1927 Hollywood, a silent film star falls for a chorus girl just as he and his paranoid screen partner struggle to make the difficult transition to talking pictures.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=219490",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/219489.jpg",
+      "showtimes": {
+        "2026-07-11": [
+          {
+            "time": "18:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_219491.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Summer Lovin'"
+            ]
+          }
+        ]
+      },
+      "color": "#44a630",
+      "accent": "#92d684",
+      "letterboxd_url": "https://letterboxd.com/film/singin-in-the-rain/",
+      "letterboxd_rating": 4.35
     },
     {
       "id": "brat-summer-charli-xcx-marathon-166971",
@@ -1657,8 +1707,8 @@
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#971a54",
+      "accent": "#d4538f"
     }
   ]
 }
