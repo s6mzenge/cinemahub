@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-16T11:33:58.512373+00:00",
+  "scraped_at": "2026-06-16T12:05:00.360860+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
     {
@@ -413,8 +413,7 @@
             "tags": [
               "Members",
               "Free (Members)"
-            ],
-            "sold_out": true
+            ]
           }
         ],
         "2026-06-23": [
@@ -2892,6 +2891,36 @@
       "letterboxd_rating": 3.94
     },
     {
+      "id": "chungking-express",
+      "title": "Chungking Express",
+      "rating": "12",
+      "runtime": 111,
+      "genre": "Other",
+      "year": "1994",
+      "director": "Wong Kar-wai",
+      "cast": null,
+      "description": "More than three decades after its release, Chungking Express remains one of Wong Kar-wai’s most beloved and influential works, representing perhaps the…",
+      "film_url": "https://www.thegardencinema.co.uk/film/chungking-express/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5710576.jpg",
+      "showtimes": {
+        "2026-07-30": [
+          {
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5713187.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Hong Kong Golden Age 1985-1997"
+      ],
+      "color": "#21909f",
+      "accent": "#68c6d3",
+      "letterboxd_url": "https://letterboxd.com/film/chungking-express/",
+      "letterboxd_rating": 4.28
+    },
+    {
       "id": "the-cup-phorpa-live-music",
       "title": "The Cup (Phörpa) + Live Music",
       "rating": "18",
@@ -2920,8 +2949,8 @@
       "seasons": [
         "South Asian Heritage Month 2026"
       ],
-      "color": "#21909f",
-      "accent": "#68c6d3"
+      "color": "#a69130",
+      "accent": "#d6c884"
     },
     {
       "id": "labyrinth",
@@ -2973,10 +3002,81 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#a69130",
-      "accent": "#d6c884",
+      "color": "#5d1a97",
+      "accent": "#9853d4",
       "letterboxd_url": "https://letterboxd.com/film/labyrinth/",
       "letterboxd_rating": 3.76
+    },
+    {
+      "id": "full-moon-in-new-york-qa",
+      "title": "Full Moon in New York",
+      "rating": "15",
+      "runtime": 88,
+      "genre": "Other",
+      "year": "1989",
+      "director": "Stanley Kwan",
+      "cast": null,
+      "description": "The screening on 25 August will be followed by an in-person Q&A with the director Stanley Kwan, moderated by Victor Fan…",
+      "film_url": "https://www.thegardencinema.co.uk/film/full-moon-in-new-york-qa/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5710584.jpg",
+      "showtimes": {
+        "2026-08-01": [
+          {
+            "time": "15:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5711660.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-08-25": [
+          {
+            "time": "17:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5711684.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "Q&A"
+            ]
+          }
+        ]
+      },
+      "seasons": [
+        "Hong Kong Golden Age 1985-1997"
+      ],
+      "color": "#219f40",
+      "accent": "#68d382",
+      "letterboxd_url": "https://letterboxd.com/film/full-moon-in-new-york/",
+      "letterboxd_rating": 3.47
+    },
+    {
+      "id": "center-stage",
+      "title": "Center Stage",
+      "rating": "18",
+      "runtime": 154,
+      "genre": "Other",
+      "year": "1991",
+      "director": "Stanley Kwan",
+      "cast": null,
+      "description": "The screening on 22 August will be introduced by Chris Berry (KCL). Center Stage marks the fourth collaboration between Stanley Kwan…",
+      "film_url": "https://www.thegardencinema.co.uk/film/center-stage/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5710605.jpg",
+      "showtimes": {
+        "2026-08-02": [
+          {
+            "time": "13:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5711706.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Hong Kong Golden Age 1985-1997"
+      ],
+      "color": "#a63035",
+      "accent": "#d68488",
+      "letterboxd_url": "https://letterboxd.com/film/center-stage-1991/",
+      "letterboxd_rating": 3.95
     },
     {
       "id": "the-lady-eve",
@@ -3003,10 +3103,40 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#5d1a97",
-      "accent": "#9853d4",
+      "color": "#1a4597",
+      "accent": "#537fd4",
       "letterboxd_url": "https://letterboxd.com/film/the-lady-eve/",
       "letterboxd_rating": 3.96
+    },
+    {
+      "id": "red-rose-white-rose-qa",
+      "title": "Red Rose White Rose",
+      "rating": "18",
+      "runtime": 110,
+      "genre": "Other",
+      "year": "1994",
+      "director": "Stanley Kwan",
+      "cast": null,
+      "description": "The screening on 27 August will be followed by an in-person Q&A with the director Stanley Kwan, moderated by Tony Rayns.…",
+      "film_url": "https://www.thegardencinema.co.uk/film/red-rose-white-rose-qa/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5710598.jpg",
+      "showtimes": {
+        "2026-08-04": [
+          {
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5711740.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "seasons": [
+        "Hong Kong Golden Age 1985-1997"
+      ],
+      "color": "#719f21",
+      "accent": "#acd368",
+      "letterboxd_url": "https://letterboxd.com/film/red-rose-white-rose/",
+      "letterboxd_rating": 3.56
     },
     {
       "id": "101-dalmatians-1961",
@@ -3058,8 +3188,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#219f40",
-      "accent": "#68d382"
+      "color": "#a6309d",
+      "accent": "#d684d0"
     },
     {
       "id": "to-be-or-not-to-be",
@@ -3086,8 +3216,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#a63035",
-      "accent": "#d68488",
+      "color": "#1a977c",
+      "accent": "#53d4b8",
       "letterboxd_url": "https://letterboxd.com/film/to-be-or-not-to-be/",
       "letterboxd_rating": 4.34
     },
@@ -3116,8 +3246,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#1a4597",
-      "accent": "#537fd4",
+      "color": "#9f5f21",
+      "accent": "#d39d68",
       "letterboxd_url": "https://letterboxd.com/film/bringing-up-baby/",
       "letterboxd_rating": 4.0
     },
@@ -3171,8 +3301,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#719f21",
-      "accent": "#acd368",
+      "color": "#4730a6",
+      "accent": "#9484d6",
       "letterboxd_url": "https://letterboxd.com/film/muppet-treasure-island/",
       "letterboxd_rating": 3.6
     },
@@ -3226,8 +3356,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#a6309d",
-      "accent": "#d684d0",
+      "color": "#26971a",
+      "accent": "#5fd453",
       "letterboxd_url": "https://letterboxd.com/film/monsieur-hulots-holiday/",
       "letterboxd_rating": 3.73
     },
@@ -3270,8 +3400,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#1a977c",
-      "accent": "#53d4b8",
+      "color": "#9f2152",
+      "accent": "#d36891",
       "letterboxd_url": "https://letterboxd.com/film/rio-2011/",
       "letterboxd_rating": 3.51
     },
@@ -3303,8 +3433,8 @@
       "seasons": [
         "Greek Salad"
       ],
-      "color": "#9f5f21",
-      "accent": "#d39d68"
+      "color": "#307fa6",
+      "accent": "#84bbd6"
     },
     {
       "id": "reverie-cineclub-presents-80-years-of-defa-animated-short-films-for-the-family",
@@ -3346,8 +3476,8 @@
         "Films for the Family"
       ],
       "partner": "Reverie Cineclub",
-      "color": "#4730a6",
-      "accent": "#9484d6"
+      "color": "#93971a",
+      "accent": "#cfd453"
     },
     {
       "id": "a-blonde-in-love",
@@ -3377,8 +3507,8 @@
       "seasons": [
         "Celebrating 75 Years of Contemporary Films"
       ],
-      "color": "#26971a",
-      "accent": "#5fd453"
+      "color": "#7f219f",
+      "accent": "#b768d3"
     },
     {
       "id": "free-willy",
@@ -3419,8 +3549,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#9f2152",
-      "accent": "#d36891",
+      "color": "#30a665",
+      "accent": "#84d6a9",
       "letterboxd_url": "https://letterboxd.com/film/free-willy/",
       "letterboxd_rating": 3.04
     },
@@ -3452,8 +3582,8 @@
       "seasons": [
         "Celebrating 75 Years of Contemporary Films"
       ],
-      "color": "#307fa6",
-      "accent": "#84bbd6",
+      "color": "#972e1a",
+      "accent": "#d46753",
       "letterboxd_url": "https://letterboxd.com/film/burden-of-dreams/",
       "letterboxd_rating": 4.1
     },
@@ -3496,8 +3626,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#93971a",
-      "accent": "#cfd453",
+      "color": "#21329f",
+      "accent": "#6877d3",
       "letterboxd_url": "https://letterboxd.com/film/harry-and-the-hendersons/",
       "letterboxd_rating": 3.03
     },
@@ -3529,8 +3659,8 @@
       "seasons": [
         "Celebrating 75 Years of Contemporary Films"
       ],
-      "color": "#7f219f",
-      "accent": "#b768d3",
+      "color": "#62a630",
+      "accent": "#a7d684",
       "letterboxd_url": "https://letterboxd.com/film/the-spirit-of-the-beehive/",
       "letterboxd_rating": 4.17
     },
@@ -3562,8 +3692,8 @@
       "seasons": [
         "Greek Salad"
       ],
-      "color": "#30a665",
-      "accent": "#84d6a9",
+      "color": "#971a74",
+      "accent": "#d453af",
       "letterboxd_url": "https://letterboxd.com/film/john-the-violent/",
       "letterboxd_rating": 3.7
     }
