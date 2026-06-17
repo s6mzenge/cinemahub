@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-17T14:04:12.986024+00:00",
+  "scraped_at": "2026-06-17T14:35:54.169555+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -395,12 +395,6 @@
       "showtimes": {
         "2026-06-17": [
           {
-            "time": "15:10",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11534",
-            "screen": null,
-            "hoh": false
-          },
-          {
             "time": "17:50",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11530",
             "screen": null,
@@ -418,42 +412,6 @@
       },
       "color": "#ef6c00",
       "accent": "#ffb74d"
-    },
-    {
-      "id": "michael",
-      "title": "Michael",
-      "rating": "12A",
-      "runtime": 127,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "A biopic exploring the life of Michael Jackson, from his Jackson 5 beginnings and extraordinary talent to his status as the biggest entertainer, promising an honest look at his triumphs, struggles, and iconic performances, starring his nephew Jaafar Jackson as Michael, with Colman Domingo & Nia Long as his parents, directed by Antoine Fuqua.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/93222",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/93222_0.jpg",
-      "showtimes": {
-        "2026-06-17": [
-          {
-            "time": "15:05",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11535",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-21": [
-          {
-            "time": "13:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11656",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
-      "letterboxd_rating": 3.61
     },
     {
       "id": "obsession",
@@ -596,8 +554,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
       "letterboxd_rating": 4.14
     },
@@ -624,8 +582,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/scary-movie-2026/",
       "letterboxd_rating": 2.47
     },
@@ -652,8 +610,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae"
+      "color": "#00838f",
+      "accent": "#4dd0e1"
     },
     {
       "id": "young-soul-rebel-pride-at-genesis",
@@ -678,8 +636,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "toy-story-5",
@@ -970,8 +928,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
       "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
       "letterboxd_rating": 3.67
     },
@@ -1046,8 +1004,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#ad1457",
+      "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
       "letterboxd_rating": 3.6
     },
@@ -1083,8 +1041,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#37474f",
+      "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/no-time-for-goodbye/",
       "letterboxd_rating": null
     },
@@ -1111,8 +1069,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "the-sheep-detectives",
@@ -1137,10 +1095,38 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
       "letterboxd_rating": 3.81
+    },
+    {
+      "id": "michael",
+      "title": "Michael",
+      "rating": "12A",
+      "runtime": 127,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "A biopic exploring the life of Michael Jackson, from his Jackson 5 beginnings and extraordinary talent to his status as the biggest entertainer, promising an honest look at his triumphs, struggles, and iconic performances, starring his nephew Jaafar Jackson as Michael, with Colman Domingo & Nia Long as his parents, directed by Antoine Fuqua.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/93222",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/93222_0.jpg",
+      "showtimes": {
+        "2026-06-21": [
+          {
+            "time": "13:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11656",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#558b2f",
+      "accent": "#9ccc65",
+      "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
+      "letterboxd_rating": 3.61
     },
     {
       "id": "world-cup-england-vs-ghana",
