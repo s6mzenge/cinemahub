@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-21T15:03:07.719100+00:00",
+  "scraped_at": "2026-06-21T15:32:52.924462+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -17,6 +17,12 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/536755.jpg",
       "showtimes": {
         "2026-06-21": [
+          {
+            "time": "13:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566069.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          },
           {
             "time": "16:30",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566067.TcsSection_720",
@@ -96,6 +102,32 @@
       "letterboxd_rating": 3.19
     },
     {
+      "id": "refugee-week-screening-everybody-to-kenmure-street",
+      "title": "Refugee Week Screening: Everybody to Kenmure Street",
+      "rating": "15",
+      "runtime": 138,
+      "genre": "Other",
+      "year": null,
+      "director": "Felipe Bustos Sierra",
+      "cast": null,
+      "country": "UK",
+      "description": "For the final day of Refugee Week, join Refugees at Home for a screening of EVERYBODY TO KENMURE  STREET followed by a panel discussion about hosting refugees.  Sundance award-winning documentary EVERYBODY TO  KENMURE  STREET  is &quot; a vital and inspiring portrait of spontaneous collective action&quot; Ind...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=532186",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/532193.jpg",
+      "showtimes": {
+        "2026-06-21": [
+          {
+            "time": "14:00",
+            "booking_url": "https://www.eventbrite.co.uk/e/everybody-to-kenmure-street-film-screening-discussion-tickets-1987676903124?aff=oddtdtcreator",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff"
+    },
+    {
       "id": "london-festival-of-architecture-lfa-affr-present-living-together-the-story-of-de-warren",
       "title": "London Festival of Architecture (LFA) & AFFR present Living Together: The Story of De Warren",
       "rating": "12A",
@@ -118,8 +150,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff"
+      "color": "#d81b60",
+      "accent": "#ff6090"
     },
     {
       "id": "backrooms",
@@ -152,8 +184,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
       "letterboxd_rating": 3.38
     },
@@ -191,8 +223,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
       "letterboxd_rating": 3.74
     },
@@ -235,8 +267,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
       "letterboxd_rating": 4.14
     },
@@ -274,8 +306,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.5
     },
@@ -310,8 +342,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350"
+      "color": "#6a1b9a",
+      "accent": "#ba68c8"
     },
     {
       "id": "david-attenborough-a-life-on-our-planet-michael-palin-live-intro",
@@ -336,8 +368,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
+      "color": "#00838f",
+      "accent": "#4dd0e1"
     },
     {
       "id": "journey-through-irish-cinema-my-left-foot-the-story-of-christy-brown-q-a-with-jim-sheridan",
@@ -365,8 +397,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "pride-classics-portrait-of-a-lady-on-fire",
@@ -391,8 +423,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae"
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "fight-like-a-girl",
@@ -417,8 +449,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#ad1457",
+      "accent": "#f06292"
     },
     {
       "id": "bend-it-like-beckham",
@@ -443,8 +475,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292",
+      "color": "#37474f",
+      "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/bend-it-like-beckham/",
       "letterboxd_rating": 3.47
     },
@@ -471,8 +503,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "persepolis",
@@ -500,8 +532,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/persepolis/",
       "letterboxd_rating": 4.22
     },
@@ -531,8 +563,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#558b2f",
+      "accent": "#9ccc65"
     },
     {
       "id": "the-day-innocence-died-bloody-sunday-q-a-and-the-fight-for-justice",
@@ -560,8 +592,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#9f2121",
+      "accent": "#d36868"
     },
     {
       "id": "mares-nest-director-q-a",
@@ -586,8 +618,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868",
+      "color": "#3052a6",
+      "accent": "#849cd6",
       "letterboxd_url": "https://letterboxd.com/film/mares-nest-2025/",
       "letterboxd_rating": 3.11
     },
@@ -710,8 +742,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6",
+      "color": "#63971a",
+      "accent": "#9ed453",
       "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
       "letterboxd_rating": null
     },
@@ -741,8 +773,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453"
+      "color": "#9f2190",
+      "accent": "#d368c6"
     },
     {
       "id": "exhibition-on-screen-cezanne-portraits-of-a-life",
@@ -767,8 +799,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "almodovar-season-all-about-my-mother",
@@ -796,8 +828,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#975e1a",
+      "accent": "#d49953"
     },
     {
       "id": "david-byrnes-american-utopia",
@@ -822,8 +854,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953",
+      "color": "#41219f",
+      "accent": "#8368d3",
       "letterboxd_url": "https://letterboxd.com/film/david-byrnes-american-utopia/",
       "letterboxd_rating": 4.26
     },
@@ -850,8 +882,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3"
+      "color": "#35a630",
+      "accent": "#88d684"
     },
     {
       "id": "almodovar-season-talk-to-her",
@@ -879,8 +911,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684"
+      "color": "#971a44",
+      "accent": "#d4537e"
     },
     {
       "id": "exhibition-on-screen-david-hockney-at-the-royal-academy-of-arts",
@@ -905,8 +937,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e"
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "almodovar-season-bad-education",
@@ -934,8 +966,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#9ca630",
+      "accent": "#cfd684"
     },
     {
       "id": "exhibition-on-screen-leonardo-the-works",
@@ -960,8 +992,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#7d1a97",
+      "accent": "#b953d4"
     },
     {
       "id": "almodovar-season-volver",
@@ -989,8 +1021,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "75-years-of-contemporary-films-working-girls",
@@ -1018,8 +1050,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "twenty-years-of-the-met-in-cinemas-an-anniversary-celebration",
@@ -1044,8 +1076,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584"
+      "color": "#1a2597",
+      "accent": "#535ed4"
     },
     {
       "id": "75-years-of-contemporary-films-a-bigger-splash",
@@ -1073,8 +1105,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "playing-the-changes-tracking-darius-brubeck",
@@ -1102,8 +1134,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368",
+      "color": "#a6307e",
+      "accent": "#d684bb",
       "letterboxd_url": "https://letterboxd.com/film/playing-the-changes-tracking-darius-brubeck/",
       "letterboxd_rating": null
     },
@@ -1130,8 +1162,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     },
     {
       "id": "gentle-angry-women",
@@ -1156,8 +1188,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4",
+      "color": "#9f8021",
+      "accent": "#d3b868",
       "letterboxd_url": "https://letterboxd.com/film/gentle-angry-women/",
       "letterboxd_rating": null
     },
@@ -1184,8 +1216,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868"
+      "color": "#6530a6",
+      "accent": "#a984d6"
     },
     {
       "id": "met-opera-2026-27-macbeth",
@@ -1210,8 +1242,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6"
+      "color": "#1a972f",
+      "accent": "#53d468"
     },
     {
       "id": "met-opera-2026-27-samson-et-dalila",
@@ -1236,8 +1268,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468"
+      "color": "#9f2132",
+      "accent": "#d36876"
     },
     {
       "id": "met-opera-2026-27-la-fanciulla-del-west",
@@ -1262,8 +1294,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "met-opera-2026-27-silent-night",
@@ -1288,8 +1320,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6"
+      "color": "#73971a",
+      "accent": "#afd453"
     },
     {
       "id": "met-opera-2026-27-manon",
@@ -1314,8 +1346,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "met-opera-2026-27-otello",
@@ -1340,8 +1372,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "met-opera-2026-27-parsifal",
@@ -1366,8 +1398,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be"
+      "color": "#974e1a",
+      "accent": "#d48853"
     }
   ]
 }
