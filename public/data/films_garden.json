@@ -1,72 +1,7 @@
 {
-  "scraped_at": "2026-06-21T19:02:48.957360+00:00",
+  "scraped_at": "2026-06-21T19:33:09.667446+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "angels-egg",
-      "title": "Angel's Egg",
-      "rating": "12A",
-      "runtime": 71,
-      "genre": "Other",
-      "year": "1985",
-      "director": "Mamoru Oshii",
-      "cast": null,
-      "description": "In an underwater city, a young girl takes care of a large egg she holds carefully in her arms. A boy…",
-      "film_url": "https://www.thegardencinema.co.uk/film/angels-egg/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5628199.jpg",
-      "showtimes": {
-        "2026-06-21": [
-          {
-            "time": "19:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628216.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-22": [
-          {
-            "time": "17:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628218.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-23": [
-          {
-            "time": "18:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628220.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-24": [
-          {
-            "time": "20:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5658024.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-25": [
-          {
-            "time": "16:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628222.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5730003.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/angels-egg/",
-      "letterboxd_rating": 4.08
-    },
     {
       "id": "the-awful-truth",
       "title": "The Awful Truth",
@@ -100,8 +35,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-awful-truth/",
       "letterboxd_rating": 3.89
     },
@@ -140,7 +75,8 @@
             "time": "18:25",
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5572368.TcsSection_3060731",
             "screen": null,
-            "hoh": false
+            "hoh": false,
+            "sold_out": true
           }
         ],
         "2026-06-24": [
@@ -163,8 +99,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/effi-o-blaenau/",
       "letterboxd_rating": 3.64
     },
@@ -214,8 +150,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/familiar-touch/",
       "letterboxd_rating": 3.75
     },
@@ -249,10 +185,67 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
       "letterboxd_rating": 3.49
+    },
+    {
+      "id": "angels-egg",
+      "title": "Angel's Egg",
+      "rating": "12A",
+      "runtime": 71,
+      "genre": "Other",
+      "year": "1985",
+      "director": "Mamoru Oshii",
+      "cast": null,
+      "description": "In an underwater city, a young girl takes care of a large egg she holds carefully in her arms. A boy…",
+      "film_url": "https://www.thegardencinema.co.uk/film/angels-egg/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5628199.jpg",
+      "showtimes": {
+        "2026-06-22": [
+          {
+            "time": "17:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628218.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-23": [
+          {
+            "time": "18:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628220.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-24": [
+          {
+            "time": "20:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5658024.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-25": [
+          {
+            "time": "16:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5628222.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5730003.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/angels-egg/",
+      "letterboxd_rating": 4.08
     },
     {
       "id": "mystery-of-the-first-temple",
