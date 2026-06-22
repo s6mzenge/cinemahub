@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-22T19:33:33.481687+00:00",
+  "scraped_at": "2026-06-22T20:04:21.689797+00:00",
   "source": "peckhamplex.london",
   "films": [
     {
@@ -116,7 +116,7 @@
       "color": "#6a1b9a",
       "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
-      "letterboxd_rating": 3.18
+      "letterboxd_rating": 3.17
     },
     {
       "id": "backrooms",
@@ -127,14 +127,6 @@
       "film_url": "https://www.peckhamplex.london/film/backrooms",
       "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/backrooms.jpg",
       "showtimes": {
-        "2026-06-22": [
-          {
-            "time": "21:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81025?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": true
-          }
-        ],
         "2026-06-23": [
           {
             "time": "18:15",
@@ -225,26 +217,289 @@
       "letterboxd_rating": 3.38
     },
     {
-      "id": "national-theatre-live-les-liaisons-dangereuses",
-      "title": "National Theatre Live: Les Liaisons Dangereuses",
-      "rating": "15",
-      "runtime": 180,
-      "genre": "Opera",
-      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-les-liaisons-dangereuses",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-les-liaisons-dangereuses.jpg",
+      "id": "the-mandalorian-grogu",
+      "title": "The Mandalorian & Grogu",
+      "rating": "12A",
+      "runtime": 132,
+      "genre": "Action",
+      "film_url": "https://www.peckhamplex.london/film/the-mandalorian-grogu",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-mandalorian-grogu.jpg",
       "showtimes": {
-        "2026-06-25": [
+        "2026-06-23": [
           {
-            "time": "19:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/77602?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81036?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-24": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81054?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-27": [
+          {
+            "time": "12:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81084?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-28": [
+          {
+            "time": "12:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81126?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": null,
             "hoh": false
           }
         ]
       },
-      "director": "Marianne Elliott",
+      "director": "Taika Waititi",
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
+    },
+    {
+      "id": "familiar-touch",
+      "title": "Familiar Touch",
+      "rating": "12A",
+      "runtime": 92,
+      "genre": "Drama",
+      "film_url": "https://www.peckhamplex.london/film/familiar-touch",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/familiar-touch.jpg",
+      "showtimes": {
+        "2026-06-23": [
+          {
+            "time": "20:50",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81042?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-24": [
+          {
+            "time": "20:50",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81060?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-25": [
+          {
+            "time": "17:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81072?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
       "color": "#e53935",
-      "accent": "#ff6f60"
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/familiar-touch/",
+      "letterboxd_rating": 3.75
+    },
+    {
+      "id": "masters-of-the-universe",
+      "title": "Masters of the Universe",
+      "rating": "12A",
+      "runtime": 141,
+      "genre": "Action",
+      "film_url": "https://www.peckhamplex.london/film/masters-of-the-universe",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/masters-of-the-universe.jpg",
+      "showtimes": {
+        "2026-06-23": [
+          {
+            "time": "17:25",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81034?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81040?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-24": [
+          {
+            "time": "17:25",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81052?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81058?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Aaron Nee",
+      "color": "#7c4dff",
+      "accent": "#b388ff"
+    },
+    {
+      "id": "supergirl",
+      "title": "Supergirl",
+      "rating": "12A",
+      "runtime": 108,
+      "genre": "Action",
+      "film_url": "https://www.peckhamplex.london/film/supergirl",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/supergirl.jpg",
+      "showtimes": {
+        "2026-06-25": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81064?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81070?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-26": [
+          {
+            "time": "15:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81109?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81114?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81121?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-27": [
+          {
+            "time": "13:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81077?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "15:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81083?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81089?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81096?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-28": [
+          {
+            "time": "13:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81125?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "15:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81133?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81138?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81145?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-29": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81156?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81163?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-30": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81174?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81181?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-01": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81192?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81199?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-02": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81206?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81211?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Craig Gillespie",
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/supergirl-2026/",
+      "letterboxd_rating": null
     },
     {
       "id": "toy-story-5",
@@ -426,215 +681,32 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
       "letterboxd_rating": 3.79
     },
     {
-      "id": "supergirl",
-      "title": "Supergirl",
-      "rating": "12A",
-      "runtime": 108,
-      "genre": "Action",
-      "film_url": "https://www.peckhamplex.london/film/supergirl",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/supergirl.jpg",
+      "id": "national-theatre-live-les-liaisons-dangereuses",
+      "title": "National Theatre Live: Les Liaisons Dangereuses",
+      "rating": "15",
+      "runtime": 180,
+      "genre": "Opera",
+      "film_url": "https://www.peckhamplex.london/film/national-theatre-live-les-liaisons-dangereuses",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/national-theatre-live-les-liaisons-dangereuses.jpg",
       "showtimes": {
         "2026-06-25": [
           {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81064?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81070?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-26": [
-          {
-            "time": "15:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81109?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81114?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81121?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-27": [
-          {
-            "time": "13:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81077?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "15:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81083?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81089?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81096?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-28": [
-          {
-            "time": "13:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81125?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "15:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81133?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81138?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81145?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-29": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81156?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81163?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-30": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81174?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81181?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-01": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81192?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81199?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-02": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81206?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81211?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "19:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/77602?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": null,
             "hoh": false
           }
         ]
       },
-      "director": "Craig Gillespie",
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/supergirl-2026/",
-      "letterboxd_rating": null
-    },
-    {
-      "id": "familiar-touch",
-      "title": "Familiar Touch",
-      "rating": "12A",
-      "runtime": 92,
-      "genre": "Drama",
-      "film_url": "https://www.peckhamplex.london/film/familiar-touch",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/familiar-touch.jpg",
-      "showtimes": {
-        "2026-06-22": [
-          {
-            "time": "20:50",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81024?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-23": [
-          {
-            "time": "20:50",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81042?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-24": [
-          {
-            "time": "20:50",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81060?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-25": [
-          {
-            "time": "17:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81072?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/familiar-touch/",
-      "letterboxd_rating": 3.75
+      "director": "Marianne Elliott",
+      "color": "#1565c0",
+      "accent": "#64b5f6"
     },
     {
       "id": "scary-movie-6",
@@ -736,54 +808,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac"
-    },
-    {
-      "id": "the-mandalorian-grogu",
-      "title": "The Mandalorian & Grogu",
-      "rating": "12A",
-      "runtime": 132,
-      "genre": "Action",
-      "film_url": "https://www.peckhamplex.london/film/the-mandalorian-grogu",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-mandalorian-grogu.jpg",
-      "showtimes": {
-        "2026-06-23": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81036?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-24": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81054?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-27": [
-          {
-            "time": "12:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81084?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-28": [
-          {
-            "time": "12:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81126?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Taika Waititi",
-      "color": "#1565c0",
-      "accent": "#64b5f6"
+      "color": "#c62828",
+      "accent": "#ef5350"
     },
     {
       "id": "aida",
@@ -803,55 +829,9 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/aida/",
-      "letterboxd_rating": null
-    },
-    {
-      "id": "beyond-the-silk-road",
-      "title": "Beyond the Silk Road",
-      "rating": "12A",
-      "runtime": 89,
-      "genre": "Documentary",
-      "film_url": "https://www.peckhamplex.london/film/beyond-the-silk-road",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/beyond-the-silk-road.jpg",
-      "showtimes": {
-        "2026-07-06": [
-          {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80787?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
       "color": "#00838f",
       "accent": "#4dd0e1",
-      "letterboxd_url": "https://letterboxd.com/film/beyond-the-silk-road/",
-      "letterboxd_rating": null
-    },
-    {
-      "id": "la-traviata",
-      "title": "La Traviata",
-      "rating": "PG",
-      "runtime": 160,
-      "genre": "Opera",
-      "film_url": "https://www.peckhamplex.london/film/la-traviata",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/la-traviata.jpg",
-      "showtimes": {
-        "2026-09-02": [
-          {
-            "time": "19:45",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80790?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
-      "letterboxd_url": "https://letterboxd.com/film/la-traviata-2025/",
+      "letterboxd_url": "https://letterboxd.com/film/aida/",
       "letterboxd_rating": null
     },
     {
@@ -878,46 +858,50 @@
       "letterboxd_rating": 3.14
     },
     {
-      "id": "masters-of-the-universe",
-      "title": "Masters of the Universe",
+      "id": "beyond-the-silk-road",
+      "title": "Beyond the Silk Road",
       "rating": "12A",
-      "runtime": 141,
-      "genre": "Action",
-      "film_url": "https://www.peckhamplex.london/film/masters-of-the-universe",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/masters-of-the-universe.jpg",
+      "runtime": 89,
+      "genre": "Documentary",
+      "film_url": "https://www.peckhamplex.london/film/beyond-the-silk-road",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/beyond-the-silk-road.jpg",
       "showtimes": {
-        "2026-06-23": [
+        "2026-07-06": [
           {
-            "time": "17:25",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81034?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81040?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-24": [
-          {
-            "time": "17:25",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81052?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81058?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80787?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": null,
             "hoh": false
           }
         ]
       },
-      "director": "Aaron Nee",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
+      "letterboxd_url": "https://letterboxd.com/film/beyond-the-silk-road/",
+      "letterboxd_rating": null
+    },
+    {
+      "id": "la-traviata",
+      "title": "La Traviata",
+      "rating": "PG",
+      "runtime": 160,
+      "genre": "Opera",
+      "film_url": "https://www.peckhamplex.london/film/la-traviata",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/la-traviata.jpg",
+      "showtimes": {
+        "2026-09-02": [
+          {
+            "time": "19:45",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80790?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
       "color": "#37474f",
-      "accent": "#78909c"
+      "accent": "#78909c",
+      "letterboxd_url": "https://letterboxd.com/film/la-traviata-2025/",
+      "letterboxd_rating": null
     },
     {
       "id": "mystery-of-the-first-temple",
@@ -943,50 +927,6 @@
       "letterboxd_rating": null
     },
     {
-      "id": "turandot",
-      "title": "Turandot",
-      "rating": "PG",
-      "runtime": 146,
-      "genre": "Opera",
-      "film_url": "https://www.peckhamplex.london/film/turandot",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/turandot.jpg",
-      "showtimes": {
-        "2026-08-05": [
-          {
-            "time": "19:45",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80789?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
-      "letterboxd_url": "https://letterboxd.com/film/turandot/",
-      "letterboxd_rating": null
-    },
-    {
-      "id": "radiohead-x-nosferatu-a-symphony-of-horror",
-      "title": "Radiohead X Nosferatu: A Symphony of Horror",
-      "rating": "PG",
-      "runtime": 94,
-      "genre": "Music",
-      "film_url": "https://www.peckhamplex.london/film/radiohead-x-nosferatu-a-symphony-of-horror",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/radiohead-x-nosferatu-a-symphony-of-horror.jpg",
-      "showtimes": {
-        "2026-10-01": [
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80185?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
-    },
-    {
       "id": "nt-livethe-misanthrope",
       "title": "NT Live:The Misanthrope",
       "rating": "15",
@@ -1004,8 +944,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "jackass-best-and-last",
@@ -1134,8 +1074,8 @@
         ]
       },
       "director": "Jeff Tremaine",
-      "color": "#3052a6",
-      "accent": "#849cd6",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/jackass-best-and-last/",
       "letterboxd_rating": null
     },
@@ -1178,10 +1118,31 @@
         ]
       },
       "director": "Pierre Coffin",
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/minions-monsters-2026/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "radiohead-x-nosferatu-a-symphony-of-horror",
+      "title": "Radiohead X Nosferatu: A Symphony of Horror",
+      "rating": "PG",
+      "runtime": 94,
+      "genre": "Music",
+      "film_url": "https://www.peckhamplex.london/film/radiohead-x-nosferatu-a-symphony-of-horror",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/radiohead-x-nosferatu-a-symphony-of-horror.jpg",
+      "showtimes": {
+        "2026-10-01": [
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80185?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "obsession",
@@ -1268,10 +1229,33 @@
         ]
       },
       "director": "Curry Barker",
-      "color": "#9f2190",
-      "accent": "#d368c6",
+      "color": "#63971a",
+      "accent": "#9ed453",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
       "letterboxd_rating": 4.14
+    },
+    {
+      "id": "turandot",
+      "title": "Turandot",
+      "rating": "PG",
+      "runtime": 146,
+      "genre": "Opera",
+      "film_url": "https://www.peckhamplex.london/film/turandot",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/turandot.jpg",
+      "showtimes": {
+        "2026-08-05": [
+          {
+            "time": "19:45",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80789?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#9f2190",
+      "accent": "#d368c6",
+      "letterboxd_url": "https://letterboxd.com/film/turandot/",
+      "letterboxd_rating": null
     }
   ]
 }
