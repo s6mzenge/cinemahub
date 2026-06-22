@@ -1,62 +1,7 @@
 {
-  "scraped_at": "2026-06-22T16:35:19.869019+00:00",
+  "scraped_at": "2026-06-22T17:06:43.617685+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
-    {
-      "id": "tuner",
-      "title": "Tuner",
-      "rating": "15",
-      "runtime": 107,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Daniel Roher",
-      "cast": "Leo Woodall, Dustin Hoffman, Alisen Richmond-Peck, Ellyn Jameson, Tim Blair, Tovah Feldshuh, Jean Yoon, Havana Rose Liu",
-      "country": "US",
-      "description": "A talented piano tuner's life is turned upside down when he discovers that his meticulous skills for tuning pianos can equally be applied to cracking safes.",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=535831",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/535823.jpg",
-      "showtimes": {
-        "2026-06-22": [
-          {
-            "time": "17:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566071.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-25": [
-          {
-            "time": "13:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566113.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": true,
-            "tags": [
-              "Closed Captions"
-            ]
-          }
-        ],
-        "2026-06-26": [
-          {
-            "time": "15:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_574288.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-07-01": [
-          {
-            "time": "15:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_574303.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/tuner/",
-      "letterboxd_rating": 3.75
-    },
     {
       "id": "disclosure-day",
       "title": "Disclosure Day",
@@ -72,6 +17,12 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/536755.jpg",
       "showtimes": {
         "2026-06-22": [
+          {
+            "time": "16:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566075.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          },
           {
             "time": "19:45",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566073.TcsSection_543",
@@ -125,10 +76,65 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
       "letterboxd_rating": 3.18
+    },
+    {
+      "id": "tuner",
+      "title": "Tuner",
+      "rating": "15",
+      "runtime": 107,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Daniel Roher",
+      "cast": "Leo Woodall, Dustin Hoffman, Alisen Richmond-Peck, Ellyn Jameson, Tim Blair, Tovah Feldshuh, Jean Yoon, Havana Rose Liu",
+      "country": "US",
+      "description": "A talented piano tuner's life is turned upside down when he discovers that his meticulous skills for tuning pianos can equally be applied to cracking safes.",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=535831",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/535823.jpg",
+      "showtimes": {
+        "2026-06-22": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566071.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-25": [
+          {
+            "time": "13:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566113.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": true,
+            "tags": [
+              "Closed Captions"
+            ]
+          }
+        ],
+        "2026-06-26": [
+          {
+            "time": "15:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_574288.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-07-01": [
+          {
+            "time": "15:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_574303.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/tuner/",
+      "letterboxd_rating": 3.75
     },
     {
       "id": "obsession",
@@ -245,7 +251,7 @@
       "showtimes": {
         "2026-06-23": [
           {
-            "time": "20:00",
+            "time": "20:05",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_559987.TcsSection_720",
             "screen": "Screen 2",
             "hoh": false
