@@ -1,54 +1,7 @@
 {
-  "scraped_at": "2026-06-23T19:04:56.595689+00:00",
+  "scraped_at": "2026-06-23T19:34:53.937362+00:00",
   "source": "riocinema.org.uk",
   "films": [
-    {
-      "id": "disclosure-day",
-      "title": "Disclosure Day",
-      "rating": "12A",
-      "runtime": 145,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Steven Spielberg",
-      "cast": null,
-      "country": "USA",
-      "description": "If you found out we weren't alone, if someone showed you, proved it to you, would that frighten you? When meteorologist Margaret Fairchild (Emily Blunt) finds herself at the centre of a bizarre on-set incident, she crosses paths with cybersecurity expert Daniel Kellner (Josh O'Connor) who claims to ...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2604053",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2604052.jpg",
-      "showtimes": {
-        "2026-06-23": [
-          {
-            "time": "19:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2650676.TcsSection_936",
-            "screen": "S1",
-            "hoh": false
-          }
-        ],
-        "2026-06-24": [
-          {
-            "time": "19:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2650705.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-06-25": [
-          {
-            "time": "17:40",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2650728.TcsSection_936",
-            "screen": "S1",
-            "hoh": false
-          }
-        ]
-      },
-      "season_tags": [
-        "Main Features"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
-      "letterboxd_rating": 3.17
-    },
     {
       "id": "lesbian-space-princess",
       "title": "Lesbian Space Princess",
@@ -115,8 +68,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
       "letterboxd_rating": 3.59
     },
@@ -149,8 +102,47 @@
       "season_tags": [
         "Special Events"
       ],
+      "color": "#7c4dff",
+      "accent": "#b388ff"
+    },
+    {
+      "id": "disclosure-day",
+      "title": "Disclosure Day",
+      "rating": "12A",
+      "runtime": 145,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Steven Spielberg",
+      "cast": null,
+      "country": "USA",
+      "description": "If you found out we weren't alone, if someone showed you, proved it to you, would that frighten you? When meteorologist Margaret Fairchild (Emily Blunt) finds herself at the centre of a bizarre on-set incident, she crosses paths with cybersecurity expert Daniel Kellner (Josh O'Connor) who claims to ...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2604053",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2604052.jpg",
+      "showtimes": {
+        "2026-06-24": [
+          {
+            "time": "19:30",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2650705.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ],
+        "2026-06-25": [
+          {
+            "time": "17:40",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2650728.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          }
+        ]
+      },
+      "season_tags": [
+        "Main Features"
+      ],
       "color": "#d81b60",
-      "accent": "#ff6090"
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
+      "letterboxd_rating": 3.17
     },
     {
       "id": "obsession",
@@ -759,9 +751,7 @@
         "Special Events"
       ],
       "color": "#0277bd",
-      "accent": "#4fc3f7",
-      "letterboxd_url": "https://letterboxd.com/film/well-go-down-in-history/",
-      "letterboxd_rating": null
+      "accent": "#4fc3f7"
     },
     {
       "id": "shoot-the-people",
