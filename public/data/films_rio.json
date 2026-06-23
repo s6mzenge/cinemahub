@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-23T11:34:15.182864+00:00",
+  "scraped_at": "2026-06-23T12:05:57.153983+00:00",
   "source": "riocinema.org.uk",
   "films": [
     {
@@ -756,10 +756,16 @@
             "time": "18:30",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2671722.TcsSection_936",
             "screen": "S1",
-            "hoh": false
+            "hoh": false,
+            "tags": [
+              "Special Event"
+            ]
           }
         ]
       },
+      "season_tags": [
+        "Special Events"
+      ],
       "color": "#0277bd",
       "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/well-go-down-in-history/",
@@ -1313,6 +1319,41 @@
       "accent": "#535ed4"
     },
     {
+      "id": "muppet-treasure-island",
+      "title": "Muppet Treasure Island",
+      "rating": "PG",
+      "runtime": 99,
+      "genre": "Other",
+      "year": "1996",
+      "director": "Brian Henson",
+      "cast": null,
+      "country": "USA",
+      "description": "Join us from 10.15am for craft activities, before the film screening at 11am!    The Rio’s beloved and historic Saturday Morning Picture Club continues with MUPPET TREASURE ISLAND, a swashbuckling musical adventure packed with pirates, treasure maps and Muppet mayhem.    Before the screening, we wil...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2671218",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2671217.jpg",
+      "showtimes": {
+        "2026-08-22": [
+          {
+            "time": "10:15",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2672438.TcsSection_936",
+            "screen": "S1",
+            "hoh": false,
+            "tags": [
+              "Family Flicks",
+              "NoAds"
+            ]
+          }
+        ]
+      },
+      "season_tags": [
+        "Family Flicks"
+      ],
+      "color": "#519f21",
+      "accent": "#90d368",
+      "letterboxd_url": "https://letterboxd.com/film/muppet-treasure-island/",
+      "letterboxd_rating": 3.59
+    },
+    {
       "id": "ida",
       "title": "IDA",
       "rating": "15",
@@ -1342,8 +1383,8 @@
       "season_tags": [
         "Rio Forever"
       ],
-      "color": "#519f21",
-      "accent": "#90d368",
+      "color": "#a6307e",
+      "accent": "#d684bb",
       "letterboxd_url": "https://letterboxd.com/film/ida/",
       "letterboxd_rating": 4.05
     },
@@ -1377,8 +1418,8 @@
       "season_tags": [
         "Classic Matinee"
       ],
-      "color": "#a6307e",
-      "accent": "#d684bb",
+      "color": "#1a9297",
+      "accent": "#53cfd4",
       "letterboxd_url": "https://letterboxd.com/film/local-hero/",
       "letterboxd_rating": 3.88
     },
@@ -1412,8 +1453,8 @@
       "season_tags": [
         "Family Flicks"
       ],
-      "color": "#1a9297",
-      "accent": "#53cfd4",
+      "color": "#9f8021",
+      "accent": "#d3b868",
       "letterboxd_url": "https://letterboxd.com/film/walle/",
       "letterboxd_rating": 4.24
     }
