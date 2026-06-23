@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-23T19:34:58.656966+00:00",
+  "scraped_at": "2026-06-23T20:04:55.038654+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -17,6 +17,12 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/536755.jpg",
       "showtimes": {
         "2026-06-23": [
+          {
+            "time": "17:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566090.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          },
           {
             "time": "20:00",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566089.TcsSection_543",
@@ -62,6 +68,45 @@
       "letterboxd_rating": 3.17
     },
     {
+      "id": "the-christophers",
+      "title": "The Christophers",
+      "rating": "15",
+      "runtime": 100,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Steven Soderbergh",
+      "cast": "Ian McKellen, Michaela Coel, Daniel Fearn, James Corden",
+      "country": "UK",
+      "description": null,
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=509944",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/509940.jpg",
+      "showtimes": {
+        "2026-06-23": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566081.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": true,
+            "tags": [
+              "Closed Captions"
+            ]
+          }
+        ],
+        "2026-06-25": [
+          {
+            "time": "14:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566115.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
+      "letterboxd_rating": 3.5
+    },
+    {
       "id": "backrooms",
       "title": "Backrooms",
       "rating": "15",
@@ -84,8 +129,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
       "letterboxd_rating": 3.38
     },
@@ -136,8 +181,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
       "letterboxd_rating": 4.14
     },
@@ -183,36 +228,10 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac"
-    },
-    {
-      "id": "the-christophers",
-      "title": "The Christophers",
-      "rating": "15",
-      "runtime": 100,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Steven Soderbergh",
-      "cast": "Ian McKellen, Michaela Coel, Daniel Fearn, James Corden",
-      "country": "UK",
-      "description": null,
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=509944",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/509940.jpg",
-      "showtimes": {
-        "2026-06-25": [
-          {
-            "time": "14:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566115.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
       "color": "#1565c0",
       "accent": "#64b5f6",
-      "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
-      "letterboxd_rating": 3.5
+      "letterboxd_url": "https://letterboxd.com/film/tuner/",
+      "letterboxd_rating": 3.74
     },
     {
       "id": "national-theatre-live-les-liaisons-dangereuses",
@@ -320,7 +339,9 @@
         ]
       },
       "color": "#c62828",
-      "accent": "#ef5350"
+      "accent": "#ef5350",
+      "letterboxd_url": "https://letterboxd.com/film/500-miles-2026/",
+      "letterboxd_rating": 3.46
     },
     {
       "id": "the-last-viking",
@@ -490,7 +511,9 @@
         ]
       },
       "color": "#00838f",
-      "accent": "#4dd0e1"
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/a-private-life-2025/",
+      "letterboxd_rating": 3.04
     },
     {
       "id": "david-attenborough-a-life-on-our-planet-michael-palin-live-intro",
@@ -1070,7 +1093,9 @@
         ]
       },
       "color": "#21709f",
-      "accent": "#68abd3"
+      "accent": "#68abd3",
+      "letterboxd_url": "https://letterboxd.com/film/david-byrnes-american-utopia/",
+      "letterboxd_rating": 4.26
     },
     {
       "id": "exhibition-on-screen-hopper-an-american-love-story",
@@ -1402,9 +1427,7 @@
         ]
       },
       "color": "#9f2132",
-      "accent": "#d36876",
-      "letterboxd_url": "https://letterboxd.com/film/gentle-angry-women/",
-      "letterboxd_rating": null
+      "accent": "#d36876"
     },
     {
       "id": "met-opera-2026-27-cosi-fan-tutte",
