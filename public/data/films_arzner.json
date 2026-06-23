@@ -1,43 +1,7 @@
 {
-  "scraped_at": "2026-06-23T14:33:45.767509+00:00",
+  "scraped_at": "2026-06-23T15:03:52.996338+00:00",
   "source": "thearzner.com",
   "films": [
-    {
-      "id": "portrait-of-a-lady-on-fire-4k-reissue-13469",
-      "title": "Portrait of a Lady on Fire (4K Reissue)",
-      "rating": "15",
-      "runtime": 121,
-      "genre": "World Cinema",
-      "description": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=13469",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/116232.jpg",
-      "showtimes": {
-        "2026-06-23": [
-          {
-            "time": "14:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_210058.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "World Cinema"
-            ]
-          }
-        ],
-        "2026-06-24": [
-          {
-            "time": "15:45",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_211085.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false,
-            "tags": [
-              "World Cinema"
-            ]
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60"
-    },
     {
       "id": "cactus-pears-209547",
       "title": "Cactus Pears",
@@ -160,8 +124,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/better-a-fascist-than-a-faggot/",
       "letterboxd_rating": null
     },
@@ -249,10 +213,35 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
       "letterboxd_rating": 3.59
+    },
+    {
+      "id": "portrait-of-a-lady-on-fire-4k-reissue-13469",
+      "title": "Portrait of a Lady on Fire (4K Reissue)",
+      "rating": "15",
+      "runtime": 121,
+      "genre": "World Cinema",
+      "description": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=13469",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/116232.jpg",
+      "showtimes": {
+        "2026-06-24": [
+          {
+            "time": "15:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_211085.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "World Cinema"
+            ]
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090"
     },
     {
       "id": "erupcja-165260",
