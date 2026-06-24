@@ -1,74 +1,7 @@
 {
-  "scraped_at": "2026-06-23T20:33:53.599874+00:00",
+  "scraped_at": "2026-06-24T04:04:25.252611+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "nino",
-      "title": "Nino",
-      "rating": "15",
-      "runtime": 96,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Pauline Loquès",
-      "cast": null,
-      "description": "On a Friday morning, Nino attends a follow-up doctor’s appointment, where he is given some upsetting news that he has throat…",
-      "film_url": "https://www.thegardencinema.co.uk/film/nino/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5636050.jpg",
-      "showtimes": {
-        "2026-06-23": [
-          {
-            "time": "20:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5636149.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-24": [
-          {
-            "time": "20:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5636151.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-25": [
-          {
-            "time": "15:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5636153.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-27": [
-          {
-            "time": "15:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5766143.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-29": [
-          {
-            "time": "20:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5766205.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-02": [
-          {
-            "time": "15:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5766259.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/nino-2025/",
-      "letterboxd_rating": 3.81
-    },
     {
       "id": "boogie-nights",
       "title": "Boogie Nights",
@@ -91,8 +24,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/boogie-nights/",
       "letterboxd_rating": 4.2
     },
@@ -132,8 +65,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/midnight-1939/",
       "letterboxd_rating": 3.94
     },
@@ -206,8 +139,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/cactus-pears/",
       "letterboxd_rating": 3.89
     },
@@ -257,10 +190,69 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/familiar-touch/",
       "letterboxd_rating": 3.75
+    },
+    {
+      "id": "nino",
+      "title": "Nino",
+      "rating": "15",
+      "runtime": 96,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Pauline Loquès",
+      "cast": null,
+      "description": "On a Friday morning, Nino attends a follow-up doctor’s appointment, where he is given some upsetting news that he has throat…",
+      "film_url": "https://www.thegardencinema.co.uk/film/nino/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5636050.jpg",
+      "showtimes": {
+        "2026-06-24": [
+          {
+            "time": "20:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5636151.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-25": [
+          {
+            "time": "15:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5636153.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-27": [
+          {
+            "time": "15:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5766143.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-29": [
+          {
+            "time": "20:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5766205.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-02": [
+          {
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5766259.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/nino-2025/",
+      "letterboxd_rating": 3.81
     },
     {
       "id": "effi-o-blaenau",
@@ -555,7 +547,9 @@
         ]
       },
       "color": "#546e7a",
-      "accent": "#90a4ae"
+      "accent": "#90a4ae",
+      "letterboxd_url": "https://letterboxd.com/film/hen-2025/",
+      "letterboxd_rating": 3.49
     },
     {
       "id": "a-private-life",
@@ -1113,7 +1107,9 @@
         "Screwball Summer"
       ],
       "color": "#30a692",
-      "accent": "#84d6c8"
+      "accent": "#84d6c8",
+      "letterboxd_url": "https://letterboxd.com/film/it-happened-one-night/",
+      "letterboxd_rating": 4.18
     },
     {
       "id": "whats-up-doc",
@@ -1176,7 +1172,9 @@
         ]
       },
       "color": "#41219f",
-      "accent": "#8368d3"
+      "accent": "#8368d3",
+      "letterboxd_url": "https://letterboxd.com/film/koln-75/",
+      "letterboxd_rating": 3.53
     },
     {
       "id": "sans-soleil",
@@ -2014,7 +2012,7 @@
       "year": "1994",
       "director": "Wong Kar-wai",
       "cast": null,
-      "description": "To launch our new season, Hong Kong Golden Age 1985-1997, we're delighted to welcome members for the opening screening of Chungking…",
+      "description": "*Please note that whilst tickets for the screening of Chungking Express are currently sold out, there are still tickets for the…",
       "film_url": "https://www.thegardencinema.co.uk/film/chungking-express-launch-party/",
       "poster_url": "https://images.savoysystems.co.uk/GCL/5731938.jpg",
       "showtimes": {
@@ -2535,7 +2533,9 @@
         "Hong Kong Golden Age 1985-1997"
       ],
       "color": "#a6308e",
-      "accent": "#d684c5"
+      "accent": "#d684c5",
+      "letterboxd_url": "https://letterboxd.com/film/peking-opera-blues/",
+      "letterboxd_rating": 4.06
     },
     {
       "id": "kapodistrias-the-governor",
@@ -4033,7 +4033,9 @@
         "Hong Kong Golden Age 1985-1997"
       ],
       "color": "#819f21",
-      "accent": "#b9d368"
+      "accent": "#b9d368",
+      "letterboxd_url": "https://letterboxd.com/film/autumn-moon/",
+      "letterboxd_rating": 3.75
     },
     {
       "id": "summer-school-2001",
@@ -4180,7 +4182,9 @@
         "Films for the Family"
       ],
       "color": "#3830a6",
-      "accent": "#8a84d6"
+      "accent": "#8a84d6",
+      "letterboxd_url": "https://letterboxd.com/film/monsieur-hulots-holiday/",
+      "letterboxd_rating": 3.73
     },
     {
       "id": "the-london-international-animation-festival-presents-8-astonishing-animated-shorts-for-4-12-year-o",
