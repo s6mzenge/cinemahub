@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-24T14:04:08.168735+00:00",
+  "scraped_at": "2026-06-24T14:36:21.370534+00:00",
   "source": "riocinema.org.uk",
   "films": [
     {
@@ -582,7 +582,11 @@
             "time": "18:00",
             "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2501945.TcsSection_936",
             "screen": "S1",
-            "hoh": false
+            "hoh": false,
+            "tags": [
+              "Special Event",
+              "NoAds"
+            ]
           }
         ]
       },
@@ -1024,6 +1028,103 @@
       "letterboxd_rating": 4.15
     },
     {
+      "id": "the-odyssey",
+      "title": "The Odyssey",
+      "rating": "TBC",
+      "runtime": 172,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Christopher Nolan",
+      "cast": null,
+      "country": "USA / UK",
+      "description": "Don your sandals and set sail for Ithaca. Following the Trojan War, Odysseus embarks on a long and perilous voyage home, encountering the likes of Cyclops Polyphemus, the Sirens, Circe and others along the way. Christopher Nolan’s adaptation of Homer’s enduring epic reimagines one of the foundationa...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2671225",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2672423.jpg",
+      "showtimes": {
+        "2026-07-17": [
+          {
+            "time": "19:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2673752.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          }
+        ],
+        "2026-07-18": [
+          {
+            "time": "15:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2673754.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          },
+          {
+            "time": "19:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2673756.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          }
+        ],
+        "2026-07-19": [
+          {
+            "time": "15:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2673758.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          },
+          {
+            "time": "19:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2673760.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          }
+        ],
+        "2026-07-20": [
+          {
+            "time": "15:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2673762.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          },
+          {
+            "time": "19:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2673764.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          }
+        ],
+        "2026-07-21": [
+          {
+            "time": "19:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2673766.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          }
+        ],
+        "2026-07-22": [
+          {
+            "time": "19:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2673768.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          }
+        ],
+        "2026-07-23": [
+          {
+            "time": "19:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2673770.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ]
+      },
+      "season_tags": [
+        "Main Features"
+      ],
+      "color": "#35a630",
+      "accent": "#88d684",
+      "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
+      "letterboxd_rating": null
+    },
+    {
       "id": "cool-runnings",
       "title": "Cool Runnings",
       "rating": "PG",
@@ -1053,8 +1154,8 @@
       "season_tags": [
         "Family Flicks"
       ],
-      "color": "#35a630",
-      "accent": "#88d684",
+      "color": "#971a44",
+      "accent": "#d4537e",
       "letterboxd_url": "https://letterboxd.com/film/cool-runnings/",
       "letterboxd_rating": 3.59
     },
@@ -1088,8 +1189,8 @@
       "season_tags": [
         "Rio Forever"
       ],
-      "color": "#971a44",
-      "accent": "#d4537e"
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "jean-cocteau-the-blood-of-a-poet-shorts",
@@ -1121,8 +1222,8 @@
       "season_tags": [
         "Pink Palace"
       ],
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#9ca630",
+      "accent": "#cfd684"
     },
     {
       "id": "divine-hammer-uk-premiere",
@@ -1153,8 +1254,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#7d1a97",
+      "accent": "#b953d4"
     },
     {
       "id": "saturday-night-at-the-baths",
@@ -1186,8 +1287,8 @@
       "season_tags": [
         "Pink Palace"
       ],
-      "color": "#7d1a97",
-      "accent": "#b953d4",
+      "color": "#219f60",
+      "accent": "#68d39d",
       "letterboxd_url": "https://letterboxd.com/film/saturday-night-at-the-baths/",
       "letterboxd_rating": 3.22
     },
@@ -1221,8 +1322,8 @@
       "season_tags": [
         "Family Flicks"
       ],
-      "color": "#219f60",
-      "accent": "#68d39d",
+      "color": "#a64830",
+      "accent": "#d69584",
       "letterboxd_url": "https://letterboxd.com/film/et-the-extra-terrestrial/",
       "letterboxd_rating": 3.84
     },
@@ -1256,8 +1357,8 @@
       "season_tags": [
         "Classic Matinee"
       ],
-      "color": "#a64830",
-      "accent": "#d69584",
+      "color": "#1a2597",
+      "accent": "#535ed4",
       "letterboxd_url": "https://letterboxd.com/film/thelma-louise/",
       "letterboxd_rating": 4.22
     },
@@ -1291,8 +1392,8 @@
       "season_tags": [
         "Rio Forever"
       ],
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "muppet-treasure-island",
@@ -1324,8 +1425,8 @@
       "season_tags": [
         "Family Flicks"
       ],
-      "color": "#519f21",
-      "accent": "#90d368",
+      "color": "#a6307e",
+      "accent": "#d684bb",
       "letterboxd_url": "https://letterboxd.com/film/muppet-treasure-island/",
       "letterboxd_rating": 3.59
     },
@@ -1359,8 +1460,8 @@
       "season_tags": [
         "Rio Forever"
       ],
-      "color": "#a6307e",
-      "accent": "#d684bb",
+      "color": "#1a9297",
+      "accent": "#53cfd4",
       "letterboxd_url": "https://letterboxd.com/film/ida/",
       "letterboxd_rating": 4.05
     },
@@ -1394,8 +1495,8 @@
       "season_tags": [
         "Classic Matinee"
       ],
-      "color": "#1a9297",
-      "accent": "#53cfd4",
+      "color": "#9f8021",
+      "accent": "#d3b868",
       "letterboxd_url": "https://letterboxd.com/film/local-hero/",
       "letterboxd_rating": 3.88
     },
@@ -1429,8 +1530,8 @@
       "season_tags": [
         "Family Flicks"
       ],
-      "color": "#9f8021",
-      "accent": "#d3b868",
+      "color": "#6530a6",
+      "accent": "#a984d6",
       "letterboxd_url": "https://letterboxd.com/film/walle/",
       "letterboxd_rating": 4.24
     },
@@ -1444,7 +1545,7 @@
       "director": "DEADHORSES",
       "cast": null,
       "country": "UK",
-      "description": "Doc’n Roll is delighted to be part of Music is Black and to bring a special event to the Rio Cinema celebrating one of London’s most distinctive contemporary musicians, Hak Baker.  The evening will include a special screening of Hakeem, live Q&amp;A, and an intimate acoustic performance by Hak Baker, of...",
+      "description": "Doc’n Roll is delighted to be part of The Music is Black Festival from East Bank and to bring a special event to the Rio Cinema celebrating one of London’s most distinctive contemporary musicians, Hak Baker.  The evening will include a special screening of Hakeem, live Q&amp;A, and an intimate acoustic ...",
       "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2652932",
       "poster_url": "https://images.savoysystems.co.uk/RIL/2652931.jpg",
       "showtimes": {
@@ -1465,8 +1566,8 @@
       "season_tags": [
         "Special Events"
       ],
-      "color": "#6530a6",
-      "accent": "#a984d6"
+      "color": "#1a972f",
+      "accent": "#53d468"
     }
   ]
 }
