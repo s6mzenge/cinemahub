@@ -1,59 +1,7 @@
 {
-  "scraped_at": "2026-06-24T18:04:59.587806+00:00",
+  "scraped_at": "2026-06-24T18:34:53.026080+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
-    {
-      "id": "obsession",
-      "title": "Obsession",
-      "rating": "18",
-      "runtime": 108,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Curry Barker",
-      "cast": "Michael Johnston, Inde Navarrette, Cooper Tomlinson, Megan Lawless, Andy Richter, Haley Fitzgerald, Darin Toonder, Anthony Pavon",
-      "country": "US",
-      "description": "After breaking the mysterious &quot;One Wish Willow&quot; to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=559973",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/559972.jpg",
-      "showtimes": {
-        "2026-06-24": [
-          {
-            "time": "16:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566101.TcsSection_543",
-            "screen": "Screen 1",
-            "hoh": false
-          }
-        ],
-        "2026-06-25": [
-          {
-            "time": "17:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_559989.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-27": [
-          {
-            "time": "20:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_574258.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-06-30": [
-          {
-            "time": "20:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_574278.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
-      "letterboxd_rating": 4.14
-    },
     {
       "id": "disclosure-day",
       "title": "Disclosure Day",
@@ -69,15 +17,6 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/536755.jpg",
       "showtimes": {
         "2026-06-24": [
-          {
-            "time": "17:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566099.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": true,
-            "tags": [
-              "Closed Captions"
-            ]
-          },
           {
             "time": "20:00",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_566093.TcsSection_720",
@@ -100,8 +39,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
       "letterboxd_rating": 3.16
     },
@@ -147,8 +86,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
       "letterboxd_rating": 3.75
     },
@@ -175,10 +114,54 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.5
+    },
+    {
+      "id": "obsession",
+      "title": "Obsession",
+      "rating": "18",
+      "runtime": 108,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Curry Barker",
+      "cast": "Michael Johnston, Inde Navarrette, Cooper Tomlinson, Megan Lawless, Andy Richter, Haley Fitzgerald, Darin Toonder, Anthony Pavon",
+      "country": "US",
+      "description": "After breaking the mysterious &quot;One Wish Willow&quot; to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=559973",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/559972.jpg",
+      "showtimes": {
+        "2026-06-25": [
+          {
+            "time": "17:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_559989.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-27": [
+          {
+            "time": "20:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_574258.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-06-30": [
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_574278.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#00897b",
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
+      "letterboxd_rating": 4.14
     },
     {
       "id": "national-theatre-live-les-liaisons-dangereuses",
