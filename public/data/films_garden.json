@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-25T10:34:01.035831+00:00",
+  "scraped_at": "2026-06-25T11:04:43.687322+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
     {
@@ -80,7 +80,7 @@
         "2026-06-26": [
           {
             "time": "16:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5766123.TcsSection_3060731",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5782460.TcsSection_971",
             "screen": null,
             "hoh": false
           }
@@ -305,14 +305,6 @@
           {
             "time": "18:15",
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5729999.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-26": [
-          {
-            "time": "15:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5766121.TcsSection_971",
             "screen": null,
             "hoh": false
           }
@@ -827,50 +819,6 @@
       "letterboxd_rating": 3.93
     },
     {
-      "id": "how-to-train-your-dragon",
-      "title": "How to Train Your Dragon",
-      "rating": "PG",
-      "runtime": 98,
-      "genre": "Other",
-      "year": "2010",
-      "director": "Dean DeBlois",
-      "cast": null,
-      "description": "This film rolls fire-breathing action, epic adventure and big laughs into a captivating, fun and original story. Hiccup is a young…",
-      "film_url": "https://www.thegardencinema.co.uk/film/how-to-train-your-dragon/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5486427.jpg",
-      "showtimes": {
-        "2026-06-27": [
-          {
-            "time": "11:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5489158.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ],
-        "2026-06-28": [
-          {
-            "time": "11:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5489168.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "PWYC"
-            ]
-          }
-        ]
-      },
-      "seasons": [
-        "Films for the Family"
-      ],
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
-      "letterboxd_url": "https://letterboxd.com/film/how-to-train-your-dragon/",
-      "letterboxd_rating": 4.14
-    },
-    {
       "id": "lessons-in-love",
       "title": "Lessons in Love",
       "rating": "18",
@@ -899,10 +847,43 @@
         "Celebrating 70 years of LFS"
       ],
       "partner": "London Film School",
-      "color": "#558b2f",
-      "accent": "#9ccc65",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/lessons-in-love/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "how-to-train-your-dragon",
+      "title": "How to Train Your Dragon",
+      "rating": "PG",
+      "runtime": 98,
+      "genre": "Other",
+      "year": "2010",
+      "director": "Dean DeBlois",
+      "cast": null,
+      "description": "This film rolls fire-breathing action, epic adventure and big laughs into a captivating, fun and original story. Hiccup is a young…",
+      "film_url": "https://www.thegardencinema.co.uk/film/how-to-train-your-dragon/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5486427.jpg",
+      "showtimes": {
+        "2026-06-28": [
+          {
+            "time": "11:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5489168.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "PWYC"
+            ]
+          }
+        ]
+      },
+      "seasons": [
+        "Films for the Family"
+      ],
+      "color": "#558b2f",
+      "accent": "#9ccc65",
+      "letterboxd_url": "https://letterboxd.com/film/how-to-train-your-dragon/",
+      "letterboxd_rating": 4.14
     },
     {
       "id": "the-misfits",
@@ -2994,7 +2975,8 @@
             "hoh": false,
             "tags": [
               "Intro"
-            ]
+            ],
+            "sold_out": true
           }
         ]
       },
