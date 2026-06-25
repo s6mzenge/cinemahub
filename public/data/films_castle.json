@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-25T13:03:32.482140+00:00",
+  "scraped_at": "2026-06-25T13:33:22.899279+00:00",
   "source": "thecastlecinema.com",
   "films": [
     {
@@ -695,18 +695,6 @@
       "film_url": "https://thecastlecinema.com/programme/109526/obsession/",
       "poster_url": "/optimised-images/c_crop",
       "showtimes": {
-        "2026-06-25": [
-          {
-            "time": "13:10",
-            "booking_url": "https://thecastlecinema.com/interstitial/free-guest/17012/show",
-            "screen": "S2",
-            "hoh": false,
-            "tags": [
-              "AD",
-              "+ free guest"
-            ]
-          }
-        ],
         "2026-06-26": [
           {
             "time": "21:00",
@@ -918,6 +906,36 @@
       "accent": "#9ed453"
     },
     {
+      "id": "the-invite",
+      "title": "The Invite",
+      "rating": "15",
+      "runtime": 107,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Olivia Wilde",
+      "cast": "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton",
+      "description": "The Invite is a marital dark comedy directed by Olivia Wilde (Booksmart/Don’t Worry Darling), adapted from the 2020 Spanish film The People Upstairs. It follows Joe and Angela, an unhappy, bickering San Francisco couple who host their enigmatic, sexually uninhibited upstairs neighbors for a chaotic dinner party that quickly spirals into raw, hilarious emotional warfare.Warning: This film contains sequences with flashing or flickering lights that may affect individuals with photosensitivity. Viewer discretion is advised.",
+      "film_url": "https://thecastlecinema.com/programme/111189/the-invite/",
+      "poster_url": "/optimised-images/c_crop",
+      "showtimes": {
+        "2026-07-12": [
+          {
+            "time": "11:00",
+            "booking_url": "https://thecastlecinema.com/bookings/17086/",
+            "screen": "S1",
+            "hoh": false,
+            "tags": [
+              "relaxed screening"
+            ]
+          }
+        ]
+      },
+      "color": "#9f2190",
+      "accent": "#d368c6",
+      "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
+      "letterboxd_rating": 4.07
+    },
+    {
       "id": "the-matrix-reloaded-dj-set",
       "title": "The Matrix: Reloaded + DJ set",
       "rating": "15",
@@ -942,8 +960,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "toy-story-5",
@@ -1247,8 +1265,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8",
+      "color": "#975e1a",
+      "accent": "#d49953",
       "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
       "letterboxd_rating": 3.76
     },
@@ -1277,8 +1295,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#41219f",
+      "accent": "#8368d3"
     }
   ]
 }
