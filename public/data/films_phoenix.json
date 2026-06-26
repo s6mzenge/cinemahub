@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-26T15:35:08.942916+00:00",
+  "scraped_at": "2026-06-26T16:04:59.837361+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -352,7 +352,9 @@
         ]
       },
       "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
+      "letterboxd_rating": 4.14
     },
     {
       "id": "journey-through-irish-cinema-my-left-foot-the-story-of-christy-brown-q-a-with-jim-sheridan",
@@ -1175,6 +1177,35 @@
       "accent": "#535ed4"
     },
     {
+      "id": "nostalgia",
+      "title": "Nostalgia",
+      "rating": "12A",
+      "runtime": 124,
+      "genre": "Other",
+      "year": null,
+      "director": "Andrei Tarkovsky",
+      "cast": "Oleg Yankovskiy, Erland Josephson, Domiziana Giordano, Patrizia Terreno, Laura De Marchi, Delia Boccardo, Milena Vukotic, Sergei",
+      "country": null,
+      "description": "Andrei Tarkovsky’s semi-autobiographical meditation on the emotions that draw us home is one of his most understated masterworks. Writer Andrei Gorchakov travels to Italy to research the life of a composer. He is assisted by Eugenia, an interpreter who understands him literally though not emotionall...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=578284",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/578283.jpg",
+      "showtimes": {
+        "2026-08-30": [
+          {
+            "time": "14:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_578285.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ]
+      },
+      "color": "#519f21",
+      "accent": "#90d368"
+    },
+    {
       "id": "75-years-of-contemporary-films-working-girls",
       "title": "75 Years of Contemporary Films: Working Girls",
       "rating": "18",
@@ -1200,8 +1231,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#a6307e",
+      "accent": "#d684bb"
     },
     {
       "id": "twenty-years-of-the-met-in-cinemas-an-anniversary-celebration",
@@ -1226,8 +1257,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     },
     {
       "id": "75-years-of-contemporary-films-a-bigger-splash",
@@ -1255,8 +1286,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "playing-the-changes-tracking-darius-brubeck",
@@ -1284,8 +1315,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868",
+      "color": "#6530a6",
+      "accent": "#a984d6",
       "letterboxd_url": "https://letterboxd.com/film/playing-the-changes-tracking-darius-brubeck/",
       "letterboxd_rating": null
     },
@@ -1312,8 +1343,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6"
+      "color": "#1a972f",
+      "accent": "#53d468"
     },
     {
       "id": "gentle-angry-women",
@@ -1338,8 +1369,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468",
+      "color": "#9f2132",
+      "accent": "#d36876",
       "letterboxd_url": "https://letterboxd.com/film/gentle-angry-women/",
       "letterboxd_rating": null
     },
@@ -1366,8 +1397,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "met-opera-2026-27-macbeth",
@@ -1392,8 +1423,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6"
+      "color": "#73971a",
+      "accent": "#afd453"
     },
     {
       "id": "met-opera-2026-27-samson-et-dalila",
@@ -1418,8 +1449,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "met-opera-2026-27-la-fanciulla-del-west",
@@ -1444,8 +1475,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "met-opera-2026-27-silent-night",
@@ -1470,8 +1501,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be"
+      "color": "#974e1a",
+      "accent": "#d48853"
     },
     {
       "id": "met-opera-2026-27-manon",
@@ -1496,8 +1527,8 @@
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853"
+      "color": "#31219f",
+      "accent": "#7568d3"
     },
     {
       "id": "met-opera-2026-27-otello",
@@ -1522,8 +1553,8 @@
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3"
+      "color": "#44a630",
+      "accent": "#92d684"
     },
     {
       "id": "met-opera-2026-27-parsifal",
@@ -1548,8 +1579,8 @@
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#971a54",
+      "accent": "#d4538f"
     }
   ]
 }
