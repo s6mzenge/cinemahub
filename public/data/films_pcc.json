@@ -1,7 +1,38 @@
 {
-  "scraped_at": "2026-06-28T19:01:58.370950+00:00",
+  "scraped_at": "2026-06-28T19:31:56.993861+00:00",
   "source": "princecharlescinema.com",
   "films": [
+    {
+      "id": "local-hero",
+      "title": "Local Hero",
+      "rating": "PG",
+      "runtime": 111,
+      "genre": "Comedy / Drama",
+      "year": "1983",
+      "country": null,
+      "director": "Bill Forsyth",
+      "cast": "Burt Lancaster, Peter Riegert, Fulton Mackay, Denis Lawson, Peter Capaldi",
+      "description": "Up-and-coming Houston oil executive Mac MacIntyre (Peter Riegert) gets more than he bargained for when a seemingly simple business trip to Scotland changes his outlook on life. Sent by his colorful boss (Burt Lancaster) to the small village of Ferness, Mac is looking to quickly buy out the townspeople so his company can build a new refinery. But after a taste of country life Mac begins to question whether he is on the right side of this transaction.",
+      "film_url": "https://princecharlescinema.com/film/18450099/local-hero",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/18450099.jpg",
+      "showtimes": {
+        "2026-06-29": [
+          {
+            "time": "12:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626463",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/local-hero/",
+      "letterboxd_rating": 3.88
+    },
     {
       "id": "the-furious",
       "title": "The Furious",
@@ -16,14 +47,6 @@
       "film_url": "https://princecharlescinema.com/film/31617373/the-furious",
       "poster_url": "https://cdn.taposapp.com/poster/600x900/tBtc0TcbJMsopNgCVJUbelSGXPe-LkjOoPjjNFJ4s9A.jpg",
       "showtimes": {
-        "2026-06-28": [
-          {
-            "time": "20:10",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626457",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-06-29": [
           {
             "time": "12:20",
@@ -151,41 +174,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/the-furious/",
-      "letterboxd_rating": 3.86
-    },
-    {
-      "id": "local-hero",
-      "title": "Local Hero",
-      "rating": "PG",
-      "runtime": 111,
-      "genre": "Comedy / Drama",
-      "year": "1983",
-      "country": null,
-      "director": "Bill Forsyth",
-      "cast": "Burt Lancaster, Peter Riegert, Fulton Mackay, Denis Lawson, Peter Capaldi",
-      "description": "Up-and-coming Houston oil executive Mac MacIntyre (Peter Riegert) gets more than he bargained for when a seemingly simple business trip to Scotland changes his outlook on life. Sent by his colorful boss (Burt Lancaster) to the small village of Ferness, Mac is looking to quickly buy out the townspeople so his company can build a new refinery. But after a taste of country life Mac begins to question whether he is on the right side of this transaction.",
-      "film_url": "https://princecharlescinema.com/film/18450099/local-hero",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/18450099.jpg",
-      "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "12:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626463",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ]
-      },
       "color": "#7c4dff",
       "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/local-hero/",
-      "letterboxd_rating": 3.88
+      "letterboxd_url": "https://letterboxd.com/film/the-furious/",
+      "letterboxd_rating": 3.86
     },
     {
       "id": "there-will-be-blood",
