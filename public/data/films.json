@@ -1,7 +1,47 @@
 {
-  "scraped_at": "2026-06-28T14:01:58.831885+00:00",
+  "scraped_at": "2026-06-28T15:02:02.500364+00:00",
   "source": "peckhamplex.london",
   "films": [
+    {
+      "id": "backrooms",
+      "title": "Backrooms",
+      "rating": "15",
+      "runtime": 110,
+      "genre": "Horror",
+      "film_url": "https://www.peckhamplex.london/film/backrooms",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/backrooms.jpg",
+      "showtimes": {
+        "2026-06-28": [
+          {
+            "time": "21:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81147?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ],
+        "2026-06-29": [
+          {
+            "time": "21:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81165?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ],
+        "2026-06-30": [
+          {
+            "time": "21:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81183?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Kane Parsons",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
+      "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
+      "letterboxd_rating": 3.37
+    },
     {
       "id": "500-miles",
       "title": "500 Miles",
@@ -12,12 +52,6 @@
       "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/500-miles.jpg",
       "showtimes": {
         "2026-06-28": [
-          {
-            "time": "15:20",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81135?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          },
           {
             "time": "17:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81140?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
@@ -91,222 +125,7 @@
       "color": "#6a1b9a",
       "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/500-miles-2026/",
-      "letterboxd_rating": 3.44
-    },
-    {
-      "id": "backrooms",
-      "title": "Backrooms",
-      "rating": "15",
-      "runtime": 110,
-      "genre": "Horror",
-      "film_url": "https://www.peckhamplex.london/film/backrooms",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/backrooms.jpg",
-      "showtimes": {
-        "2026-06-28": [
-          {
-            "time": "21:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81147?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          }
-        ],
-        "2026-06-29": [
-          {
-            "time": "21:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81165?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          }
-        ],
-        "2026-06-30": [
-          {
-            "time": "21:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81183?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Kane Parsons",
-      "color": "#546e7a",
-      "accent": "#90a4ae",
-      "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
-      "letterboxd_rating": 3.37
-    },
-    {
-      "id": "scary-movie-6",
-      "title": "Scary Movie 6",
-      "rating": "15",
-      "runtime": 100,
-      "genre": "Comedy",
-      "film_url": "https://www.peckhamplex.london/film/scary-movie-6",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/scary-movie-6.jpg",
-      "showtimes": {
-        "2026-06-28": [
-          {
-            "time": "18:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81142?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-06-30": [
-          {
-            "time": "18:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81178?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-07-02": [
-          {
-            "time": "18:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81207?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090"
-    },
-    {
-      "id": "supergirl",
-      "title": "Supergirl",
-      "rating": "12A",
-      "runtime": 108,
-      "genre": "Action",
-      "film_url": "https://www.peckhamplex.london/film/supergirl",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/supergirl.jpg",
-      "showtimes": {
-        "2026-06-28": [
-          {
-            "time": "15:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81133?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          },
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81138?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81145?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          }
-        ],
-        "2026-06-29": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81156?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81163?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-06-30": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81174?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81181?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-01": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81192?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81199?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          }
-        ],
-        "2026-07-02": [
-          {
-            "time": "18:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81206?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81211?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Craig Gillespie",
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/supergirl-2026/",
-      "letterboxd_rating": 3.11
-    },
-    {
-      "id": "bat-out-of-hell-the-musical",
-      "title": "Bat Out of Hell - The Musical",
-      "rating": "12A",
-      "runtime": 135,
-      "genre": "Musical",
-      "film_url": "https://www.peckhamplex.london/film/bat-out-of-hell-the-musical",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/bat-out-of-hell-the-musical.jpg",
-      "showtimes": {
-        "2026-07-01": [
-          {
-            "time": "20:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80784?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#ad1457",
-      "accent": "#f06292",
-      "letterboxd_url": "https://letterboxd.com/film/bat-out-of-hell-the-musical/",
-      "letterboxd_rating": 3.14
-    },
-    {
-      "id": "mystery-of-the-first-temple",
-      "title": "Mystery of the First Temple",
-      "rating": "PG",
-      "runtime": 88,
-      "genre": "Documentary",
-      "film_url": "https://www.peckhamplex.london/film/mystery-of-the-first-temple",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/mystery-of-the-first-temple.jpg",
-      "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80786?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/mystery-of-the-first-temple/",
-      "letterboxd_rating": null
+      "letterboxd_rating": 3.45
     },
     {
       "id": "obsession",
@@ -319,12 +138,6 @@
       "showtimes": {
         "2026-06-28": [
           {
-            "time": "15:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81132?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          },
-          {
             "time": "20:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81146?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 6",
@@ -335,7 +148,7 @@
           {
             "time": "20:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81164?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 6",
             "hoh": false
           }
         ],
@@ -371,44 +184,136 @@
       "letterboxd_rating": 4.14
     },
     {
-      "id": "disclosure-day",
-      "title": "Disclosure Day",
+      "id": "mystery-of-the-first-temple",
+      "title": "Mystery of the First Temple",
+      "rating": "PG",
+      "runtime": 88,
+      "genre": "Documentary",
+      "film_url": "https://www.peckhamplex.london/film/mystery-of-the-first-temple",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/mystery-of-the-first-temple.jpg",
+      "showtimes": {
+        "2026-06-29": [
+          {
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80786?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#c62828",
+      "accent": "#ef5350",
+      "letterboxd_url": "https://letterboxd.com/film/mystery-of-the-first-temple/",
+      "letterboxd_rating": null
+    },
+    {
+      "id": "bat-out-of-hell-the-musical",
+      "title": "Bat Out of Hell - The Musical",
       "rating": "12A",
-      "runtime": 145,
-      "genre": "Drama",
-      "film_url": "https://www.peckhamplex.london/film/disclosure-day",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/disclosure-day.jpg",
+      "runtime": 135,
+      "genre": "Musical",
+      "film_url": "https://www.peckhamplex.london/film/bat-out-of-hell-the-musical",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/bat-out-of-hell-the-musical.jpg",
+      "showtimes": {
+        "2026-07-01": [
+          {
+            "time": "20:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80784?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#ad1457",
+      "accent": "#f06292",
+      "letterboxd_url": "https://letterboxd.com/film/bat-out-of-hell-the-musical/",
+      "letterboxd_rating": 3.14
+    },
+    {
+      "id": "supergirl",
+      "title": "Supergirl",
+      "rating": "12A",
+      "runtime": 108,
+      "genre": "Action",
+      "film_url": "https://www.peckhamplex.london/film/supergirl",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/supergirl.jpg",
       "showtimes": {
         "2026-06-28": [
           {
-            "time": "17:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81137?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81138?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81145?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": null,
             "hoh": false
           }
         ],
         "2026-06-29": [
           {
-            "time": "17:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81155?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81156?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81163?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
             "hoh": false
           }
         ],
         "2026-06-30": [
           {
-            "time": "17:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81173?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81174?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81181?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ],
+        "2026-07-01": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81192?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81199?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ],
+        "2026-07-02": [
+          {
+            "time": "18:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81206?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81211?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 1",
             "hoh": false
           }
         ]
       },
-      "director": "Steven Spielberg",
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
-      "letterboxd_rating": 3.14
+      "director": "Craig Gillespie",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/supergirl-2026/",
+      "letterboxd_rating": 3.11
     },
     {
       "id": "minions-and-monsters",
@@ -429,7 +334,7 @@
           {
             "time": "20:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81201?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": false
           }
         ],
@@ -449,10 +354,87 @@
         ]
       },
       "director": "Pierre Coffin",
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/minions-monsters-2026/",
       "letterboxd_rating": 3.16
+    },
+    {
+      "id": "scary-movie-6",
+      "title": "Scary Movie 6",
+      "rating": "15",
+      "runtime": 100,
+      "genre": "Comedy",
+      "film_url": "https://www.peckhamplex.london/film/scary-movie-6",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/scary-movie-6.jpg",
+      "showtimes": {
+        "2026-06-28": [
+          {
+            "time": "18:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81142?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-06-30": [
+          {
+            "time": "18:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81178?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-07-02": [
+          {
+            "time": "18:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81207?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090"
+    },
+    {
+      "id": "disclosure-day",
+      "title": "Disclosure Day",
+      "rating": "12A",
+      "runtime": 145,
+      "genre": "Drama",
+      "film_url": "https://www.peckhamplex.london/film/disclosure-day",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/disclosure-day.jpg",
+      "showtimes": {
+        "2026-06-28": [
+          {
+            "time": "17:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81137?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ],
+        "2026-06-29": [
+          {
+            "time": "17:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81155?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ],
+        "2026-06-30": [
+          {
+            "time": "17:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81173?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Steven Spielberg",
+      "color": "#00897b",
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
+      "letterboxd_rating": 3.14
     },
     {
       "id": "la-traviata",
@@ -476,50 +458,6 @@
       "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/la-traviata-on-sydney-harbour/",
       "letterboxd_rating": null
-    },
-    {
-      "id": "beyond-the-silk-road",
-      "title": "Beyond the Silk Road",
-      "rating": "12A",
-      "runtime": 89,
-      "genre": "Documentary",
-      "film_url": "https://www.peckhamplex.london/film/beyond-the-silk-road",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/beyond-the-silk-road.jpg",
-      "showtimes": {
-        "2026-07-06": [
-          {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80787?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
-      "letterboxd_url": "https://letterboxd.com/film/beyond-the-silk-road/",
-      "letterboxd_rating": null
-    },
-    {
-      "id": "turandot",
-      "title": "Turandot on Sydney Harbour",
-      "rating": "PG",
-      "runtime": 146,
-      "genre": "Opera",
-      "film_url": "https://www.peckhamplex.london/film/turandot",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/turandot.jpg",
-      "showtimes": {
-        "2026-08-05": [
-          {
-            "time": "19:45",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80789?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
     },
     {
       "id": "toy-story-5",
@@ -582,7 +520,7 @@
           {
             "time": "20:10",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81197?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": true
           }
         ],
@@ -590,7 +528,7 @@
           {
             "time": "17:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81203?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": true
           },
           {
@@ -601,33 +539,31 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
       "letterboxd_rating": 3.75
     },
     {
-      "id": "wham-10-days-in-china",
-      "title": "Wham! 10 Days in China",
-      "rating": "12A",
-      "runtime": 90,
-      "genre": "Documentary",
-      "film_url": "https://www.peckhamplex.london/film/wham-10-days-in-china",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/wham-10-days-in-china.jpg",
+      "id": "nt-livethe-misanthrope",
+      "title": "NT Live:The Misanthrope",
+      "rating": "15",
+      "runtime": 150,
+      "genre": "Live Theatre",
+      "film_url": "https://www.peckhamplex.london/film/nt-livethe-misanthrope",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/nt-livethe-misanthrope.jpg",
       "showtimes": {
-        "2026-07-28": [
+        "2026-09-22": [
           {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81221?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "time": "19:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81076?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
             "hoh": false
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
-      "letterboxd_url": "https://letterboxd.com/film/wham-10-days-in-china/",
-      "letterboxd_rating": null
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "aida",
@@ -647,8 +583,31 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7"
+      "color": "#37474f",
+      "accent": "#78909c"
+    },
+    {
+      "id": "beyond-the-silk-road",
+      "title": "Beyond the Silk Road",
+      "rating": "12A",
+      "runtime": 89,
+      "genre": "Documentary",
+      "film_url": "https://www.peckhamplex.london/film/beyond-the-silk-road",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/beyond-the-silk-road.jpg",
+      "showtimes": {
+        "2026-07-06": [
+          {
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80787?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#4e342e",
+      "accent": "#8d6e63",
+      "letterboxd_url": "https://letterboxd.com/film/beyond-the-silk-road/",
+      "letterboxd_rating": null
     },
     {
       "id": "radiohead-x-nosferatu-a-symphony-of-horror",
@@ -668,29 +627,52 @@
           }
         ]
       },
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
+    },
+    {
+      "id": "turandot",
+      "title": "Turandot on Sydney Harbour",
+      "rating": "PG",
+      "runtime": 146,
+      "genre": "Opera",
+      "film_url": "https://www.peckhamplex.london/film/turandot",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/turandot.jpg",
+      "showtimes": {
+        "2026-08-05": [
+          {
+            "time": "19:45",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80789?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
       "color": "#558b2f",
       "accent": "#9ccc65"
     },
     {
-      "id": "nt-livethe-misanthrope",
-      "title": "NT Live:The Misanthrope",
-      "rating": "15",
-      "runtime": 150,
-      "genre": "Live Theatre",
-      "film_url": "https://www.peckhamplex.london/film/nt-livethe-misanthrope",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/nt-livethe-misanthrope.jpg",
+      "id": "wham-10-days-in-china",
+      "title": "Wham! 10 Days in China",
+      "rating": "12A",
+      "runtime": 90,
+      "genre": "Documentary",
+      "film_url": "https://www.peckhamplex.london/film/wham-10-days-in-china",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/wham-10-days-in-china.jpg",
       "showtimes": {
-        "2026-09-22": [
+        "2026-07-28": [
           {
-            "time": "19:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81076?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81221?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 6",
             "hoh": false
           }
         ]
       },
       "color": "#9f2121",
-      "accent": "#d36868"
+      "accent": "#d36868",
+      "letterboxd_url": "https://letterboxd.com/film/wham-10-days-in-china/",
+      "letterboxd_rating": null
     },
     {
       "id": "jackass-best-and-last",
@@ -702,12 +684,6 @@
       "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/jackass-best-and-last.jpg",
       "showtimes": {
         "2026-06-28": [
-          {
-            "time": "16:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81136?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          },
           {
             "time": "18:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81141?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
