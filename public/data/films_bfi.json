@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-28T09:03:04.856888+00:00",
+  "scraped_at": "2026-06-28T09:33:01.813784+00:00",
   "source": "whatson.bfi.org.uk",
   "films": [
     {
@@ -23,9 +23,9 @@
             "hoh": false,
             "tags": [
               "Regular programme",
+              "Silent",
               "Digital",
-              "Introduction",
-              "Silent"
+              "Introduction"
             ]
           }
         ]
@@ -34,6 +34,37 @@
       "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/3-bad-men/",
       "letterboxd_rating": 3.87
+    },
+    {
+      "id": "introduction-to-john-woo-25-and-under",
+      "title": "25 and Under: An introduction to John Woo",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "Are you a member of our 25 and Under scheme? Join us for a free introduction to director John Woo.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=introduction-to-john-woo-25-and-under&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/john-woo-season-art-01.jpg",
+      "showtimes": {
+        "2026-07-16": [
+          {
+            "time": "18:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=52B16B07-D658-4024-A344-29C25098491E&BOparam::WScontent::loadArticle::context_id=857B9B6F-EC6A-4A99-8875-BD52EBAA28EE",
+            "screen": "Blue Room",
+            "hoh": false,
+            "tags": [
+              "Bullets and Brotherhood: The Films of John Woo",
+              "Introduction",
+              "25&Under",
+              "25 and Under"
+            ]
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff"
     },
     {
       "id": "alien-nights",
@@ -55,15 +86,15 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "English subtitles",
               "Brazil on Film",
+              "English subtitles",
               "Digital"
             ]
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/alien-nights/",
       "letterboxd_rating": 3.38
     },
@@ -89,19 +120,19 @@
             "tags": [
               "Regular programme",
               "Seniors’ matinee",
-              "Digital",
-              "Introduction"
+              "Introduction",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/after-hours/",
       "letterboxd_rating": 4.13
     },
     {
-      "id": "all-about-eve-jul-2026",
+      "id": "all-about-eve-intro",
       "title": "All About Eve",
       "rating": "U",
       "runtime": 138,
@@ -110,27 +141,93 @@
       "director": "Joseph L. Mankiewicz",
       "cast": "Bette Davis, Anne Baxter, George Sanders, Marilyn Monroe",
       "description": "Marilyn Monroe steals all of her scenes in this Hollywood classic about an ageing star unwittingly letting an aspiring actress into her life.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=all-about-eve-jul-2026&BOparam::WScontent::loadArticle::context_id=",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=all-about-eve-intro&BOparam::WScontent::loadArticle::context_id=",
       "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/all-about-eve-01.jpeg",
       "showtimes": {
-        "2026-07-18": [
+        "2026-07-05": [
           {
-            "time": "12:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=324B12E2-171F-4C22-9705-D4A3873E1A46&BOparam::WScontent::loadArticle::context_id=C474B6ED-82FF-4837-BAE9-E90532F90D3B",
+            "time": "18:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=3306E0B8-F1E8-4051-BDBD-0CF1DF1AA73B&BOparam::WScontent::loadArticle::context_id=4C5B3F7A-FC8D-4ADD-9A2E-65B8057D48E0",
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
               "Marilyn Monroe: Self-Made Star",
-              "Digital",
-              "Marilyn Monroe"
+              "Introduction",
+              "Marilyn Monroe",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/all-about-eve/",
       "letterboxd_rating": 4.36
+    },
+    {
+      "id": "as-young-as-you-feel",
+      "title": "As Young as You Feel",
+      "rating": "U",
+      "runtime": 77,
+      "genre": "Other",
+      "year": 1951,
+      "director": "Harmon Jones",
+      "cast": "Monty Woolley, Thelma Ritter, Jean Peters, Marilyn Monroe",
+      "description": "A man battles against mandatory retirement in this quirky film from Marilyn Monroe’s early career.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=as-young-as-you-feel&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/as-young-as-you-feel-01.jpeg",
+      "showtimes": {
+        "2026-07-22": [
+          {
+            "time": "20:50",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=F2750A1D-3820-4C7D-B96C-53E7B28C92C1&BOparam::WScontent::loadArticle::context_id=2E3C1F9D-FCAB-47E4-B6B4-2E295644A417",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Marilyn Monroe: Self-Made Star",
+              "Marilyn Monroe",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/as-young-as-you-feel/",
+      "letterboxd_rating": 3.04
+    },
+    {
+      "id": "as-young-as-you-feel-intro",
+      "title": "As Young as You Feel",
+      "rating": "U",
+      "runtime": 77,
+      "genre": "Other",
+      "year": 1951,
+      "director": "Harmon Jones",
+      "cast": "Monty Woolley, Thelma Ritter, Jean Peters, Marilyn Monroe",
+      "description": "A man battles against mandatory retirement in this quirky film from Marilyn Monroe’s early career.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=as-young-as-you-feel-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/as-young-as-you-feel-01.jpeg",
+      "showtimes": {
+        "2026-07-13": [
+          {
+            "time": "18:20",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D5D2FA67-9A97-4025-B70E-2300B27C18BE&BOparam::WScontent::loadArticle::context_id=E7A49919-CDCA-43E2-89B6-1C853579DDB4",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Marilyn Monroe: Self-Made Star",
+              "Marilyn Monroe",
+              "Digital",
+              "Introduction"
+            ]
+          }
+        ]
+      },
+      "color": "#c62828",
+      "accent": "#ef5350",
+      "letterboxd_url": "https://letterboxd.com/film/as-young-as-you-feel/",
+      "letterboxd_rating": 3.04
     },
     {
       "id": "bashu-little-stranger-4k-restoration-uk-premiere-intro",
@@ -153,16 +250,16 @@
             "hoh": false,
             "tags": [
               "Regular programme",
-              "Digital",
-              "Restored",
               "English subtitles",
-              "Introduction"
+              "Digital",
+              "Introduction",
+              "Restored"
             ]
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6"
+      "color": "#6a1b9a",
+      "accent": "#ba68c8"
     },
     {
       "id": "better-tomorrow-intro",
@@ -185,16 +282,16 @@
             "hoh": false,
             "tags": [
               "Bullets and Brotherhood: The Films of John Woo",
+              "John Woo",
               "English subtitles",
               "Digital",
-              "John Woo",
               "Introduction"
             ]
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/a-better-tomorrow/",
       "letterboxd_rating": 3.93
     },
@@ -219,9 +316,9 @@
             "hoh": false,
             "tags": [
               "Bullets and Brotherhood: The Films of John Woo",
-              "Digital",
+              "English subtitles",
               "John Woo",
-              "English subtitles"
+              "Digital"
             ]
           }
         ],
@@ -233,6 +330,39 @@
             "hoh": false,
             "tags": [
               "Bullets and Brotherhood: The Films of John Woo",
+              "English subtitles",
+              "John Woo",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#546e7a",
+      "accent": "#90a4ae",
+      "letterboxd_url": "https://letterboxd.com/film/a-better-tomorrow-ii/",
+      "letterboxd_rating": 3.61
+    },
+    {
+      "id": "better-tomorrow",
+      "title": "A Better Tomorrow",
+      "rating": "18",
+      "runtime": 96,
+      "genre": "Other",
+      "year": 1986,
+      "director": "John Woo",
+      "cast": "Ti Lung, Leslie Cheung, Chow Yun-fat",
+      "description": "This tale of two brothers on the opposite sides of the law marks the emergence of John Woo’s signature action filmmaking style.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=better-tomorrow&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/better-tomorrow-01.jpeg",
+      "showtimes": {
+        "2026-07-18": [
+          {
+            "time": "18:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=22FEC1F7-DC00-4698-8E3B-17DF2858929E&BOparam::WScontent::loadArticle::context_id=90424598-B095-4296-93A0-DAAA51083A33",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Bullets and Brotherhood: The Films of John Woo",
               "John Woo",
               "Digital",
               "English subtitles"
@@ -240,43 +370,10 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/a-better-tomorrow-ii/",
-      "letterboxd_rating": 3.61
-    },
-    {
-      "id": "bhaji-on-the-beach-intro",
-      "title": "Bhaji on the Beach",
-      "rating": "15",
-      "runtime": 101,
-      "genre": "Other",
-      "year": 1993,
-      "director": "Gurinder Chadha",
-      "cast": "Kim Vithana, Sarita Khajuria, Shaheen Khan",
-      "description": "Gurinder Chadha’s tale of British Asian women bonding on a coastal day-trip is an understated gem and a vital portrait of Thatcher’s Britain.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=bhaji-on-the-beach-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/bhaji-on-the-beach-01.jpeg",
-      "showtimes": {
-        "2026-07-15": [
-          {
-            "time": "18:10",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D9EE9C3C-42EE-40A7-8B04-4D017E22FE54&BOparam::WScontent::loadArticle::context_id=F83D44D2-1254-4CDA-9187-A80D8497A2D2",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Introduction",
-              "Big screen classics",
-              "English subtitles",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/bhaji-on-the-beach/",
-      "letterboxd_rating": 3.56
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
+      "letterboxd_url": "https://letterboxd.com/film/a-better-tomorrow/",
+      "letterboxd_rating": 3.93
     },
     {
       "id": "bfi-member-quiz",
@@ -304,8 +401,73 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1"
+      "color": "#ad1457",
+      "accent": "#f06292"
+    },
+    {
+      "id": "bhaji-on-the-beach-intro",
+      "title": "Bhaji on the Beach",
+      "rating": "15",
+      "runtime": 101,
+      "genre": "Other",
+      "year": 1993,
+      "director": "Gurinder Chadha",
+      "cast": "Kim Vithana, Sarita Khajuria, Shaheen Khan",
+      "description": "Gurinder Chadha’s tale of British Asian women bonding on a coastal day-trip is an understated gem and a vital portrait of Thatcher’s Britain.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=bhaji-on-the-beach-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/bhaji-on-the-beach-01.jpeg",
+      "showtimes": {
+        "2026-07-15": [
+          {
+            "time": "18:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D9EE9C3C-42EE-40A7-8B04-4D017E22FE54&BOparam::WScontent::loadArticle::context_id=F83D44D2-1254-4CDA-9187-A80D8497A2D2",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Big screen classics",
+              "Digital",
+              "Introduction",
+              "English subtitles"
+            ]
+          }
+        ]
+      },
+      "color": "#37474f",
+      "accent": "#78909c",
+      "letterboxd_url": "https://letterboxd.com/film/bhaji-on-the-beach/",
+      "letterboxd_rating": 3.56
+    },
+    {
+      "id": "bhaji-on-the-beach",
+      "title": "Bhaji on the Beach",
+      "rating": "15",
+      "runtime": 101,
+      "genre": "Other",
+      "year": 1993,
+      "director": "Gurinder Chadha",
+      "cast": "Kim Vithana, Sarita Khajuria, Shaheen Khan",
+      "description": "Gurinder Chadha’s tale of British Asian women bonding on a coastal day-trip is an understated gem and a vital portrait of Thatcher’s Britain.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=bhaji-on-the-beach&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/bhaji-on-the-beach-01.jpeg",
+      "showtimes": {
+        "2026-07-25": [
+          {
+            "time": "20:45",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E05AF123-C235-4C20-9506-B482D238F9FD&BOparam::WScontent::loadArticle::context_id=1243F7A2-3682-4F7F-AAA9-48EC93E6B920",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "English subtitles",
+              "Big screen classics"
+            ]
+          }
+        ]
+      },
+      "color": "#4e342e",
+      "accent": "#8d6e63",
+      "letterboxd_url": "https://letterboxd.com/film/bhaji-on-the-beach/",
+      "letterboxd_rating": 3.56
     },
     {
       "id": "bicycle-thieves-2026",
@@ -328,16 +490,49 @@
             "hoh": false,
             "tags": [
               "Digital",
-              "Big screen classics",
-              "English subtitles"
+              "English subtitles",
+              "Big screen classics"
             ]
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/bicycle-thieves/",
       "letterboxd_rating": 4.29
+    },
+    {
+      "id": "blue-black-permanent-intro",
+      "title": "Blue Black Permanent",
+      "rating": "PG",
+      "runtime": 86,
+      "genre": "Other",
+      "year": 1992,
+      "director": "Margaret Tait",
+      "cast": "Celia Imrie, Jack Shepherd",
+      "description": "The first feature by a female Scottish filmmaker finds a young woman embarking on a lyrical journey to understand her lineage.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=blue-black-permanent-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/blue-black-permanent-01.jpeg",
+      "showtimes": {
+        "2026-07-23": [
+          {
+            "time": "18:20",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=F5A151A7-2BBC-4020-A59F-D1C0ED2E8F1D&BOparam::WScontent::loadArticle::context_id=002769BD-BF44-4EC1-94C9-3788F76164F6",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Regular programme",
+              "Woman with a Movie Camera",
+              "Digital",
+              "Introduction"
+            ]
+          }
+        ]
+      },
+      "color": "#558b2f",
+      "accent": "#9ccc65",
+      "letterboxd_url": "https://letterboxd.com/film/blue-black-permanent/",
+      "letterboxd_rating": 3.59
     },
     {
       "id": "blue-heron-seniors",
@@ -360,16 +555,99 @@
             "hoh": false,
             "tags": [
               "New releases",
-              "English subtitles",
-              "Seniors’ matinee",
               "Releases",
-              "Digital"
+              "Digital",
+              "Seniors’ matinee",
+              "English subtitles"
             ]
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#9f2121",
+      "accent": "#d36868",
+      "letterboxd_url": "https://letterboxd.com/film/blue-heron/",
+      "letterboxd_rating": 3.94
+    },
+    {
+      "id": "blue-heron",
+      "title": "Blue Heron",
+      "rating": "12A",
+      "runtime": 90,
+      "genre": "Other",
+      "year": 2025,
+      "director": "Sophy Romvari",
+      "cast": "Eylul Guven, Iringó Réti, Adam Tompa, Edik Beddoes",
+      "description": "In her astonishing and award-winning feature debut, director Sophy Romvari constructs a personal portrait of memory, childhood and family.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=blue-heron&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202606/blue-heron-01.jpeg",
+      "showtimes": {
+        "2026-06-28": [
+          {
+            "time": "12:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C1845E09-57AF-4884-8D64-FF65AD79D1FC&BOparam::WScontent::loadArticle::context_id=E746446A-FD73-4350-B3C0-4E838A8D7E4F",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "Releases",
+              "Digital",
+              "English subtitles"
+            ]
+          },
+          {
+            "time": "18:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C1845E09-57AF-4884-8D64-FF65AD79D1FC&BOparam::WScontent::loadArticle::context_id=0FD37CA2-3933-4E1F-8D4A-5078BFDC2021",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "Releases",
+              "Digital",
+              "English subtitles"
+            ]
+          }
+        ],
+        "2026-06-29": [
+          {
+            "time": "14:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C1845E09-57AF-4884-8D64-FF65AD79D1FC&BOparam::WScontent::loadArticle::context_id=355AEAB7-5A94-4696-B158-EF4DEAB736DF",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "Releases",
+              "Digital",
+              "English subtitles"
+            ]
+          },
+          {
+            "time": "18:40",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C1845E09-57AF-4884-8D64-FF65AD79D1FC&BOparam::WScontent::loadArticle::context_id=935BD2F1-809A-438E-A37A-D5065C4FAF60",
+            "screen": "Screen NFT4",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "Releases",
+              "Digital",
+              "English subtitles"
+            ]
+          },
+          {
+            "time": "20:35",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C1845E09-57AF-4884-8D64-FF65AD79D1FC&BOparam::WScontent::loadArticle::context_id=50183241-B328-4660-8D93-93A9058496E8",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "Digital",
+              "Releases",
+              "English subtitles"
+            ]
+          }
+        ]
+      },
+      "color": "#3052a6",
+      "accent": "#849cd6",
       "letterboxd_url": "https://letterboxd.com/film/blue-heron/",
       "letterboxd_rating": 3.94
     },
@@ -393,16 +671,49 @@
             "screen": "Screen NFT4",
             "hoh": false,
             "tags": [
-              "Digital",
-              "Big screen classics"
+              "Big screen classics",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292",
+      "color": "#63971a",
+      "accent": "#9ed453",
       "letterboxd_url": "https://letterboxd.com/film/breaking-away/",
       "letterboxd_rating": 3.97
+    },
+    {
+      "id": "bugsy-malone-50th-anniversary-qanda",
+      "title": "Bugsy Malone",
+      "rating": "U",
+      "runtime": 94,
+      "genre": "Other",
+      "year": 1976,
+      "director": "Alan Parker",
+      "cast": "Jodie Foster, Scott Baio, Florence Garland",
+      "description": "We celebrate the 50th anniversary of Alan Parker’s musical masterpiece.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=bugsy-malone-50th-anniversary-qanda&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/bugsy-malone-01.jpeg",
+      "showtimes": {
+        "2026-07-12": [
+          {
+            "time": "17:45",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=F4EF23A0-47DD-43F4-B06E-5DC5EAC9CD40&BOparam::WScontent::loadArticle::context_id=E17078F2-8262-49BF-B7C9-26B35FB4E0E1",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Previews and events",
+              "Digital",
+              "Families",
+              "Q&A"
+            ]
+          }
+        ]
+      },
+      "color": "#9f2190",
+      "accent": "#d368c6",
+      "letterboxd_url": "https://letterboxd.com/film/bugsy-malone/",
+      "letterboxd_rating": 3.5
     },
     {
       "id": "bullet-in-the-head-intro",
@@ -426,15 +737,48 @@
             "tags": [
               "Bullets and Brotherhood: The Films of John Woo",
               "Introduction",
-              "Digital",
               "John Woo",
+              "Digital",
               "English subtitles"
             ]
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#30a692",
+      "accent": "#84d6c8",
+      "letterboxd_url": "https://letterboxd.com/film/bullet-in-the-head/",
+      "letterboxd_rating": 4.06
+    },
+    {
+      "id": "bullet-in-the-head",
+      "title": "Bullet in the Head",
+      "rating": "18",
+      "runtime": 131,
+      "genre": "Other",
+      "year": 1990,
+      "director": "John Woo",
+      "cast": "Tony Leung Chiu-wai, Jacky Cheung, Waise Le",
+      "description": "This Vietnam war melodrama is an underrated and emotionally devastating masterpiece in John Woo’s filmography.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=bullet-in-the-head&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/bullet-in-the-head-01.jpeg",
+      "showtimes": {
+        "2026-07-21": [
+          {
+            "time": "20:25",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=BA474D5C-0317-4F31-8936-A21D2718AFFF&BOparam::WScontent::loadArticle::context_id=C5531EED-3536-49E6-8B65-15B4FEA7CE01",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Bullets and Brotherhood: The Films of John Woo",
+              "Digital",
+              "English subtitles",
+              "John Woo"
+            ]
+          }
+        ]
+      },
+      "color": "#975e1a",
+      "accent": "#d49953",
       "letterboxd_url": "https://letterboxd.com/film/bullet-in-the-head/",
       "letterboxd_rating": 4.06
     },
@@ -459,127 +803,17 @@
             "hoh": false,
             "tags": [
               "Marilyn Monroe: Self-Made Star",
-              "Marilyn Monroe",
               "Digital",
-              "Introduction"
+              "Introduction",
+              "Marilyn Monroe"
             ]
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#41219f",
+      "accent": "#8368d3",
       "letterboxd_url": "https://letterboxd.com/film/bus-stop/",
       "letterboxd_rating": 2.78
-    },
-    {
-      "id": "bullet-in-the-head",
-      "title": "Bullet in the Head",
-      "rating": "18",
-      "runtime": 131,
-      "genre": "Other",
-      "year": 1990,
-      "director": "John Woo",
-      "cast": "Tony Leung Chiu-wai, Jacky Cheung, Waise Le",
-      "description": "This Vietnam war melodrama is an underrated and emotionally devastating masterpiece in John Woo’s filmography.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=bullet-in-the-head&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/bullet-in-the-head-01.jpeg",
-      "showtimes": {
-        "2026-07-21": [
-          {
-            "time": "20:25",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=BA474D5C-0317-4F31-8936-A21D2718AFFF&BOparam::WScontent::loadArticle::context_id=C5531EED-3536-49E6-8B65-15B4FEA7CE01",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "Bullets and Brotherhood: The Films of John Woo",
-              "English subtitles",
-              "John Woo",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
-      "letterboxd_url": "https://letterboxd.com/film/bullet-in-the-head/",
-      "letterboxd_rating": 4.06
-    },
-    {
-      "id": "bus-stop",
-      "title": "Bus Stop",
-      "rating": "U",
-      "runtime": 94,
-      "genre": "Other",
-      "year": 1956,
-      "director": "Joshua Logan",
-      "cast": "Marilyn Monroe, Don Murray, Arthur O’Connell",
-      "description": "Marilyn Monroe is an unvarnished singer evading an overly keen cowboy in this romantic comedy-drama.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=bus-stop&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/bus-stop-01.jpeg",
-      "showtimes": {
-        "2026-07-21": [
-          {
-            "time": "20:50",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C5958F98-E5FB-4D48-B401-8EDD8C8765EB&BOparam::WScontent::loadArticle::context_id=BFC67760-73DB-4C69-988E-0AD63C378060",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Marilyn Monroe: Self-Made Star",
-              "Marilyn Monroe",
-              "Digital"
-            ]
-          }
-        ],
-        "2026-07-31": [
-          {
-            "time": "18:15",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C5958F98-E5FB-4D48-B401-8EDD8C8765EB&BOparam::WScontent::loadArticle::context_id=872AAB88-6B50-471D-AE78-53B32F729521",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Marilyn Monroe: Self-Made Star",
-              "Marilyn Monroe",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#558b2f",
-      "accent": "#9ccc65",
-      "letterboxd_url": "https://letterboxd.com/film/bus-stop/",
-      "letterboxd_rating": 2.78
-    },
-    {
-      "id": "candy-mountain-intro",
-      "title": "Candy Mountain",
-      "rating": "15",
-      "runtime": 92,
-      "genre": "Other",
-      "year": 1987,
-      "director": null,
-      "cast": "Kevin J O’Connor, Harris Yulin, Tom Waits, Joe Strummer",
-      "description": "Scripted and co-directed by Rudy Wurlitzer (Two-Lane Blacktop), this quintessential road movie is a rarely screened gem.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=candy-mountain-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/candy-mountain-01.jpeg",
-      "showtimes": {
-        "2026-07-01": [
-          {
-            "time": "18:15",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=57C3CC7A-E313-41DF-B248-4531CB705F02&BOparam::WScontent::loadArticle::context_id=35F74B30-5BEE-4362-86E7-F9C201373E39",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Big screen classics",
-              "Digital",
-              "Introduction"
-            ]
-          }
-        ]
-      },
-      "color": "#9f2121",
-      "accent": "#d36868",
-      "letterboxd_url": "https://letterboxd.com/film/candy-mountain/",
-      "letterboxd_rating": 3.48
     },
     {
       "id": "cactus-pears",
@@ -602,9 +836,9 @@
             "hoh": false,
             "tags": [
               "New releases",
-              "Digital",
               "English subtitles",
-              "releases"
+              "releases",
+              "Digital"
             ]
           }
         ],
@@ -616,9 +850,9 @@
             "hoh": false,
             "tags": [
               "New releases",
-              "releases",
               "English subtitles",
-              "Digital"
+              "Digital",
+              "releases"
             ]
           }
         ],
@@ -630,9 +864,9 @@
             "hoh": false,
             "tags": [
               "New releases",
-              "English subtitles",
+              "Digital",
               "Releases",
-              "Digital"
+              "English subtitles"
             ]
           }
         ],
@@ -644,9 +878,9 @@
             "hoh": false,
             "tags": [
               "New releases",
-              "Releases",
               "Digital",
-              "English subtitles"
+              "English subtitles",
+              "Releases"
             ]
           },
           {
@@ -656,17 +890,142 @@
             "hoh": false,
             "tags": [
               "New releases",
+              "Releases",
               "Digital",
-              "English subtitles",
-              "Releases"
+              "English subtitles"
             ]
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6",
+      "color": "#35a630",
+      "accent": "#88d684",
       "letterboxd_url": "https://letterboxd.com/film/cactus-pears/",
       "letterboxd_rating": 3.89
+    },
+    {
+      "id": "candy-mountain",
+      "title": "Candy Mountain",
+      "rating": "15",
+      "runtime": 92,
+      "genre": "Other",
+      "year": 1987,
+      "director": null,
+      "cast": "Kevin J O’Connor, Harris Yulin, Tom Waits, Joe Strummer",
+      "description": "Scripted and co-directed by Rudy Wurlitzer (Two-Lane Blacktop), this quintessential road movie is a rarely screened gem.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=candy-mountain&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/candy-mountain-01.jpeg",
+      "showtimes": {
+        "2026-07-11": [
+          {
+            "time": "20:45",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=395325E8-A3BF-4558-8693-EF635293A56B&BOparam::WScontent::loadArticle::context_id=BC7A5F71-22D3-49DB-94A5-D229C1A806C3",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Big screen classics",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#971a44",
+      "accent": "#d4537e",
+      "letterboxd_url": "https://letterboxd.com/film/candy-mountain/",
+      "letterboxd_rating": 3.48
+    },
+    {
+      "id": "charlie-and-lola-funday-25th-anniversary-qanda",
+      "title": "Funday: Charlie and Lola – 25th Anniversary",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "Celebrate the 25th anniversary of these beloved characters with writer and illustrator Lauren Child.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=charlie-and-lola-funday-25th-anniversary-qanda&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/charlie-and-lola-01.jpeg",
+      "showtimes": {
+        "2026-07-19": [
+          {
+            "time": "12:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=30B95AC0-502B-4390-ADE2-9322D7BD1402&BOparam::WScontent::loadArticle::context_id=C6AE6C4B-4E24-417F-9748-2C76CAC290F4",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Q&A",
+              "Families"
+            ]
+          }
+        ]
+      },
+      "color": "#21709f",
+      "accent": "#68abd3"
+    },
+    {
+      "id": "clash-by-night-intro",
+      "title": "Clash by Night",
+      "rating": "PG",
+      "runtime": 105,
+      "genre": "Other",
+      "year": 1952,
+      "director": "Fritz Lang",
+      "cast": "Barbara Stanwyck, Robert Ryan, Paul Douglas, Marilyn Monroe",
+      "description": "Marilyn Monroe impresses as a naïve small-town girl in Fritz Lang’s dark melodrama fraught with sexual tension.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=clash-by-night-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/clash-by-night-01.jpeg",
+      "showtimes": {
+        "2026-07-17": [
+          {
+            "time": "20:45",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=6744D7AD-1111-4860-B1C9-EE4B662601D1&BOparam::WScontent::loadArticle::context_id=3F459F00-6EA9-429D-92D5-47D03D3AF2F7",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Marilyn Monroe: Self-Made Star",
+              "Introduction",
+              "35mm",
+              "Marilyn Monroe"
+            ]
+          }
+        ]
+      },
+      "color": "#9ca630",
+      "accent": "#cfd684",
+      "letterboxd_url": "https://letterboxd.com/film/clash-by-night/",
+      "letterboxd_rating": 3.52
+    },
+    {
+      "id": "clash-by-night",
+      "title": "Clash by Night",
+      "rating": "PG",
+      "runtime": 105,
+      "genre": "Other",
+      "year": 1952,
+      "director": "Fritz Lang",
+      "cast": "Barbara Stanwyck, Robert Ryan, Paul Douglas, Marilyn Monroe",
+      "description": "Marilyn Monroe impresses as a naïve small-town girl in Fritz Lang’s dark melodrama fraught with sexual tension.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=clash-by-night&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/clash-by-night-01.jpeg",
+      "showtimes": {
+        "2026-07-05": [
+          {
+            "time": "12:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B72112AE-A4E7-4A45-B06A-9EC01FF09457&BOparam::WScontent::loadArticle::context_id=BD088EF2-7ED3-4D50-9084-CDCAF72871E7",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Marilyn Monroe: Self-Made Star",
+              "Marilyn Monroe",
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#7d1a97",
+      "accent": "#b953d4",
+      "letterboxd_url": "https://letterboxd.com/film/clash-by-night/",
+      "letterboxd_rating": 3.52
     },
     {
       "id": "compartment-no-6",
@@ -703,8 +1062,8 @@
             "hoh": false,
             "tags": [
               "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
-              "Digital",
               "English subtitles",
+              "Digital",
               "Station to Station"
             ]
           }
@@ -717,52 +1076,51 @@
             "hoh": false,
             "tags": [
               "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
-              "English subtitles",
               "Station to Station",
+              "Digital",
+              "English subtitles"
+            ]
+          }
+        ]
+      },
+      "color": "#219f60",
+      "accent": "#68d39d",
+      "letterboxd_url": "https://letterboxd.com/film/compartment-no-6/",
+      "letterboxd_rating": 3.82
+    },
+    {
+      "id": "diamond-butterfly",
+      "title": "The Diamond Butterfly",
+      "rating": "TBC",
+      "runtime": 77,
+      "genre": "Other",
+      "year": 1968,
+      "director": "Shanti Prasad Choudhury",
+      "cast": "Suchita Ray Chaudhury",
+      "description": "An intriguingly charming journey of a lost butterfly-shaped diamond brooch.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=diamond-butterfly&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202606/diamond-butterfly-01.jpeg",
+      "showtimes": {
+        "2026-06-28": [
+          {
+            "time": "18:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E7F47DA4-9BCA-43E5-980B-012D863BCCFD&BOparam::WScontent::loadArticle::context_id=09F60379-285F-4D69-B0E7-E9BE90AD8CA3",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Revolutionary Cinema: The Passion of Ritwik Ghatak",
+              "English subtitles",
+              "Ritwik Ghatak",
               "Digital"
             ]
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
-      "letterboxd_url": "https://letterboxd.com/film/compartment-no-6/",
-      "letterboxd_rating": 3.82
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
-      "id": "cyclone",
-      "title": "Cyclone",
-      "rating": "TBC",
-      "runtime": 100,
-      "genre": "Other",
-      "year": 2025,
-      "director": "Flávia Castro",
-      "cast": "Helena Albergaria, Magali Biff, Rogério Brito",
-      "description": "A working-class playwright battles patriarchy and scandal to claim her future in early-20th-century São Paulo.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=cyclone&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202606/cyclone-01.jpeg",
-      "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "20:40",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=BC54FA61-840B-4DF2-8BD8-FC841FDA8A70&BOparam::WScontent::loadArticle::context_id=A4537A80-479D-43C6-A65F-AEA1A37952BA",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "Digital",
-              "English subtitles",
-              "Brazil on Film"
-            ]
-          }
-        ]
-      },
-      "color": "#9f2190",
-      "accent": "#d368c6",
-      "letterboxd_url": "https://letterboxd.com/film/cyclone-2025/",
-      "letterboxd_rating": 3.43
-    },
-    {
-      "id": "dont-bother-to-knock",
+      "id": "dont-bother-to-knock-intro",
       "title": "Don’t Bother to Knock",
       "rating": "PG",
       "runtime": 76,
@@ -771,25 +1129,26 @@
       "director": "Roy Ward Baker",
       "cast": "Marilyn Monroe, Richard Widmark, Anne Bancroft",
       "description": "Marilyn Monroe thrills as an unstable babysitter in British director Roy Ward Baker’s psychological thriller.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=dont-bother-to-knock&BOparam::WScontent::loadArticle::context_id=",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=dont-bother-to-knock-intro&BOparam::WScontent::loadArticle::context_id=",
       "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/dont-bother-to-knock-01.jpeg",
       "showtimes": {
-        "2026-07-18": [
+        "2026-07-04": [
           {
-            "time": "15:15",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EC5BB579-4F04-49FD-AAF2-F323AD47791A&BOparam::WScontent::loadArticle::context_id=0333A660-C58D-4FE9-9061-B86019A84918",
+            "time": "18:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=40ED1C26-5DC6-4CCF-9117-789FE86299CA&BOparam::WScontent::loadArticle::context_id=C784BC99-5D58-48FB-AFC0-614DDD0599B9",
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
               "Marilyn Monroe: Self-Made Star",
-              "Marilyn Monroe",
-              "Digital"
+              "Digital",
+              "Introduction",
+              "Marilyn Monroe"
             ]
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8",
+      "color": "#1a2597",
+      "accent": "#535ed4",
       "letterboxd_url": "https://letterboxd.com/film/dont-bother-to-knock/",
       "letterboxd_rating": 3.51
     },
@@ -814,15 +1173,15 @@
             "hoh": false,
             "tags": [
               "Marilyn Monroe: Self-Made Star",
-              "Digital",
               "Marilyn Monroe",
-              "Q&A"
+              "Q&A",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953",
+      "color": "#519f21",
+      "accent": "#90d368",
       "letterboxd_url": "https://letterboxd.com/film/eve-and-marilyn/",
       "letterboxd_rating": null
     },
@@ -847,8 +1206,8 @@
             "hoh": false,
             "tags": [
               "Bullets and Brotherhood: The Films of John Woo",
-              "35mm",
-              "John Woo"
+              "John Woo",
+              "35mm"
             ]
           }
         ],
@@ -866,42 +1225,10 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#a6307e",
+      "accent": "#d684bb",
       "letterboxd_url": "https://letterboxd.com/film/face-off/",
       "letterboxd_rating": 3.58
-    },
-    {
-      "id": "fargo-extended-intro",
-      "title": "Fargo",
-      "rating": "15",
-      "runtime": 98,
-      "genre": "Other",
-      "year": 1996,
-      "director": "Joel Coen",
-      "cast": "Frances McDormand, William H. Macy, Steve Buscemi, Peter Stormare",
-      "description": "A botched kidnapping, inept but ruthless criminals and a relentlessly polite police chief collide in this 1990s Coen Brothers classic.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=fargo-extended-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202606/fargo-01.jpeg",
-      "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "20:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=65BA69EE-56CD-44E7-A366-38A73A192143&BOparam::WScontent::loadArticle::context_id=9DCAF6D3-B0D2-4BA6-9254-FE265D0918F8",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Previews and events",
-              "Introduction",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#35a630",
-      "accent": "#88d684",
-      "letterboxd_url": "https://letterboxd.com/film/fargo/",
-      "letterboxd_rating": 4.14
     },
     {
       "id": "father-and-the-shaman",
@@ -923,16 +1250,16 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Brazil on Film",
               "Introduction",
+              "Digital",
               "English subtitles",
-              "Digital"
+              "Brazil on Film"
             ]
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e"
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     },
     {
       "id": "feel-the-floor-new-writings",
@@ -955,14 +1282,14 @@
             "hoh": false,
             "tags": [
               "BFI Reuben Library",
-              "BFI Reuben library events",
-              "Talk"
+              "Talk",
+              "BFI Reuben library events"
             ]
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "fiddler-on-the-roof-member-picks",
@@ -990,8 +1317,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684",
+      "color": "#6530a6",
+      "accent": "#a984d6",
       "letterboxd_url": "https://letterboxd.com/film/fiddler-on-the-roof/",
       "letterboxd_rating": 4.13
     },
@@ -1023,8 +1350,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4",
+      "color": "#1a972f",
+      "accent": "#53d468",
       "letterboxd_url": "https://letterboxd.com/film/gentlemen-prefer-blondes/",
       "letterboxd_rating": 3.87
     },
@@ -1049,8 +1376,8 @@
             "hoh": false,
             "tags": [
               "Marilyn Monroe: Self-Made Star",
-              "Marilyn Monroe",
-              "Digital"
+              "Digital",
+              "Marilyn Monroe"
             ]
           }
         ],
@@ -1068,8 +1395,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d",
+      "color": "#9f2132",
+      "accent": "#d36876",
       "letterboxd_url": "https://letterboxd.com/film/gentlemen-prefer-blondes/",
       "letterboxd_rating": 3.87
     },
@@ -1102,8 +1429,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584",
+      "color": "#3061a6",
+      "accent": "#84a6d6",
       "letterboxd_url": "https://letterboxd.com/film/ghatak-was-here/",
       "letterboxd_rating": null
     },
@@ -1185,8 +1512,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#73971a",
+      "accent": "#afd453"
     },
     {
       "id": "girls-member-exclusive",
@@ -1209,14 +1536,14 @@
             "hoh": false,
             "tags": [
               "English subtitles",
-              "Digital",
-              "Member exclusives"
+              "Member exclusives",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "goodness-gracious-me-reunion-qanda",
@@ -1238,14 +1565,14 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Q&A",
-              "London Indian Film Festival"
+              "London Indian Film Festival",
+              "Q&A"
             ]
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "hamlet-2026",
@@ -1268,63 +1595,94 @@
             "hoh": false,
             "tags": [
               "Regular programme",
-              "Digital",
-              "Film Wallahs"
+              "Film Wallahs",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4",
+      "color": "#974e1a",
+      "accent": "#d48853",
       "letterboxd_url": "https://letterboxd.com/film/hamlet-2025/",
       "letterboxd_rating": 3.26
     },
     {
-      "id": "hard-boiled-2026",
-      "title": "Hard Boiled",
-      "rating": "18",
-      "runtime": 128,
+      "id": "happy-together-intro",
+      "title": "Happy Together",
+      "rating": "15",
+      "runtime": 96,
       "genre": "Other",
-      "year": 1992,
-      "director": "John Woo",
-      "cast": "Chow Yun-fat, Tony Leung Chiu-wai, Teresa Mo",
-      "description": "The action looks incredible in this in newly restored, digital 4K version of John Woo’s crime thriller masterpiece about a vengeful cop taking down an weapons-smuggling syndicate.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=hard-boiled-2026&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/hard-boiled-01.jpeg",
+      "year": 1997,
+      "director": "Wong Kar Wai",
+      "cast": "Tony Leung Chiu-wai, Leslie Cheung",
+      "description": "Wong Kar Wai’s emotive and beautifully shot drama about a turbulent relationship makes the most of its Buenos Aires backdrop.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=happy-together-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/happy-together-01.jpeg",
       "showtimes": {
-        "2026-07-11": [
+        "2026-07-08": [
           {
-            "time": "20:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=86577916-52E2-4BF2-9F7E-D9EBBBECA637&BOparam::WScontent::loadArticle::context_id=E6879810-BE7C-4D8C-960B-DF45906DA910",
+            "time": "18:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=FD1CE48E-C937-498E-9C0C-BEC598FCFBA1&BOparam::WScontent::loadArticle::context_id=2A7F9686-02E1-40D7-B667-AC987EAF569C",
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Bullets and Brotherhood: The Films of John Woo",
+              "Introduction",
               "English subtitles",
               "Digital",
-              "John Woo"
-            ]
-          }
-        ],
-        "2026-07-25": [
-          {
-            "time": "14:45",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=86577916-52E2-4BF2-9F7E-D9EBBBECA637&BOparam::WScontent::loadArticle::context_id=24A1FAAC-3ED0-4059-92B1-9235681188A3",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "Bullets and Brotherhood: The Films of John Woo",
-              "English subtitles",
-              "Digital",
-              "John Woo"
+              "Big screen classics"
             ]
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868",
-      "letterboxd_url": "https://letterboxd.com/film/hard-boiled/",
-      "letterboxd_rating": 4.19
+      "color": "#31219f",
+      "accent": "#7568d3",
+      "letterboxd_url": "https://letterboxd.com/film/happy-together-1997/",
+      "letterboxd_rating": 4.21
+    },
+    {
+      "id": "happy-together",
+      "title": "Happy Together",
+      "rating": "15",
+      "runtime": 96,
+      "genre": "Other",
+      "year": 1997,
+      "director": "Wong Kar Wai",
+      "cast": "Tony Leung Chiu-wai, Leslie Cheung",
+      "description": "Wong Kar Wai’s emotive and beautifully shot drama about a turbulent relationship makes the most of its Buenos Aires backdrop.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=happy-together&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/happy-together-01.jpeg",
+      "showtimes": {
+        "2026-07-24": [
+          {
+            "time": "20:55",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E48CB296-2683-4E1E-9F8B-2FABA56B603F&BOparam::WScontent::loadArticle::context_id=529259D9-A594-49FF-AD01-FB4BC64E6380",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Big screen classics",
+              "Digital",
+              "English subtitles"
+            ]
+          }
+        ],
+        "2026-07-30": [
+          {
+            "time": "21:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E48CB296-2683-4E1E-9F8B-2FABA56B603F&BOparam::WScontent::loadArticle::context_id=9920B40A-A109-492C-A829-EC579FD5FDEC",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Big screen classics",
+              "English subtitles",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#44a630",
+      "accent": "#92d684",
+      "letterboxd_url": "https://letterboxd.com/film/happy-together-1997/",
+      "letterboxd_rating": 4.21
     },
     {
       "id": "hard-boiled-intro",
@@ -1355,8 +1713,85 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6",
+      "color": "#971a54",
+      "accent": "#d4538f",
+      "letterboxd_url": "https://letterboxd.com/film/hard-boiled/",
+      "letterboxd_rating": 4.19
+    },
+    {
+      "id": "hard-streets-new-writings",
+      "title": "Hard Streets – Working Class Lives in Charlie Chaplin’s London with Jacqueline Riding",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "From Edwardian poverty to cinematic genius, Jacqueline Riding explores how Chaplin’s Lambeth roots, radical politics and street culture shaped his films and enduring worldview globally.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=hard-streets-new-writings&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/hard-streets-book-cover-01.jpeg",
+      "showtimes": {
+        "2026-07-06": [
+          {
+            "time": "18:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AABB136F-F887-45C7-A290-9B92AE3DCD9E&BOparam::WScontent::loadArticle::context_id=8C5D7FA1-FFE4-4010-9498-52E88FF0EF47",
+            "screen": "BFI Reuben Library",
+            "hoh": false,
+            "tags": [
+              "BFI Reuben Library",
+              "BFI Reuben library events",
+              "Talk"
+            ]
+          }
+        ]
+      },
+      "color": "#21809f",
+      "accent": "#68b9d3"
+    },
+    {
+      "id": "hard-boiled-2026",
+      "title": "Hard Boiled",
+      "rating": "18",
+      "runtime": 128,
+      "genre": "Other",
+      "year": 1992,
+      "director": "John Woo",
+      "cast": "Chow Yun-fat, Tony Leung Chiu-wai, Teresa Mo",
+      "description": "The action looks incredible in this in newly restored, digital 4K version of John Woo’s crime thriller masterpiece about a vengeful cop taking down an weapons-smuggling syndicate.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=hard-boiled-2026&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/hard-boiled-01.jpeg",
+      "showtimes": {
+        "2026-07-11": [
+          {
+            "time": "20:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=86577916-52E2-4BF2-9F7E-D9EBBBECA637&BOparam::WScontent::loadArticle::context_id=E6879810-BE7C-4D8C-960B-DF45906DA910",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Bullets and Brotherhood: The Films of John Woo",
+              "John Woo",
+              "English subtitles",
+              "Digital"
+            ]
+          }
+        ],
+        "2026-07-25": [
+          {
+            "time": "14:45",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=86577916-52E2-4BF2-9F7E-D9EBBBECA637&BOparam::WScontent::loadArticle::context_id=24A1FAAC-3ED0-4059-92B1-9235681188A3",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Bullets and Brotherhood: The Films of John Woo",
+              "English subtitles",
+              "Digital",
+              "John Woo"
+            ]
+          }
+        ]
+      },
+      "color": "#a6a030",
+      "accent": "#d6d284",
       "letterboxd_url": "https://letterboxd.com/film/hard-boiled/",
       "letterboxd_rating": 4.19
     },
@@ -1381,8 +1816,8 @@
             "hoh": false,
             "tags": [
               "Bullets and Brotherhood: The Films of John Woo",
-              "John Woo",
-              "Digital"
+              "Digital",
+              "John Woo"
             ]
           }
         ],
@@ -1413,40 +1848,43 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468",
+      "color": "#6d1a97",
+      "accent": "#a853d4",
       "letterboxd_url": "https://letterboxd.com/film/hard-target/",
       "letterboxd_rating": 3.32
     },
     {
-      "id": "hard-streets-new-writings",
-      "title": "Hard Streets – Working Class Lives in Charlie Chaplin’s London with Jacqueline Riding",
-      "rating": "TBC",
-      "runtime": null,
+      "id": "how-to-marry-a-millionaire-jul-2026-intro",
+      "title": "How to Marry a Millionaire",
+      "rating": "U",
+      "runtime": 95,
       "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "description": "From Edwardian poverty to cinematic genius, Jacqueline Riding explores how Chaplin’s Lambeth roots, radical politics and street culture shaped his films and enduring worldview globally.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=hard-streets-new-writings&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/hard-streets-book-cover-01.jpeg",
+      "year": 1953,
+      "director": "Jean Negulesco",
+      "cast": "Marilyn Monroe, Betty Grable, Lauren Bacall",
+      "description": "In this hilarious comedy, Marilyn Monroe teams up with Betty Grable and Lauren Bacall as three women on a mission to marry wealthy suitors.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=how-to-marry-a-millionaire-jul-2026-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/how-to-marry-a-millionaire-01.jpeg",
       "showtimes": {
-        "2026-07-06": [
+        "2026-07-09": [
           {
-            "time": "18:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AABB136F-F887-45C7-A290-9B92AE3DCD9E&BOparam::WScontent::loadArticle::context_id=8C5D7FA1-FFE4-4010-9498-52E88FF0EF47",
-            "screen": "BFI Reuben Library",
+            "time": "20:50",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7E03C5BF-815F-4390-9062-CD687D67BF0C&BOparam::WScontent::loadArticle::context_id=F6AF457A-7813-430D-AB44-11895ED85C0F",
+            "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "BFI Reuben Library",
-              "Talk",
-              "BFI Reuben library events"
+              "Marilyn Monroe: Self-Made Star",
+              "Introduction",
+              "Digital",
+              "Marilyn Monroe"
             ]
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#219f50",
+      "accent": "#68d390",
+      "letterboxd_url": "https://letterboxd.com/film/how-to-marry-a-millionaire/",
+      "letterboxd_rating": 3.48
     },
     {
       "id": "how-to-marry-a-millionaire",
@@ -1482,14 +1920,14 @@
             "hoh": false,
             "tags": [
               "Marilyn Monroe: Self-Made Star",
-              "Marilyn Monroe",
-              "Digital"
+              "Digital",
+              "Marilyn Monroe"
             ]
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6",
+      "color": "#a63930",
+      "accent": "#d68b84",
       "letterboxd_url": "https://letterboxd.com/film/how-to-marry-a-millionaire/",
       "letterboxd_rating": 3.48
     },
@@ -1513,48 +1951,50 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "Digital",
-              "English subtitles",
+              "Discussion",
               "London Indian Film Festival",
-              "Discussion"
+              "English subtitles",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453",
+      "color": "#1a3597",
+      "accent": "#536ed4",
       "letterboxd_url": "https://letterboxd.com/film/in-search-of-the-sky/",
       "letterboxd_rating": null
     },
     {
-      "id": "invisible-life-of-euridice-gusmao",
-      "title": "The Invisible Life of Eurídice Gusmão",
-      "rating": "18",
-      "runtime": 140,
+      "id": "in-which-annie-gives-it-those-ones-4k-restoration-uk-premiere-qanda",
+      "title": "In Which Annie Gives It Those Ones",
+      "rating": "TBC",
+      "runtime": 112,
       "genre": "Other",
-      "year": 2019,
-      "director": "Karim Aïnouz",
-      "cast": "Carol Duarte, Julia Stockler, Gregorio Duvivier",
-      "description": "A ravishing melodrama of sisterhood and resilience, set in 1950s Rio.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=invisible-life-of-euridice-gusmao&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202606/invisible-life-of-euridice-gusmao-01.jpeg",
+      "year": 1989,
+      "director": "Pradip Krishen",
+      "cast": "Arundhati Roy, Roshan Seth, Arjun Raina, Rituraj",
+      "description": "A new restoration of this cult classic written by Arundhati Roy which captured the zeitgeist of student life in an architecture school in 1970s Delhi.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=in-which-annie-gives-it-those-ones-4k-restoration-uk-premiere-qanda&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/in-which-annie-gives-it-those-ones-01.jpeg",
       "showtimes": {
-        "2026-06-28": [
+        "2026-07-15": [
           {
-            "time": "18:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1C91AF68-BE33-4B97-BAD5-AEC6C175274D&BOparam::WScontent::loadArticle::context_id=92048D1A-563C-4E92-AFD8-154DA793284F",
+            "time": "20:20",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=0450CD90-A3DA-434F-8663-ACF412420AC8&BOparam::WScontent::loadArticle::context_id=F86761FE-167D-4725-B9C2-70F63D777E8E",
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
+              "London Indian Film Festival",
               "Digital",
-              "Brazil on Film",
-              "English subtitles"
+              "Q&A"
             ]
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#619f21",
+      "accent": "#9ed368",
+      "letterboxd_url": "https://letterboxd.com/film/in-which-annie-gives-it-those-ones/",
+      "letterboxd_rating": 3.79
     },
     {
       "id": "indias-ai-film-future-discussion",
@@ -1576,15 +2016,103 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "Talk",
+              "London Indian Film Festival",
               "Discussion",
-              "London Indian Film Festival"
+              "Talk"
             ]
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be"
+      "color": "#a6308e",
+      "accent": "#d684c5"
+    },
+    {
+      "id": "invite",
+      "title": "The Invite",
+      "rating": "15",
+      "runtime": 108,
+      "genre": "Other",
+      "year": 2026,
+      "director": "Olivia Wilde",
+      "cast": "Olivia Wilde, Seth Rogen, Penélope Cruz, Edward Norton",
+      "description": "The latest film from Olivia Wilde is her finest work yet – a charged, hilarious chamber piece that reverberates with the simmering tension of Who’s Afraid of Virginia Woolf? and channels the queasy comedy of Abigail’s Party.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=invite&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/invite-01.jpeg",
+      "showtimes": {
+        "2026-07-03": [
+          {
+            "time": "14:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7849EE78-C562-4162-BF14-C316DE66FB3D&BOparam::WScontent::loadArticle::context_id=79F3C283-C811-4264-A135-D501BCCFE7E0",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "Digital",
+              "Audio description",
+              "Releases",
+              "Closed captions"
+            ]
+          },
+          {
+            "time": "18:20",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7849EE78-C562-4162-BF14-C316DE66FB3D&BOparam::WScontent::loadArticle::context_id=BEDB6CCA-5F25-4636-9338-BB5E38E9F208",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "Digital",
+              "Audio description",
+              "Closed captions",
+              "Releases"
+            ]
+          },
+          {
+            "time": "20:40",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7849EE78-C562-4162-BF14-C316DE66FB3D&BOparam::WScontent::loadArticle::context_id=94DD0538-E506-4A88-91BB-BAC8954C7EEA",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "Digital",
+              "Closed captions",
+              "Releases",
+              "Audio description"
+            ]
+          }
+        ],
+        "2026-07-04": [
+          {
+            "time": "12:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7849EE78-C562-4162-BF14-C316DE66FB3D&BOparam::WScontent::loadArticle::context_id=3C8183A9-5F36-46A5-9769-A96330017A20",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "Audio description",
+              "Releases",
+              "Closed captions",
+              "Digital"
+            ]
+          },
+          {
+            "time": "14:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7849EE78-C562-4162-BF14-C316DE66FB3D&BOparam::WScontent::loadArticle::context_id=31D7E8F9-4596-420A-B09B-81297E54B69D",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "New releases",
+              "Releases",
+              "Descriptive subtitles (open captions)",
+              "Audio description",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#1a978c",
+      "accent": "#53d4c8",
+      "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
+      "letterboxd_rating": 4.09
     },
     {
       "id": "ish-preview-qanda",
@@ -1607,21 +2135,85 @@
             "hoh": false,
             "tags": [
               "Previews and events",
-              "Q&A",
-              "Live captioned",
-              "Preview",
-              "Descriptive subtitles (open captions)",
-              "Audio description",
               "Digital",
-              "Live captions"
+              "Live captions",
+              "Live captioned",
+              "Q&A",
+              "Audio description",
+              "Descriptive subtitles (open captions)",
+              "Preview"
             ]
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853",
+      "color": "#9f7021",
+      "accent": "#d3aa68",
       "letterboxd_url": "https://letterboxd.com/film/ish-2025/",
       "letterboxd_rating": 3.46
+    },
+    {
+      "id": "its-love-again-intro",
+      "title": "It’s Love Again",
+      "rating": "U",
+      "runtime": 84,
+      "genre": "Other",
+      "year": 1936,
+      "director": "Victor Saville",
+      "cast": "Jessie Matthews, Robert Young, Sonnie Hale, Ernest Milton",
+      "description": "This ultra-stylish Jessie Matthews musical is a brilliant comedy of mistaken identity.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=its-love-again-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/its-love-again-01.jpeg",
+      "showtimes": {
+        "2026-07-07": [
+          {
+            "time": "18:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AC1F5DDF-4202-4B1D-AD13-2A80E6436AA3&BOparam::WScontent::loadArticle::context_id=8EBAAA77-56C6-476E-9C87-7D85AF5A8464",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Regular programme",
+              "35mm",
+              "Introduction",
+              "Projecting the archive"
+            ]
+          }
+        ]
+      },
+      "color": "#5630a6",
+      "accent": "#9f84d6",
+      "letterboxd_url": "https://letterboxd.com/film/its-love-again/",
+      "letterboxd_rating": null
+    },
+    {
+      "id": "john-woo-double-bill",
+      "title": "Red Cliff Part I + Red Cliff Part II",
+      "rating": "15",
+      "runtime": 141,
+      "genre": "Other",
+      "year": 2009,
+      "director": "John Woo",
+      "cast": "Tony Leung Chiu-wai, Takeshi Kaneshiro, Zhang Fengyi, Chang Chen",
+      "description": "Don’t miss your opportunity to see both parts of John Woo’s historical epic on the big screen.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=john-woo-double-bill&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/red-cliff-part-i-01.jpeg",
+      "showtimes": {
+        "2026-07-25": [
+          {
+            "time": "17:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E2A30FB9-6457-459B-97C7-ED260A22C62B&BOparam::WScontent::loadArticle::context_id=B59F1F69-83B9-4FB8-B254-66F960D52344",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Bullets and Brotherhood: The Films of John Woo",
+              "Digital",
+              "John Woo",
+              "English subtitles"
+            ]
+          }
+        ]
+      },
+      "color": "#1a971f",
+      "accent": "#53d458"
     },
     {
       "id": "ish",
@@ -1645,8 +2237,8 @@
             "tags": [
               "New releases",
               "Digital",
-              "Releases",
-              "Audio description"
+              "Audio description",
+              "Releases"
             ]
           },
           {
@@ -1669,15 +2261,15 @@
             "tags": [
               "New releases",
               "Digital",
-              "Audio description",
               "Descriptive subtitles (open captions)",
-              "Releases"
+              "Releases",
+              "Audio description"
             ]
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3",
+      "color": "#9f2142",
+      "accent": "#d36884",
       "letterboxd_url": "https://letterboxd.com/film/ish-2025/",
       "letterboxd_rating": 3.46
     },
@@ -1702,14 +2294,47 @@
             "hoh": false,
             "tags": [
               "London Indian Film Festival",
-              "Discussion",
-              "Q&A"
+              "Q&A",
+              "Discussion"
             ]
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#3070a6",
+      "accent": "#84b1d6"
+    },
+    {
+      "id": "killer",
+      "title": "The Killer",
+      "rating": "18",
+      "runtime": 111,
+      "genre": "Other",
+      "year": 1989,
+      "director": "John Woo",
+      "cast": "Chow Yun-fat, Sally Yeh, Danny Lee",
+      "description": "In one of John Woo’s finest Hong Kong films, Chow Yun-fat excels as a charismatic hitman defined by an unshakeable a moral code.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=killer&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/killer-01.jpeg",
+      "showtimes": {
+        "2026-07-04": [
+          {
+            "time": "20:45",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C8598817-CAA3-4EB1-8EBE-544A0081BD55&BOparam::WScontent::loadArticle::context_id=1A2FA504-4DC5-4F70-A217-1E015910C403",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Bullets and Brotherhood: The Films of John Woo",
+              "Digital",
+              "John Woo",
+              "English subtitles"
+            ]
+          }
+        ]
+      },
+      "color": "#83971a",
+      "accent": "#bfd453",
+      "letterboxd_url": "https://letterboxd.com/film/the-killer/",
+      "letterboxd_rating": 4.16
     },
     {
       "id": "killer-intro",
@@ -1732,18 +2357,63 @@
             "hoh": false,
             "tags": [
               "Bullets and Brotherhood: The Films of John Woo",
-              "English subtitles",
-              "John Woo",
               "Introduction",
+              "John Woo",
+              "Digital",
+              "English subtitles"
+            ]
+          }
+        ]
+      },
+      "color": "#8f219f",
+      "accent": "#c568d3",
+      "letterboxd_url": "https://letterboxd.com/film/the-killer/",
+      "letterboxd_rating": 4.16
+    },
+    {
+      "id": "kings-of-the-road",
+      "title": "Kings of the Road",
+      "rating": "18",
+      "runtime": 176,
+      "genre": "Other",
+      "year": 1976,
+      "director": "Wim Wenders",
+      "cast": "Rüdiger Vogler, Hanns Zischler, Lisa Kreuzer, Rudolf Schündler",
+      "description": "Wim Wenders’ remarkable road-movie follows two men as they travel through a country in the midst of momentous change.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=kings-of-the-road&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/kings-of-the-road-01.jpeg",
+      "showtimes": {
+        "2026-07-19": [
+          {
+            "time": "17:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=98275C05-D4C3-4C65-8F00-5C8AEF7F3A38&BOparam::WScontent::loadArticle::context_id=BFDEEF8A-5734-427D-8874-4D1AF6E25295",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "English subtitles",
+              "Big screen classics"
+            ]
+          }
+        ],
+        "2026-07-26": [
+          {
+            "time": "17:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=98275C05-D4C3-4C65-8F00-5C8AEF7F3A38&BOparam::WScontent::loadArticle::context_id=6C0DB718-EA1E-4857-B861-44EB56D35F09",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Big screen classics",
+              "English subtitles",
               "Digital"
             ]
           }
         ]
       },
-      "color": "#971a54",
-      "accent": "#d4538f",
-      "letterboxd_url": "https://letterboxd.com/film/the-killer/",
-      "letterboxd_rating": 4.16
+      "color": "#30a674",
+      "accent": "#84d6b3",
+      "letterboxd_url": "https://letterboxd.com/film/kings-of-the-road/",
+      "letterboxd_rating": 4.01
     },
     {
       "id": "ladies-of-the-chorus-intro",
@@ -1766,15 +2436,15 @@
             "hoh": false,
             "tags": [
               "Marilyn Monroe: Self-Made Star",
-              "Marilyn Monroe",
+              "35mm",
               "Introduction",
-              "35mm"
+              "Marilyn Monroe"
             ]
           }
         ]
       },
-      "color": "#21809f",
-      "accent": "#68b9d3",
+      "color": "#973e1a",
+      "accent": "#d47853",
       "letterboxd_url": "https://letterboxd.com/film/ladies-of-the-chorus/",
       "letterboxd_rating": 3.17
     },
@@ -1805,8 +2475,8 @@
           }
         ]
       },
-      "color": "#a6a030",
-      "accent": "#d6d284",
+      "color": "#21229f",
+      "accent": "#6869d3",
       "letterboxd_url": "https://letterboxd.com/film/ladies-of-the-chorus/",
       "letterboxd_rating": 3.17
     },
@@ -1844,14 +2514,14 @@
             "hoh": false,
             "tags": [
               "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
-              "Digital",
-              "Station to Station"
+              "Station to Station",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#6d1a97",
-      "accent": "#a853d4",
+      "color": "#53a630",
+      "accent": "#9cd684",
       "letterboxd_url": "https://letterboxd.com/film/the-lady-vanishes/",
       "letterboxd_rating": 3.91
     },
@@ -1876,9 +2546,9 @@
             "hoh": false,
             "tags": [
               "New releases",
+              "Releases",
               "Digital",
-              "Descriptive subtitles (open captions)",
-              "Releases"
+              "Descriptive subtitles (open captions)"
             ]
           }
         ],
@@ -1903,9 +2573,9 @@
             "hoh": false,
             "tags": [
               "New releases",
+              "Releases",
               "Digital",
-              "Descriptive subtitles (open captions)",
-              "Releases"
+              "Descriptive subtitles (open captions)"
             ]
           }
         ],
@@ -1936,8 +2606,8 @@
           }
         ]
       },
-      "color": "#219f50",
-      "accent": "#68d390",
+      "color": "#971a64",
+      "accent": "#d4539f",
       "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
       "letterboxd_rating": 3.59
     },
@@ -1969,10 +2639,105 @@
           }
         ]
       },
-      "color": "#a63930",
-      "accent": "#d68b84",
+      "color": "#21909f",
+      "accent": "#68c6d3",
       "letterboxd_url": "https://letterboxd.com/film/lets-make-love/",
       "letterboxd_rating": 3.24
+    },
+    {
+      "id": "little-amelie",
+      "title": "Little Amélie",
+      "rating": "PG",
+      "runtime": 78,
+      "genre": "Other",
+      "year": 2025,
+      "director": null,
+      "cast": null,
+      "description": "This outstanding, richly colourful animated work is set in late 1960s Japan and presents an infant-eye view of the world.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=little-amelie&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/little-amelie-01.jpeg",
+      "showtimes": {
+        "2026-07-26": [
+          {
+            "time": "12:20",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AF1C456A-A9AD-44FD-B649-371F5CEE0BE7&BOparam::WScontent::loadArticle::context_id=320414C9-EA3A-461E-A8C1-F8CCE3B6D242",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Families",
+              "Digital"
+            ]
+          }
+        ],
+        "2026-07-28": [
+          {
+            "time": "15:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AF1C456A-A9AD-44FD-B649-371F5CEE0BE7&BOparam::WScontent::loadArticle::context_id=B8F3CE39-A383-4E3C-86D5-33E89C20D57F",
+            "screen": "Screen NFT4",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Families"
+            ]
+          }
+        ],
+        "2026-07-30": [
+          {
+            "time": "12:20",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AF1C456A-A9AD-44FD-B649-371F5CEE0BE7&BOparam::WScontent::loadArticle::context_id=30D599C6-909F-42E5-8480-8EDFCFD88D00",
+            "screen": "Screen NFT4",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Families"
+            ]
+          }
+        ],
+        "2026-07-31": [
+          {
+            "time": "14:45",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=AF1C456A-A9AD-44FD-B649-371F5CEE0BE7&BOparam::WScontent::loadArticle::context_id=352965E8-5F70-42B6-A32C-48D64CBCF2D1",
+            "screen": "Screen NFT4",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Families"
+            ]
+          }
+        ]
+      },
+      "color": "#a69130",
+      "accent": "#d6c884"
+    },
+    {
+      "id": "lost-star-belinda-lee-library-talk",
+      "title": "Lost Star – The Rediscovery of the Transnational Stardom of Belinda Lee with Steve Chibnall",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "Steve Chibnall uncovers a forgotten film star’s meteoric rise and fall, from English seaside fame to American exile, revealing postwar challenges to respectability and stardom.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=lost-star-belinda-lee-library-talk&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/lost-star-belinda-lee-book-cover-01.jpeg",
+      "showtimes": {
+        "2026-07-20": [
+          {
+            "time": "18:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D8B9186C-2A85-46B6-A166-F2495FBC9B50&BOparam::WScontent::loadArticle::context_id=D1FF3370-9025-41FF-9E46-11186168C68B",
+            "screen": "BFI Reuben Library",
+            "hoh": false,
+            "tags": [
+              "BFI Reuben Library",
+              "BFI Reuben library events",
+              "Talk"
+            ]
+          }
+        ]
+      },
+      "color": "#5d1a97",
+      "accent": "#9853d4"
     },
     {
       "id": "mad-max-2-jul-2026",
@@ -2006,46 +2771,16 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Digital",
-              "Big screen classics"
+              "Big screen classics",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#1a3597",
-      "accent": "#536ed4",
+      "color": "#219f40",
+      "accent": "#68d382",
       "letterboxd_url": "https://letterboxd.com/film/mad-max-2/",
       "letterboxd_rating": 3.89
-    },
-    {
-      "id": "lost-star-belinda-lee-library-talk",
-      "title": "Lost Star – The Rediscovery of the Transnational Stardom of Belinda Lee with Steve Chibnall",
-      "rating": "TBC",
-      "runtime": null,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "description": "Steve Chibnall uncovers a forgotten film star’s meteoric rise and fall, from English seaside fame to American exile, revealing postwar challenges to respectability and stardom.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=lost-star-belinda-lee-library-talk&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/lost-star-belinda-lee-book-cover-01.jpeg",
-      "showtimes": {
-        "2026-07-20": [
-          {
-            "time": "18:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D8B9186C-2A85-46B6-A166-F2495FBC9B50&BOparam::WScontent::loadArticle::context_id=D1FF3370-9025-41FF-9E46-11186168C68B",
-            "screen": "BFI Reuben Library",
-            "hoh": false,
-            "tags": [
-              "BFI Reuben Library",
-              "Talk",
-              "BFI Reuben library events"
-            ]
-          }
-        ]
-      },
-      "color": "#619f21",
-      "accent": "#9ed368"
     },
     {
       "id": "marilyn-monroe-library-lates",
@@ -2072,8 +2807,8 @@
           }
         ]
       },
-      "color": "#a6308e",
-      "accent": "#d684c5",
+      "color": "#a63035",
+      "accent": "#d68488",
       "letterboxd_url": "https://letterboxd.com/film/marilyn-monroe/",
       "letterboxd_rating": null
     },
@@ -2105,8 +2840,69 @@
           }
         ]
       },
-      "color": "#1a978c",
-      "accent": "#53d4c8"
+      "color": "#1a4597",
+      "accent": "#537fd4"
+    },
+    {
+      "id": "marilyn-monroe-study-day",
+      "title": "Marilyn Monroe Study Day",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "Take a contextual deep dive into Marilyn Monroe with this dedicated day of talks and screenings.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=marilyn-monroe-study-day&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/seven-year-itch-01.jpeg",
+      "showtimes": {
+        "2026-07-04": [
+          {
+            "time": "12:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=DAA7E6C7-989F-4B7B-B250-CAD2D6178EC5&BOparam::WScontent::loadArticle::context_id=05D76B20-0541-4D07-8631-54E96D12DD4A",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Marilyn Monroe: Self-Made Star",
+              "Talk",
+              "Marilyn Monroe"
+            ]
+          }
+        ]
+      },
+      "color": "#719f21",
+      "accent": "#acd368"
+    },
+    {
+      "id": "marilynspirations-double-bill",
+      "title": "Marilynspirations Double Bill",
+      "rating": "PG",
+      "runtime": 99,
+      "genre": "Other",
+      "year": 1934,
+      "director": "Cecil B. DeMille",
+      "cast": "Claudette Colbert, Warren William, Henry Wilcoxon, Joseph Schildkraut",
+      "description": "This Claudette Colbert and Jean Harlow double bill celebrates the stars that influenced Marilyn Monroe.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=marilynspirations-double-bill&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/hold-your-man-01.jpeg",
+      "showtimes": {
+        "2026-07-11": [
+          {
+            "time": "14:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C41E190A-9DD0-43B3-986C-232377EFBD17&BOparam::WScontent::loadArticle::context_id=4F15011F-6E80-4962-955F-1E2BEFA78179",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Marilyn Monroe: Self-Made Star",
+              "Marilyn Monroe",
+              "35mm",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#a6309d",
+      "accent": "#d684d0"
     },
     {
       "id": "kermode-live-jul-2026",
@@ -2129,14 +2925,14 @@
             "hoh": false,
             "tags": [
               "Previews and events",
-              "Q&A",
-              "Discussion"
+              "Discussion",
+              "Q&A"
             ]
           }
         ]
       },
-      "color": "#9f7021",
-      "accent": "#d3aa68"
+      "color": "#1a977c",
+      "accent": "#53d4b8"
     },
     {
       "id": "southbank-imax-tour-jul-2026",
@@ -2163,90 +2959,8 @@
           }
         ]
       },
-      "color": "#5630a6",
-      "accent": "#9f84d6"
-    },
-    {
-      "id": "misfits-2026",
-      "title": "The Misfits",
-      "rating": "PG",
-      "runtime": 125,
-      "genre": "Other",
-      "year": 1961,
-      "director": "John Huston",
-      "cast": "Clark Gable, Marilyn Monroe, Montgomery Clift",
-      "description": "Marilyn Monroe’s final film is a poignant and poetic drama, infused with the promise of what could have been had she had more time to explore her skills as a dramatic performer.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=misfits-2026&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202606/misfits-02.jpeg",
-      "showtimes": {
-        "2026-07-05": [
-          {
-            "time": "15:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E9FF3A15-D089-4256-A75B-6421A5B791DF&BOparam::WScontent::loadArticle::context_id=E4B9C659-D021-49CB-8A95-BEE705FD67A2",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "Re-releases",
-              "Releases",
-              "Digital"
-            ]
-          }
-        ],
-        "2026-07-09": [
-          {
-            "time": "18:15",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E9FF3A15-D089-4256-A75B-6421A5B791DF&BOparam::WScontent::loadArticle::context_id=596029D9-9C7A-4B68-914A-8A42B9FFC27F",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "Re-releases",
-              "Releases",
-              "Digital"
-            ]
-          }
-        ],
-        "2026-07-17": [
-          {
-            "time": "14:45",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E9FF3A15-D089-4256-A75B-6421A5B791DF&BOparam::WScontent::loadArticle::context_id=CAF0216B-96BC-4F85-B3E7-14838BD5989B",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Re-releases",
-              "Digital",
-              "Releases"
-            ]
-          }
-        ],
-        "2026-07-18": [
-          {
-            "time": "15:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E9FF3A15-D089-4256-A75B-6421A5B791DF&BOparam::WScontent::loadArticle::context_id=692A402F-68FD-432C-BF33-C385698F24E4",
-            "screen": "Screen NFT1",
-            "hoh": false,
-            "tags": [
-              "Re-releases",
-              "Releases",
-              "Digital"
-            ]
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E9FF3A15-D089-4256-A75B-6421A5B791DF&BOparam::WScontent::loadArticle::context_id=DDF58E28-4C7F-436B-A6FE-766685781E9F",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "Re-releases",
-              "Releases",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#1a971f",
-      "accent": "#53d458",
-      "letterboxd_url": "https://letterboxd.com/film/the-misfits/",
-      "letterboxd_rating": 3.69
+      "color": "#9f5f21",
+      "accent": "#d39d68"
     },
     {
       "id": "missing-believed-wiped-mid-summer-2026-special",
@@ -2274,8 +2988,8 @@
           }
         ]
       },
-      "color": "#9f2142",
-      "accent": "#d36884"
+      "color": "#4730a6",
+      "accent": "#9484d6"
     },
     {
       "id": "murder-on-the-orient-express-intro",
@@ -2299,14 +3013,46 @@
             "tags": [
               "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
               "Introduction",
+              "Digital",
+              "Station to Station"
+            ]
+          }
+        ]
+      },
+      "color": "#26971a",
+      "accent": "#5fd453",
+      "letterboxd_url": "https://letterboxd.com/film/murder-on-the-orient-express/",
+      "letterboxd_rating": 3.58
+    },
+    {
+      "id": "murder-on-the-orient-express",
+      "title": "Murder on the Orient Express",
+      "rating": "PG",
+      "runtime": 131,
+      "genre": "Other",
+      "year": 1974,
+      "director": "Sidney Lumet",
+      "cast": "Albert Finney, Lauren Bacall, Ingrid Bergman, Sean Connery",
+      "description": "The best Agatha Christie adaptation bar none was an atypical journey for director Sidney Lumet and features an incredible all-star cast.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=murder-on-the-orient-express&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/murder-on-the-orient-express-01.jpeg",
+      "showtimes": {
+        "2026-07-06": [
+          {
+            "time": "20:25",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=BC3F9431-B483-4A69-BDEE-C7C705F2C1A7&BOparam::WScontent::loadArticle::context_id=B2E8DD1C-052B-4A0B-B6EE-D7D2C5E86783",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
               "Station to Station",
               "Digital"
             ]
           }
         ]
       },
-      "color": "#3070a6",
-      "accent": "#84b1d6",
+      "color": "#9f2152",
+      "accent": "#d36891",
       "letterboxd_url": "https://letterboxd.com/film/murder-on-the-orient-express/",
       "letterboxd_rating": 3.58
     },
@@ -2330,8 +3076,8 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Digital",
-              "Big screen classics"
+              "Big screen classics",
+              "Digital"
             ]
           }
         ],
@@ -2372,8 +3118,8 @@
           }
         ]
       },
-      "color": "#83971a",
-      "accent": "#bfd453",
+      "color": "#307fa6",
+      "accent": "#84bbd6",
       "letterboxd_url": "https://letterboxd.com/film/my-own-private-idaho/",
       "letterboxd_rating": 3.84
     },
@@ -2397,15 +3143,15 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "English subtitles",
               "Brazil on Film",
+              "English subtitles",
               "Digital"
             ]
           }
         ]
       },
-      "color": "#8f219f",
-      "accent": "#c568d3",
+      "color": "#93971a",
+      "accent": "#cfd453",
       "letterboxd_url": "https://letterboxd.com/film/the-nature-of-invisible-things/",
       "letterboxd_rating": 3.85
     },
@@ -2429,14 +3175,48 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Q&A",
-              "London Indian Film Festival"
+              "London Indian Film Festival",
+              "Q&A"
             ]
           }
         ]
       },
-      "color": "#30a674",
-      "accent": "#84d6b3"
+      "color": "#7f219f",
+      "accent": "#b768d3"
+    },
+    {
+      "id": "night-train-intro",
+      "title": "Night Train",
+      "rating": "PG",
+      "runtime": 99,
+      "genre": "Other",
+      "year": 1959,
+      "director": "Jerzy Kawalerowicz",
+      "cast": "Lucyna Winnicka, Leon Niemczyk, Zbigniew Cybulski",
+      "description": "Jerzy Kawalerowicz’s richly cinematic gem is one of the creative highlights of an extraordinary era of Polish cinema.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=night-train-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/night-train-01.jpeg",
+      "showtimes": {
+        "2026-07-07": [
+          {
+            "time": "18:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=7B9D202F-0281-4B45-A9C0-0FC1B157107B&BOparam::WScontent::loadArticle::context_id=E06474C9-AE32-4464-BFEE-FCDA61130530",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
+              "Digital",
+              "Station to Station",
+              "Introduction",
+              "English subtitles"
+            ]
+          }
+        ]
+      },
+      "color": "#30a665",
+      "accent": "#84d6a9",
+      "letterboxd_url": "https://letterboxd.com/film/night-train/",
+      "letterboxd_rating": 3.94
     },
     {
       "id": "night-train",
@@ -2459,17 +3239,116 @@
             "hoh": false,
             "tags": [
               "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
+              "English subtitles",
               "Digital",
-              "Station to Station",
-              "English subtitles"
+              "Station to Station"
             ]
           }
         ]
       },
-      "color": "#973e1a",
-      "accent": "#d47853",
+      "color": "#972e1a",
+      "accent": "#d46753",
       "letterboxd_url": "https://letterboxd.com/film/night-train/",
       "letterboxd_rating": 3.94
+    },
+    {
+      "id": "noahs-ark",
+      "title": "Noah’s Ark",
+      "rating": "U",
+      "runtime": 96,
+      "genre": "Other",
+      "year": 2024,
+      "director": null,
+      "cast": null,
+      "description": "The Biblical ark provides the backdrop for this Brazilian, animated musical for families.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=noahs-ark&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202606/noahs-ark-01.jpeg",
+      "showtimes": {
+        "2026-06-28": [
+          {
+            "time": "12:20",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1195F644-6091-4E48-9986-654D061190F4&BOparam::WScontent::loadArticle::context_id=106B5CE4-735A-459B-96A9-0D599BC57CBE",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Families",
+              "Brazil on Film"
+            ]
+          }
+        ]
+      },
+      "color": "#21329f",
+      "accent": "#6877d3",
+      "letterboxd_url": "https://letterboxd.com/film/noahs-ark-2024/",
+      "letterboxd_rating": 2.77
+    },
+    {
+      "id": "north-by-northwest-jul-2026",
+      "title": "North by Northwest",
+      "rating": "PG",
+      "runtime": 136,
+      "genre": "Other",
+      "year": 1959,
+      "director": "Alfred Hitchcock",
+      "cast": "Cary Grant, Eva Marie Saint, James Mason, Martin Landau",
+      "description": "Alfred Hitchcock delivers a series of classic set-pieces in his thriller featuring Cary Grant as an advertising exec who is mistaken for a spy.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=north-by-northwest-jul-2026&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/north-by-northwest-01.jpeg",
+      "showtimes": {
+        "2026-07-04": [
+          {
+            "time": "18:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=554328BF-E392-46D6-89A6-2343C242C176&BOparam::WScontent::loadArticle::context_id=D3746165-5AED-440D-B13B-44E5B741EA1C",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Big screen classics",
+              "Digital"
+            ]
+          }
+        ],
+        "2026-07-18": [
+          {
+            "time": "12:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=554328BF-E392-46D6-89A6-2343C242C176&BOparam::WScontent::loadArticle::context_id=22827E7D-1BBD-47C4-8BF0-A80E31630600",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Big screen classics"
+            ]
+          }
+        ],
+        "2026-07-20": [
+          {
+            "time": "20:25",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=554328BF-E392-46D6-89A6-2343C242C176&BOparam::WScontent::loadArticle::context_id=1C65EB6C-CD5E-4AB7-AA08-F54CF432D933",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Big screen classics",
+              "Digital"
+            ]
+          }
+        ],
+        "2026-07-30": [
+          {
+            "time": "18:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=554328BF-E392-46D6-89A6-2343C242C176&BOparam::WScontent::loadArticle::context_id=772C1C59-6E74-4933-A12C-1EBD5ABF2AE2",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Big screen classics",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#62a630",
+      "accent": "#a7d684",
+      "letterboxd_url": "https://letterboxd.com/film/north-by-northwest/",
+      "letterboxd_rating": 4.19
     },
     {
       "id": "nostalgia-2026",
@@ -2492,8 +3371,8 @@
             "hoh": false,
             "tags": [
               "Re-releases",
-              "Digital",
               "Releases",
+              "Digital",
               "English subtitles"
             ]
           },
@@ -2505,8 +3384,8 @@
             "tags": [
               "Re-releases",
               "Releases",
-              "Digital",
-              "English subtitles"
+              "English subtitles",
+              "Digital"
             ]
           },
           {
@@ -2516,9 +3395,9 @@
             "hoh": false,
             "tags": [
               "Re-releases",
-              "English subtitles",
+              "Releases",
               "Digital",
-              "Releases"
+              "English subtitles"
             ]
           }
         ],
@@ -2542,15 +3421,15 @@
             "hoh": false,
             "tags": [
               "Re-releases",
-              "Digital",
               "English subtitles",
-              "Releases"
+              "Releases",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#21229f",
-      "accent": "#6869d3",
+      "color": "#971a74",
+      "accent": "#d453af",
       "letterboxd_url": "https://letterboxd.com/film/nostalgia-1983/",
       "letterboxd_rating": 4.28
     },
@@ -2576,8 +3455,8 @@
             "tags": [
               "Bullets and Brotherhood: The Films of John Woo",
               "English subtitles",
-              "Digital",
-              "John Woo"
+              "John Woo",
+              "Digital"
             ]
           }
         ],
@@ -2596,53 +3475,10 @@
           }
         ]
       },
-      "color": "#53a630",
-      "accent": "#9cd684",
+      "color": "#219f9e",
+      "accent": "#68d3d2",
       "letterboxd_url": "https://letterboxd.com/film/once-a-thief-1991/",
       "letterboxd_rating": 3.41
-    },
-    {
-      "id": "planes-trains-automobiles",
-      "title": "Planes, Trains and Automobiles",
-      "rating": "15",
-      "runtime": 92,
-      "genre": "Other",
-      "year": 1987,
-      "director": "John Hughes",
-      "cast": "Steve Martin, John Candy, Laila Robins, Michael McKean",
-      "description": "John Hughes’s much-loved film is a comic addition to the mismatched couple road movie.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=planes-trains-automobiles&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/planes-trains-and-automobiles-01.jpeg",
-      "showtimes": {
-        "2026-07-06": [
-          {
-            "time": "20:40",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=48748356-3E60-4BFE-963D-B8C56D4A5DF7&BOparam::WScontent::loadArticle::context_id=99F3FA19-0053-40B1-B2EE-150581E63A3D",
-            "screen": "Screen NFT3",
-            "hoh": false,
-            "tags": [
-              "Big screen classics",
-              "Digital"
-            ]
-          }
-        ],
-        "2026-07-17": [
-          {
-            "time": "18:20",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=48748356-3E60-4BFE-963D-B8C56D4A5DF7&BOparam::WScontent::loadArticle::context_id=92B81729-91E3-4A1F-AAC2-B8CD9E302523",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Big screen classics",
-              "Digital"
-            ]
-          }
-        ]
-      },
-      "color": "#971a64",
-      "accent": "#d4539f",
-      "letterboxd_url": "https://letterboxd.com/film/planes-trains-and-automobiles/",
-      "letterboxd_rating": 3.77
     },
     {
       "id": "platform-2026",
@@ -2664,9 +3500,9 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Big screen classics",
+              "35mm",
               "English subtitles",
-              "35mm"
+              "Big screen classics"
             ]
           }
         ],
@@ -2677,17 +3513,92 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "35mm",
               "Big screen classics",
-              "English subtitles"
+              "English subtitles",
+              "35mm"
             ]
           }
         ]
       },
-      "color": "#21909f",
-      "accent": "#68c6d3",
+      "color": "#a68230",
+      "accent": "#d6bd84",
       "letterboxd_url": "https://letterboxd.com/film/platform/",
       "letterboxd_rating": 4.07
+    },
+    {
+      "id": "planes-trains-automobiles",
+      "title": "Planes, Trains and Automobiles",
+      "rating": "15",
+      "runtime": 92,
+      "genre": "Other",
+      "year": 1987,
+      "director": "John Hughes",
+      "cast": "Steve Martin, John Candy, Laila Robins, Michael McKean",
+      "description": "John Hughes’s much-loved film is a comic addition to the mismatched couple road movie.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=planes-trains-automobiles&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/planes-trains-and-automobiles-01.jpeg",
+      "showtimes": {
+        "2026-07-06": [
+          {
+            "time": "20:40",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=48748356-3E60-4BFE-963D-B8C56D4A5DF7&BOparam::WScontent::loadArticle::context_id=99F3FA19-0053-40B1-B2EE-150581E63A3D",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Big screen classics"
+            ]
+          }
+        ],
+        "2026-07-17": [
+          {
+            "time": "18:20",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=48748356-3E60-4BFE-963D-B8C56D4A5DF7&BOparam::WScontent::loadArticle::context_id=92B81729-91E3-4A1F-AAC2-B8CD9E302523",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Big screen classics",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#4d1a97",
+      "accent": "#8753d4",
+      "letterboxd_url": "https://letterboxd.com/film/planes-trains-and-automobiles/",
+      "letterboxd_rating": 3.77
+    },
+    {
+      "id": "radio-on-intro",
+      "title": "Radio On",
+      "rating": "18",
+      "runtime": 104,
+      "genre": "Other",
+      "year": 1979,
+      "director": "Christopher Petit",
+      "cast": "David Beames, Lisa Kreuzer, Sandy Ratcliff, Andrew Byatt",
+      "description": "An existential road movie (and thriller with one flat tyre) that ranks among the most influential debuts in British cinema.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=radio-on-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/radio-on-01.jpeg",
+      "showtimes": {
+        "2026-07-29": [
+          {
+            "time": "18:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=87D12DEB-11EC-42AC-AD54-713763BDD92D&BOparam::WScontent::loadArticle::context_id=48508D2F-A172-4A69-AD70-D38D22CFFBD6",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Introduction",
+              "Big screen classics",
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#219f30",
+      "accent": "#68d375",
+      "letterboxd_url": "https://letterboxd.com/film/radio-on/",
+      "letterboxd_rating": 3.47
     },
     {
       "id": "radio-on",
@@ -2709,14 +3620,14 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "35mm",
-              "Big screen classics"
+              "Big screen classics",
+              "35mm"
             ]
           }
         ]
       },
-      "color": "#a69130",
-      "accent": "#d6c884",
+      "color": "#a63044",
+      "accent": "#d68493",
       "letterboxd_url": "https://letterboxd.com/film/radio-on/",
       "letterboxd_rating": 3.47
     },
@@ -2741,15 +3652,15 @@
             "hoh": false,
             "tags": [
               "Revolutionary Cinema: The Passion of Ritwik Ghatak",
-              "Digital",
+              "English subtitles",
               "Ritwik Ghatak",
-              "English subtitles"
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#5d1a97",
-      "accent": "#9853d4",
+      "color": "#1a5597",
+      "accent": "#538fd4",
       "letterboxd_url": "https://letterboxd.com/film/reason-debate-and-a-story/",
       "letterboxd_rating": 3.64
     },
@@ -2781,8 +3692,8 @@
           }
         ]
       },
-      "color": "#219f40",
-      "accent": "#68d382",
+      "color": "#819f21",
+      "accent": "#b9d368",
       "letterboxd_url": "https://letterboxd.com/film/a-river-called-titas/",
       "letterboxd_rating": 3.74
     },
@@ -2808,16 +3719,97 @@
             "tags": [
               "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
               "Introduction",
-              "Station to Station",
-              "35mm"
+              "35mm",
+              "Station to Station"
             ]
           }
         ]
       },
-      "color": "#a63035",
-      "accent": "#d68488",
+      "color": "#9f30a6",
+      "accent": "#d184d6",
       "letterboxd_url": "https://letterboxd.com/film/rome-express/",
       "letterboxd_rating": 3.37
+    },
+    {
+      "id": "rome-express",
+      "title": "Rome Express",
+      "rating": "U",
+      "runtime": 94,
+      "genre": "Other",
+      "year": 1932,
+      "director": "Walter Forde",
+      "cast": "Conrad Veidt, Esther Ralston, Hugh Williams",
+      "description": "An opportunity to catch a ride aboard this criminally underseen British thriller.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=rome-express&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/rome-express-01.jpeg",
+      "showtimes": {
+        "2026-07-01": [
+          {
+            "time": "20:50",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8093E7A1-DB27-448C-AF01-A29A7E936FD0&BOparam::WScontent::loadArticle::context_id=6D1FC6A8-DE91-4F52-BBCB-45F345DB07ED",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
+              "35mm",
+              "Station to Station"
+            ]
+          }
+        ]
+      },
+      "color": "#1a976c",
+      "accent": "#53d4a7",
+      "letterboxd_url": "https://letterboxd.com/film/rome-express/",
+      "letterboxd_rating": 3.37
+    },
+    {
+      "id": "rose-of-nevada",
+      "title": "Rose of Nevada",
+      "rating": "15",
+      "runtime": 114,
+      "genre": "Other",
+      "year": 2025,
+      "director": "Mark Jenkin",
+      "cast": "George MacKay, Callum Turner, Rosalind Eleazar, Mary Woodvine",
+      "description": "Cornish auteur Mark Jenkin returns with a political folktale of two fishermen locked in a time-loop.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=rose-of-nevada&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/rose-of-nevada-02.jpeg",
+      "showtimes": {
+        "2026-07-01": [
+          {
+            "time": "14:50",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=224A69F0-B71A-4273-AC58-4B8F25B1E987&BOparam::WScontent::loadArticle::context_id=A9CA265A-C776-40A8-8CE3-48E3D1E09BE2",
+            "screen": "Screen NFT4",
+            "hoh": false,
+            "tags": [
+              "Mark Jenkin’s Cornish trilogy",
+              "Audio description",
+              "Digital",
+              "Descriptive subtitles (open captions)",
+              "Releases"
+            ]
+          }
+        ],
+        "2026-07-02": [
+          {
+            "time": "12:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=224A69F0-B71A-4273-AC58-4B8F25B1E987&BOparam::WScontent::loadArticle::context_id=C4DF9EAF-1AB1-4A9A-BC0E-6D93C814DAEE",
+            "screen": "Screen NFT4",
+            "hoh": false,
+            "tags": [
+              "Mark Jenkin’s Cornish trilogy",
+              "Closed captions",
+              "Digital",
+              "Audio description",
+              "Releases"
+            ]
+          }
+        ]
+      },
+      "color": "#9f4f21",
+      "accent": "#d38f68",
+      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
+      "letterboxd_rating": 3.46
     },
     {
       "id": "runaway-train",
@@ -2853,65 +3845,110 @@
             "hoh": false,
             "tags": [
               "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
-              "Station to Station",
-              "Digital"
+              "Digital",
+              "Station to Station"
             ]
           }
         ]
       },
-      "color": "#1a4597",
-      "accent": "#537fd4",
+      "color": "#3830a6",
+      "accent": "#8a84d6",
       "letterboxd_url": "https://letterboxd.com/film/runaway-train/",
       "letterboxd_rating": 3.66
     },
     {
-      "id": "rose-of-nevada",
-      "title": "Rose of Nevada",
-      "rating": "15",
-      "runtime": 114,
+      "id": "kazuo-ishiguro-train-films-season-introduction",
+      "title": "Season Introduction Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
+      "rating": "TBC",
+      "runtime": null,
       "genre": "Other",
-      "year": 2025,
-      "director": "Mark Jenkin",
-      "cast": "George MacKay, Callum Turner, Rosalind Eleazar, Mary Woodvine",
-      "description": "Cornish auteur Mark Jenkin returns with a political folktale of two fishermen locked in a time-loop.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=rose-of-nevada&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202604/rose-of-nevada-02.jpeg",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "Booker and Nobel prize-winning writer Kazuo Ishiguro discusses his favourite train films.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=kazuo-ishiguro-train-films-season-introduction&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/kazu-ishiguro-01.jpeg",
       "showtimes": {
-        "2026-07-01": [
-          {
-            "time": "14:50",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=224A69F0-B71A-4273-AC58-4B8F25B1E987&BOparam::WScontent::loadArticle::context_id=A9CA265A-C776-40A8-8CE3-48E3D1E09BE2",
-            "screen": "Screen NFT4",
-            "hoh": false,
-            "tags": [
-              "Mark Jenkin’s Cornish trilogy",
-              "Audio description",
-              "Descriptive subtitles (open captions)",
-              "Digital",
-              "Releases"
-            ]
-          }
-        ],
         "2026-07-02": [
           {
-            "time": "12:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=224A69F0-B71A-4273-AC58-4B8F25B1E987&BOparam::WScontent::loadArticle::context_id=C4DF9EAF-1AB1-4A9A-BC0E-6D93C814DAEE",
-            "screen": "Screen NFT4",
+            "time": "18:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=67F68FBE-7990-43DA-A95D-EC1683E6C95B&BOparam::WScontent::loadArticle::context_id=1D07605F-7B08-4AE3-B343-C14A174E6794",
+            "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Mark Jenkin’s Cornish trilogy",
-              "Closed captions",
-              "Audio description",
-              "Digital",
-              "Releases"
+              "Previews and events",
+              "Talk"
             ]
           }
         ]
       },
-      "color": "#719f21",
-      "accent": "#acd368",
-      "letterboxd_url": "https://letterboxd.com/film/rose-of-nevada/",
-      "letterboxd_rating": 3.46
+      "color": "#36971a",
+      "accent": "#6fd453"
+    },
+    {
+      "id": "seven-year-itch",
+      "title": "The Seven Year Itch",
+      "rating": "PG",
+      "runtime": 105,
+      "genre": "Other",
+      "year": 1955,
+      "director": "Billy Wilder",
+      "cast": "Marilyn Monroe, Tom Ewell, Evelyn Keyes",
+      "description": "Marilyn Monroe is a middle-aged man’s ultimate fantasy in this comedy by Billy Wilder.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=seven-year-itch&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/seven-year-itch-02.jpeg",
+      "showtimes": {
+        "2026-07-20": [
+          {
+            "time": "20:40",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=BEDAD5AF-0F96-43BF-88E4-8AB56B4DE303&BOparam::WScontent::loadArticle::context_id=71972BE3-E7F8-4217-A610-BEDD063F920B",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Marilyn Monroe: Self-Made Star",
+              "Digital",
+              "Marilyn Monroe"
+            ]
+          }
+        ]
+      },
+      "color": "#9f2162",
+      "accent": "#d3689f",
+      "letterboxd_url": "https://letterboxd.com/film/the-seven-year-itch/",
+      "letterboxd_rating": 3.3
+    },
+    {
+      "id": "seven-year-itch-intro",
+      "title": "The Seven Year Itch",
+      "rating": "PG",
+      "runtime": 105,
+      "genre": "Other",
+      "year": 1955,
+      "director": "Billy Wilder",
+      "cast": "Marilyn Monroe, Tom Ewell, Evelyn Keyes",
+      "description": "Marilyn Monroe is a middle-aged man’s ultimate fantasy in this comedy by Billy Wilder.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=seven-year-itch-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/seven-year-itch-02.jpeg",
+      "showtimes": {
+        "2026-07-27": [
+          {
+            "time": "18:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=42B12242-C06B-4CEB-81FF-3D650070977B&BOparam::WScontent::loadArticle::context_id=BA2ECD7B-5198-4358-B21F-919D24C15572",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Marilyn Monroe: Self-Made Star",
+              "Marilyn Monroe",
+              "Digital",
+              "Introduction"
+            ]
+          }
+        ]
+      },
+      "color": "#308ea6",
+      "accent": "#84c6d6",
+      "letterboxd_url": "https://letterboxd.com/film/the-seven-year-itch/",
+      "letterboxd_rating": 3.3
     },
     {
       "id": "shanghai-express-jul-2026",
@@ -2934,8 +3971,8 @@
             "hoh": false,
             "tags": [
               "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
-              "Digital",
-              "Station to Station"
+              "Station to Station",
+              "Digital"
             ]
           }
         ],
@@ -2947,14 +3984,14 @@
             "hoh": false,
             "tags": [
               "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
-              "Digital",
-              "Station to Station"
+              "Station to Station",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#a6309d",
-      "accent": "#d684d0",
+      "color": "#978b1a",
+      "accent": "#d4c853",
       "letterboxd_url": "https://letterboxd.com/film/shanghai-express/",
       "letterboxd_rating": 3.72
     },
@@ -2980,49 +4017,77 @@
             "tags": [
               "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
               "Station to Station",
-              "Introduction",
-              "Digital"
+              "Digital",
+              "Introduction"
             ]
           }
         ]
       },
-      "color": "#1a977c",
-      "accent": "#53d4b8",
+      "color": "#6f219f",
+      "accent": "#aa68d3",
       "letterboxd_url": "https://letterboxd.com/film/shanghai-express/",
       "letterboxd_rating": 3.72
     },
     {
-      "id": "seven-year-itch-intro",
-      "title": "The Seven Year Itch",
-      "rating": "PG",
-      "runtime": 105,
+      "id": "snowpiercer-2026",
+      "title": "Snowpiercer",
+      "rating": "15",
+      "runtime": 126,
       "genre": "Other",
-      "year": 1955,
-      "director": "Billy Wilder",
-      "cast": "Marilyn Monroe, Tom Ewell, Evelyn Keyes",
-      "description": "Marilyn Monroe is a middle-aged man’s ultimate fantasy in this comedy by Billy Wilder.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=seven-year-itch-intro&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/seven-year-itch-02.jpeg",
+      "year": 2013,
+      "director": "Bong Joon Ho",
+      "cast": "Chris Evans, Song Kang-ho, Tilda Swinton, Octavia Spencer",
+      "description": "Bong Joon Ho’s first English language feature is a post-apocalyptic adventure set aboard an unstoppable train whose class-divided carriages stoke the fires of revolution.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=snowpiercer-2026&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/snowpiercer-01.jpeg",
       "showtimes": {
+        "2026-07-10": [
+          {
+            "time": "20:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B7EF3E40-68F1-42D4-BD77-C6C9346A53B7&BOparam::WScontent::loadArticle::context_id=40CBDB52-B1D6-4ECF-9074-FD937AD795E0",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
+              "Station to Station",
+              "Digital",
+              "English subtitles"
+            ]
+          }
+        ],
+        "2026-07-24": [
+          {
+            "time": "18:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B7EF3E40-68F1-42D4-BD77-C6C9346A53B7&BOparam::WScontent::loadArticle::context_id=F6AAF04D-B520-4D20-ACC3-15C3E730F4E5",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
+              "Station to Station",
+              "Digital",
+              "English subtitles"
+            ]
+          }
+        ],
         "2026-07-27": [
           {
-            "time": "18:00",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=42B12242-C06B-4CEB-81FF-3D650070977B&BOparam::WScontent::loadArticle::context_id=BA2ECD7B-5198-4358-B21F-919D24C15572",
+            "time": "20:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B7EF3E40-68F1-42D4-BD77-C6C9346A53B7&BOparam::WScontent::loadArticle::context_id=AA8DEEBF-2357-448A-A5AE-94EAE94337A9",
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Marilyn Monroe: Self-Made Star",
-              "Marilyn Monroe",
-              "Introduction",
-              "Digital"
+              "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
+              "English subtitles",
+              "Digital",
+              "Station to Station"
             ]
           }
         ]
       },
-      "color": "#9f5f21",
-      "accent": "#d39d68",
-      "letterboxd_url": "https://letterboxd.com/film/the-seven-year-itch/",
-      "letterboxd_rating": 3.3
+      "color": "#30a656",
+      "accent": "#84d69e",
+      "letterboxd_url": "https://letterboxd.com/film/snowpiercer/",
+      "letterboxd_rating": 3.67
     },
     {
       "id": "some-like-it-hot-2026",
@@ -3058,8 +4123,8 @@
             "hoh": false,
             "tags": [
               "Marilyn Monroe: Self-Made Star",
-              "Digital",
-              "Marilyn Monroe"
+              "Marilyn Monroe",
+              "Digital"
             ]
           }
         ],
@@ -3077,71 +4142,117 @@
           }
         ]
       },
-      "color": "#4730a6",
-      "accent": "#9484d6",
+      "color": "#971e1a",
+      "accent": "#d45753",
       "letterboxd_url": "https://letterboxd.com/film/some-like-it-hot/",
       "letterboxd_rating": 4.28
     },
     {
-      "id": "snowpiercer-2026",
-      "title": "Snowpiercer",
-      "rating": "15",
-      "runtime": 126,
+      "id": "some-like-it-hot-jul-2026-intro",
+      "title": "Some Like It Hot",
+      "rating": "U",
+      "runtime": 121,
       "genre": "Other",
-      "year": 2013,
-      "director": "Bong Joon Ho",
-      "cast": "Chris Evans, Song Kang-ho, Tilda Swinton, Octavia Spencer",
-      "description": "Bong Joon Ho’s first English language feature is a post-apocalyptic adventure set aboard an unstoppable train whose class-divided carriages stoke the fires of revolution.",
-      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=snowpiercer-2026&BOparam::WScontent::loadArticle::context_id=",
-      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/snowpiercer-01.jpeg",
+      "year": 1959,
+      "director": "Billy Wilder",
+      "cast": "Marilyn Monroe, Tony Curtis, Jack Lemmon",
+      "description": "Marilyn Monroe sizzles opposite Tony Curtis and Jack Lemmon in Billy Wilder’s genre-melding comic masterpiece.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=some-like-it-hot-jul-2026-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/some-like-it-hot-01.jpeg",
       "showtimes": {
-        "2026-07-10": [
+        "2026-07-19": [
           {
-            "time": "20:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B7EF3E40-68F1-42D4-BD77-C6C9346A53B7&BOparam::WScontent::loadArticle::context_id=40CBDB52-B1D6-4ECF-9074-FD937AD795E0",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
-              "Digital",
-              "English subtitles",
-              "Station to Station"
-            ]
-          }
-        ],
-        "2026-07-24": [
-          {
-            "time": "18:10",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B7EF3E40-68F1-42D4-BD77-C6C9346A53B7&BOparam::WScontent::loadArticle::context_id=F6AAF04D-B520-4D20-ACC3-15C3E730F4E5",
-            "screen": "Screen NFT2",
-            "hoh": false,
-            "tags": [
-              "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
-              "English subtitles",
-              "Digital",
-              "Station to Station"
-            ]
-          }
-        ],
-        "2026-07-27": [
-          {
-            "time": "20:30",
-            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B7EF3E40-68F1-42D4-BD77-C6C9346A53B7&BOparam::WScontent::loadArticle::context_id=AA8DEEBF-2357-448A-A5AE-94EAE94337A9",
+            "time": "18:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1EDB294C-89E8-42CC-8455-B969A9F947D1&BOparam::WScontent::loadArticle::context_id=11A9C6DC-BDD5-4E90-8BA1-2A4A6CCE8040",
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
-              "English subtitles",
-              "Digital",
-              "Station to Station"
+              "Marilyn Monroe: Self-Made Star",
+              "Introduction",
+              "Marilyn Monroe",
+              "35mm"
             ]
           }
         ]
       },
-      "color": "#26971a",
-      "accent": "#5fd453",
-      "letterboxd_url": "https://letterboxd.com/film/snowpiercer/",
-      "letterboxd_rating": 3.67
+      "color": "#21429f",
+      "accent": "#6884d3",
+      "letterboxd_url": "https://letterboxd.com/film/some-like-it-hot/",
+      "letterboxd_rating": 4.28
+    },
+    {
+      "id": "sound-and-vision-helen-petts-in-conversation",
+      "title": "Sound and Vision: Films by Helen Petts",
+      "rating": "TBC",
+      "runtime": null,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "description": "A screening of films by the acclaimed filmmaker followed by a discussion of her work.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=sound-and-vision-helen-petts-in-conversation&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/sound-and-vision-01.jpeg",
+      "showtimes": {
+        "2026-07-15": [
+          {
+            "time": "18:15",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B7C80E64-E768-4A3A-B145-E656C3438256&BOparam::WScontent::loadArticle::context_id=F60ED9C6-CEEF-4812-9D5F-34CBF0B735FD",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Regular programme",
+              "Experimenta",
+              "Q&A",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#71a630",
+      "accent": "#b1d684"
+    },
+    {
+      "id": "stranger-than-paradise",
+      "title": "Stranger Than Paradise",
+      "rating": "15",
+      "runtime": 89,
+      "genre": "Other",
+      "year": 1984,
+      "director": "Jim Jarmusch",
+      "cast": "John Lurie, Richard Edson, Eszter Balint, Cecillia Stark",
+      "description": "Billed as a new kind of American movie, Jim Jarmusch’s hugely impressive second feature leans into Ozu, Bresson and the avant-garde.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=stranger-than-paradise&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/stranger-than-paradise-01.jpeg",
+      "showtimes": {
+        "2026-07-09": [
+          {
+            "time": "21:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=F11F0C7C-C8AC-4E9C-8DF0-EE42FE9FFDF3&BOparam::WScontent::loadArticle::context_id=2675FBAD-C276-4BCA-A371-8D8ED738E575",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Digital",
+              "Big screen classics"
+            ]
+          }
+        ],
+        "2026-07-13": [
+          {
+            "time": "20:50",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=F11F0C7C-C8AC-4E9C-8DF0-EE42FE9FFDF3&BOparam::WScontent::loadArticle::context_id=5ACAE229-49F0-4CED-9A68-9A25E7D1F119",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Big screen classics",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#971a84",
+      "accent": "#d453c0",
+      "letterboxd_url": "https://letterboxd.com/film/stranger-than-paradise/",
+      "letterboxd_rating": 3.88
     },
     {
       "id": "subarnarekha-intro",
@@ -3164,16 +4275,48 @@
             "hoh": false,
             "tags": [
               "Revolutionary Cinema: The Passion of Ritwik Ghatak",
-              "English subtitles",
+              "Ritwik Ghatak",
               "Introduction",
               "Digital",
-              "Ritwik Ghatak"
+              "English subtitles"
             ]
           }
         ]
       },
-      "color": "#9f2152",
-      "accent": "#d36891"
+      "color": "#219f8e",
+      "accent": "#68d3c4"
+    },
+    {
+      "id": "stranger-than-paradise-intro",
+      "title": "Stranger Than Paradise",
+      "rating": "15",
+      "runtime": 89,
+      "genre": "Other",
+      "year": 1984,
+      "director": "Jim Jarmusch",
+      "cast": "John Lurie, Richard Edson, Eszter Balint, Cecillia Stark",
+      "description": "Billed as a new kind of American movie, Jim Jarmusch’s hugely impressive second feature leans into Ozu, Bresson and the avant-garde.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=stranger-than-paradise-intro&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/stranger-than-paradise-01.jpeg",
+      "showtimes": {
+        "2026-07-22": [
+          {
+            "time": "18:10",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8AB83E6C-3F39-439E-B72F-8B6ED88AF521&BOparam::WScontent::loadArticle::context_id=9E04F069-68D6-42BD-ADA4-72C9C1634549",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Big screen classics",
+              "Digital",
+              "Introduction"
+            ]
+          }
+        ]
+      },
+      "color": "#a67330",
+      "accent": "#d6b384",
+      "letterboxd_url": "https://letterboxd.com/film/stranger-than-paradise/",
+      "letterboxd_rating": 3.88
     },
     {
       "id": "trains-relaxed-intro-discussion",
@@ -3205,8 +4348,8 @@
           }
         ]
       },
-      "color": "#307fa6",
-      "accent": "#84bbd6",
+      "color": "#3d1a97",
+      "accent": "#7753d4",
       "letterboxd_url": "https://letterboxd.com/film/trains-2025/",
       "letterboxd_rating": null
     },
@@ -3231,9 +4374,9 @@
             "hoh": false,
             "tags": [
               "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
+              "Descriptive subtitles (open captions)",
               "English subtitles",
               "Digital",
-              "Descriptive subtitles (open captions)",
               "Station to Station"
             ]
           }
@@ -3247,8 +4390,8 @@
             "tags": [
               "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
               "Digital",
-              "English subtitles",
-              "Station to Station"
+              "Station to Station",
+              "English subtitles"
             ]
           }
         ],
@@ -3260,17 +4403,47 @@
             "hoh": false,
             "tags": [
               "Station to Station: Kazuo Ishiguro’s Top Ten Train Films",
-              "Digital",
               "English subtitles",
-              "Station to Station"
+              "Station to Station",
+              "Digital"
             ]
           }
         ]
       },
-      "color": "#93971a",
-      "accent": "#cfd453",
+      "color": "#239f21",
+      "accent": "#6ad368",
       "letterboxd_url": "https://letterboxd.com/film/transsiberian/",
       "letterboxd_rating": 3.2
+    },
+    {
+      "id": "undeclared-war-series-2-tv-preview-qanda",
+      "title": "The Undeclared War Series 2",
+      "rating": "TBC",
+      "runtime": 47,
+      "genre": "Other",
+      "year": 2026,
+      "director": "Paul McGuigan",
+      "cast": "Simon Pegg, Hannah Khalique-Brown, Siân Brooke",
+      "description": "Join us for the return of Channel 4’s immense international cyberwarfare thriller.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=undeclared-war-series-2-tv-preview-qanda&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/undeclared-war-01.jpeg",
+      "showtimes": {
+        "2026-07-06": [
+          {
+            "time": "18:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=5F50AF34-4346-45DE-A287-4C34710180DE&BOparam::WScontent::loadArticle::context_id=FC0F6B1B-2B0A-45C3-874B-957563872CD1",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Previews and events",
+              "Preview",
+              "Q&A"
+            ]
+          }
+        ]
+      },
+      "color": "#a63054",
+      "accent": "#d6849d"
     },
     {
       "id": "vagabond-2026",
@@ -3292,8 +4465,8 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Digital",
               "English subtitles",
+              "Digital",
               "Big screen classics"
             ]
           }
@@ -3305,8 +4478,8 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "Big screen classics",
               "Digital",
+              "Big screen classics",
               "English subtitles"
             ]
           }
@@ -3318,17 +4491,83 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "English subtitles",
+              "Big screen classics",
               "Digital",
-              "Big screen classics"
+              "English subtitles"
             ]
           }
         ]
       },
-      "color": "#7f219f",
-      "accent": "#b768d3",
+      "color": "#1a6597",
+      "accent": "#53a0d4",
       "letterboxd_url": "https://letterboxd.com/film/vagabond/",
       "letterboxd_rating": 4.11
+    },
+    {
+      "id": "wadjda-2026",
+      "title": "Wadjda",
+      "rating": "PG",
+      "runtime": 97,
+      "genre": "Other",
+      "year": 2012,
+      "director": "Haifaa Al-Mansour",
+      "cast": "Waad Mohammed, Reem Abdullah, Abdullrahman Algohani",
+      "description": "This Saudi Arabian debut shows the rebellious Wadjda, her eyes set on the bicycle of her dreams, realise that financial independency is the path to freedom.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=wadjda-2026&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202606/wadjda-01.jpeg",
+      "showtimes": {
+        "2026-06-30": [
+          {
+            "time": "20:50",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=BA316A12-C972-4479-ADE0-5D1485F1B9EF&BOparam::WScontent::loadArticle::context_id=1C229955-1574-4D74-8174-2D4B774CC8B2",
+            "screen": "Screen NFT2",
+            "hoh": false,
+            "tags": [
+              "English subtitles",
+              "Big screen classics",
+              "Digital"
+            ]
+          }
+        ]
+      },
+      "color": "#919f21",
+      "accent": "#c7d368",
+      "letterboxd_url": "https://letterboxd.com/film/wadjda/",
+      "letterboxd_rating": 3.82
+    },
+    {
+      "id": "d-punk-world-premiere-panel-discussion",
+      "title": "D-Punk",
+      "rating": "TBC",
+      "runtime": 35,
+      "genre": "Other",
+      "year": 2026,
+      "director": "D-Punk Collective",
+      "cast": "Celeste Bell, Jemima Dury, Penny Pepper, Mat Fraser, Mik Scarlet",
+      "description": "A raw, defiant documentary where punk and disability collide – challenging norms, reclaiming space, and rewriting who gets to be seen and heard.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=d-punk-world-premiere-panel-discussion&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/d-punk-01.jpeg",
+      "showtimes": {
+        "2026-07-19": [
+          {
+            "time": "18:30",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=80528570-7208-4F41-8CF7-0D81D59A138C&BOparam::WScontent::loadArticle::context_id=962E0497-3633-4DC4-AAE9-66BBC1B74839",
+            "screen": "Screen NFT3",
+            "hoh": false,
+            "tags": [
+              "Relaxed (sensory) screenings",
+              "We Crip Film Festival",
+              "Introduction",
+              "Audio description",
+              "British Sign Language (BSL) events",
+              "Discussion",
+              "Descriptive subtitles (open captions)"
+            ]
+          }
+        ]
+      },
+      "color": "#9030a6",
+      "accent": "#c784d6"
     },
     {
       "id": "lone-wolves-european-premiere-qanda",
@@ -3350,21 +4589,57 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
+              "Audio description",
+              "Descriptive subtitles (open captions)",
+              "Introduction",
               "British Sign Language (BSL) events",
               "We Crip Film Festival",
-              "Introduction",
-              "Descriptive subtitles (open captions)",
-              "Audio description",
               "Digital",
               "Relaxed (sensory) screenings"
             ]
           }
         ]
       },
-      "color": "#30a665",
-      "accent": "#84d6a9",
+      "color": "#1a975c",
+      "accent": "#53d497",
       "letterboxd_url": "https://letterboxd.com/film/lone-wolves-2024/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "joybubbles-uk-premiere-qanda",
+      "title": "Joybubbles",
+      "rating": "TBC",
+      "runtime": 79,
+      "genre": "Other",
+      "year": 2026,
+      "director": "Rachael J. Morrison",
+      "cast": null,
+      "description": "A blind hacker genius creates a new subculture and chooses child-like wonder in this astounding documentary.",
+      "film_url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam::WScontent::loadArticle::permalink=joybubbles-uk-premiere-qanda&BOparam::WScontent::loadArticle::context_id=",
+      "poster_url": "https://whatson.bfi.org.uk/ArticleMedia/Images/WhatsOn%20images/202607/joybubbles-01.jpeg",
+      "showtimes": {
+        "2026-07-18": [
+          {
+            "time": "18:00",
+            "booking_url": "https://whatson.bfi.org.uk/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C16A32FB-8BAB-4152-9DCC-754BDDEB4B10&BOparam::WScontent::loadArticle::context_id=52B01CAE-6AB5-4079-B38D-82E6603A1AAE",
+            "screen": "Screen NFT1",
+            "hoh": false,
+            "tags": [
+              "Introduction",
+              "Digital",
+              "British Sign Language (BSL) events",
+              "Descriptive subtitles (open captions)",
+              "Relaxed (sensory) screenings",
+              "We Crip Film Festival",
+              "Audio description"
+            ]
+          }
+        ]
+      },
+      "color": "#9f3f21",
+      "accent": "#d38268",
+      "letterboxd_url": "https://letterboxd.com/film/joybubbles/",
+      "letterboxd_rating": 3.57
     },
     {
       "id": "its-not-you-its-ableism-2026-qanda",
@@ -3386,19 +4661,19 @@
             "screen": "Screen NFT3",
             "hoh": false,
             "tags": [
-              "Introduction",
+              "Descriptive subtitles (open captions)",
+              "British Sign Language (BSL) events",
               "Relaxed (sensory) screenings",
               "We Crip Film Festival",
               "Q&A",
-              "British Sign Language (BSL) events",
-              "Audio description",
-              "Descriptive subtitles (open captions)"
+              "Introduction",
+              "Audio description"
             ]
           }
         ]
       },
-      "color": "#972e1a",
-      "accent": "#d46753"
+      "color": "#3036a6",
+      "accent": "#8489d6"
     },
     {
       "id": "what-could-have-been-somethings-got-to-give",
@@ -3427,8 +4702,8 @@
           }
         ]
       },
-      "color": "#21329f",
-      "accent": "#6877d3"
+      "color": "#46971a",
+      "accent": "#80d453"
     },
     {
       "id": "white-snow",
@@ -3451,14 +4726,14 @@
             "hoh": false,
             "tags": [
               "Digital",
-              "London Indian Film Festival",
-              "English subtitles"
+              "English subtitles",
+              "London Indian Film Festival"
             ]
           }
         ]
       },
-      "color": "#62a630",
-      "accent": "#a7d684",
+      "color": "#9f2172",
+      "accent": "#d368ac",
       "letterboxd_url": "https://letterboxd.com/film/white-snow-2025/",
       "letterboxd_rating": null
     },
@@ -3482,8 +4757,8 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Families",
               "Big screen classics",
+              "Families",
               "Digital"
             ]
           }
@@ -3495,9 +4770,9 @@
             "screen": "Screen NFT1",
             "hoh": false,
             "tags": [
-              "Big screen classics",
+              "Digital",
               "Families",
-              "Digital"
+              "Big screen classics"
             ]
           }
         ],
@@ -3508,15 +4783,15 @@
             "screen": "Screen NFT2",
             "hoh": false,
             "tags": [
-              "Families",
               "Big screen classics",
+              "Families",
               "Digital"
             ]
           }
         ]
       },
-      "color": "#971a74",
-      "accent": "#d453af",
+      "color": "#309da6",
+      "accent": "#84d0d6",
       "letterboxd_url": "https://letterboxd.com/film/the-wizard-of-oz-1939/",
       "letterboxd_rating": 3.92
     }
