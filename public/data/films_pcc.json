@@ -1,7 +1,374 @@
 {
-  "scraped_at": "2026-06-29T11:02:04.508435+00:00",
+  "scraped_at": "2026-06-29T11:31:49.322858+00:00",
   "source": "princecharlescinema.com",
   "films": [
+    {
+      "id": "there-will-be-blood",
+      "title": "There Will Be Blood",
+      "rating": "15",
+      "runtime": 158,
+      "genre": "Thriller / Western",
+      "year": "2007",
+      "country": null,
+      "director": "Paul Thomas Anderson",
+      "cast": "Daniel Day-Lewis, Paul Dano, Ciarán Hinds",
+      "description": "Ruthless silver miner, turned oil prospector, Daniel Plainview moves to oil-rich California. Using his adopted son HW to project a trustworthy, family-man image, Plainview cons local landowners into selling him their valuable properties for a pittance. However, local preacher Eli Sunday suspects Plainviews motives and intentions, starting a slow-burning feud that threatens both their lives.",
+      "film_url": "https://princecharlescinema.com/film/618755/there-will-be-blood",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/618755.jpg",
+      "showtimes": {
+        "2026-06-29": [
+          {
+            "time": "14:35",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626462",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-07-19": [
+          {
+            "time": "20:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626606",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-07-30": [
+          {
+            "time": "14:30",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626707",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-08-27": [
+          {
+            "time": "20:20",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627121",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/there-will-be-blood/",
+      "letterboxd_rating": 4.46
+    },
+    {
+      "id": "a-better-tomorrow",
+      "title": "A Better Tomorrow",
+      "rating": "18",
+      "runtime": 95,
+      "genre": "Action / Crime",
+      "year": "1986",
+      "country": null,
+      "director": "John Woo",
+      "cast": "Ti Lung, Chow Yun-Fat, Leslie Cheung",
+      "description": "A reforming ex-gangster tries to reconcile with his estranged policeman brother, but the ties to his former gang are difficult to break.",
+      "film_url": "https://princecharlescinema.com/film/31617271/a-better-tomorrow",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/YAK6C11Xpm0ruO0MrqZEUOZ8p_vH3C00vDHinOJ1clw.jpg",
+      "showtimes": {
+        "2026-06-29": [
+          {
+            "time": "15:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31624497",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-02": [
+          {
+            "time": "18:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31624498",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/a-better-tomorrow/",
+      "letterboxd_rating": 3.93
+    },
+    {
+      "id": "before-sunrise",
+      "title": "Before Sunrise",
+      "rating": "15",
+      "runtime": 101,
+      "genre": "Romance/Drama",
+      "year": "1995",
+      "country": null,
+      "director": "Richard Linklater",
+      "cast": "Ethan Hawke, Julie Delpy, Andrea Eckert",
+      "description": "On his way to Vienna, American Jesse (Ethan Hawke) meets Celine (Julie Delpy), a student returning to Paris. After long conversations forge a surprising connection between them, Jesse convinces Celine to get off the train with him in Vienna. Since his flight to the U.S. departs the next morning and he has no money for lodging, they wander the city together, taking in the experiences of Vienna and each other. As the night progresses, their bond makes separating in the morning a difficult choice.",
+      "film_url": "https://princecharlescinema.com/film/1390477/before-sunrise",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1390477.jpg",
+      "showtimes": {
+        "2026-06-29": [
+          {
+            "time": "17:30",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626459",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-07-25": [
+          {
+            "time": "12:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626671",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/before-sunrise/",
+      "letterboxd_rating": 4.3
+    },
+    {
+      "id": "the-qatsi-trilogy",
+      "title": "The Qatsi Trilogy",
+      "rating": "PG",
+      "runtime": 273,
+      "genre": "Documentary",
+      "year": "1982",
+      "country": null,
+      "director": "Godfrey Reggio",
+      "cast": " Various",
+      "description": "A singular artist and activist, Godfrey Reggio is best known for the galvanizing films of The Qatsi Trilogy. Astonishingly photographed, and featuring unforgettable, cascading scores by Philip Glass, these are immersive sensory experiences that meditate on the havoc humankind’s obsession with technological advancement has wreaked on our world. From 1983’s Koyaanisqatsi to 1988’s Powaqqatsi to 2002’s Naqoyqatsi, Reggio takes us on a journey from the ancient to the contemporary, from nature to industry, exploring life out of balance, in transformation, and as war, all the while keeping our eyes wide with wonder.KOYAANSQATSI (1982): Drawing its title from the Hopi word meaning \"life out of balance,\" this renowned documentary reveals how humanity has grown apart from nature. Featuring extensive footage of natural landscapes and elemental forces, the film gives way to many scenes of modern civilization and technology. Given its lack of narration and dialogue, the production makes its points solely through imagery and music, with many scenes either slowed down or sped up for dramatic effect.POWAQQATSI (1988): Five years after Godfrey Reggio stunned audiences with Koyaanisqatsi, he again joined forces with composer Philip Glass and other collaborators for a second chapter. Here, Reggio turns his sights on third-world nations in the Southern Hemisphere. Forgoing the sped-up aesthetic of the first film, Powaqqatsi employs a meditative slow motion in order to reveal the beauty of the traditional ways of life in those parts of the planet, and to show how cultures there are being eroded as their environments are taken over by industry. This is the most intensely spiritual segment of Reggio’s philosophical and visually remarkable Qatsi Trilogy.NAQOYQATSI (2002): Godfrey Reggio takes on the digital revolution in the final chapter of his Qatsi Trilogy. Through a variety of cinematic techniques, including slow motion, time-lapse, computer- generated imagery, and found footage, the film tells of a world that has completed the transition from the natural to the artificial. Globalization has been accomplished, all of our interactions are technologically mediated, and all images are manipulated. From this (virtual) reality, Reggio sculpts a frenetic yet ruminative portrait of an era in which the cacophony of “communication” has rendered humankind effectively postlanguage.",
+      "film_url": "https://princecharlescinema.com/film/4416952/the-qatsi-trilogy",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/nQENAgvOKdlHVWjIJRXwiqWlfsat9hJIHvJGXLyzfEo.jpg",
+      "showtimes": {
+        "2026-06-29": [
+          {
+            "time": "18:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626461",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#c62828",
+      "accent": "#ef5350"
+    },
+    {
+      "id": "magnolia",
+      "title": "Magnolia",
+      "rating": "18",
+      "runtime": 188,
+      "genre": "Drama",
+      "year": "1999",
+      "country": null,
+      "director": "Paul Thomas Anderson",
+      "cast": "Tom Cruise, John C. Reilly, Julianne Moore, Philip Seymour Hoffman, Jason Robards, William H. Macy",
+      "description": "An epic mosaic of many interrelated characters in search of happiness, forgiveness, and meaning in the San Fernando Valley.",
+      "film_url": "https://princecharlescinema.com/film/4813869/magnolia",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/4813869.jpg",
+      "showtimes": {
+        "2026-06-29": [
+          {
+            "time": "20:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626724",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-07-22": [
+          {
+            "time": "14:05",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626640",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/magnolia/",
+      "letterboxd_rating": 4.22
+    },
+    {
+      "id": "network-50th-anniversary",
+      "title": "Network - 50th Anniversary",
+      "rating": "15",
+      "runtime": 122,
+      "genre": "Drama",
+      "year": "1976",
+      "country": null,
+      "director": "Sidney Lumet",
+      "cast": "William Holden, Faye Dunaway, Peter Finch, Robert Duvall",
+      "description": "When veteran anchorman Howard Beale is forced to retire his 25-year post because of his age, he announces to viewers that he will kill himself during his farewell broadcast. Network executives rethink their decision when his fanatical tirade results in a spike in ratings.",
+      "film_url": "https://princecharlescinema.com/film/12902172/network-50th-anniversary",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/12902172.jpg",
+      "showtimes": {
+        "2026-06-30": [
+          {
+            "time": "12:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626465",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K"
+            ]
+          }
+        ]
+      },
+      "color": "#00897b",
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/network/",
+      "letterboxd_rating": 4.26
+    },
+    {
+      "id": "the-bad-news-bears",
+      "title": "The Bad News Bears",
+      "rating": "PG",
+      "runtime": 102,
+      "genre": "Comedy / Sport",
+      "year": "1976",
+      "country": null,
+      "director": "Michael Ritchie",
+      "cast": "Walter Matthau, Tatum O'Neal, Vic Morrow",
+      "description": "*ON SALE 16th JUNE*Hard-drinking, ex-minor-league hopeful Morris Buttermaker (Walter Matthau) grumpily agrees to coach a Little League team at the behest of lawyer-councilman Bob Whitewood (Ben Piazza), who has a vendetta against the league for excluding his marginally talented son from play. After failing with his new team of misfits, Buttermaker enlists feisty and gifted pitcher Amanda Whurlitzer (Tatum O'Neal) to lead the charge -- but can he find the luck and patience to whip these outcasts into shape?",
+      "film_url": "https://princecharlescinema.com/film/31616746/the-bad-news-bears",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/31616746.jpg",
+      "showtimes": {
+        "2026-06-30": [
+          {
+            "time": "12:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626464",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "£1 MEM"
+            ]
+          }
+        ]
+      },
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/the-bad-news-bears/",
+      "letterboxd_rating": 3.67
+    },
+    {
+      "id": "solaris-1972",
+      "title": "Solaris (1972)",
+      "rating": "12A",
+      "runtime": 167,
+      "genre": "Science Fiction",
+      "year": "1972",
+      "country": null,
+      "director": "Andrei Tarkovsky",
+      "cast": "Natalya Bondarchuk, Donatas Banionis, Jüri Järvet",
+      "description": "A psychologist is sent to a station orbiting a distant planet in order to discover what has caused the crew to go insane.",
+      "film_url": "https://princecharlescinema.com/film/619824/solaris-1972",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/619824.jpg",
+      "showtimes": {
+        "2026-06-30": [
+          {
+            "time": "14:40",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626467",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-07-19": [
+          {
+            "time": "14:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626604",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-08-22": [
+          {
+            "time": "20:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627196",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#00838f",
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/solaris/",
+      "letterboxd_rating": 4.22
+    },
+    {
+      "id": "dog-day-afternoon",
+      "title": "Dog Day Afternoon",
+      "rating": "15",
+      "runtime": 125,
+      "genre": "Crime / Thriller",
+      "year": "1975",
+      "country": null,
+      "director": "Sidney Lumet",
+      "cast": "Al Pacino, John Cazale, Penelope Allen",
+      "description": "When inexperienced criminal Sonny Wortzik (Al Pacino) leads a bank robbery in Brooklyn, things quickly go wrong, and a hostage situation develops. As Sonny and his accomplice, Sal Naturile (John Cazale), try desperately to remain in control, a media circus develops and the FBI arrives, creating even more tension. Gradually, Sonny's surprising motivations behind the robbery are revealed, and his standoff with law enforcement moves toward its inevitable end.",
+      "film_url": "https://princecharlescinema.com/film/6780994/dog-day-afternoon",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/6780994.jpg",
+      "showtimes": {
+        "2026-06-30": [
+          {
+            "time": "14:55",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626466",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-08-02": [
+          {
+            "time": "20:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626827",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/dog-day-afternoon/",
+      "letterboxd_rating": 4.31
+    },
     {
       "id": "the-furious",
       "title": "The Furious",
@@ -16,14 +383,6 @@
       "film_url": "https://princecharlescinema.com/film/31617373/the-furious",
       "poster_url": "https://cdn.taposapp.com/poster/600x900/tBtc0TcbJMsopNgCVJUbelSGXPe-LkjOoPjjNFJ4s9A.jpg",
       "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "12:20",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626431",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-06-30": [
           {
             "time": "18:10",
@@ -143,377 +502,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/the-furious/",
-      "letterboxd_rating": 3.87
-    },
-    {
-      "id": "there-will-be-blood",
-      "title": "There Will Be Blood",
-      "rating": "15",
-      "runtime": 158,
-      "genre": "Thriller / Western",
-      "year": "2007",
-      "country": null,
-      "director": "Paul Thomas Anderson",
-      "cast": "Daniel Day-Lewis, Paul Dano, Ciarán Hinds",
-      "description": "Ruthless silver miner, turned oil prospector, Daniel Plainview moves to oil-rich California. Using his adopted son HW to project a trustworthy, family-man image, Plainview cons local landowners into selling him their valuable properties for a pittance. However, local preacher Eli Sunday suspects Plainviews motives and intentions, starting a slow-burning feud that threatens both their lives.",
-      "film_url": "https://princecharlescinema.com/film/618755/there-will-be-blood",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/618755.jpg",
-      "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "14:35",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626462",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-07-19": [
-          {
-            "time": "20:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626606",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-07-30": [
-          {
-            "time": "14:30",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626707",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-08-27": [
-          {
-            "time": "20:20",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627121",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/there-will-be-blood/",
-      "letterboxd_rating": 4.46
-    },
-    {
-      "id": "a-better-tomorrow",
-      "title": "A Better Tomorrow",
-      "rating": "18",
-      "runtime": 95,
-      "genre": "Action / Crime",
-      "year": "1986",
-      "country": null,
-      "director": "John Woo",
-      "cast": "Ti Lung, Chow Yun-Fat, Leslie Cheung",
-      "description": "A reforming ex-gangster tries to reconcile with his estranged policeman brother, but the ties to his former gang are difficult to break.",
-      "film_url": "https://princecharlescinema.com/film/31617271/a-better-tomorrow",
-      "poster_url": "https://cdn.taposapp.com/poster/600x900/YAK6C11Xpm0ruO0MrqZEUOZ8p_vH3C00vDHinOJ1clw.jpg",
-      "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "15:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31624497",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-02": [
-          {
-            "time": "18:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31624498",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/a-better-tomorrow/",
-      "letterboxd_rating": 3.93
-    },
-    {
-      "id": "before-sunrise",
-      "title": "Before Sunrise",
-      "rating": "15",
-      "runtime": 101,
-      "genre": "Romance/Drama",
-      "year": "1995",
-      "country": null,
-      "director": "Richard Linklater",
-      "cast": "Ethan Hawke, Julie Delpy, Andrea Eckert",
-      "description": "On his way to Vienna, American Jesse (Ethan Hawke) meets Celine (Julie Delpy), a student returning to Paris. After long conversations forge a surprising connection between them, Jesse convinces Celine to get off the train with him in Vienna. Since his flight to the U.S. departs the next morning and he has no money for lodging, they wander the city together, taking in the experiences of Vienna and each other. As the night progresses, their bond makes separating in the morning a difficult choice.",
-      "film_url": "https://princecharlescinema.com/film/1390477/before-sunrise",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1390477.jpg",
-      "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "17:30",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626459",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-07-25": [
-          {
-            "time": "12:45",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626671",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ]
-      },
-      "color": "#00897b",
-      "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/before-sunrise/",
-      "letterboxd_rating": 4.3
-    },
-    {
-      "id": "the-qatsi-trilogy",
-      "title": "The Qatsi Trilogy",
-      "rating": "PG",
-      "runtime": 273,
-      "genre": "Documentary",
-      "year": "1982",
-      "country": null,
-      "director": "Godfrey Reggio",
-      "cast": " Various",
-      "description": "A singular artist and activist, Godfrey Reggio is best known for the galvanizing films of The Qatsi Trilogy. Astonishingly photographed, and featuring unforgettable, cascading scores by Philip Glass, these are immersive sensory experiences that meditate on the havoc humankind’s obsession with technological advancement has wreaked on our world. From 1983’s Koyaanisqatsi to 1988’s Powaqqatsi to 2002’s Naqoyqatsi, Reggio takes us on a journey from the ancient to the contemporary, from nature to industry, exploring life out of balance, in transformation, and as war, all the while keeping our eyes wide with wonder.KOYAANSQATSI (1982): Drawing its title from the Hopi word meaning \"life out of balance,\" this renowned documentary reveals how humanity has grown apart from nature. Featuring extensive footage of natural landscapes and elemental forces, the film gives way to many scenes of modern civilization and technology. Given its lack of narration and dialogue, the production makes its points solely through imagery and music, with many scenes either slowed down or sped up for dramatic effect.POWAQQATSI (1988): Five years after Godfrey Reggio stunned audiences with Koyaanisqatsi, he again joined forces with composer Philip Glass and other collaborators for a second chapter. Here, Reggio turns his sights on third-world nations in the Southern Hemisphere. Forgoing the sped-up aesthetic of the first film, Powaqqatsi employs a meditative slow motion in order to reveal the beauty of the traditional ways of life in those parts of the planet, and to show how cultures there are being eroded as their environments are taken over by industry. This is the most intensely spiritual segment of Reggio’s philosophical and visually remarkable Qatsi Trilogy.NAQOYQATSI (2002): Godfrey Reggio takes on the digital revolution in the final chapter of his Qatsi Trilogy. Through a variety of cinematic techniques, including slow motion, time-lapse, computer- generated imagery, and found footage, the film tells of a world that has completed the transition from the natural to the artificial. Globalization has been accomplished, all of our interactions are technologically mediated, and all images are manipulated. From this (virtual) reality, Reggio sculpts a frenetic yet ruminative portrait of an era in which the cacophony of “communication” has rendered humankind effectively postlanguage.",
-      "film_url": "https://princecharlescinema.com/film/4416952/the-qatsi-trilogy",
-      "poster_url": "https://cdn.taposapp.com/poster/600x900/nQENAgvOKdlHVWjIJRXwiqWlfsat9hJIHvJGXLyzfEo.jpg",
-      "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "18:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626461",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#c62828",
-      "accent": "#ef5350"
-    },
-    {
-      "id": "magnolia",
-      "title": "Magnolia",
-      "rating": "18",
-      "runtime": 188,
-      "genre": "Drama",
-      "year": "1999",
-      "country": null,
-      "director": "Paul Thomas Anderson",
-      "cast": "Tom Cruise, John C. Reilly, Julianne Moore, Philip Seymour Hoffman, Jason Robards, William H. Macy",
-      "description": "An epic mosaic of many interrelated characters in search of happiness, forgiveness, and meaning in the San Fernando Valley.",
-      "film_url": "https://princecharlescinema.com/film/4813869/magnolia",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/4813869.jpg",
-      "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "20:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626724",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-07-22": [
-          {
-            "time": "14:05",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626640",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ]
-      },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/magnolia/",
-      "letterboxd_rating": 4.22
-    },
-    {
-      "id": "network-50th-anniversary",
-      "title": "Network - 50th Anniversary",
-      "rating": "15",
-      "runtime": 122,
-      "genre": "Drama",
-      "year": "1976",
-      "country": null,
-      "director": "Sidney Lumet",
-      "cast": "William Holden, Faye Dunaway, Peter Finch, Robert Duvall",
-      "description": "When veteran anchorman Howard Beale is forced to retire his 25-year post because of his age, he announces to viewers that he will kill himself during his farewell broadcast. Network executives rethink their decision when his fanatical tirade results in a spike in ratings.",
-      "film_url": "https://princecharlescinema.com/film/12902172/network-50th-anniversary",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/12902172.jpg",
-      "showtimes": {
-        "2026-06-30": [
-          {
-            "time": "12:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626465",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K"
-            ]
-          }
-        ]
-      },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
-      "letterboxd_url": "https://letterboxd.com/film/network/",
-      "letterboxd_rating": 4.26
-    },
-    {
-      "id": "the-bad-news-bears",
-      "title": "The Bad News Bears",
-      "rating": "PG",
-      "runtime": 102,
-      "genre": "Comedy / Sport",
-      "year": "1976",
-      "country": null,
-      "director": "Michael Ritchie",
-      "cast": "Walter Matthau, Tatum O'Neal, Vic Morrow",
-      "description": "*ON SALE 16th JUNE*Hard-drinking, ex-minor-league hopeful Morris Buttermaker (Walter Matthau) grumpily agrees to coach a Little League team at the behest of lawyer-councilman Bob Whitewood (Ben Piazza), who has a vendetta against the league for excluding his marginally talented son from play. After failing with his new team of misfits, Buttermaker enlists feisty and gifted pitcher Amanda Whurlitzer (Tatum O'Neal) to lead the charge -- but can he find the luck and patience to whip these outcasts into shape?",
-      "film_url": "https://princecharlescinema.com/film/31616746/the-bad-news-bears",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/31616746.jpg",
-      "showtimes": {
-        "2026-06-30": [
-          {
-            "time": "12:15",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626464",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "£1 MEM"
-            ]
-          }
-        ]
-      },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/the-bad-news-bears/",
-      "letterboxd_rating": 3.67
-    },
-    {
-      "id": "solaris-1972",
-      "title": "Solaris (1972)",
-      "rating": "12A",
-      "runtime": 167,
-      "genre": "Science Fiction",
-      "year": "1972",
-      "country": null,
-      "director": "Andrei Tarkovsky",
-      "cast": "Natalya Bondarchuk, Donatas Banionis, Jüri Järvet",
-      "description": "A psychologist is sent to a station orbiting a distant planet in order to discover what has caused the crew to go insane.",
-      "film_url": "https://princecharlescinema.com/film/619824/solaris-1972",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/619824.jpg",
-      "showtimes": {
-        "2026-06-30": [
-          {
-            "time": "14:40",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626467",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-07-19": [
-          {
-            "time": "14:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626604",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-08-22": [
-          {
-            "time": "20:15",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627196",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ]
-      },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
-      "letterboxd_url": "https://letterboxd.com/film/solaris/",
-      "letterboxd_rating": 4.22
-    },
-    {
-      "id": "dog-day-afternoon",
-      "title": "Dog Day Afternoon",
-      "rating": "15",
-      "runtime": 125,
-      "genre": "Crime / Thriller",
-      "year": "1975",
-      "country": null,
-      "director": "Sidney Lumet",
-      "cast": "Al Pacino, John Cazale, Penelope Allen",
-      "description": "When inexperienced criminal Sonny Wortzik (Al Pacino) leads a bank robbery in Brooklyn, things quickly go wrong, and a hostage situation develops. As Sonny and his accomplice, Sal Naturile (John Cazale), try desperately to remain in control, a media circus develops and the FBI arrives, creating even more tension. Gradually, Sonny's surprising motivations behind the robbery are revealed, and his standoff with law enforcement moves toward its inevitable end.",
-      "film_url": "https://princecharlescinema.com/film/6780994/dog-day-afternoon",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/6780994.jpg",
-      "showtimes": {
-        "2026-06-30": [
-          {
-            "time": "14:55",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626466",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-08-02": [
-          {
-            "time": "20:15",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626827",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ]
-      },
       "color": "#546e7a",
       "accent": "#90a4ae",
-      "letterboxd_url": "https://letterboxd.com/film/dog-day-afternoon/",
-      "letterboxd_rating": 4.31
+      "letterboxd_url": "https://letterboxd.com/film/the-furious/",
+      "letterboxd_rating": 3.87
     },
     {
       "id": "prince-charles-cinema-film-quiz",
