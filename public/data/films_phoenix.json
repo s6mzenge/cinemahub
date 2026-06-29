@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-29T12:03:36.229127+00:00",
+  "scraped_at": "2026-06-29T12:33:22.950335+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -119,8 +119,8 @@
       "letterboxd_rating": 3.45
     },
     {
-      "id": "phoenix-members-preview-the-invite",
-      "title": "Phoenix Members Preview: The Invite",
+      "id": "the-invite",
+      "title": "The Invite",
       "rating": "15",
       "runtime": 107,
       "genre": "Other",
@@ -139,10 +139,20 @@
             "screen": "Screen 1",
             "hoh": false
           }
+        ],
+        "2026-07-04": [
+          {
+            "time": "14:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_588986.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
         ]
       },
       "color": "#d81b60",
-      "accent": "#ff6090"
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
+      "letterboxd_rating": 4.09
     },
     {
       "id": "the-last-viking",
