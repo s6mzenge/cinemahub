@@ -1,49 +1,7 @@
 {
-  "scraped_at": "2026-06-29T19:05:28.218720+00:00",
+  "scraped_at": "2026-06-29T19:34:32.962356+00:00",
   "source": "riocinema.org.uk",
   "films": [
-    {
-      "id": "david-hockney-a-bigger-splash",
-      "title": "David Hockney - a Bigger Splash",
-      "rating": "18",
-      "runtime": 106,
-      "genre": "Other",
-      "year": "1973",
-      "director": "Jack Hazan",
-      "cast": null,
-      "country": "UK",
-      "description": "From 1971-1973, Jack Hazan gained intimate access to David Hockney and his circle of friends and lovers to create A Bigger Splash. Using a 'structured reality' format rather than pure documentary, he crafted a mesmerising film, groundbreaking in style and daring in nature.  “Hockney was initially ho...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2629624",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2629623.jpg",
-      "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "19:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2671289.TcsSection_936",
-            "screen": "S1",
-            "hoh": false
-          }
-        ],
-        "2026-07-02": [
-          {
-            "time": "19:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2629625.TcsSection_94575",
-            "screen": "Ludski",
-            "hoh": false,
-            "tags": [
-              "Pink Palace",
-              "NoAds"
-            ],
-            "sold_out": true
-          }
-        ]
-      },
-      "season_tags": [
-        "Pink Palace"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60"
-    },
     {
       "id": "obsession",
       "title": "Obsession",
@@ -110,8 +68,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
       "letterboxd_rating": 4.14
     },
@@ -157,8 +115,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-furious/",
       "letterboxd_rating": 3.87
     },
@@ -196,8 +154,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
       "letterboxd_rating": 3.58
     },
@@ -227,8 +185,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/cactus-pears/",
       "letterboxd_rating": 3.89
     },
@@ -258,10 +216,44 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/backrooms-2026/",
       "letterboxd_rating": 3.37
+    },
+    {
+      "id": "david-hockney-a-bigger-splash",
+      "title": "David Hockney - a Bigger Splash",
+      "rating": "18",
+      "runtime": 106,
+      "genre": "Other",
+      "year": "1973",
+      "director": "Jack Hazan",
+      "cast": null,
+      "country": "UK",
+      "description": "From 1971-1973, Jack Hazan gained intimate access to David Hockney and his circle of friends and lovers to create A Bigger Splash. Using a 'structured reality' format rather than pure documentary, he crafted a mesmerising film, groundbreaking in style and daring in nature.  “Hockney was initially ho...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2629624",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2629623.jpg",
+      "showtimes": {
+        "2026-07-02": [
+          {
+            "time": "19:30",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2629625.TcsSection_94575",
+            "screen": "Ludski",
+            "hoh": false,
+            "tags": [
+              "Pink Palace",
+              "NoAds"
+            ],
+            "sold_out": true
+          }
+        ]
+      },
+      "season_tags": [
+        "Pink Palace"
+      ],
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
     },
     {
       "id": "my-chemical-romance-life-on-the-murder-scene",
