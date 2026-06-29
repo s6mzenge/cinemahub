@@ -1,7 +1,37 @@
 {
-  "scraped_at": "2026-06-29T18:33:45.235911+00:00",
+  "scraped_at": "2026-06-29T19:03:38.984365+00:00",
   "source": "thearzner.com",
   "films": [
+    {
+      "id": "erupcja-165260",
+      "title": "Erupcja",
+      "rating": "15",
+      "runtime": 71,
+      "genre": "New Release",
+      "description": "While on vacation in Poland, Bethany (Charli XCX) breaks away from a romantic itinerary planned by her doting boyfriend, Rob, fearing that a marriage proposal is imminent. Reuniting instead with an old friend, Nel, the two women rekindle a uniquely combustible chemistry over the course of a few days…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=165260",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/165257.jpg",
+      "showtimes": {
+        "2026-06-30": [
+          {
+            "time": "11:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_214304.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "17:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_210006.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/erupcja/",
+      "letterboxd_rating": 3.35
+    },
     {
       "id": "cactus-pears-209547",
       "title": "Cactus Pears",
@@ -12,14 +42,6 @@
       "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=209547",
       "poster_url": "https://images.savoysystems.co.uk/TAL/209543.jpg",
       "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "12:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_210049.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
         "2026-06-30": [
           {
             "time": "13:00",
@@ -59,8 +81,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/cactus-pears/",
       "letterboxd_rating": 3.89
     },
@@ -74,23 +96,6 @@
       "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=205469",
       "poster_url": "https://images.savoysystems.co.uk/TAL/205468.jpg",
       "showtimes": {
-        "2026-06-29": [
-          {
-            "time": "14:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_222473.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
-          {
-            "time": "16:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_210044.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": true,
-            "tags": [
-              "CC"
-            ]
-          }
-        ],
         "2026-06-30": [
           {
             "time": "15:30",
@@ -124,40 +129,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
-      "letterboxd_rating": 3.58
-    },
-    {
-      "id": "erupcja-165260",
-      "title": "Erupcja",
-      "rating": "15",
-      "runtime": 71,
-      "genre": "New Release",
-      "description": "While on vacation in Poland, Bethany (Charli XCX) breaks away from a romantic itinerary planned by her doting boyfriend, Rob, fearing that a marriage proposal is imminent. Reuniting instead with an old friend, Nel, the two women rekindle a uniquely combustible chemistry over the course of a few days…",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=165260",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/165257.jpg",
-      "showtimes": {
-        "2026-06-30": [
-          {
-            "time": "11:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_214304.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
-          {
-            "time": "17:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_210006.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
       "color": "#7c4dff",
       "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/erupcja/",
-      "letterboxd_rating": 3.35
+      "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
+      "letterboxd_rating": 3.58
     },
     {
       "id": "double-bill-q-a-two-black-boys-in-paradise-a-friend-of-dorothy-201036",
