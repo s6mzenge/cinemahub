@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-29T20:33:28.723481+00:00",
+  "scraped_at": "2026-06-30T04:03:37.473694+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
     {
@@ -421,7 +421,8 @@
             "time": "18:00",
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5735908.TcsSection_638",
             "screen": null,
-            "hoh": false
+            "hoh": false,
+            "sold_out": true
           }
         ],
         "2026-07-03": [
@@ -490,7 +491,7 @@
       "color": "#6a1b9a",
       "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/dear-you-2026/",
-      "letterboxd_rating": 3.85
+      "letterboxd_rating": 3.86
     },
     {
       "id": "effi-o-blaenau",
@@ -549,7 +550,7 @@
       "color": "#00838f",
       "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/effi-o-blaenau/",
-      "letterboxd_rating": 3.74
+      "letterboxd_rating": 3.75
     },
     {
       "id": "strictly-ballroom",
@@ -1542,7 +1543,8 @@
             "hoh": false,
             "tags": [
               "Intro"
-            ]
+            ],
+            "sold_out": true
           }
         ]
       },
