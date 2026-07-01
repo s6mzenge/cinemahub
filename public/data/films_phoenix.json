@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-01T12:35:06.277228+00:00",
+  "scraped_at": "2026-07-01T13:05:08.103711+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -164,7 +164,10 @@
             "time": "17:15",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_588988.TcsSection_720",
             "screen": "Screen 2",
-            "hoh": false
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
           }
         ],
         "2026-07-05": [
@@ -183,7 +186,10 @@
             "time": "15:15",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_589026.TcsSection_720",
             "screen": "Screen 2",
-            "hoh": false
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
           }
         ],
         "2026-07-09": [
@@ -191,7 +197,10 @@
             "time": "20:15",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_589035.TcsSection_720",
             "screen": "Screen 2",
-            "hoh": false
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
           }
         ]
       },
@@ -399,7 +408,7 @@
     {
       "id": "national-theatre-live-the-playboy-of-the-western-world",
       "title": "National Theatre Live: The Playboy Of The Western World",
-      "rating": "U",
+      "rating": "12A",
       "runtime": 150,
       "genre": "Other",
       "year": null,
@@ -1253,7 +1262,9 @@
         ]
       },
       "color": "#a6307e",
-      "accent": "#d684bb"
+      "accent": "#d684bb",
+      "letterboxd_url": "https://letterboxd.com/film/nostalgia-1983/",
+      "letterboxd_rating": 4.28
     },
     {
       "id": "75-years-of-contemporary-films-working-girls",
