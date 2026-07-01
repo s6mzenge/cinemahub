@@ -1,45 +1,7 @@
 {
-  "scraped_at": "2026-07-01T11:33:37.713003+00:00",
+  "scraped_at": "2026-07-01T12:02:45.707581+00:00",
   "source": "thearzner.com",
   "films": [
-    {
-      "id": "plainclothes-79695",
-      "title": "Plainclothes",
-      "rating": "15",
-      "runtime": 97,
-      "genre": "New Release",
-      "description": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn be…",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=79695",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/79693.jpg",
-      "showtimes": {
-        "2026-07-01": [
-          {
-            "time": "11:45",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_214293.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": true,
-            "tags": [
-              "CC"
-            ]
-          }
-        ],
-        "2026-07-02": [
-          {
-            "time": "16:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_214298.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": true,
-            "tags": [
-              "CC"
-            ]
-          }
-        ]
-      },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/plainclothes/",
-      "letterboxd_rating": 3.74
-    },
     {
       "id": "cactus-pears-209547",
       "title": "Cactus Pears",
@@ -89,8 +51,8 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/cactus-pears/",
       "letterboxd_rating": 3.89
     },
@@ -129,10 +91,37 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
       "letterboxd_rating": 3.58
+    },
+    {
+      "id": "plainclothes-79695",
+      "title": "Plainclothes",
+      "rating": "15",
+      "runtime": 97,
+      "genre": "New Release",
+      "description": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn be…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=79695",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/79693.jpg",
+      "showtimes": {
+        "2026-07-02": [
+          {
+            "time": "16:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_214298.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": true,
+            "tags": [
+              "CC"
+            ]
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/plainclothes/",
+      "letterboxd_rating": 3.74
     },
     {
       "id": "grease-sing-a-long-219413",
