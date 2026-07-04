@@ -1,7 +1,28 @@
 {
-  "scraped_at": "2026-07-04T15:32:24.822856+00:00",
+  "scraped_at": "2026-07-04T16:02:31.314855+00:00",
   "source": "peckhamplex.london",
   "films": [
+    {
+      "id": "aida",
+      "title": "Aida on Sydney Harbour",
+      "rating": "U",
+      "runtime": 171,
+      "genre": "Opera",
+      "film_url": "https://www.peckhamplex.london/film/aida",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/aida.jpg",
+      "showtimes": {
+        "2026-07-08": [
+          {
+            "time": "19:45",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80788?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60"
+    },
     {
       "id": "backrooms-everything-must-go-bonus-edition",
       "title": "Backrooms: Everything must Go Bonus Edition",
@@ -49,25 +70,27 @@
       "accent": "#90a4ae"
     },
     {
-      "id": "aida",
-      "title": "Aida on Sydney Harbour",
-      "rating": "U",
-      "runtime": 171,
-      "genre": "Opera",
-      "film_url": "https://www.peckhamplex.london/film/aida",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/aida.jpg",
+      "id": "beyond-the-silk-road",
+      "title": "Beyond the Silk Road",
+      "rating": "12A",
+      "runtime": 89,
+      "genre": "Documentary",
+      "film_url": "https://www.peckhamplex.london/film/beyond-the-silk-road",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/beyond-the-silk-road.jpg",
       "showtimes": {
-        "2026-07-08": [
+        "2026-07-06": [
           {
-            "time": "19:45",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80788?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80787?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 6",
             "hoh": false
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60"
+      "color": "#c62828",
+      "accent": "#ef5350",
+      "letterboxd_url": "https://letterboxd.com/film/beyond-the-silk-road/",
+      "letterboxd_rating": null
     },
     {
       "id": "disclosure-day",
@@ -110,93 +133,6 @@
       "letterboxd_rating": 3.12
     },
     {
-      "id": "nirvannathe-band-the-show-the-movie",
-      "title": "Nirvanna:The Band, The Show, The Movie",
-      "rating": "15",
-      "runtime": 100,
-      "genre": "Comedy",
-      "film_url": "https://www.peckhamplex.london/film/nirvannathe-band-the-show-the-movie",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/nirvannathe-band-the-show-the-movie.jpg",
-      "showtimes": {
-        "2026-07-04": [
-          {
-            "time": "21:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81245?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          }
-        ],
-        "2026-07-05": [
-          {
-            "time": "21:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81375?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          }
-        ],
-        "2026-07-06": [
-          {
-            "time": "21:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81418?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          }
-        ],
-        "2026-07-07": [
-          {
-            "time": "21:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81436?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          }
-        ],
-        "2026-07-08": [
-          {
-            "time": "21:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81454?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          }
-        ],
-        "2026-07-09": [
-          {
-            "time": "21:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81472?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/nirvanna-the-band-the-show-the-movie/",
-      "letterboxd_rating": 4.27
-    },
-    {
-      "id": "evil-dead-burn",
-      "title": "Evil Dead Burn",
-      "rating": "18",
-      "runtime": 109,
-      "genre": "Horror",
-      "film_url": "https://www.peckhamplex.london/film/evil-dead-burn",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/evil-dead-burn.jpg",
-      "showtimes": {
-        "2026-07-09": [
-          {
-            "time": "20:45",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81353?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Sébastien Vaniček",
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/evil-dead-burn/",
-      "letterboxd_rating": null
-    },
-    {
       "id": "minions-and-monsters",
       "title": "Minions and Monsters",
       "rating": "U",
@@ -235,7 +171,7 @@
           {
             "time": "17:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81367?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           },
           {
@@ -297,103 +233,79 @@
           {
             "time": "20:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81470?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           }
         ]
       },
       "director": "Pierre Coffin",
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/minions-monsters-2026/",
       "letterboxd_rating": 3.31
     },
     {
-      "id": "beyond-the-silk-road",
-      "title": "Beyond the Silk Road",
-      "rating": "12A",
-      "runtime": 89,
-      "genre": "Documentary",
-      "film_url": "https://www.peckhamplex.london/film/beyond-the-silk-road",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/beyond-the-silk-road.jpg",
+      "id": "nirvannathe-band-the-show-the-movie",
+      "title": "Nirvanna:The Band, The Show, The Movie",
+      "rating": "15",
+      "runtime": 100,
+      "genre": "Comedy",
+      "film_url": "https://www.peckhamplex.london/film/nirvannathe-band-the-show-the-movie",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/nirvannathe-band-the-show-the-movie.jpg",
       "showtimes": {
-        "2026-07-06": [
+        "2026-07-04": [
           {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80787?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "time": "21:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81245?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
             "hoh": false
           }
-        ]
-      },
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/beyond-the-silk-road/",
-      "letterboxd_rating": null
-    },
-    {
-      "id": "obsession",
-      "title": "Obsession",
-      "rating": "18",
-      "runtime": 109,
-      "genre": "Horror",
-      "film_url": "https://www.peckhamplex.london/film/obsession",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/obsession.jpg",
-      "showtimes": {
+        ],
         "2026-07-05": [
           {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81366?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "21:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81375?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 4",
             "hoh": false
           }
         ],
         "2026-07-06": [
           {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81409?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "time": "21:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81418?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          }
+        ],
+        "2026-07-07": [
+          {
+            "time": "21:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81436?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
             "hoh": false
           }
         ],
         "2026-07-08": [
           {
-            "time": "18:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81445?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "21:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81454?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 4",
             "hoh": false
           }
-        ]
-      },
-      "director": "Curry Barker",
-      "color": "#1565c0",
-      "accent": "#64b5f6",
-      "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
-      "letterboxd_rating": 4.13
-    },
-    {
-      "id": "michael",
-      "title": "Michael",
-      "rating": "12A",
-      "runtime": 125,
-      "genre": "Biography",
-      "film_url": "https://www.peckhamplex.london/film/michael",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/michael.jpg",
-      "showtimes": {
-        "2026-07-05": [
+        ],
+        "2026-07-09": [
           {
-            "time": "13:20",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81360?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "21:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81472?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 4",
             "hoh": false
           }
         ]
       },
-      "director": "Antoine Fuqua",
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
-      "letterboxd_rating": 3.6
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/nirvanna-the-band-the-show-the-movie/",
+      "letterboxd_rating": 4.27
     },
     {
       "id": "jackass-best-and-last",
@@ -408,7 +320,7 @@
           {
             "time": "21:10",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81249?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -416,7 +328,7 @@
           {
             "time": "21:10",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81378?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 6",
             "hoh": false
           }
         ],
@@ -454,10 +366,98 @@
         ]
       },
       "director": "Jeff Tremaine",
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/jackass-best-and-last/",
       "letterboxd_rating": 3.53
+    },
+    {
+      "id": "michael",
+      "title": "Michael",
+      "rating": "12A",
+      "runtime": 125,
+      "genre": "Biography",
+      "film_url": "https://www.peckhamplex.london/film/michael",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/michael.jpg",
+      "showtimes": {
+        "2026-07-05": [
+          {
+            "time": "13:20",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81360?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Antoine Fuqua",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
+      "letterboxd_rating": 3.6
+    },
+    {
+      "id": "the-magic-faraway-tree",
+      "title": "The Magic Faraway Tree",
+      "rating": "U",
+      "runtime": 110,
+      "genre": "Adventure",
+      "film_url": "https://www.peckhamplex.london/film/the-magic-faraway-tree",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-magic-faraway-tree.jpg",
+      "showtimes": {
+        "2026-07-05": [
+          {
+            "time": "12:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81357?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Ben Gregor",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/the-magic-faraway-tree/",
+      "letterboxd_rating": 3.02
+    },
+    {
+      "id": "obsession",
+      "title": "Obsession",
+      "rating": "18",
+      "runtime": 109,
+      "genre": "Horror",
+      "film_url": "https://www.peckhamplex.london/film/obsession",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/obsession.jpg",
+      "showtimes": {
+        "2026-07-05": [
+          {
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81366?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          }
+        ],
+        "2026-07-06": [
+          {
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81409?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          }
+        ],
+        "2026-07-08": [
+          {
+            "time": "18:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81445?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Curry Barker",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
+      "letterboxd_rating": 4.13
     },
     {
       "id": "the-invite",
@@ -506,7 +506,7 @@
           {
             "time": "18:10",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81414?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": false
           },
           {
@@ -526,7 +526,7 @@
           {
             "time": "20:45",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81437?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -548,7 +548,7 @@
           {
             "time": "18:10",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81468?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": false
           },
           {
@@ -566,6 +566,30 @@
       "letterboxd_rating": 4.13
     },
     {
+      "id": "evil-dead-burn",
+      "title": "Evil Dead Burn",
+      "rating": "18",
+      "runtime": 109,
+      "genre": "Horror",
+      "film_url": "https://www.peckhamplex.london/film/evil-dead-burn",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/evil-dead-burn.jpg",
+      "showtimes": {
+        "2026-07-09": [
+          {
+            "time": "20:45",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81353?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Sébastien Vaniček",
+      "color": "#ad1457",
+      "accent": "#f06292",
+      "letterboxd_url": "https://letterboxd.com/film/evil-dead-burn/",
+      "letterboxd_rating": null
+    },
+    {
       "id": "supergirl",
       "title": "Supergirl",
       "rating": "12A",
@@ -578,7 +602,7 @@
           {
             "time": "18:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81242?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": true
           },
           {
@@ -592,7 +616,7 @@
           {
             "time": "13:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81359?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "screen": null,
             "hoh": true
           },
           {
@@ -604,13 +628,13 @@
           {
             "time": "18:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81370?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": true
           },
           {
             "time": "20:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81374?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
+            "screen": null,
             "hoh": true
           }
         ],
@@ -624,7 +648,7 @@
           {
             "time": "20:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81417?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": true
           }
         ],
@@ -638,7 +662,7 @@
           {
             "time": "20:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81435?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": true
           }
         ],
@@ -672,34 +696,10 @@
         ]
       },
       "director": "Craig Gillespie",
-      "color": "#ad1457",
-      "accent": "#f06292",
-      "letterboxd_url": "https://letterboxd.com/film/supergirl-2026/",
-      "letterboxd_rating": 3.08
-    },
-    {
-      "id": "the-magic-faraway-tree",
-      "title": "The Magic Faraway Tree",
-      "rating": "U",
-      "runtime": 110,
-      "genre": "Adventure",
-      "film_url": "https://www.peckhamplex.london/film/the-magic-faraway-tree",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-magic-faraway-tree.jpg",
-      "showtimes": {
-        "2026-07-05": [
-          {
-            "time": "12:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81357?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Ben Gregor",
       "color": "#37474f",
       "accent": "#78909c",
-      "letterboxd_url": "https://letterboxd.com/film/the-magic-faraway-tree/",
-      "letterboxd_rating": 3.02
+      "letterboxd_url": "https://letterboxd.com/film/supergirl-2026/",
+      "letterboxd_rating": 3.08
     },
     {
       "id": "the-mandalorian-grogu",
@@ -724,30 +724,6 @@
       "accent": "#8d6e63"
     },
     {
-      "id": "the-sheep-detectives",
-      "title": "The Sheep Detectives",
-      "rating": "PG",
-      "runtime": 110,
-      "genre": "Action",
-      "film_url": "https://www.peckhamplex.london/film/the-sheep-detectives",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-sheep-detectives.jpg",
-      "showtimes": {
-        "2026-07-05": [
-          {
-            "time": "12:20",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81355?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Kyle Balda",
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
-      "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
-      "letterboxd_rating": 3.81
-    },
-    {
       "id": "la-traviata",
       "title": "La Traviata on Sydney Harbour",
       "rating": "PG",
@@ -765,94 +741,10 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/la-traviata-on-sydney-harbour/",
       "letterboxd_rating": null
-    },
-    {
-      "id": "nt-livethe-misanthrope",
-      "title": "NT Live:The Misanthrope",
-      "rating": "15",
-      "runtime": 150,
-      "genre": "Live Theatre",
-      "film_url": "https://www.peckhamplex.london/film/nt-livethe-misanthrope",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/nt-livethe-misanthrope.jpg",
-      "showtimes": {
-        "2026-09-22": [
-          {
-            "time": "19:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81076?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#9f2121",
-      "accent": "#d36868"
-    },
-    {
-      "id": "tfff-captain-america",
-      "title": "TFFF: Captain America",
-      "rating": "PG",
-      "runtime": 120,
-      "genre": "Adventure",
-      "film_url": "https://www.peckhamplex.london/film/tfff-captain-america",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-captain-america.jpg",
-      "showtimes": {
-        "2026-08-08": [
-          {
-            "time": "21:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81481?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#3052a6",
-      "accent": "#849cd6"
-    },
-    {
-      "id": "radiohead-x-nosferatu-a-symphony-of-horror",
-      "title": "Radiohead X Nosferatu: A Symphony of Horror",
-      "rating": "PG",
-      "runtime": 94,
-      "genre": "Music",
-      "film_url": "https://www.peckhamplex.london/film/radiohead-x-nosferatu-a-symphony-of-horror",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/radiohead-x-nosferatu-a-symphony-of-horror.jpg",
-      "showtimes": {
-        "2026-10-01": [
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80185?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#63971a",
-      "accent": "#9ed453"
-    },
-    {
-      "id": "tfff-hellbreeder",
-      "title": "TFFF: Hellbreeder",
-      "rating": "15",
-      "runtime": 120,
-      "genre": "Horror",
-      "film_url": "https://www.peckhamplex.london/film/tfff-hellbreeder",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-hellbreeder.jpg",
-      "showtimes": {
-        "2026-08-09": [
-          {
-            "time": "19:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81482?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#9f2190",
-      "accent": "#d368c6"
     },
     {
       "id": "toy-story-5",
@@ -881,7 +773,7 @@
           {
             "time": "12:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81356?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": false
           },
           {
@@ -899,7 +791,7 @@
           {
             "time": "20:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81377?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -927,7 +819,7 @@
           {
             "time": "20:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81438?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": false
           }
         ],
@@ -955,36 +847,60 @@
           {
             "time": "20:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81474?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": false
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
       "letterboxd_rating": 3.72
     },
     {
-      "id": "tfff-nemesis",
-      "title": "TFFF: Nemesis",
-      "rating": "18",
-      "runtime": 100,
-      "genre": "Thriller",
-      "film_url": "https://www.peckhamplex.london/film/tfff-nemesis",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-nemesis.jpg",
+      "id": "the-sheep-detectives",
+      "title": "The Sheep Detectives",
+      "rating": "PG",
+      "runtime": 110,
+      "genre": "Action",
+      "film_url": "https://www.peckhamplex.london/film/the-sheep-detectives",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-sheep-detectives.jpg",
       "showtimes": {
-        "2026-08-08": [
+        "2026-07-05": [
           {
-            "time": "17:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81480?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "12:20",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81355?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 6",
             "hoh": false
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "director": "Kyle Balda",
+      "color": "#9f2121",
+      "accent": "#d36868",
+      "letterboxd_url": "https://letterboxd.com/film/the-sheep-detectives/",
+      "letterboxd_rating": 3.81
+    },
+    {
+      "id": "tfff-captain-america",
+      "title": "TFFF: Captain America",
+      "rating": "PG",
+      "runtime": 120,
+      "genre": "Adventure",
+      "film_url": "https://www.peckhamplex.london/film/tfff-captain-america",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-captain-america.jpg",
+      "showtimes": {
+        "2026-08-08": [
+          {
+            "time": "21:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81481?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "tfff-godmonster-of-indian-flats",
@@ -1004,8 +920,50 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3"
+      "color": "#63971a",
+      "accent": "#9ed453"
+    },
+    {
+      "id": "radiohead-x-nosferatu-a-symphony-of-horror",
+      "title": "Radiohead X Nosferatu: A Symphony of Horror",
+      "rating": "PG",
+      "runtime": 94,
+      "genre": "Music",
+      "film_url": "https://www.peckhamplex.london/film/radiohead-x-nosferatu-a-symphony-of-horror",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/radiohead-x-nosferatu-a-symphony-of-horror.jpg",
+      "showtimes": {
+        "2026-10-01": [
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80185?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#9f2190",
+      "accent": "#d368c6"
+    },
+    {
+      "id": "nt-livethe-misanthrope",
+      "title": "NT Live:The Misanthrope",
+      "rating": "15",
+      "runtime": 150,
+      "genre": "Live Theatre",
+      "film_url": "https://www.peckhamplex.london/film/nt-livethe-misanthrope",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/nt-livethe-misanthrope.jpg",
+      "showtimes": {
+        "2026-09-22": [
+          {
+            "time": "19:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81076?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "tfff-city-wide-fever",
@@ -1025,50 +983,29 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684"
+      "color": "#975e1a",
+      "accent": "#d49953"
     },
     {
-      "id": "tfff-surprise-film-9826",
-      "title": "TFFF: Surprise Film 9.8.26",
-      "rating": "TBC",
-      "runtime": 90,
-      "genre": "Mystery",
-      "film_url": "https://www.peckhamplex.london/film/tfff-surprise-film-9826",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-surprise-film-9826.jpg",
+      "id": "tfff-hellbreeder",
+      "title": "TFFF: Hellbreeder",
+      "rating": "15",
+      "runtime": 120,
+      "genre": "Horror",
+      "film_url": "https://www.peckhamplex.london/film/tfff-hellbreeder",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-hellbreeder.jpg",
       "showtimes": {
         "2026-08-09": [
           {
-            "time": "21:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81483?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "19:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81482?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 6",
             "hoh": false
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e"
-    },
-    {
-      "id": "turandot",
-      "title": "Turandot on Sydney Harbour",
-      "rating": "PG",
-      "runtime": 146,
-      "genre": "Opera",
-      "film_url": "https://www.peckhamplex.london/film/turandot",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/turandot.jpg",
-      "showtimes": {
-        "2026-08-05": [
-          {
-            "time": "19:45",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80789?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#41219f",
+      "accent": "#8368d3"
     },
     {
       "id": "tfff-surprise-film-7826",
@@ -1088,8 +1025,50 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#35a630",
+      "accent": "#88d684"
+    },
+    {
+      "id": "tfff-nemesis",
+      "title": "TFFF: Nemesis",
+      "rating": "18",
+      "runtime": 100,
+      "genre": "Thriller",
+      "film_url": "https://www.peckhamplex.london/film/tfff-nemesis",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-nemesis.jpg",
+      "showtimes": {
+        "2026-08-08": [
+          {
+            "time": "17:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81480?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#971a44",
+      "accent": "#d4537e"
+    },
+    {
+      "id": "tfff-surprise-film-9826",
+      "title": "TFFF: Surprise Film 9.8.26",
+      "rating": "TBC",
+      "runtime": 90,
+      "genre": "Mystery",
+      "film_url": "https://www.peckhamplex.london/film/tfff-surprise-film-9826",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-surprise-film-9826.jpg",
+      "showtimes": {
+        "2026-08-09": [
+          {
+            "time": "21:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81483?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "wham-10-days-in-china",
@@ -1109,10 +1088,31 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4",
+      "color": "#9ca630",
+      "accent": "#cfd684",
       "letterboxd_url": "https://letterboxd.com/film/wham-10-days-in-china/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "turandot",
+      "title": "Turandot on Sydney Harbour",
+      "rating": "PG",
+      "runtime": 146,
+      "genre": "Opera",
+      "film_url": "https://www.peckhamplex.london/film/turandot",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/turandot.jpg",
+      "showtimes": {
+        "2026-08-05": [
+          {
+            "time": "19:45",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80789?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7d1a97",
+      "accent": "#b953d4"
     }
   ]
 }
