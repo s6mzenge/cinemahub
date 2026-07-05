@@ -1,42 +1,7 @@
 {
-  "scraped_at": "2026-07-04T20:33:39.115022+00:00",
+  "scraped_at": "2026-07-05T04:04:42.125893+00:00",
   "source": "ica.art",
   "films": [
-    {
-      "id": "familiar-touch",
-      "title": "Familiar Touch",
-      "rating": "TBC",
-      "runtime": 90,
-      "genre": "Other",
-      "year": "2024",
-      "country": "US",
-      "director": "Sarah Friedland",
-      "description": "A coming-of-old-age film following an older woman’s transition into assisted living as she contends with her conflicting relationship with herself and her caregivers amidst her shifting memory, age identity, and desires.",
-      "film_url": "https://www.ica.art/films/familiar-touch",
-      "poster_url": "https://www.ica.art/media/13263.png",
-      "showtimes": {
-        "2026-07-04": [
-          {
-            "time": "12:45",
-            "booking_url": "https://www.ica.art/book/732601",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-08": [
-          {
-            "time": "15:00",
-            "booking_url": "https://www.ica.art/book/732601",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/familiar-touch/",
-      "letterboxd_rating": 3.75
-    },
     {
       "id": "a-better-tomorrow",
       "title": "A Better Tomorrow (4K Restoration)",
@@ -50,14 +15,6 @@
       "film_url": "https://www.ica.art/films/a-better-tomorrow",
       "poster_url": "https://www.ica.art/media/13389.jpg",
       "showtimes": {
-        "2026-07-04": [
-          {
-            "time": "13:00",
-            "booking_url": "https://www.ica.art/book/740201",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-07-05": [
           {
             "time": "12:05",
@@ -75,8 +32,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/a-better-tomorrow/",
       "letterboxd_rating": 3.93
     },
@@ -93,20 +50,6 @@
       "film_url": "https://www.ica.art/films/my-fathers-island",
       "poster_url": "https://www.ica.art/media/13449.jpg",
       "showtimes": {
-        "2026-07-04": [
-          {
-            "time": "14:45",
-            "booking_url": "https://www.ica.art/book/745601",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:30",
-            "booking_url": "https://www.ica.art/book/745601",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-07-05": [
           {
             "time": "13:30",
@@ -164,60 +107,92 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090"
+      "color": "#7c4dff",
+      "accent": "#b388ff"
     },
     {
-      "id": "dry-leaf",
-      "title": "Dry Leaf",
+      "id": "rozier-near-orouet",
+      "title": "Near Orouet",
       "rating": "TBC",
-      "runtime": 186,
+      "runtime": 150,
       "genre": "Other",
-      "year": "2025",
-      "country": "Georgia / Germany",
-      "director": "Alexandre Koberidze",
-      "description": "An opaque journey through the Georgian countryside, Alexandre Koberidze's latest film is a remarkable exploration of absence, as a father traces a path through villages and football fields in search of his missing daughter.",
-      "film_url": "https://www.ica.art/films/dry-leaf",
-      "poster_url": "https://www.ica.art/media/12959.jpg",
+      "year": "1971",
+      "country": "France",
+      "director": "Jacques Rozier",
+      "description": "Perfectly capturing both the liberating promise and melancholic effervescence of summer,Near Orouëtis a masterpiece of the post-New Wave era and a beautiful meditation on the fleetingness of youth, love, and time.",
+      "film_url": "https://www.ica.art/films/rozier-near-orouet",
+      "poster_url": "https://www.ica.art/media/13401.jpg",
       "showtimes": {
-        "2026-07-04": [
+        "2026-07-05": [
           {
-            "time": "15:00",
-            "booking_url": "https://www.ica.art/book/709001",
-            "screen": null,
+            "time": "14:00",
+            "booking_url": "https://www.ica.art/book/733001",
+            "screen": "Cinema 1",
             "hoh": false,
             "tags": [
-              "Off-Circuit"
+              "Time to Play Films by Jacques Rozier"
             ]
           }
         ],
-        "2026-07-07": [
+        "2026-07-16": [
           {
-            "time": "13:30",
-            "booking_url": "https://www.ica.art/book/709001",
+            "time": "19:30",
+            "booking_url": "https://www.ica.art/book/733001",
             "screen": "Cinema 2",
             "hoh": false,
             "tags": [
-              "Off-Circuit"
+              "Time to Play Films by Jacques Rozier"
             ]
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/near-orouet/",
+      "letterboxd_rating": 4.02
+    },
+    {
+      "id": "blue-heron",
+      "title": "Blue Heron",
+      "rating": "12A",
+      "runtime": 90,
+      "genre": "Other",
+      "year": "2025",
+      "country": "Canada/Hungary",
+      "director": "Sophy Romvari",
+      "description": "On Vancouver Island in the late 1990s eight-year-old Sasha and her Hungarian immigrant family attempt to build a new life, only to be destabilised by the increasingly dangerous behaviour of her older brother, Jeremy.",
+      "film_url": "https://www.ica.art/films/blue-heron",
+      "poster_url": "https://www.ica.art/media/13346.jpg",
+      "showtimes": {
+        "2026-07-05": [
+          {
+            "time": "16:00",
+            "booking_url": "https://www.ica.art/book/738601",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ],
+        "2026-07-08": [
+          {
+            "time": "20:40",
+            "booking_url": "https://www.ica.art/book/738601",
+            "screen": "Cinema 1",
+            "hoh": false
           }
         ],
         "2026-07-09": [
           {
-            "time": "15:00",
-            "booking_url": "https://www.ica.art/book/709001",
+            "time": "20:40",
+            "booking_url": "https://www.ica.art/book/738601",
             "screen": "Cinema 1",
-            "hoh": false,
-            "tags": [
-              "Off-Circuit"
-            ]
+            "hoh": false
           }
         ]
       },
       "color": "#00897b",
       "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/dry-leaf/",
-      "letterboxd_rating": 3.83
+      "letterboxd_url": "https://letterboxd.com/film/blue-heron/",
+      "letterboxd_rating": 3.93
     },
     {
       "id": "as-aves",
@@ -232,14 +207,6 @@
       "film_url": "https://www.ica.art/films/as-aves",
       "poster_url": "https://www.ica.art/media/13411.jpg",
       "showtimes": {
-        "2026-07-04": [
-          {
-            "time": "17:00",
-            "booking_url": "https://www.ica.art/book/741801",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-07-05": [
           {
             "time": "18:00",
@@ -287,6 +254,36 @@
       "letterboxd_rating": null
     },
     {
+      "id": "jukebox-film-club-komitas",
+      "title": "Komitas",
+      "rating": "TBC",
+      "runtime": 96,
+      "genre": "Other",
+      "year": "1988",
+      "country": "West Germany/Belgium",
+      "director": "Don Askarian",
+      "description": "Armenian Film Society London and Armenian Heritage Month campaign present the long overdue UK premiere ofKomitas, a haunting and unconventional film by Don Askarian centred upon one of Armenia’s most significant cultural figures, the pioneering composer and musicologist Komitas Vardapet.",
+      "film_url": "https://www.ica.art/films/jukebox-film-club-komitas",
+      "poster_url": "https://www.ica.art/media/13044.jpg",
+      "showtimes": {
+        "2026-07-05": [
+          {
+            "time": "18:00",
+            "booking_url": "https://www.ica.art/book/715801",
+            "screen": "Cinema 1",
+            "hoh": false,
+            "tags": [
+              "Uk Premiere"
+            ]
+          }
+        ]
+      },
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/komitas/",
+      "letterboxd_rating": 3.78
+    },
+    {
       "id": "birds-of-war",
       "title": "Birds of War",
       "rating": "TBC",
@@ -299,14 +296,6 @@
       "film_url": "https://www.ica.art/films/birds-of-war",
       "poster_url": "https://www.ica.art/media/13403.png",
       "showtimes": {
-        "2026-07-04": [
-          {
-            "time": "18:30",
-            "booking_url": "https://www.ica.art/book/742001",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-07-05": [
           {
             "time": "20:00",
@@ -340,175 +329,51 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/birds-of-war/",
       "letterboxd_rating": 3.62
     },
     {
-      "id": "blue-heron",
-      "title": "Blue Heron",
-      "rating": "12A",
-      "runtime": 90,
+      "id": "dry-leaf",
+      "title": "Dry Leaf",
+      "rating": "TBC",
+      "runtime": 186,
       "genre": "Other",
       "year": "2025",
-      "country": "Canada/Hungary",
-      "director": "Sophy Romvari",
-      "description": "On Vancouver Island in the late 1990s eight-year-old Sasha and her Hungarian immigrant family attempt to build a new life, only to be destabilised by the increasingly dangerous behaviour of her older brother, Jeremy.",
-      "film_url": "https://www.ica.art/films/blue-heron",
-      "poster_url": "https://www.ica.art/media/13346.jpg",
+      "country": "Georgia / Germany",
+      "director": "Alexandre Koberidze",
+      "description": "An opaque journey through the Georgian countryside, Alexandre Koberidze's latest film is a remarkable exploration of absence, as a father traces a path through villages and football fields in search of his missing daughter.",
+      "film_url": "https://www.ica.art/films/dry-leaf",
+      "poster_url": "https://www.ica.art/media/12959.jpg",
       "showtimes": {
-        "2026-07-04": [
-          {
-            "time": "18:30",
-            "booking_url": "https://www.ica.art/book/738601",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-05": [
-          {
-            "time": "16:00",
-            "booking_url": "https://www.ica.art/book/738601",
-            "screen": "Cinema 2",
-            "hoh": false
-          }
-        ],
-        "2026-07-08": [
-          {
-            "time": "20:40",
-            "booking_url": "https://www.ica.art/book/738601",
-            "screen": "Cinema 1",
-            "hoh": false
-          }
-        ],
-        "2026-07-09": [
-          {
-            "time": "20:40",
-            "booking_url": "https://www.ica.art/book/738601",
-            "screen": "Cinema 1",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/blue-heron/",
-      "letterboxd_rating": 3.93
-    },
-    {
-      "id": "audition",
-      "title": "Audition (4K Restoration)",
-      "rating": "TBC",
-      "runtime": 115,
-      "genre": "Other",
-      "year": "1999",
-      "country": "Japan",
-      "director": "Takashi Miike",
-      "description": "One of the most notorious J-Horror films ever made, Takashi Miike's Audition exploded onto the festival circuit at the turn of the 21st century to a chorus of awards and praise. The film catapulted Miike to the international scene and paved the way for such other genre delights asIchii the Killerand13 Assassins.",
-      "film_url": "https://www.ica.art/films/audition",
-      "poster_url": "https://www.ica.art/media/13394.jpeg",
-      "showtimes": {
-        "2026-07-04": [
-          {
-            "time": "20:30",
-            "booking_url": "https://www.ica.art/book/740401",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-07-07": [
           {
-            "time": "20:40",
-            "booking_url": "https://www.ica.art/book/740401",
-            "screen": "Cinema 1",
-            "hoh": false
+            "time": "13:30",
+            "booking_url": "https://www.ica.art/book/709001",
+            "screen": "Cinema 2",
+            "hoh": false,
+            "tags": [
+              "Off-Circuit"
+            ]
           }
         ],
         "2026-07-09": [
           {
-            "time": "16:15",
-            "booking_url": "https://www.ica.art/book/740401",
-            "screen": "Cinema 2",
-            "hoh": false
+            "time": "15:00",
+            "booking_url": "https://www.ica.art/book/709001",
+            "screen": "Cinema 1",
+            "hoh": false,
+            "tags": [
+              "Off-Circuit"
+            ]
           }
         ]
       },
       "color": "#6a1b9a",
       "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/audition/",
-      "letterboxd_rating": 3.79
-    },
-    {
-      "id": "rozier-near-orouet",
-      "title": "Near Orouet",
-      "rating": "TBC",
-      "runtime": 150,
-      "genre": "Other",
-      "year": "1971",
-      "country": "France",
-      "director": "Jacques Rozier",
-      "description": "Perfectly capturing both the liberating promise and melancholic effervescence of summer,Near Orouëtis a masterpiece of the post-New Wave era and a beautiful meditation on the fleetingness of youth, love, and time.",
-      "film_url": "https://www.ica.art/films/rozier-near-orouet",
-      "poster_url": "https://www.ica.art/media/13401.jpg",
-      "showtimes": {
-        "2026-07-05": [
-          {
-            "time": "14:00",
-            "booking_url": "https://www.ica.art/book/733001",
-            "screen": "Cinema 1",
-            "hoh": false,
-            "tags": [
-              "Time to Play Films by Jacques Rozier"
-            ]
-          }
-        ],
-        "2026-07-16": [
-          {
-            "time": "19:30",
-            "booking_url": "https://www.ica.art/book/733001",
-            "screen": "Cinema 2",
-            "hoh": false,
-            "tags": [
-              "Time to Play Films by Jacques Rozier"
-            ]
-          }
-        ]
-      },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
-      "letterboxd_url": "https://letterboxd.com/film/near-orouet/",
-      "letterboxd_rating": 4.02
-    },
-    {
-      "id": "jukebox-film-club-komitas",
-      "title": "Komitas",
-      "rating": "TBC",
-      "runtime": 96,
-      "genre": "Other",
-      "year": "1988",
-      "country": "West Germany/Belgium",
-      "director": "Don Askarian",
-      "description": "Armenian Film Society London and Armenian Heritage Month campaign present the long overdue UK premiere ofKomitas, a haunting and unconventional film by Don Askarian centred upon one of Armenia’s most significant cultural figures, the pioneering composer and musicologist Komitas Vardapet.",
-      "film_url": "https://www.ica.art/films/jukebox-film-club-komitas",
-      "poster_url": "https://www.ica.art/media/13044.jpg",
-      "showtimes": {
-        "2026-07-05": [
-          {
-            "time": "18:00",
-            "booking_url": "https://www.ica.art/book/715801",
-            "screen": "Cinema 1",
-            "hoh": false,
-            "tags": [
-              "Uk Premiere"
-            ]
-          }
-        ]
-      },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
-      "letterboxd_url": "https://letterboxd.com/film/komitas/",
-      "letterboxd_rating": 3.78
+      "letterboxd_url": "https://letterboxd.com/film/dry-leaf/",
+      "letterboxd_rating": 3.83
     },
     {
       "id": "boogie-nights-4k-restoration",
@@ -532,8 +397,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/boogie-nights/",
       "letterboxd_rating": 4.2
     },
@@ -559,8 +424,43 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
+    },
+    {
+      "id": "audition",
+      "title": "Audition (4K Restoration)",
+      "rating": "TBC",
+      "runtime": 115,
+      "genre": "Other",
+      "year": "1999",
+      "country": "Japan",
+      "director": "Takashi Miike",
+      "description": "One of the most notorious J-Horror films ever made, Takashi Miike's Audition exploded onto the festival circuit at the turn of the 21st century to a chorus of awards and praise. The film catapulted Miike to the international scene and paved the way for such other genre delights asIchii the Killerand13 Assassins.",
+      "film_url": "https://www.ica.art/films/audition",
+      "poster_url": "https://www.ica.art/media/13394.jpeg",
+      "showtimes": {
+        "2026-07-07": [
+          {
+            "time": "20:40",
+            "booking_url": "https://www.ica.art/book/740401",
+            "screen": "Cinema 1",
+            "hoh": false
+          }
+        ],
+        "2026-07-09": [
+          {
+            "time": "16:15",
+            "booking_url": "https://www.ica.art/book/740401",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
+      "letterboxd_url": "https://letterboxd.com/film/audition/",
+      "letterboxd_rating": 3.79
     },
     {
       "id": "nino",
@@ -584,10 +484,37 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#ad1457",
+      "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/nino-2025/",
       "letterboxd_rating": 3.81
+    },
+    {
+      "id": "familiar-touch",
+      "title": "Familiar Touch",
+      "rating": "TBC",
+      "runtime": 90,
+      "genre": "Other",
+      "year": "2024",
+      "country": "US",
+      "director": "Sarah Friedland",
+      "description": "A coming-of-old-age film following an older woman’s transition into assisted living as she contends with her conflicting relationship with herself and her caregivers amidst her shifting memory, age identity, and desires.",
+      "film_url": "https://www.ica.art/films/familiar-touch",
+      "poster_url": "https://www.ica.art/media/13263.png",
+      "showtimes": {
+        "2026-07-08": [
+          {
+            "time": "15:00",
+            "booking_url": "https://www.ica.art/book/732601",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#37474f",
+      "accent": "#78909c",
+      "letterboxd_url": "https://letterboxd.com/film/familiar-touch/",
+      "letterboxd_rating": 3.75
     },
     {
       "id": "tycoon",
