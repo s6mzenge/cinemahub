@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-06T20:34:45.638674+00:00",
+  "scraped_at": "2026-07-07T04:05:27.754037+00:00",
   "source": "ica.art",
   "films": [
     {
@@ -1631,6 +1631,14 @@
             "screen": "Cinema 1",
             "hoh": false
           }
+        ],
+        "2026-08-05": [
+          {
+            "time": "18:30",
+            "booking_url": "https://www.ica.art/book/743201",
+            "screen": "Cinema 2",
+            "hoh": false
+          }
         ]
       },
       "color": "#1a972f",
@@ -1678,6 +1686,34 @@
       "accent": "#d36876",
       "letterboxd_url": "https://letterboxd.com/film/the-catch/",
       "letterboxd_rating": 3.55
+    },
+    {
+      "id": "oshima-death-by-hanging",
+      "title": "Death By Hanging + Yunbogi's Diary",
+      "rating": "TBC",
+      "runtime": 118,
+      "genre": "Other",
+      "year": "1968",
+      "country": "Japan",
+      "director": "Nagisa Ōshima",
+      "description": "At once disturbing and oddly amusing, Ōshima's macabre farce about a man who survives his execution and throws the judiciary system into chaos, is a searing indictment of both capital punishment and the treatment of Korean immigrants in his country.",
+      "film_url": "https://www.ica.art/films/oshima-death-by-hanging",
+      "poster_url": "https://www.ica.art/media/13505.jpg",
+      "showtimes": {
+        "2026-08-05": [
+          {
+            "time": "19:00",
+            "booking_url": "https://www.ica.art/book/746201",
+            "screen": "Cinema 1",
+            "hoh": false,
+            "tags": [
+              "Cinema and State Films by Nagisa Ōshima"
+            ]
+          }
+        ]
+      },
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     }
   ]
 }
