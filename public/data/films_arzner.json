@@ -1,7 +1,37 @@
 {
-  "scraped_at": "2026-07-08T17:33:59.633934+00:00",
+  "scraped_at": "2026-07-08T18:04:14.697324+00:00",
   "source": "thearzner.com",
   "films": [
+    {
+      "id": "beyond-the-fire-the-life-of-japan-s-first-pride-parade-pioneer-217753",
+      "title": "Beyond the Fire: The Life of Japan’s First Pride Parade Pioneer",
+      "rating": "15",
+      "runtime": 105,
+      "genre": "New Release",
+      "description": "Born in 1931, Teishiro Minami launched Japan’s first commercial gay magazine, coordinated a queer helpline and organised the nation’s first Pride parade in 1994. Minami and friends reflect on the complicated relationships and inter-community clashes that paved the way for today’s movement. Comprisin…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=217753",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/217760.jpg",
+      "showtimes": {
+        "2026-07-08": [
+          {
+            "time": "12:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_219481.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-07-09": [
+          {
+            "time": "14:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_219463.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8"
+    },
     {
       "id": "pink-narcissus-4k-restoration-short-intro-210041",
       "title": "Pink Narcissus (4K Restoration) + Short Intro",
@@ -13,6 +43,15 @@
       "poster_url": "https://images.savoysystems.co.uk/TAL/210038.jpg",
       "showtimes": {
         "2026-07-08": [
+          {
+            "time": "14:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_219474.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false,
+            "tags": [
+              "Pride Month"
+            ]
+          },
           {
             "time": "18:30",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_220217.TcsSection_963",
@@ -37,6 +76,30 @@
       },
       "color": "#e53935",
       "accent": "#ff6f60"
+    },
+    {
+      "id": "cramps-a-period-piece-211842",
+      "title": "Cramps! A Period Piece",
+      "rating": "18",
+      "runtime": 89,
+      "genre": "New Release",
+      "description": "Agnes defies her strict family by working at a salon, but her newfound independence is challenged when her menstrual cramps manifest as actual monsters, merging her real and nightmare worlds.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=211842",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/211839.jpg",
+      "showtimes": {
+        "2026-07-08": [
+          {
+            "time": "16:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_219473.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/cramps-a-period-piece/",
+      "letterboxd_rating": 3.39
     },
     {
       "id": "pride-in-ordinary-times-contemporary-chinese-queer-shorts-panel-discussion-222052",
@@ -64,28 +127,6 @@
       "accent": "#ffb74d"
     },
     {
-      "id": "beyond-the-fire-the-life-of-japan-s-first-pride-parade-pioneer-217753",
-      "title": "Beyond the Fire: The Life of Japan’s First Pride Parade Pioneer",
-      "rating": "15",
-      "runtime": 105,
-      "genre": "New Release",
-      "description": "Born in 1931, Teishiro Minami launched Japan’s first commercial gay magazine, coordinated a queer helpline and organised the nation’s first Pride parade in 1994. Minami and friends reflect on the complicated relationships and inter-community clashes that paved the way for today’s movement. Comprisin…",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=217753",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/217760.jpg",
-      "showtimes": {
-        "2026-07-09": [
-          {
-            "time": "14:45",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_219463.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
-    },
-    {
       "id": "lesbian-space-princess-205469",
       "title": "Lesbian Space Princess",
       "rating": "15",
@@ -104,8 +145,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/lesbian-space-princess/",
       "letterboxd_rating": 3.58
     },
@@ -131,8 +172,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/barb-wire/",
       "letterboxd_rating": 2.35
     },
@@ -231,8 +272,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/away-2025/",
       "letterboxd_rating": 3.49
     },
@@ -412,8 +453,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/rosebush-pruning/",
       "letterboxd_rating": 2.74
     },
@@ -460,8 +501,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/the-history-of-sound/",
       "letterboxd_rating": 3.38
     },
@@ -487,8 +528,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/singin-in-the-rain/",
       "letterboxd_rating": 4.35
     },
@@ -514,8 +555,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae"
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "the-producers-2005-219637",
@@ -539,8 +580,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a",
+      "color": "#ad1457",
+      "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/the-producers-2005/",
       "letterboxd_rating": 3.32
     },
@@ -566,8 +607,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292",
+      "color": "#37474f",
+      "accent": "#78909c",
       "letterboxd_url": "https://letterboxd.com/film/xanadu/",
       "letterboxd_rating": 2.97
     },
@@ -636,8 +677,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#4e342e",
+      "accent": "#8d6e63",
       "letterboxd_url": "https://letterboxd.com/film/the-serpents-skin/",
       "letterboxd_rating": 3.11
     },
@@ -663,8 +704,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/a-year-in-london/",
       "letterboxd_rating": null
     },
@@ -745,8 +786,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/a-year-in-london/",
       "letterboxd_rating": null
     },
@@ -785,8 +826,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/pillion-2025/",
       "letterboxd_rating": 3.5
     },
@@ -812,8 +853,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868",
+      "color": "#3052a6",
+      "accent": "#849cd6",
       "letterboxd_url": "https://letterboxd.com/film/a-year-in-london/",
       "letterboxd_rating": null
     },
@@ -836,8 +877,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "hello-dolly-219575",
@@ -861,8 +902,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#9f2190",
+      "accent": "#d368c6",
       "letterboxd_url": "https://letterboxd.com/film/hello-dolly/",
       "letterboxd_rating": 3.82
     },
@@ -888,8 +929,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#30a692",
+      "accent": "#84d6c8"
     },
     {
       "id": "preview-warla-q-a-223011",
@@ -913,8 +954,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8",
+      "color": "#975e1a",
+      "accent": "#d49953",
       "letterboxd_url": "https://letterboxd.com/film/warla/",
       "letterboxd_rating": 3.21
     },
@@ -940,8 +981,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953",
+      "color": "#41219f",
+      "accent": "#8368d3",
       "letterboxd_url": "https://letterboxd.com/film/shes-the-he/",
       "letterboxd_rating": 3.69
     },
@@ -967,8 +1008,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#35a630",
+      "accent": "#88d684",
       "letterboxd_url": "https://letterboxd.com/film/a-deeper-love-the-story-of-miss-peppermint/",
       "letterboxd_rating": null
     },
@@ -1041,8 +1082,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684",
+      "color": "#971a44",
+      "accent": "#d4537e",
       "letterboxd_url": "https://letterboxd.com/film/a-deeper-love-the-story-of-miss-peppermint/",
       "letterboxd_rating": null
     },
@@ -1140,8 +1181,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e",
+      "color": "#21709f",
+      "accent": "#68abd3",
       "letterboxd_url": "https://letterboxd.com/film/on-the-sea-2026/",
       "letterboxd_rating": null
     },
@@ -1226,8 +1267,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3",
+      "color": "#9ca630",
+      "accent": "#cfd684",
       "letterboxd_url": "https://letterboxd.com/film/tomorrows-too-late/",
       "letterboxd_rating": null
     },
@@ -1253,8 +1294,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684",
+      "color": "#7d1a97",
+      "accent": "#b953d4",
       "letterboxd_url": "https://letterboxd.com/film/teenage-sex-and-death-at-camp-miasma/",
       "letterboxd_rating": 3.88
     },
@@ -1277,8 +1318,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "annie-219623",
@@ -1302,8 +1343,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d",
+      "color": "#a64830",
+      "accent": "#d69584",
       "letterboxd_url": "https://letterboxd.com/film/annie-2/",
       "letterboxd_rating": null
     },
@@ -1329,8 +1370,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584"
+      "color": "#1a2597",
+      "accent": "#535ed4"
     },
     {
       "id": "london-trans-pride-tomorrow-s-too-late-224197",
@@ -1351,8 +1392,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "london-trans-pride-afterglow-a-deeper-love-the-story-of-miss-peppermint-225127",
@@ -1376,8 +1417,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#a6307e",
+      "accent": "#d684bb"
     },
     {
       "id": "london-trans-pride-afterglow-the-serpent-s-skin-225134",
@@ -1401,8 +1442,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     },
     {
       "id": "london-trans-pride-afterglow-tomorrow-s-too-late-225141",
@@ -1426,8 +1467,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "choose-what-you-pay-will-harper-223076",
@@ -1451,8 +1492,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868"
+      "color": "#6530a6",
+      "accent": "#a984d6"
     },
     {
       "id": "tomorrow-s-too-late-q-a-225022",
@@ -1473,8 +1514,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6",
+      "color": "#1a972f",
+      "accent": "#53d468",
       "letterboxd_url": "https://letterboxd.com/film/tomorrows-too-late/",
       "letterboxd_rating": null
     },
@@ -1500,8 +1541,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468",
+      "color": "#9f2132",
+      "accent": "#d36876",
       "letterboxd_url": "https://letterboxd.com/film/the-best-little-whorehouse-in-texas/",
       "letterboxd_rating": 3.52
     },
@@ -1527,8 +1568,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "mamma-mia-party-219952",
@@ -1552,8 +1593,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6"
+      "color": "#73971a",
+      "accent": "#afd453"
     }
   ]
 }
