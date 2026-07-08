@@ -1,7 +1,122 @@
 {
-  "scraped_at": "2026-07-07T20:03:19.843970+00:00",
+  "scraped_at": "2026-07-08T04:03:14.530633+00:00",
   "source": "princecharlescinema.com",
   "films": [
+    {
+      "id": "the-conversation",
+      "title": "The Conversation",
+      "rating": "12",
+      "runtime": 113,
+      "genre": "Crime",
+      "year": "1974",
+      "country": null,
+      "director": "Francis Ford Coppola",
+      "cast": "Gene Hackman, John Cazale, Allen Garfield, Robert Duvall, Harrison Ford",
+      "description": "Harry Caul (Gene Hackman), a detached and paranoid surveillance expert who finds himself becoming a victim of the same modern technology he uses to destroy others. It begins with a seemingly routine job trailing an unfaithful wife and her lover. But when Harry visits the husband’s office to deliver the incriminating tapes he’s made of the couple, his client’s assistant tries to intercept him. Harry refuses to hand over the recordings and suddenly discovers that he may have captured a conversation about something that’s a lot more important than adulterous goings on.",
+      "film_url": "https://princecharlescinema.com/film/1258769/the-conversation",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1258769.jpg",
+      "showtimes": {
+        "2026-07-08": [
+          {
+            "time": "12:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626510",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-08-05": [
+          {
+            "time": "18:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626894",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#4e342e",
+      "accent": "#8d6e63",
+      "letterboxd_url": "https://letterboxd.com/film/the-conversation/",
+      "letterboxd_rating": 4.14
+    },
+    {
+      "id": "the-red-shoes",
+      "title": "The Red Shoes",
+      "rating": "PG",
+      "runtime": 135,
+      "genre": "Musical / Romance",
+      "year": "1948",
+      "country": null,
+      "director": "Michael Powell|Emeric Pressburger",
+      "cast": "Anton Walbrook, Marius Goring, Moira Shearer",
+      "description": "In this classic drama, Vicky Page (Moira Shearer) is an aspiring ballerina torn between her dedication to dance and her desire to love. While her imperious instructor, Boris Lermontov (Anton Walbrook), urges to her to forget anything but ballet, Vicky begins to fall for the charming young composer Julian Craster (Marius Goring). Eventually Vicky, under great emotional stress, must choose to pursue either her art or her romance, a decision that carries serious consequences.",
+      "film_url": "https://princecharlescinema.com/film/1865253/the-red-shoes",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1865253.jpg",
+      "showtimes": {
+        "2026-07-08": [
+          {
+            "time": "12:20",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626514",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-08-12": [
+          {
+            "time": "17:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626975",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm / DCP"
+            ]
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/the-red-shoes/",
+      "letterboxd_rating": 4.41
+    },
+    {
+      "id": "eternal-sunshine-of-the-spotless-mind",
+      "title": "Eternal Sunshine of the Spotless Mind",
+      "rating": "15",
+      "runtime": 108,
+      "genre": "Sci-Fi / Romance",
+      "year": "2004",
+      "country": null,
+      "director": "Michel Gondry",
+      "cast": "Jim Carrey, Kate Winslet, Tom Wilkinson",
+      "description": "After a painful breakup, Clementine (Kate Winslet) undergoes a procedure to erase memories of her former boyfriend Joel (Jim Carrey) from her mind. When Joel discovers that Clementine is going to extremes to forget their relationship, he undergoes the same procedure and slowly begins to forget the woman that he loved. Directed by former music video director Michel Gondry, the visually arresting film explores the intricacy of relationships and the pain of loss.",
+      "film_url": "https://princecharlescinema.com/film/5909698/eternal-sunshine-of-the-spotless-mind",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/5909698.jpg",
+      "showtimes": {
+        "2026-07-08": [
+          {
+            "time": "14:40",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626511",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K"
+            ]
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/eternal-sunshine-of-the-spotless-mind/",
+      "letterboxd_rating": 4.24
+    },
     {
       "id": "nirvanna-the-band-the-show-the-movie",
       "title": "Nirvanna the Band the Show the Movie",
@@ -16,14 +131,6 @@
       "film_url": "https://princecharlescinema.com/film/31617400/nirvanna-the-band-the-show-the-movie",
       "poster_url": "https://cdn.taposapp.com/poster/600x900/lQ1kiMl_BImOHrYtGLLQIWGar6kcvf55mvSgnNJPTa0.jpg",
       "showtimes": {
-        "2026-07-07": [
-          {
-            "time": "21:05",
-            "booking_url": "",
-            "screen": null,
-            "hoh": false
-          }
-        ],
         "2026-07-08": [
           {
             "time": "15:15",
@@ -183,125 +290,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/nirvanna-the-band-the-show-the-movie/",
-      "letterboxd_rating": 4.27
-    },
-    {
-      "id": "the-conversation",
-      "title": "The Conversation",
-      "rating": "12",
-      "runtime": 113,
-      "genre": "Crime",
-      "year": "1974",
-      "country": null,
-      "director": "Francis Ford Coppola",
-      "cast": "Gene Hackman, John Cazale, Allen Garfield, Robert Duvall, Harrison Ford",
-      "description": "Harry Caul (Gene Hackman), a detached and paranoid surveillance expert who finds himself becoming a victim of the same modern technology he uses to destroy others. It begins with a seemingly routine job trailing an unfaithful wife and her lover. But when Harry visits the husband’s office to deliver the incriminating tapes he’s made of the couple, his client’s assistant tries to intercept him. Harry refuses to hand over the recordings and suddenly discovers that he may have captured a conversation about something that’s a lot more important than adulterous goings on.",
-      "film_url": "https://princecharlescinema.com/film/1258769/the-conversation",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1258769.jpg",
-      "showtimes": {
-        "2026-07-08": [
-          {
-            "time": "12:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626510",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-08-05": [
-          {
-            "time": "18:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626894",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ]
-      },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
-      "letterboxd_url": "https://letterboxd.com/film/the-conversation/",
-      "letterboxd_rating": 4.14
-    },
-    {
-      "id": "the-red-shoes",
-      "title": "The Red Shoes",
-      "rating": "PG",
-      "runtime": 135,
-      "genre": "Musical / Romance",
-      "year": "1948",
-      "country": null,
-      "director": "Michael Powell|Emeric Pressburger",
-      "cast": "Anton Walbrook, Marius Goring, Moira Shearer",
-      "description": "In this classic drama, Vicky Page (Moira Shearer) is an aspiring ballerina torn between her dedication to dance and her desire to love. While her imperious instructor, Boris Lermontov (Anton Walbrook), urges to her to forget anything but ballet, Vicky begins to fall for the charming young composer Julian Craster (Marius Goring). Eventually Vicky, under great emotional stress, must choose to pursue either her art or her romance, a decision that carries serious consequences.",
-      "film_url": "https://princecharlescinema.com/film/1865253/the-red-shoes",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1865253.jpg",
-      "showtimes": {
-        "2026-07-08": [
-          {
-            "time": "12:20",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626514",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ],
-        "2026-08-12": [
-          {
-            "time": "17:45",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626975",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm / DCP"
-            ]
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/the-red-shoes/",
-      "letterboxd_rating": 4.41
-    },
-    {
-      "id": "eternal-sunshine-of-the-spotless-mind",
-      "title": "Eternal Sunshine of the Spotless Mind",
-      "rating": "15",
-      "runtime": 108,
-      "genre": "Sci-Fi / Romance",
-      "year": "2004",
-      "country": null,
-      "director": "Michel Gondry",
-      "cast": "Jim Carrey, Kate Winslet, Tom Wilkinson",
-      "description": "After a painful breakup, Clementine (Kate Winslet) undergoes a procedure to erase memories of her former boyfriend Joel (Jim Carrey) from her mind. When Joel discovers that Clementine is going to extremes to forget their relationship, he undergoes the same procedure and slowly begins to forget the woman that he loved. Directed by former music video director Michel Gondry, the visually arresting film explores the intricacy of relationships and the pain of loss.",
-      "film_url": "https://princecharlescinema.com/film/5909698/eternal-sunshine-of-the-spotless-mind",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/5909698.jpg",
-      "showtimes": {
-        "2026-07-08": [
-          {
-            "time": "14:40",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626511",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "4K"
-            ]
-          }
-        ]
-      },
       "color": "#d81b60",
       "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/eternal-sunshine-of-the-spotless-mind/",
-      "letterboxd_rating": 4.24
+      "letterboxd_url": "https://letterboxd.com/film/nirvanna-the-band-the-show-the-movie/",
+      "letterboxd_rating": 4.27
     },
     {
       "id": "a-clockwork-orange",
