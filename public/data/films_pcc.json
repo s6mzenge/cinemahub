@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-09T14:03:15.503560+00:00",
+  "scraped_at": "2026-07-09T14:33:17.696253+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
@@ -1022,6 +1022,17 @@
           {
             "time": "14:30",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627247",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-09-08": [
+          {
+            "time": "18:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627254",
             "screen": null,
             "hoh": false,
             "tags": [
@@ -10264,6 +10275,93 @@
       "letterboxd_rating": 2.96
     },
     {
+      "id": "kill-bill-the-whole-bloody-affair",
+      "title": "Kill Bill: The Whole Bloody Affair",
+      "rating": "18",
+      "runtime": 281,
+      "genre": "Action / Thriller",
+      "year": "2025",
+      "country": null,
+      "director": "Quentin Tarantino",
+      "cast": "Uma Thurman, Lucy Liu, Vivica A. Fox, David Carradine, Michael Madsen, Daryl Hannah, Sonny Chiba",
+      "description": "Tarantino’s Kill Bill: The Whole Bloody Affair unites Volume 1 and Volume 2 into a single, unrated epic—presented exactly as he intended, complete with a new, never-before-seen anime sequence.Uma Thurman stars as The Bride, left for dead after her former boss and lover Bill ambushes her wedding rehearsal, shooting her in the head and stealing her unborn child. To exact her vengeance, she must first hunt down the four remaining members of the Deadly Viper Assassination Squad before confronting Bill himself. With its operatic scope, relentless action, and iconic style, The Whole Bloody Affair stands as one of cinema’s definitive revenge sagas—rarely shown in its complete form and now presented with a classic intermission.",
+      "film_url": "https://princecharlescinema.com/film/31617266/kill-bill-the-whole-bloody-affair",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/CWu2-QwleWH-XYj2VA54Yjuch3jBPQOtt_pH52x7U5k.jpg",
+      "showtimes": {
+        "2026-09-07": [
+          {
+            "time": "11:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627250",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#4c219f",
+      "accent": "#8d68d3",
+      "letterboxd_url": "https://letterboxd.com/film/kill-bill-the-whole-bloody-affair/",
+      "letterboxd_rating": 4.52
+    },
+    {
+      "id": "batman-mask-of-the-phantasm",
+      "title": "Batman: Mask of the Phantasm",
+      "rating": "PG",
+      "runtime": 76,
+      "genre": "Animation",
+      "year": "1993",
+      "country": null,
+      "director": "Eric Radomski|Bruce Timm",
+      "cast": "Kevin Conroy, Mark Hamill, Dana Delany, Hart Bochner",
+      "description": "Andrea Beaumont leaves her father to return to Gotham, rekindling an old romance with Bruce Wayne. At the same time, a mysterious figure begins to hunt down Gotham's criminals, wrongly implicating Batman in the murders. Now on the run from the law, Batman must find and stop the culprit, while also navigating his relationship with Andrea.",
+      "film_url": "https://princecharlescinema.com/film/17198120/batman-mask-of-the-phantasm",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/Tdw_UOn9AXA9YJennTJkqkvFZ5y9XzE7-W8gzDtLEtE.jpg",
+      "showtimes": {
+        "2026-09-07": [
+          {
+            "time": "12:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627251",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#30a635",
+      "accent": "#84d688",
+      "letterboxd_url": "https://letterboxd.com/film/batman-mask-of-the-phantasm/",
+      "letterboxd_rating": 4.05
+    },
+    {
+      "id": "sirt",
+      "title": "Sirāt",
+      "rating": "15",
+      "runtime": 115,
+      "genre": "Drama",
+      "year": "2025",
+      "country": null,
+      "director": "Oliver Laxe",
+      "cast": "Sergi López, Bruno Núñez, Stefania Gadda",
+      "description": "A father and his son arrive at a rave deep in the mountains of southern Morocco, searching for Mar, their missing daughter and sister. Surrounded by electronic music and a raw, unfamiliar sense of freedom, they follow a group of ravers heading to one last party in the desert. As they venture deeper into the burning wilderness, the journey forces them to confront their own limits.",
+      "film_url": "https://princecharlescinema.com/film/31617443/sirt",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/JPrFw3RbVEnn5a-vtEutV4Wjnwv5wYav7zPEC6VQ2oQ.jpg",
+      "showtimes": {
+        "2026-09-07": [
+          {
+            "time": "14:30",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627252",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#971a39",
+      "accent": "#d45372",
+      "letterboxd_url": "https://letterboxd.com/film/sirat-2025/",
+      "letterboxd_rating": 3.56
+    },
+    {
       "id": "autumn-tale-conte-dautomne",
       "title": "Autumn Tale [Conte d'automne]",
       "rating": "U",
@@ -10289,8 +10387,36 @@
           }
         ]
       },
-      "color": "#4c219f",
-      "accent": "#8d68d3"
+      "color": "#21659f",
+      "accent": "#68a1d3"
+    },
+    {
+      "id": "star-trek-iv-the-voyage-home",
+      "title": "Star Trek IV: The Voyage Home",
+      "rating": "PG",
+      "runtime": 119,
+      "genre": "Sci-Fi / Adventure",
+      "year": "1986",
+      "country": null,
+      "director": "Leonard Nimoy",
+      "cast": "William Shatner, Leonard Nimoy, DeForest Kelley",
+      "description": "To celebrate the 40th anniversary of Star Trek IV: The Voyage Home, the classic comes to our screen on Star Trek Day.When a mysterious alien power threatens the atmosphere of Earth in the 23rd century, Kirk and his crew must time travel back to 1986 San Francisco to save mankind. Exploring this strange new world, they encounter punk rock, pizza and exact-change buses that are as alien as anything in the far reaches of the galaxy.",
+      "film_url": "https://princecharlescinema.com/film/31617444/star-trek-iv-the-voyage-home",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/ib3VI-PJqfB-S73gEhLRR0iNvwGkjofR5LS_soPQhYw.jpg",
+      "showtimes": {
+        "2026-09-08": [
+          {
+            "time": "21:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627253",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#91a630",
+      "accent": "#c8d684",
+      "letterboxd_url": "https://letterboxd.com/film/star-trek-iv-the-voyage-home/",
+      "letterboxd_rating": 3.74
     },
     {
       "id": "survive-style-5-world-premiere-of-4k-restoration",
@@ -10308,7 +10434,7 @@
       "showtimes": {
         "2026-09-10": [
           {
-            "time": "20:30",
+            "time": "20:40",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626865",
             "screen": null,
             "hoh": false,
@@ -10319,8 +10445,8 @@
           }
         ]
       },
-      "color": "#30a635",
-      "accent": "#84d688",
+      "color": "#881a97",
+      "accent": "#c453d4",
       "letterboxd_url": "https://letterboxd.com/film/survive-style-5/",
       "letterboxd_rating": 3.96
     },
@@ -10350,8 +10476,8 @@
           }
         ]
       },
-      "color": "#971a39",
-      "accent": "#d45372"
+      "color": "#219f6c",
+      "accent": "#68d3a7"
     },
     {
       "id": "manhunter-the-final-cut",
@@ -10401,8 +10527,8 @@
           }
         ]
       },
-      "color": "#21659f",
-      "accent": "#68a1d3"
+      "color": "#a65330",
+      "accent": "#d69c84"
     },
     {
       "id": "the-nice-guys",
@@ -10427,8 +10553,8 @@
           }
         ]
       },
-      "color": "#91a630",
-      "accent": "#c8d684",
+      "color": "#1b1a97",
+      "accent": "#5453d4",
       "letterboxd_url": "https://letterboxd.com/film/the-nice-guys/",
       "letterboxd_rating": 3.82
     },
@@ -10455,8 +10581,8 @@
           }
         ]
       },
-      "color": "#881a97",
-      "accent": "#c453d4"
+      "color": "#469f21",
+      "accent": "#87d368"
     },
     {
       "id": "chow-yunfatathon",
@@ -10481,8 +10607,8 @@
           }
         ]
       },
-      "color": "#219f6c",
-      "accent": "#68d3a7"
+      "color": "#a63074",
+      "accent": "#d684b3"
     },
     {
       "id": "the-silence-of-the-lambs",
@@ -10507,8 +10633,8 @@
           }
         ]
       },
-      "color": "#a65330",
-      "accent": "#d69c84",
+      "color": "#1a8797",
+      "accent": "#53c3d4",
       "letterboxd_url": "https://letterboxd.com/film/the-silence-of-the-lambs/",
       "letterboxd_rating": 4.33
     },
@@ -10571,8 +10697,8 @@
           }
         ]
       },
-      "color": "#1b1a97",
-      "accent": "#5453d4",
+      "color": "#9f8b21",
+      "accent": "#d3c268",
       "letterboxd_url": "https://letterboxd.com/film/nosferatu/",
       "letterboxd_rating": 3.82
     },
@@ -10613,8 +10739,8 @@
           }
         ]
       },
-      "color": "#469f21",
-      "accent": "#87d368",
+      "color": "#7030a6",
+      "accent": "#b184d6",
       "letterboxd_url": "https://letterboxd.com/film/the-cabinet-of-dr-caligari-1920/",
       "letterboxd_rating": 4.06
     },
@@ -10644,8 +10770,8 @@
           }
         ]
       },
-      "color": "#a63074",
-      "accent": "#d684b3",
+      "color": "#1a973a",
+      "accent": "#53d474",
       "letterboxd_url": "https://letterboxd.com/film/haxan/",
       "letterboxd_rating": 4.05
     },
@@ -10672,8 +10798,8 @@
           }
         ]
       },
-      "color": "#1a8797",
-      "accent": "#53c3d4"
+      "color": "#9f2126",
+      "accent": "#d3686c"
     },
     {
       "id": "a-tale-of-winter",
@@ -10701,8 +10827,8 @@
           }
         ]
       },
-      "color": "#9f8b21",
-      "accent": "#d3c268",
+      "color": "#3056a6",
+      "accent": "#849fd6",
       "letterboxd_url": "https://letterboxd.com/film/a-tale-of-winter/",
       "letterboxd_rating": 3.87
     },
@@ -10732,8 +10858,8 @@
           }
         ]
       },
-      "color": "#7030a6",
-      "accent": "#b184d6",
+      "color": "#68971a",
+      "accent": "#a3d453",
       "letterboxd_url": "https://letterboxd.com/film/its-a-wonderful-life/",
       "letterboxd_rating": 4.44
     }
