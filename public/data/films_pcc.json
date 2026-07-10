@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-10T09:32:50.357633+00:00",
+  "scraped_at": "2026-07-10T10:03:09.058463+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
@@ -220,14 +220,6 @@
           {
             "time": "17:30",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626766",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-23": [
-          {
-            "time": "15:00",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626767",
             "screen": null,
             "hoh": false
           }
@@ -545,6 +537,17 @@
             ]
           }
         ],
+        "2026-07-30": [
+          {
+            "time": "18:10",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627311",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "SUB"
+            ]
+          }
+        ],
         "2026-08-01": [
           {
             "time": "18:25",
@@ -553,6 +556,17 @@
             "hoh": false,
             "tags": [
               "4K",
+              "SUB"
+            ]
+          }
+        ],
+        "2026-08-02": [
+          {
+            "time": "12:20",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627312",
+            "screen": null,
+            "hoh": false,
+            "tags": [
               "SUB"
             ]
           }
@@ -645,6 +659,22 @@
           {
             "time": "12:05",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626647",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-23": [
+          {
+            "time": "15:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627309",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-26": [
+          {
+            "time": "20:25",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627310",
             "screen": null,
             "hoh": false
           }
@@ -4304,37 +4334,6 @@
       "letterboxd_rating": 4.42
     },
     {
-      "id": "the-truman-show",
-      "title": "The Truman Show",
-      "rating": "PG",
-      "runtime": 103,
-      "genre": "Comedy / Drama",
-      "year": "1998",
-      "country": null,
-      "director": "Peter Weir",
-      "cast": "Jim Carrey, Ed Harris, Laura Linney",
-      "description": "He doesn't know it, but everything in Truman Burbank's (Jim Carrey) life is part of a massive TV set. Executive producer Christof (Ed Harris) orchestrates \"The Truman Show,\" a live broadcast of Truman's every move captured by hidden cameras. As Truman gradually discovers the truth, he must decide whether to act on it.",
-      "film_url": "https://princecharlescinema.com/film/1258601/the-truman-show",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1258601.jpg",
-      "showtimes": {
-        "2026-07-26": [
-          {
-            "time": "20:25",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626683",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "35mm"
-            ]
-          }
-        ]
-      },
-      "color": "#978b1a",
-      "accent": "#d4c853",
-      "letterboxd_url": "https://letterboxd.com/film/the-truman-show/",
-      "letterboxd_rating": 4.22
-    },
-    {
       "id": "the-virgin-suicides",
       "title": "The Virgin Suicides",
       "rating": "15",
@@ -4360,8 +4359,8 @@
           }
         ]
       },
-      "color": "#6f219f",
-      "accent": "#aa68d3",
+      "color": "#978b1a",
+      "accent": "#d4c853",
       "letterboxd_url": "https://letterboxd.com/film/the-virgin-suicides/",
       "letterboxd_rating": 3.85
     },
@@ -4388,8 +4387,8 @@
           }
         ]
       },
-      "color": "#30a656",
-      "accent": "#84d69e",
+      "color": "#6f219f",
+      "accent": "#aa68d3",
       "letterboxd_url": "https://letterboxd.com/film/the-night-of-the-hunter/",
       "letterboxd_rating": 4.25
     },
@@ -4430,8 +4429,8 @@
           }
         ]
       },
-      "color": "#971e1a",
-      "accent": "#d45753",
+      "color": "#30a656",
+      "accent": "#84d69e",
       "letterboxd_url": "https://letterboxd.com/film/the-godfather/",
       "letterboxd_rating": 4.51
     },
@@ -4458,8 +4457,8 @@
           }
         ]
       },
-      "color": "#21429f",
-      "accent": "#6884d3"
+      "color": "#971e1a",
+      "accent": "#d45753"
     },
     {
       "id": "three-amigos",
@@ -4487,8 +4486,8 @@
           }
         ]
       },
-      "color": "#71a630",
-      "accent": "#b1d684",
+      "color": "#21429f",
+      "accent": "#6884d3",
       "letterboxd_url": "https://letterboxd.com/film/three-amigos/",
       "letterboxd_rating": 3.29
     },
@@ -4519,8 +4518,8 @@
           }
         ]
       },
-      "color": "#971a84",
-      "accent": "#d453c0",
+      "color": "#71a630",
+      "accent": "#b1d684",
       "letterboxd_url": "https://letterboxd.com/film/memories/",
       "letterboxd_rating": 4.03
     },
@@ -4547,8 +4546,8 @@
           }
         ]
       },
-      "color": "#219f8e",
-      "accent": "#68d3c4",
+      "color": "#971a84",
+      "accent": "#d453c0",
       "letterboxd_url": "https://letterboxd.com/film/the-human-condition-ii-road-to-eternity/",
       "letterboxd_rating": 4.49
     },
@@ -4586,8 +4585,8 @@
           }
         ]
       },
-      "color": "#a67330",
-      "accent": "#d6b384",
+      "color": "#219f8e",
+      "accent": "#68d3c4",
       "letterboxd_url": "https://letterboxd.com/film/cinema-paradiso/",
       "letterboxd_rating": 4.51
     },
@@ -4622,8 +4621,8 @@
           }
         ]
       },
-      "color": "#3d1a97",
-      "accent": "#7753d4",
+      "color": "#a67330",
+      "accent": "#d6b384",
       "letterboxd_url": "https://letterboxd.com/film/the-battle-of-algiers/",
       "letterboxd_rating": 4.46
     },
@@ -4650,8 +4649,8 @@
           }
         ]
       },
-      "color": "#239f21",
-      "accent": "#6ad368",
+      "color": "#3d1a97",
+      "accent": "#7753d4",
       "letterboxd_url": "https://letterboxd.com/film/phantom-of-the-paradise/",
       "letterboxd_rating": 4.14
     },
@@ -4686,8 +4685,8 @@
           }
         ]
       },
-      "color": "#a63054",
-      "accent": "#d6849d",
+      "color": "#239f21",
+      "accent": "#6ad368",
       "letterboxd_url": "https://letterboxd.com/film/lust-caution/",
       "letterboxd_rating": 3.99
     },
@@ -4722,8 +4721,8 @@
           }
         ]
       },
-      "color": "#1a6597",
-      "accent": "#53a0d4",
+      "color": "#a63054",
+      "accent": "#d6849d",
       "letterboxd_url": "https://letterboxd.com/film/flowers-of-shanghai/",
       "letterboxd_rating": 3.91
     },
@@ -4750,8 +4749,8 @@
           }
         ]
       },
-      "color": "#919f21",
-      "accent": "#c7d368",
+      "color": "#1a6597",
+      "accent": "#53a0d4",
       "letterboxd_url": "https://letterboxd.com/film/the-big-lebowski/",
       "letterboxd_rating": 4.11
     },
@@ -4778,8 +4777,8 @@
           }
         ]
       },
-      "color": "#9030a6",
-      "accent": "#c784d6",
+      "color": "#919f21",
+      "accent": "#c7d368",
       "letterboxd_url": "https://letterboxd.com/film/little-shop-of-horrors/",
       "letterboxd_rating": 3.9
     },
@@ -4806,8 +4805,8 @@
           }
         ]
       },
-      "color": "#1a975c",
-      "accent": "#53d497",
+      "color": "#9030a6",
+      "accent": "#c784d6",
       "letterboxd_url": "https://letterboxd.com/film/cabaret/",
       "letterboxd_rating": 4.18
     },
@@ -4834,8 +4833,8 @@
           }
         ]
       },
-      "color": "#9f3f21",
-      "accent": "#d38268",
+      "color": "#1a975c",
+      "accent": "#53d497",
       "letterboxd_url": "https://letterboxd.com/film/prisoners/",
       "letterboxd_rating": 4.33
     },
@@ -4865,8 +4864,8 @@
           }
         ]
       },
-      "color": "#3036a6",
-      "accent": "#8489d6",
+      "color": "#9f3f21",
+      "accent": "#d38268",
       "letterboxd_url": "https://letterboxd.com/film/all-that-jazz/",
       "letterboxd_rating": 4.34
     },
@@ -4893,38 +4892,10 @@
           }
         ]
       },
-      "color": "#46971a",
-      "accent": "#80d453",
+      "color": "#3036a6",
+      "accent": "#8489d6",
       "letterboxd_url": "https://letterboxd.com/film/miami-vice/",
       "letterboxd_rating": 3.45
-    },
-    {
-      "id": "pride-and-prejudice",
-      "title": "Pride and Prejudice",
-      "rating": "U",
-      "runtime": 128,
-      "genre": "Romance/Drama",
-      "year": "2005",
-      "country": null,
-      "director": "Joe Wright",
-      "cast": "Rosamund Pike, Donald Sutherland, Keira Knightley, Brenda Blethyn, Matthew Macfadyen, Tom Hollander",
-      "description": "In this adaptation of Jane Austen's beloved novel, Elizabeth Bennet (Keira Knightley) lives with her mother, father and sisters in the English countryside. As the eldest, she faces mounting pressure from her parents to marry. When the outspoken Elizabeth is introduced to the handsome and upper-class Mr. Darcy (Matthew Macfadyen), sparks fly. Although there is obvious chemistry between the two, Darcy's overly reserved nature threatens the fledgling relationship.",
-      "film_url": "https://princecharlescinema.com/film/19569721/pride-and-prejudice",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/19569721.jpg",
-      "showtimes": {
-        "2026-07-30": [
-          {
-            "time": "17:35",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626712",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#9f2172",
-      "accent": "#d368ac",
-      "letterboxd_url": "https://letterboxd.com/film/pride-prejudice/",
-      "letterboxd_rating": 4.14
     },
     {
       "id": "zigeunerweisen",
@@ -4949,8 +4920,8 @@
           }
         ]
       },
-      "color": "#309da6",
-      "accent": "#84d0d6",
+      "color": "#46971a",
+      "accent": "#80d453",
       "letterboxd_url": "https://letterboxd.com/film/zigeunerweisen/",
       "letterboxd_rating": 3.77
     },
@@ -4993,8 +4964,8 @@
           }
         ]
       },
-      "color": "#977b1a",
-      "accent": "#d4b753",
+      "color": "#9f2172",
+      "accent": "#d368ac",
       "letterboxd_url": "https://letterboxd.com/film/la-la-land/",
       "letterboxd_rating": 4.12
     },
@@ -5021,8 +4992,8 @@
           }
         ]
       },
-      "color": "#5f219f",
-      "accent": "#9c68d3",
+      "color": "#309da6",
+      "accent": "#84d0d6",
       "letterboxd_url": "https://letterboxd.com/film/some-like-it-hot/",
       "letterboxd_rating": 4.28
     },
@@ -5052,8 +5023,8 @@
           }
         ]
       },
-      "color": "#30a647",
-      "accent": "#84d694",
+      "color": "#977b1a",
+      "accent": "#d4b753",
       "letterboxd_url": "https://letterboxd.com/film/popeye/",
       "letterboxd_rating": 2.94
     },
@@ -5083,8 +5054,8 @@
           }
         ]
       },
-      "color": "#971a26",
-      "accent": "#d45360",
+      "color": "#5f219f",
+      "accent": "#9c68d3",
       "letterboxd_url": "https://letterboxd.com/film/rear-window/",
       "letterboxd_rating": 4.36
     },
@@ -5119,8 +5090,8 @@
           }
         ]
       },
-      "color": "#21529f",
-      "accent": "#6892d3"
+      "color": "#30a647",
+      "accent": "#84d694"
     },
     {
       "id": "showgirls",
@@ -5148,8 +5119,8 @@
           }
         ]
       },
-      "color": "#80a630",
-      "accent": "#bcd684",
+      "color": "#971a26",
+      "accent": "#d45360",
       "letterboxd_url": "https://letterboxd.com/film/showgirls/",
       "letterboxd_rating": 3.46
     },
@@ -5184,8 +5155,8 @@
           }
         ]
       },
-      "color": "#971a94",
-      "accent": "#d453d0",
+      "color": "#21529f",
+      "accent": "#6892d3",
       "letterboxd_url": "https://letterboxd.com/film/the-dirties/",
       "letterboxd_rating": 3.73
     },
@@ -5212,8 +5183,8 @@
           }
         ]
       },
-      "color": "#219f7e",
-      "accent": "#68d3b7",
+      "color": "#80a630",
+      "accent": "#bcd684",
       "letterboxd_url": "https://letterboxd.com/film/operation-avalanche-2016/",
       "letterboxd_rating": 3.89
     },
@@ -5240,8 +5211,8 @@
           }
         ]
       },
-      "color": "#a66430",
-      "accent": "#d6a884",
+      "color": "#971a94",
+      "accent": "#d453d0",
       "letterboxd_url": "https://letterboxd.com/film/blackberry-2023/",
       "letterboxd_rating": 3.77
     },
@@ -5282,46 +5253,10 @@
           }
         ]
       },
-      "color": "#2d1a97",
-      "accent": "#6753d4",
+      "color": "#219f7e",
+      "accent": "#68d3b7",
       "letterboxd_url": "https://letterboxd.com/film/casablanca/",
       "letterboxd_rating": 4.28
-    },
-    {
-      "id": "goodbye-dragon-inn",
-      "title": "Goodbye, Dragon Inn",
-      "rating": "PG",
-      "runtime": 83,
-      "genre": "Comedy / Drama",
-      "year": "2003",
-      "country": null,
-      "director": "Ming-liang Tsai",
-      "cast": "Lee Kang-sheng, Chen Shiang-chyi, Kiyonobu Mitamura",
-      "description": "On a dark, wet night a historic and regal Chinese cinema sees its final film. Together with a small handful of souls they bid \"Goodbye, Dragon Inn\".",
-      "film_url": "https://princecharlescinema.com/film/19056261/goodbye-dragon-inn",
-      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/19056261.jpeg",
-      "showtimes": {
-        "2026-08-02": [
-          {
-            "time": "12:30",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626876",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-08-27": [
-          {
-            "time": "18:20",
-            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627122",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#339f21",
-      "accent": "#77d368",
-      "letterboxd_url": "https://letterboxd.com/film/goodbye-dragon-inn/",
-      "letterboxd_rating": 3.96
     },
     {
       "id": "on-her-majestys-secret-service",
@@ -5346,8 +5281,8 @@
           }
         ]
       },
-      "color": "#a63063",
-      "accent": "#d684a7",
+      "color": "#a66430",
+      "accent": "#d6a884",
       "letterboxd_url": "https://letterboxd.com/film/on-her-majestys-secret-service/",
       "letterboxd_rating": 3.43
     },
@@ -5374,8 +5309,8 @@
           }
         ]
       },
-      "color": "#1a7597",
-      "accent": "#53b0d4",
+      "color": "#2d1a97",
+      "accent": "#6753d4",
       "letterboxd_url": "https://letterboxd.com/film/mikey-and-nicky/",
       "letterboxd_rating": 4.07
     },
@@ -5405,8 +5340,8 @@
           }
         ]
       },
-      "color": "#9f9d21",
-      "accent": "#d3d168",
+      "color": "#339f21",
+      "accent": "#77d368",
       "letterboxd_url": "https://letterboxd.com/film/dog-day-afternoon/",
       "letterboxd_rating": 4.31
     },
@@ -5437,8 +5372,8 @@
           }
         ]
       },
-      "color": "#8130a6",
-      "accent": "#bd84d6"
+      "color": "#a63063",
+      "accent": "#d684a7"
     },
     {
       "id": "et-the-extra-terrestrial",
@@ -5466,8 +5401,8 @@
           }
         ]
       },
-      "color": "#1a974c",
-      "accent": "#53d487",
+      "color": "#1a7597",
+      "accent": "#53b0d4",
       "letterboxd_url": "https://letterboxd.com/film/et-the-extra-terrestrial/",
       "letterboxd_rating": 3.84
     },
@@ -5502,8 +5437,8 @@
           }
         ]
       },
-      "color": "#9f2f21",
-      "accent": "#d37468",
+      "color": "#9f9d21",
+      "accent": "#d3d168",
       "letterboxd_url": "https://letterboxd.com/film/12-angry-men/",
       "letterboxd_rating": 4.63
     },
@@ -5533,8 +5468,8 @@
           }
         ]
       },
-      "color": "#3045a6",
-      "accent": "#8493d6",
+      "color": "#8130a6",
+      "accent": "#bd84d6",
       "letterboxd_url": "https://letterboxd.com/film/jurassic-park/",
       "letterboxd_rating": 4.12
     },
@@ -5569,8 +5504,8 @@
           }
         ]
       },
-      "color": "#56971a",
-      "accent": "#90d453",
+      "color": "#1a974c",
+      "accent": "#53d487",
       "letterboxd_url": "https://letterboxd.com/film/a-hard-days-night/",
       "letterboxd_rating": 3.88
     },
@@ -5600,8 +5535,8 @@
           }
         ]
       },
-      "color": "#9f2182",
-      "accent": "#d368ba",
+      "color": "#9f2f21",
+      "accent": "#d37468",
       "letterboxd_url": "https://letterboxd.com/film/children-of-men/",
       "letterboxd_rating": 4.3
     },
@@ -5631,8 +5566,8 @@
           }
         ]
       },
-      "color": "#30a69f",
-      "accent": "#84d6d1",
+      "color": "#3045a6",
+      "accent": "#8493d6",
       "letterboxd_url": "https://letterboxd.com/film/the-shootist/",
       "letterboxd_rating": 3.7
     },
@@ -5662,8 +5597,8 @@
           }
         ]
       },
-      "color": "#976c1a",
-      "accent": "#d4a753",
+      "color": "#56971a",
+      "accent": "#90d453",
       "letterboxd_url": "https://letterboxd.com/film/casino/",
       "letterboxd_rating": 4.21
     },
@@ -5690,8 +5625,8 @@
           }
         ]
       },
-      "color": "#4f219f",
-      "accent": "#8e68d3",
+      "color": "#9f2182",
+      "accent": "#d368ba",
       "letterboxd_url": "https://letterboxd.com/film/back-to-the-future/",
       "letterboxd_rating": 4.21
     },
@@ -5718,8 +5653,8 @@
           }
         ]
       },
-      "color": "#30a638",
-      "accent": "#84d68a",
+      "color": "#30a69f",
+      "accent": "#84d6d1",
       "letterboxd_url": "https://letterboxd.com/film/cure/",
       "letterboxd_rating": 4.28
     },
@@ -5760,8 +5695,8 @@
           }
         ]
       },
-      "color": "#971a36",
-      "accent": "#d45370",
+      "color": "#976c1a",
+      "accent": "#d4a753",
       "letterboxd_url": "https://letterboxd.com/film/reservoir-dogs/",
       "letterboxd_rating": 4.14
     },
@@ -5791,8 +5726,8 @@
           }
         ]
       },
-      "color": "#21639f",
-      "accent": "#689fd3",
+      "color": "#4f219f",
+      "accent": "#8e68d3",
       "letterboxd_url": "https://letterboxd.com/film/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb/",
       "letterboxd_rating": 4.3
     },
@@ -5830,8 +5765,8 @@
           }
         ]
       },
-      "color": "#8fa630",
-      "accent": "#c6d684"
+      "color": "#30a638",
+      "accent": "#84d68a"
     },
     {
       "id": "trees-lounge-london-premiere",
@@ -5867,8 +5802,8 @@
           }
         ]
       },
-      "color": "#8b1a97",
-      "accent": "#c753d4"
+      "color": "#971a36",
+      "accent": "#d45370"
     },
     {
       "id": "ghostbusters",
@@ -5893,8 +5828,8 @@
           }
         ]
       },
-      "color": "#219f6e",
-      "accent": "#68d3a9",
+      "color": "#21639f",
+      "accent": "#689fd3",
       "letterboxd_url": "https://letterboxd.com/film/ghostbusters/",
       "letterboxd_rating": 3.74
     },
@@ -5965,8 +5900,8 @@
           }
         ]
       },
-      "color": "#a65530",
-      "accent": "#d69e84",
+      "color": "#8fa630",
+      "accent": "#c6d684",
       "letterboxd_url": "https://letterboxd.com/film/kingdom-of-heaven/",
       "letterboxd_rating": 3.71
     },
@@ -5996,8 +5931,8 @@
           }
         ]
       },
-      "color": "#1d1a97",
-      "accent": "#5653d4",
+      "color": "#8b1a97",
+      "accent": "#c753d4",
       "letterboxd_url": "https://letterboxd.com/film/the-conversation/",
       "letterboxd_rating": 4.14
     },
@@ -6028,8 +5963,8 @@
           }
         ]
       },
-      "color": "#439f21",
-      "accent": "#85d368"
+      "color": "#219f6e",
+      "accent": "#68d3a9"
     },
     {
       "id": "all-about-lily-chouchou",
@@ -6054,8 +5989,8 @@
           }
         ]
       },
-      "color": "#a63072",
-      "accent": "#d684b2",
+      "color": "#a65530",
+      "accent": "#d69e84",
       "letterboxd_url": "https://letterboxd.com/film/all-about-lily-chou-chou/",
       "letterboxd_rating": 4.16
     },
@@ -6082,8 +6017,8 @@
           }
         ]
       },
-      "color": "#1a8597",
-      "accent": "#53c1d4",
+      "color": "#1d1a97",
+      "accent": "#5653d4",
       "letterboxd_url": "https://letterboxd.com/film/the-lion-king/",
       "letterboxd_rating": 4.22
     },
@@ -6113,8 +6048,8 @@
           }
         ]
       },
-      "color": "#9f8d21",
-      "accent": "#d3c468",
+      "color": "#439f21",
+      "accent": "#85d368",
       "letterboxd_url": "https://letterboxd.com/film/inception/",
       "letterboxd_rating": 4.23
     },
@@ -6144,8 +6079,8 @@
           }
         ]
       },
-      "color": "#7230a6",
-      "accent": "#b284d6",
+      "color": "#a63072",
+      "accent": "#d684b2",
       "letterboxd_url": "https://letterboxd.com/film/a-summers-tale/",
       "letterboxd_rating": 4.1
     },
@@ -6172,8 +6107,8 @@
           }
         ]
       },
-      "color": "#1a973c",
-      "accent": "#53d476"
+      "color": "#1a8597",
+      "accent": "#53c1d4"
     },
     {
       "id": "the-wild-bunch",
@@ -6209,8 +6144,8 @@
           }
         ]
       },
-      "color": "#9f2124",
-      "accent": "#d3686a",
+      "color": "#9f8d21",
+      "accent": "#d3c468",
       "letterboxd_url": "https://letterboxd.com/film/the-wild-bunch/",
       "letterboxd_rating": 4.1
     },
@@ -6237,8 +6172,8 @@
           }
         ]
       },
-      "color": "#3054a6",
-      "accent": "#849dd6",
+      "color": "#7230a6",
+      "accent": "#b284d6",
       "letterboxd_url": "https://letterboxd.com/film/the-spirit-of-the-beehive/",
       "letterboxd_rating": 4.17
     },
@@ -6289,8 +6224,8 @@
           }
         ]
       },
-      "color": "#66971a",
-      "accent": "#a1d453",
+      "color": "#1a973c",
+      "accent": "#53d476",
       "letterboxd_url": "https://letterboxd.com/film/i-shot-andy-warhol/",
       "letterboxd_rating": 3.48
     },
@@ -6364,8 +6299,8 @@
           }
         ]
       },
-      "color": "#9f2192",
-      "accent": "#d368c8",
+      "color": "#9f2124",
+      "accent": "#d3686a",
       "letterboxd_url": "https://letterboxd.com/film/taxi-driver/",
       "letterboxd_rating": 4.1
     },
@@ -6392,8 +6327,8 @@
           }
         ]
       },
-      "color": "#30a690",
-      "accent": "#84d6c7",
+      "color": "#3054a6",
+      "accent": "#849dd6",
       "letterboxd_url": "https://letterboxd.com/film/pat-garrett-billy-the-kid/",
       "letterboxd_rating": 3.88
     },
@@ -6420,8 +6355,8 @@
           }
         ]
       },
-      "color": "#975c1a",
-      "accent": "#d49653",
+      "color": "#66971a",
+      "accent": "#a1d453",
       "letterboxd_url": "https://letterboxd.com/film/it-follows/",
       "letterboxd_rating": 3.4
     },
@@ -6448,8 +6383,8 @@
           }
         ]
       },
-      "color": "#3e219f",
-      "accent": "#8168d3",
+      "color": "#9f2192",
+      "accent": "#d368c8",
       "letterboxd_url": "https://letterboxd.com/film/under-the-silver-lake/",
       "letterboxd_rating": 3.44
     },
@@ -6508,8 +6443,8 @@
           }
         ]
       },
-      "color": "#37a630",
-      "accent": "#89d684",
+      "color": "#30a690",
+      "accent": "#84d6c7",
       "letterboxd_url": "https://letterboxd.com/film/hunt-for-the-wilderpeople/",
       "letterboxd_rating": 4.08
     },
@@ -6536,8 +6471,8 @@
           }
         ]
       },
-      "color": "#971a46",
-      "accent": "#d45381",
+      "color": "#975c1a",
+      "accent": "#d49653",
       "letterboxd_url": "https://letterboxd.com/film/je-tu-il-elle/",
       "letterboxd_rating": 3.71
     },
@@ -6567,8 +6502,8 @@
           }
         ]
       },
-      "color": "#21739f",
-      "accent": "#68add3",
+      "color": "#3e219f",
+      "accent": "#8168d3",
       "letterboxd_url": "https://letterboxd.com/film/hero-2002/",
       "letterboxd_rating": 4.0
     },
@@ -6595,8 +6530,8 @@
           }
         ]
       },
-      "color": "#9ea630",
-      "accent": "#d1d684",
+      "color": "#37a630",
+      "accent": "#89d684",
       "letterboxd_url": "https://letterboxd.com/film/2046/",
       "letterboxd_rating": 4.05
     },
@@ -6623,8 +6558,8 @@
           }
         ]
       },
-      "color": "#7b1a97",
-      "accent": "#b653d4",
+      "color": "#971a46",
+      "accent": "#d45381",
       "letterboxd_url": "https://letterboxd.com/film/james-and-the-giant-peach/",
       "letterboxd_rating": 3.41
     },
@@ -6659,8 +6594,8 @@
           }
         ]
       },
-      "color": "#219f5e",
-      "accent": "#68d39b",
+      "color": "#21739f",
+      "accent": "#68add3",
       "letterboxd_url": "https://letterboxd.com/film/ivans-childhood/",
       "letterboxd_rating": 4.19
     },
@@ -6690,8 +6625,8 @@
           }
         ]
       },
-      "color": "#a64630",
-      "accent": "#d69384",
+      "color": "#9ea630",
+      "accent": "#d1d684",
       "letterboxd_url": "https://letterboxd.com/film/a-clockwork-orange/",
       "letterboxd_rating": 4.1
     },
@@ -6726,8 +6661,8 @@
           }
         ]
       },
-      "color": "#1a2797",
-      "accent": "#5360d4",
+      "color": "#7b1a97",
+      "accent": "#b653d4",
       "letterboxd_url": "https://letterboxd.com/film/silent-running/",
       "letterboxd_rating": 3.31
     },
@@ -6754,8 +6689,8 @@
           }
         ]
       },
-      "color": "#539f21",
-      "accent": "#92d368",
+      "color": "#219f5e",
+      "accent": "#68d39b",
       "letterboxd_url": "https://letterboxd.com/film/muppets-from-space/",
       "letterboxd_rating": 3.44
     },
@@ -6785,8 +6720,8 @@
           }
         ]
       },
-      "color": "#a63081",
-      "accent": "#d684bc",
+      "color": "#a64630",
+      "accent": "#d69384",
       "letterboxd_url": "https://letterboxd.com/film/galaxy-of-terror/",
       "letterboxd_rating": 2.65
     },
@@ -6821,8 +6756,8 @@
           }
         ]
       },
-      "color": "#1a9597",
-      "accent": "#53d1d4",
+      "color": "#1a2797",
+      "accent": "#5360d4",
       "letterboxd_url": "https://letterboxd.com/film/gravity-2013/",
       "letterboxd_rating": 3.51
     },
@@ -6849,8 +6784,8 @@
           }
         ]
       },
-      "color": "#9f7d21",
-      "accent": "#d3b668",
+      "color": "#539f21",
+      "accent": "#92d368",
       "letterboxd_url": "https://letterboxd.com/film/the-human-condition-iii-a-soldiers-prayer/",
       "letterboxd_rating": 4.66
     },
@@ -6990,8 +6925,8 @@
           }
         ]
       },
-      "color": "#6330a6",
-      "accent": "#a884d6",
+      "color": "#a63081",
+      "accent": "#d684bc",
       "letterboxd_url": "https://letterboxd.com/film/2001-a-space-odyssey/",
       "letterboxd_rating": 4.24
     },
@@ -7018,8 +6953,8 @@
           }
         ]
       },
-      "color": "#1a972c",
-      "accent": "#53d466",
+      "color": "#1a9597",
+      "accent": "#53d1d4",
       "letterboxd_url": "https://letterboxd.com/film/the-iron-giant/",
       "letterboxd_rating": 4.28
     },
@@ -7046,8 +6981,8 @@
           }
         ]
       },
-      "color": "#9f2134",
-      "accent": "#d36878",
+      "color": "#9f7d21",
+      "accent": "#d3b668",
       "letterboxd_url": "https://letterboxd.com/film/lola/",
       "letterboxd_rating": 3.89
     },
@@ -7074,8 +7009,8 @@
           }
         ]
       },
-      "color": "#3063a6",
-      "accent": "#84a8d6",
+      "color": "#6330a6",
+      "accent": "#a884d6",
       "letterboxd_url": "https://letterboxd.com/film/the-third-man/",
       "letterboxd_rating": 4.23
     },
@@ -7116,8 +7051,8 @@
           }
         ]
       },
-      "color": "#75971a",
-      "accent": "#b1d453",
+      "color": "#1a972c",
+      "accent": "#53d466",
       "letterboxd_url": "https://letterboxd.com/film/blade-runner/",
       "letterboxd_rating": 4.09
     },
@@ -7144,8 +7079,8 @@
           }
         ]
       },
-      "color": "#9d219f",
-      "accent": "#d168d3",
+      "color": "#9f2134",
+      "accent": "#d36878",
       "letterboxd_url": "https://letterboxd.com/film/the-wizard-of-oz-1939/",
       "letterboxd_rating": 3.92
     },
@@ -7180,8 +7115,8 @@
           }
         ]
       },
-      "color": "#30a681",
-      "accent": "#84d6bc",
+      "color": "#3063a6",
+      "accent": "#84a8d6",
       "letterboxd_url": "https://letterboxd.com/film/call-me-by-your-name/",
       "letterboxd_rating": 3.85
     },
@@ -7222,8 +7157,8 @@
           }
         ]
       },
-      "color": "#974c1a",
-      "accent": "#d48653",
+      "color": "#75971a",
+      "accent": "#b1d453",
       "letterboxd_url": "https://letterboxd.com/film/the-red-shoes/",
       "letterboxd_rating": 4.41
     },
@@ -7253,8 +7188,8 @@
           }
         ]
       },
-      "color": "#2e219f",
-      "accent": "#7368d3"
+      "color": "#9d219f",
+      "accent": "#d168d3"
     },
     {
       "id": "walle",
@@ -7279,8 +7214,8 @@
           }
         ]
       },
-      "color": "#46a630",
-      "accent": "#94d684",
+      "color": "#30a681",
+      "accent": "#84d6bc",
       "letterboxd_url": "https://letterboxd.com/film/walle/",
       "letterboxd_rating": 4.24
     },
@@ -7307,8 +7242,8 @@
           }
         ]
       },
-      "color": "#971a56",
-      "accent": "#d45391",
+      "color": "#974c1a",
+      "accent": "#d48653",
       "letterboxd_url": "https://letterboxd.com/film/videodrome/",
       "letterboxd_rating": 3.87
     },
@@ -7338,8 +7273,8 @@
           }
         ]
       },
-      "color": "#21839f",
-      "accent": "#68bbd3",
+      "color": "#2e219f",
+      "accent": "#7368d3",
       "letterboxd_url": "https://letterboxd.com/film/teenage-sex-and-death-at-camp-miasma/",
       "letterboxd_rating": 3.88
     },
@@ -7369,8 +7304,8 @@
           }
         ]
       },
-      "color": "#a69e30",
-      "accent": "#d6d084",
+      "color": "#46a630",
+      "accent": "#94d684",
       "letterboxd_url": "https://letterboxd.com/film/american-psycho/",
       "letterboxd_rating": 3.76
     },
@@ -7400,8 +7335,8 @@
           }
         ]
       },
-      "color": "#6b1a97",
-      "accent": "#a653d4",
+      "color": "#971a56",
+      "accent": "#d45391",
       "letterboxd_url": "https://letterboxd.com/film/gladiator-2000/",
       "letterboxd_rating": 4.19
     },
@@ -7439,8 +7374,8 @@
           }
         ]
       },
-      "color": "#219f4e",
-      "accent": "#68d38e",
+      "color": "#21839f",
+      "accent": "#68bbd3",
       "letterboxd_url": "https://letterboxd.com/film/the-thing/",
       "letterboxd_rating": 4.35
     },
@@ -7467,8 +7402,8 @@
           }
         ]
       },
-      "color": "#a63730",
-      "accent": "#d68984",
+      "color": "#a69e30",
+      "accent": "#d6d084",
       "letterboxd_url": "https://letterboxd.com/film/the-man-who-shot-liberty-valance/",
       "letterboxd_rating": 4.29
     },
@@ -7498,8 +7433,8 @@
           }
         ]
       },
-      "color": "#1a3797",
-      "accent": "#5371d4",
+      "color": "#6b1a97",
+      "accent": "#a653d4",
       "letterboxd_url": "https://letterboxd.com/film/master-and-commander-the-far-side-of-the-world/",
       "letterboxd_rating": 4.02
     },
@@ -7526,8 +7461,8 @@
           }
         ]
       },
-      "color": "#639f21",
-      "accent": "#a0d368",
+      "color": "#219f4e",
+      "accent": "#68d38e",
       "letterboxd_url": "https://letterboxd.com/film/popstar-never-stop-never-stopping/",
       "letterboxd_rating": 3.63
     },
@@ -7557,8 +7492,8 @@
           }
         ]
       },
-      "color": "#a63090",
-      "accent": "#d684c7",
+      "color": "#a63730",
+      "accent": "#d68984",
       "letterboxd_url": "https://letterboxd.com/film/your-name/",
       "letterboxd_rating": 4.23
     },
@@ -7588,8 +7523,8 @@
           }
         ]
       },
-      "color": "#1a978a",
-      "accent": "#53d4c6",
+      "color": "#1a3797",
+      "accent": "#5371d4",
       "letterboxd_url": "https://letterboxd.com/film/goodfellas/",
       "letterboxd_rating": 4.46
     },
@@ -7616,8 +7551,8 @@
           }
         ]
       },
-      "color": "#9f6d21",
-      "accent": "#d3a868",
+      "color": "#639f21",
+      "accent": "#a0d368",
       "letterboxd_url": "https://letterboxd.com/film/the-princess-bride/",
       "letterboxd_rating": 4.1
     },
@@ -7647,8 +7582,8 @@
           }
         ]
       },
-      "color": "#5430a6",
-      "accent": "#9d84d6",
+      "color": "#a63090",
+      "accent": "#d684c7",
       "letterboxd_url": "https://letterboxd.com/film/the-straight-story/",
       "letterboxd_rating": 4.19
     },
@@ -7683,8 +7618,8 @@
           }
         ]
       },
-      "color": "#1a971c",
-      "accent": "#53d455",
+      "color": "#1a978a",
+      "accent": "#53d4c6",
       "letterboxd_url": "https://letterboxd.com/film/andrei-rublev/",
       "letterboxd_rating": 4.44
     },
@@ -7714,8 +7649,8 @@
           }
         ]
       },
-      "color": "#9f2144",
-      "accent": "#d36886",
+      "color": "#9f6d21",
+      "accent": "#d3a868",
       "letterboxd_url": "https://letterboxd.com/film/easy-rider/",
       "letterboxd_rating": 3.77
     },
@@ -7742,8 +7677,8 @@
           }
         ]
       },
-      "color": "#3072a6",
-      "accent": "#84b2d6",
+      "color": "#5430a6",
+      "accent": "#9d84d6",
       "letterboxd_url": "https://letterboxd.com/film/mad-max-fury-road/",
       "letterboxd_rating": 4.16
     },
@@ -7770,8 +7705,8 @@
           }
         ]
       },
-      "color": "#85971a",
-      "accent": "#c1d453",
+      "color": "#1a971c",
+      "accent": "#53d455",
       "letterboxd_url": "https://letterboxd.com/film/portrait-of-a-lady-on-fire/",
       "letterboxd_rating": 4.42
     },
@@ -7801,8 +7736,8 @@
           }
         ]
       },
-      "color": "#8d219f",
-      "accent": "#c368d3",
+      "color": "#9f2144",
+      "accent": "#d36886",
       "letterboxd_url": "https://letterboxd.com/film/tampopo/",
       "letterboxd_rating": 4.31
     },
@@ -7829,8 +7764,8 @@
           }
         ]
       },
-      "color": "#30a672",
-      "accent": "#84d6b2",
+      "color": "#3072a6",
+      "accent": "#84b2d6",
       "letterboxd_url": "https://letterboxd.com/film/the-great-dictator/",
       "letterboxd_rating": 4.33
     },
@@ -7865,8 +7800,8 @@
           }
         ]
       },
-      "color": "#973c1a",
-      "accent": "#d47553",
+      "color": "#85971a",
+      "accent": "#c1d453",
       "letterboxd_url": "https://letterboxd.com/film/playtime/",
       "letterboxd_rating": 4.2
     },
@@ -7897,8 +7832,8 @@
           }
         ]
       },
-      "color": "#21259f",
-      "accent": "#686bd3",
+      "color": "#8d219f",
+      "accent": "#c368d3",
       "letterboxd_url": "https://letterboxd.com/film/ghost-in-the-shell/",
       "letterboxd_rating": 4.09
     },
@@ -7928,8 +7863,8 @@
           }
         ]
       },
-      "color": "#55a630",
-      "accent": "#9ed684",
+      "color": "#30a672",
+      "accent": "#84d6b2",
       "letterboxd_url": "https://letterboxd.com/film/irreversible/",
       "letterboxd_rating": 3.63
     },
@@ -7956,8 +7891,8 @@
           }
         ]
       },
-      "color": "#971a66",
-      "accent": "#d453a1",
+      "color": "#973c1a",
+      "accent": "#d47553",
       "letterboxd_url": "https://letterboxd.com/film/rocky/",
       "letterboxd_rating": 4.1
     },
@@ -7987,8 +7922,8 @@
           }
         ]
       },
-      "color": "#21939f",
-      "accent": "#68c8d3",
+      "color": "#21259f",
+      "accent": "#686bd3",
       "letterboxd_url": "https://letterboxd.com/film/mahjong/",
       "letterboxd_rating": 4.0
     },
@@ -8015,8 +7950,8 @@
           }
         ]
       },
-      "color": "#a68f30",
-      "accent": "#d6c684",
+      "color": "#55a630",
+      "accent": "#9ed684",
       "letterboxd_url": "https://letterboxd.com/film/the-land-before-time/",
       "letterboxd_rating": 3.79
     },
@@ -8043,8 +7978,8 @@
           }
         ]
       },
-      "color": "#5b1a97",
-      "accent": "#9553d4",
+      "color": "#971a66",
+      "accent": "#d453a1",
       "letterboxd_url": "https://letterboxd.com/film/shogun-assassin/",
       "letterboxd_rating": 3.73
     },
@@ -8074,8 +8009,8 @@
           }
         ]
       },
-      "color": "#219f3e",
-      "accent": "#68d380",
+      "color": "#21939f",
+      "accent": "#68c8d3",
       "letterboxd_url": "https://letterboxd.com/film/the-blade/",
       "letterboxd_rating": 3.8
     },
@@ -8105,8 +8040,8 @@
           }
         ]
       },
-      "color": "#a63038",
-      "accent": "#d6848a",
+      "color": "#a68f30",
+      "accent": "#d6c684",
       "letterboxd_url": "https://letterboxd.com/film/but-im-a-cheerleader/",
       "letterboxd_rating": 4.02
     },
@@ -8133,8 +8068,8 @@
           }
         ]
       },
-      "color": "#1a4797",
-      "accent": "#5381d4",
+      "color": "#5b1a97",
+      "accent": "#9553d4",
       "letterboxd_url": "https://letterboxd.com/film/seven-samurai/",
       "letterboxd_rating": 4.6
     },
@@ -8164,8 +8099,8 @@
           }
         ]
       },
-      "color": "#739f21",
-      "accent": "#aed368",
+      "color": "#219f3e",
+      "accent": "#68d380",
       "letterboxd_url": "https://letterboxd.com/film/thief/",
       "letterboxd_rating": 4.07
     },
@@ -8192,8 +8127,8 @@
           }
         ]
       },
-      "color": "#a6309f",
-      "accent": "#d684d1",
+      "color": "#a63038",
+      "accent": "#d6848a",
       "letterboxd_url": "https://letterboxd.com/film/matilda/",
       "letterboxd_rating": 3.78
     },
@@ -8220,8 +8155,8 @@
           }
         ]
       },
-      "color": "#1a977a",
-      "accent": "#53d4b6",
+      "color": "#1a4797",
+      "accent": "#5381d4",
       "letterboxd_url": "https://letterboxd.com/film/kiss-of-the-spider-woman/",
       "letterboxd_rating": 3.73
     },
@@ -8251,8 +8186,8 @@
           }
         ]
       },
-      "color": "#9f5d21",
-      "accent": "#d39b68",
+      "color": "#739f21",
+      "accent": "#aed368",
       "letterboxd_url": "https://letterboxd.com/film/the-texas-chain-saw-massacre/",
       "letterboxd_rating": 3.78
     },
@@ -8279,8 +8214,8 @@
           }
         ]
       },
-      "color": "#4530a6",
-      "accent": "#9384d6",
+      "color": "#a6309f",
+      "accent": "#d684d1",
       "letterboxd_url": "https://letterboxd.com/film/bay-of-angels/",
       "letterboxd_rating": 3.77
     },
@@ -8310,8 +8245,8 @@
           }
         ]
       },
-      "color": "#28971a",
-      "accent": "#61d453",
+      "color": "#1a977a",
+      "accent": "#53d4b6",
       "letterboxd_url": "https://letterboxd.com/film/cat-on-a-hot-tin-roof/",
       "letterboxd_rating": 3.92
     },
@@ -8338,8 +8273,8 @@
           }
         ]
       },
-      "color": "#9f2154",
-      "accent": "#d36893",
+      "color": "#9f5d21",
+      "accent": "#d39b68",
       "letterboxd_url": "https://letterboxd.com/film/aladdin/",
       "letterboxd_rating": 3.9
     },
@@ -8366,8 +8301,8 @@
           }
         ]
       },
-      "color": "#3081a6",
-      "accent": "#84bdd6",
+      "color": "#4530a6",
+      "accent": "#9384d6",
       "letterboxd_url": "https://letterboxd.com/film/masculin-feminin/",
       "letterboxd_rating": 3.8
     },
@@ -8394,8 +8329,8 @@
           }
         ]
       },
-      "color": "#95971a",
-      "accent": "#d2d453",
+      "color": "#28971a",
+      "accent": "#61d453",
       "letterboxd_url": "https://letterboxd.com/film/the-passenger/",
       "letterboxd_rating": 4.0
     },
@@ -8422,8 +8357,8 @@
           }
         ]
       },
-      "color": "#7c219f",
-      "accent": "#b568d3",
+      "color": "#9f2154",
+      "accent": "#d36893",
       "letterboxd_url": "https://letterboxd.com/film/wild-strawberries/",
       "letterboxd_rating": 4.33
     },
@@ -8450,8 +8385,8 @@
           }
         ]
       },
-      "color": "#30a662",
-      "accent": "#84d6a7",
+      "color": "#3081a6",
+      "accent": "#84bdd6",
       "letterboxd_url": "https://letterboxd.com/film/kagero-za/",
       "letterboxd_rating": 3.78
     },
@@ -8478,8 +8413,8 @@
           }
         ]
       },
-      "color": "#972c1a",
-      "accent": "#d46553",
+      "color": "#95971a",
+      "accent": "#d2d453",
       "letterboxd_url": "https://letterboxd.com/film/bouchra/",
       "letterboxd_rating": 3.82
     },
@@ -8539,8 +8474,8 @@
           }
         ]
       },
-      "color": "#21359f",
-      "accent": "#6879d3",
+      "color": "#7c219f",
+      "accent": "#b568d3",
       "letterboxd_url": "https://letterboxd.com/film/trainspotting/",
       "letterboxd_rating": 4.23
     },
@@ -8567,8 +8502,8 @@
           }
         ]
       },
-      "color": "#64a630",
-      "accent": "#a8d684",
+      "color": "#30a662",
+      "accent": "#84d6a7",
       "letterboxd_url": "https://letterboxd.com/film/the-funeral/",
       "letterboxd_rating": 3.83
     },
@@ -8595,8 +8530,8 @@
           }
         ]
       },
-      "color": "#971a76",
-      "accent": "#d453b2",
+      "color": "#972c1a",
+      "accent": "#d46553",
       "letterboxd_url": "https://letterboxd.com/film/the-getaway/",
       "letterboxd_rating": 3.73
     },
@@ -8623,8 +8558,8 @@
           }
         ]
       },
-      "color": "#219f9c",
-      "accent": "#68d3d0",
+      "color": "#21359f",
+      "accent": "#6879d3",
       "letterboxd_url": "https://letterboxd.com/film/roar/",
       "letterboxd_rating": 3.13
     },
@@ -8654,8 +8589,8 @@
           }
         ]
       },
-      "color": "#a68030",
-      "accent": "#d6bc84",
+      "color": "#64a630",
+      "accent": "#a8d684",
       "letterboxd_url": "https://letterboxd.com/film/pulp-fiction/",
       "letterboxd_rating": 4.23
     },
@@ -8682,8 +8617,8 @@
           }
         ]
       },
-      "color": "#4b1a97",
-      "accent": "#8553d4",
+      "color": "#971a76",
+      "accent": "#d453b2",
       "letterboxd_url": "https://letterboxd.com/film/hundreds-of-beavers/",
       "letterboxd_rating": 4.13
     },
@@ -8710,8 +8645,8 @@
           }
         ]
       },
-      "color": "#219f2e",
-      "accent": "#68d373",
+      "color": "#219f9c",
+      "accent": "#68d3d0",
       "letterboxd_url": "https://letterboxd.com/film/the-thin-red-line/",
       "letterboxd_rating": 4.09
     },
@@ -8738,8 +8673,8 @@
           }
         ]
       },
-      "color": "#a63047",
-      "accent": "#d68494",
+      "color": "#a68030",
+      "accent": "#d6bc84",
       "letterboxd_url": "https://letterboxd.com/film/delicatessen/",
       "letterboxd_rating": 3.83
     },
@@ -8769,8 +8704,8 @@
           }
         ]
       },
-      "color": "#1a5797",
-      "accent": "#5392d4",
+      "color": "#4b1a97",
+      "accent": "#8553d4",
       "letterboxd_url": "https://letterboxd.com/film/almost-famous/",
       "letterboxd_rating": 4.09
     },
@@ -8800,8 +8735,8 @@
           }
         ]
       },
-      "color": "#849f21",
-      "accent": "#bbd368",
+      "color": "#219f2e",
+      "accent": "#68d373",
       "letterboxd_url": "https://letterboxd.com/film/salo-or-the-120-days-of-sodom/",
       "letterboxd_rating": 3.07
     },
@@ -8831,8 +8766,8 @@
           }
         ]
       },
-      "color": "#9d30a6",
-      "accent": "#d084d6"
+      "color": "#a63047",
+      "accent": "#d68494"
     },
     {
       "id": "arrival",
@@ -8857,8 +8792,8 @@
           }
         ]
       },
-      "color": "#1a976a",
-      "accent": "#53d4a5",
+      "color": "#1a5797",
+      "accent": "#5392d4",
       "letterboxd_url": "https://letterboxd.com/film/arrival-2016/",
       "letterboxd_rating": 4.14
     },
@@ -8888,8 +8823,8 @@
           }
         ]
       },
-      "color": "#9f4d21",
-      "accent": "#d38d68",
+      "color": "#849f21",
+      "accent": "#bbd368",
       "letterboxd_url": "https://letterboxd.com/film/10-things-i-hate-about-you/",
       "letterboxd_rating": 4.06
     },
@@ -8916,8 +8851,8 @@
           }
         ]
       },
-      "color": "#3630a6",
-      "accent": "#8984d6",
+      "color": "#9d30a6",
+      "accent": "#d084d6",
       "letterboxd_url": "https://letterboxd.com/film/blow-out/",
       "letterboxd_rating": 4.09
     },
@@ -8944,8 +8879,8 @@
           }
         ]
       },
-      "color": "#38971a",
-      "accent": "#72d453",
+      "color": "#1a976a",
+      "accent": "#53d4a5",
       "letterboxd_url": "https://letterboxd.com/film/the-goonies/",
       "letterboxd_rating": 3.82
     },
@@ -8972,8 +8907,8 @@
           }
         ]
       },
-      "color": "#9f2164",
-      "accent": "#d368a1",
+      "color": "#9f4d21",
+      "accent": "#d38d68",
       "letterboxd_url": "https://letterboxd.com/film/my-own-private-idaho/",
       "letterboxd_rating": 3.84
     },
@@ -9004,8 +8939,8 @@
           }
         ]
       },
-      "color": "#3090a6",
-      "accent": "#84c7d6",
+      "color": "#3630a6",
+      "accent": "#8984d6",
       "letterboxd_url": "https://letterboxd.com/film/metropolis-2001/",
       "letterboxd_rating": 3.81
     },
@@ -9032,8 +8967,8 @@
           }
         ]
       },
-      "color": "#97891a",
-      "accent": "#d4c553",
+      "color": "#38971a",
+      "accent": "#72d453",
       "letterboxd_url": "https://letterboxd.com/film/the-guest-2014/",
       "letterboxd_rating": 3.4
     },
@@ -9060,8 +8995,8 @@
           }
         ]
       },
-      "color": "#6c219f",
-      "accent": "#a868d3"
+      "color": "#9f2164",
+      "accent": "#d368a1"
     },
     {
       "id": "apocalypse-now-final-cut",
@@ -9089,8 +9024,8 @@
           }
         ]
       },
-      "color": "#30a653",
-      "accent": "#84d69d",
+      "color": "#3090a6",
+      "accent": "#84c7d6",
       "letterboxd_url": "https://letterboxd.com/film/apocalypse-now/",
       "letterboxd_rating": 4.43
     },
@@ -9117,8 +9052,8 @@
           }
         ]
       },
-      "color": "#971c1a",
-      "accent": "#d45553",
+      "color": "#97891a",
+      "accent": "#d4c553",
       "letterboxd_url": "https://letterboxd.com/film/the-umbrellas-of-cherbourg/",
       "letterboxd_rating": 4.14
     },
@@ -9148,8 +9083,8 @@
           }
         ]
       },
-      "color": "#21459f",
-      "accent": "#6886d3",
+      "color": "#6c219f",
+      "accent": "#a868d3",
       "letterboxd_url": "https://letterboxd.com/film/man-bites-dog/",
       "letterboxd_rating": 3.79
     },
@@ -9176,8 +9111,8 @@
           }
         ]
       },
-      "color": "#73a630",
-      "accent": "#b3d684"
+      "color": "#30a653",
+      "accent": "#84d69d"
     },
     {
       "id": "the-master",
@@ -9205,8 +9140,8 @@
           }
         ]
       },
-      "color": "#971a86",
-      "accent": "#d453c2",
+      "color": "#971c1a",
+      "accent": "#d45553",
       "letterboxd_url": "https://letterboxd.com/film/the-master-2012/",
       "letterboxd_rating": 3.98
     },
@@ -9233,8 +9168,8 @@
           }
         ]
       },
-      "color": "#219f8c",
-      "accent": "#68d3c2",
+      "color": "#21459f",
+      "accent": "#6886d3",
       "letterboxd_url": "https://letterboxd.com/film/dreams/",
       "letterboxd_rating": 4.24
     },
@@ -9264,8 +9199,8 @@
           }
         ]
       },
-      "color": "#a67130",
-      "accent": "#d6b184",
+      "color": "#73a630",
+      "accent": "#b3d684",
       "letterboxd_url": "https://letterboxd.com/film/one-crazy-summer/",
       "letterboxd_rating": 3.16
     },
@@ -9295,8 +9230,8 @@
           }
         ]
       },
-      "color": "#3b1a97",
-      "accent": "#7553d4",
+      "color": "#971a86",
+      "accent": "#d453c2",
       "letterboxd_url": "https://letterboxd.com/film/contact/",
       "letterboxd_rating": 3.82
     },
@@ -9326,8 +9261,8 @@
           }
         ]
       },
-      "color": "#259f21",
-      "accent": "#6cd368",
+      "color": "#219f8c",
+      "accent": "#68d3c2",
       "letterboxd_url": "https://letterboxd.com/film/the-godfather-part-ii/",
       "letterboxd_rating": 4.58
     },
@@ -9354,10 +9289,38 @@
           }
         ]
       },
-      "color": "#a63056",
-      "accent": "#d6849e",
+      "color": "#a67130",
+      "accent": "#d6b184",
       "letterboxd_url": "https://letterboxd.com/film/scott-pilgrim-vs-the-world/",
       "letterboxd_rating": 3.88
+    },
+    {
+      "id": "goodbye-dragon-inn",
+      "title": "Goodbye, Dragon Inn",
+      "rating": "PG",
+      "runtime": 83,
+      "genre": "Comedy / Drama",
+      "year": "2003",
+      "country": null,
+      "director": "Ming-liang Tsai",
+      "cast": "Lee Kang-sheng, Chen Shiang-chyi, Kiyonobu Mitamura",
+      "description": "On a dark, wet night a historic and regal Chinese cinema sees its final film. Together with a small handful of souls they bid \"Goodbye, Dragon Inn\".",
+      "film_url": "https://princecharlescinema.com/film/19056261/goodbye-dragon-inn",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/19056261.jpeg",
+      "showtimes": {
+        "2026-08-27": [
+          {
+            "time": "18:20",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627122",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#3b1a97",
+      "accent": "#7553d4",
+      "letterboxd_url": "https://letterboxd.com/film/goodbye-dragon-inn/",
+      "letterboxd_rating": 3.96
     },
     {
       "id": "dragon-inn",
@@ -9382,8 +9345,8 @@
           }
         ]
       },
-      "color": "#1a6797",
-      "accent": "#53a2d4",
+      "color": "#259f21",
+      "accent": "#6cd368",
       "letterboxd_url": "https://letterboxd.com/film/dragon-inn/",
       "letterboxd_rating": 4.02
     },
@@ -9410,8 +9373,8 @@
           }
         ]
       },
-      "color": "#949f21",
-      "accent": "#c9d368",
+      "color": "#a63056",
+      "accent": "#d6849e",
       "letterboxd_url": "https://letterboxd.com/film/all-the-presidents-men/",
       "letterboxd_rating": 4.18
     },
@@ -9438,8 +9401,8 @@
           }
         ]
       },
-      "color": "#8e30a6",
-      "accent": "#c684d6",
+      "color": "#1a6797",
+      "accent": "#53a2d4",
       "letterboxd_url": "https://letterboxd.com/film/high-noon/",
       "letterboxd_rating": 3.99
     },
@@ -9469,8 +9432,8 @@
           }
         ]
       },
-      "color": "#1a975a",
-      "accent": "#53d495",
+      "color": "#949f21",
+      "accent": "#c9d368",
       "letterboxd_url": "https://letterboxd.com/film/bring-me-the-head-of-alfredo-garcia/",
       "letterboxd_rating": 3.95
     },
@@ -9501,8 +9464,8 @@
           }
         ]
       },
-      "color": "#9f3d21",
-      "accent": "#d38068"
+      "color": "#8e30a6",
+      "accent": "#c684d6"
     },
     {
       "id": "slowburn-shoot-an-indie-wrestling-story-presented-by-wrestletalk",
@@ -9530,8 +9493,8 @@
           }
         ]
       },
-      "color": "#3038a6",
-      "accent": "#848ad6"
+      "color": "#1a975a",
+      "accent": "#53d495"
     },
     {
       "id": "mirror",
@@ -9556,8 +9519,8 @@
           }
         ]
       },
-      "color": "#48971a",
-      "accent": "#82d453",
+      "color": "#9f3d21",
+      "accent": "#d38068",
       "letterboxd_url": "https://letterboxd.com/film/mirror/",
       "letterboxd_rating": 4.32
     },
@@ -9598,8 +9561,8 @@
           }
         ]
       },
-      "color": "#9f2174",
-      "accent": "#d368ae",
+      "color": "#3038a6",
+      "accent": "#848ad6",
       "letterboxd_url": "https://letterboxd.com/film/the-terminator/",
       "letterboxd_rating": 3.88
     },
@@ -9640,8 +9603,8 @@
           }
         ]
       },
-      "color": "#309fa6",
-      "accent": "#84d2d6",
+      "color": "#48971a",
+      "accent": "#82d453",
       "letterboxd_url": "https://letterboxd.com/film/terminator-2-judgment-day/",
       "letterboxd_rating": 4.29
     },
@@ -9668,8 +9631,8 @@
           }
         ]
       },
-      "color": "#97791a",
-      "accent": "#d4b553",
+      "color": "#9f2174",
+      "accent": "#d368ae",
       "letterboxd_url": "https://letterboxd.com/film/turnstile-never-enough/",
       "letterboxd_rating": 4.31
     },
@@ -9696,8 +9659,8 @@
           }
         ]
       },
-      "color": "#5c219f",
-      "accent": "#9a68d3"
+      "color": "#309fa6",
+      "accent": "#84d2d6"
     },
     {
       "id": "mystery-movie-marathon",
@@ -9722,8 +9685,8 @@
           }
         ]
       },
-      "color": "#30a644",
-      "accent": "#84d692"
+      "color": "#97791a",
+      "accent": "#d4b553"
     },
     {
       "id": "house-of-flying-daggers",
@@ -9748,8 +9711,8 @@
           }
         ]
       },
-      "color": "#971a29",
-      "accent": "#d45362"
+      "color": "#5c219f",
+      "accent": "#9a68d3"
     },
     {
       "id": "pink-flamingos",
@@ -9777,8 +9740,8 @@
           }
         ]
       },
-      "color": "#21559f",
-      "accent": "#6894d3",
+      "color": "#30a644",
+      "accent": "#84d692",
       "letterboxd_url": "https://letterboxd.com/film/pink-flamingos/",
       "letterboxd_rating": 3.51
     },
@@ -9805,8 +9768,8 @@
           }
         ]
       },
-      "color": "#82a630",
-      "accent": "#bdd684",
+      "color": "#971a29",
+      "accent": "#d45362",
       "letterboxd_url": "https://letterboxd.com/film/female-trouble/",
       "letterboxd_rating": 3.94
     },
@@ -9833,8 +9796,8 @@
           }
         ]
       },
-      "color": "#971a96",
-      "accent": "#d453d3",
+      "color": "#21559f",
+      "accent": "#6894d3",
       "letterboxd_url": "https://letterboxd.com/film/polyester/",
       "letterboxd_rating": 3.85
     },
@@ -9861,8 +9824,8 @@
           }
         ]
       },
-      "color": "#219f7c",
-      "accent": "#68d3b5",
+      "color": "#82a630",
+      "accent": "#bdd684",
       "letterboxd_url": "https://letterboxd.com/film/out-1/",
       "letterboxd_rating": 4.08
     },
@@ -9892,8 +9855,8 @@
           }
         ]
       },
-      "color": "#a66230",
-      "accent": "#d6a784",
+      "color": "#971a96",
+      "accent": "#d453d3",
       "letterboxd_url": "https://letterboxd.com/film/paper-moon/",
       "letterboxd_rating": 4.39
     },
@@ -9920,8 +9883,8 @@
           }
         ]
       },
-      "color": "#2b1a97",
-      "accent": "#6453d4",
+      "color": "#219f7c",
+      "accent": "#68d3b5",
       "letterboxd_url": "https://letterboxd.com/film/blood-simple/",
       "letterboxd_rating": 3.89
     },
@@ -9951,8 +9914,8 @@
           }
         ]
       },
-      "color": "#359f21",
-      "accent": "#79d368",
+      "color": "#a66230",
+      "accent": "#d6a784",
       "letterboxd_url": "https://letterboxd.com/film/boogie-nights/",
       "letterboxd_rating": 4.2
     },
@@ -9979,8 +9942,8 @@
           }
         ]
       },
-      "color": "#a63065",
-      "accent": "#d684a9",
+      "color": "#2b1a97",
+      "accent": "#6453d4",
       "letterboxd_url": "https://letterboxd.com/film/aftersun/",
       "letterboxd_rating": 4.21
     },
@@ -10007,8 +9970,8 @@
           }
         ]
       },
-      "color": "#1a7797",
-      "accent": "#53b3d4",
+      "color": "#359f21",
+      "accent": "#79d368",
       "letterboxd_url": "https://letterboxd.com/film/the-young-girls-of-rochefort/",
       "letterboxd_rating": 4.32
     },
@@ -10035,8 +9998,8 @@
           }
         ]
       },
-      "color": "#9f9b21",
-      "accent": "#d3cf68"
+      "color": "#a63065",
+      "accent": "#d684a9"
     },
     {
       "id": "ghost-dog-the-way-of-the-samurai",
@@ -10064,8 +10027,8 @@
           }
         ]
       },
-      "color": "#7f30a6",
-      "accent": "#bb84d6",
+      "color": "#1a7797",
+      "accent": "#53b3d4",
       "letterboxd_url": "https://letterboxd.com/film/ghost-dog-the-way-of-the-samurai/",
       "letterboxd_rating": 4.06
     },
@@ -10092,8 +10055,8 @@
           }
         ]
       },
-      "color": "#1a974a",
-      "accent": "#53d484",
+      "color": "#9f9b21",
+      "accent": "#d3cf68",
       "letterboxd_url": "https://letterboxd.com/film/ratatouille/",
       "letterboxd_rating": 4.23
     },
@@ -10120,8 +10083,8 @@
           }
         ]
       },
-      "color": "#9f2d21",
-      "accent": "#d37268",
+      "color": "#7f30a6",
+      "accent": "#bb84d6",
       "letterboxd_url": "https://letterboxd.com/film/do-the-right-thing/",
       "letterboxd_rating": 4.4
     },
@@ -10148,8 +10111,8 @@
           }
         ]
       },
-      "color": "#3047a6",
-      "accent": "#8495d6",
+      "color": "#1a974a",
+      "accent": "#53d484",
       "letterboxd_url": "https://letterboxd.com/film/yumeji/",
       "letterboxd_rating": 3.76
     },
@@ -10176,8 +10139,8 @@
           }
         ]
       },
-      "color": "#58971a",
-      "accent": "#93d453",
+      "color": "#9f2d21",
+      "accent": "#d37268",
       "letterboxd_url": "https://letterboxd.com/film/falling-down/",
       "letterboxd_rating": 3.68
     },
@@ -10204,8 +10167,8 @@
           }
         ]
       },
-      "color": "#9f2184",
-      "accent": "#d368bc",
+      "color": "#3047a6",
+      "accent": "#8495d6",
       "letterboxd_url": "https://letterboxd.com/film/the-french-connection/",
       "letterboxd_rating": 3.99
     },
@@ -10322,8 +10285,8 @@
           }
         ]
       },
-      "color": "#30a69c",
-      "accent": "#84d6cf",
+      "color": "#58971a",
+      "accent": "#93d453",
       "letterboxd_url": "https://letterboxd.com/film/the-room/",
       "letterboxd_rating": 2.6
     },
@@ -10440,8 +10403,8 @@
           }
         ]
       },
-      "color": "#97691a",
-      "accent": "#d4a453",
+      "color": "#9f2184",
+      "accent": "#d368bc",
       "letterboxd_url": "https://letterboxd.com/film/big-shark/",
       "letterboxd_rating": 2.96
     },
@@ -10471,8 +10434,8 @@
           }
         ]
       },
-      "color": "#4c219f",
-      "accent": "#8d68d3",
+      "color": "#30a69c",
+      "accent": "#84d6cf",
       "letterboxd_url": "https://letterboxd.com/film/kill-bill-the-whole-bloody-affair/",
       "letterboxd_rating": 4.52
     },
@@ -10499,8 +10462,8 @@
           }
         ]
       },
-      "color": "#30a635",
-      "accent": "#84d688",
+      "color": "#97691a",
+      "accent": "#d4a453",
       "letterboxd_url": "https://letterboxd.com/film/batman-mask-of-the-phantasm/",
       "letterboxd_rating": 4.05
     },
@@ -10527,8 +10490,8 @@
           }
         ]
       },
-      "color": "#971a39",
-      "accent": "#d45372",
+      "color": "#4c219f",
+      "accent": "#8d68d3",
       "letterboxd_url": "https://letterboxd.com/film/sirat-2025/",
       "letterboxd_rating": 3.56
     },
@@ -10558,8 +10521,8 @@
           }
         ]
       },
-      "color": "#21659f",
-      "accent": "#68a1d3",
+      "color": "#30a635",
+      "accent": "#84d688",
       "letterboxd_url": "https://letterboxd.com/film/all-about-my-mother/",
       "letterboxd_rating": 4.19
     },
@@ -10589,8 +10552,8 @@
           }
         ]
       },
-      "color": "#91a630",
-      "accent": "#c8d684",
+      "color": "#971a39",
+      "accent": "#d45372",
       "letterboxd_url": "https://letterboxd.com/film/rancho-deluxe/",
       "letterboxd_rating": 3.41
     },
@@ -10620,8 +10583,8 @@
           }
         ]
       },
-      "color": "#881a97",
-      "accent": "#c453d4"
+      "color": "#21659f",
+      "accent": "#68a1d3"
     },
     {
       "id": "solve-along-a-murder-she-wrote",
@@ -10670,8 +10633,8 @@
           }
         ]
       },
-      "color": "#219f6c",
-      "accent": "#68d3a7"
+      "color": "#91a630",
+      "accent": "#c8d684"
     },
     {
       "id": "star-trek-iv-the-voyage-home",
@@ -10699,8 +10662,8 @@
           }
         ]
       },
-      "color": "#a65330",
-      "accent": "#d69c84",
+      "color": "#881a97",
+      "accent": "#c453d4",
       "letterboxd_url": "https://letterboxd.com/film/star-trek-iv-the-voyage-home/",
       "letterboxd_rating": 3.74
     },
@@ -10727,8 +10690,8 @@
           }
         ]
       },
-      "color": "#1b1a97",
-      "accent": "#5453d4",
+      "color": "#219f6c",
+      "accent": "#68d3a7",
       "letterboxd_url": "https://letterboxd.com/film/rashomon/",
       "letterboxd_rating": 4.2
     },
@@ -10755,8 +10718,8 @@
           }
         ]
       },
-      "color": "#469f21",
-      "accent": "#87d368",
+      "color": "#a65330",
+      "accent": "#d69c84",
       "letterboxd_url": "https://letterboxd.com/film/the-discreet-charm-of-the-bourgeoisie/",
       "letterboxd_rating": 3.99
     },
@@ -10783,8 +10746,8 @@
           }
         ]
       },
-      "color": "#a63074",
-      "accent": "#d684b3",
+      "color": "#1b1a97",
+      "accent": "#5453d4",
       "letterboxd_url": "https://letterboxd.com/film/sweet-charity/",
       "letterboxd_rating": 3.78
     },
@@ -10814,8 +10777,8 @@
           }
         ]
       },
-      "color": "#1a8797",
-      "accent": "#53c3d4",
+      "color": "#469f21",
+      "accent": "#87d368",
       "letterboxd_url": "https://letterboxd.com/film/rumble-in-the-bronx/",
       "letterboxd_rating": 3.5
     },
@@ -10842,8 +10805,8 @@
           }
         ]
       },
-      "color": "#9f8b21",
-      "accent": "#d3c268",
+      "color": "#a63074",
+      "accent": "#d684b3",
       "letterboxd_url": "https://letterboxd.com/film/donkey-skin/",
       "letterboxd_rating": 4.0
     },
@@ -10873,8 +10836,8 @@
           }
         ]
       },
-      "color": "#7030a6",
-      "accent": "#b184d6",
+      "color": "#1a8797",
+      "accent": "#53c3d4",
       "letterboxd_url": "https://letterboxd.com/film/as-tears-go-by/",
       "letterboxd_rating": 3.6
     },
@@ -10905,8 +10868,8 @@
           }
         ]
       },
-      "color": "#1a973a",
-      "accent": "#53d474",
+      "color": "#9f8b21",
+      "accent": "#d3c268",
       "letterboxd_url": "https://letterboxd.com/film/survive-style-5/",
       "letterboxd_rating": 3.96
     },
@@ -10971,8 +10934,8 @@
           }
         ]
       },
-      "color": "#9f2126",
-      "accent": "#d3686c",
+      "color": "#7030a6",
+      "accent": "#b184d6",
       "letterboxd_url": "https://letterboxd.com/film/raiders-of-the-lost-ark/",
       "letterboxd_rating": 4.15
     },
@@ -10999,8 +10962,8 @@
           }
         ]
       },
-      "color": "#3056a6",
-      "accent": "#849fd6",
+      "color": "#1a973a",
+      "accent": "#53d474",
       "letterboxd_url": "https://letterboxd.com/film/the-cook-the-thief-his-wife-her-lover/",
       "letterboxd_rating": 4.19
     },
@@ -11027,8 +10990,8 @@
           }
         ]
       },
-      "color": "#68971a",
-      "accent": "#a3d453",
+      "color": "#9f2126",
+      "accent": "#d3686c",
       "letterboxd_url": "https://letterboxd.com/film/eraserhead/",
       "letterboxd_rating": 3.82
     },
@@ -11055,8 +11018,8 @@
           }
         ]
       },
-      "color": "#9f2194",
-      "accent": "#d368ca",
+      "color": "#3056a6",
+      "accent": "#849fd6",
       "letterboxd_url": "https://letterboxd.com/film/purple-rain/",
       "letterboxd_rating": 3.42
     },
@@ -11083,8 +11046,8 @@
           }
         ]
       },
-      "color": "#30a68d",
-      "accent": "#84d6c5",
+      "color": "#68971a",
+      "accent": "#a3d453",
       "letterboxd_url": "https://letterboxd.com/film/graffiti-bridge/",
       "letterboxd_rating": 2.57
     },
@@ -11127,8 +11090,8 @@
           }
         ]
       },
-      "color": "#97591a",
-      "accent": "#d49453",
+      "color": "#9f2194",
+      "accent": "#d368ca",
       "letterboxd_url": "https://letterboxd.com/film/kikis-delivery-service/",
       "letterboxd_rating": 4.14
     },
@@ -11155,8 +11118,8 @@
           }
         ]
       },
-      "color": "#3c219f",
-      "accent": "#7f68d3",
+      "color": "#30a68d",
+      "accent": "#84d6c5",
       "letterboxd_url": "https://letterboxd.com/film/network/",
       "letterboxd_rating": 4.26
     },
@@ -11183,8 +11146,8 @@
           }
         ]
       },
-      "color": "#39a630",
-      "accent": "#8bd684",
+      "color": "#97591a",
+      "accent": "#d49453",
       "letterboxd_url": "https://letterboxd.com/film/godzilla/",
       "letterboxd_rating": 4.06
     },
@@ -11214,8 +11177,8 @@
           }
         ]
       },
-      "color": "#971a49",
-      "accent": "#d45383",
+      "color": "#3c219f",
+      "accent": "#7f68d3",
       "letterboxd_url": "https://letterboxd.com/film/beavis-and-butt-head-do-america/",
       "letterboxd_rating": 3.56
     },
@@ -11242,8 +11205,8 @@
           }
         ]
       },
-      "color": "#21759f",
-      "accent": "#68afd3",
+      "color": "#39a630",
+      "accent": "#8bd684",
       "letterboxd_url": "https://letterboxd.com/film/sinners-2025/",
       "letterboxd_rating": 4.09
     },
@@ -11273,8 +11236,8 @@
           }
         ]
       },
-      "color": "#a0a630",
-      "accent": "#d2d684",
+      "color": "#971a49",
+      "accent": "#d45383",
       "letterboxd_url": "https://letterboxd.com/film/amarcord/",
       "letterboxd_rating": 4.12
     },
@@ -11301,8 +11264,8 @@
           }
         ]
       },
-      "color": "#781a97",
-      "accent": "#b453d4",
+      "color": "#21759f",
+      "accent": "#68afd3",
       "letterboxd_url": "https://letterboxd.com/film/out-of-the-blue/",
       "letterboxd_rating": 3.99
     },
@@ -11332,8 +11295,8 @@
           }
         ]
       },
-      "color": "#219f5c",
-      "accent": "#68d399"
+      "color": "#a0a630",
+      "accent": "#d2d684"
     },
     {
       "id": "manhunter-the-final-cut",
@@ -11383,8 +11346,8 @@
           }
         ]
       },
-      "color": "#a64430",
-      "accent": "#d69284"
+      "color": "#781a97",
+      "accent": "#b453d4"
     },
     {
       "id": "the-nice-guys",
@@ -11409,8 +11372,8 @@
           }
         ]
       },
-      "color": "#1a2a97",
-      "accent": "#5363d4",
+      "color": "#219f5c",
+      "accent": "#68d399",
       "letterboxd_url": "https://letterboxd.com/film/the-nice-guys/",
       "letterboxd_rating": 3.82
     },
@@ -11437,8 +11400,8 @@
           }
         ]
       },
-      "color": "#569f21",
-      "accent": "#94d368"
+      "color": "#a64430",
+      "accent": "#d69284"
     },
     {
       "id": "chow-yunfatathon",
@@ -11463,8 +11426,8 @@
           }
         ]
       },
-      "color": "#a63083",
-      "accent": "#d684be"
+      "color": "#1a2a97",
+      "accent": "#5363d4"
     },
     {
       "id": "the-silence-of-the-lambs",
@@ -11489,8 +11452,8 @@
           }
         ]
       },
-      "color": "#1a9797",
-      "accent": "#53d3d4",
+      "color": "#569f21",
+      "accent": "#94d368",
       "letterboxd_url": "https://letterboxd.com/film/the-silence-of-the-lambs/",
       "letterboxd_rating": 4.33
     },
@@ -11553,8 +11516,8 @@
           }
         ]
       },
-      "color": "#9f7b21",
-      "accent": "#d3b468",
+      "color": "#a63083",
+      "accent": "#d684be",
       "letterboxd_url": "https://letterboxd.com/film/nosferatu/",
       "letterboxd_rating": 3.82
     },
@@ -11595,8 +11558,8 @@
           }
         ]
       },
-      "color": "#6130a6",
-      "accent": "#a684d6",
+      "color": "#1a9797",
+      "accent": "#53d3d4",
       "letterboxd_url": "https://letterboxd.com/film/the-cabinet-of-dr-caligari-1920/",
       "letterboxd_rating": 4.06
     },
@@ -11626,8 +11589,8 @@
           }
         ]
       },
-      "color": "#1a972a",
-      "accent": "#53d463",
+      "color": "#9f7b21",
+      "accent": "#d3b468",
       "letterboxd_url": "https://letterboxd.com/film/haxan/",
       "letterboxd_rating": 4.05
     },
@@ -11654,8 +11617,8 @@
           }
         ]
       },
-      "color": "#9f2136",
-      "accent": "#d3687a"
+      "color": "#6130a6",
+      "accent": "#a684d6"
     },
     {
       "id": "a-tale-of-winter",
@@ -11683,8 +11646,8 @@
           }
         ]
       },
-      "color": "#3066a6",
-      "accent": "#84a9d6",
+      "color": "#1a972a",
+      "accent": "#53d463",
       "letterboxd_url": "https://letterboxd.com/film/a-tale-of-winter/",
       "letterboxd_rating": 3.87
     },
@@ -11714,8 +11677,8 @@
           }
         ]
       },
-      "color": "#78971a",
-      "accent": "#b3d453",
+      "color": "#9f2136",
+      "accent": "#d3687a",
       "letterboxd_url": "https://letterboxd.com/film/its-a-wonderful-life/",
       "letterboxd_rating": 4.44
     }
