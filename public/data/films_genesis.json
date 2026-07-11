@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-11T15:04:32.124161+00:00",
+  "scraped_at": "2026-07-11T15:34:06.536312+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -438,12 +438,6 @@
       "showtimes": {
         "2026-07-11": [
           {
-            "time": "15:50",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11964",
-            "screen": null,
-            "hoh": false
-          },
-          {
             "time": "20:25",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11963",
             "screen": null,
@@ -655,48 +649,6 @@
       "letterboxd_rating": 4.14
     },
     {
-      "id": "toy-story-5",
-      "title": "Toy Story 5",
-      "rating": "PG",
-      "runtime": 102,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "The toys are back in Disney and Pixar's \"Toy Story 5,\" and this time it's Toy meets Tech. Woody (voice of Tom Hanks), Buzz Lightyear (voice of Tim Allen), Jessie (voice of Joan Cusack) and the rest of the gang's jobs are challenged when they come face-to-face with Lilypad (voice of Greta Lee), a brand-new tablet device that arrives with her own disruptive ideas about what is best for their kid, Bonnie. Will playtime ever be the same?More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/104999",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/104999_0.jpg",
-      "showtimes": {
-        "2026-07-11": [
-          {
-            "time": "16:10",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11959",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-12": [
-          {
-            "time": "13:15",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11968",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "15:25",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11969",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
-      "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
-      "letterboxd_rating": 3.72
-    },
-    {
       "id": "disclosure-day",
       "title": "Disclosure Day",
       "rating": "12A",
@@ -743,8 +695,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
       "letterboxd_rating": 3.11
     },
@@ -771,8 +723,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#546e7a",
+      "accent": "#90a4ae"
     },
     {
       "id": "the-furious",
@@ -805,10 +757,44 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
       "letterboxd_url": "https://letterboxd.com/film/the-furious/",
       "letterboxd_rating": 3.87
+    },
+    {
+      "id": "toy-story-5",
+      "title": "Toy Story 5",
+      "rating": "PG",
+      "runtime": 102,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "The toys are back in Disney and Pixar's \"Toy Story 5,\" and this time it's Toy meets Tech. Woody (voice of Tom Hanks), Buzz Lightyear (voice of Tim Allen), Jessie (voice of Joan Cusack) and the rest of the gang's jobs are challenged when they come face-to-face with Lilypad (voice of Greta Lee), a brand-new tablet device that arrives with her own disruptive ideas about what is best for their kid, Bonnie. Will playtime ever be the same?More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/104999",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/104999_0.jpg",
+      "showtimes": {
+        "2026-07-12": [
+          {
+            "time": "13:15",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11968",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "15:25",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11969",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#ad1457",
+      "accent": "#f06292",
+      "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
+      "letterboxd_rating": 3.72
     },
     {
       "id": "ghost-in-the-shell-presented-by-the-cult-classic-collective",
