@@ -1,42 +1,7 @@
 {
-  "scraped_at": "2026-07-11T14:04:00.691208+00:00",
+  "scraped_at": "2026-07-11T14:34:27.625931+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "kokuho",
-      "title": "Kokuho",
-      "rating": "15",
-      "runtime": 175,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Lee Sang-il",
-      "cast": null,
-      "description": "After the death of his father, the leader of a yakuza gang, fourteen-year-old Kikuo is taken in by a renowned Kabuki…",
-      "film_url": "https://www.thegardencinema.co.uk/film/kokuho/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5493728.jpg",
-      "showtimes": {
-        "2026-07-11": [
-          {
-            "time": "14:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5835656.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-12": [
-          {
-            "time": "12:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5835677.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/kokuho/",
-      "letterboxd_rating": 3.84
-    },
     {
       "id": "the-christophers",
       "title": "The Christophers",
@@ -73,8 +38,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-christophers/",
       "letterboxd_rating": 3.5
     },
@@ -104,8 +69,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-legend-of-suram-fortress/",
       "letterboxd_rating": 3.9
     },
@@ -161,8 +126,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/dear-you-2026/",
       "letterboxd_rating": 3.88
     },
@@ -228,8 +193,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/shoot-the-people/",
       "letterboxd_rating": null
     },
@@ -307,8 +272,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/the-last-one-for-the-road/",
       "letterboxd_rating": 3.89
     },
@@ -358,8 +323,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/blue-heron/",
       "letterboxd_rating": 3.93
     },
@@ -429,8 +394,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
       "letterboxd_rating": 4.14
     },
@@ -462,8 +427,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/james-and-the-giant-peach/",
       "letterboxd_rating": 3.41
     },
@@ -511,10 +476,37 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/taxi-driver/",
       "letterboxd_rating": 4.1
+    },
+    {
+      "id": "kokuho",
+      "title": "Kokuho",
+      "rating": "15",
+      "runtime": 175,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Lee Sang-il",
+      "cast": null,
+      "description": "After the death of his father, the leader of a yakuza gang, fourteen-year-old Kikuo is taken in by a renowned Kabuki…",
+      "film_url": "https://www.thegardencinema.co.uk/film/kokuho/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5493728.jpg",
+      "showtimes": {
+        "2026-07-12": [
+          {
+            "time": "12:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5835677.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#546e7a",
+      "accent": "#90a4ae",
+      "letterboxd_url": "https://letterboxd.com/film/kokuho/",
+      "letterboxd_rating": 3.84
     },
     {
       "id": "life-support",
