@@ -1,49 +1,36 @@
 {
-  "scraped_at": "2026-07-12T19:05:33.143620+00:00",
+  "scraped_at": "2026-07-12T19:34:40.384492+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
     {
-      "id": "taxi-driver-50th-anniversary",
-      "title": "Taxi Driver - 50th anniversary",
-      "rating": "18",
-      "runtime": 114,
+      "id": "his-girl-friday",
+      "title": "His Girl Friday",
+      "rating": "U",
+      "runtime": 92,
       "genre": "Other",
-      "year": "1976",
-      "director": "Martin Scorsese",
+      "year": "1940",
+      "director": "Howard Hawks",
       "cast": null,
-      "description": "Isolated ex-marine Travis Bickle applies for a job as a taxi driver, hoping that the nocturnal working pattern will alleviate the…",
-      "film_url": "https://www.thegardencinema.co.uk/film/taxi-driver-50th-anniversary/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5735910.jpg",
+      "description": "The screening on Thursday 28 May will be introduced by filmmaker John Gordillo and will followed by a discussion at The…",
+      "film_url": "https://www.thegardencinema.co.uk/film/his-girl-friday/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5390970.jpg",
       "showtimes": {
-        "2026-07-12": [
+        "2026-07-13": [
           {
-            "time": "19:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5835671.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-14": [
-          {
-            "time": "15:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5835685.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-15": [
-          {
-            "time": "20:35",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5835707.TcsSection_638",
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414124.TcsSection_638",
             "screen": null,
             "hoh": false
           }
         ]
       },
+      "seasons": [
+        "Screwball Summer"
+      ],
       "color": "#e53935",
       "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/taxi-driver/",
-      "letterboxd_rating": 4.1
+      "letterboxd_url": "https://letterboxd.com/film/his-girl-friday/",
+      "letterboxd_rating": 4.03
     },
     {
       "id": "the-invite",
@@ -58,17 +45,6 @@
       "film_url": "https://www.thegardencinema.co.uk/film/the-invite/",
       "poster_url": "https://images.savoysystems.co.uk/GCL/5730014.jpg",
       "showtimes": {
-        "2026-07-12": [
-          {
-            "time": "19:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5835669.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ],
         "2026-07-13": [
           {
             "time": "15:15",
@@ -104,36 +80,6 @@
       "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
       "letterboxd_rating": 4.14
-    },
-    {
-      "id": "his-girl-friday",
-      "title": "His Girl Friday",
-      "rating": "U",
-      "runtime": 92,
-      "genre": "Other",
-      "year": "1940",
-      "director": "Howard Hawks",
-      "cast": null,
-      "description": "The screening on Thursday 28 May will be introduced by filmmaker John Gordillo and will followed by a discussion at The…",
-      "film_url": "https://www.thegardencinema.co.uk/film/his-girl-friday/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5390970.jpg",
-      "showtimes": {
-        "2026-07-13": [
-          {
-            "time": "15:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414124.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "seasons": [
-        "Screwball Summer"
-      ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/his-girl-friday/",
-      "letterboxd_rating": 4.03
     },
     {
       "id": "shoot-the-people",
@@ -181,8 +127,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/shoot-the-people/",
       "letterboxd_rating": null
     },
@@ -244,8 +190,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/the-last-one-for-the-road/",
       "letterboxd_rating": 3.88
     },
@@ -275,8 +221,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "color": "#1565c0",
+      "accent": "#64b5f6"
     },
     {
       "id": "made-in-hong-kong-2",
@@ -314,8 +260,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/made-in-hong-kong/",
       "letterboxd_rating": 4.13
     },
@@ -357,10 +303,45 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/life-support-2026/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "taxi-driver-50th-anniversary",
+      "title": "Taxi Driver - 50th anniversary",
+      "rating": "18",
+      "runtime": 114,
+      "genre": "Other",
+      "year": "1976",
+      "director": "Martin Scorsese",
+      "cast": null,
+      "description": "Isolated ex-marine Travis Bickle applies for a job as a taxi driver, hoping that the nocturnal working pattern will alleviate the…",
+      "film_url": "https://www.thegardencinema.co.uk/film/taxi-driver-50th-anniversary/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5735910.jpg",
+      "showtimes": {
+        "2026-07-14": [
+          {
+            "time": "15:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5835685.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-15": [
+          {
+            "time": "20:35",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5835707.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/taxi-driver/",
+      "letterboxd_rating": 4.1
     },
     {
       "id": "koln-75",
