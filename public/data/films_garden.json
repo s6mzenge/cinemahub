@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-13T13:04:40.889928+00:00",
+  "scraped_at": "2026-07-13T14:08:13.740121+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
     {
@@ -20,7 +20,8 @@
             "time": "15:00",
             "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5414124.TcsSection_638",
             "screen": null,
-            "hoh": false
+            "hoh": false,
+            "sold_out": true
           }
         ]
       },
@@ -1560,6 +1561,34 @@
       "letterboxd_rating": 3.79
     },
     {
+      "id": "lost-city-of-gold",
+      "title": "Lost City of Gold",
+      "rating": "PG",
+      "runtime": 90,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Ben Holgate",
+      "cast": null,
+      "description": "The screening on 21 July will be introduced by Blink Films co-founder and creative director Dan Chambers. This revelatory documentary special…",
+      "film_url": "https://www.thegardencinema.co.uk/film/lost-city-of-gold/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5869613.jpg",
+      "showtimes": {
+        "2026-07-21": [
+          {
+            "time": "18:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5839665.TcsSection_971",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "Intro"
+            ]
+          }
+        ]
+      },
+      "color": "#1a972f",
+      "accent": "#53d468"
+    },
+    {
       "id": "la-piscine",
       "title": "La Piscine",
       "rating": "12A",
@@ -1585,8 +1614,8 @@
         "Summertime Sadness 2026"
       ],
       "partner": "Zodiac Film Club",
-      "color": "#1a972f",
-      "accent": "#53d468"
+      "color": "#9f2132",
+      "accent": "#d36876"
     },
     {
       "id": "eight-taels-of-gold-2",
@@ -1624,8 +1653,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#9f2132",
-      "accent": "#d36876",
+      "color": "#3061a6",
+      "accent": "#84a6d6",
       "letterboxd_url": "https://letterboxd.com/film/eight-taels-of-gold/",
       "letterboxd_rating": 3.69
     },
@@ -1662,8 +1691,8 @@
       "seasons": [
         "Members' Summer Selection 2026"
       ],
-      "color": "#3061a6",
-      "accent": "#84a6d6",
+      "color": "#73971a",
+      "accent": "#afd453",
       "letterboxd_url": "https://letterboxd.com/film/joint-security-area/",
       "letterboxd_rating": 4.22
     },
@@ -1692,8 +1721,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#73971a",
-      "accent": "#afd453",
+      "color": "#9f219f",
+      "accent": "#d368d3",
       "letterboxd_url": "https://letterboxd.com/film/as-tears-go-by/",
       "letterboxd_rating": 3.6
     },
@@ -1725,8 +1754,8 @@
       "seasons": [
         "South Asian Heritage Month 2026"
       ],
-      "color": "#9f219f",
-      "accent": "#d368d3",
+      "color": "#30a683",
+      "accent": "#84d6be",
       "letterboxd_url": "https://letterboxd.com/film/london-boys/",
       "letterboxd_rating": null
     },
@@ -1755,8 +1784,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#30a683",
-      "accent": "#84d6be",
+      "color": "#974e1a",
+      "accent": "#d48853",
       "letterboxd_url": "https://letterboxd.com/film/midnight-1939/",
       "letterboxd_rating": 3.94
     },
@@ -1797,8 +1826,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#974e1a",
-      "accent": "#d48853",
+      "color": "#31219f",
+      "accent": "#7568d3",
       "letterboxd_url": "https://letterboxd.com/film/a-chinese-ghost-story/",
       "letterboxd_rating": 3.8
     },
@@ -1852,8 +1881,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#31219f",
-      "accent": "#7568d3",
+      "color": "#44a630",
+      "accent": "#92d684",
       "letterboxd_url": "https://letterboxd.com/film/the-lion-king/",
       "letterboxd_rating": 4.22
     },
@@ -1885,8 +1914,8 @@
       "seasons": [
         "Members' Events"
       ],
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#971a54",
+      "accent": "#d4538f"
     },
     {
       "id": "once-a-thief",
@@ -1925,8 +1954,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#971a54",
-      "accent": "#d4538f",
+      "color": "#21809f",
+      "accent": "#68b9d3",
       "letterboxd_url": "https://letterboxd.com/film/once-a-thief-1991/",
       "letterboxd_rating": 3.41
     },
@@ -1955,8 +1984,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#21809f",
-      "accent": "#68b9d3",
+      "color": "#a6a030",
+      "accent": "#d6d284",
       "letterboxd_url": "https://letterboxd.com/film/it-happened-one-night/",
       "letterboxd_rating": 4.18
     },
@@ -1993,8 +2022,8 @@
       "seasons": [
         "Members' Summer Selection 2026"
       ],
-      "color": "#a6a030",
-      "accent": "#d6d284",
+      "color": "#6d1a97",
+      "accent": "#a853d4",
       "letterboxd_url": "https://letterboxd.com/film/talk-to-her/",
       "letterboxd_rating": 3.87
     },
@@ -2031,8 +2060,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#6d1a97",
-      "accent": "#a853d4",
+      "color": "#219f50",
+      "accent": "#68d390",
       "letterboxd_url": "https://letterboxd.com/film/a-chinese-ghost-story-ii/",
       "letterboxd_rating": 3.51
     },
@@ -2065,8 +2094,8 @@
       "seasons": [
         "South Asian Heritage Month 2026"
       ],
-      "color": "#219f50",
-      "accent": "#68d390"
+      "color": "#a63930",
+      "accent": "#d68b84"
     },
     {
       "id": "rocco-and-his-brothers",
@@ -2101,8 +2130,8 @@
       "seasons": [
         "Members' Summer Selection 2026"
       ],
-      "color": "#a63930",
-      "accent": "#d68b84",
+      "color": "#1a3597",
+      "accent": "#536ed4",
       "letterboxd_url": "https://letterboxd.com/film/rocco-and-his-brothers/",
       "letterboxd_rating": 4.33
     },
@@ -2139,8 +2168,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#1a3597",
-      "accent": "#536ed4",
+      "color": "#619f21",
+      "accent": "#9ed368",
       "letterboxd_url": "https://letterboxd.com/film/a-chinese-ghost-story-iii/",
       "letterboxd_rating": 3.38
     },
@@ -2172,8 +2201,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#619f21",
-      "accent": "#9ed368",
+      "color": "#a6308e",
+      "accent": "#d684c5",
       "letterboxd_url": "https://letterboxd.com/film/my-man-godfrey/",
       "letterboxd_rating": 3.94
     },
@@ -2202,8 +2231,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#a6308e",
-      "accent": "#d684c5",
+      "color": "#1a978c",
+      "accent": "#53d4c8",
       "letterboxd_url": "https://letterboxd.com/film/chungking-express/",
       "letterboxd_rating": 4.27
     },
@@ -2240,8 +2269,8 @@
       "seasons": [
         "Members' Summer Selection 2026"
       ],
-      "color": "#1a978c",
-      "accent": "#53d4c8",
+      "color": "#9f7021",
+      "accent": "#d3aa68",
       "letterboxd_url": "https://letterboxd.com/film/the-green-ray/",
       "letterboxd_rating": 4.17
     },
@@ -2273,8 +2302,8 @@
       "seasons": [
         "Composing Cinema"
       ],
-      "color": "#9f7021",
-      "accent": "#d3aa68",
+      "color": "#5630a6",
+      "accent": "#9f84d6",
       "letterboxd_url": "https://letterboxd.com/film/figures-in-a-landscape/",
       "letterboxd_rating": 3.54
     },
@@ -2307,8 +2336,8 @@
       "seasons": [
         "South Asian Heritage Month 2026"
       ],
-      "color": "#5630a6",
-      "accent": "#9f84d6"
+      "color": "#1a971f",
+      "accent": "#53d458"
     },
     {
       "id": "labyrinth",
@@ -2360,8 +2389,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#1a971f",
-      "accent": "#53d458",
+      "color": "#9f2142",
+      "accent": "#d36884",
       "letterboxd_url": "https://letterboxd.com/film/labyrinth/",
       "letterboxd_rating": 3.77
     },
@@ -2390,8 +2419,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#9f2142",
-      "accent": "#d36884",
+      "color": "#3070a6",
+      "accent": "#84b1d6",
       "letterboxd_url": "https://letterboxd.com/film/the-philadelphia-story/",
       "letterboxd_rating": 3.99
     },
@@ -2432,8 +2461,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#3070a6",
-      "accent": "#84b1d6",
+      "color": "#83971a",
+      "accent": "#bfd453",
       "letterboxd_url": "https://letterboxd.com/film/full-moon-in-new-york/",
       "letterboxd_rating": 3.47
     },
@@ -2470,8 +2499,8 @@
       "seasons": [
         "Members' Summer Selection 2026"
       ],
-      "color": "#83971a",
-      "accent": "#bfd453",
+      "color": "#8f219f",
+      "accent": "#c568d3",
       "letterboxd_url": "https://letterboxd.com/film/klute/",
       "letterboxd_rating": 3.86
     },
@@ -2501,8 +2530,8 @@
           }
         ]
       },
-      "color": "#8f219f",
-      "accent": "#c568d3",
+      "color": "#30a674",
+      "accent": "#84d6b3",
       "letterboxd_url": "https://letterboxd.com/film/ish-2025/",
       "letterboxd_rating": 3.46
     },
@@ -2534,8 +2563,8 @@
       "seasons": [
         "Members' Events"
       ],
-      "color": "#30a674",
-      "accent": "#84d6b3"
+      "color": "#973e1a",
+      "accent": "#d47853"
     },
     {
       "id": "center-stage",
@@ -2573,8 +2602,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#973e1a",
-      "accent": "#d47853",
+      "color": "#21229f",
+      "accent": "#6869d3",
       "letterboxd_url": "https://letterboxd.com/film/center-stage-1991/",
       "letterboxd_rating": 3.94
     },
@@ -2603,8 +2632,8 @@
       "seasons": [
         "Members' Summer Selection 2026"
       ],
-      "color": "#21229f",
-      "accent": "#6869d3",
+      "color": "#53a630",
+      "accent": "#9cd684",
       "letterboxd_url": "https://letterboxd.com/film/desperately-seeking-susan/",
       "letterboxd_rating": 3.4
     },
@@ -2633,8 +2662,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#53a630",
-      "accent": "#9cd684",
+      "color": "#971a64",
+      "accent": "#d4539f",
       "letterboxd_url": "https://letterboxd.com/film/the-lady-eve/",
       "letterboxd_rating": 3.96
     },
@@ -2675,8 +2704,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#971a64",
-      "accent": "#d4539f",
+      "color": "#21909f",
+      "accent": "#68c6d3",
       "letterboxd_url": "https://letterboxd.com/film/red-rose-white-rose/",
       "letterboxd_rating": 3.56
     },
@@ -2705,8 +2734,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#21909f",
-      "accent": "#68c6d3",
+      "color": "#a69130",
+      "accent": "#d6c884",
       "letterboxd_url": "https://letterboxd.com/film/she-done-him-wrong/",
       "letterboxd_rating": 3.12
     },
@@ -2743,8 +2772,8 @@
       "seasons": [
         "Members' Summer Selection 2026"
       ],
-      "color": "#a69130",
-      "accent": "#d6c884",
+      "color": "#5d1a97",
+      "accent": "#9853d4",
       "letterboxd_url": "https://letterboxd.com/film/broadcast-news/",
       "letterboxd_rating": 4.04
     },
@@ -2798,8 +2827,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#5d1a97",
-      "accent": "#9853d4"
+      "color": "#219f40",
+      "accent": "#68d382"
     },
     {
       "id": "daleks-invasion-earth-2150-a-d-1966-introduction-and-book-signing-by-lillian-crawford",
@@ -2826,8 +2855,8 @@
           }
         ]
       },
-      "color": "#219f40",
-      "accent": "#68d382"
+      "color": "#a63035",
+      "accent": "#d68488"
     },
     {
       "id": "the-awful-truth",
@@ -2854,8 +2883,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#a63035",
-      "accent": "#d68488",
+      "color": "#1a4597",
+      "accent": "#537fd4",
       "letterboxd_url": "https://letterboxd.com/film/the-awful-truth/",
       "letterboxd_rating": 3.89
     },
@@ -2884,8 +2913,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#1a4597",
-      "accent": "#537fd4",
+      "color": "#719f21",
+      "accent": "#acd368",
       "letterboxd_url": "https://letterboxd.com/film/to-be-or-not-to-be/",
       "letterboxd_rating": 4.34
     },
@@ -2915,8 +2944,8 @@
         "Summertime Sadness 2026"
       ],
       "partner": "Zodiac Film Club",
-      "color": "#719f21",
-      "accent": "#acd368",
+      "color": "#a6309d",
+      "accent": "#d684d0",
       "letterboxd_url": "https://letterboxd.com/film/the-swimmer/",
       "letterboxd_rating": 4.05
     },
@@ -2945,8 +2974,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#a6309d",
-      "accent": "#d684d0",
+      "color": "#1a977c",
+      "accent": "#53d4b8",
       "letterboxd_url": "https://letterboxd.com/film/bringing-up-baby/",
       "letterboxd_rating": 4.0
     },
@@ -3000,8 +3029,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#1a977c",
-      "accent": "#53d4b8",
+      "color": "#9f5f21",
+      "accent": "#d39d68",
       "letterboxd_url": "https://letterboxd.com/film/muppet-treasure-island/",
       "letterboxd_rating": 3.59
     },
@@ -3033,8 +3062,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#9f5f21",
-      "accent": "#d39d68",
+      "color": "#4730a6",
+      "accent": "#9484d6",
       "letterboxd_url": "https://letterboxd.com/film/autumn-moon/",
       "letterboxd_rating": 3.74
     },
@@ -3063,8 +3092,8 @@
           }
         ]
       },
-      "color": "#4730a6",
-      "accent": "#9484d6",
+      "color": "#26971a",
+      "accent": "#5fd453",
       "letterboxd_url": "https://letterboxd.com/film/summer-school-2001/",
       "letterboxd_rating": 3.72
     },
@@ -3096,8 +3125,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#26971a",
-      "accent": "#5fd453",
+      "color": "#9f2152",
+      "accent": "#d36891",
       "letterboxd_url": "https://letterboxd.com/film/the-palm-beach-story/",
       "letterboxd_rating": 3.81
     },
@@ -3129,8 +3158,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#9f2152",
-      "accent": "#d36891"
+      "color": "#307fa6",
+      "accent": "#84bbd6"
     },
     {
       "id": "all-about-ah-long",
@@ -3160,8 +3189,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#307fa6",
-      "accent": "#84bbd6",
+      "color": "#93971a",
+      "accent": "#cfd453",
       "letterboxd_url": "https://letterboxd.com/film/all-about-ah-long/",
       "letterboxd_rating": 3.58
     },
@@ -3215,8 +3244,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#93971a",
-      "accent": "#cfd453",
+      "color": "#7f219f",
+      "accent": "#b768d3",
       "letterboxd_url": "https://letterboxd.com/film/monsieur-hulots-holiday/",
       "letterboxd_rating": 3.73
     },
@@ -3246,8 +3275,8 @@
         "Summertime Sadness 2026"
       ],
       "partner": "Zodiac Film Club",
-      "color": "#7f219f",
-      "accent": "#b768d3",
+      "color": "#30a665",
+      "accent": "#84d6a9",
       "letterboxd_url": "https://letterboxd.com/film/swimming-pool/",
       "letterboxd_rating": 3.46
     },
@@ -3301,8 +3330,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#30a665",
-      "accent": "#84d6a9"
+      "color": "#972e1a",
+      "accent": "#d46753"
     },
     {
       "id": "rio",
@@ -3343,8 +3372,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#972e1a",
-      "accent": "#d46753",
+      "color": "#21329f",
+      "accent": "#6877d3",
       "letterboxd_url": "https://letterboxd.com/film/rio-2011/",
       "letterboxd_rating": 3.52
     },
@@ -3376,8 +3405,8 @@
       "seasons": [
         "Greek Salad"
       ],
-      "color": "#21329f",
-      "accent": "#6877d3"
+      "color": "#62a630",
+      "accent": "#a7d684"
     },
     {
       "id": "reverie-cineclub-presents-80-years-of-defa-animated-short-films-for-the-family",
@@ -3419,8 +3448,8 @@
         "Films for the Family"
       ],
       "partner": "Reverie Cineclub",
-      "color": "#62a630",
-      "accent": "#a7d684"
+      "color": "#971a74",
+      "accent": "#d453af"
     },
     {
       "id": "a-blonde-in-love",
@@ -3450,8 +3479,8 @@
       "seasons": [
         "Celebrating 75 Years of Contemporary Films"
       ],
-      "color": "#971a74",
-      "accent": "#d453af"
+      "color": "#219f9e",
+      "accent": "#68d3d2"
     },
     {
       "id": "free-willy",
@@ -3492,8 +3521,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#219f9e",
-      "accent": "#68d3d2",
+      "color": "#a68230",
+      "accent": "#d6bd84",
       "letterboxd_url": "https://letterboxd.com/film/free-willy/",
       "letterboxd_rating": 3.05
     },
@@ -3525,8 +3554,8 @@
       "seasons": [
         "Celebrating 75 Years of Contemporary Films"
       ],
-      "color": "#a68230",
-      "accent": "#d6bd84"
+      "color": "#4d1a97",
+      "accent": "#8753d4"
     },
     {
       "id": "harry-and-the-hendersons",
@@ -3567,8 +3596,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#4d1a97",
-      "accent": "#8753d4",
+      "color": "#219f30",
+      "accent": "#68d375",
       "letterboxd_url": "https://letterboxd.com/film/harry-and-the-hendersons/",
       "letterboxd_rating": 3.03
     },
@@ -3600,8 +3629,8 @@
       "seasons": [
         "Celebrating 75 Years of Contemporary Films"
       ],
-      "color": "#219f30",
-      "accent": "#68d375",
+      "color": "#a63044",
+      "accent": "#d68493",
       "letterboxd_url": "https://letterboxd.com/film/the-spirit-of-the-beehive/",
       "letterboxd_rating": 4.16
     },
@@ -3633,8 +3662,8 @@
       "seasons": [
         "Greek Salad"
       ],
-      "color": "#a63044",
-      "accent": "#d68493",
+      "color": "#1a5597",
+      "accent": "#538fd4",
       "letterboxd_url": "https://letterboxd.com/film/john-the-violent/",
       "letterboxd_rating": 3.7
     }
