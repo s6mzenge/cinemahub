@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-13T15:04:55.116370+00:00",
+  "scraped_at": "2026-07-13T15:32:20.501932+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
@@ -446,6 +446,17 @@
           {
             "time": "14:15",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627403",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "70mm"
+            ]
+          }
+        ],
+        "2026-09-25": [
+          {
+            "time": "11:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627416",
             "screen": null,
             "hoh": false,
             "tags": [
@@ -3866,6 +3877,14 @@
           {
             "time": "20:45",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627325",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-09-25": [
+          {
+            "time": "15:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627418",
             "screen": null,
             "hoh": false
           }
@@ -8618,7 +8637,7 @@
       "color": "#3081a6",
       "accent": "#84bdd6",
       "letterboxd_url": "https://letterboxd.com/film/salo-or-the-120-days-of-sodom/",
-      "letterboxd_rating": 3.07
+      "letterboxd_rating": 3.06
     },
     {
       "id": "crouching-tiger-hidden-dragon-wo-hu-cang-long",
@@ -10791,6 +10810,17 @@
               "35mm"
             ]
           }
+        ],
+        "2026-09-25": [
+          {
+            "time": "12:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627415",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
         ]
       },
       "color": "#4c219f",
@@ -12354,6 +12384,34 @@
       "letterboxd_rating": 3.77
     },
     {
+      "id": "drive",
+      "title": "Drive",
+      "rating": "18",
+      "runtime": 100,
+      "genre": "Neo Noir",
+      "year": "2011",
+      "country": null,
+      "director": "Nicolas Winding Refn",
+      "cast": "Albert Brooks, Bryan Cranston, Carey Mulligan, Ryan Gosling",
+      "description": "Driver is a skilled Hollywood stuntman who moonlights as a getaway driver for criminals. Though he projects an icy exterior, lately he's been warming up to a pretty neighbor named Irene and her young son, Benicio. When Irene's husband gets out of jail, he enlists Driver's help in a million-dollar heist. The job goes horribly wrong, and Driver must risk his life to protect Irene and Benicio from the vengeful masterminds behind the robbery.",
+      "film_url": "https://princecharlescinema.com/film/3419/drive",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/3419.jpg",
+      "showtimes": {
+        "2026-09-25": [
+          {
+            "time": "15:20",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627417",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#669f21",
+      "accent": "#a2d368",
+      "letterboxd_url": "https://letterboxd.com/film/drive-2011/",
+      "letterboxd_rating": 3.91
+    },
+    {
       "id": "manhunter-the-final-cut",
       "title": "Manhunter : The Final Cut",
       "rating": "18",
@@ -12401,8 +12459,39 @@
           }
         ]
       },
-      "color": "#669f21",
-      "accent": "#a2d368"
+      "color": "#a63092",
+      "accent": "#d684c8"
+    },
+    {
+      "id": "thelma-louise",
+      "title": "Thelma & Louise",
+      "rating": "15",
+      "runtime": 130,
+      "genre": "Crime/Comedy",
+      "year": "1991",
+      "country": null,
+      "director": "Ridley Scott",
+      "cast": "Susan Sarandon, Harvey Keitel, Geena Davis",
+      "description": "The story follows Thelma (Geena Davis), a timid housewife, and Louise (Susan Sarandon), a no-nonsense waitress, as they embark on what starts as a weekend getaway and turns into a flight from the law. After Louise kills a man who attempts to rape Thelma, the two hit the road, realising that the justice system is unlikely to see their side. Their journey becomes one of personal awakening, radical defiance, and ultimately, tragic liberation.Thelma & Louise is more than a road movie—it’s a feminist landmark, a genre-defying tale of friendship, freedom, and fury that still resonates over three decades later.",
+      "film_url": "https://princecharlescinema.com/film/5476566/thelma-louise",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/mdeXAXaehv4JSO9jm9D74Ip-zWeAYetF7F5X6rXI0Lw.jpg",
+      "showtimes": {
+        "2026-09-25": [
+          {
+            "time": "18:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627413",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#1a9788",
+      "accent": "#53d4c4",
+      "letterboxd_url": "https://letterboxd.com/film/thelma-louise/",
+      "letterboxd_rating": 4.22
     },
     {
       "id": "the-nice-guys",
@@ -12420,15 +12509,15 @@
       "showtimes": {
         "2026-09-25": [
           {
-            "time": "20:45",
+            "time": "20:50",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627194",
             "screen": null,
             "hoh": false
           }
         ]
       },
-      "color": "#a63092",
-      "accent": "#d684c8",
+      "color": "#9f6b21",
+      "accent": "#d3a668",
       "letterboxd_url": "https://letterboxd.com/film/the-nice-guys/",
       "letterboxd_rating": 3.83
     },
@@ -12455,8 +12544,8 @@
           }
         ]
       },
-      "color": "#1a9788",
-      "accent": "#53d4c4"
+      "color": "#5230a6",
+      "accent": "#9c84d6"
     },
     {
       "id": "chow-yunfatathon",
@@ -12481,8 +12570,8 @@
           }
         ]
       },
-      "color": "#9f6b21",
-      "accent": "#d3a668"
+      "color": "#1a971a",
+      "accent": "#53d453"
     },
     {
       "id": "the-silence-of-the-lambs",
@@ -12515,8 +12604,8 @@
           }
         ]
       },
-      "color": "#5230a6",
-      "accent": "#9c84d6",
+      "color": "#9f2146",
+      "accent": "#d36888",
       "letterboxd_url": "https://letterboxd.com/film/the-silence-of-the-lambs/",
       "letterboxd_rating": 4.34
     },
@@ -12547,8 +12636,8 @@
           }
         ]
       },
-      "color": "#1a971a",
-      "accent": "#53d453",
+      "color": "#3075a6",
+      "accent": "#84b4d6",
       "letterboxd_url": "https://letterboxd.com/film/millennium-actress/",
       "letterboxd_rating": 4.23
     },
@@ -12611,8 +12700,8 @@
           }
         ]
       },
-      "color": "#9f2146",
-      "accent": "#d36888",
+      "color": "#88971a",
+      "accent": "#c4d453",
       "letterboxd_url": "https://letterboxd.com/film/nosferatu/",
       "letterboxd_rating": 3.82
     },
@@ -12653,8 +12742,8 @@
           }
         ]
       },
-      "color": "#3075a6",
-      "accent": "#84b4d6",
+      "color": "#8a219f",
+      "accent": "#c168d3",
       "letterboxd_url": "https://letterboxd.com/film/the-cabinet-of-dr-caligari-1920/",
       "letterboxd_rating": 4.06
     },
@@ -12684,8 +12773,8 @@
           }
         ]
       },
-      "color": "#88971a",
-      "accent": "#c4d453",
+      "color": "#30a66f",
+      "accent": "#84d6b0",
       "letterboxd_url": "https://letterboxd.com/film/haxan/",
       "letterboxd_rating": 4.04
     },
@@ -12712,8 +12801,8 @@
           }
         ]
       },
-      "color": "#8a219f",
-      "accent": "#c168d3"
+      "color": "#97391a",
+      "accent": "#d47353"
     },
     {
       "id": "a-tale-of-winter",
@@ -12741,8 +12830,8 @@
           }
         ]
       },
-      "color": "#30a66f",
-      "accent": "#84d6b0",
+      "color": "#21279f",
+      "accent": "#686dd3",
       "letterboxd_url": "https://letterboxd.com/film/a-tale-of-winter/",
       "letterboxd_rating": 3.86
     },
@@ -12772,8 +12861,8 @@
           }
         ]
       },
-      "color": "#97391a",
-      "accent": "#d47353",
+      "color": "#57a630",
+      "accent": "#9fd684",
       "letterboxd_url": "https://letterboxd.com/film/its-a-wonderful-life/",
       "letterboxd_rating": 4.44
     }
