@@ -1,50 +1,7 @@
 {
-  "scraped_at": "2026-07-13T20:05:50.445463+00:00",
+  "scraped_at": "2026-07-13T20:36:50.538328+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "life-support",
-      "title": "Life Support",
-      "rating": "15",
-      "runtime": 90,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Daniele Rugo",
-      "cast": null,
-      "description": "'Compulsory viewing' - Ken Loach Since October 2023, Gaza has been sealed from the world-except for one group. International doctors breach…",
-      "film_url": "https://www.thegardencinema.co.uk/film/life-support/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5767819.jpg",
-      "showtimes": {
-        "2026-07-13": [
-          {
-            "time": "20:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5768104.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-14": [
-          {
-            "time": "18:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5768067.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-16": [
-          {
-            "time": "17:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5768069.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/life-support-2026/",
-      "letterboxd_rating": null
-    },
     {
       "id": "the-last-one-for-the-road",
       "title": "The Last One for the Road",
@@ -127,8 +84,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-last-one-for-the-road/",
       "letterboxd_rating": 3.88
     },
@@ -170,8 +127,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/taxi-driver/",
       "letterboxd_rating": 4.1
     },
@@ -197,8 +154,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/koln-75/",
       "letterboxd_rating": 3.54
     },
@@ -270,8 +227,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/dear-you-2026/",
       "letterboxd_rating": 3.89
     },
@@ -303,10 +260,45 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/some-like-it-hot/",
       "letterboxd_rating": 4.28
+    },
+    {
+      "id": "life-support",
+      "title": "Life Support",
+      "rating": "15",
+      "runtime": 90,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Daniele Rugo",
+      "cast": null,
+      "description": "'Compulsory viewing' - Ken Loach Since October 2023, Gaza has been sealed from the world-except for one group. International doctors breach…",
+      "film_url": "https://www.thegardencinema.co.uk/film/life-support/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5767819.jpg",
+      "showtimes": {
+        "2026-07-14": [
+          {
+            "time": "18:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5768067.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-16": [
+          {
+            "time": "17:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5768069.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
+      "letterboxd_url": "https://letterboxd.com/film/life-support-2026/",
+      "letterboxd_rating": null
     },
     {
       "id": "the-invite",
