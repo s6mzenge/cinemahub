@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-13T19:36:51.682268+00:00",
+  "scraped_at": "2026-07-13T20:05:51.936397+00:00",
   "source": "riocinema.org.uk",
   "films": [
     {
@@ -16,14 +16,6 @@
       "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2681467",
       "poster_url": "https://images.savoysystems.co.uk/RIL/2681458.jpg",
       "showtimes": {
-        "2026-07-13": [
-          {
-            "time": "20:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2681899.TcsSection_936",
-            "screen": "S1",
-            "hoh": false
-          }
-        ],
         "2026-07-14": [
           {
             "time": "18:30",
@@ -56,69 +48,6 @@
       "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/shoot-the-people/",
       "letterboxd_rating": null
-    },
-    {
-      "id": "nirvanna-the-band-the-show-the-movie",
-      "title": "Nirvanna the Band the Show the Movie",
-      "rating": "15",
-      "runtime": 100,
-      "genre": "Other",
-      "year": "2025",
-      "director": "Matt Johnson",
-      "cast": null,
-      "country": "Canada",
-      "description": "For seventeen years, aspiring musicians Matt and Jay have been trying, and failing, to book a show at Toronto’s Rivoli. Their latest wildly overcomplicated plan goes spectacularly wrong, accidentally sending them back to 2008. Face to face with their younger selves, the pair discover that changing t...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2699630",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2699615.jpg",
-      "showtimes": {
-        "2026-07-13": [
-          {
-            "time": "20:50",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2699742.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-07-16": [
-          {
-            "time": "20:35",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2707487.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-07-18": [
-          {
-            "time": "20:45",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2719486.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-07-20": [
-          {
-            "time": "20:40",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2719506.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-07-23": [
-          {
-            "time": "18:15",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2719512.TcsSection_936",
-            "screen": "S1",
-            "hoh": false
-          }
-        ]
-      },
-      "season_tags": [
-        "Main Features"
-      ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/nirvanna-the-band-the-show-the-movie/",
-      "letterboxd_rating": 4.27
     },
     {
       "id": "the-invite",
@@ -198,8 +127,8 @@
         "Hard of Hearing",
         "Main Features"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
       "letterboxd_rating": 4.14
     },
@@ -261,8 +190,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/blue-heron/",
       "letterboxd_rating": 3.94
     },
@@ -296,10 +225,65 @@
       "season_tags": [
         "Pink Palace"
       ],
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/midnight-cowboy/",
       "letterboxd_rating": 4.15
+    },
+    {
+      "id": "nirvanna-the-band-the-show-the-movie",
+      "title": "Nirvanna the Band the Show the Movie",
+      "rating": "15",
+      "runtime": 100,
+      "genre": "Other",
+      "year": "2025",
+      "director": "Matt Johnson",
+      "cast": null,
+      "country": "Canada",
+      "description": "For seventeen years, aspiring musicians Matt and Jay have been trying, and failing, to book a show at Toronto’s Rivoli. Their latest wildly overcomplicated plan goes spectacularly wrong, accidentally sending them back to 2008. Face to face with their younger selves, the pair discover that changing t...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2699630",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2699615.jpg",
+      "showtimes": {
+        "2026-07-16": [
+          {
+            "time": "20:35",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2707487.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ],
+        "2026-07-18": [
+          {
+            "time": "20:45",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2719486.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ],
+        "2026-07-20": [
+          {
+            "time": "20:40",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2719506.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ],
+        "2026-07-23": [
+          {
+            "time": "18:15",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2719512.TcsSection_936",
+            "screen": "S1",
+            "hoh": false
+          }
+        ]
+      },
+      "season_tags": [
+        "Main Features"
+      ],
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/nirvanna-the-band-the-show-the-movie/",
+      "letterboxd_rating": 4.27
     },
     {
       "id": "life-support",
