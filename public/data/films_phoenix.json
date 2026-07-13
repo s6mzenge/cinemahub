@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-13T14:08:18.244911+00:00",
+  "scraped_at": "2026-07-13T14:36:57.193243+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -1201,36 +1201,105 @@
             "screen": "Screen 2",
             "hoh": false
           }
-        ],
-        "2026-09-01": [
-          {
-            "time": "17:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_591867.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-09-02": [
-          {
-            "time": "17:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_591869.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-09-03": [
-          {
-            "time": "17:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_591871.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
         ]
       },
       "color": "#21709f",
       "accent": "#68abd3",
       "letterboxd_url": "https://letterboxd.com/film/animal-farm-2025/",
       "letterboxd_rating": 1.7
+    },
+    {
+      "id": "bitter-christmas",
+      "title": "Bitter Christmas",
+      "rating": "15",
+      "runtime": 111,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Pedro Almodóvar",
+      "cast": "Bárbara Lennie, Leonardo Sbaraglia, Aitana Sánchez-Gijón, Victoria Luengo, Patrick Criado, Milena Smit, Quim Gutiérrez.",
+      "country": "Spain",
+      "description": "In 2025 Spain, a celebrated film director struggles to write the screenplay for an autofictional film set in 2004 Spain about an unsuccessful movie director turned director of commercials who suffers a panic attack that forces her to take a break by visiting the Canary Islands, where she begins work...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=604095",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/604080.jpg",
+      "showtimes": {
+        "2026-08-28": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_604097.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ],
+        "2026-08-29": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_604101.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          },
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_604099.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ],
+        "2026-08-30": [
+          {
+            "time": "17:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_604103.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          },
+          {
+            "time": "19:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_604105.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ],
+        "2026-08-31": [
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_604107.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ],
+        "2026-09-01": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_604109.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ]
+      },
+      "color": "#9ca630",
+      "accent": "#cfd684",
+      "letterboxd_url": "https://letterboxd.com/film/bitter-christmas/",
+      "letterboxd_rating": 3.16
     },
     {
       "id": "nostalgia",
@@ -1258,8 +1327,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684",
+      "color": "#7d1a97",
+      "accent": "#b953d4",
       "letterboxd_url": "https://letterboxd.com/film/nostalgia-1983/",
       "letterboxd_rating": 4.28
     },
@@ -1289,8 +1358,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "twenty-years-of-the-met-in-cinemas-an-anniversary-celebration",
@@ -1315,8 +1384,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "75-years-of-contemporary-films-a-bigger-splash",
@@ -1344,8 +1413,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584"
+      "color": "#1a2597",
+      "accent": "#535ed4"
     },
     {
       "id": "playing-the-changes-tracking-darius-brubeck",
@@ -1374,8 +1443,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4",
+      "color": "#519f21",
+      "accent": "#90d368",
       "letterboxd_url": "https://letterboxd.com/film/playing-the-changes-tracking-darius-brubeck/",
       "letterboxd_rating": null
     },
@@ -1402,8 +1471,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#a6307e",
+      "accent": "#d684bb"
     },
     {
       "id": "gentle-angry-women-director-q-a",
@@ -1428,8 +1497,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb",
+      "color": "#1a9297",
+      "accent": "#53cfd4",
       "letterboxd_url": "https://letterboxd.com/film/gentle-angry-women/",
       "letterboxd_rating": null
     },
@@ -1456,8 +1525,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "75-years-of-contemporary-films-mahanagar-the-big-city",
@@ -1486,8 +1555,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868",
+      "color": "#6530a6",
+      "accent": "#a984d6",
       "letterboxd_url": "https://letterboxd.com/film/the-big-city/",
       "letterboxd_rating": 4.25
     },
@@ -1514,8 +1583,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6"
+      "color": "#1a972f",
+      "accent": "#53d468"
     },
     {
       "id": "royal-ballet-opera-2026-27-manon",
@@ -1540,8 +1609,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468",
+      "color": "#9f2132",
+      "accent": "#d36876",
       "letterboxd_url": "https://letterboxd.com/film/royal-ballet-opera-2026-27-manon/",
       "letterboxd_rating": null
     },
@@ -1568,8 +1637,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876",
+      "color": "#3061a6",
+      "accent": "#84a6d6",
       "letterboxd_url": "https://letterboxd.com/film/royal-ballet-opera-2026-27-carmen/",
       "letterboxd_rating": null
     },
@@ -1596,8 +1665,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6"
+      "color": "#73971a",
+      "accent": "#afd453"
     },
     {
       "id": "royal-ballet-opera-2026-27-the-nutcracker",
@@ -1622,8 +1691,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453",
+      "color": "#9f219f",
+      "accent": "#d368d3",
       "letterboxd_url": "https://letterboxd.com/film/royal-ballet-opera-2026-27-the-nutcracker/",
       "letterboxd_rating": null
     },
@@ -1650,8 +1719,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "met-opera-2026-27-la-fanciulla-del-west",
@@ -1676,8 +1745,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be"
+      "color": "#974e1a",
+      "accent": "#d48853"
     },
     {
       "id": "royal-ballet-opera-2026-27-g-tterd-mmerung",
@@ -1702,8 +1771,8 @@
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853",
+      "color": "#31219f",
+      "accent": "#7568d3",
       "letterboxd_url": "https://letterboxd.com/film/royal-ballet-opera-2026-27-gotterdammerung/",
       "letterboxd_rating": null
     },
@@ -1730,8 +1799,8 @@
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3",
+      "color": "#44a630",
+      "accent": "#92d684",
       "letterboxd_url": "https://letterboxd.com/film/royal-ballet-opera-2026-27-cosi-fan-tutte/",
       "letterboxd_rating": null
     },
@@ -1758,8 +1827,8 @@
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#971a54",
+      "accent": "#d4538f"
     },
     {
       "id": "met-opera-2026-27-manon",
@@ -1784,8 +1853,8 @@
           }
         ]
       },
-      "color": "#971a54",
-      "accent": "#d4538f"
+      "color": "#21809f",
+      "accent": "#68b9d3"
     },
     {
       "id": "met-opera-2026-27-otello",
@@ -1810,8 +1879,8 @@
           }
         ]
       },
-      "color": "#21809f",
-      "accent": "#68b9d3"
+      "color": "#a6a030",
+      "accent": "#d6d284"
     },
     {
       "id": "met-opera-2026-27-parsifal",
@@ -1836,8 +1905,8 @@
           }
         ]
       },
-      "color": "#a6a030",
-      "accent": "#d6d284"
+      "color": "#6d1a97",
+      "accent": "#a853d4"
     }
   ]
 }
