@@ -1,51 +1,7 @@
 {
-  "scraped_at": "2026-07-13T17:08:33.581368+00:00",
+  "scraped_at": "2026-07-13T17:36:32.835137+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
-    {
-      "id": "disclosure-day",
-      "title": "Disclosure Day",
-      "rating": "12A",
-      "runtime": 145,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "If you found out we werent alone, if someone showed you, proved it to you, would that frighten you?More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/109930",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/109930_0.jpg",
-      "showtimes": {
-        "2026-07-13": [
-          {
-            "time": "17:55",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12041",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-14": [
-          {
-            "time": "20:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12014",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-16": [
-          {
-            "time": "20:25",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12039",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
-      "letterboxd_rating": 3.11
-    },
     {
       "id": "evil-dead-burn",
       "title": "Evil Dead Burn",
@@ -141,8 +97,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/evil-dead-burn/",
       "letterboxd_rating": 3.47
     },
@@ -279,8 +235,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/moana/",
       "letterboxd_rating": 3.28
     },
@@ -347,8 +303,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
       "letterboxd_rating": 4.13
     },
@@ -417,8 +373,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/rosebush-pruning/",
       "letterboxd_rating": 2.73
     },
@@ -445,8 +401,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/the-furious/",
       "letterboxd_rating": 3.87
     },
@@ -465,12 +421,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/111189_0.jpg",
       "showtimes": {
         "2026-07-13": [
-          {
-            "time": "18:10",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11998",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "20:50",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=11999",
@@ -571,10 +521,46 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
       "letterboxd_rating": 4.14
+    },
+    {
+      "id": "disclosure-day",
+      "title": "Disclosure Day",
+      "rating": "12A",
+      "runtime": 145,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "If you found out we werent alone, if someone showed you, proved it to you, would that frighten you?More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/109930",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/109930_0.jpg",
+      "showtimes": {
+        "2026-07-14": [
+          {
+            "time": "20:30",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12014",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-16": [
+          {
+            "time": "20:25",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12039",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#c62828",
+      "accent": "#ef5350",
+      "letterboxd_url": "https://letterboxd.com/film/disclosure-day/",
+      "letterboxd_rating": 3.11
     },
     {
       "id": "minions-monsters",
