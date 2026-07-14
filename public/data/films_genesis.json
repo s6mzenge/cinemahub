@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-14T17:07:56.910623+00:00",
+  "scraped_at": "2026-07-14T17:38:01.610408+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -53,12 +53,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/110719_0.jpg",
       "showtimes": {
         "2026-07-14": [
-          {
-            "time": "18:05",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12008",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "21:00",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12007",
@@ -201,130 +195,6 @@
       "letterboxd_rating": 3.29
     },
     {
-      "id": "moana",
-      "title": "Moana",
-      "rating": "PG",
-      "runtime": 115,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with the infamous demigod Maui on an unforgettable journey to restore prosperity to her people.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/105535",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/105535_0.jpg",
-      "showtimes": {
-        "2026-07-14": [
-          {
-            "time": "18:10",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12005",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-15": [
-          {
-            "time": "15:45",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12024",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "18:20",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12018",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-16": [
-          {
-            "time": "14:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12040",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "16:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12031",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "18:20",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12032",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-17": [
-          {
-            "time": "15:15",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12084",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-18": [
-          {
-            "time": "13:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12063",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "14:20",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12065",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-19": [
-          {
-            "time": "12:55",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12086",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-20": [
-          {
-            "time": "14:50",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12076",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-21": [
-          {
-            "time": "14:50",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12132",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-22": [
-          {
-            "time": "14:20",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12142",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-23": [
-          {
-            "time": "14:50",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12152",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#00897b",
-      "accent": "#4db6ac",
-      "letterboxd_url": "https://letterboxd.com/film/moana/",
-      "letterboxd_rating": 3.25
-    },
-    {
       "id": "obsession",
       "title": "Obsession",
       "rating": "18",
@@ -379,8 +249,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
       "letterboxd_rating": 4.13
     },
@@ -441,8 +311,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/rosebush-pruning/",
       "letterboxd_rating": 2.73
     },
@@ -577,8 +447,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
       "letterboxd_rating": 4.13
     },
@@ -605,8 +475,124 @@
           }
         ]
       },
+      "color": "#c62828",
+      "accent": "#ef5350"
+    },
+    {
+      "id": "moana",
+      "title": "Moana",
+      "rating": "PG",
+      "runtime": 115,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with the infamous demigod Maui on an unforgettable journey to restore prosperity to her people.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/105535",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/105535_0.jpg",
+      "showtimes": {
+        "2026-07-15": [
+          {
+            "time": "15:45",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12024",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "18:20",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12018",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-16": [
+          {
+            "time": "14:30",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12040",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "16:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12031",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "18:20",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12032",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-17": [
+          {
+            "time": "15:15",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12084",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-18": [
+          {
+            "time": "13:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12063",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "14:20",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12065",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-19": [
+          {
+            "time": "12:55",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12086",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-20": [
+          {
+            "time": "14:50",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12076",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-21": [
+          {
+            "time": "14:50",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12132",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-22": [
+          {
+            "time": "14:20",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12142",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-23": [
+          {
+            "time": "14:50",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12152",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
       "color": "#6a1b9a",
-      "accent": "#ba68c8"
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/moana/",
+      "letterboxd_rating": 3.25
     },
     {
       "id": "ghost-in-the-shell-presented-by-the-cult-classic-collective",
