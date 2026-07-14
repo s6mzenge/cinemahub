@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-14T16:04:53.600597+00:00",
+  "scraped_at": "2026-07-14T16:35:12.536519+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -13,21 +13,6 @@
       "poster_url": "https://images.savoysystems.co.uk/TAL/211844.jpg",
       "showtimes": {
         "2026-07-14": [
-          {
-            "time": "12:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_221899.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": true,
-            "tags": [
-              "CC"
-            ]
-          },
-          {
-            "time": "14:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_221895.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
           {
             "time": "18:30",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_221897.TcsSection_963",
@@ -719,6 +704,14 @@
             "screen": "Screening Room",
             "hoh": false
           }
+        ],
+        "2026-08-05": [
+          {
+            "time": "14:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_226936.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
         ]
       },
       "color": "#558b2f",
@@ -857,6 +850,17 @@
             "screen": "Screening Room",
             "hoh": false
           }
+        ],
+        "2026-08-05": [
+          {
+            "time": "16:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_226935.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": true,
+            "tags": [
+              "CC"
+            ]
+          }
         ]
       },
       "color": "#9f2121",
@@ -970,6 +974,20 @@
           {
             "time": "16:00",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_226715.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-08-05": [
+          {
+            "time": "12:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_226937.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "18:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_226934.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
           }
