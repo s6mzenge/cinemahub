@@ -1,7 +1,39 @@
 {
-  "scraped_at": "2026-07-15T13:34:49.367326+00:00",
+  "scraped_at": "2026-07-15T14:02:58.971211+00:00",
   "source": "thearzner.com",
   "films": [
+    {
+      "id": "the-history-of-sound-101028",
+      "title": "The History of Sound",
+      "rating": "15",
+      "runtime": 127,
+      "genre": "New Release",
+      "description": "In 1917, two young music students attending the Boston Conservatory bond over their mutual love of folk music. They reconnect a few years later, embarking on a song collecting trip in the backwaters of Maine.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=101028",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/101025.jpg",
+      "showtimes": {
+        "2026-07-15": [
+          {
+            "time": "11:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_221905.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-07-16": [
+          {
+            "time": "12:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_221913.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/the-history-of-sound/",
+      "letterboxd_rating": 3.39
+    },
     {
       "id": "away-221130",
       "title": "Away",
@@ -45,8 +77,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/away-2025/",
       "letterboxd_rating": 3.48
     },
@@ -132,34 +164,10 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/rosebush-pruning/",
-      "letterboxd_rating": 2.72
-    },
-    {
-      "id": "the-history-of-sound-101028",
-      "title": "The History of Sound",
-      "rating": "15",
-      "runtime": 127,
-      "genre": "New Release",
-      "description": "In 1917, two young music students attending the Boston Conservatory bond over their mutual love of folk music. They reconnect a few years later, embarking on a song collecting trip in the backwaters of Maine.",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=101028",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/101025.jpg",
-      "showtimes": {
-        "2026-07-16": [
-          {
-            "time": "12:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_221913.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
       "color": "#7c4dff",
       "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/the-history-of-sound/",
-      "letterboxd_rating": 3.39
+      "letterboxd_url": "https://letterboxd.com/film/rosebush-pruning/",
+      "letterboxd_rating": 2.72
     },
     {
       "id": "xanadu-37139",
@@ -681,6 +689,14 @@
             "hoh": false
           }
         ],
+        "2026-08-03": [
+          {
+            "time": "19:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_227163.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
         "2026-08-05": [
           {
             "time": "14:00",
@@ -827,6 +843,26 @@
             "hoh": false
           }
         ],
+        "2026-08-03": [
+          {
+            "time": "15:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_227165.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": true,
+            "tags": [
+              "CC"
+            ]
+          },
+          {
+            "time": "20:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_226919.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": true,
+            "tags": [
+              "CC"
+            ]
+          }
+        ],
         "2026-08-05": [
           {
             "time": "16:00",
@@ -954,16 +990,18 @@
             "hoh": false
           }
         ],
+        "2026-08-03": [
+          {
+            "time": "17:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_227164.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
         "2026-08-05": [
           {
             "time": "12:30",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_226937.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
-          {
-            "time": "18:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_226934.TcsSection_963",
             "screen": "Screening Room",
             "hoh": false
           }
