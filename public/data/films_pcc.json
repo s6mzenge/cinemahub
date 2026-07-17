@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-17T09:03:57.086873+00:00",
+  "scraped_at": "2026-07-17T09:31:58.472933+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
@@ -2029,6 +2029,17 @@
           {
             "time": "20:30",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627509",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-10-23": [
+          {
+            "time": "20:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627517",
             "screen": null,
             "hoh": false,
             "tags": [
@@ -4272,6 +4283,14 @@
           {
             "time": "15:15",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31626800",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-10-22": [
+          {
+            "time": "20:20",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627513",
             "screen": null,
             "hoh": false
           }
@@ -13425,6 +13444,34 @@
       "letterboxd_rating": 4.04
     },
     {
+      "id": "cube",
+      "title": "Cube",
+      "rating": "15",
+      "runtime": 90,
+      "genre": "Horror / Mystery",
+      "year": "1997",
+      "country": null,
+      "director": "Vincenzo Natali",
+      "cast": "Nicole De Boer, Nicky Guadagni, Maurice Dean Wint",
+      "description": "A group of strangers find themselves trapped in a maze-like prison. It soon becomes clear that each of them possesses the peculiar skills necessary to escape, if they don't wind up dead first.",
+      "film_url": "https://princecharlescinema.com/film/31617461/cube",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/u3FBdq3jMTSGCD6iS1mhNePNHob0np8B5lQPxspCpz0.jpg",
+      "showtimes": {
+        "2026-10-22": [
+          {
+            "time": "18:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627512",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#1a9778",
+      "accent": "#53d4b3",
+      "letterboxd_url": "https://letterboxd.com/film/cube/",
+      "letterboxd_rating": 3.27
+    },
+    {
       "id": "ten-years-of-monkey-tennis-with-peter-serafinowicz",
       "title": "Ten Years of Monkey Tennis (with Peter Serafinowicz)",
       "rating": "15",
@@ -13447,8 +13494,8 @@
           }
         ]
       },
-      "color": "#1a9778",
-      "accent": "#53d4b3"
+      "color": "#9f5b21",
+      "accent": "#d39968"
     },
     {
       "id": "a-tale-of-winter",
@@ -13476,8 +13523,8 @@
           }
         ]
       },
-      "color": "#9f5b21",
-      "accent": "#d39968",
+      "color": "#4330a6",
+      "accent": "#9184d6",
       "letterboxd_url": "https://letterboxd.com/film/a-tale-of-winter/",
       "letterboxd_rating": 3.86
     },
@@ -13507,8 +13554,8 @@
           }
         ]
       },
-      "color": "#4330a6",
-      "accent": "#9184d6",
+      "color": "#2a971a",
+      "accent": "#64d453",
       "letterboxd_url": "https://letterboxd.com/film/its-a-wonderful-life/",
       "letterboxd_rating": 4.44
     }
