@@ -1,47 +1,7 @@
 {
-  "scraped_at": "2026-07-18T14:33:59.742025+00:00",
+  "scraped_at": "2026-07-18T15:02:31.021051+00:00",
   "source": "thearzner.com",
   "films": [
-    {
-      "id": "pillion-92811",
-      "title": "Pillion",
-      "rating": "18",
-      "runtime": 106,
-      "genre": "New Release",
-      "description": "A timid man is swept off his feet when an enigmatic, impossibly handsome biker takes him on as his submissive.",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=92811",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/92808.jpg",
-      "showtimes": {
-        "2026-07-18": [
-          {
-            "time": "15:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_222955.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-07-19": [
-          {
-            "time": "13:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_222965.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-07-20": [
-          {
-            "time": "14:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223105.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/pillion-2025/",
-      "letterboxd_rating": 3.5
-    },
     {
       "id": "rosebush-pruning-211847",
       "title": "Rosebush Pruning",
@@ -88,8 +48,8 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/rosebush-pruning/",
       "letterboxd_rating": 2.71
     },
@@ -139,8 +99,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff"
+      "color": "#e53935",
+      "accent": "#ff6f60"
     },
     {
       "id": "a-year-in-london-222923",
@@ -211,10 +171,42 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/a-year-in-london/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "pillion-92811",
+      "title": "Pillion",
+      "rating": "18",
+      "runtime": 106,
+      "genre": "New Release",
+      "description": "A timid man is swept off his feet when an enigmatic, impossibly handsome biker takes him on as his submissive.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=92811",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/92808.jpg",
+      "showtimes": {
+        "2026-07-19": [
+          {
+            "time": "13:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_222965.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-07-20": [
+          {
+            "time": "14:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223105.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/pillion-2025/",
+      "letterboxd_rating": 3.5
     },
     {
       "id": "hello-dolly-219575",
