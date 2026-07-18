@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-18T18:03:35.404362+00:00",
+  "scraped_at": "2026-07-18T18:33:12.562592+00:00",
   "source": "peckhamplex.london",
   "films": [
     {
@@ -89,7 +89,7 @@
           {
             "time": "16:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81750?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
+            "screen": null,
             "hoh": true
           },
           {
@@ -109,7 +109,7 @@
           {
             "time": "16:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81773?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": true
           },
           {
@@ -173,44 +173,122 @@
       "letterboxd_rating": 3.39
     },
     {
-      "id": "michael",
-      "title": "Michael",
-      "rating": "12A",
-      "runtime": 125,
-      "genre": "Biography",
-      "film_url": "https://www.peckhamplex.london/film/michael",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/michael.jpg",
+      "id": "obsession",
+      "title": "Obsession",
+      "rating": "18",
+      "runtime": 109,
+      "genre": "Horror",
+      "film_url": "https://www.peckhamplex.london/film/obsession",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/obsession.jpg",
       "showtimes": {
+        "2026-07-18": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81691?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
         "2026-07-19": [
           {
-            "time": "13:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81718?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81737?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-07-20": [
+          {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81760?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
             "hoh": false
           }
         ],
         "2026-07-21": [
           {
-            "time": "13:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81764?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81783?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
             "hoh": false
           }
         ],
         "2026-07-23": [
           {
+            "time": "20:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81829?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Curry Barker",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
+      "letterboxd_rating": 4.12
+    },
+    {
+      "id": "the-mandalorian-grogu",
+      "title": "The Mandalorian & Grogu",
+      "rating": "12A",
+      "runtime": 132,
+      "genre": "Action",
+      "film_url": "https://www.peckhamplex.london/film/the-mandalorian-grogu",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-mandalorian-grogu.jpg",
+      "showtimes": {
+        "2026-07-20": [
+          {
+            "time": "12:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81741?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ],
+        "2026-07-22": [
+          {
+            "time": "12:40",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81787?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Taika Waititi",
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
+    },
+    {
+      "id": "the-magic-faraway-tree",
+      "title": "The Magic Faraway Tree",
+      "rating": "U",
+      "runtime": 110,
+      "genre": "Adventure",
+      "film_url": "https://www.peckhamplex.london/film/the-magic-faraway-tree",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-magic-faraway-tree.jpg",
+      "showtimes": {
+        "2026-07-20": [
+          {
             "time": "13:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81810?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81745?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          }
+        ],
+        "2026-07-22": [
+          {
+            "time": "13:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81791?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 4",
             "hoh": false
           }
         ]
       },
-      "director": "Antoine Fuqua",
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
-      "letterboxd_rating": 3.61
+      "director": "Ben Gregor",
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/the-magic-faraway-tree/",
+      "letterboxd_rating": 3.03
     },
     {
       "id": "the-invite",
@@ -225,7 +303,7 @@
           {
             "time": "20:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81692?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 5",
             "hoh": false
           }
         ],
@@ -233,7 +311,7 @@
           {
             "time": "15:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81726?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "screen": null,
             "hoh": false
           },
           {
@@ -301,80 +379,10 @@
         ]
       },
       "director": "Olivia Wilde",
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
       "letterboxd_rating": 4.12
-    },
-    {
-      "id": "moana-live-action-sing-a-long",
-      "title": "Moana (Live Action )Sing-a-long",
-      "rating": "PG",
-      "runtime": 115,
-      "genre": "Adventure",
-      "film_url": "https://www.peckhamplex.london/film/moana-live-action-sing-a-long",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/moana-live-action-sing-a-long.jpg",
-      "showtimes": {
-        "2026-07-19": [
-          {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81736?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-07-21": [
-          {
-            "time": "12:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81763?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-07-23": [
-          {
-            "time": "17:50",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81823?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Thomas Kail",
-      "color": "#00897b",
-      "accent": "#4db6ac"
-    },
-    {
-      "id": "the-magic-faraway-tree",
-      "title": "The Magic Faraway Tree",
-      "rating": "U",
-      "runtime": 110,
-      "genre": "Adventure",
-      "film_url": "https://www.peckhamplex.london/film/the-magic-faraway-tree",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-magic-faraway-tree.jpg",
-      "showtimes": {
-        "2026-07-20": [
-          {
-            "time": "13:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81745?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          }
-        ],
-        "2026-07-22": [
-          {
-            "time": "13:15",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81791?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Ben Gregor",
-      "color": "#1565c0",
-      "accent": "#64b5f6",
-      "letterboxd_url": "https://letterboxd.com/film/the-magic-faraway-tree/",
-      "letterboxd_rating": 3.03
     },
     {
       "id": "minions-and-monsters",
@@ -403,7 +411,7 @@
           {
             "time": "15:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81724?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": true
           },
           {
@@ -415,7 +423,7 @@
           {
             "time": "20:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81735?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": true
           }
         ],
@@ -423,7 +431,7 @@
           {
             "time": "12:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81744?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": true
           },
           {
@@ -435,13 +443,13 @@
           {
             "time": "17:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81752?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": true
           },
           {
             "time": "20:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81758?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": true
           }
         ],
@@ -449,7 +457,7 @@
           {
             "time": "12:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81767?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 3",
             "hoh": true
           },
           {
@@ -487,13 +495,13 @@
           {
             "time": "17:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81798?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": true
           },
           {
             "time": "20:15",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81804?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 3",
+            "screen": null,
             "hoh": true
           }
         ],
@@ -525,10 +533,88 @@
         ]
       },
       "director": "Pierre Coffin",
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/minions-monsters-2026/",
       "letterboxd_rating": 3.28
+    },
+    {
+      "id": "michael",
+      "title": "Michael",
+      "rating": "12A",
+      "runtime": 125,
+      "genre": "Biography",
+      "film_url": "https://www.peckhamplex.london/film/michael",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/michael.jpg",
+      "showtimes": {
+        "2026-07-19": [
+          {
+            "time": "13:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81718?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          }
+        ],
+        "2026-07-21": [
+          {
+            "time": "13:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81764?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          }
+        ],
+        "2026-07-23": [
+          {
+            "time": "13:15",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81810?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 4",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Antoine Fuqua",
+      "color": "#c62828",
+      "accent": "#ef5350",
+      "letterboxd_url": "https://letterboxd.com/film/michael-2026/",
+      "letterboxd_rating": 3.61
+    },
+    {
+      "id": "moana-live-action-sing-a-long",
+      "title": "Moana (Live Action )Sing-a-long",
+      "rating": "PG",
+      "runtime": 115,
+      "genre": "Adventure",
+      "film_url": "https://www.peckhamplex.london/film/moana-live-action-sing-a-long",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/moana-live-action-sing-a-long.jpg",
+      "showtimes": {
+        "2026-07-19": [
+          {
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81736?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-07-21": [
+          {
+            "time": "12:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81763?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-07-23": [
+          {
+            "time": "17:50",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81823?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "director": "Thomas Kail",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8"
     },
     {
       "id": "moana-live-action",
@@ -551,7 +637,7 @@
           {
             "time": "12:10",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81717?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 2",
             "hoh": false
           },
           {
@@ -563,7 +649,7 @@
           {
             "time": "17:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81731?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 2",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -583,7 +669,7 @@
           {
             "time": "17:50",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81754?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 2",
             "hoh": false
           },
           {
@@ -661,94 +747,8 @@
         ]
       },
       "director": "Thomas Kail",
-      "color": "#c62828",
-      "accent": "#ef5350"
-    },
-    {
-      "id": "the-mandalorian-grogu",
-      "title": "The Mandalorian & Grogu",
-      "rating": "12A",
-      "runtime": 132,
-      "genre": "Action",
-      "film_url": "https://www.peckhamplex.london/film/the-mandalorian-grogu",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/the-mandalorian-grogu.jpg",
-      "showtimes": {
-        "2026-07-20": [
-          {
-            "time": "12:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81741?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-07-22": [
-          {
-            "time": "12:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81787?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Taika Waititi",
-      "color": "#6a1b9a",
-      "accent": "#ba68c8"
-    },
-    {
-      "id": "obsession",
-      "title": "Obsession",
-      "rating": "18",
-      "runtime": 109,
-      "genre": "Horror",
-      "film_url": "https://www.peckhamplex.london/film/obsession",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/obsession.jpg",
-      "showtimes": {
-        "2026-07-18": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81691?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-07-19": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81737?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-07-20": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81760?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-07-21": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81783?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ],
-        "2026-07-23": [
-          {
-            "time": "20:40",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81829?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "director": "Curry Barker",
       "color": "#00838f",
-      "accent": "#4dd0e1",
-      "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
-      "letterboxd_rating": 4.12
+      "accent": "#4dd0e1"
     },
     {
       "id": "the-sheep-detectives",
@@ -763,7 +763,7 @@
           {
             "time": "12:45",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81722?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 6",
             "hoh": false
           }
         ],
@@ -791,121 +791,6 @@
       "letterboxd_rating": 3.8
     },
     {
-      "id": "toy-story-5",
-      "title": "Toy Story 5",
-      "rating": "PG",
-      "runtime": 102,
-      "genre": "Adventure",
-      "film_url": "https://www.peckhamplex.london/film/toy-story-5",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/toy-story-5.jpg",
-      "showtimes": {
-        "2026-07-19": [
-          {
-            "time": "13:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81720?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          },
-          {
-            "time": "15:45",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81725?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          },
-          {
-            "time": "18:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81732?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          }
-        ],
-        "2026-07-20": [
-          {
-            "time": "13:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81743?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "15:45",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81748?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          },
-          {
-            "time": "18:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81755?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          }
-        ],
-        "2026-07-21": [
-          {
-            "time": "13:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81766?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          },
-          {
-            "time": "15:45",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81771?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          },
-          {
-            "time": "18:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81778?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-22": [
-          {
-            "time": "13:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81789?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "15:45",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81794?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          },
-          {
-            "time": "18:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81801?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          }
-        ],
-        "2026-07-23": [
-          {
-            "time": "13:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81812?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          },
-          {
-            "time": "15:45",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81817?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "18:10",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81824?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 5",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#ad1457",
-      "accent": "#f06292",
-      "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
-      "letterboxd_rating": 3.71
-    },
-    {
       "id": "the-odyssey",
       "title": "The Odyssey",
       "rating": "15",
@@ -926,13 +811,13 @@
           {
             "time": "12:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81719?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "screen": null,
             "hoh": false
           },
           {
             "time": "16:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81728?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           },
           {
@@ -952,13 +837,13 @@
           {
             "time": "16:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81751?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           },
           {
             "time": "20:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81757?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           }
         ],
@@ -972,13 +857,13 @@
           {
             "time": "16:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81774?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "screen": null,
             "hoh": false
           },
           {
             "time": "20:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81780?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           }
         ],
@@ -986,13 +871,13 @@
           {
             "time": "12:30",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81788?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "screen": null,
             "hoh": false
           },
           {
             "time": "16:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81797?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "screen": null,
             "hoh": false
           },
           {
@@ -1030,10 +915,125 @@
         ]
       },
       "director": "Christopher Nolan",
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#ad1457",
+      "accent": "#f06292",
       "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
       "letterboxd_rating": 4.34
+    },
+    {
+      "id": "toy-story-5",
+      "title": "Toy Story 5",
+      "rating": "PG",
+      "runtime": 102,
+      "genre": "Adventure",
+      "film_url": "https://www.peckhamplex.london/film/toy-story-5",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/toy-story-5.jpg",
+      "showtimes": {
+        "2026-07-19": [
+          {
+            "time": "13:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81720?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "15:45",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81725?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "18:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81732?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ],
+        "2026-07-20": [
+          {
+            "time": "13:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81743?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          },
+          {
+            "time": "15:45",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81748?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          },
+          {
+            "time": "18:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81755?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-21": [
+          {
+            "time": "13:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81766?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          },
+          {
+            "time": "15:45",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81771?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          },
+          {
+            "time": "18:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81778?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ],
+        "2026-07-22": [
+          {
+            "time": "13:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81789?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          },
+          {
+            "time": "15:45",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81794?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          },
+          {
+            "time": "18:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81801?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-23": [
+          {
+            "time": "13:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81812?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          },
+          {
+            "time": "15:45",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81817?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          },
+          {
+            "time": "18:10",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81824?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 5",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#37474f",
+      "accent": "#78909c",
+      "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
+      "letterboxd_rating": 3.71
     },
     {
       "id": "la-traviata",
@@ -1048,7 +1048,7 @@
           {
             "time": "19:45",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/80790?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "screen": null,
             "hoh": false
           }
         ]
@@ -1080,18 +1080,18 @@
       "accent": "#4fc3f7"
     },
     {
-      "id": "tfff-captain-america",
-      "title": "TFFF: Captain America",
+      "id": "radiohead-x-nosferatu-a-symphony-of-horror",
+      "title": "Radiohead X Nosferatu: A Symphony of Horror",
       "rating": "PG",
-      "runtime": 120,
-      "genre": "Adventure",
-      "film_url": "https://www.peckhamplex.london/film/tfff-captain-america",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-captain-america.jpg",
+      "runtime": 94,
+      "genre": "Music",
+      "film_url": "https://www.peckhamplex.london/film/radiohead-x-nosferatu-a-symphony-of-horror",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/radiohead-x-nosferatu-a-symphony-of-horror.jpg",
       "showtimes": {
-        "2026-08-08": [
+        "2026-10-01": [
           {
-            "time": "21:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81481?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "20:30",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80185?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 6",
             "hoh": false
           }
@@ -1099,27 +1099,6 @@
       },
       "color": "#558b2f",
       "accent": "#9ccc65"
-    },
-    {
-      "id": "tfff-city-wide-fever",
-      "title": "TFFF: City Wide Fever",
-      "rating": "18",
-      "runtime": 73,
-      "genre": "Horror",
-      "film_url": "https://www.peckhamplex.london/film/tfff-city-wide-fever",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-city-wide-fever.jpg",
-      "showtimes": {
-        "2026-08-07": [
-          {
-            "time": "20:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81478?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#9f2121",
-      "accent": "#d36868"
     },
     {
       "id": "spider-man-brand-new-day",
@@ -1134,13 +1113,13 @@
           {
             "time": "17:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81838?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
+            "screen": null,
             "hoh": false
           },
           {
             "time": "20:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81839?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 4",
+            "screen": null,
             "hoh": false
           }
         ],
@@ -1160,7 +1139,7 @@
           {
             "time": "17:40",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81834?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 4",
             "hoh": false
           },
           {
@@ -1180,7 +1159,7 @@
           {
             "time": "14:10",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81621?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           },
           {
@@ -1200,7 +1179,7 @@
           {
             "time": "11:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81624?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           },
           {
@@ -1232,7 +1211,7 @@
           {
             "time": "14:10",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81629?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 1",
+            "screen": null,
             "hoh": false
           },
           {
@@ -1304,7 +1283,7 @@
           {
             "time": "11:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81640?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           },
           {
@@ -1316,7 +1295,7 @@
           {
             "time": "17:20",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81642?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           },
           {
@@ -1330,7 +1309,7 @@
           {
             "time": "11:00",
             "booking_url": "https://ticketing.eu.veezi.com/purchase/81644?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "screen": "Screen 1",
             "hoh": false
           },
           {
@@ -1354,25 +1333,46 @@
         ]
       },
       "director": "Destin Daniel Cretton",
-      "color": "#3052a6",
-      "accent": "#849cd6",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/spider-man-brand-new-day/",
       "letterboxd_rating": null
     },
     {
-      "id": "radiohead-x-nosferatu-a-symphony-of-horror",
-      "title": "Radiohead X Nosferatu: A Symphony of Horror",
-      "rating": "PG",
-      "runtime": 94,
-      "genre": "Music",
-      "film_url": "https://www.peckhamplex.london/film/radiohead-x-nosferatu-a-symphony-of-horror",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/radiohead-x-nosferatu-a-symphony-of-horror.jpg",
+      "id": "tfff-godmonster-of-indian-flats",
+      "title": "TFFF: Godmonster of Indian Flats",
+      "rating": "18",
+      "runtime": 120,
+      "genre": "Horror",
+      "film_url": "https://www.peckhamplex.london/film/tfff-godmonster-of-indian-flats",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-godmonster-of-indian-flats.jpg",
       "showtimes": {
-        "2026-10-01": [
+        "2026-08-07": [
           {
-            "time": "20:30",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80185?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": null,
+            "time": "16:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81477?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#3052a6",
+      "accent": "#849cd6"
+    },
+    {
+      "id": "tfff-city-wide-fever",
+      "title": "TFFF: City Wide Fever",
+      "rating": "18",
+      "runtime": 73,
+      "genre": "Horror",
+      "film_url": "https://www.peckhamplex.london/film/tfff-city-wide-fever",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-city-wide-fever.jpg",
+      "showtimes": {
+        "2026-08-07": [
+          {
+            "time": "20:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81478?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
             "hoh": false
           }
         ]
@@ -1381,19 +1381,19 @@
       "accent": "#9ed453"
     },
     {
-      "id": "tfff-hellbreeder",
-      "title": "TFFF: Hellbreeder",
-      "rating": "15",
+      "id": "tfff-captain-america",
+      "title": "TFFF: Captain America",
+      "rating": "PG",
       "runtime": 120,
-      "genre": "Horror",
-      "film_url": "https://www.peckhamplex.london/film/tfff-hellbreeder",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-hellbreeder.jpg",
+      "genre": "Adventure",
+      "film_url": "https://www.peckhamplex.london/film/tfff-captain-america",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-captain-america.jpg",
       "showtimes": {
-        "2026-08-09": [
+        "2026-08-08": [
           {
-            "time": "19:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81482?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
+            "time": "21:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81481?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": null,
             "hoh": false
           }
         ]
@@ -1402,18 +1402,18 @@
       "accent": "#d368c6"
     },
     {
-      "id": "turandot",
-      "title": "Turandot on Sydney Harbour",
-      "rating": "PG",
-      "runtime": 146,
-      "genre": "Opera",
-      "film_url": "https://www.peckhamplex.london/film/turandot",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/turandot.jpg",
+      "id": "tfff-nemesis",
+      "title": "TFFF: Nemesis",
+      "rating": "18",
+      "runtime": 100,
+      "genre": "Thriller",
+      "film_url": "https://www.peckhamplex.london/film/tfff-nemesis",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-nemesis.jpg",
       "showtimes": {
-        "2026-08-05": [
+        "2026-08-08": [
           {
-            "time": "19:45",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/80789?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "17:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81480?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 6",
             "hoh": false
           }
@@ -1444,18 +1444,18 @@
       "accent": "#d49953"
     },
     {
-      "id": "tfff-godmonster-of-indian-flats",
-      "title": "TFFF: Godmonster of Indian Flats",
-      "rating": "18",
+      "id": "tfff-hellbreeder",
+      "title": "TFFF: Hellbreeder",
+      "rating": "15",
       "runtime": 120,
       "genre": "Horror",
-      "film_url": "https://www.peckhamplex.london/film/tfff-godmonster-of-indian-flats",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-godmonster-of-indian-flats.jpg",
+      "film_url": "https://www.peckhamplex.london/film/tfff-hellbreeder",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-hellbreeder.jpg",
       "showtimes": {
-        "2026-08-07": [
+        "2026-08-09": [
           {
-            "time": "16:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81477?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "19:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81482?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 6",
             "hoh": false
           }
@@ -1465,18 +1465,18 @@
       "accent": "#8368d3"
     },
     {
-      "id": "tfff-nemesis",
-      "title": "TFFF: Nemesis",
-      "rating": "18",
-      "runtime": 100,
-      "genre": "Thriller",
-      "film_url": "https://www.peckhamplex.london/film/tfff-nemesis",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-nemesis.jpg",
+      "id": "turandot",
+      "title": "Turandot on Sydney Harbour",
+      "rating": "PG",
+      "runtime": 146,
+      "genre": "Opera",
+      "film_url": "https://www.peckhamplex.london/film/turandot",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/turandot.jpg",
       "showtimes": {
-        "2026-08-08": [
+        "2026-08-05": [
           {
-            "time": "17:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81480?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "time": "19:45",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/80789?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
             "screen": "Screen 6",
             "hoh": false
           }
@@ -1484,27 +1484,6 @@
       },
       "color": "#35a630",
       "accent": "#88d684"
-    },
-    {
-      "id": "tfff-surprise-film-7826",
-      "title": "TFFF: Surprise Film 7.8.26",
-      "rating": "TBC",
-      "runtime": 90,
-      "genre": "Mystery",
-      "film_url": "https://www.peckhamplex.london/film/tfff-surprise-film-7826",
-      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-surprise-film-7826.jpg",
-      "showtimes": {
-        "2026-08-07": [
-          {
-            "time": "22:00",
-            "booking_url": "https://ticketing.eu.veezi.com/purchase/81479?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
-            "screen": "Screen 6",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#971a44",
-      "accent": "#d4537e"
     },
     {
       "id": "wham-10-days-in-china",
@@ -1524,10 +1503,31 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3",
+      "color": "#971a44",
+      "accent": "#d4537e",
       "letterboxd_url": "https://letterboxd.com/film/wham-10-days-in-china/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "tfff-surprise-film-7826",
+      "title": "TFFF: Surprise Film 7.8.26",
+      "rating": "TBC",
+      "runtime": 90,
+      "genre": "Mystery",
+      "film_url": "https://www.peckhamplex.london/film/tfff-surprise-film-7826",
+      "poster_url": "https://www.peckhamplex.london/imgs/posters/medium/tfff-surprise-film-7826.jpg",
+      "showtimes": {
+        "2026-08-07": [
+          {
+            "time": "22:00",
+            "booking_url": "https://ticketing.eu.veezi.com/purchase/81479?siteToken=zkD3Bh7H%2fkuZI9VTgCj%2bgg%3d%3d",
+            "screen": "Screen 6",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#21709f",
+      "accent": "#68abd3"
     }
   ]
 }
