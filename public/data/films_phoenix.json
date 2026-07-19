@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-19T11:05:27.461599+00:00",
+  "scraped_at": "2026-07-19T11:35:18.933111+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -239,6 +239,12 @@
         ],
         "2026-07-25": [
           {
+            "time": "12:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616305.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
             "time": "15:45",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616256.TcsSection_543",
             "screen": "Screen 1",
@@ -253,13 +259,19 @@
         ],
         "2026-07-26": [
           {
-            "time": "15:45",
+            "time": "12:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616304.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "15:30",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616260.TcsSection_543",
             "screen": "Screen 1",
             "hoh": false
           },
           {
-            "time": "19:30",
+            "time": "19:15",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616261.TcsSection_543",
             "screen": "Screen 1",
             "hoh": false
@@ -267,9 +279,15 @@
         ],
         "2026-07-27": [
           {
-            "time": "15:45",
+            "time": "16:15",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616264.TcsSection_543",
             "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "19:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616310.TcsSection_720",
+            "screen": "Screen 2",
             "hoh": false
           }
         ],
@@ -279,6 +297,15 @@
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616266.TcsSection_543",
             "screen": "Screen 1",
             "hoh": false
+          },
+          {
+            "time": "19:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616308.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": true,
+            "tags": [
+              "Closed Captions"
+            ]
           }
         ],
         "2026-07-29": [
@@ -300,7 +327,10 @@
             "time": "15:45",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616272.TcsSection_543",
             "screen": "Screen 1",
-            "hoh": false
+            "hoh": true,
+            "tags": [
+              "Closed Captions"
+            ]
           },
           {
             "time": "19:30",
