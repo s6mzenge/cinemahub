@@ -1,50 +1,7 @@
 {
-  "scraped_at": "2026-07-19T19:05:08.841815+00:00",
+  "scraped_at": "2026-07-19T19:34:50.806697+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "effi-o-blaenau",
-      "title": "Effi o Blaenau",
-      "rating": "15",
-      "runtime": 90,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Marc Evans",
-      "cast": null,
-      "description": "Based on Gary Owen's much lauded and widely performed monodrama, Iphigenia in Splott, Effi o Blaenau is director Marc Evans' cinematic interpretation set…",
-      "film_url": "https://www.thegardencinema.co.uk/film/effi-o-blaenau/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5572271.jpg",
-      "showtimes": {
-        "2026-07-19": [
-          {
-            "time": "19:20",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5868269.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-20": [
-          {
-            "time": "20:35",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5868271.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-22": [
-          {
-            "time": "20:50",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5868299.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/effi-o-blaenau/",
-      "letterboxd_rating": 3.78
-    },
     {
       "id": "toy-story-5",
       "title": "Toy Story 5",
@@ -104,8 +61,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
       "letterboxd_rating": 3.71
     },
@@ -155,8 +112,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090"
+      "color": "#7c4dff",
+      "accent": "#b388ff"
     },
     {
       "id": "le-mepris",
@@ -188,8 +145,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac"
+      "color": "#d81b60",
+      "accent": "#ff6090"
     },
     {
       "id": "paprika-20th-anniversary",
@@ -229,8 +186,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/paprika-2006/",
       "letterboxd_rating": 4.1
     },
@@ -264,8 +221,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/red-beard/",
       "letterboxd_rating": 4.4
     },
@@ -294,8 +251,8 @@
       "seasons": [
         "Planting Seeds"
       ],
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/ackroyd-harvey-the-art-of-activism/",
       "letterboxd_rating": null
     },
@@ -335,8 +292,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/an-autumns-tale/",
       "letterboxd_rating": 3.8
     },
@@ -370,10 +327,45 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/the-last-one-for-the-road/",
       "letterboxd_rating": 3.86
+    },
+    {
+      "id": "effi-o-blaenau",
+      "title": "Effi o Blaenau",
+      "rating": "15",
+      "runtime": 90,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Marc Evans",
+      "cast": null,
+      "description": "Based on Gary Owen's much lauded and widely performed monodrama, Iphigenia in Splott, Effi o Blaenau is director Marc Evans' cinematic interpretation set…",
+      "film_url": "https://www.thegardencinema.co.uk/film/effi-o-blaenau/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5572271.jpg",
+      "showtimes": {
+        "2026-07-20": [
+          {
+            "time": "20:35",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5868271.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-22": [
+          {
+            "time": "20:50",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5868299.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#00838f",
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/effi-o-blaenau/",
+      "letterboxd_rating": 3.78
     },
     {
       "id": "dear-you",
