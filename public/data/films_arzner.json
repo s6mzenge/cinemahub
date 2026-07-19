@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-19T13:04:02.558682+00:00",
+  "scraped_at": "2026-07-19T13:33:30.537775+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -13,6 +13,12 @@
       "poster_url": "https://images.savoysystems.co.uk/TAL/222920.png",
       "showtimes": {
         "2026-07-19": [
+          {
+            "time": "11:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_222967.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
           {
             "time": "15:15",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_222964.TcsSection_963",
@@ -71,6 +77,38 @@
       "letterboxd_rating": null
     },
     {
+      "id": "pillion-92811",
+      "title": "Pillion",
+      "rating": "18",
+      "runtime": 106,
+      "genre": "New Release",
+      "description": "A timid man is swept off his feet when an enigmatic, impossibly handsome biker takes him on as his submissive.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=92811",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/92808.jpg",
+      "showtimes": {
+        "2026-07-19": [
+          {
+            "time": "13:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_222965.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-07-20": [
+          {
+            "time": "14:00",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223105.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/pillion-2025/",
+      "letterboxd_rating": 3.5
+    },
+    {
       "id": "hello-dolly-219575",
       "title": "Hello, Dolly!",
       "rating": "PG",
@@ -92,8 +130,8 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/hello-dolly/",
       "letterboxd_rating": 3.82
     },
@@ -154,34 +192,10 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/the-serpents-skin/",
-      "letterboxd_rating": 3.11
-    },
-    {
-      "id": "pillion-92811",
-      "title": "Pillion",
-      "rating": "18",
-      "runtime": 106,
-      "genre": "New Release",
-      "description": "A timid man is swept off his feet when an enigmatic, impossibly handsome biker takes him on as his submissive.",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=92811",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/92808.jpg",
-      "showtimes": {
-        "2026-07-20": [
-          {
-            "time": "14:00",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223105.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
       "color": "#d81b60",
       "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/pillion-2025/",
-      "letterboxd_rating": 3.5
+      "letterboxd_url": "https://letterboxd.com/film/the-serpents-skin/",
+      "letterboxd_rating": 3.11
     },
     {
       "id": "scarecrow-in-a-garden-of-cucumbers-restoration-intro-223040",
@@ -1347,6 +1361,31 @@
       "accent": "#d684bb"
     },
     {
+      "id": "cinema-in-the-square-madonna-the-confessions-tour-confessions-ii-205462",
+      "title": "Cinema in the Square: Madonna - The Confessions Tour & Confessions II",
+      "rating": "15",
+      "runtime": 155,
+      "genre": "Outdoor Cinema",
+      "description": "Cinema in the Square is The Arzner's outdoor queer cinema event. Cinema in the Square takes place across the last three weekends of August, including Bank Holiday Monday on the 31st.. From Madonna to Mary Poppins, we have 28 queer & queer-adjacent films for you to enjoy in the summer heat in Bermond…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=205462",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/227757.jpg",
+      "showtimes": {
+        "2026-08-22": [
+          {
+            "time": "20:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_227758.TcsSection_225254",
+            "screen": "Outdoor Cinema",
+            "hoh": false,
+            "tags": [
+              "Outdoor Cinema"
+            ]
+          }
+        ]
+      },
+      "color": "#1a9297",
+      "accent": "#53cfd4"
+    },
+    {
       "id": "cinema-in-the-square-moonlight-10575",
       "title": "Cinema in the Square: Moonlight",
       "rating": "15",
@@ -1369,8 +1408,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "cinema-in-the-square-shiva-baby-226269",
@@ -1394,8 +1433,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868"
+      "color": "#6530a6",
+      "accent": "#a984d6"
     }
   ]
 }
