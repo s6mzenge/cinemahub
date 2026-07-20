@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-20T15:35:42.144631+00:00",
+  "scraped_at": "2026-07-20T16:07:02.072745+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -93,18 +93,6 @@
       "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/105912_0.jpg",
       "showtimes": {
         "2026-07-20": [
-          {
-            "time": "16:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12085",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "16:50",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12206",
-            "screen": null,
-            "hoh": false
-          },
           {
             "time": "17:30",
             "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12097",
@@ -1612,6 +1600,32 @@
       },
       "color": "#975e1a",
       "accent": "#d49953"
+    },
+    {
+      "id": "the-botanist-london-premiere",
+      "title": "The Botanist (London Premiere)",
+      "rating": "18",
+      "runtime": 96,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "In Chinas Xinjiang region, a Kazakh boys magical friendship with a local Han girl blooms amid a world where plants and imagination intertwine.The screening is in collaboration with Green Ray, as part of the SPRING QUARTET programme.Professor Victor Fan from Kings College London will deliver an in-person introduction before the screening. The screening will also be followed by an online Q&A with director Jing Yi.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/109795",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/109795_0.jpg",
+      "showtimes": {
+        "2026-08-23": [
+          {
+            "time": "15:20",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12300",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#41219f",
+      "accent": "#8368d3"
     }
   ]
 }
