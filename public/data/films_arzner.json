@@ -1,61 +1,7 @@
 {
-  "scraped_at": "2026-07-20T16:05:27.246247+00:00",
+  "scraped_at": "2026-07-20T16:35:38.451370+00:00",
   "source": "thearzner.com",
   "films": [
-    {
-      "id": "the-serpent-s-skin-211906",
-      "title": "The Serpent's Skin",
-      "rating": "18",
-      "runtime": 83,
-      "genre": "New Release",
-      "description": "Two young women form a romantic bond after discovering they have supernatural powers. Their insecurities unknowingly release a demon, which possesses one of their exes and begins feeding on their friends. As the bodies pile up, it becomes up to the women to face their pasts and stop the growing evil…",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=211906",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/211903.jpg",
-      "showtimes": {
-        "2026-07-20": [
-          {
-            "time": "16:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223251.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-07-21": [
-          {
-            "time": "14:30",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223255.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          },
-          {
-            "time": "18:15",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223254.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-07-22": [
-          {
-            "time": "18:45",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223238.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ],
-        "2026-07-23": [
-          {
-            "time": "16:45",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223233.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/the-serpents-skin/",
-      "letterboxd_rating": 3.11
-    },
     {
       "id": "a-year-in-london-222923",
       "title": "A Year in London",
@@ -105,8 +51,8 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/a-year-in-london/",
       "letterboxd_rating": null
     },
@@ -132,8 +78,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff"
+      "color": "#e53935",
+      "accent": "#ff6f60"
     },
     {
       "id": "rosebush-pruning-211847",
@@ -173,10 +119,56 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/rosebush-pruning/",
       "letterboxd_rating": 2.7
+    },
+    {
+      "id": "the-serpent-s-skin-211906",
+      "title": "The Serpent's Skin",
+      "rating": "18",
+      "runtime": 83,
+      "genre": "New Release",
+      "description": "Two young women form a romantic bond after discovering they have supernatural powers. Their insecurities unknowingly release a demon, which possesses one of their exes and begins feeding on their friends. As the bodies pile up, it becomes up to the women to face their pasts and stop the growing evil…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=211906",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/211903.jpg",
+      "showtimes": {
+        "2026-07-21": [
+          {
+            "time": "14:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223255.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
+            "time": "18:15",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223254.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-07-22": [
+          {
+            "time": "18:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223238.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-07-23": [
+          {
+            "time": "16:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223233.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/the-serpents-skin/",
+      "letterboxd_rating": 3.11
     },
     {
       "id": "preview-warla-q-a-223011",
