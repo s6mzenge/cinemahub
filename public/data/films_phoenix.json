@@ -1,7 +1,57 @@
 {
-  "scraped_at": "2026-07-20T16:37:09.445302+00:00",
+  "scraped_at": "2026-07-20T17:07:15.226086+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
+    {
+      "id": "effi-o-blaenau",
+      "title": "Effi o Blaenau",
+      "rating": "15",
+      "runtime": 90,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Marc Evans",
+      "cast": "Leisa Gwenllian, Tom Rhys Harries, Owen Alun, Nel Rhys Lewis, Mared Llywelyn, Sion Eifion, Carys Gwillym, Leah Gaffey, Gavin Lee",
+      "country": "Wales",
+      "description": "Hard-partying young woman Effi lives in rural Wales, whose life largely revolves around drinking vodka with her friends and eating instant noodles to cure her subsequent hangovers – until her life suddenly changes dramatically.",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=578238",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/578235.jpg",
+      "showtimes": {
+        "2026-07-20": [
+          {
+            "time": "15:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_604000.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ],
+        "2026-07-22": [
+          {
+            "time": "20:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_603990.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ],
+        "2026-07-30": [
+          {
+            "time": "17:45",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618453.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/effi-o-blaenau/",
+      "letterboxd_rating": 3.78
+    },
     {
       "id": "the-odyssey",
       "title": "The Odyssey",
@@ -17,6 +67,12 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/545945.jpg",
       "showtimes": {
         "2026-07-20": [
+          {
+            "time": "15:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_560378.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          },
           {
             "time": "19:15",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_560377.TcsSection_543",
@@ -186,10 +242,60 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
       "letterboxd_rating": 4.35
+    },
+    {
+      "id": "a-private-life",
+      "title": "A Private Life",
+      "rating": "15",
+      "runtime": 108,
+      "genre": "Other",
+      "year": null,
+      "director": "Rebecca Zlotowski",
+      "cast": "Jodie Foster, Daniel Auteuil, Virginie Efira, Mathieu Amalric, Vincent Lacoste",
+      "country": "France",
+      "description": "The renowned psychiatrist Lilian Steiner mounts a private investigation into the death of one of her patients, whom she is convinced has been murdered.",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=573632",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/573631.jpg",
+      "showtimes": {
+        "2026-07-20": [
+          {
+            "time": "17:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_603974.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ],
+        "2026-07-23": [
+          {
+            "time": "15:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_603996.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false,
+            "tags": [
+              "Subtitled"
+            ]
+          }
+        ],
+        "2026-07-29": [
+          {
+            "time": "20:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618440.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/a-private-life-2025/",
+      "letterboxd_rating": 3.05
     },
     {
       "id": "the-invite",
@@ -268,8 +374,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
       "letterboxd_rating": 4.11
     },
@@ -315,8 +421,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
       "letterboxd_rating": 3.76
     },
@@ -350,8 +456,8 @@
       "season_tags": [
         "Watch With Baby"
       ],
-      "color": "#00897b",
-      "accent": "#4db6ac"
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
     },
     {
       "id": "blue-heron",
@@ -395,88 +501,10 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
-      "letterboxd_url": "https://letterboxd.com/film/blue-heron/",
-      "letterboxd_rating": 3.94
-    },
-    {
-      "id": "effi-o-blaenau",
-      "title": "Effi o Blaenau",
-      "rating": "15",
-      "runtime": 90,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Marc Evans",
-      "cast": "Leisa Gwenllian, Tom Rhys Harries, Owen Alun, Nel Rhys Lewis, Mared Llywelyn, Sion Eifion, Carys Gwillym, Leah Gaffey, Gavin Lee",
-      "country": "Wales",
-      "description": "Hard-partying young woman Effi lives in rural Wales, whose life largely revolves around drinking vodka with her friends and eating instant noodles to cure her subsequent hangovers – until her life suddenly changes dramatically.",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=578238",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/578235.jpg",
-      "showtimes": {
-        "2026-07-22": [
-          {
-            "time": "20:00",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_603990.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false,
-            "tags": [
-              "Subtitled"
-            ]
-          }
-        ],
-        "2026-07-30": [
-          {
-            "time": "17:45",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618453.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
-      "letterboxd_url": "https://letterboxd.com/film/effi-o-blaenau/",
-      "letterboxd_rating": 3.78
-    },
-    {
-      "id": "a-private-life",
-      "title": "A Private Life",
-      "rating": "15",
-      "runtime": 108,
-      "genre": "Other",
-      "year": null,
-      "director": "Rebecca Zlotowski",
-      "cast": "Jodie Foster, Daniel Auteuil, Virginie Efira, Mathieu Amalric, Vincent Lacoste",
-      "country": "France",
-      "description": "The renowned psychiatrist Lilian Steiner mounts a private investigation into the death of one of her patients, whom she is convinced has been murdered.",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=573632",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/573631.jpg",
-      "showtimes": {
-        "2026-07-23": [
-          {
-            "time": "15:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_603996.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false,
-            "tags": [
-              "Subtitled"
-            ]
-          }
-        ],
-        "2026-07-29": [
-          {
-            "time": "20:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618440.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
       "color": "#c62828",
       "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/a-private-life-2025/",
-      "letterboxd_rating": 3.05
+      "letterboxd_url": "https://letterboxd.com/film/blue-heron/",
+      "letterboxd_rating": 3.94
     },
     {
       "id": "brunello-the-gracious-visionary",
