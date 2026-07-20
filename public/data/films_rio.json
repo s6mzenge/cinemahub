@@ -1,52 +1,7 @@
 {
-  "scraped_at": "2026-07-20T11:33:48.428029+00:00",
+  "scraped_at": "2026-07-20T12:04:59.517157+00:00",
   "source": "riocinema.org.uk",
   "films": [
-    {
-      "id": "the-odyssey",
-      "title": "The Odyssey",
-      "rating": "15",
-      "runtime": 172,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Christopher Nolan",
-      "cast": null,
-      "country": "USA / UK",
-      "description": "Don your sandals and set sail for Ithaca. Following the Trojan War, Odysseus embarks on a long and perilous voyage home, encountering the likes of Cyclops Polyphemus, the Sirens, Circe and others along the way. Christopher Nolan's adaptation of Homer's enduring epic reimagines one of the foundationa...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2720035",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2720031.jpg",
-      "showtimes": {
-        "2026-07-20": [
-          {
-            "time": "11:00",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2720036.TcsSection_936",
-            "screen": "S1",
-            "hoh": false,
-            "tags": [
-              "Carers & Babies"
-            ]
-          }
-        ],
-        "2026-07-27": [
-          {
-            "time": "11:00",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2738900.TcsSection_936",
-            "screen": "S1",
-            "hoh": false,
-            "tags": [
-              "Carers & Babies"
-            ]
-          }
-        ]
-      },
-      "season_tags": [
-        "Carers &amp; Babies"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
-      "letterboxd_rating": 4.34
-    },
     {
       "id": "blue-heron",
       "title": "Blue Heron",
@@ -129,8 +84,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/blue-heron/",
       "letterboxd_rating": 3.94
     },
@@ -264,8 +219,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
       "letterboxd_rating": 4.34
     },
@@ -376,8 +331,8 @@
         "Hard of Hearing",
         "Main Features"
       ],
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
       "letterboxd_rating": 4.11
     },
@@ -439,8 +394,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/life-support-2026/",
       "letterboxd_rating": null
     },
@@ -478,8 +433,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/nirvanna-the-band-the-show-the-movie/",
       "letterboxd_rating": 4.26
     },
@@ -513,8 +468,8 @@
       "season_tags": [
         "Pink Palace"
       ],
-      "color": "#c62828",
-      "accent": "#ef5350"
+      "color": "#ef6c00",
+      "accent": "#ffb74d"
     },
     {
       "id": "divine-hammer-uk-premiere",
@@ -545,8 +500,42 @@
       "season_tags": [
         "Special Events"
       ],
+      "color": "#c62828",
+      "accent": "#ef5350"
+    },
+    {
+      "id": "the-odyssey",
+      "title": "The Odyssey",
+      "rating": "15",
+      "runtime": 172,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Christopher Nolan",
+      "cast": null,
+      "country": "USA / UK",
+      "description": "Don your sandals and set sail for Ithaca. Following the Trojan War, Odysseus embarks on a long and perilous voyage home, encountering the likes of Cyclops Polyphemus, the Sirens, Circe and others along the way. Christopher Nolan's adaptation of Homer's enduring epic reimagines one of the foundationa...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2720035",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2720031.jpg",
+      "showtimes": {
+        "2026-07-27": [
+          {
+            "time": "11:00",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2738900.TcsSection_936",
+            "screen": "S1",
+            "hoh": false,
+            "tags": [
+              "Carers & Babies"
+            ]
+          }
+        ]
+      },
+      "season_tags": [
+        "Carers &amp; Babies"
+      ],
       "color": "#6a1b9a",
-      "accent": "#ba68c8"
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
+      "letterboxd_rating": 4.34
     },
     {
       "id": "bouchra-preview",
