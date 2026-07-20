@@ -1,71 +1,7 @@
 {
-  "scraped_at": "2026-07-20T14:34:59.313719+00:00",
+  "scraped_at": "2026-07-20T15:04:59.967353+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "toy-story-5",
-      "title": "Toy Story 5",
-      "rating": "PG",
-      "runtime": 102,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Andrew Stanton",
-      "cast": null,
-      "description": "The toys are back in Disney and Pixar’s Toy Story 5, and this time it’s Toy meets Tech. Woody (voice of Tom…",
-      "film_url": "https://www.thegardencinema.co.uk/film/toy-story-5/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5839422.jpg",
-      "showtimes": {
-        "2026-07-20": [
-          {
-            "time": "14:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5839476.TcsSection_638",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ],
-        "2026-07-21": [
-          {
-            "time": "15:15",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5839478.TcsSection_638",
-            "screen": null,
-            "hoh": true,
-            "tags": [
-              "HoH",
-              "AD"
-            ]
-          }
-        ],
-        "2026-07-22": [
-          {
-            "time": "15:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5839482.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ],
-        "2026-07-23": [
-          {
-            "time": "15:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5839484.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
-      "letterboxd_rating": 3.71
-    },
     {
       "id": "wallace-gromit-a-grand-day-out-the-wrong-trousers-a-close-shave",
       "title": "Wallace & Gromit: A Grand Day Out, The Wrong Trousers, A Close Shave",
@@ -112,8 +48,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff"
+      "color": "#e53935",
+      "accent": "#ff6f60"
     },
     {
       "id": "le-mepris",
@@ -145,8 +81,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090"
+      "color": "#7c4dff",
+      "accent": "#b388ff"
     },
     {
       "id": "paprika-20th-anniversary",
@@ -218,8 +154,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/paprika-2006/",
       "letterboxd_rating": 4.1
     },
@@ -253,10 +189,10 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/red-beard/",
-      "letterboxd_rating": 4.4
+      "letterboxd_rating": 4.39
     },
     {
       "id": "ackroyd-harvey-the-art-of-activism",
@@ -283,8 +219,8 @@
       "seasons": [
         "Planting Seeds"
       ],
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/ackroyd-harvey-the-art-of-activism/",
       "letterboxd_rating": null
     },
@@ -324,8 +260,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/an-autumns-tale/",
       "letterboxd_rating": 3.8
     },
@@ -375,10 +311,10 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/the-last-one-for-the-road/",
-      "letterboxd_rating": 3.86
+      "letterboxd_rating": 3.85
     },
     {
       "id": "effi-o-blaenau",
@@ -410,10 +346,63 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/effi-o-blaenau/",
       "letterboxd_rating": 3.78
+    },
+    {
+      "id": "toy-story-5",
+      "title": "Toy Story 5",
+      "rating": "PG",
+      "runtime": 102,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Andrew Stanton",
+      "cast": null,
+      "description": "The toys are back in Disney and Pixar’s Toy Story 5, and this time it’s Toy meets Tech. Woody (voice of Tom…",
+      "film_url": "https://www.thegardencinema.co.uk/film/toy-story-5/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5839422.jpg",
+      "showtimes": {
+        "2026-07-21": [
+          {
+            "time": "15:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5839478.TcsSection_638",
+            "screen": null,
+            "hoh": true,
+            "tags": [
+              "HoH",
+              "AD"
+            ]
+          }
+        ],
+        "2026-07-22": [
+          {
+            "time": "15:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5839482.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ],
+        "2026-07-23": [
+          {
+            "time": "15:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5839484.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ]
+      },
+      "color": "#00838f",
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
+      "letterboxd_rating": 3.71
     },
     {
       "id": "dear-you",
@@ -2038,7 +2027,7 @@
       "color": "#21809f",
       "accent": "#68b9d3",
       "letterboxd_url": "https://letterboxd.com/film/coup-53/",
-      "letterboxd_rating": 3.76
+      "letterboxd_rating": 3.75
     },
     {
       "id": "ish",
@@ -2581,7 +2570,7 @@
       "color": "#3070a6",
       "accent": "#84b1d6",
       "letterboxd_url": "https://letterboxd.com/film/peking-opera-blues/",
-      "letterboxd_rating": 4.07
+      "letterboxd_rating": 4.06
     },
     {
       "id": "broadcast-news",
@@ -3132,7 +3121,7 @@
       "color": "#1a977c",
       "accent": "#53d4b8",
       "letterboxd_url": "https://letterboxd.com/film/summer-school-2001/",
-      "letterboxd_rating": 3.71
+      "letterboxd_rating": 3.7
     },
     {
       "id": "the-palm-beach-story",
@@ -4042,7 +4031,7 @@
       "color": "#308ea6",
       "accent": "#84c6d6",
       "letterboxd_url": "https://letterboxd.com/film/john-the-violent/",
-      "letterboxd_rating": 3.69
+      "letterboxd_rating": 3.68
     }
   ]
 }
