@@ -1,62 +1,7 @@
 {
-  "scraped_at": "2026-07-21T17:35:46.334139+00:00",
+  "scraped_at": "2026-07-21T18:06:09.198007+00:00",
   "source": "riocinema.org.uk",
   "films": [
-    {
-      "id": "life-support",
-      "title": "Life Support",
-      "rating": "15",
-      "runtime": 93,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Daniele Rugo",
-      "cast": null,
-      "country": "UK / Palestine / Qatar",
-      "description": "Since October 2023, Gaza has been sealed from the world-except for one group, international doctors. While global media are barred from reporting and governments look away, doctors breach the blockade and what they find is not just a humanitarian crisis, but a calculated dismantling of life itself. ...",
-      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2699584",
-      "poster_url": "https://images.savoysystems.co.uk/RIL/2699586.jpg",
-      "showtimes": {
-        "2026-07-21": [
-          {
-            "time": "18:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2699772.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-07-22": [
-          {
-            "time": "18:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2699774.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-07-27": [
-          {
-            "time": "18:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2738910.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ],
-        "2026-07-30": [
-          {
-            "time": "18:30",
-            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2738926.TcsSection_1299",
-            "screen": "S2",
-            "hoh": false
-          }
-        ]
-      },
-      "season_tags": [
-        "Main Features"
-      ],
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/life-support-2026/",
-      "letterboxd_rating": null
-    },
     {
       "id": "the-odyssey",
       "title": "The Odyssey",
@@ -173,8 +118,8 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
       "letterboxd_rating": 4.36
     },
@@ -252,10 +197,57 @@
       "season_tags": [
         "Main Features"
       ],
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/blue-heron/",
       "letterboxd_rating": 3.94
+    },
+    {
+      "id": "life-support",
+      "title": "Life Support",
+      "rating": "15",
+      "runtime": 93,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Daniele Rugo",
+      "cast": null,
+      "country": "UK / Palestine / Qatar",
+      "description": "Since October 2023, Gaza has been sealed from the world-except for one group, international doctors. While global media are barred from reporting and governments look away, doctors breach the blockade and what they find is not just a humanitarian crisis, but a calculated dismantling of life itself. ...",
+      "film_url": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=2699584",
+      "poster_url": "https://images.savoysystems.co.uk/RIL/2699586.jpg",
+      "showtimes": {
+        "2026-07-22": [
+          {
+            "time": "18:30",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2699774.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ],
+        "2026-07-27": [
+          {
+            "time": "18:30",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2738910.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ],
+        "2026-07-30": [
+          {
+            "time": "18:30",
+            "booking_url": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_2738926.TcsSection_1299",
+            "screen": "S2",
+            "hoh": false
+          }
+        ]
+      },
+      "season_tags": [
+        "Main Features"
+      ],
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/life-support-2026/",
+      "letterboxd_rating": null
     },
     {
       "id": "the-invite",
