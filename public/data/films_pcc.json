@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-21T15:04:15.742254+00:00",
+  "scraped_at": "2026-07-21T15:34:07.606174+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
@@ -584,7 +584,10 @@
             "time": "18:10",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627038",
             "screen": null,
-            "hoh": false
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
           }
         ],
         "2026-08-26": [
@@ -1689,6 +1692,17 @@
               "35mm"
             ]
           }
+        ],
+        "2026-10-04": [
+          {
+            "time": "14:25",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627531",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
         ]
       },
       "color": "#6530a6",
@@ -1767,7 +1781,7 @@
       "color": "#9f2132",
       "accent": "#d36876",
       "letterboxd_url": "https://letterboxd.com/film/clueless/",
-      "letterboxd_rating": 3.69
+      "letterboxd_rating": 3.68
     },
     {
       "id": "the-fifth-element",
@@ -6368,6 +6382,14 @@
             "tags": [
               "4K"
             ]
+          }
+        ],
+        "2026-10-03": [
+          {
+            "time": "12:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627530",
+            "screen": null,
+            "hoh": false
           }
         ]
       },
@@ -12405,6 +12427,34 @@
       "letterboxd_rating": 3.82
     },
     {
+      "id": "the-witch",
+      "title": "The Witch",
+      "rating": "15",
+      "runtime": 93,
+      "genre": "Horror",
+      "year": "2015",
+      "country": null,
+      "director": "Robert Eggers",
+      "cast": "Anya Taylor-Joy, Kate Dickie, Ralph Ineson",
+      "description": "In 1630 New England, panic and despair envelops a farmer, his wife and their children when youngest son Samuel suddenly vanishes. The family blames Thomasin, the oldest daughter who was watching the boy at the time of his disappearance. With suspicion and paranoia mounting, twin siblings Mercy and Jonas suspect Thomasin of witchcraft, testing the clan's faith, loyalty and love to one another.",
+      "film_url": "https://princecharlescinema.com/film/9899349/the-witch",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/9899349.jpg",
+      "showtimes": {
+        "2026-10-03": [
+          {
+            "time": "15:10",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627528",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#219f4b",
+      "accent": "#68d38c",
+      "letterboxd_url": "https://letterboxd.com/film/the-witch-2015/",
+      "letterboxd_rating": 3.82
+    },
+    {
       "id": "event-horizon",
       "title": "Event Horizon",
       "rating": "18",
@@ -12430,10 +12480,38 @@
           }
         ]
       },
-      "color": "#219f4b",
-      "accent": "#68d38c",
+      "color": "#a63530",
+      "accent": "#d68784",
       "letterboxd_url": "https://letterboxd.com/film/event-horizon/",
       "letterboxd_rating": 3.34
+    },
+    {
+      "id": "halloween-1978",
+      "title": "Halloween (1978)",
+      "rating": "15",
+      "runtime": 91,
+      "genre": "Horror",
+      "year": "1978",
+      "country": null,
+      "director": "John Carpenter",
+      "cast": "Jamie Lee Curtis, Donald Pleasence, P. J. Soles, Nancy Loomis",
+      "description": "Fifteen years after murdering his sister on Halloween Night 1963, Michael Myers escapes from a mental hospital and returns to the small town of Haddonfield, Illinois to kill again.",
+      "film_url": "https://princecharlescinema.com/film/28409362/halloween-1978",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/GrcT_oaf9cXDfasrkhU5oCVCFPSrJrSjN6LopxkMdlY.jpg",
+      "showtimes": {
+        "2026-10-03": [
+          {
+            "time": "17:40",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627529",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#1a3a97",
+      "accent": "#5373d4",
+      "letterboxd_url": "https://letterboxd.com/film/halloween-1978/",
+      "letterboxd_rating": 3.76
     },
     {
       "id": "in-the-mouth-of-madness",
@@ -12461,8 +12539,8 @@
           }
         ]
       },
-      "color": "#a63530",
-      "accent": "#d68784",
+      "color": "#669f21",
+      "accent": "#a2d368",
       "letterboxd_url": "https://letterboxd.com/film/in-the-mouth-of-madness/",
       "letterboxd_rating": 3.81
     },
@@ -12500,8 +12578,8 @@
           }
         ]
       },
-      "color": "#1a3a97",
-      "accent": "#5373d4",
+      "color": "#a63092",
+      "accent": "#d684c8",
       "letterboxd_url": "https://letterboxd.com/film/possession/",
       "letterboxd_rating": 4.03
     },
@@ -12561,8 +12639,8 @@
           }
         ]
       },
-      "color": "#669f21",
-      "accent": "#a2d368",
+      "color": "#1a9788",
+      "accent": "#53d4c4",
       "letterboxd_url": "https://letterboxd.com/film/suspiria/",
       "letterboxd_rating": 3.92
     },
@@ -12603,8 +12681,8 @@
           }
         ]
       },
-      "color": "#a63092",
-      "accent": "#d684c8",
+      "color": "#9f6b21",
+      "accent": "#d3a668",
       "letterboxd_url": "https://letterboxd.com/film/the-cabinet-of-dr-caligari-1920/",
       "letterboxd_rating": 4.06
     },
@@ -12634,8 +12712,8 @@
           }
         ]
       },
-      "color": "#1a9788",
-      "accent": "#53d4c4",
+      "color": "#5230a6",
+      "accent": "#9c84d6",
       "letterboxd_url": "https://letterboxd.com/film/an-american-werewolf-in-london/",
       "letterboxd_rating": 3.83
     },
@@ -12662,8 +12740,8 @@
           }
         ]
       },
-      "color": "#9f6b21",
-      "accent": "#d3a668",
+      "color": "#1a971a",
+      "accent": "#53d453",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
       "letterboxd_rating": 4.12
     },
@@ -12704,8 +12782,8 @@
           }
         ]
       },
-      "color": "#5230a6",
-      "accent": "#9c84d6",
+      "color": "#9f2146",
+      "accent": "#d36888",
       "letterboxd_url": "https://letterboxd.com/film/the-exorcist/",
       "letterboxd_rating": 3.95
     },
@@ -12732,8 +12810,8 @@
           }
         ]
       },
-      "color": "#1a971a",
-      "accent": "#53d453",
+      "color": "#3075a6",
+      "accent": "#84b4d6",
       "letterboxd_url": "https://letterboxd.com/film/psycho/",
       "letterboxd_rating": 4.31
     },
@@ -12760,8 +12838,8 @@
           }
         ]
       },
-      "color": "#9f2146",
-      "accent": "#d36888",
+      "color": "#88971a",
+      "accent": "#c4d453",
       "letterboxd_url": "https://letterboxd.com/film/black-swan/",
       "letterboxd_rating": 4.17
     },
@@ -12791,8 +12869,8 @@
           }
         ]
       },
-      "color": "#3075a6",
-      "accent": "#84b4d6",
+      "color": "#8a219f",
+      "accent": "#c168d3",
       "letterboxd_url": "https://letterboxd.com/film/jennifers-body/",
       "letterboxd_rating": 3.45
     },
@@ -12819,8 +12897,8 @@
           }
         ]
       },
-      "color": "#88971a",
-      "accent": "#c4d453",
+      "color": "#30a66f",
+      "accent": "#84d6b0",
       "letterboxd_url": "https://letterboxd.com/film/weapons-2025/",
       "letterboxd_rating": 3.59
     },
@@ -12850,8 +12928,8 @@
           }
         ]
       },
-      "color": "#8a219f",
-      "accent": "#c168d3",
+      "color": "#97391a",
+      "accent": "#d47353",
       "letterboxd_url": "https://letterboxd.com/film/haxan/",
       "letterboxd_rating": 4.04
     },
@@ -12878,8 +12956,8 @@
           }
         ]
       },
-      "color": "#30a66f",
-      "accent": "#84d6b0",
+      "color": "#21279f",
+      "accent": "#686dd3",
       "letterboxd_url": "https://letterboxd.com/film/cube/",
       "letterboxd_rating": 3.27
     },
@@ -12906,8 +12984,8 @@
           }
         ]
       },
-      "color": "#97391a",
-      "accent": "#d47353"
+      "color": "#57a630",
+      "accent": "#9fd684"
     },
     {
       "id": "the-zone-of-interest",
@@ -12932,8 +13010,8 @@
           }
         ]
       },
-      "color": "#21279f",
-      "accent": "#686dd3",
+      "color": "#971a69",
+      "accent": "#d453a4",
       "letterboxd_url": "https://letterboxd.com/film/the-zone-of-interest/",
       "letterboxd_rating": 3.86
     },
@@ -12960,8 +13038,8 @@
           }
         ]
       },
-      "color": "#57a630",
-      "accent": "#9fd684"
+      "color": "#21959f",
+      "accent": "#68cad3"
     },
     {
       "id": "a-tale-of-winter",
@@ -12989,8 +13067,8 @@
           }
         ]
       },
-      "color": "#971a69",
-      "accent": "#d453a4",
+      "color": "#a68d30",
+      "accent": "#d6c584",
       "letterboxd_url": "https://letterboxd.com/film/a-tale-of-winter/",
       "letterboxd_rating": 3.86
     },
@@ -13020,8 +13098,8 @@
           }
         ]
       },
-      "color": "#21959f",
-      "accent": "#68cad3",
+      "color": "#581a97",
+      "accent": "#9353d4",
       "letterboxd_url": "https://letterboxd.com/film/its-a-wonderful-life/",
       "letterboxd_rating": 4.44
     },
@@ -13051,8 +13129,8 @@
           }
         ]
       },
-      "color": "#a68d30",
-      "accent": "#d6c584",
+      "color": "#219f3b",
+      "accent": "#68d37e",
       "letterboxd_url": "https://letterboxd.com/film/die-hard/",
       "letterboxd_rating": 4.05
     }
