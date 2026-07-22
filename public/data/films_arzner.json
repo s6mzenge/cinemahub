@@ -1,7 +1,42 @@
 {
-  "scraped_at": "2026-07-22T18:02:41.795042+00:00",
+  "scraped_at": "2026-07-22T18:34:12.694082+00:00",
   "source": "thearzner.com",
   "films": [
+    {
+      "id": "rosebush-pruning-211847",
+      "title": "Rosebush Pruning",
+      "rating": "18",
+      "runtime": 95,
+      "genre": "New Release",
+      "description": "In a Spanish villa, American siblings Jack, Ed, Anna and Robert wallow in isolation and their inherited fortune. When Jack wants to move in with his girlfriend and Ed uncovers the truth about their mother’s death, the fabric of the family begins to unravel.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=211847",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/211844.jpg",
+      "showtimes": {
+        "2026-07-22": [
+          {
+            "time": "16:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223239.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ],
+        "2026-07-23": [
+          {
+            "time": "14:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223234.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": true,
+            "tags": [
+              "CC"
+            ]
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
+      "letterboxd_url": "https://letterboxd.com/film/rosebush-pruning/",
+      "letterboxd_rating": 2.69
+    },
     {
       "id": "the-serpent-s-skin-211906",
       "title": "The Serpent's Skin",
@@ -29,8 +64,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-serpents-skin/",
       "letterboxd_rating": 3.11
     },
@@ -56,8 +91,8 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/shes-the-he/",
       "letterboxd_rating": 3.68
     },
@@ -86,37 +121,10 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/a-year-in-london/",
-      "letterboxd_rating": null
-    },
-    {
-      "id": "rosebush-pruning-211847",
-      "title": "Rosebush Pruning",
-      "rating": "18",
-      "runtime": 95,
-      "genre": "New Release",
-      "description": "In a Spanish villa, American siblings Jack, Ed, Anna and Robert wallow in isolation and their inherited fortune. When Jack wants to move in with his girlfriend and Ed uncovers the truth about their mother’s death, the fabric of the family begins to unravel.",
-      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=211847",
-      "poster_url": "https://images.savoysystems.co.uk/TAL/211844.jpg",
-      "showtimes": {
-        "2026-07-23": [
-          {
-            "time": "14:45",
-            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223234.TcsSection_963",
-            "screen": "Screening Room",
-            "hoh": true,
-            "tags": [
-              "CC"
-            ]
-          }
-        ]
-      },
       "color": "#d81b60",
       "accent": "#ff6090",
-      "letterboxd_url": "https://letterboxd.com/film/rosebush-pruning/",
-      "letterboxd_rating": 2.69
+      "letterboxd_url": "https://letterboxd.com/film/a-year-in-london/",
+      "letterboxd_rating": null
     },
     {
       "id": "uk-premiere-a-deeper-love-the-story-of-miss-peppermint-intro-219601",
@@ -1270,6 +1278,32 @@
       "accent": "#d684bb"
     },
     {
+      "id": "cinema-in-the-square-the-birdcage-30th-anniversary-cc-25133",
+      "title": "Cinema in the Square: The Birdcage (30th Anniversary) (CC)",
+      "rating": "15",
+      "runtime": 119,
+      "genre": "Outdoor Cinema",
+      "description": "This is a closed captioned screening.  Cinema in the Square is The Arzner's outdoor queer cinema event. Cinema in the Square takes place across the last three weekends of August, including Bank Holiday Monday on the 31st. From Madonna to Mary Poppins, we have 28 queer & queer-adjacent films for you …",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=25133",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/229227.jpg",
+      "showtimes": {
+        "2026-08-16": [
+          {
+            "time": "17:30",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_229236.TcsSection_225254",
+            "screen": "Outdoor Cinema",
+            "hoh": true,
+            "tags": [
+              "Outdoor Cinema",
+              "CC"
+            ]
+          }
+        ]
+      },
+      "color": "#1a9297",
+      "accent": "#53cfd4"
+    },
+    {
       "id": "cinema-in-the-square-mulan-226289",
       "title": "Cinema in the Square: Mulan",
       "rating": "U",
@@ -1291,8 +1325,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "cinema-in-the-square-bend-it-like-beckham-226292",
@@ -1316,8 +1350,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868"
+      "color": "#6530a6",
+      "accent": "#a984d6"
     },
     {
       "id": "cinema-in-the-square-gala-screening-the-last-guest-at-the-holloway-motel-q-a-226293",
@@ -1341,8 +1375,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6"
+      "color": "#1a972f",
+      "accent": "#53d468"
     },
     {
       "id": "cinema-in-the-square-madonna-the-confessions-tour-confessions-ii-205462",
@@ -1366,8 +1400,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468"
+      "color": "#9f2132",
+      "accent": "#d36876"
     },
     {
       "id": "cinema-in-the-square-lilo-stitch-226329",
@@ -1391,8 +1425,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "cinema-in-the-square-bugsy-malone-50th-anniversary-219499",
@@ -1416,8 +1450,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6"
+      "color": "#73971a",
+      "accent": "#afd453"
     },
     {
       "id": "cinema-in-the-square-red-white-royal-blue-168535",
@@ -1441,8 +1475,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "cinema-in-the-square-spy-kids-25th-anniversary-cc-228924",
@@ -1467,8 +1501,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "cinema-in-the-square-labyrinth-40th-anniversary-32279",
@@ -1492,8 +1526,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be"
+      "color": "#974e1a",
+      "accent": "#d48853"
     },
     {
       "id": "cinema-in-the-square-mean-girls-226326",
@@ -1517,8 +1551,8 @@
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853"
+      "color": "#31219f",
+      "accent": "#7568d3"
     },
     {
       "id": "cinema-in-the-square-cabaret-6671",
@@ -1542,8 +1576,8 @@
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3"
+      "color": "#44a630",
+      "accent": "#92d684"
     },
     {
       "id": "cinema-in-the-square-the-spongebob-squarepants-movie-45196",
@@ -1567,8 +1601,8 @@
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#971a54",
+      "accent": "#d4538f"
     },
     {
       "id": "cinema-in-the-square-pitch-perfect-226337",
@@ -1592,8 +1626,8 @@
           }
         ]
       },
-      "color": "#971a54",
-      "accent": "#d4538f"
+      "color": "#21809f",
+      "accent": "#68b9d3"
     },
     {
       "id": "cinema-in-the-square-the-matrix-36014",
@@ -1617,8 +1651,8 @@
           }
         ]
       },
-      "color": "#21809f",
-      "accent": "#68b9d3"
+      "color": "#a6a030",
+      "accent": "#d6d284"
     },
     {
       "id": "cinema-in-the-square-shiva-baby-cc-226269",
@@ -1643,8 +1677,8 @@
           }
         ]
       },
-      "color": "#a6a030",
-      "accent": "#d6d284"
+      "color": "#6d1a97",
+      "accent": "#a853d4"
     }
   ]
 }
