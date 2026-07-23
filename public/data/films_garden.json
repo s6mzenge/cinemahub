@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-23T14:05:33.939024+00:00",
+  "scraped_at": "2026-07-23T14:35:35.704942+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
     {
@@ -2034,7 +2034,8 @@
             "hoh": false,
             "tags": [
               "Intro"
-            ]
+            ],
+            "sold_out": true
           }
         ]
       },
@@ -2564,6 +2565,31 @@
       "accent": "#84b1d6"
     },
     {
+      "id": "glastonbury-the-movie-30th-anniversary-cut",
+      "title": "Glastonbury The Movie: 30th anniversary cut",
+      "rating": "12A",
+      "runtime": 88,
+      "genre": "Other",
+      "year": "1993",
+      "director": "Robin Mahoney",
+      "cast": null,
+      "description": "The year is 1993. The BBC cameras haven’t arrived yet. A hundred thousand people are in a Somerset field, completely unobserved,…",
+      "film_url": "https://www.thegardencinema.co.uk/film/glastonbury-the-movie-30th-anniversary-cut/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5917053.jpg",
+      "showtimes": {
+        "2026-08-08": [
+          {
+            "time": "16:15",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5917068.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#83971a",
+      "accent": "#bfd453"
+    },
+    {
       "id": "the-awful-truth",
       "title": "The Awful Truth",
       "rating": "U",
@@ -2588,8 +2614,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#83971a",
-      "accent": "#bfd453",
+      "color": "#8f219f",
+      "accent": "#c568d3",
       "letterboxd_url": "https://letterboxd.com/film/the-awful-truth/",
       "letterboxd_rating": 3.88
     },
@@ -2621,8 +2647,8 @@
       "seasons": [
         "Chinese Cinema Project"
       ],
-      "color": "#8f219f",
-      "accent": "#c568d3",
+      "color": "#30a674",
+      "accent": "#84d6b3",
       "letterboxd_url": "https://letterboxd.com/film/we-were-smart/",
       "letterboxd_rating": 3.72
     },
@@ -2651,8 +2677,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#30a674",
-      "accent": "#84d6b3",
+      "color": "#973e1a",
+      "accent": "#d47853",
       "letterboxd_url": "https://letterboxd.com/film/to-be-or-not-to-be/",
       "letterboxd_rating": 4.33
     },
@@ -2681,8 +2707,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#973e1a",
-      "accent": "#d47853",
+      "color": "#21229f",
+      "accent": "#6869d3",
       "letterboxd_url": "https://letterboxd.com/film/an-autumns-tale/",
       "letterboxd_rating": 3.8
     },
@@ -2711,8 +2737,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#21229f",
-      "accent": "#6869d3",
+      "color": "#53a630",
+      "accent": "#9cd684",
       "letterboxd_url": "https://letterboxd.com/film/eight-taels-of-gold/",
       "letterboxd_rating": 3.69
     },
@@ -2742,8 +2768,8 @@
         "Summertime Sadness 2026"
       ],
       "partner": "Zodiac Film Club",
-      "color": "#53a630",
-      "accent": "#9cd684",
+      "color": "#971a64",
+      "accent": "#d4539f",
       "letterboxd_url": "https://letterboxd.com/film/the-swimmer/",
       "letterboxd_rating": 4.05
     },
@@ -2775,8 +2801,8 @@
       "seasons": [
         "Members' Events"
       ],
-      "color": "#971a64",
-      "accent": "#d4539f"
+      "color": "#21909f",
+      "accent": "#68c6d3"
     },
     {
       "id": "bringing-up-baby",
@@ -2806,8 +2832,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#21909f",
-      "accent": "#68c6d3",
+      "color": "#a69130",
+      "accent": "#d6c884",
       "letterboxd_url": "https://letterboxd.com/film/bringing-up-baby/",
       "letterboxd_rating": 4.01
     },
@@ -2840,8 +2866,8 @@
         "Screwball Summer",
         "Members' Events"
       ],
-      "color": "#a69130",
-      "accent": "#d6c884"
+      "color": "#5d1a97",
+      "accent": "#9853d4"
     },
     {
       "id": "muppet-treasure-island",
@@ -2893,8 +2919,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#5d1a97",
-      "accent": "#9853d4",
+      "color": "#219f40",
+      "accent": "#68d382",
       "letterboxd_url": "https://letterboxd.com/film/muppet-treasure-island/",
       "letterboxd_rating": 3.59
     },
@@ -2926,8 +2952,8 @@
       "seasons": [
         "Select Japan"
       ],
-      "color": "#219f40",
-      "accent": "#68d382",
+      "color": "#a63035",
+      "accent": "#d68488",
       "letterboxd_url": "https://letterboxd.com/film/the-taste-of-tea/",
       "letterboxd_rating": 4.2
     },
@@ -2959,8 +2985,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#a63035",
-      "accent": "#d68488",
+      "color": "#1a4597",
+      "accent": "#537fd4",
       "letterboxd_url": "https://letterboxd.com/film/autumn-moon/",
       "letterboxd_rating": 3.72
     },
@@ -2989,8 +3015,8 @@
           }
         ]
       },
-      "color": "#1a4597",
-      "accent": "#537fd4",
+      "color": "#719f21",
+      "accent": "#acd368",
       "letterboxd_url": "https://letterboxd.com/film/the-alcohol-years/",
       "letterboxd_rating": null
     },
@@ -3022,8 +3048,8 @@
       "seasons": [
         "Fruits on Film"
       ],
-      "color": "#719f21",
-      "accent": "#acd368"
+      "color": "#a6309d",
+      "accent": "#d684d0"
     },
     {
       "id": "summer-school-2001",
@@ -3050,8 +3076,8 @@
           }
         ]
       },
-      "color": "#a6309d",
-      "accent": "#d684d0",
+      "color": "#1a977c",
+      "accent": "#53d4b8",
       "letterboxd_url": "https://letterboxd.com/film/summer-school-2001/",
       "letterboxd_rating": 3.7
     },
@@ -3083,8 +3109,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#1a977c",
-      "accent": "#53d4b8",
+      "color": "#9f5f21",
+      "accent": "#d39d68",
       "letterboxd_url": "https://letterboxd.com/film/the-palm-beach-story/",
       "letterboxd_rating": 3.81
     },
@@ -3116,8 +3142,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#9f5f21",
-      "accent": "#d39d68"
+      "color": "#4730a6",
+      "accent": "#9484d6"
     },
     {
       "id": "made-in-hong-kong-2",
@@ -3147,8 +3173,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#4730a6",
-      "accent": "#9484d6",
+      "color": "#26971a",
+      "accent": "#5fd453",
       "letterboxd_url": "https://letterboxd.com/film/made-in-hong-kong/",
       "letterboxd_rating": 4.12
     },
@@ -3180,8 +3206,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#26971a",
-      "accent": "#5fd453",
+      "color": "#9f2152",
+      "accent": "#d36891",
       "letterboxd_url": "https://letterboxd.com/film/all-about-ah-long/",
       "letterboxd_rating": 3.58
     },
@@ -3213,8 +3239,8 @@
       "seasons": [
         "Fruits on Film"
       ],
-      "color": "#9f2152",
-      "accent": "#d36891",
+      "color": "#307fa6",
+      "accent": "#84bbd6",
       "letterboxd_url": "https://letterboxd.com/film/new-wave-1983/",
       "letterboxd_rating": 3.56
     },
@@ -3243,8 +3269,8 @@
       "seasons": [
         "Members' Summer Selection 2026"
       ],
-      "color": "#307fa6",
-      "accent": "#84bbd6",
+      "color": "#93971a",
+      "accent": "#cfd453",
       "letterboxd_url": "https://letterboxd.com/film/burning-2018/",
       "letterboxd_rating": 4.03
     },
@@ -3277,8 +3303,8 @@
         "Devils and Shamans: The Films of Andrzej Żuławski",
         "Members' Events"
       ],
-      "color": "#93971a",
-      "accent": "#cfd453"
+      "color": "#7f219f",
+      "accent": "#b768d3"
     },
     {
       "id": "monsieur-hulots-holiday",
@@ -3330,8 +3356,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#7f219f",
-      "accent": "#b768d3",
+      "color": "#30a665",
+      "accent": "#84d6a9",
       "letterboxd_url": "https://letterboxd.com/film/monsieur-hulots-holiday/",
       "letterboxd_rating": 3.73
     },
@@ -3360,8 +3386,8 @@
           }
         ]
       },
-      "color": "#30a665",
-      "accent": "#84d6a9",
+      "color": "#972e1a",
+      "accent": "#d46753",
       "letterboxd_url": "https://letterboxd.com/film/lady-in-a-jam/",
       "letterboxd_rating": 3.22
     },
@@ -3415,8 +3441,8 @@
       "seasons": [
         "Devils and Shamans: The Films of Andrzej Żuławski"
       ],
-      "color": "#972e1a",
-      "accent": "#d46753",
+      "color": "#21329f",
+      "accent": "#6877d3",
       "letterboxd_url": "https://letterboxd.com/film/on-the-silver-globe/",
       "letterboxd_rating": 4.03
     },
@@ -3446,8 +3472,8 @@
         ]
       },
       "partner": "The Fashion Film Club",
-      "color": "#21329f",
-      "accent": "#6877d3",
+      "color": "#62a630",
+      "accent": "#a7d684",
       "letterboxd_url": "https://letterboxd.com/film/niagara/",
       "letterboxd_rating": 3.43
     },
@@ -3498,8 +3524,8 @@
       "seasons": [
         "Devils and Shamans: The Films of Andrzej Żuławski"
       ],
-      "color": "#62a630",
-      "accent": "#a7d684"
+      "color": "#971a74",
+      "accent": "#d453af"
     },
     {
       "id": "swimming-pool",
@@ -3527,8 +3553,8 @@
         "Summertime Sadness 2026"
       ],
       "partner": "Zodiac Film Club",
-      "color": "#971a74",
-      "accent": "#d453af",
+      "color": "#219f9e",
+      "accent": "#68d3d2",
       "letterboxd_url": "https://letterboxd.com/film/swimming-pool/",
       "letterboxd_rating": 3.45
     },
@@ -3582,8 +3608,8 @@
       "seasons": [
         "Devils and Shamans: The Films of Andrzej Żuławski"
       ],
-      "color": "#219f9e",
-      "accent": "#68d3d2",
+      "color": "#a68230",
+      "accent": "#d6bd84",
       "letterboxd_url": "https://letterboxd.com/film/the-devil-1972/",
       "letterboxd_rating": 3.85
     },
@@ -3615,8 +3641,8 @@
       "seasons": [
         "Fruits on Film"
       ],
-      "color": "#a68230",
-      "accent": "#d6bd84",
+      "color": "#4d1a97",
+      "accent": "#8753d4",
       "letterboxd_url": "https://letterboxd.com/film/by-hook-or-by-crook/",
       "letterboxd_rating": 3.74
     },
@@ -3667,8 +3693,8 @@
       "seasons": [
         "Devils and Shamans: The Films of Andrzej Żuławski"
       ],
-      "color": "#4d1a97",
-      "accent": "#8753d4",
+      "color": "#219f30",
+      "accent": "#68d375",
       "letterboxd_url": "https://letterboxd.com/film/szamanka/",
       "letterboxd_rating": 3.55
     },
@@ -3722,8 +3748,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#219f30",
-      "accent": "#68d375"
+      "color": "#a63044",
+      "accent": "#d68493"
     },
     {
       "id": "indy-film-library",
@@ -3750,8 +3776,8 @@
           }
         ]
       },
-      "color": "#a63044",
-      "accent": "#d68493"
+      "color": "#1a5597",
+      "accent": "#538fd4"
     },
     {
       "id": "kino-industry-session-an-invitation-to-collaborate",
@@ -3779,8 +3805,8 @@
         "Kino London Short Film Festival 2026"
       ],
       "partner": "Kino Short Film",
-      "color": "#1a5597",
-      "accent": "#538fd4"
+      "color": "#819f21",
+      "accent": "#b9d368"
     },
     {
       "id": "kino-london-short-film-festival-the-doc-block",
@@ -3811,8 +3837,8 @@
         "Kino London Short Film Festival 2026"
       ],
       "partner": "Kino Short Film",
-      "color": "#819f21",
-      "accent": "#b9d368"
+      "color": "#9f30a6",
+      "accent": "#d184d6"
     },
     {
       "id": "the-third-part-of-the-night",
@@ -3858,8 +3884,8 @@
       "seasons": [
         "Devils and Shamans: The Films of Andrzej Żuławski"
       ],
-      "color": "#9f30a6",
-      "accent": "#d184d6",
+      "color": "#1a976c",
+      "accent": "#53d4a7",
       "letterboxd_url": "https://letterboxd.com/film/the-third-part-of-the-night/",
       "letterboxd_rating": 3.86
     },
@@ -3892,8 +3918,8 @@
         "Kino London Short Film Festival 2026"
       ],
       "partner": "Kino Short Film",
-      "color": "#1a976c",
-      "accent": "#53d4a7"
+      "color": "#9f4f21",
+      "accent": "#d38f68"
     },
     {
       "id": "kino-industry-session-from-short-film-to-streaming-revenue",
@@ -3924,8 +3950,8 @@
         "Kino London Short Film Festival 2026"
       ],
       "partner": "Kino Short Film",
-      "color": "#9f4f21",
-      "accent": "#d38f68"
+      "color": "#3830a6",
+      "accent": "#8a84d6"
     },
     {
       "id": "kino-london-short-film-festival-she-shoots",
@@ -3956,8 +3982,8 @@
         "Kino London Short Film Festival 2026"
       ],
       "partner": "Kino Short Film",
-      "color": "#3830a6",
-      "accent": "#8a84d6"
+      "color": "#36971a",
+      "accent": "#6fd453"
     },
     {
       "id": "kino-london-short-film-festival-dystopian-future",
@@ -3988,8 +4014,8 @@
         "Kino London Short Film Festival 2026"
       ],
       "partner": "Kino Short Film",
-      "color": "#36971a",
-      "accent": "#6fd453"
+      "color": "#9f2162",
+      "accent": "#d3689f"
     },
     {
       "id": "that-most-important-thing-love",
@@ -4035,8 +4061,8 @@
       "seasons": [
         "Devils and Shamans: The Films of Andrzej Żuławski"
       ],
-      "color": "#9f2162",
-      "accent": "#d3689f",
+      "color": "#308ea6",
+      "accent": "#84c6d6",
       "letterboxd_url": "https://letterboxd.com/film/that-most-important-thing-love/",
       "letterboxd_rating": 3.7
     },
@@ -4073,8 +4099,8 @@
       "seasons": [
         "Devils and Shamans: The Films of Andrzej Żuławski"
       ],
-      "color": "#308ea6",
-      "accent": "#84c6d6"
+      "color": "#978b1a",
+      "accent": "#d4c853"
     },
     {
       "id": "rio",
@@ -4115,8 +4141,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#978b1a",
-      "accent": "#d4c853",
+      "color": "#6f219f",
+      "accent": "#aa68d3",
       "letterboxd_url": "https://letterboxd.com/film/rio-2011/",
       "letterboxd_rating": 3.53
     },
@@ -4153,8 +4179,8 @@
       "seasons": [
         "Devils and Shamans: The Films of Andrzej Żuławski"
       ],
-      "color": "#6f219f",
-      "accent": "#aa68d3",
+      "color": "#30a656",
+      "accent": "#84d69e",
       "letterboxd_url": "https://letterboxd.com/film/cosmos-2015/",
       "letterboxd_rating": 3.4
     },
@@ -4186,8 +4212,8 @@
       "seasons": [
         "Greek Salad"
       ],
-      "color": "#30a656",
-      "accent": "#84d69e"
+      "color": "#971e1a",
+      "accent": "#d45753"
     },
     {
       "id": "reverie-cineclub-presents-80-years-of-defa-animated-short-films-for-the-family",
@@ -4229,8 +4255,8 @@
         "Films for the Family"
       ],
       "partner": "Reverie Cineclub",
-      "color": "#971e1a",
-      "accent": "#d45753"
+      "color": "#21429f",
+      "accent": "#6884d3"
     },
     {
       "id": "a-blonde-in-love",
@@ -4260,8 +4286,8 @@
       "seasons": [
         "Celebrating 75 Years of Contemporary Films"
       ],
-      "color": "#21429f",
-      "accent": "#6884d3"
+      "color": "#71a630",
+      "accent": "#b1d684"
     },
     {
       "id": "possession",
@@ -4302,8 +4328,8 @@
       "seasons": [
         "Devils and Shamans: The Films of Andrzej Żuławski"
       ],
-      "color": "#71a630",
-      "accent": "#b1d684",
+      "color": "#971a84",
+      "accent": "#d453c0",
       "letterboxd_url": "https://letterboxd.com/film/possession/",
       "letterboxd_rating": 4.03
     },
@@ -4346,8 +4372,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#971a84",
-      "accent": "#d453c0",
+      "color": "#219f8e",
+      "accent": "#68d3c4",
       "letterboxd_url": "https://letterboxd.com/film/free-willy/",
       "letterboxd_rating": 3.05
     },
@@ -4379,8 +4405,8 @@
       "seasons": [
         "Celebrating 75 Years of Contemporary Films"
       ],
-      "color": "#219f8e",
-      "accent": "#68d3c4"
+      "color": "#a67330",
+      "accent": "#d6b384"
     },
     {
       "id": "harry-and-the-hendersons",
@@ -4421,8 +4447,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#a67330",
-      "accent": "#d6b384",
+      "color": "#3d1a97",
+      "accent": "#7753d4",
       "letterboxd_url": "https://letterboxd.com/film/harry-and-the-hendersons/",
       "letterboxd_rating": 3.03
     },
@@ -4454,8 +4480,8 @@
       "seasons": [
         "Celebrating 75 Years of Contemporary Films"
       ],
-      "color": "#3d1a97",
-      "accent": "#7753d4",
+      "color": "#239f21",
+      "accent": "#6ad368",
       "letterboxd_url": "https://letterboxd.com/film/the-spirit-of-the-beehive/",
       "letterboxd_rating": 4.16
     },
@@ -4495,8 +4521,8 @@
       "seasons": [
         "Devils and Shamans: The Films of Andrzej Żuławski"
       ],
-      "color": "#239f21",
-      "accent": "#6ad368"
+      "color": "#a63054",
+      "accent": "#d6849d"
     },
     {
       "id": "video-bazaar-presents-possession-north-american-cut",
@@ -4527,8 +4553,8 @@
         "Devils and Shamans: The Films of Andrzej Żuławski"
       ],
       "partner": "Video Bazaar",
-      "color": "#a63054",
-      "accent": "#d6849d"
+      "color": "#1a6597",
+      "accent": "#53a0d4"
     },
     {
       "id": "john-the-violent",
@@ -4558,8 +4584,8 @@
       "seasons": [
         "Greek Salad"
       ],
-      "color": "#1a6597",
-      "accent": "#53a0d4",
+      "color": "#919f21",
+      "accent": "#c7d368",
       "letterboxd_url": "https://letterboxd.com/film/john-the-violent/",
       "letterboxd_rating": 3.68
     }
