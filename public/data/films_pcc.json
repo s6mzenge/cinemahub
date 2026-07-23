@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-23T09:33:30.184206+00:00",
+  "scraped_at": "2026-07-23T10:03:37.677173+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
@@ -3497,6 +3497,17 @@
           {
             "time": "14:40",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627429",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K"
+            ]
+          }
+        ],
+        "2026-10-20": [
+          {
+            "time": "12:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627607",
             "screen": null,
             "hoh": false,
             "tags": [
@@ -12338,6 +12349,17 @@
               "35mm"
             ]
           }
+        ],
+        "2026-10-20": [
+          {
+            "time": "18:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627609",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
         ]
       },
       "color": "#97491a",
@@ -12636,6 +12658,14 @@
             "screen": null,
             "hoh": false
           }
+        ],
+        "2026-10-20": [
+          {
+            "time": "15:30",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627605",
+            "screen": null,
+            "hoh": false
+          }
         ]
       },
       "color": "#219f4b",
@@ -12842,6 +12872,17 @@
               "35mm"
             ]
           }
+        ],
+        "2026-10-20": [
+          {
+            "time": "18:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627604",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
         ]
       },
       "color": "#1a9788",
@@ -12985,6 +13026,17 @@
           {
             "time": "20:30",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627482",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K"
+            ]
+          }
+        ],
+        "2026-10-20": [
+          {
+            "time": "15:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627608",
             "screen": null,
             "hoh": false,
             "tags": [
@@ -13919,6 +13971,63 @@
       "accent": "#d6ba84"
     },
     {
+      "id": "carrie",
+      "title": "Carrie",
+      "rating": "18",
+      "runtime": 99,
+      "genre": "Horror",
+      "year": "1976",
+      "country": null,
+      "director": "Brian De Palma",
+      "cast": "Sissy Spacek, Piper Laurie, Amy Irving",
+      "description": "In this chilling adaptation of Stephen King's horror novel, withdrawn and sensitive teen Carrie White (Sissy Spacek) faces taunting from classmates at school and abuse from her fanatically pious mother (Piper Laurie) at home. When strange occurrences start happening around Carrie, she begins to suspect that she has supernatural powers. Invited to the prom by the empathetic Tommy Ross (William Katt), Carrie tries to let her guard down, but things eventually take a dark and violent turn.",
+      "film_url": "https://princecharlescinema.com/film/618697/carrie",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/618697.jpg",
+      "showtimes": {
+        "2026-10-20": [
+          {
+            "time": "13:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627606",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#481a97",
+      "accent": "#8353d4",
+      "letterboxd_url": "https://letterboxd.com/film/carrie-1976/",
+      "letterboxd_rating": 3.84
+    },
+    {
+      "id": "seven",
+      "title": "Seven",
+      "rating": "18",
+      "runtime": 127,
+      "genre": "Crime / Thriller",
+      "year": "1995",
+      "country": null,
+      "director": "David Fincher",
+      "cast": "Morgan Freeman, Brad Pitt, John Doe",
+      "description": "GLUTTONY. GREED. SLOTH. WRATH. PRIDE. LUST. ENVY.Two cops (Brad Pitt and Morgan Freeman) track a brilliant and elusive killer who orchestrates a string of horrific murders, each kill targeting a practitioner of one of the Seven Deadly Sins. Gwyneth Paltrow also stars in this acclaimed thriller set in a dour, drizzly city sick with pain and blight. David Fincher (Fight Club, Zodiac, The Curious Case of Benjamin Button) guides the action - physical, mental and spiritual - with a sure understanding of what terrifies us, right up to a stunning denouement that will rip the scar tissue off the most hardened soul.The 4K restoration of “Se7en” was completed at Warner Bros. Discovery’s Motion Picture Imaging and sourced from the original camera negative. The restoration was overseen by David Fincher.",
+      "film_url": "https://princecharlescinema.com/film/1578578/seven",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/1578578.jpg",
+      "showtimes": {
+        "2026-10-20": [
+          {
+            "time": "20:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627603",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#219f2b",
+      "accent": "#68d371"
+    },
+    {
       "id": "halloween-iii-season-of-the-witch",
       "title": "Halloween III: Season of the Witch",
       "rating": "15",
@@ -13941,8 +14050,8 @@
           }
         ]
       },
-      "color": "#481a97",
-      "accent": "#8353d4",
+      "color": "#a63049",
+      "accent": "#d68496",
       "letterboxd_url": "https://letterboxd.com/film/halloween-iii-season-of-the-witch/",
       "letterboxd_rating": 2.83
     },
@@ -13972,8 +14081,8 @@
           }
         ]
       },
-      "color": "#219f2b",
-      "accent": "#68d371",
+      "color": "#1a5997",
+      "accent": "#5394d4",
       "letterboxd_url": "https://letterboxd.com/film/haxan/",
       "letterboxd_rating": 4.04
     },
@@ -14000,8 +14109,8 @@
           }
         ]
       },
-      "color": "#a63049",
-      "accent": "#d68496",
+      "color": "#869f21",
+      "accent": "#bdd368",
       "letterboxd_url": "https://letterboxd.com/film/cube/",
       "letterboxd_rating": 3.27
     },
@@ -14028,8 +14137,8 @@
           }
         ]
       },
-      "color": "#1a5997",
-      "accent": "#5394d4"
+      "color": "#9b30a6",
+      "accent": "#ce84d6"
     },
     {
       "id": "the-zone-of-interest",
@@ -14054,8 +14163,8 @@
           }
         ]
       },
-      "color": "#869f21",
-      "accent": "#bdd368",
+      "color": "#1a9768",
+      "accent": "#53d4a3",
       "letterboxd_url": "https://letterboxd.com/film/the-zone-of-interest/",
       "letterboxd_rating": 3.86
     },
@@ -14082,8 +14191,8 @@
           }
         ]
       },
-      "color": "#9b30a6",
-      "accent": "#ce84d6"
+      "color": "#9f4b21",
+      "accent": "#d38b68"
     },
     {
       "id": "a-tale-of-winter",
@@ -14111,8 +14220,8 @@
           }
         ]
       },
-      "color": "#1a9768",
-      "accent": "#53d4a3",
+      "color": "#3430a6",
+      "accent": "#8784d6",
       "letterboxd_url": "https://letterboxd.com/film/a-tale-of-winter/",
       "letterboxd_rating": 3.86
     },
@@ -14142,8 +14251,8 @@
           }
         ]
       },
-      "color": "#9f4b21",
-      "accent": "#d38b68",
+      "color": "#3a971a",
+      "accent": "#74d453",
       "letterboxd_url": "https://letterboxd.com/film/its-a-wonderful-life/",
       "letterboxd_rating": 4.44
     },
@@ -14173,8 +14282,8 @@
           }
         ]
       },
-      "color": "#3430a6",
-      "accent": "#8784d6",
+      "color": "#9f2166",
+      "accent": "#d368a3",
       "letterboxd_url": "https://letterboxd.com/film/die-hard/",
       "letterboxd_rating": 4.05
     }
