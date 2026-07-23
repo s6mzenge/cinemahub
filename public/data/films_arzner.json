@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-23T17:04:48.689347+00:00",
+  "scraped_at": "2026-07-23T17:38:47.915207+00:00",
   "source": "thearzner.com",
   "films": [
     {
@@ -14,6 +14,12 @@
       "showtimes": {
         "2026-07-23": [
           {
+            "time": "12:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223244.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          },
+          {
             "time": "18:30",
             "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223232.TcsSection_963",
             "screen": "Screening Room",
@@ -25,6 +31,57 @@
       "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/a-year-in-london/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "rosebush-pruning-211847",
+      "title": "Rosebush Pruning",
+      "rating": "18",
+      "runtime": 95,
+      "genre": "New Release",
+      "description": "In a Spanish villa, American siblings Jack, Ed, Anna and Robert wallow in isolation and their inherited fortune. When Jack wants to move in with his girlfriend and Ed uncovers the truth about their mother’s death, the fabric of the family begins to unravel.",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=211847",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/211844.jpg",
+      "showtimes": {
+        "2026-07-23": [
+          {
+            "time": "14:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223234.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": true,
+            "tags": [
+              "CC"
+            ]
+          }
+        ]
+      },
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/rosebush-pruning/",
+      "letterboxd_rating": 2.69
+    },
+    {
+      "id": "the-serpent-s-skin-211906",
+      "title": "The Serpent's Skin",
+      "rating": "18",
+      "runtime": 83,
+      "genre": "New Release",
+      "description": "Two young women form a romantic bond after discovering they have supernatural powers. Their insecurities unknowingly release a demon, which possesses one of their exes and begins feeding on their friends. As the bodies pile up, it becomes up to the women to face their pasts and stop the growing evil…",
+      "film_url": "https://thearzner.com/TheArzner.dll/WhatsOn?f=211906",
+      "poster_url": "https://images.savoysystems.co.uk/TAL/211903.jpg",
+      "showtimes": {
+        "2026-07-23": [
+          {
+            "time": "16:45",
+            "booking_url": "https://thearzner.com/TheArzner.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_223233.TcsSection_963",
+            "screen": "Screening Room",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff",
+      "letterboxd_url": "https://letterboxd.com/film/the-serpents-skin/",
+      "letterboxd_rating": 3.11
     },
     {
       "id": "uk-premiere-a-deeper-love-the-story-of-miss-peppermint-intro-219601",
@@ -48,8 +105,8 @@
           }
         ]
       },
-      "color": "#e53935",
-      "accent": "#ff6f60",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/a-deeper-love-the-story-of-miss-peppermint/",
       "letterboxd_rating": null
     },
@@ -184,8 +241,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/a-deeper-love-the-story-of-miss-peppermint/",
       "letterboxd_rating": null
     },
@@ -381,8 +438,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/on-the-sea-2025/",
       "letterboxd_rating": 3.4
     },
@@ -541,8 +598,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/tomorrows-too-late/",
       "letterboxd_rating": null
     },
@@ -569,8 +626,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/teenage-sex-and-death-at-camp-miasma/",
       "letterboxd_rating": 3.9
     },
@@ -593,8 +650,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "color": "#00838f",
+      "accent": "#4dd0e1"
     },
     {
       "id": "annie-219623",
@@ -618,8 +675,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/annie-2/",
       "letterboxd_rating": null
     },
@@ -645,8 +702,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1"
+      "color": "#2e7d32",
+      "accent": "#66bb6a"
     },
     {
       "id": "london-trans-pride-tomorrow-s-too-late-224197",
@@ -667,8 +724,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae"
+      "color": "#ad1457",
+      "accent": "#f06292"
     },
     {
       "id": "london-trans-pride-afterglow-a-deeper-love-the-story-of-miss-peppermint-225127",
@@ -693,8 +750,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "london-trans-pride-afterglow-the-serpent-s-skin-225134",
@@ -718,8 +775,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#4e342e",
+      "accent": "#8d6e63"
     },
     {
       "id": "london-trans-pride-afterglow-tomorrow-s-too-late-225141",
@@ -743,8 +800,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c"
+      "color": "#0277bd",
+      "accent": "#4fc3f7"
     },
     {
       "id": "choose-what-you-pay-will-harper-223076",
@@ -768,8 +825,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63"
+      "color": "#558b2f",
+      "accent": "#9ccc65"
     },
     {
       "id": "tomorrow-s-too-late-q-a-225022",
@@ -790,8 +847,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
+      "color": "#9f2121",
+      "accent": "#d36868",
       "letterboxd_url": "https://letterboxd.com/film/tomorrows-too-late/",
       "letterboxd_rating": null
     },
@@ -817,8 +874,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65",
+      "color": "#3052a6",
+      "accent": "#849cd6",
       "letterboxd_url": "https://letterboxd.com/film/the-best-little-whorehouse-in-texas/",
       "letterboxd_rating": 3.51
     },
@@ -844,8 +901,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "mamma-mia-party-219952",
@@ -869,8 +926,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6"
+      "color": "#9f2190",
+      "accent": "#d368c6"
     },
     {
       "id": "glitter-25th-anniversary-229544",
@@ -894,8 +951,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#30a692",
+      "accent": "#84d6c8",
       "letterboxd_url": "https://letterboxd.com/film/glitter-2025/",
       "letterboxd_rating": null
     },
@@ -918,8 +975,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6"
+      "color": "#975e1a",
+      "accent": "#d49953"
     },
     {
       "id": "choose-what-you-pay-on-the-sea-226738",
@@ -940,8 +997,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#41219f",
+      "accent": "#8368d3"
     },
     {
       "id": "choose-what-you-pay-a-deeper-love-the-story-of-miss-peppermint-227189",
@@ -965,8 +1022,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#35a630",
+      "accent": "#88d684"
     },
     {
       "id": "preview-love-me-tender-176312",
@@ -990,8 +1047,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3",
+      "color": "#971a44",
+      "accent": "#d4537e",
       "letterboxd_url": "https://letterboxd.com/film/love-me-tender-2025/",
       "letterboxd_rating": 3.66
     },
@@ -1017,8 +1074,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684"
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "love-me-tender-227452",
@@ -1047,8 +1104,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e",
+      "color": "#9ca630",
+      "accent": "#cfd684",
       "letterboxd_url": "https://letterboxd.com/film/love-me-tender-2025/",
       "letterboxd_rating": 3.66
     },
@@ -1074,8 +1131,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3",
+      "color": "#7d1a97",
+      "accent": "#b953d4",
       "letterboxd_url": "https://letterboxd.com/film/black-burns-fast/",
       "letterboxd_rating": 3.57
     },
@@ -1101,8 +1158,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684"
+      "color": "#219f60",
+      "accent": "#68d39d"
     },
     {
       "id": "cinema-in-the-square-nimona-226250",
@@ -1126,8 +1183,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "cinema-in-the-square-mrs-doubtfire-226253",
@@ -1151,8 +1208,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#1a2597",
+      "accent": "#535ed4"
     },
     {
       "id": "cinema-in-the-square-kpop-demon-hunters-a-sing-a-long-event-226256",
@@ -1176,8 +1233,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "cinema-in-the-square-bottoms-46426",
@@ -1201,8 +1258,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#a6307e",
+      "accent": "#d684bb"
     },
     {
       "id": "cinema-in-the-square-scooby-doo-2-monsters-unleashed-dog-friendly-screening-229244",
@@ -1226,8 +1283,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368"
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     },
     {
       "id": "cinema-in-the-square-mary-poppins-226266",
@@ -1251,8 +1308,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "cinema-in-the-square-the-birdcage-30th-anniversary-cc-25133",
@@ -1277,8 +1334,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4"
+      "color": "#6530a6",
+      "accent": "#a984d6"
     },
     {
       "id": "cinema-in-the-square-hedwig-and-the-angry-inch-25th-anniversary-226334",
@@ -1302,8 +1359,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868"
+      "color": "#1a972f",
+      "accent": "#53d468"
     },
     {
       "id": "cinema-in-the-square-mulan-226289",
@@ -1327,8 +1384,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6"
+      "color": "#9f2132",
+      "accent": "#d36876"
     },
     {
       "id": "cinema-in-the-square-bend-it-like-beckham-cc-226292",
@@ -1353,8 +1410,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "cinema-in-the-square-gala-screening-the-last-guest-at-the-holloway-motel-q-a-226293",
@@ -1378,8 +1435,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#73971a",
+      "accent": "#afd453"
     },
     {
       "id": "cinema-in-the-square-madonna-the-confessions-tour-confessions-ii-205462",
@@ -1403,8 +1460,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "cinema-in-the-square-hairspray-226296",
@@ -1428,8 +1485,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "cinema-in-the-square-but-i-m-a-cheerleader-director-intro-12925",
@@ -1453,8 +1510,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#974e1a",
+      "accent": "#d48853"
     },
     {
       "id": "cinema-in-the-square-moonlight-10th-anniversary-cc-10575",
@@ -1479,8 +1536,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be"
+      "color": "#31219f",
+      "accent": "#7568d3"
     },
     {
       "id": "cinema-in-the-square-lilo-stitch-226329",
@@ -1504,8 +1561,8 @@
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853"
+      "color": "#44a630",
+      "accent": "#92d684"
     },
     {
       "id": "cinema-in-the-square-bugsy-malone-50th-anniversary-219499",
@@ -1529,8 +1586,8 @@
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3"
+      "color": "#971a54",
+      "accent": "#d4538f"
     },
     {
       "id": "cinema-in-the-square-red-white-royal-blue-168535",
@@ -1554,8 +1611,8 @@
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#21809f",
+      "accent": "#68b9d3"
     },
     {
       "id": "cinema-in-the-square-dress-up-screening-the-rocky-horror-picture-show-drag-intro-16178",
@@ -1579,8 +1636,8 @@
           }
         ]
       },
-      "color": "#971a54",
-      "accent": "#d4538f"
+      "color": "#a6a030",
+      "accent": "#d6d284"
     },
     {
       "id": "cinema-in-the-square-spy-kids-25th-anniversary-cc-228924",
@@ -1605,8 +1662,8 @@
           }
         ]
       },
-      "color": "#21809f",
-      "accent": "#68b9d3"
+      "color": "#6d1a97",
+      "accent": "#a853d4"
     },
     {
       "id": "cinema-in-the-square-labyrinth-40th-anniversary-32279",
@@ -1630,8 +1687,8 @@
           }
         ]
       },
-      "color": "#a6a030",
-      "accent": "#d6d284"
+      "color": "#219f50",
+      "accent": "#68d390"
     },
     {
       "id": "cinema-in-the-square-mean-girls-226326",
@@ -1655,8 +1712,8 @@
           }
         ]
       },
-      "color": "#6d1a97",
-      "accent": "#a853d4"
+      "color": "#a63930",
+      "accent": "#d68b84"
     },
     {
       "id": "cinema-in-the-square-cabaret-6671",
@@ -1680,8 +1737,8 @@
           }
         ]
       },
-      "color": "#219f50",
-      "accent": "#68d390"
+      "color": "#1a3597",
+      "accent": "#536ed4"
     },
     {
       "id": "cinema-in-the-square-the-spongebob-squarepants-movie-45196",
@@ -1705,8 +1762,8 @@
           }
         ]
       },
-      "color": "#a63930",
-      "accent": "#d68b84"
+      "color": "#619f21",
+      "accent": "#9ed368"
     },
     {
       "id": "cinema-in-the-square-pitch-perfect-226337",
@@ -1730,8 +1787,8 @@
           }
         ]
       },
-      "color": "#1a3597",
-      "accent": "#536ed4"
+      "color": "#a6308e",
+      "accent": "#d684c5"
     },
     {
       "id": "cinema-in-the-square-the-matrix-36014",
@@ -1755,8 +1812,8 @@
           }
         ]
       },
-      "color": "#619f21",
-      "accent": "#9ed368"
+      "color": "#1a978c",
+      "accent": "#53d4c8"
     },
     {
       "id": "cinema-in-the-square-shiva-baby-cc-226269",
@@ -1781,8 +1838,8 @@
           }
         ]
       },
-      "color": "#a6308e",
-      "accent": "#d684c5"
+      "color": "#9f7021",
+      "accent": "#d3aa68"
     },
     {
       "id": "gala-screening-blowie-q-a-229654",
@@ -1806,8 +1863,8 @@
           }
         ]
       },
-      "color": "#1a978c",
-      "accent": "#53d4c8"
+      "color": "#5630a6",
+      "accent": "#9f84d6"
     }
   ]
 }
