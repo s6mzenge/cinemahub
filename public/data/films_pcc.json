@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-23T12:33:36.465094+00:00",
+  "scraped_at": "2026-07-23T13:03:29.513500+00:00",
   "source": "princecharlescinema.com",
   "films": [
     {
@@ -1389,6 +1389,17 @@
           {
             "time": "15:30",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627616",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ],
+        "2026-10-28": [
+          {
+            "time": "12:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627672",
             "screen": null,
             "hoh": false,
             "tags": [
@@ -10334,6 +10345,14 @@
             "screen": null,
             "hoh": false
           }
+        ],
+        "2026-10-29": [
+          {
+            "time": "15:15",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627677",
+            "screen": null,
+            "hoh": false
+          }
         ]
       },
       "color": "#97791a",
@@ -13475,6 +13494,17 @@
               "35mm"
             ]
           }
+        ],
+        "2026-10-29": [
+          {
+            "time": "12:50",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627678",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
         ]
       },
       "color": "#30a66f",
@@ -13678,6 +13708,14 @@
           {
             "time": "12:20",
             "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627561",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-10-29": [
+          {
+            "time": "18:20",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627676",
             "screen": null,
             "hoh": false
           }
@@ -14774,6 +14812,34 @@
       "letterboxd_rating": 3.0
     },
     {
+      "id": "3-from-hell",
+      "title": "3 from Hell",
+      "rating": "18",
+      "runtime": 115,
+      "genre": "Horror",
+      "year": "2019",
+      "country": null,
+      "director": "Rob Zombie",
+      "cast": "Sheri Moon Zombie, Bill Moseley, Richard Brake",
+      "description": "After barely surviving a furious shootout with the police, Baby Firefly, Otis Driftwood and Captain Spaulding are behind bars. But pure evil cannot be contained. Teaming up with Otis' half-brother Winslow, the demented Firefly clan escape to unleash a whole new wave of murder, madness and mayhem.",
+      "film_url": "https://princecharlescinema.com/film/31617475/3-from-hell",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/DLIQl9mTR5DBttrfg-1hwFIznA5uqPLz8umBeDrtPDA.jpg",
+      "showtimes": {
+        "2026-10-28": [
+          {
+            "time": "15:20",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627671",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#971a1b",
+      "accent": "#d45354",
+      "letterboxd_url": "https://letterboxd.com/film/3-from-hell/",
+      "letterboxd_rating": 2.65
+    },
+    {
       "id": "brother",
       "title": "Brother",
       "rating": "18",
@@ -14799,10 +14865,72 @@
           }
         ]
       },
-      "color": "#971a1b",
-      "accent": "#d45354",
+      "color": "#21479f",
+      "accent": "#6888d3",
       "letterboxd_url": "https://letterboxd.com/film/brother/",
       "letterboxd_rating": 3.69
+    },
+    {
+      "id": "from-dusk-till-dawn",
+      "title": "From Dusk Till Dawn",
+      "rating": "18",
+      "runtime": 108,
+      "genre": "Horror / Action",
+      "year": "1996",
+      "country": null,
+      "director": "Robert Rodriguez",
+      "cast": "George Clooney, Harvey Keitel, Juliette Lewis, Quentin Tarantino, Selma Hayek",
+      "description": "After kidnapping a father and his two kids, the Gecko brothers head south to a seedy Mexican bar to hide out in safety, unaware of its notorious clientele.",
+      "film_url": "https://princecharlescinema.com/film/3289/from-dusk-till-dawn",
+      "poster_url": "https://cdn.taposapp.com/poster/600x900/S2P-wwOMcql8mwRzcpQZoy_ekzjbddb76eaOAlYFRwM.jpg",
+      "showtimes": {
+        "2026-10-29": [
+          {
+            "time": "12:30",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627674",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#75a630",
+      "accent": "#b4d684",
+      "letterboxd_url": "https://letterboxd.com/film/from-dusk-till-dawn/",
+      "letterboxd_rating": 3.52
+    },
+    {
+      "id": "bram-stokers-dracula",
+      "title": "Bram Stoker's Dracula",
+      "rating": "18",
+      "runtime": 127,
+      "genre": "Horror",
+      "year": "1992",
+      "country": null,
+      "director": "Francis Ford Coppola",
+      "cast": "Anthony Hopkins, Gary Oldman, Winona Ryder",
+      "description": "Count Dracula, a 15th-century prince, is condemned to live off the blood of the living for eternity. Young lawyer Jonathan Harker is sent to Dracula's castle to finalise a land deal, but when the Count sees a photo of Harker's fiancée, Mina, the spitting image of his dead wife, he imprisons him and sets off for London to track her down.",
+      "film_url": "https://princecharlescinema.com/film/3221048/bram-stokers-dracula",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/3221048.jpg",
+      "showtimes": {
+        "2026-10-29": [
+          {
+            "time": "15:00",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627673",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "4K"
+            ]
+          }
+        ]
+      },
+      "color": "#971a89",
+      "accent": "#d453c5",
+      "letterboxd_url": "https://letterboxd.com/film/bram-stokers-dracula/",
+      "letterboxd_rating": 3.73
     },
     {
       "id": "the-lost-boys",
@@ -14830,10 +14958,41 @@
           }
         ]
       },
-      "color": "#21479f",
-      "accent": "#6888d3",
+      "color": "#219f89",
+      "accent": "#68d3c0",
       "letterboxd_url": "https://letterboxd.com/film/the-lost-boys/",
       "letterboxd_rating": 3.68
+    },
+    {
+      "id": "blade",
+      "title": "Blade",
+      "rating": "18",
+      "runtime": 120,
+      "genre": "Supernatural / Horror",
+      "year": "1998",
+      "country": null,
+      "director": "Stephen Norrington",
+      "cast": "Stephen Dorff, Wesley Snipes, Kris Kristofferson",
+      "description": "A half-mortal, half-immortal is out to avenge his mother's death and rid the world of vampires. The modern-day technologically advanced vampires he is going after are in search of his special blood type needed to summon an evil god who plays a key role in their plan to execute the human race.",
+      "film_url": "https://princecharlescinema.com/film/19477989/blade",
+      "poster_url": "https://posters-uk.s3.eu-west-2.amazonaws.com/PRILON/19477989.jpg",
+      "showtimes": {
+        "2026-10-29": [
+          {
+            "time": "20:45",
+            "booking_url": "https://princecharlescinema.com/prince-charles-cinema/booknow/31627675",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "35mm"
+            ]
+          }
+        ]
+      },
+      "color": "#a66f30",
+      "accent": "#d6b084",
+      "letterboxd_url": "https://letterboxd.com/film/blade/",
+      "letterboxd_rating": 3.51
     },
     {
       "id": "halloween-marathon",
@@ -14858,8 +15017,8 @@
           }
         ]
       },
-      "color": "#75a630",
-      "accent": "#b4d684"
+      "color": "#391a97",
+      "accent": "#7253d4"
     },
     {
       "id": "the-zone-of-interest",
@@ -14884,8 +15043,8 @@
           }
         ]
       },
-      "color": "#971a89",
-      "accent": "#d453c5",
+      "color": "#289f21",
+      "accent": "#6ed368",
       "letterboxd_url": "https://letterboxd.com/film/the-zone-of-interest/",
       "letterboxd_rating": 3.86
     },
@@ -14912,8 +15071,8 @@
           }
         ]
       },
-      "color": "#219f89",
-      "accent": "#68d3c0"
+      "color": "#a63058",
+      "accent": "#d684a0"
     },
     {
       "id": "a-tale-of-winter",
@@ -14941,8 +15100,8 @@
           }
         ]
       },
-      "color": "#a66f30",
-      "accent": "#d6b084",
+      "color": "#1a6997",
+      "accent": "#53a5d4",
       "letterboxd_url": "https://letterboxd.com/film/a-tale-of-winter/",
       "letterboxd_rating": 3.86
     },
@@ -14972,8 +15131,8 @@
           }
         ]
       },
-      "color": "#391a97",
-      "accent": "#7253d4",
+      "color": "#969f21",
+      "accent": "#cbd368",
       "letterboxd_url": "https://letterboxd.com/film/its-a-wonderful-life/",
       "letterboxd_rating": 4.44
     },
@@ -15003,8 +15162,8 @@
           }
         ]
       },
-      "color": "#289f21",
-      "accent": "#6ed368",
+      "color": "#8c30a6",
+      "accent": "#c484d6",
       "letterboxd_url": "https://letterboxd.com/film/die-hard/",
       "letterboxd_rating": 4.05
     }
