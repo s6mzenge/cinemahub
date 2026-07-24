@@ -1,66 +1,7 @@
 {
-  "scraped_at": "2026-07-23T20:35:04.457312+00:00",
+  "scraped_at": "2026-07-24T04:05:31.059769+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "paprika-20th-anniversary",
-      "title": "Paprika - 20th anniversary",
-      "rating": "15",
-      "runtime": 90,
-      "genre": "Other",
-      "year": "2006",
-      "director": "Satoshi Kon",
-      "cast": null,
-      "description": "Satoshi's Kon's visionary and mind-melting anime Paprika returns for its 20th anniversary. Prepare to enter the realm of fantasy and imagination -…",
-      "film_url": "https://www.thegardencinema.co.uk/film/paprika-20th-anniversary/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5839566.jpg",
-      "showtimes": {
-        "2026-07-23": [
-          {
-            "time": "20:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5839634.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-24": [
-          {
-            "time": "20:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900478.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-25": [
-          {
-            "time": "18:25",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900521.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-27": [
-          {
-            "time": "20:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900553.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-30": [
-          {
-            "time": "20:50",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900596.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/paprika-2006/",
-      "letterboxd_rating": 4.1
-    },
     {
       "id": "on-the-sea",
       "title": "On the Sea",
@@ -131,8 +72,10 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff"
+      "color": "#e53935",
+      "accent": "#ff6f60",
+      "letterboxd_url": "https://letterboxd.com/film/on-the-sea-2025/",
+      "letterboxd_rating": 3.4
     },
     {
       "id": "nostalgia-2",
@@ -188,8 +131,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090"
+      "color": "#7c4dff",
+      "accent": "#b388ff"
     },
     {
       "id": "chicken-run",
@@ -229,8 +172,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/chicken-run/",
       "letterboxd_rating": 3.62
     },
@@ -288,8 +231,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/brunello-the-gracious-visionary/",
       "letterboxd_rating": null
     },
@@ -319,8 +262,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/midnight-1939/",
       "letterboxd_rating": 3.94
     },
@@ -416,8 +359,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
       "letterboxd_rating": 4.09
     },
@@ -458,8 +401,8 @@
       "seasons": [
         "Hong Kong Golden Age 1985-1997"
       ],
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/a-chinese-ghost-story/",
       "letterboxd_rating": 3.8
     },
@@ -517,10 +460,61 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/dear-you-2026/",
       "letterboxd_rating": 3.91
+    },
+    {
+      "id": "paprika-20th-anniversary",
+      "title": "Paprika - 20th anniversary",
+      "rating": "15",
+      "runtime": 90,
+      "genre": "Other",
+      "year": "2006",
+      "director": "Satoshi Kon",
+      "cast": null,
+      "description": "Satoshi's Kon's visionary and mind-melting anime Paprika returns for its 20th anniversary. Prepare to enter the realm of fantasy and imagination -…",
+      "film_url": "https://www.thegardencinema.co.uk/film/paprika-20th-anniversary/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5839566.jpg",
+      "showtimes": {
+        "2026-07-24": [
+          {
+            "time": "20:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900478.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-25": [
+          {
+            "time": "18:25",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900521.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-27": [
+          {
+            "time": "20:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900553.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-30": [
+          {
+            "time": "20:50",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900596.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#00838f",
+      "accent": "#4dd0e1",
+      "letterboxd_url": "https://letterboxd.com/film/paprika-2006/",
+      "letterboxd_rating": 4.1
     },
     {
       "id": "the-lion-king",
@@ -711,7 +705,7 @@
       "color": "#4e342e",
       "accent": "#8d6e63",
       "letterboxd_url": "https://letterboxd.com/film/the-last-one-for-the-road/",
-      "letterboxd_rating": 3.84
+      "letterboxd_rating": 3.85
     },
     {
       "id": "once-a-thief",
@@ -2717,7 +2711,9 @@
         "Films for the Family"
       ],
       "color": "#21229f",
-      "accent": "#6869d3"
+      "accent": "#6869d3",
+      "letterboxd_url": "https://letterboxd.com/film/muppet-treasure-island/",
+      "letterboxd_rating": 3.59
     },
     {
       "id": "the-taste-of-tea",
@@ -4038,7 +4034,9 @@
         "Devils and Shamans: The Films of Andrzej Żuławski"
       ],
       "color": "#9f2162",
-      "accent": "#d3689f"
+      "accent": "#d3689f",
+      "letterboxd_url": "https://letterboxd.com/film/cosmos-2015/",
+      "letterboxd_rating": 3.39
     },
     {
       "id": "stella",
