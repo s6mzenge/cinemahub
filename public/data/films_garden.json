@@ -1,57 +1,7 @@
 {
-  "scraped_at": "2026-07-25T19:34:20.753000+00:00",
+  "scraped_at": "2026-07-25T20:04:16.302382+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "nostalgia-2",
-      "title": "Nostalghia",
-      "rating": "12A",
-      "runtime": 125,
-      "genre": "Other",
-      "year": "1983",
-      "director": "Andrei Tarkovsky, Soviet Union",
-      "cast": null,
-      "description": "New digital restoration. A Russian poet, Andrei, conducts research in Italy on a composer from his homeland. There, he meets old…",
-      "film_url": "https://www.thegardencinema.co.uk/film/nostalgia-2/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5734975.jpg",
-      "showtimes": {
-        "2026-07-25": [
-          {
-            "time": "20:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5735340.TcsSection_971",
-            "screen": null,
-            "hoh": false,
-            "sold_out": true
-          }
-        ],
-        "2026-07-26": [
-          {
-            "time": "16:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5735342.TcsSection_3060731",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-29": [
-          {
-            "time": "15:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5735344.TcsSection_638",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-30": [
-          {
-            "time": "18:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5735346.TcsSection_971",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60"
-    },
     {
       "id": "the-invite",
       "title": "The Invite",
@@ -133,8 +83,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
       "letterboxd_rating": 4.08
     },
@@ -200,10 +150,10 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/on-the-sea-2025/",
-      "letterboxd_rating": 3.4
+      "letterboxd_rating": 3.39
     },
     {
       "id": "the-lion-king",
@@ -244,8 +194,8 @@
       "seasons": [
         "Films for the Family"
       ],
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/the-lion-king/",
       "letterboxd_rating": 4.22
     },
@@ -271,8 +221,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/red-beard/",
       "letterboxd_rating": 4.39
     },
@@ -314,8 +264,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d"
+      "color": "#1565c0",
+      "accent": "#64b5f6"
     },
     {
       "id": "it-happened-one-night-90th-anniversary",
@@ -343,8 +293,8 @@
       "seasons": [
         "Screwball Summer"
       ],
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/it-happened-one-night/",
       "letterboxd_rating": 4.18
     },
@@ -381,10 +331,51 @@
       "seasons": [
         "Members' Summer Selection 2026"
       ],
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/talk-to-her/",
       "letterboxd_rating": 3.87
+    },
+    {
+      "id": "nostalgia-2",
+      "title": "Nostalghia",
+      "rating": "12A",
+      "runtime": 125,
+      "genre": "Other",
+      "year": "1983",
+      "director": "Andrei Tarkovsky, Soviet Union",
+      "cast": null,
+      "description": "New digital restoration. A Russian poet, Andrei, conducts research in Italy on a composer from his homeland. There, he meets old…",
+      "film_url": "https://www.thegardencinema.co.uk/film/nostalgia-2/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5734975.jpg",
+      "showtimes": {
+        "2026-07-26": [
+          {
+            "time": "16:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5735342.TcsSection_3060731",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-29": [
+          {
+            "time": "15:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5735344.TcsSection_638",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-30": [
+          {
+            "time": "18:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5735346.TcsSection_971",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#6a1b9a",
+      "accent": "#ba68c8"
     },
     {
       "id": "brunello-the-gracious-visionary",
