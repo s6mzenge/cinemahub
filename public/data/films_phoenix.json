@@ -1,43 +1,7 @@
 {
-  "scraped_at": "2026-07-25T19:04:06.081114+00:00",
+  "scraped_at": "2026-07-25T19:34:27.822666+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
-    {
-      "id": "the-invite",
-      "title": "The Invite",
-      "rating": "15",
-      "runtime": 107,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Olivia Wilde",
-      "cast": "Seth Rogen, Olivia Wilde, Pen�lope Cruz, Edward Norton, Skip Howland, Mel Powell, Rachel Thurow, Mario Valdez",
-      "country": "US",
-      "description": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbours for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=574296",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/574295.jpg",
-      "showtimes": {
-        "2026-07-25": [
-          {
-            "time": "20:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618412.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ],
-        "2026-07-26": [
-          {
-            "time": "19:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618418.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
-      "letterboxd_rating": 4.08
-    },
     {
       "id": "the-odyssey",
       "title": "The Odyssey",
@@ -52,6 +16,26 @@
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=545949",
       "poster_url": "https://images.savoysystems.co.uk/PXL/545945.jpg",
       "showtimes": {
+        "2026-07-25": [
+          {
+            "time": "12:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616305.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "15:45",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616256.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "19:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616257.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
+        ],
         "2026-07-26": [
           {
             "time": "12:00",
@@ -135,10 +119,36 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
       "letterboxd_rating": 4.39
+    },
+    {
+      "id": "national-theatre-live-les-liaisons-dangereuses",
+      "title": "National Theatre Live: Les Liaisons Dangereuses",
+      "rating": "15",
+      "runtime": 180,
+      "genre": "Other",
+      "year": null,
+      "director": "Marianne Elliott",
+      "cast": "Lesley Manville, Aidan Turner",
+      "country": null,
+      "description": "BAFTA Award-winner Lesley Manville (Phantom Thread) joins Aidan Turner (Rivals) in a striking new staging of Christopher Hampton’s celebrated adaptation of the classic novel, where among the glittering salons of the super-rich, one misstep can mean ruin.  Marquise de Merteuil is a master in the art ...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=279901",
+      "poster_url": "https://phoenixcinemalondon.demo01.savoysystems.co.uk/PhoenixCinemaLondon/img/films/posters/liasons.jpg",
+      "showtimes": {
+        "2026-07-25": [
+          {
+            "time": "13:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618416.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#7c4dff",
+      "accent": "#b388ff"
     },
     {
       "id": "brunello-the-gracious-visionary",
@@ -154,6 +164,14 @@
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=618373",
       "poster_url": "https://images.savoysystems.co.uk/PXL/618360.jpg",
       "showtimes": {
+        "2026-07-25": [
+          {
+            "time": "17:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618414.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
         "2026-07-26": [
           {
             "time": "13:45",
@@ -201,6 +219,42 @@
       "letterboxd_rating": null
     },
     {
+      "id": "the-invite",
+      "title": "The Invite",
+      "rating": "15",
+      "runtime": 107,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Olivia Wilde",
+      "cast": "Seth Rogen, Olivia Wilde, Pen�lope Cruz, Edward Norton, Skip Howland, Mel Powell, Rachel Thurow, Mario Valdez",
+      "country": "US",
+      "description": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbours for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=574296",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/574295.jpg",
+      "showtimes": {
+        "2026-07-25": [
+          {
+            "time": "20:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618412.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-07-26": [
+          {
+            "time": "19:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618418.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#00897b",
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
+      "letterboxd_rating": 4.08
+    },
+    {
       "id": "blue-heron",
       "title": "Blue Heron",
       "rating": "12A",
@@ -231,8 +285,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/blue-heron/",
       "letterboxd_rating": 3.94
     },
@@ -262,8 +316,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/sunny-dancer/",
       "letterboxd_rating": 3.48
     },
@@ -290,8 +344,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/wham-10-days-in-china/",
       "letterboxd_rating": null
     },
@@ -318,8 +372,8 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#6a1b9a",
+      "accent": "#ba68c8",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
       "letterboxd_rating": 3.76
     },
@@ -346,8 +400,8 @@
           }
         ]
       },
-      "color": "#6a1b9a",
-      "accent": "#ba68c8",
+      "color": "#00838f",
+      "accent": "#4dd0e1",
       "letterboxd_url": "https://letterboxd.com/film/a-private-life-2025/",
       "letterboxd_rating": 3.06
     },
@@ -374,8 +428,8 @@
           }
         ]
       },
-      "color": "#00838f",
-      "accent": "#4dd0e1",
+      "color": "#546e7a",
+      "accent": "#90a4ae",
       "letterboxd_url": "https://letterboxd.com/film/effi-o-blaenau/",
       "letterboxd_rating": 3.77
     },
@@ -450,8 +504,8 @@
           }
         ]
       },
-      "color": "#546e7a",
-      "accent": "#90a4ae",
+      "color": "#2e7d32",
+      "accent": "#66bb6a",
       "letterboxd_url": "https://letterboxd.com/film/toy-story-5/",
       "letterboxd_rating": 3.69
     },
@@ -478,8 +532,8 @@
           }
         ]
       },
-      "color": "#2e7d32",
-      "accent": "#66bb6a"
+      "color": "#ad1457",
+      "accent": "#f06292"
     },
     {
       "id": "almodovar-season-all-about-my-mother",
@@ -507,8 +561,8 @@
           }
         ]
       },
-      "color": "#ad1457",
-      "accent": "#f06292"
+      "color": "#37474f",
+      "accent": "#78909c"
     },
     {
       "id": "david-byrnes-american-utopia",
@@ -533,8 +587,8 @@
           }
         ]
       },
-      "color": "#37474f",
-      "accent": "#78909c",
+      "color": "#4e342e",
+      "accent": "#8d6e63",
       "letterboxd_url": "https://letterboxd.com/film/david-byrnes-american-utopia/",
       "letterboxd_rating": 4.27
     },
@@ -609,8 +663,8 @@
           }
         ]
       },
-      "color": "#4e342e",
-      "accent": "#8d6e63",
+      "color": "#0277bd",
+      "accent": "#4fc3f7",
       "letterboxd_url": "https://letterboxd.com/film/the-magic-faraway-tree/",
       "letterboxd_rating": 3.04
     },
@@ -691,8 +745,8 @@
           }
         ]
       },
-      "color": "#0277bd",
-      "accent": "#4fc3f7",
+      "color": "#558b2f",
+      "accent": "#9ccc65",
       "letterboxd_url": "https://letterboxd.com/film/the-summer-book/",
       "letterboxd_rating": 3.43
     },
@@ -719,8 +773,8 @@
           }
         ]
       },
-      "color": "#558b2f",
-      "accent": "#9ccc65"
+      "color": "#9f2121",
+      "accent": "#d36868"
     },
     {
       "id": "sam-neill-tribute-hunt-for-the-wilderpeople",
@@ -745,8 +799,8 @@
           }
         ]
       },
-      "color": "#9f2121",
-      "accent": "#d36868"
+      "color": "#3052a6",
+      "accent": "#849cd6"
     },
     {
       "id": "almodovar-season-talk-to-her",
@@ -774,8 +828,8 @@
           }
         ]
       },
-      "color": "#3052a6",
-      "accent": "#849cd6"
+      "color": "#63971a",
+      "accent": "#9ed453"
     },
     {
       "id": "tony",
@@ -856,8 +910,8 @@
           }
         ]
       },
-      "color": "#63971a",
-      "accent": "#9ed453",
+      "color": "#9f2190",
+      "accent": "#d368c6",
       "letterboxd_url": "https://letterboxd.com/film/tony-2024/",
       "letterboxd_rating": null
     },
@@ -932,8 +986,8 @@
           }
         ]
       },
-      "color": "#9f2190",
-      "accent": "#d368c6",
+      "color": "#30a692",
+      "accent": "#84d6c8",
       "letterboxd_url": "https://letterboxd.com/film/minions-monsters-2026/",
       "letterboxd_rating": 3.26
     },
@@ -960,8 +1014,8 @@
           }
         ]
       },
-      "color": "#30a692",
-      "accent": "#84d6c8"
+      "color": "#975e1a",
+      "accent": "#d49953"
     },
     {
       "id": "exhibition-on-screen-david-hockney-at-the-royal-academy-of-arts",
@@ -986,8 +1040,8 @@
           }
         ]
       },
-      "color": "#975e1a",
-      "accent": "#d49953"
+      "color": "#41219f",
+      "accent": "#8368d3"
     },
     {
       "id": "almodovar-season-bad-education",
@@ -1015,8 +1069,8 @@
           }
         ]
       },
-      "color": "#41219f",
-      "accent": "#8368d3"
+      "color": "#35a630",
+      "accent": "#88d684"
     },
     {
       "id": "90s-nostalgia-trainspotting",
@@ -1041,8 +1095,8 @@
           }
         ]
       },
-      "color": "#35a630",
-      "accent": "#88d684"
+      "color": "#971a44",
+      "accent": "#d4537e"
     },
     {
       "id": "exhibition-on-screen-leonardo-the-works",
@@ -1067,8 +1121,8 @@
           }
         ]
       },
-      "color": "#971a44",
-      "accent": "#d4537e"
+      "color": "#21709f",
+      "accent": "#68abd3"
     },
     {
       "id": "almodovar-season-volver",
@@ -1096,8 +1150,8 @@
           }
         ]
       },
-      "color": "#21709f",
-      "accent": "#68abd3"
+      "color": "#9ca630",
+      "accent": "#cfd684"
     },
     {
       "id": "animal-farm",
@@ -1146,8 +1200,8 @@
           }
         ]
       },
-      "color": "#9ca630",
-      "accent": "#cfd684",
+      "color": "#7d1a97",
+      "accent": "#b953d4",
       "letterboxd_url": "https://letterboxd.com/film/animal-farm-2025/",
       "letterboxd_rating": 1.7
     },
@@ -1258,8 +1312,8 @@
           }
         ]
       },
-      "color": "#7d1a97",
-      "accent": "#b953d4",
+      "color": "#219f60",
+      "accent": "#68d39d",
       "letterboxd_url": "https://letterboxd.com/film/bitter-christmas/",
       "letterboxd_rating": 3.17
     },
@@ -1286,8 +1340,8 @@
           }
         ]
       },
-      "color": "#219f60",
-      "accent": "#68d39d"
+      "color": "#a64830",
+      "accent": "#d69584"
     },
     {
       "id": "nostalgia",
@@ -1315,8 +1369,8 @@
           }
         ]
       },
-      "color": "#a64830",
-      "accent": "#d69584",
+      "color": "#1a2597",
+      "accent": "#535ed4",
       "letterboxd_url": "https://letterboxd.com/film/nostalgia-1983/",
       "letterboxd_rating": 4.27
     },
@@ -1346,8 +1400,8 @@
           }
         ]
       },
-      "color": "#1a2597",
-      "accent": "#535ed4"
+      "color": "#519f21",
+      "accent": "#90d368"
     },
     {
       "id": "the-sacrifice",
@@ -1375,8 +1429,8 @@
           }
         ]
       },
-      "color": "#519f21",
-      "accent": "#90d368",
+      "color": "#a6307e",
+      "accent": "#d684bb",
       "letterboxd_url": "https://letterboxd.com/film/the-sacrifice/",
       "letterboxd_rating": 4.28
     },
@@ -1403,8 +1457,8 @@
           }
         ]
       },
-      "color": "#a6307e",
-      "accent": "#d684bb"
+      "color": "#1a9297",
+      "accent": "#53cfd4"
     },
     {
       "id": "75-years-of-contemporary-films-a-bigger-splash",
@@ -1432,8 +1486,8 @@
           }
         ]
       },
-      "color": "#1a9297",
-      "accent": "#53cfd4"
+      "color": "#9f8021",
+      "accent": "#d3b868"
     },
     {
       "id": "playing-the-changes-tracking-darius-brubeck",
@@ -1462,8 +1516,8 @@
           }
         ]
       },
-      "color": "#9f8021",
-      "accent": "#d3b868",
+      "color": "#6530a6",
+      "accent": "#a984d6",
       "letterboxd_url": "https://letterboxd.com/film/playing-the-changes-tracking-darius-brubeck/",
       "letterboxd_rating": null
     },
@@ -1490,8 +1544,8 @@
           }
         ]
       },
-      "color": "#6530a6",
-      "accent": "#a984d6"
+      "color": "#1a972f",
+      "accent": "#53d468"
     },
     {
       "id": "gentle-angry-women-director-q-a",
@@ -1516,8 +1570,8 @@
           }
         ]
       },
-      "color": "#1a972f",
-      "accent": "#53d468",
+      "color": "#9f2132",
+      "accent": "#d36876",
       "letterboxd_url": "https://letterboxd.com/film/gentle-angry-women/",
       "letterboxd_rating": null
     },
@@ -1544,8 +1598,8 @@
           }
         ]
       },
-      "color": "#9f2132",
-      "accent": "#d36876"
+      "color": "#3061a6",
+      "accent": "#84a6d6"
     },
     {
       "id": "75-years-of-contemporary-films-mahanagar-the-big-city",
@@ -1574,8 +1628,8 @@
           }
         ]
       },
-      "color": "#3061a6",
-      "accent": "#84a6d6",
+      "color": "#73971a",
+      "accent": "#afd453",
       "letterboxd_url": "https://letterboxd.com/film/the-big-city/",
       "letterboxd_rating": 4.25
     },
@@ -1602,8 +1656,8 @@
           }
         ]
       },
-      "color": "#73971a",
-      "accent": "#afd453"
+      "color": "#9f219f",
+      "accent": "#d368d3"
     },
     {
       "id": "fallen-angels-by-noel-coward",
@@ -1628,8 +1682,8 @@
           }
         ]
       },
-      "color": "#9f219f",
-      "accent": "#d368d3"
+      "color": "#30a683",
+      "accent": "#84d6be"
     },
     {
       "id": "royal-ballet-opera-2026-27-manon",
@@ -1654,8 +1708,8 @@
           }
         ]
       },
-      "color": "#30a683",
-      "accent": "#84d6be",
+      "color": "#974e1a",
+      "accent": "#d48853",
       "letterboxd_url": "https://letterboxd.com/film/royal-ballet-opera-2026-27-manon/",
       "letterboxd_rating": null
     },
@@ -1682,8 +1736,8 @@
           }
         ]
       },
-      "color": "#974e1a",
-      "accent": "#d48853",
+      "color": "#31219f",
+      "accent": "#7568d3",
       "letterboxd_url": "https://letterboxd.com/film/royal-ballet-opera-2026-27-carmen/",
       "letterboxd_rating": null
     },
@@ -1718,8 +1772,8 @@
           }
         ]
       },
-      "color": "#31219f",
-      "accent": "#7568d3"
+      "color": "#44a630",
+      "accent": "#92d684"
     },
     {
       "id": "kendal-mountain-festival-the-film-edit",
@@ -1744,8 +1798,8 @@
           }
         ]
       },
-      "color": "#44a630",
-      "accent": "#92d684"
+      "color": "#971a54",
+      "accent": "#d4538f"
     },
     {
       "id": "royal-ballet-opera-2026-27-the-nutcracker",
@@ -1770,8 +1824,8 @@
           }
         ]
       },
-      "color": "#971a54",
-      "accent": "#d4538f",
+      "color": "#21809f",
+      "accent": "#68b9d3",
       "letterboxd_url": "https://letterboxd.com/film/royal-ballet-opera-2026-27-the-nutcracker/",
       "letterboxd_rating": null
     },
@@ -1798,8 +1852,8 @@
           }
         ]
       },
-      "color": "#21809f",
-      "accent": "#68b9d3"
+      "color": "#a6a030",
+      "accent": "#d6d284"
     },
     {
       "id": "met-opera-2026-27-la-fanciulla-del-west",
@@ -1824,8 +1878,8 @@
           }
         ]
       },
-      "color": "#a6a030",
-      "accent": "#d6d284"
+      "color": "#6d1a97",
+      "accent": "#a853d4"
     },
     {
       "id": "royal-ballet-opera-2026-27-g-tterd-mmerung",
@@ -1850,8 +1904,8 @@
           }
         ]
       },
-      "color": "#6d1a97",
-      "accent": "#a853d4",
+      "color": "#219f50",
+      "accent": "#68d390",
       "letterboxd_url": "https://letterboxd.com/film/royal-ballet-opera-2026-27-gotterdammerung/",
       "letterboxd_rating": null
     },
@@ -1878,8 +1932,8 @@
           }
         ]
       },
-      "color": "#219f50",
-      "accent": "#68d390",
+      "color": "#a63930",
+      "accent": "#d68b84",
       "letterboxd_url": "https://letterboxd.com/film/royal-ballet-opera-2026-27-cosi-fan-tutte/",
       "letterboxd_rating": null
     },
@@ -1906,8 +1960,8 @@
           }
         ]
       },
-      "color": "#a63930",
-      "accent": "#d68b84"
+      "color": "#1a3597",
+      "accent": "#536ed4"
     },
     {
       "id": "met-opera-2026-27-manon",
@@ -1932,8 +1986,8 @@
           }
         ]
       },
-      "color": "#1a3597",
-      "accent": "#536ed4"
+      "color": "#619f21",
+      "accent": "#9ed368"
     },
     {
       "id": "met-opera-2026-27-otello",
@@ -1958,8 +2012,8 @@
           }
         ]
       },
-      "color": "#619f21",
-      "accent": "#9ed368"
+      "color": "#a6308e",
+      "accent": "#d684c5"
     },
     {
       "id": "met-opera-2026-27-parsifal",
@@ -1984,8 +2038,8 @@
           }
         ]
       },
-      "color": "#a6308e",
-      "accent": "#d684c5"
+      "color": "#1a978c",
+      "accent": "#53d4c8"
     }
   ]
 }
