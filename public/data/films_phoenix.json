@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-26T17:33:25.538441+00:00",
+  "scraped_at": "2026-07-26T18:04:40.543964+00:00",
   "source": "phoenixcinema.co.uk",
   "films": [
     {
@@ -17,6 +17,18 @@
       "poster_url": "https://images.savoysystems.co.uk/PXL/545945.jpg",
       "showtimes": {
         "2026-07-26": [
+          {
+            "time": "12:00",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616304.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          },
+          {
+            "time": "15:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616260.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          },
           {
             "time": "19:15",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_616261.TcsSection_543",
@@ -85,40 +97,20 @@
             "screen": "Screen 1",
             "hoh": false
           }
+        ],
+        "2026-08-02": [
+          {
+            "time": "16:15",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_633532.TcsSection_543",
+            "screen": "Screen 1",
+            "hoh": false
+          }
         ]
       },
       "color": "#e53935",
       "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/the-odyssey-2026/",
       "letterboxd_rating": 4.39
-    },
-    {
-      "id": "the-invite",
-      "title": "The Invite",
-      "rating": "15",
-      "runtime": 107,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Olivia Wilde",
-      "cast": "Seth Rogen, Olivia Wilde, Pen�lope Cruz, Edward Norton, Skip Howland, Mel Powell, Rachel Thurow, Mario Valdez",
-      "country": "US",
-      "description": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbours for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=574296",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/574295.jpg",
-      "showtimes": {
-        "2026-07-26": [
-          {
-            "time": "19:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618418.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
-      "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
-      "letterboxd_rating": 4.07
     },
     {
       "id": "brunello-the-gracious-visionary",
@@ -134,6 +126,14 @@
       "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=618373",
       "poster_url": "https://images.savoysystems.co.uk/PXL/618360.jpg",
       "showtimes": {
+        "2026-07-26": [
+          {
+            "time": "13:45",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618423.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
         "2026-07-27": [
           {
             "time": "16:45",
@@ -167,10 +167,74 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/brunello-the-gracious-visionary/",
       "letterboxd_rating": null
+    },
+    {
+      "id": "blue-heron",
+      "title": "Blue Heron",
+      "rating": "12A",
+      "runtime": 91,
+      "genre": "Other",
+      "year": null,
+      "director": "Sophy Romvari",
+      "cast": "Eylul Guven, Edik Beddoes, Iringó Réti, Ádám Tompa, Liam Serg",
+      "country": "Canada, Hungary",
+      "description": "Set in the late 1990s, a family of six moves into a new house on Vancouver Island, where the daily life of the youngest, Sasha, gradually exposes the household’s underlying dynamics. Their hopeful fresh start is shattered as Jeremy, the eldest child, begins to act increasingly dangerously, forcing t...",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=578233",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/578231.jpg",
+      "showtimes": {
+        "2026-07-26": [
+          {
+            "time": "16:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618420.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ],
+        "2026-07-30": [
+          {
+            "time": "15:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618455.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#d81b60",
+      "accent": "#ff6090",
+      "letterboxd_url": "https://letterboxd.com/film/blue-heron/",
+      "letterboxd_rating": 3.94
+    },
+    {
+      "id": "the-invite",
+      "title": "The Invite",
+      "rating": "15",
+      "runtime": 107,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Olivia Wilde",
+      "cast": "Seth Rogen, Olivia Wilde, Pen�lope Cruz, Edward Norton, Skip Howland, Mel Powell, Rachel Thurow, Mario Valdez",
+      "country": "US",
+      "description": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbours for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=574296",
+      "poster_url": "https://images.savoysystems.co.uk/PXL/574295.jpg",
+      "showtimes": {
+        "2026-07-26": [
+          {
+            "time": "19:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618418.TcsSection_720",
+            "screen": "Screen 2",
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#00897b",
+      "accent": "#4db6ac",
+      "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
+      "letterboxd_rating": 4.07
     },
     {
       "id": "sunny-dancer",
@@ -198,8 +262,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/sunny-dancer/",
       "letterboxd_rating": 3.48
     },
@@ -226,8 +290,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/wham-10-days-in-china/",
       "letterboxd_rating": null
     },
@@ -254,8 +318,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#c62828",
+      "accent": "#ef5350",
       "letterboxd_url": "https://letterboxd.com/film/tuner/",
       "letterboxd_rating": 3.76
     },
@@ -282,38 +346,10 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
-      "letterboxd_url": "https://letterboxd.com/film/a-private-life-2025/",
-      "letterboxd_rating": 3.06
-    },
-    {
-      "id": "blue-heron",
-      "title": "Blue Heron",
-      "rating": "12A",
-      "runtime": 91,
-      "genre": "Other",
-      "year": null,
-      "director": "Sophy Romvari",
-      "cast": "Eylul Guven, Edik Beddoes, Iringó Réti, Ádám Tompa, Liam Serg",
-      "country": "Canada, Hungary",
-      "description": "Set in the late 1990s, a family of six moves into a new house on Vancouver Island, where the daily life of the youngest, Sasha, gradually exposes the household’s underlying dynamics. Their hopeful fresh start is shattered as Jeremy, the eldest child, begins to act increasingly dangerously, forcing t...",
-      "film_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/WhatsOn?f=578233",
-      "poster_url": "https://images.savoysystems.co.uk/PXL/578231.jpg",
-      "showtimes": {
-        "2026-07-30": [
-          {
-            "time": "15:30",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_618455.TcsSection_720",
-            "screen": "Screen 2",
-            "hoh": false
-          }
-        ]
-      },
       "color": "#6a1b9a",
       "accent": "#ba68c8",
-      "letterboxd_url": "https://letterboxd.com/film/blue-heron/",
-      "letterboxd_rating": 3.94
+      "letterboxd_url": "https://letterboxd.com/film/a-private-life-2025/",
+      "letterboxd_rating": 3.06
     },
     {
       "id": "effi-o-blaenau",
@@ -359,7 +395,7 @@
       "showtimes": {
         "2026-07-31": [
           {
-            "time": "20:00",
+            "time": "17:00",
             "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_591824.TcsSection_720",
             "screen": "Screen 2",
             "hoh": false
@@ -375,9 +411,9 @@
         ],
         "2026-08-02": [
           {
-            "time": "16:15",
-            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_591828.TcsSection_543",
-            "screen": "Screen 1",
+            "time": "16:30",
+            "booking_url": "https://www.phoenixcinema.co.uk/PhoenixCinemaLondon.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_633531.TcsSection_720",
+            "screen": "Screen 2",
             "hoh": false
           }
         ],
