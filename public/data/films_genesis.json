@@ -1,65 +1,7 @@
 {
-  "scraped_at": "2026-07-26T19:33:58.109361+00:00",
+  "scraped_at": "2026-07-26T20:04:02.320671+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
-    {
-      "id": "the-invite",
-      "title": "The Invite",
-      "rating": "15",
-      "runtime": 107,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "Joe and Angelas marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/111189",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/111189_0.jpg",
-      "showtimes": {
-        "2026-07-26": [
-          {
-            "time": "20:45",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12293",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-27": [
-          {
-            "time": "18:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12283",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-28": [
-          {
-            "time": "18:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12263",
-            "screen": null,
-            "hoh": false
-          },
-          {
-            "time": "20:50",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12265",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-30": [
-          {
-            "time": "18:00",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12273",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
-      "letterboxd_rating": 4.07
-    },
     {
       "id": "minions-monsters",
       "title": "Minions & Monsters",
@@ -99,10 +41,10 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/minions-monsters-2026/",
-      "letterboxd_rating": 3.26
+      "letterboxd_rating": 3.25
     },
     {
       "id": "moana",
@@ -143,8 +85,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/moana/",
       "letterboxd_rating": 2.89
     },
@@ -179,8 +121,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
       "letterboxd_rating": 4.11
     },
@@ -223,10 +165,60 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/supergirl-2026/",
       "letterboxd_rating": 3.06
+    },
+    {
+      "id": "the-invite",
+      "title": "The Invite",
+      "rating": "15",
+      "runtime": 107,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Joe and Angelas marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/111189",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/111189_0.jpg",
+      "showtimes": {
+        "2026-07-27": [
+          {
+            "time": "18:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12283",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-28": [
+          {
+            "time": "18:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12263",
+            "screen": null,
+            "hoh": false
+          },
+          {
+            "time": "20:50",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12265",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-30": [
+          {
+            "time": "18:00",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12273",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#1565c0",
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
+      "letterboxd_rating": 4.07
     },
     {
       "id": "the-odyssey",
