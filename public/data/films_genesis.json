@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-26T17:04:12.483812+00:00",
+  "scraped_at": "2026-07-26T17:33:24.054577+00:00",
   "source": "genesiscinema.co.uk",
   "films": [
     {
@@ -217,56 +217,6 @@
       "letterboxd_rating": 4.39
     },
     {
-      "id": "35mm-the-odyssey",
-      "title": "35mm - The Odyssey",
-      "rating": "15",
-      "runtime": 174,
-      "genre": "Other",
-      "year": null,
-      "director": null,
-      "cast": null,
-      "country": null,
-      "description": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.Pressented in 35mm.More Info",
-      "film_url": "https://www.genesiscinema.co.uk/event/112996",
-      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/112996_0.jpg",
-      "showtimes": {
-        "2026-07-26": [
-          {
-            "time": "18:10",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12235",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-27": [
-          {
-            "time": "19:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12234",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-28": [
-          {
-            "time": "19:30",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12259",
-            "screen": null,
-            "hoh": false
-          }
-        ],
-        "2026-07-30": [
-          {
-            "time": "19:55",
-            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12248",
-            "screen": null,
-            "hoh": false
-          }
-        ]
-      },
-      "color": "#d81b60",
-      "accent": "#ff6090"
-    },
-    {
       "id": "minions-monsters",
       "title": "Minions & Monsters",
       "rating": "U",
@@ -305,8 +255,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/minions-monsters-2026/",
       "letterboxd_rating": 3.26
     },
@@ -349,8 +299,8 @@
           }
         ]
       },
-      "color": "#1565c0",
-      "accent": "#64b5f6",
+      "color": "#00897b",
+      "accent": "#4db6ac",
       "letterboxd_url": "https://letterboxd.com/film/moana/",
       "letterboxd_rating": 2.89
     },
@@ -385,8 +335,8 @@
           }
         ]
       },
-      "color": "#ef6c00",
-      "accent": "#ffb74d",
+      "color": "#1565c0",
+      "accent": "#64b5f6",
       "letterboxd_url": "https://letterboxd.com/film/obsession-2025/",
       "letterboxd_rating": 4.11
     },
@@ -429,10 +379,52 @@
           }
         ]
       },
-      "color": "#c62828",
-      "accent": "#ef5350",
+      "color": "#ef6c00",
+      "accent": "#ffb74d",
       "letterboxd_url": "https://letterboxd.com/film/supergirl-2026/",
       "letterboxd_rating": 3.06
+    },
+    {
+      "id": "35mm-the-odyssey",
+      "title": "35mm - The Odyssey",
+      "rating": "15",
+      "runtime": 174,
+      "genre": "Other",
+      "year": null,
+      "director": null,
+      "cast": null,
+      "country": null,
+      "description": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.Pressented in 35mm.More Info",
+      "film_url": "https://www.genesiscinema.co.uk/event/112996",
+      "poster_url": "https://www.genesiscinema.co.uk/customFilmImages/112996_0.jpg",
+      "showtimes": {
+        "2026-07-27": [
+          {
+            "time": "19:30",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12234",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-28": [
+          {
+            "time": "19:30",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12259",
+            "screen": null,
+            "hoh": false
+          }
+        ],
+        "2026-07-30": [
+          {
+            "time": "19:55",
+            "booking_url": "https://genesis.admit-one.co.uk/seats/?perfCode=12248",
+            "screen": null,
+            "hoh": false
+          }
+        ]
+      },
+      "color": "#c62828",
+      "accent": "#ef5350"
     },
     {
       "id": "toy-story-5",
