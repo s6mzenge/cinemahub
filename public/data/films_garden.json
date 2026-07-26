@@ -1,83 +1,7 @@
 {
-  "scraped_at": "2026-07-26T19:03:32.632382+00:00",
+  "scraped_at": "2026-07-26T19:33:48.304807+00:00",
   "source": "thegardencinema.co.uk",
   "films": [
-    {
-      "id": "the-invite",
-      "title": "The Invite",
-      "rating": "15",
-      "runtime": 106,
-      "genre": "Other",
-      "year": "2026",
-      "director": "Olivia Wilde",
-      "cast": null,
-      "description": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night…",
-      "film_url": "https://www.thegardencinema.co.uk/film/the-invite/",
-      "poster_url": "https://images.savoysystems.co.uk/GCL/5730014.jpg",
-      "showtimes": {
-        "2026-07-26": [
-          {
-            "time": "19:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900541.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ],
-            "sold_out": true
-          }
-        ],
-        "2026-07-27": [
-          {
-            "time": "17:45",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900551.TcsSection_638",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ],
-        "2026-07-28": [
-          {
-            "time": "15:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900588.TcsSection_3060731",
-            "screen": null,
-            "hoh": true,
-            "tags": [
-              "HoH",
-              "AD"
-            ]
-          }
-        ],
-        "2026-07-29": [
-          {
-            "time": "20:30",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900555.TcsSection_638",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ],
-        "2026-07-30": [
-          {
-            "time": "17:00",
-            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900594.TcsSection_3060731",
-            "screen": null,
-            "hoh": false,
-            "tags": [
-              "AD"
-            ]
-          }
-        ]
-      },
-      "color": "#e53935",
-      "accent": "#ff6f60",
-      "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
-      "letterboxd_rating": 4.07
-    },
     {
       "id": "dear-you",
       "title": "Dear You",
@@ -116,8 +40,8 @@
           }
         ]
       },
-      "color": "#7c4dff",
-      "accent": "#b388ff",
+      "color": "#e53935",
+      "accent": "#ff6f60",
       "letterboxd_url": "https://letterboxd.com/film/dear-you-2026/",
       "letterboxd_rating": 3.92
     },
@@ -151,8 +75,8 @@
           }
         ]
       },
-      "color": "#d81b60",
-      "accent": "#ff6090",
+      "color": "#7c4dff",
+      "accent": "#b388ff",
       "letterboxd_url": "https://letterboxd.com/film/chicken-run/",
       "letterboxd_rating": 3.62
     },
@@ -202,8 +126,8 @@
           }
         ]
       },
-      "color": "#00897b",
-      "accent": "#4db6ac",
+      "color": "#d81b60",
+      "accent": "#ff6090",
       "letterboxd_url": "https://letterboxd.com/film/on-the-sea-2025/",
       "letterboxd_rating": 3.39
     },
@@ -237,8 +161,72 @@
           }
         ]
       },
+      "color": "#00897b",
+      "accent": "#4db6ac"
+    },
+    {
+      "id": "the-invite",
+      "title": "The Invite",
+      "rating": "15",
+      "runtime": 106,
+      "genre": "Other",
+      "year": "2026",
+      "director": "Olivia Wilde",
+      "cast": null,
+      "description": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night…",
+      "film_url": "https://www.thegardencinema.co.uk/film/the-invite/",
+      "poster_url": "https://images.savoysystems.co.uk/GCL/5730014.jpg",
+      "showtimes": {
+        "2026-07-27": [
+          {
+            "time": "17:45",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900551.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ],
+        "2026-07-28": [
+          {
+            "time": "15:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900588.TcsSection_3060731",
+            "screen": null,
+            "hoh": true,
+            "tags": [
+              "HoH",
+              "AD"
+            ]
+          }
+        ],
+        "2026-07-29": [
+          {
+            "time": "20:30",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900555.TcsSection_638",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ],
+        "2026-07-30": [
+          {
+            "time": "17:00",
+            "booking_url": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_5900594.TcsSection_3060731",
+            "screen": null,
+            "hoh": false,
+            "tags": [
+              "AD"
+            ]
+          }
+        ]
+      },
       "color": "#1565c0",
-      "accent": "#64b5f6"
+      "accent": "#64b5f6",
+      "letterboxd_url": "https://letterboxd.com/film/the-invite-2026/",
+      "letterboxd_rating": 4.07
     },
     {
       "id": "brunello-the-gracious-visionary",
